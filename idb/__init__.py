@@ -6,6 +6,7 @@
 # HTML templates.
 
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 
 # create flask object
 app = Flask(__name__)
@@ -21,6 +22,10 @@ app = Flask(__name__)
 @app.route('/')
 def splash():
     return render_template('splash.html')
+
+@app.route('/index')
+def index():
+    return render_template('index.html')        
 
 #------------------------
 # END ROUTE DECORATORS
