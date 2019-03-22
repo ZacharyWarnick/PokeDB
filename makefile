@@ -1,0 +1,56 @@
+
+APP_NAME = idb
+PROJ_PHASE = 1
+
+IDB_LOG = IDB$(PROJ_PHASE).log
+
+FILES := \
+	.gitignore \
+	$(IDB_LOG)
+
+ifeq (,$(shell which conda))
+	$(error Please make sure conda is installed.)
+endif
+
+check:
+	@not_found=0; \
+	for i in $(FILES); do \
+	  if [ -e $$i ]; then \
+            echo "$$i found"; \
+          else \
+            echo "$$i NOT FOUND"; \
+            not_found=`expr "$$not_found" + "1"`; \
+          fi \
+        done; \
+	if [ $$not_found -ne 0 ]; then \
+          echo "$$not_found failures"; \
+          exit 1; \
+	fi; \
+	echo "success";
+
+config:
+	git config -l
+
+deploy-local:
+	gunicorn -w 4 $(APP_NAME):app
+
+update-environment:
+	conda env update -f environment.yml
+
+$(IDB_LOG):
+	git log > $(IDB_LOG)
+
+status:
+	make clean
+	@echo
+	git branch
+	git remote -v
+	git status
+
+.PHONY: clean
+
+clean:
+	rm $(IDB_LOG)
+	find . -type f -name '*.pyc' -delete
+	find . -type d -name '__pycache__' -delete
+
