@@ -25,13 +25,18 @@ def splash():
 
 @app.route('/index')
 def index():
-    return render_template('index.html')        
+    return render_template('index.html')
+
+@app.route('/data')
+def example():
+    return render_template('datapage.html')
 
 #------------------------
 # END ROUTE DECORATORS
 #------------------------
 
 
-
+# Debug provides live updates without restarting;
+# this is a development only argument.
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
