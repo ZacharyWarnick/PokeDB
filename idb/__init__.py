@@ -1,14 +1,12 @@
+"""Initialize the flask backend, and describes routes for serving HTML.
 
-#-----------
-#__init__.py
-#-----------
-# Initializes the backend flask runtime. Contains routes which return the rendered
-# HTML templates.
+Flask basics: http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application
+"""
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 
-# create flask object
+# App initialization must happen first.
 app = Flask(__name__)
 
 #-----------------
@@ -17,14 +15,14 @@ app = Flask(__name__)
 ## Create route decorators which maps URL route to corresponding HTML template
 ## to serve thr user.
 
-## Home page, or no specification
-## may route to splash, home page, or main index
 @app.route('/')
-def splash():
-    return render_template('splash.html')
+def index():
+    """Routes to the index page of the site."""
+    return render_template('index.html')
 
 @app.route('/data')
 def example():
+    """Routes to a sample data page."""
     return render_template('datapage.html')
 
 #------------------------
