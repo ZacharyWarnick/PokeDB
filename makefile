@@ -1,15 +1,24 @@
-
 APP_NAME = idb
 PROJ_PHASE = 1
 
-IDB_LOG = IDB$(PROJ_PHASE).log
+IDB_LOG := IDB$(PROJ_PHASE).log
 
 FILES := \
 	.gitignore \
 	$(IDB_LOG)
 
-ifeq (,$(shell which conda))
-	$(error Please make sure conda is installed.)
+# Set Windows/Unix specific commands.
+ifeq ($(shell uname -p), unknown)
+	# Windows
+	WHICH := where
+else
+	# Linux/macOS
+	WHICH := which
+endif
+
+# Stop if conda isn't installed.
+ifeq (,$(shell $(WHICH) conda))
+	$(error "Please make sure conda is installed.")
 endif
 
 check:
@@ -37,20 +46,20 @@ deploy-local:
 update-environment:
 	conda env update -f environment.yml
 
+.PHONY: $(IDB_LOG)
 $(IDB_LOG):
 	git log > $(IDB_LOG)
+
+.PHONY: clean
+clean:
+	rm -f $(IDB_LOG)
+	find . -type f -name '*.pyc' -delete
+	find . -type d -name '__pycache__' -delete
 
 status:
 	make clean
 	@echo
-	git branch
+	git --no-pager branch
 	git remote -v
 	git status
-
-.PHONY: clean
-
-clean:
-	rm $(IDB_LOG)
-	find . -type f -name '*.pyc' -delete
-	find . -type d -name '__pycache__' -delete
 
