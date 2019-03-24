@@ -4,7 +4,9 @@
       <div class="card-body">
         <h5 class="card-title">{{ title }}</h5>
         <p class="card-text">{{ msg }}</p>
-        <router-link tag="button" v-bind:to="link" class="btn btn-primary">{{ link_text }}</router-link>
+        <router-link tag="button" v-bind:to="link" class="btn btn-primary">{{
+          link_text
+        }}</router-link>
       </div>
     </div>
   </div>
