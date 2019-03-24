@@ -4,5 +4,4 @@ dependencies:
   - nodejs
   - pip:
       - Flask
-      - flask-bootstrap
       - gunicorn
