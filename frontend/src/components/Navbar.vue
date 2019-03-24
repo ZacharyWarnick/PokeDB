@@ -1,40 +1,27 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <b-navbar toggleable="lg" class="navbar-expand-lg navbar-light bg-light">
     <router-link to="/" class="navbar-brand">PokéDB</router-link>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <b-navbar-toggle target="nav_collapse" />
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <router-link to="/" class="nav-link">
-            Home
-            <span class="sr-only">(current)</span>
-          </router-link>
-        </li>
-        <li class="nav-item active">
-          <router-link to="/" class="nav-link">Types</router-link>
-        </li>
-        <li class="nav-item active">
-          <router-link to="/" class="nav-link">Evolution</router-link>
-        </li>
-        <li class="nav-item active">
-          <router-link to="/" class="nav-link">Pokémon</router-link>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+    <b-collapse is-nav id="nav_collapse">
+      <b-navbar-nav>
+        <router-link to="/" tag="b-nav-item">
+          Home
+          <span class="sr-only">(current)</span>
+        </router-link>
+        <router-link to="/" tag="b-nav-item">Types</router-link>
+        <router-link to="/" tag="b-nav-item">Evolution</router-link>
+        <router-link to="/" tag="b-nav-item">Pokémon</router-link>
+      </b-navbar-nav>
+
+      <b-navbar-nav class="ml-auto">
+        <b-nav-form>
+          <b-form-input class="mr-sm-2" type="text" placeholder="Search" />
+          <b-button variant="outline-success" class="my-2 my-sm-0" type="submit"
+            >Search</b-button
+          >
+        </b-nav-form>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
