@@ -2,7 +2,7 @@
   <div class="Type" style="padding-left">
     <Navbar/>
     <div class="jumbotron">
-      <h1>{{ $route.params.id }}</h1>
+      <h1>{{ $route.params.name }}</h1>
     </div>
     <div class="container">
       <div class="row">
@@ -102,7 +102,7 @@
 import Navbar from "@/components/Navbar.vue";
 
 export default {
-  name: "About",
+  name: "Type",
   components: {
     Navbar
   }
