@@ -2,7 +2,7 @@
   <div class="Type" style="padding-left">
     <Navbar/>
     <div class="jumbotron">
-      <h1>Type Name</h1>
+      <h1>{{ $route.params.id }}</h1>
     </div>
     <div class="container">
       <div class="row">
@@ -100,7 +100,6 @@
 <script>
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
-import CardItem from "@/components/CardItem.vue";
 
 export default {
   name: "About",
