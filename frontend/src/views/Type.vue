@@ -110,6 +110,9 @@ export default {
 };
 </script>
 
+<!--
+Color of tables or fromatting subject to change
+-->
 <style scoped>
   .container {
     margin-top: 20px;
@@ -124,7 +127,7 @@ export default {
   .table-strong {
     background-color: rgba(0, 128, 0, 0.7);
   }
-  
+
   .table-weak {
     background-color: rgba(255, 0, 0, 0.7);
 
