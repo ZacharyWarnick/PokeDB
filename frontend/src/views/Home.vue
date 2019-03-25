@@ -33,10 +33,10 @@
           link_text="About"
         />
         <CardItem
-          title="Card 3"
+          title="Test Pokémon"
           msg="Message for card 3."
-          link="/about"
-          link_text="About"
+          link="/pokemon/magikarp"
+          link_text="Magikarp"
         />
       </div>
     </div>
