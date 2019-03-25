@@ -15,3 +15,12 @@
 
 # Python pycache:
 __pycache__/
+
+# Custom entries
+.gitlab/
+.vscode/
+frontend/
+CONTRIBUTING.md
+environment.yml
+makefile
+README.md

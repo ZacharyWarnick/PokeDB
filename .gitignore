@@ -122,4 +122,4 @@ dmypy.json
 .vscode/
 node_modules/
 idb/**/gen
-idb/lib/
+lib/
