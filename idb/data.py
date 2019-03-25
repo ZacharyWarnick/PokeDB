@@ -3,37 +3,44 @@ POKEMON = {
         'id': 23,
         'description': 'Snake that is 3 meters long and weighs around 6.9 kilograms.',
         'category': 'Snake',
-        'type': ['poison']
+        'type': ['poison'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png'
+
     },
     'arbok': {
         'id': 24,
         'description': 'Cobra that is 3.5 meters long and weighs around 65 kilograms.',
         'category': 'Cobra',
-        'type': ['poison']
+        'type': ['poison'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png'
     },
     'sandshrew': {
         'id': 27,
         'description': 'Mouse that is 0.6 meters tall and weighs around 12 kilograms.',
         'category': 'Mouse',
-        'type': ['ground']
+        'type': ['ground'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png'
     },
     'sandslash': {
         'id': 28,
         'description': 'Mouse that is 1 meters tall and weighs around 29.5 kilograms.',
         'category': 'Mouse',
-        'type': ['ground']
+        'type': ['ground'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png'
     },
     'magikarp': {
         'id': 129,
         'description': 'Fish that is 0.9 meters long and weighs around 10.0 kilograms.',
         'category': 'Fish',
-        'type': ['water']
+        'type': ['water'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png'
     },
     'gyarados': {
         'id': 130,
         'description': 'Atrocious Pokémon that is 3.5 meters long and weighs around 65 kilograms.',
         'category': 'Atrocious Pokémon',
-        'type': ['water', 'flying']
+        'type': ['water', 'flying'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png'
     }
 }
 
