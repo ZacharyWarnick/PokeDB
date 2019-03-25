@@ -50,14 +50,14 @@
     </section>
 
     <section id="evolution" class="container section-padding">
-      <EvolutionOverview/>
+      <EvolutionOverview />
     </section>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import EvolutionOverview from "@/components/EvolutionOverview.vue"
+import EvolutionOverview from "@/components/EvolutionOverview.vue";
 
 export default {
   name: "Pokemon",
