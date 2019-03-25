@@ -19,7 +19,7 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/TypeList.vue")
     },
     {
-      path: "/type/:name",
+      path: "/types/:name",
       name: "Type",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Type.vue")
