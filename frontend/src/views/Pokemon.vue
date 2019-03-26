@@ -87,6 +87,29 @@ export default {
   data() {
     return {
       all: {
+        ekans: {
+          display_name: "Ekans",
+          id: 23,
+          sprite:
+            "https://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png",
+          types: [
+            {
+              id: 4,
+              name: "poison",
+              badge_image: require("../assets/badge-poison.png")
+            }
+          ],
+          flavor_text:
+            "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
+          stats: {
+            hp: 35,
+            atk: 60,
+            def: 44,
+            sp_atk: 40,
+            sp_def: 54,
+            spd: 55
+          }
+        },
         arbok: {
           display_name: "Arbok",
           id: 24,
