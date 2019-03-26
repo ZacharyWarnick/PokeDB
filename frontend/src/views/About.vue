@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-<<<<<<< HEAD
     <Navbar/>
     <h1>About</h1>
     <p>In this website an internet database is created that follows 
@@ -50,7 +49,7 @@
     <p>No. of issues</p>
     <p>No. of unit tests</p>
     <h4>Zack Warnick</h4>
-    <img src="../photos/zack.jpg" alt="Zack Warnickr" width="200" height="200">
+    <img src="../photos/zack.jpg" alt="Zack Warnick" width="200" height="200">
     <p>Zack Warnick. The man from the moon. People say he's 
       an alien because of his amazing coding skills.</p>
     <p>Responsibilites</p>
@@ -75,10 +74,8 @@
       Flask, and the database is implemented with 
       SQLAlchemy and PostgreSQL. The website is 
       hosted on the Google Cloud Platform.</p>
-=======
     <Navbar />
     <h1>This is an about page</h1>
->>>>>>> develop
   </div>
 </template>
 
