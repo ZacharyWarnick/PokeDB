@@ -11,8 +11,9 @@ loader_path = Path(__file__).parent / 'frontend' / 'dist'
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
     """Routes to the index page of the site."""
     return render_template('gen/index.html')
 
