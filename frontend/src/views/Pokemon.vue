@@ -62,7 +62,6 @@
           <div class="img-thumb wow">
             <img
               v-bind:src="all[$route.params.name].sprite"
-              alt="Pokemon Pic"
               class="img-fluid poke-img"
             />
           </div>

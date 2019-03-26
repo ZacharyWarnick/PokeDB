@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <b-jumbotron header="Pokémon" />
     <section class="section-padding">
       <b-container class="justify-content-center">
         <b-row>
