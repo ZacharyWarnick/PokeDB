@@ -1,7 +1,17 @@
 <template>
   <div class="about">
     <Navbar/>
-    <h1>This is an about page</h1>
+    <h1>About</h1>
+    <p>Repository Information</p>
+    <h2>Gold Team</h2>
+    <h3>Members:</h3>
+    <p>Guillermo Gallegos, Jacob Lubecki, Ian Chang, Tyler Chinn, Zack Warnick</p>
+    <h3>Stats:</h3>
+    <p>no. commits, issues, unit tests, links to gitlab issue tracker, repo, wiki</p>
+    <h3>Data:</h3>
+    <p>Link to data sources</p>
+    <h3>Tools:</h3>
+    <p>Tools used</p>
   </div>
 </template>
 
