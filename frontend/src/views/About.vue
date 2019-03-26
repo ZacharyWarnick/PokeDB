@@ -2,16 +2,78 @@
   <div class="about">
     <Navbar/>
     <h1>About</h1>
-    <p>Repository Information</p>
+    <p>In this website an internet database is created that follows 
+      a similar format as IMDb. The database has 3 kinds of pages 
+      or subjects that form the database. All 3 pages or subjects 
+      are connected and each item in the database belongs to 1 type 
+      of page or subject and has links to items in the other 2 
+      subjects. The database for this group will be a Pokémon 
+      database. The 3 kinds of pages or subjects will be Pokémon, 
+      Pokémon Type, and Evolution Chain.</p>
     <h2>Gold Team</h2>
     <h3>Members:</h3>
-    <p>Guillermo Gallegos, Jacob Lubecki, Ian Chang, Tyler Chinn, Zack Warnick</p>
+    <h4>Guillermo Gallegos</h4>
+    <img src="../photos/guillermo.jpg" alt="Guillermo Gallegos" width="200" height="200">
+    <p>Guillermo Gallegos grew up in Antartica. He fought polar 
+      bears for a living, but now he found his passion as a web 
+      developer.</p>
+    <p>Responsibilites</p>
+    <p>No. of commits</p>
+    <p>No. of issues</p>
+    <p>No. of unit tests</p>
+    <h4>Jacob Lubecki</h4>
+    <img src="../photos/jacob.jpeg" alt="Jacob Lubecki" width="200" height="200">
+    <p>Jacob Lubecki is the next big thing. At the age of 3 
+      years old he was developing software for Google and 
+      Microsoft. People say he's like Steve Jobs or Bill Gates, 
+      so people have also given him the nickname Bill Jobs.</p>
+    <p>Responsibilites</p>
+    <p>No. of commits</p>
+    <p>No. of issues</p>
+    <p>No. of unit tests</p>
+    <h4>Ian Chang</h4>
+    <img src="../photos/ian.jpg" alt="Ian Chang" width="200" height="200">
+    <p>Ian Chang is pretty dumb. I don't know how he made it 
+      this far. He's getting carried and will probably have 
+      to drop out.</p>
+    <p>Responsibilites</p>
+    <p>No. of commits</p>
+    <p>No. of issues</p>
+    <p>No. of unit tests</p>
+    <h4>Tyler Chinn</h4>
+    <img src="../photos/tyler.JPG" alt="Tyler Chinn" width="200" height="200">
+    <p>Tyler Chinn born and raised in the Sahara Desert. 
+      There he found his calling to be a software engineer.</p>
+    <p>Responsibilites</p>
+    <p>No. of commits</p>
+    <p>No. of issues</p>
+    <p>No. of unit tests</p>
+    <h4>Zack Warnick</h4>
+    <img src="../photos/zack.jpg" alt="Zack Warnickr" width="200" height="200">
+    <p>Zack Warnick. The man from the moon. People say he's 
+      an alien because of his amazing coding skills.</p>
+    <p>Responsibilites</p>
+    <p>No. of commits</p>
+    <p>No. of issues</p>
+    <p>No. of unit tests</p>
     <h3>Stats:</h3>
-    <p>no. commits, issues, unit tests, links to gitlab issue tracker, repo, wiki</p>
+    <p>no. commits</p>
+    <p>issues</p>
+    <p>unit tests</p>
+    <p><a href="https://gitlab.com/jacoblubecki/cs329e-idb/issues">
+    Gitlab Issue Tracker</a></p>
+    <p><a href="https://gitlab.com/jacoblubecki/cs329e-idb">
+    Gitlab Repo</a> </p>
+    <p><a href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home">
+    Gitlab Technical Report (Wiki)</a></p>
     <h3>Data:</h3>
-    <p>Link to data sources</p>
+    <p><a href="">Link to data sources</a></p>
     <h3>Tools:</h3>
-    <p>Tools used</p>
+    <p>The frontend of the site is implemented using 
+      Bootstrap, the backend is implemented using 
+      Flask, and the database is implemented with 
+      SQLAlchemy and PostgreSQL. The website is 
+      hosted on the Google Cloud Platform.</p>
   </div>
 </template>
 
