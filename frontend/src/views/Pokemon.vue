@@ -3,8 +3,8 @@
     <Navbar />
 
     <section id="about" class="container section-padding">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <b-row>
+        <b-col lg="6" md="6" sm="12" cols="12">
           <div class="profile-wrapper wow">
             <div class="d-flex justify-content-between align-items-center">
               <div>
@@ -56,7 +56,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </b-col>
 
         <b-col lg="6" md="6" sm="12" cols="12" class="my-auto">
           <div class="img-thumb wow">
@@ -67,10 +67,10 @@
             />
           </div>
         </b-col>
-      </div>
+      </b-row>
     </section>
 
-    <section id="evolution" class="container bottom-section-padding">
+    <section id="evolution" class="container section-padding">
       <EvolutionOverview
         v-bind:name="all[$route.params.name].ev.name"
         v-bind:first="all[$route.params.name].ev.first"
@@ -272,11 +272,7 @@ export default {
 
 <style scoped>
 .section-padding {
-  padding: 60px 0;
-}
-
-.bottom-section-padding {
-  padding: 0 0 60px 0;
+  padding: 15px 0;
 }
 
 .profile-wrapper {

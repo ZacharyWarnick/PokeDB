@@ -1,7 +1,13 @@
 <template>
   <div class="d-flex justify-content-center">
     <b-card class="text-left">
-      <b-card-body title="Evolution Chain">
+      <router-link
+        :to="'/evolutions/' + first.name.toLowerCase()"
+        tag="b-card-title"
+        class="btn btn-outline-dark"
+        >Evolution Chain</router-link
+      >
+      <b-card-body>
         <b-row class="align-items-center">
           <b-col>
             <SpriteBasic

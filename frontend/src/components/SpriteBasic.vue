@@ -2,13 +2,14 @@
   <div style="padding: 10px">
     <div class="d-flex justify-content-center">
       <div class="my-auto">
-        <img
+        <router-link
+          tag="img"
+          v-bind:to="'/pokemon/' + name.toLowerCase()"
           v-bind:src="
             'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' +
               id +
               '.png'
           "
-          alt="Pokemon Pic"
           class="poke-image img-fluid"
         />
       </div>
