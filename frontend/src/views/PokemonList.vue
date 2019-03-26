@@ -34,28 +34,26 @@ export default {
     return {
       sample_pokemon: [
         {
-          name: "bulbasaur",
-          id: 1,
+          name: "ekans",
+          id: 23,
           sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
           types: [
             {
-              name: "Grass",
-              badge_img:
-                "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
+              name: "poison",
+              badge_img: require("../assets/badge-poison.png")
             }
           ]
         },
         {
-          name: "ivysaur",
-          id: 2,
+          name: "arbok",
+          id: 24,
           sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
           types: [
             {
-              name: "Grass",
-              badge_img:
-                "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
+              name: "poison",
+              badge_img:require("../assets/badge-poison.png")
             }
           ]
         }
