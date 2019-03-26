@@ -19,7 +19,7 @@
                 Put information on the evolution chain.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/evolutions/magikarp"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/evolutions/magikarp"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
                   </div>
                 </div>
               </div>
@@ -33,7 +33,7 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Put information on the evolution chain.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/evolutions/sandshrew"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/evolutions/sandshrew"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Put information on the evolution chain.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/evolutions/ekans"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/evolutions/ekans"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
                   </div>
                 </div>
               </div>
