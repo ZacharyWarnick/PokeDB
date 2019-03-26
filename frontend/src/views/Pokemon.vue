@@ -8,48 +8,67 @@
           <div class="profile-wrapper wow">
             <div class="d-flex justify-content-between align-items-center">
               <div>
-                <h2><strong>22</strong> {{ $route.params.name }}</h2>
+                <h2>
+                  <strong>{{ all[$route.params.name].id }}</strong>
+                  {{ all[$route.params.name].display_name }}
+                </h2>
               </div>
               <div>
                 <img
+                  v-for="type in all[$route.params.name].types"
+                  v-bind:key="type.id"
                   class="type-badge"
-                  src="https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
-                />
-                <img
-                  class="type-badge"
-                  src="https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
+                  v-bind:src="type.badge_image"
                 />
               </div>
             </div>
             <p class="poke-desc">
-              This is some text. This is some text. This is some text. This is
-              some text. This is some text. This is some text. This is some
-              text. This is some text. This is some text. This is some text.
-              This is some text.
+              {{ all[$route.params.name].flavor_text }}
             </p>
             <hr />
-            <p class="poke-info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div class="poke-info">
+              <ul>
+                <li>
+                  <strong>Health</strong> {{ all[$route.params.name].stats.hp }}
+                </li>
+                <li>
+                  <strong>Attack</strong>
+                  {{ all[$route.params.name].stats.atk }}
+                </li>
+                <li>
+                  <strong>Defense</strong>
+                  {{ all[$route.params.name].stats.def }}
+                </li>
+                <li>
+                  <strong>Sp. Atk</strong>
+                  {{ all[$route.params.name].stats.sp_atk }}
+                </li>
+                <li>
+                  <strong>Sp. Def</strong>
+                  {{ all[$route.params.name].stats.sp_def }}
+                </li>
+                <li>
+                  <strong>Health</strong>
+                  {{ all[$route.params.name].stats.spd }}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <b-col lg="6" md="6" sm="12" cols="12" class="my-auto">
           <div class="img-thumb wow">
             <img
-              src="https://purepng.com/public/uploads/large/purepng.com-pokemonpokemonpocket-monsterspokemon-franchisefictional-speciesone-pokemonmany-pokemonone-pikachu-1701527784709esduz.png"
+              v-bind:src="all[$route.params.name].sprite"
               alt="Pokemon Pic"
               class="img-fluid poke-img"
             />
           </div>
-        </div>
+        </b-col>
       </div>
     </section>
 
-    <section id="evolution" class="container section-padding">
+    <section id="evolution" class="container">
       <EvolutionOverview />
     </section>
   </div>
@@ -64,6 +83,35 @@ export default {
   components: {
     Navbar,
     EvolutionOverview
+  },
+  data() {
+    return {
+      all: {
+        arbok: {
+          display_name: "Arbok",
+          id: 24,
+          sprite:
+            "https://cdn.bulbagarden.net/upload/thumb/c/cd/024Arbok.png/250px-024Arbok.png",
+          types: [
+            {
+              id: 4,
+              name: "poison",
+              badge_image: require("../assets/badge-poison.png")
+            }
+          ],
+          flavor_text:
+            "The latest research has determined that there are over 20 possible arrangements of the patterns on its stomach.",
+          stats: {
+            hp: 60,
+            atk: 95,
+            def: 69,
+            sp_atk: 65,
+            sp_def: 79,
+            spd: 80
+          }
+        }
+      }
+    };
   }
 };
 </script>
