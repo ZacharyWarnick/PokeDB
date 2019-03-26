@@ -19,7 +19,7 @@
                 <p class="card-text"><b>Water</b></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/types/Water"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/types/water"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link to>
                   </div>
                 </div>
               </div>
@@ -34,7 +34,7 @@
                 <p class="card-text"><b>Poison</b></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/types/Poison"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/types/poison"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link to>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@
                 <p class="card-text"><b>Ground</b></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="/types/Ground"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <router-link to="/types/ground"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link to>
                   </div>
                 </div>
               </div>
