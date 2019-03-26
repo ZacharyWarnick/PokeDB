@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+<<<<<<< HEAD
     <Navbar/>
     <h1>About</h1>
     <p>In this website an internet database is created that follows 
@@ -74,6 +75,10 @@
       Flask, and the database is implemented with 
       SQLAlchemy and PostgreSQL. The website is 
       hosted on the Google Cloud Platform.</p>
+=======
+    <Navbar />
+    <h1>This is an about page</h1>
+>>>>>>> develop
   </div>
 </template>
 

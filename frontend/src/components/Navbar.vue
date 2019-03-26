@@ -9,9 +9,9 @@
           Home
           <span class="sr-only">(current)</span>
         </router-link>
-        <router-link to="/" tag="b-nav-item">Types</router-link>
+        <router-link to="/types" tag="b-nav-item">Types</router-link>
         <router-link to="/" tag="b-nav-item">Evolution</router-link>
-        <router-link to="/" tag="b-nav-item">Pokémon</router-link>
+        <router-link to="/pokemon" tag="b-nav-item">Pokémon</router-link>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
