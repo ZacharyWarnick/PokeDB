@@ -6,42 +6,19 @@
       <b-container class="justify-content-center">
         <b-row>
           <b-col
-            cols="12"
-            sm="6"
-            md="4"
-            lg="3"
-            v-bind:key="basepokemon[$route.params.name].first.name.id"
+            v-for="p in basepokemon[$route.params.name]"
+            v-bind:key="p.name.id"
           >
-            <b-card style="margin-top: 10px;">
+            <b-card class="row-card shadow-sm">
               <SpriteBasic
-                v-bind:name="basepokemon[$route.params.name].first.display_name"
-                v-bind:id="basepokemon[$route.params.name].first.name.id"
-                v-bind:types="basepokemon[$route.params.name].first.name.types"
+                v-bind:name="p.display_name"
+                v-bind:id="p.name.id"
+                v-bind:types="p.types"
               />
               <router-link
                 v-bind:to="'/pokemon/' + [$route.params.name]"
                 class="btn btn-outline-dark"
-                >First Pokémon</router-link
-              >
-            </b-card>
-          </b-col>
-          <b-col
-            cols="12"
-            sm="6"
-            md="4"
-            lg="3"
-            v-bind:key="basepokemon[$route.params.name].first.name.id"
-          >
-            <b-card style="margin-top: 10px;">
-              <SpriteBasic
-                v-bind:name="basepokemon[$route.params.name].second.display_name"
-                v-bind:id="basepokemon[$route.params.name].second.name.id"
-                v-bind:types="basepokemon[$route.params.name].second.name.types"
-              />
-              <router-link
-                v-bind:to="'/pokemon/' + basepokemon[$route.params.name].second.name"
-                class="btn btn-outline-dark"
-                >Second Pokémon</router-link
+                >{{p.order}} Pokémon</router-link
               >
             </b-card>
           </b-col>
@@ -69,6 +46,7 @@ export default {
               name: "ekans",
               display_name: "Ekans",
               id: 23,
+              order: "First",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
               types: [
@@ -82,6 +60,7 @@ export default {
               name: "arbok",
               display_name: "Arbok",
               id: 24,
+              order: "Second",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
               types: [
@@ -98,6 +77,7 @@ export default {
               name: "sandshrew",
               display_name: "Sandshrew",
               id: 27,
+              order: "First",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
               types: [
@@ -111,6 +91,7 @@ export default {
               name: "sandslash",
               display_name: "Sandslash",
               id: 28,
+              order: "Second",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
               types: [
@@ -127,6 +108,7 @@ export default {
               name: "magikarp",
               display_name: "Magikarp",
               id: 129,
+              order: "First",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
               types: [
@@ -140,6 +122,7 @@ export default {
               name: "gyarados",
               display_name: "Gyarados",
               id: 130,
+              order: "Second",
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
               types: [
