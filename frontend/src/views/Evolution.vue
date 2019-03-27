@@ -1,70 +1,141 @@
 <template>
-  <div class="Evolutions" style="padding-left">
+  <div class = "evolution">
     <Navbar />
-    <div class="jumbotron">
-      <h1>{{ $route.params.name }}</h1>
-    </div>
-        <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. 
-                Put information on the evolution chain.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <router-link to="/evolutions/magikarp"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p><font size="24">&rarr;</font></p>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Put information on the evolution chain.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <router-link to="/evolutions/sandshrew"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <b-jumbotron header="Evolution Chain" lead="First Pokémon in evolution chain is displayed." />
+    <section class="section-padding">
+      <b-container class="justify-content-center">
+        <b-row>
+          <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+            v-bind:key="basepokemon[$route.params.name].first.name.id"
+          >
+            <b-card style="margin-top: 10px;">
+              <SpriteBasic
+                v-bind:name="basepokemon[$route.params.name].first.name"
+                v-bind:id="basepokemon[$route.params.name].first.name.id"
+                v-bind:types="basepokemon[$route.params.name].first.name.types"
+              />
+              <router-link
+                v-bind:to="'/pokemon/' + [$route.params.name]"
+                class="btn btn-outline-dark"
+                >Evolution Chain</router-link
+              >
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
-  </div>
-  </div>
-</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import CardItem from "@/components/CardItem.vue";
 import Navbar from "@/components/Navbar.vue";
+import SpriteBasic from "@/components/SpriteBasic.vue";
 
 export default {
-  name: "Home",
+  name: "Evolution",
   components: {
     Navbar,
-    CardItem
+    SpriteBasic
+  },
+  data() {
+    return {
+      basepokemon: {
+        ekans: {
+            first: {
+              name: "ekans",
+              id: 23,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+              types: [
+                {
+                  name: "poison",
+                  badge_image: require("../assets/badge-poison.png")
+                }
+              ]
+            },
+            second: {
+              name: "arbok",
+              id: 24,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+              types: [
+                {
+                  name: "poison",
+                  badge_image: require("../assets/badge-poison.png")
+                }
+              ]
+            }
+
+        },
+        sandshrew: {
+            first:{
+              name: "sandshrew",
+              id: 27,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+              types: [
+                {
+                  name: "ground",
+                  badge_image: require("../assets/badge-ground.png")
+                }
+              ]
+            },
+            second:{
+              name: "sandslash",
+              id: 28,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+              types: [
+                {
+                  name: "ground",
+                  badge_image: require("../assets/badge-ground.png")
+                }
+              ]
+            }
+
+        },
+        magikarp: {
+            first: {
+              name: "magikarp",
+              id: 129,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+              types: [
+                {
+                  name: "water",
+                  badge_image: require("../assets/badge-water.png")
+                }
+              ]
+            },
+            second: {
+              name: "gyarados",
+              id: 130,
+              sprite:
+                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+              types: [
+                {
+                  name: "water",
+                  badge_image: require("../assets/badge-water.png")
+                },
+                {
+                  name: "flying",
+                  badge_image: require("../assets/badge-flying.png")
+                }
+              ]
+            }
+        }
+      }
+    };
   }
 };
 </script>
 
 <style scoped>
-  .container {
-    margin-top: 10px;
-  }
-
-  .jumbotron {
-    text-align: center;
-  }
-
+.section-padding {
+  padding: 15px 0;
+}
 </style>
-
-
-

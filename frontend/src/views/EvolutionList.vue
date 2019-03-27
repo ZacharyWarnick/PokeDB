@@ -1,88 +1,97 @@
 <template>
-  <div class="Evolutions">
-    <Navbar/>
-    <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Evolutions</h1>
-      <p class="lead text-muted">All Evolution chains for all Pokémon<br/> Click on a card to find out more.</p>
-    </div>
-    </section>  
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. 
-                Put information on the evolution chain.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <router-link to="/evolutions/magikarp"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Put information on the evolution chain.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <router-link to="/evolutions/sandshrew"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Put information on the evolution chain.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <router-link to="/evolutions/ekans"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
-
+  <div>
+    <Navbar />
+    <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
+    <section class="section-padding">
+      <b-container class="justify-content-center">
+        <b-row>
+          <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+            v-for="p in pokemon"
+            v-bind:key="p.id"
+          >
+            <b-card style="margin-top: 10px;">
+              <SpriteBasic
+                v-bind:name="p.display_name"
+                v-bind:id="p.id"
+                v-bind:types="p.types"
+              />
+              <router-link
+                v-bind:to="'/evolutions/' + p.name"
+                class="btn btn-outline-dark"
+                >Evolution Chain</router-link
+              >
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
-
-
 </template>
 
 <script>
-// @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
-import CardItem from "@/components/CardItem.vue";
+import SpriteBasic from "@/components/SpriteBasic.vue";
 
 export default {
-  name: "Types",
+  name: "EvolutionList",
   components: {
     Navbar,
-    CardItem
+    SpriteBasic
+  },
+  data() {
+    return {
+      pokemon: [
+        {
+          name: "ekans",
+          display_name:"Ekans",
+          id: 23,
+          sprite:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+          types: [
+            {
+              name: "poison",
+              badge_image: require("../assets/badge-poison.png")
+            }
+          ]
+        },
+        {
+          name: "sandshrew",
+          display_name: "Sandshrew",
+          id: 27,
+          sprite:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+          types: [
+            {
+              name: "ground",
+              badge_image: require("../assets/badge-ground.png")
+            }
+          ]
+        },
+        {
+          name: "magikarp",
+          display_name: "Magikarp",
+          id: 129,
+          sprite:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+          types: [
+            {
+              name: "water",
+              badge_image: require("../assets/badge-water.png")
+            }
+          ]
+        },
+      ]
+    };
   }
 };
 </script>
 
 <style scoped>
-  .container {
-    margin-top: 10px;
-  };
-  .jumbotron {
-    height: 100px;
-  }
+.section-padding {
+  padding: 15px 0;
+}
 </style>
