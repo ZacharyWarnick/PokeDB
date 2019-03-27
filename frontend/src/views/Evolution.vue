@@ -6,13 +6,17 @@
       <b-container class="justify-content-center">
         <b-row>
           <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
             v-for="p in basepokemon[$route.params.name]"
-            v-bind:key="p.name.id"
+            v-bind:key="p.id"
           >
             <b-card class="row-card shadow-sm">
               <SpriteBasic
                 v-bind:name="p.display_name"
-                v-bind:id="p.name.id"
+                v-bind:id="p.id"
                 v-bind:types="p.types"
               />
               <router-link
