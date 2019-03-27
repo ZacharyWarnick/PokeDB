@@ -1,31 +1,27 @@
 <template>
   <div class="d-flex justify-content-center">
     <b-card class="text-left">
-      <b-card-body title="Evolution Chain">
+      <router-link
+        :to="'/evolutions/' + first.name.toLowerCase()"
+        tag="b-card-title"
+        class="btn btn-outline-dark"
+        >Evolution Chain</router-link
+      >
+      <b-card-body>
         <b-row class="align-items-center">
           <b-col>
             <SpriteBasic
-              name="Bulbasaur"
-              sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-              v-bind:types="types1"
+              v-bind:name="first.name"
+              v-bind:id="first.id"
+              v-bind:types="first.types"
             />
           </b-col>
 
           <b-col>
             <SpriteBasic
-              name="Ivysaur"
-              sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
-              v-bind:types="types2"
-            />
-          </b-col>
-
-          <!-- Unnecessary at this stage. -->
-          <b-col v-if="false">
-            <SpriteBasic
-              id="sprite"
-              name="Venusaur"
-              sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
-              v-bind:types="types3"
+              v-bind:name="second.name"
+              v-bind:id="second.id"
+              v-bind:types="second.types"
             />
           </b-col>
         </b-row>
@@ -44,41 +40,12 @@ export default {
     SpriteBasic
   },
   props: {
-    species: String
-  },
-  data() {
-    return {
-      types1: [
-        {
-          name: "grass",
-          badge_img:
-            "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
-        }
-      ],
-      types2: [
-        {
-          name: "grass",
-          badge_img:
-            "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
-        }
-      ],
-      types3: [
-        {
-          name: "grass",
-          badge_img:
-            "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
-        },
-        {
-          name: "poison",
-          badge_img:
-            "https://nintendowire.com/wp-content/uploads/2016/07/Grass.png"
-        }
-      ]
-    };
+    species: String,
+    first: Object,
+    second: Object
   }
 };
 </script>
-
 
 <style scoped>
 .icon-arrow-e::before {
@@ -95,4 +62,3 @@ export default {
     sans-serif;
 }
 </style>
-
