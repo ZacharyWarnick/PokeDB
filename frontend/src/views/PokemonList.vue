@@ -15,7 +15,7 @@
             v-for="p in pokemon"
             v-bind:key="p.id"
           >
-            <b-card style="margin-top: 10px;">
+            <b-card class="row-card shadow-sm">
               <SpriteBasic
                 v-bind:name="p.name"
                 v-bind:id="p.id"
@@ -45,71 +45,55 @@ export default {
     SpriteBasic
   },
   data() {
+    const all_types = {
+      poison: {
+        name: "poison",
+        badge_image: require("../assets/badge-poison.png")
+      },
+      ground: {
+        name: "ground",
+        badge_image: require("../assets/badge-ground.png")
+      },
+      water: {
+        name: "water",
+        badge_image: require("../assets/badge-water.png")
+      },
+      flying: {
+        name: "flying",
+        badge_image: require("../assets/badge-flying.png")
+      }
+    };
     return {
       pokemon: [
         {
           name: "ekans",
           id: 23,
-          types: [
-            {
-              name: "poison",
-              badge_image: require("../assets/badge-poison.png")
-            }
-          ]
+          types: [all_types["poison"]]
         },
         {
           name: "arbok",
           id: 24,
-          types: [
-            {
-              name: "poison",
-              badge_image: require("../assets/badge-poison.png")
-            }
-          ]
+          types: [all_types["poison"]]
         },
         {
           name: "sandshrew",
           id: 27,
-          types: [
-            {
-              name: "ground",
-              badge_image: require("../assets/badge-ground.png")
-            }
-          ]
+          types: [all_types["ground"]]
         },
         {
           name: "sandslash",
           id: 28,
-          types: [
-            {
-              name: "ground",
-              badge_image: require("../assets/badge-ground.png")
-            }
-          ]
+          types: [all_types["ground"]]
         },
         {
           name: "magikarp",
           id: 129,
-          types: [
-            {
-              name: "water",
-              badge_image: require("../assets/badge-water.png")
-            }
-          ]
+          types: [all_types["water"]]
         },
         {
           name: "gyarados",
           id: 130,
-          types: [
-            {
-              name: "water",
-              badge_image: require("../assets/badge-water.png")
-            },
-            {
-              name: "flying",
-              badge_image: require("../assets/badge-flying.png")
-            }
-          ]
+          types: [all_types["water"], all_types["flying"]]
         }
       ]
     };
@@ -120,5 +104,9 @@ export default {
 <style scoped>
 .section-padding {
   padding: 15px;
+}
+
+.row-card {
+  margin-bottom: 15px;
 }
 </style>
