@@ -1,74 +1,78 @@
 <template>
   <div class="Type" style="padding-left">
     <Navbar />
-    <div class="jumbotron">
-      <h1>{{ $route.params.name.toUpperCase() }}</h1>
-    </div>
-    <section>
+    <b-container>
+      <b-jumbotron
+        class="section-padding"
+        :header="capitalize($route.params.name)"
+        header-tag="h2"
+      />
+    </b-container>
+    <section class="section-padding">
       <b-container>
         <b-row>
-          <div class="col-md-6 my-auto">
-            <p class="lead">{{ all[$route.params.name].info }}</p>
-          </div>
-          <div class="col-md-6">
+          <b-col md="6" class="my-auto">
+            <p class="lead text-justify">{{ all[$route.params.name].info }}</p>
+          </b-col>
+          <b-col md="6">
             <img :src="all[$route.params.name].image" width="320px" />
-          </div>
+          </b-col>
         </b-row>
+        <hr />
+        <b-row>
+          <b-col md="6" class="my-auto">
+            <p class="text-justify">
+              {{ all[$route.params.name].info2 }}
+            </p>
+          </b-col>
 
-        <b-container>
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                {{ all[$route.params.name].info2 }}
-              </p>
-            </div>
-
-            <div class="col-md-6">
-              <div class="container">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="table-strong" scope="col">Strong Against</th>
-                      <th class="table-weak" scope="col">Weak Against</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr
-                      v-for="i in Math.max(
-                        all[$route.params.name].advantages.length,
-                        all[$route.params.name].weaknesses.length
-                      )"
-                      :key="i"
-                    >
-                      <td class="table-strong">
-                        {{
-                          capitalize(all[$route.params.name].advantages[i - 1])
-                        }}
-                      </td>
-                      <td class="table-weak">
-                        {{
-                          capitalize(all[$route.params.name].weaknesses[i - 1])
-                        }}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </b-container>
+          <b-col md="6">
+            <b-container>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table-strong" scope="col">Strong Against</th>
+                    <th class="table-weak" scope="col">Weak Against</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    v-for="i in Math.max(
+                      all[$route.params.name].advantages.length,
+                      all[$route.params.name].weaknesses.length
+                    )"
+                    :key="i"
+                  >
+                    <td class="table-strong">
+                      {{
+                        capitalize(all[$route.params.name].advantages[i - 1])
+                      }}
+                    </td>
+                    <td class="table-weak">
+                      {{
+                        capitalize(all[$route.params.name].weaknesses[i - 1])
+                      }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </b-container>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
-    <section>
+    <section class="section-padding">
       <h2>Pokemon of this type:</h2>
       <b-container class="d-flex justify-content-center">
         <b-row class="align-items-center">
           <b-col v-for="p in all[$route.params.name].related" :key="p.id">
-            <SpriteBasic
-              v-bind:name="p.name"
-              v-bind:id="p.id"
-              v-bind:types="p.types"
-            />
+            <b-card>
+              <SpriteBasic
+                v-bind:name="p.name"
+                v-bind:id="p.id"
+                v-bind:types="p.types"
+              />
+            </b-card>
           </b-col>
         </b-row>
       </b-container>
@@ -197,8 +201,8 @@ export default {
             "but they may now also be special depending on the attack."
           ].join(" "),
           image: "https://cdn.bulbagarden.net/upload/3/31/050Diglett.png",
-          advantages: [""],
-          weaknesses: ["water"],
+          advantages: ["", ""],
+          weaknesses: ["water", "flying"],
           related: [
             {
               name: "Sandshrew",
@@ -266,14 +270,13 @@ export default {
 Color of tables or fromatting subject to change
 -->
 <style scoped>
+.section-padding {
+  padding: 15px 0;
+}
 .container {
   margin-top: 20px;
   margin-bottom: 10px;
   align-items: center;
-}
-
-.jumbotron {
-  text-align: center;
 }
 
 .table-strong {

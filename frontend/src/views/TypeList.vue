@@ -1,17 +1,15 @@
 <template>
-  <div class="Types">
+  <div class="types">
     <Navbar />
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">All Types</h1>
+    <b-container class="section-padding">
+      <b-jumbotron class="text-center" header="Types">
         <p class="lead text-muted">
-          There are 18 common types across all pokémon games.<br />
-          Click on a card to find out more.
+          There are 18 types across all Pokémon games.
         </p>
-      </div>
-    </section>
+      </b-jumbotron>
+    </b-container>
 
-    <div class="album py-5 bg-light">
+    <section class="album">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -91,7 +89,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -110,10 +108,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin-top: 10px;
-}
-.jumbotron {
-  height: 100px;
+.section-padding {
+  padding: 15px;
 }
 </style>

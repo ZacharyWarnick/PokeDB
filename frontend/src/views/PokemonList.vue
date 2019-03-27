@@ -1,9 +1,11 @@
 <template>
   <div>
     <Navbar />
-    <b-jumbotron header="Pokémon" />
-    <section class="section-padding">
-      <b-container class="justify-content-center">
+    <b-container class="section-padding">
+      <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
+    </b-container>
+    <section>
+      <b-container>
         <b-row>
           <b-col
             cols="12"
@@ -48,8 +50,6 @@ export default {
         {
           name: "ekans",
           id: 23,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
           types: [
             {
               name: "poison",
@@ -60,8 +60,6 @@ export default {
         {
           name: "arbok",
           id: 24,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
           types: [
             {
               name: "poison",
@@ -72,8 +70,6 @@ export default {
         {
           name: "sandshrew",
           id: 27,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
           types: [
             {
               name: "ground",
@@ -84,8 +80,6 @@ export default {
         {
           name: "sandslash",
           id: 28,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
           types: [
             {
               name: "ground",
@@ -96,8 +90,6 @@ export default {
         {
           name: "magikarp",
           id: 129,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
           types: [
             {
               name: "water",
@@ -108,8 +100,6 @@ export default {
         {
           name: "gyarados",
           id: 130,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
           types: [
             {
               name: "water",
@@ -129,6 +119,6 @@ export default {
 
 <style scoped>
 .section-padding {
-  padding: 15px 0;
+  padding: 15px;
 }
 </style>
