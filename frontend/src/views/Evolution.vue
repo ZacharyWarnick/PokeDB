@@ -14,14 +14,34 @@
           >
             <b-card style="margin-top: 10px;">
               <SpriteBasic
-                v-bind:name="basepokemon[$route.params.name].first.name"
+                v-bind:name="basepokemon[$route.params.name].first.display_name"
                 v-bind:id="basepokemon[$route.params.name].first.name.id"
                 v-bind:types="basepokemon[$route.params.name].first.name.types"
               />
               <router-link
                 v-bind:to="'/pokemon/' + [$route.params.name]"
                 class="btn btn-outline-dark"
-                >Evolution Chain</router-link
+                >First Pokémon</router-link
+              >
+            </b-card>
+          </b-col>
+          <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+            v-bind:key="basepokemon[$route.params.name].first.name.id"
+          >
+            <b-card style="margin-top: 10px;">
+              <SpriteBasic
+                v-bind:name="basepokemon[$route.params.name].second.display_name"
+                v-bind:id="basepokemon[$route.params.name].second.name.id"
+                v-bind:types="basepokemon[$route.params.name].second.name.types"
+              />
+              <router-link
+                v-bind:to="'/pokemon/' + basepokemon[$route.params.name].second.name"
+                class="btn btn-outline-dark"
+                >Second Pokémon</router-link
               >
             </b-card>
           </b-col>
@@ -47,6 +67,7 @@ export default {
         ekans: {
             first: {
               name: "ekans",
+              display_name: "Ekans",
               id: 23,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
@@ -59,6 +80,7 @@ export default {
             },
             second: {
               name: "arbok",
+              display_name: "Arbok",
               id: 24,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
@@ -74,6 +96,7 @@ export default {
         sandshrew: {
             first:{
               name: "sandshrew",
+              display_name: "Sandshrew",
               id: 27,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
@@ -86,6 +109,7 @@ export default {
             },
             second:{
               name: "sandslash",
+              display_name: "Sandslash",
               id: 28,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
@@ -101,6 +125,7 @@ export default {
         magikarp: {
             first: {
               name: "magikarp",
+              display_name: "Magikarp",
               id: 129,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
@@ -113,6 +138,7 @@ export default {
             },
             second: {
               name: "gyarados",
+              display_name: "Gyarados",
               id: 130,
               sprite:
                 "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
