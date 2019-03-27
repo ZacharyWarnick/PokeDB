@@ -45,55 +45,37 @@ export default {
     SpriteBasic
   },
   data() {
-    const all_types = {
-      poison: {
-        name: "poison",
-        badge_image: require("../assets/badge-poison.png")
-      },
-      ground: {
-        name: "ground",
-        badge_image: require("../assets/badge-ground.png")
-      },
-      water: {
-        name: "water",
-        badge_image: require("../assets/badge-water.png")
-      },
-      flying: {
-        name: "flying",
-        badge_image: require("../assets/badge-flying.png")
-      }
-    };
     return {
       pokemon: [
         {
           name: "ekans",
           id: 23,
-          types: [all_types["poison"]]
+          types: [this.$types["poison"]]
         },
         {
           name: "arbok",
           id: 24,
-          types: [all_types["poison"]]
+          types: [this.$types["poison"]]
         },
         {
           name: "sandshrew",
           id: 27,
-          types: [all_types["ground"]]
+          types: [this.$types["ground"]]
         },
         {
           name: "sandslash",
           id: 28,
-          types: [all_types["ground"]]
+          types: [this.$types["ground"]]
         },
         {
           name: "magikarp",
           id: 129,
-          types: [all_types["water"]]
+          types: [this.$types["water"]]
         },
         {
           name: "gyarados",
           id: 130,
-          types: [all_types["water"], all_types["flying"]]
+          types: [this.$types["water"], this.$types["flying"]]
         }
       ]
     };
