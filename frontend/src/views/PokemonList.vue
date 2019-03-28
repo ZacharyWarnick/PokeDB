@@ -1,9 +1,11 @@
 <template>
   <div>
     <Navbar />
-    <b-jumbotron header="Pokémon" />
-    <section class="section-padding">
-      <b-container class="justify-content-center">
+    <b-container class="section-padding">
+      <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
+    </b-container>
+    <section>
+      <b-container>
         <b-row>
           <b-col
             cols="12"
@@ -13,7 +15,7 @@
             v-for="p in pokemon"
             v-bind:key="p.id"
           >
-            <b-card style="margin-top: 10px;">
+            <b-card class="row-card shadow-sm">
               <SpriteBasic
                 v-bind:name="p.name"
                 v-bind:id="p.id"
@@ -48,78 +50,32 @@ export default {
         {
           name: "ekans",
           id: 23,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-          types: [
-            {
-              name: "poison",
-              badge_image: require("../assets/badge-poison.png")
-            }
-          ]
+          types: [this.$types["poison"]]
         },
         {
           name: "arbok",
           id: 24,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
-          types: [
-            {
-              name: "poison",
-              badge_image: require("../assets/badge-poison.png")
-            }
-          ]
+          types: [this.$types["poison"]]
         },
         {
           name: "sandshrew",
           id: 27,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
-          types: [
-            {
-              name: "ground",
-              badge_image: require("../assets/badge-ground.png")
-            }
-          ]
+          types: [this.$types["ground"]]
         },
         {
           name: "sandslash",
           id: 28,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
-          types: [
-            {
-              name: "ground",
-              badge_image: require("../assets/badge-ground.png")
-            }
-          ]
+          types: [this.$types["ground"]]
         },
         {
           name: "magikarp",
           id: 129,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
-          types: [
-            {
-              name: "water",
-              badge_image: require("../assets/badge-water.png")
-            }
-          ]
+          types: [this.$types["water"]]
         },
         {
           name: "gyarados",
           id: 130,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
-          types: [
-            {
-              name: "water",
-              badge_image: require("../assets/badge-water.png")
-            },
-            {
-              name: "flying",
-              badge_image: require("../assets/badge-flying.png")
-            }
-          ]
+          types: [this.$types["water"], this.$types["flying"]]
         }
       ]
     };
@@ -129,6 +85,10 @@ export default {
 
 <style scoped>
 .section-padding {
-  padding: 15px 0;
+  padding: 15px;
+}
+
+.row-card {
+  margin-bottom: 15px;
 }
 </style>

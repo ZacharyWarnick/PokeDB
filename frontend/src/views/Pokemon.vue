@@ -90,40 +90,18 @@ export default {
     EvolutionOverview
   },
   data() {
-    var all_types = {
-      poison: {
-        id: 4,
-        name: "poison",
-        badge_image: require("../assets/badge-poison.png")
-      },
-      ground: {
-        id: 4,
-        name: "ground",
-        badge_image: require("../assets/badge-ground.png")
-      },
-      water: {
-        id: 4,
-        name: "water",
-        badge_image: require("../assets/badge-water.png")
-      },
-      flying: {
-        id: 4,
-        name: "flying",
-        badge_image: require("../assets/badge-flying.png")
-      }
-    };
     var evolution_info = {
       ekans: {
         species: "ekans",
         first: {
           name: "Ekans",
           id: 23,
-          types: [all_types["poison"]]
+          types: [this.$types["poison"]]
         },
         second: {
           name: "Arbok",
           id: 24,
-          types: [all_types["poison"]]
+          types: [this.$types["poison"]]
         }
       },
       sandshrew: {
@@ -131,12 +109,12 @@ export default {
         first: {
           name: "Sandshrew",
           id: 27,
-          types: [all_types["ground"]]
+          types: [this.$types["ground"]]
         },
         second: {
           name: "Sandslash",
           id: 28,
-          types: [all_types["ground"]]
+          types: [this.$types["ground"]]
         }
       },
       magikarp: {
@@ -144,12 +122,12 @@ export default {
         first: {
           name: "Magikarp",
           id: 129,
-          types: [all_types["water"]]
+          types: [this.$types["water"]]
         },
         second: {
           name: "Gyarados",
           id: 130,
-          types: [all_types["water"], all_types["flying"]]
+          types: [this.$types["water"], this.$types["flying"]]
         }
       }
     };
@@ -161,7 +139,7 @@ export default {
           id: 23,
           sprite:
             "https://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png",
-          types: [all_types["poison"]],
+          types: [this.$types["poison"]],
           flavor_text:
             "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
           stats: {
@@ -179,7 +157,7 @@ export default {
           id: 24,
           sprite:
             "https://cdn.bulbagarden.net/upload/thumb/c/cd/024Arbok.png/250px-024Arbok.png",
-          types: [all_types["poison"]],
+          types: [this.$types["poison"]],
           flavor_text:
             "The latest research has determined that there are over 20 possible arrangements of the patterns on its stomach.",
           stats: {
@@ -196,7 +174,7 @@ export default {
           display_name: "Sandshrew",
           id: 27,
           sprite: "https://cdn.bulbagarden.net/upload/9/9e/027Sandshrew.png",
-          types: [all_types["ground"]],
+          types: [this.$types["ground"]],
           flavor_text:
             "Sandshrew has a very dry hide that is extremely tough. The Pokémon can roll into a ball that repels any attack. At night, it burrows into the desert sand to sleep.",
           stats: {
@@ -214,7 +192,7 @@ export default {
           id: 28,
           sprite:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png",
-          types: [all_types["ground"]],
+          types: [this.$types["ground"]],
           flavor_text:
             "Sandslash can roll up its body as if it were a ball covered with large spikes. In battle, this Pokémon will try to make the foe flinch by jabbing it with its spines. It then leaps at the stunned foe to tear wildly with its sharp claws.",
           stats: {
@@ -232,7 +210,7 @@ export default {
           id: 129,
           sprite:
             "https://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png",
-          types: [all_types["water"]],
+          types: [this.$types["water"]],
           flavor_text:
             "Magikarp is virtually useless in battle as it can only splash around. As a result, it is considered to be weak. However, it is actually a very hardy Pokémon that can survive in any body of water no matter how polluted it is.",
           stats: {
@@ -250,7 +228,7 @@ export default {
           id: 130,
           sprite:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
-          types: [all_types["water"], all_types["flying"]],
+          types: [this.$types["water"], this.$types["flying"]],
           flavor_text:
             "Once Gyarados goes on a rampage, its ferociously violent blood doesn’t calm until it has burned everything down. There are records of this Pokémon’s rampages lasting a whole month.",
           stats: {
