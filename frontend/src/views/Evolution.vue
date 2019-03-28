@@ -20,7 +20,7 @@
                 v-bind:types="p.types"
               />
               <router-link
-                v-bind:to="'/pokemon/' + [$route.params.name]"
+                v-bind:to="'/pokemon/' + $route.params.name"
                 class="btn btn-outline-dark"
                 >{{p.order}} Pokémon</router-link
               >
@@ -51,8 +51,6 @@ export default {
               display_name: "Ekans",
               id: 23,
               order: "First",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
               types: [
                 {
                   name: "poison",
@@ -65,8 +63,6 @@ export default {
               display_name: "Arbok",
               id: 24,
               order: "Second",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
               types: [
                 {
                   name: "poison",
@@ -82,8 +78,6 @@ export default {
               display_name: "Sandshrew",
               id: 27,
               order: "First",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
               types: [
                 {
                   name: "ground",
@@ -96,8 +90,6 @@ export default {
               display_name: "Sandslash",
               id: 28,
               order: "Second",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
               types: [
                 {
                   name: "ground",
@@ -113,8 +105,6 @@ export default {
               display_name: "Magikarp",
               id: 129,
               order: "First",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
               types: [
                 {
                   name: "water",
@@ -127,8 +117,6 @@ export default {
               display_name: "Gyarados",
               id: 130,
               order: "Second",
-              sprite:
-                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
               types: [
                 {
                   name: "water",
