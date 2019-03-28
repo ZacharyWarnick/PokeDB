@@ -2,31 +2,33 @@
   <div class="about">
     <Navbar />
     <b-jumbotron header="About">
-      <p class="lead">
+      <p class="lead text-justify">
         This website develops database (similar to IMDb) has 3 kinds of pages or
-        subjects that form the database.<br />
+        subjects that form the database.
         All 3 pages or subjects are connected and each item in the database
         belongs to 1 type of page or subject and has links to items in the other
-        2 subjects.<br />
+        2 subjects.
         The database for this group will be a Pokémon database. The 3 kinds of
         pages or subjects will be Pokémon, Pokémon Type, and Evolution Chain.
       </p>
     </b-jumbotron>
 
     <section class="text-left section-padding">
-      <h1>Gold Team</h1>
-      <br />
-      <h3>Members:</h3>
+      <b-container>
+        <h1>Gold Team</h1>
+        <br />
+        <h3>Members:</h3>
+      </b-container>
     </section>
 
     <section
-      v-for="person in data"
+      v-for="person in people"
       :key="person.full_name"
       class="section-padding"
     >
-      <b-container fluid>
+      <b-container>
         <b-row>
-          <b-col lg="2" md="3" sm="6" cols="12">
+          <b-col lg="4" md="4" sm="6" cols="12">
             <img class="img-fluid" :src="person.picture" />
           </b-col>
           <b-col class="text-left">
@@ -37,7 +39,7 @@
             <h5>Responsibilites</h5>
             <p>{{ person.responsibilities }}</p>
           </b-col>
-          <b-col lg="2" md="3" sm="3" cols="6" class="text-center my-auto">
+          <b-col lg="2" md="3" sm="4" cols="12" class="text-center my-auto">
             <p>{{ person.commits }} of commits</p>
             <p>{{ person.issues }} of issues</p>
             <p>{{ person.tests }} unit tests</p>
@@ -47,25 +49,36 @@
     </section>
 
     <section class="text-left section-padding">
-      <h3>Repo Information:</h3>
+      <b-container>
+        <h3>Repo Information:</h3>
+      </b-container>
     </section>
 
     <section class="section-padding">
       <b-container>
         <b-row>
           <b-col>
-            <a href="https://gitlab.com/jacoblubecki/cs329e-idb/issues">
-              Gitlab Issue Tracker</a
+            <b-button
+              href="https://gitlab.com/jacoblubecki/cs329e-idb/issues"
+              variant="outline-secondary"
+            >
+              Gitlab Issue Tracker</b-button
             >
           </b-col>
           <b-col>
-            <a href="https://gitlab.com/jacoblubecki/cs329e-idb">
-              Gitlab Repo</a
+            <b-button
+              href="https://gitlab.com/jacoblubecki/cs329e-idb"
+              variant="outline-secondary"
+            >
+              Gitlab Repo</b-button
             >
           </b-col>
           <b-col>
-            <a href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home">
-              Gitlab Technical Report (Wiki)</a
+            <b-button
+              href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home"
+              variant="outline-secondary"
+            >
+              Gitlab Technical Report (Wiki)</b-button
             >
           </b-col>
         </b-row>
@@ -73,83 +86,39 @@
     </section>
 
     <section class="text-left section-padding">
-      <h3>Tools:</h3>
+      <b-container>
+        <h3>Tools:</h3>
+      </b-container>
     </section>
 
     <section class="section-padding">
       <b-container>
         <b-row class="align-items-stretch">
-          <b-col>
+          <b-col
+            class="tool-card"
+            cols="12"
+            sm="6"
+            md="6"
+            lg="3"
+            v-for="tool in tools"
+            :key="tool.name"
+          >
             <b-card class="h-100">
-              <div>
-                <img
-                  class="tool-image"
-                  src="https://vuejs.org/images/logo.png"
-                />
-                <b-card-title class="section-padding">Vue.js</b-card-title>
-                <b-card-text>The Progressive JavaScript Framework</b-card-text>
+              <b-card-body class="h-100 d-flex flex-column">
+                <div class="justify-content-center" :style="tool.img_bg_style">
+                  <img class="tool-image img-fluid" :src="tool.image_url" />
+                </div>
+                <b-card-title class="card-padding">{{
+                  tool.name
+                }}</b-card-title>
+                <b-card-text class="card-padding my-auto">{{ tool.tagline }}</b-card-text>
                 <b-button
-                  href="https://vuejs.org/"
-                  variant="outline-primary-dark"
+                  :href="tool.website"
+                  class="mt-auto"
+                  variant="outline-secondary"
                   >Website</b-button
                 >
-              </div>
-            </b-card>
-          </b-col>
-          <b-col>
-            <b-card class="h-100">
-              <div style="background-color: #563d7c">
-                <img
-                  class="svg tool-image"
-                  src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-outline.svg"
-                />
-              </div>
-              <b-card-title class="section-padding">Bootstrap</b-card-title>
-              <b-card-text
-                >The most popular HTML, CSS, and JS library in the
-                world.</b-card-text
-              >
-              <b-button
-                href="https://getbootstrap.com"
-                variant="outline-primary-dark"
-                >Website</b-button
-              >
-            </b-card>
-          </b-col>
-          <b-col>
-            <b-card class="h-100">
-              <div>
-                <img
-                  class="svg tool-image"
-                  src="http://flask.pocoo.org/docs/0.12/_static/flask.png"
-                />
-              </div>
-              <b-card-title class="section-padding">Flask</b-card-title>
-              <b-card-text>Web development, one drop at a time.</b-card-text>
-              <b-button
-                href="http://flask.pocoo.org/"
-                variant="outline-primary-dark"
-                >Website</b-button
-              >
-            </b-card>
-          </b-col>
-          <b-col>
-            <b-card class="h-100">
-              <div>
-                <img
-                  class="tool-image"
-                  src="https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png"
-                />
-              </div>
-              <b-card-title class="section-padding"
-                >Google Cloud Platform</b-card-title
-              >
-              <b-card-text>See what's possible with Google Cloud.</b-card-text>
-              <b-button
-                href="https://getbootstrap.com"
-                variant="outline-primary-dark"
-                >Website</b-button
-              >
+              </b-card-body>
             </b-card>
           </b-col>
         </b-row>
@@ -168,7 +137,7 @@ export default {
   },
   data() {
     return {
-      data: [
+      people: [
         {
           full_name: "Ian Chang",
           picture: require("../assets/team/ian.jpg"),
@@ -230,6 +199,35 @@ export default {
           issues: 0,
           tests: 0
         }
+      ],
+      tools: [
+        {
+          name: "Vue.js",
+          tagline: "The Progressive JavaScript Framework",
+          website: "https://vuejs.org",
+          image_url: "https://vuejs.org/images/logo.png"
+        },
+        {
+          name: "Bootstrap",
+          tagline: "The most popular HTML, CSS, and JS library in the world.",
+          website: "https://getbootstrap.com",
+          image_url:
+            "https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-outline.svg",
+          img_bg_style: "background-color: #563d7c"
+        },
+        {
+          name: "Flask",
+          tagline: "Web development, one drop at a time.",
+          website: "http://flask.pocoo.org/",
+          image_url: "http://flask.pocoo.org/docs/0.12/_static/flask.png"
+        },
+        {
+          name: "Google Cloud Platform",
+          tagline: "See what's possible with Google Cloud.",
+          website: "https://cloud.google.com/",
+          image_url:
+            "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png"
+        }
       ]
     };
   }
@@ -238,13 +236,21 @@ export default {
 
 <style scoped>
 .section-padding {
-  padding: 30px;
+  padding: 30px 0;
+}
+
+.card-padding {
+  padding: 10px 0;
 }
 
 .tool-image {
-  margin: 16px;
-  width: 144px;
-  height: 144px;
+  padding: 25px;
+  max-height: 144px;
+}
+
+.tool-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
 
