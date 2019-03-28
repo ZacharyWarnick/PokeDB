@@ -1,0 +1,795 @@
+commit 6c80bcde36b13af31772f81810cf7298f2cdbb33
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 21:59:17 2019 -0500
+
+    Add a small text fix in the about page
+
+commit c878cc39ea40d3d0cfbccbccc842e9148cef835c
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 21:55:20 2019 -0500
+
+    Make final changes for part 1 submission
+
+commit aa51dae38cf60522654c41f540f4ff831f6ee2e3
+Merge: db62142 a1469f5
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Thu Mar 28 02:52:33 2019 +0000
+
+    Merge branch 'splash-page-update' into 'develop'
+    
+    Splash page update
+    
+    See merge request jacoblubecki/cs329e-idb!18
+
+commit a1469f5842e8ab06865b24b60e34743404efd49e
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Wed Mar 27 21:49:15 2019 -0500
+
+    update style tags
+
+commit 417938ca8b253ca894262f7dd7c4db188e67cd4c
+Merge: 3c7a114 db62142
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Wed Mar 27 21:47:11 2019 -0500
+
+    Merge branch 'develop' into splash-page-update
+
+commit 3c7a114513fc04660afc00ca1a041e82e41660fb
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Wed Mar 27 21:42:53 2019 -0500
+
+    update margins
+
+commit db62142ebf0f1455ad3a1cc0938801a48df96df4
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 21:39:39 2019 -0500
+
+    Fix navigation bugs and cleanup code
+
+commit afad96dc2b4e4a09f2e192cbf3216be32b2ae022
+Merge: 69dd968 c6d903d
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Thu Mar 28 02:33:47 2019 +0000
+
+    Merge branch '11-evolution-view' into 'develop'
+    
+    Resolve "Setup evolution view"
+    
+    See merge request jacoblubecki/cs329e-idb!17
+
+commit 69c3833dd0c5d68f02cbf0ae05697c06b8bd6791
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Wed Mar 27 21:19:08 2019 -0500
+
+    Add background image and styling updates
+
+commit c6d903dab0793102f1b0fd5f2bc40fa0ac689894
+Author: tchinn <tchinn425@gmail.com>
+Date:   Wed Mar 27 21:04:27 2019 -0500
+
+    Remove unsused sprite links
+
+commit 6a920d89eca07bd31209ef28f07459f22a97ea2a
+Merge: d75fb92 69dd968
+Author: tchinn <tchinn425@gmail.com>
+Date:   Wed Mar 27 20:40:34 2019 -0500
+
+    Fix merge conflixt
+
+commit 69dd968cf38d3136bdbe3410d20aa3be9c5cfc73
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 19:09:23 2019 -0500
+
+    Remove unused HTML
+
+commit da008dd5c5ec838f2d6783ec5368aca9ac1632c5
+Merge: 72dfe8f e239f2b
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Thu Mar 28 00:04:18 2019 +0000
+
+    Merge branch '15-about-update' into 'develop'
+    
+    Resolve "Update About Page"
+    
+    See merge request jacoblubecki/cs329e-idb!14
+
+commit e239f2be712cfc5886a1faa1a303b446191348e9
+Merge: 9e76357 72dfe8f
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 19:03:05 2019 -0500
+
+    Merge branch 'develop' into 15-about-update
+
+commit 72dfe8f182baf5d56728440c8d699c2c677a81ed
+Merge: a2ce899 163e896
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Thu Mar 28 00:02:34 2019 +0000
+
+    Merge branch '16-add-data' into 'develop'
+    
+    Resolve "Add data to type pages"
+    
+    See merge request jacoblubecki/cs329e-idb!15
+
+commit 9e763574ed9a38c2aa5322f5efbbd57ef78f5c2a
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 19:01:31 2019 -0500
+
+    Refactor about page
+
+commit d75fb921c18a5229c8b93d38132849b9f824f78a
+Author: tchinn <tchinn425@gmail.com>
+Date:   Wed Mar 27 18:21:33 2019 -0500
+
+    Fix sprites in evolution.vue
+
+commit 163e896b0ec7b83dd6a1b2238501d26fef375035
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 17:48:16 2019 -0500
+
+    Update image resources
+
+commit b9718f3f271eba03f1fa2682304b34751c6b94f2
+Author: tchinn <tchinn425@gmail.com>
+Date:   Wed Mar 27 17:27:24 2019 -0500
+
+    Fix pokemon type badges in Evolution.vue
+
+commit 350a8d88eb28f79e023731d168584c4859a2d2d0
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 17:20:45 2019 -0500
+
+    Refactor simple type data
+
+commit f0ee95446a0df1f33faaf576e86b16e2e9087fbe
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 16:52:38 2019 -0500
+
+    Refactor pokemon listing
+
+commit fec46ee8277552058a857d105c5da2267d23c6f6
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 27 13:57:41 2019 -0500
+
+    Make the UI more consistent
+
+commit 8ca44689cd89e7b11375bb0f547f716fdc9af5a2
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 22:31:29 2019 -0500
+
+    Cleanup types pages
+
+commit a1d118db8bf7b95846c4c1d837ffefe06f222dde
+Author: tchinn <tchinn425@gmail.com>
+Date:   Tue Mar 26 21:50:15 2019 -0500
+
+    Update evolution.vue to display pokemon
+
+commit c39c37107e0469008549b1524b34c9e9297de343
+Author: tchinn <tchinn425@gmail.com>
+Date:   Tue Mar 26 21:36:17 2019 -0500
+
+    Update evolutionlist with data
+
+commit 9d596d1daee6f4a08549023f233b7416e62c7675
+Merge: f455f7e a2ce899
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 21:16:58 2019 -0500
+
+    Merge branch 'develop' into 16-add-data
+
+commit 621650f71dc1fcf293d1790982e1076f135c90e8
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 21:15:21 2019 -0500
+
+    Cleanup about page
+
+commit 58dd7cd5a7e3cadd843f8c099c355df7d6e14672
+Merge: 18011aa a2ce899
+Author: tchinn <tchinn425@gmail.com>
+Date:   Tue Mar 26 19:10:17 2019 -0500
+
+    Merge branch 'develop' of https://gitlab.com/jacoblubecki/cs329e-idb into 11-evolution-view
+
+commit 7d255ea860cae6cf687ccdc62b216c95c7219a04
+Merge: cd875a7 a2ce899
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 17:23:49 2019 -0500
+
+    Merge branch 'develop' into 15-about-update
+
+commit a2ce8994658f61cecb974c734251ba28104d91a6
+Merge: 4b49767 8d08d74
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Tue Mar 26 22:14:39 2019 +0000
+
+    Merge branch '17-poke-data' into 'develop'
+    
+    Resolve "Add data to pokemon pages"
+    
+    See merge request jacoblubecki/cs329e-idb!16
+
+commit 8d08d745d44c984f7279367cb60739c5693292f4
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 17:13:25 2019 -0500
+
+    Add jumbotron for pokemon listing page
+
+commit cd875a7929cb7f9a59eacc7b6d84fa7590c9c795
+Author: enchang <ianchang@utexas.edu>
+Date:   Tue Mar 26 16:42:38 2019 -0500
+
+    Fix typos in About.vue
+
+commit 15b1d75dddbbd313aad07cd1f7acc34a3556fbba
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 16:24:25 2019 -0500
+
+    Add linking to evolution pages
+
+commit f455f7e1e0fa6d56e9198dcd35b5bc0c01f140ac
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Tue Mar 26 15:21:00 2019 -0500
+
+    modified router-link to tag
+
+commit 18011aa18f0d6ea5e475223c61af2f4675d791b8
+Author: tchinn <tchinn425@gmail.com>
+Date:   Tue Mar 26 15:08:15 2019 -0500
+
+    Update anchor tags
+
+commit 085a1a29056c819893ea62d687c9208535fd4835
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Tue Mar 26 14:47:09 2019 -0500
+
+    Make types clickable and add pokemon details
+
+commit dc227f5a7f605f31987eafaff526e167b345670f
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Tue Mar 26 12:17:15 2019 -0500
+
+    Removed extra type cards
+
+commit 852971fbd238436ff91d09be3fb6682e98782008
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Tue Mar 26 02:49:14 2019 -0500
+
+    Added thumbnail and title to type cards
+
+commit 5c62cf61ff71bf32ae8cf18aaa39e3494d67d2ff
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 22:21:02 2019 -0500
+
+    Add data for Ekans
+
+commit dac232909110ca8c6fd0d866ca3e532cb662ae10
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 22:16:29 2019 -0500
+
+    Add data for Arbok
+
+commit 60b05ce94e40420e98285c3dd05eb32377f0f616
+Merge: 042ec7f 4b49767
+Author: enchang <ianchang@utexas.edu>
+Date:   Mon Mar 25 22:01:27 2019 -0500
+
+    Fix About.vue
+
+commit 042ec7f51d661b090502c4ef86d9f04d7c8e3c64
+Author: enchang <ianchang@utexas.edu>
+Date:   Mon Mar 25 21:18:45 2019 -0500
+
+    Add information for About.vue
+
+commit 6f45191df223b2d7678981c0da2500a1b8cf3206
+Author: tchinn <tchinn425@gmail.com>
+Date:   Mon Mar 25 21:07:44 2019 -0500
+
+    Add Evolution and EvolutionList view files
+
+commit 4b49767dfd8748e9680c1a65599551ad9da76177
+Merge: 3a9ca2e a6697d0
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Tue Mar 26 01:35:21 2019 +0000
+
+    Merge branch '10-poké-view' into 'develop'
+    
+    Resolve "Setup pokémon view"
+    
+    See merge request jacoblubecki/cs329e-idb!9
+
+commit a6697d042723490785dbf63089ee827ef3410c93
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 20:34:58 2019 -0500
+
+    Add required type badges
+
+commit 3ec20ca3db9ad17f3a9eabc612ffae922285af95
+Merge: 2663321 3a9ca2e
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 20:03:51 2019 -0500
+
+    Merge branch 'develop' into 10-poké-view
+
+commit 3a9ca2ee34e77f1994d8579a84d8ceae54f084c0
+Merge: e780b01 b2500a3
+Author: Zachary Warnick <zawarnick1@gmail.com>
+Date:   Tue Mar 26 00:55:37 2019 +0000
+
+    Merge branch '13-types-view' into 'develop'
+    
+    Add types index and type pages to develop
+    
+    See merge request jacoblubecki/cs329e-idb!10
+
+commit 2663321c33f3da9963f517733cc5ba0745b7df6d
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 19:30:33 2019 -0500
+
+    Add pokemon list page and update routing
+
+commit 4b8dc129b3f16cc6e9483b23a8b1f54c3dbce525
+Author: enchang <ianchang@utexas.edu>
+Date:   Mon Mar 25 19:17:22 2019 -0500
+
+    Update About.vue
+
+commit b5d19298c784c3cfcc689b0d81113e13dbadcd8f
+Author: Ian Chang <ian@wireless-10-145-207-79.public.utexas.edu>
+Date:   Mon Mar 25 19:11:48 2019 -0500
+
+    Update About.vue
+
+commit b2500a3e11564be5e7dc687b0e77ad735f39e513
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:53:18 2019 -0500
+
+    Change path heading
+
+commit 6c00d2ec7f306e1742e2a6220d2511f063706ccf
+Merge: 8a354cd 953bdae
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:49:14 2019 -0500
+
+    Merge branch 'develop' into 13-types-view
+
+commit 953bdae0fdde273deb7ff0b47cd770e2c0cf0bee
+Merge: e780b01 aa89a4e
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:48:01 2019 -0500
+
+    Merge remote-tracking branch 'origin' into develop
+
+commit 8a354cd7c982b5026af9405819368925864e8a8a
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:43:16 2019 -0500
+
+    Make basic links work with dynamic naming
+
+commit 11ea7effdeac7d7b88a7003a976db2a16604dd92
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:29:48 2019 -0500
+
+    Add dynamic naming from path
+
+commit b2972513134a122448cd7bd92f323ed7713c4d7e
+Merge: 19bb138 aa89a4e
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 18:03:32 2019 -0500
+
+    Merge branch '13-types-view' of https://gitlab.com/jacoblubecki/cs329e-idb into 13-types-view
+
+commit edd6b9af794a8738c696739e5c83c99fe0a2a47f
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 18:03:15 2019 -0500
+
+    Improve pokemon view
+
+commit c17b42c8347fb0877f1fff17b98c952a61df6415
+Merge: ba2f7f0 e780b01
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 13:38:35 2019 -0500
+
+    Merge branch 'develop' into 10-poké-view
+
+commit ba2f7f01933171b3ca4efbd65cd4000a4d6cf927
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 25 13:38:16 2019 -0500
+
+    Add evolution overview files
+
+commit 19bb13896b832e3762648ae9c16f9b75efbaa5c5
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 05:23:15 2019 -0500
+
+    Add card link functionality and navbar Types link
+
+commit 87003d951a01a9af9a8241c1cbd0d44e37e53bf5
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 05:08:21 2019 -0500
+
+    Add individual type wireframe
+
+commit 69a01cdaba2fb24f6d271e4d48db52770bef3180
+Author: Zack Warnick <zawarnick1@gmail.com>
+Date:   Mon Mar 25 04:00:33 2019 -0500
+
+    Create grid view for type index
+
+commit 9f8b4f46db34fad039d6c90aff94d23ddf991b10
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Mon Mar 25 03:18:35 2019 -0500
+
+    Add routes and sources for types pages
+
+commit 460d4c2f0d2033a0cd0af90b74d1c2f0d18b7583
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 22:49:23 2019 -0500
+
+    Add basic UI for Pokémon view
+
+commit e780b018a5cfc2089da18bc348ecb162cbdeb1ec
+Merge: 21bc513 3e63291
+Author: Tyler Chinn <tchinn425@gmail.com>
+Date:   Mon Mar 25 02:41:42 2019 +0000
+
+    Merge branch '12-update-dict' into 'develop'
+    
+    Add sprite urls to dictionary in data.py
+    
+    See merge request jacoblubecki/cs329e-idb!8
+
+commit 3e632913490b5dd92b087db8fdd7c2454f633ab2
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 24 21:37:15 2019 -0500
+
+    Add sprite urls to dictionary in data.py
+
+commit 21bc51395144cfe1ab2d3251098484a034e232c0
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 19:55:21 2019 -0500
+
+    Fix syntax issues
+
+commit 7551a15c219e57d5566b53edfdb4673f401a2eb8
+Merge: 9b2304b e4cdd37
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Mon Mar 25 00:50:59 2019 +0000
+
+    Merge branch '8-setup-vue' into 'develop'
+    
+    Resolve "Setup Vue.js for front-end"
+    
+    See merge request jacoblubecki/cs329e-idb!7
+
+commit e4cdd3797139d470241aed0e195e9f6baba2228c
+Merge: 5aea2bb 9b2304b
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 19:43:56 2019 -0500
+
+    Merge branch 'develop' into 8-setup-vue
+
+commit 9b2304b6bdc81c1c5034fbbc8a2964d9e74acaa8
+Merge: 3400a0c f91aa24
+Author: Tyler Chinn <tchinn425@gmail.com>
+Date:   Mon Mar 25 00:43:12 2019 +0000
+
+    Merge branch '9-sample-data' into 'develop'
+    
+    Resolve "Gather Sample Data"
+    
+    See merge request jacoblubecki/cs329e-idb!6
+
+commit f91aa241e185da8ed48e15897b96c3fd6b17cc1c
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 24 19:39:25 2019 -0500
+
+    Fix quotation formatting and id values
+
+commit 5aea2bb3bdd7103ec48153cf8ed7bb8fe1658ce2
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 19:12:06 2019 -0500
+
+    Revert restructuring from previous commit
+
+commit 9481aa7c89362f075d91147bb8dc1e203abe6ce7
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 18:57:13 2019 -0500
+
+    Reorganize files for App Engine deployment
+
+commit 83aca87f0e96311e427208863823d07655efd0df
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 24 18:40:59 2019 -0500
+
+    Update dictionaries in data.py
+
+commit cefa2cbc0fd6589618a9b29747f69fa1948be865
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 18:28:53 2019 -0500
+
+    Add working npm build config
+
+commit 74121cb4811dbf2ce29c5a922e1091cbfd4ec5c6
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Sun Mar 24 16:24:32 2019 -0500
+
+    Added sample data file
+
+commit 58f65c2498eea25783feb9c4071ef93a23f28abf
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 13:53:42 2019 -0500
+
+    Fix issues with collapsed navigation bar
+
+commit c6a23387cc52b3a735db5f7c868b63d1125b9731
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sun Mar 24 13:13:25 2019 -0500
+
+    Fix lint formatting issues
+
+commit 6daa324e4d1e32c7e66dcd872fae9d8d9a59ecaf
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 22:44:56 2019 -0500
+
+    Finish initial setup of Vue.js
+
+commit aa89a4e8b7737032d1863f8e8f25bde761408486
+Merge: e0f2fad 3400a0c
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Sun Mar 24 01:11:30 2019 +0000
+
+    Merge branch 'develop' into 'master'
+    
+    Update master with all initial code setup
+    
+    See merge request jacoblubecki/cs329e-idb!5
+
+commit 04a32e2e8add8def9e1ea0fe353df7030de4248e
+Merge: 2d290a5 3400a0c
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 20:09:42 2019 -0500
+
+    Merge branch 'develop' into 8-setup-vue
+
+commit 3400a0cca7169c890fe8575a309d78b5b0b81adf
+Merge: b507302 8547c3a
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Sun Mar 24 01:09:14 2019 +0000
+
+    Merge branch '4-basic-html' into 'develop'
+    
+    Resolve "Create basic website pages"
+    
+    See merge request jacoblubecki/cs329e-idb!4
+
+commit 8547c3ad0d802885c62c05e9250164cdadd090f8
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Sat Mar 23 19:59:00 2019 -0500
+
+    Removed out of place character
+
+commit 506aec2b1601fb5b0cb475e6c1a41fa00141c120
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 19:32:35 2019 -0500
+
+    Add temporary flask HTML routing
+
+commit 2d290a5f9daadf2156be5861d455fbc988cc4681
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 19:18:46 2019 -0500
+
+    Prepare environment for Vue.js development
+
+commit df08afe31831321bb2bf6fdf1d5ff1049527307a
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 18:40:47 2019 -0500
+
+    Fix mislabeled div tag
+
+commit 2af0cd849df65c3e011b5ee7bb4fb5337cd328d4
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Sat Mar 23 18:22:19 2019 -0500
+
+    Standardize HTML formatting and tweak CSS
+
+commit ce2d9a1eae9c533f03d35c107470d4cb2549032b
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Sat Mar 23 16:22:45 2019 -0500
+
+    Added template for individual view
+
+commit 92fc11859a2bd4d5668da2e871aa0932748295f2
+Author: Guillermo Gallegos <guillermogallegos@utexas.edu>
+Date:   Sat Mar 23 11:32:00 2019 -0500
+
+    added card layout for entity templates
+
+commit 0fac62d92ecf06bfd6efbb44d17598894e16f997
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Fri Mar 22 20:44:48 2019 -0500
+
+    Fix bugs in makefile
+
+commit d2190360e3a1478a0532f5a46ce2969dc2849128
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Fri Mar 22 18:52:32 2019 -0500
+
+    Cleanup comments and fix some conventions
+
+commit 9b9b2f19ce5c298190f0f050caf6c8556c5f8c77
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Fri Mar 22 18:38:47 2019 -0500
+
+    Fix environment dependency issues
+
+commit 7937155fbcac205f10abf2be99c0ca4dcf066ba4
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Fri Mar 22 16:49:58 2019 -0500
+
+    update to-do
+
+commit 17c3d7e3ae4da2379bfb90c0cff51fcc50cf6ed7
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Fri Mar 22 16:46:27 2019 -0500
+
+    add html comments and to-dos
+
+commit 2335ade301de290bde7e8228aedddf8244e71f06
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Fri Mar 22 16:40:39 2019 -0500
+
+    delete obsolete file: index.html; update __init__.py to reflect change
+
+commit 858305f10d211fc5640bedb352c63073dc0243ec
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Fri Mar 22 16:40:28 2019 -0500
+
+    delete obsolete file: index.html; update __init__.py to reflect change
+
+commit b519254cdbf77487063f2dd291c44778defe725b
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Fri Mar 22 16:38:25 2019 -0500
+
+    add static navbar and layout templates for flask
+
+commit 6d504a74aa9a36094871a64bdb893757af04f54e
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Thu Mar 21 00:07:08 2019 -0500
+
+    add one html page and one route
+
+commit b507302e786ed18823e0aa3bd57eaab0316c2c50
+Merge: 41f4239 6a62125
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Wed Mar 20 16:48:29 2019 +0000
+
+    Merge branch '7-readme' into 'develop'
+    
+    Resolve "Update README"
+    
+    See merge request jacoblubecki/cs329e-idb!3
+
+commit 6a62125fb33aeaea5600a179f30187bf1dcc7ac5
+Merge: 95b70d2 41f4239
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 20 11:46:43 2019 -0500
+
+    Merge branch 'develop' into 7-readme
+
+commit 41f4239e608b181c39395d8ec233ef40943823bd
+Merge: 8fb2838 22ed5a2
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Wed Mar 20 16:45:46 2019 +0000
+
+    Merge branch '2-contrib-rules' into 'develop'
+    
+    Resolve "Create contributing guidelines"
+    
+    See merge request jacoblubecki/cs329e-idb!2
+
+commit 95b70d2be664b84234be60ef13fdb1d0cc1052db
+Merge: b60663b 55a92fe
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 20 11:43:11 2019 -0500
+
+    Cleanup README after merge
+
+commit 22ed5a2ae653750bf40069c602989f87514fa474
+Merge: b0463b7 8fb2838
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 20 11:37:09 2019 -0500
+
+    Merge branch 'develop' into 2-contrib-rules
+
+commit 8fb2838602b55c655f5a2c1d766fd215d3b14d78
+Author: ZackerWins <zawarnick1@gmail.com>
+Date:   Tue Mar 19 17:35:08 2019 -0500
+
+    basic init function that serves a flask template
+
+commit 55a92feff5bb12e54e73f1ccc222a1bdf54f18e1
+Author: tchinn <tchinn425@gmail.com>
+Date:   Mon Mar 18 16:29:47 2019 -0500
+
+    Fix whitespace in README.MD
+
+commit 4368bc7a70c3224efc73136605b3c7a9658ffc73
+Merge: 42e77ae f57853f
+Author: tchinn <tchinn425@gmail.com>
+Date:   Mon Mar 18 16:22:24 2019 -0500
+
+    Merge branch '7-readme' of https://gitlab.com/jacoblubecki/cs329e-idb into 7-readme
+
+commit 42e77ae219365b30b696df71ab9e97595bda33da
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 17 18:56:39 2019 -0500
+
+    Update README
+
+commit b60663b97e7a31dea663d03209bc8b8b1c2fdfb0
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 17 18:56:39 2019 -0500
+
+    Update README
+
+commit b0463b79b476349567007fab710b46149026e4d0
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 18 13:54:20 2019 -0500
+
+    Create the environment file
+
+commit f57853fdd71d5a4e119e8b666a99a331b8b8b014
+Author: tchinn <tchinn425@gmail.com>
+Date:   Sun Mar 17 18:56:39 2019 -0500
+
+    Update README
+
+commit c8f99b17c63a99c5804b73f0a48750a252a8c601
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Wed Mar 13 15:11:51 2019 -0500
+
+    Add contribution guidelines
+
+commit 4b749dd0f8295c1449b24102dabd56e67d730974
+Merge: e0f2fad c5e3305
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Wed Mar 13 01:43:49 2019 +0000
+
+    Merge branch '1-issue-templates' into 'develop'
+    
+    Setup issue templates
+    
+    See merge request jacoblubecki/cs329e-idb!1
+
+commit c5e33053185bf49b54caa47161d558bdab18d0dc
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Wed Mar 13 01:43:49 2019 +0000
+
+    Setup issue templates
+
+commit e0f2fad3da0239ac430ace7c33f59708c744f899
+Merge: 5657bf3 e1b3c2c
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 11 15:23:50 2019 -0500
+
+    Fix typo in Feature issue template
+
+commit 5657bf378241ae85a9c5e952d7711454529ad2f5
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 11 15:20:02 2019 -0500
+
+    Add simple issue templates and .gitgnore
+
+commit e1b3c2c633f7e91869451596e1aadc72388d77f3
+Author: Jacob Lubecki <jacoblubecki@gmail.com>
+Date:   Mon Mar 11 15:20:02 2019 -0500
+
+    Add simple issue templates and .gitgnore
+
+commit 389a86f590fc6a73b71f2c2f67b47d53b6b9ff51
+Author: Jacob Lubecki <jacoblubecki@utexas.edu>
+Date:   Mon Mar 4 20:38:06 2019 +0000
+
+    Initial commit

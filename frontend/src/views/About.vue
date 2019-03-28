@@ -40,8 +40,8 @@
             <p>{{ person.responsibilities }}</p>
           </b-col>
           <b-col lg="2" md="3" sm="4" cols="12" class="text-center my-auto">
-            <p>{{ person.commits }} of commits</p>
-            <p>{{ person.issues }} of issues</p>
+            <p>{{ person.commits }} commits</p>
+            <p>{{ person.issues }} issues</p>
             <p>{{ person.tests }} unit tests</p>
           </b-col>
         </b-row>
