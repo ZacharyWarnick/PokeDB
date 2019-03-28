@@ -49,40 +49,19 @@ export default {
           name: "ekans",
           display_name:"Ekans",
           id: 23,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-          types: [
-            {
-              name: "poison",
-              badge_image: require("../assets/badge-poison.png")
-            }
-          ]
+          types: [this.$types["poison"]]
         },
         {
           name: "sandshrew",
           display_name: "Sandshrew",
           id: 27,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
-          types: [
-            {
-              name: "ground",
-              badge_image: require("../assets/badge-ground.png")
-            }
-          ]
+          types: [this.$types["ground"]]
         },
         {
           name: "magikarp",
           display_name: "Magikarp",
           id: 129,
-          sprite:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
-          types: [
-            {
-              name: "water",
-              badge_image: require("../assets/badge-water.png")
-            }
-          ]
+          types: [this.$types["water"]]
         },
       ]
     };

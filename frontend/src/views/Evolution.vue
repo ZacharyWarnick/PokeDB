@@ -1,7 +1,10 @@
 <template>
-  <div class = "evolution">
+  <div class="evolution">
     <Navbar />
-    <b-jumbotron header="Evolution Chain" lead="First Pokémon in evolution chain is displayed." />
+    <b-jumbotron
+      header="Evolution Chain"
+      lead="The first Pokémon in an evolution chain defines the species."
+    />
     <section class="section-padding">
       <b-container class="justify-content-center">
         <b-row>
@@ -20,9 +23,9 @@
                 v-bind:types="p.types"
               />
               <router-link
-                v-bind:to="'/pokemon/' + $route.params.name"
+                v-bind:to="'/pokemon/' + p.name"
                 class="btn btn-outline-dark"
-                >{{p.order}} Pokémon</router-link
+                >{{ p.order }} Pokémon</router-link
               >
             </b-card>
           </b-col>
@@ -46,88 +49,52 @@ export default {
     return {
       basepokemon: {
         ekans: {
-            first: {
-              name: "ekans",
-              display_name: "Ekans",
-              id: 23,
-              order: "First",
-              types: [
-                {
-                  name: "poison",
-                  badge_image: require("../assets/badge-poison.png")
-                }
-              ]
-            },
-            second: {
-              name: "arbok",
-              display_name: "Arbok",
-              id: 24,
-              order: "Second",
-              types: [
-                {
-                  name: "poison",
-                  badge_image: require("../assets/badge-poison.png")
-                }
-              ]
-            }
-
+          first: {
+            name: "ekans",
+            display_name: "Ekans",
+            id: 23,
+            order: "First",
+            types: [this.$types["poison"]]
+          },
+          second: {
+            name: "arbok",
+            display_name: "Arbok",
+            id: 24,
+            order: "Second",
+            types: [this.$types["poison"]]
+          }
         },
         sandshrew: {
-            first:{
-              name: "sandshrew",
-              display_name: "Sandshrew",
-              id: 27,
-              order: "First",
-              types: [
-                {
-                  name: "ground",
-                  badge_image: require("../assets/badge-ground.png")
-                }
-              ]
-            },
-            second:{
-              name: "sandslash",
-              display_name: "Sandslash",
-              id: 28,
-              order: "Second",
-              types: [
-                {
-                  name: "ground",
-                  badge_image: require("../assets/badge-ground.png")
-                }
-              ]
-            }
-
+          first: {
+            name: "sandshrew",
+            display_name: "Sandshrew",
+            id: 27,
+            order: "First",
+            types: [this.$types["ground"]]
+          },
+          second: {
+            name: "sandslash",
+            display_name: "Sandslash",
+            id: 28,
+            order: "Second",
+            types: [this.$types["ground"]]
+          }
         },
         magikarp: {
-            first: {
-              name: "magikarp",
-              display_name: "Magikarp",
-              id: 129,
-              order: "First",
-              types: [
-                {
-                  name: "water",
-                  badge_image: require("../assets/badge-water.png")
-                }
-              ]
-            },
-            second: {
-              name: "gyarados",
-              display_name: "Gyarados",
-              id: 130,
-              order: "Second",
-              types: [
-                {
-                  name: "water",
-                  badge_image: require("../assets/badge-water.png")
-                },
-                {
-                  name: "flying",
-                  badge_image: require("../assets/badge-flying.png")
-                }
-              ]
-            }
+          first: {
+            name: "magikarp",
+            display_name: "Magikarp",
+            id: 129,
+            order: "First",
+            types: [this.$types["water"]]
+          },
+          second: {
+            name: "gyarados",
+            display_name: "Gyarados",
+            id: 130,
+            order: "Second",
+            types: [this.$types["water"], this.$types["flying"]]
+          }
         }
       }
     };
