@@ -89,9 +89,5 @@ export default {
 
     background-color: rgba(10, 10, 10, .5);
   }
-
-  .template {
-    background-color: aqua
-  }
 </style>
 
