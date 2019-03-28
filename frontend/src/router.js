@@ -36,6 +36,18 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
+      path: "/evolutions",
+      name: "Evolutions",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/EvolutionList.vue")
+    },
+    {
+      path: "/evolutions/:name",
+      name: "Evolution",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Evolution.vue")
+    },
+    {
       path: "/pokemon",
       name: "Pokémon",
       component: PokemonList
