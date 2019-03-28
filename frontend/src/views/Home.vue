@@ -1,14 +1,15 @@
 <template>
   <div class="home">
     <Navbar />
+    <div class="spacer">
+    <div class="bg">
+   
     <div class="container">
       <div class="jumbotron">
-        <h1 class="display-4">This is the first thing you see.</h1>
+        <h1 class="display-4">Welcome to PokéDB</h1>
         <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          This is an indexed database of all things Pokémon. 
+          Click below to find out imformation on the Pokeémon, types, evolution patterns, and so much more!
         </p>
 
         <p class="lead">
@@ -21,25 +22,27 @@
     <div class="container">
       <div class="row">
         <CardItem
-          title="Card 1"
-          msg="Message for card 1."
-          link="/about"
-          link_text="About"
+          title="Pokémon"
+          msg="Learn about the various Pokémon across all the games."
+          link="/pokemon"
+          link_text="Go"
         />
         <CardItem
-          title="Card 2"
-          msg="Message for card 2."
-          link="/about"
-          link_text="About"
+          title="Types"
+          msg="Learn about the 18 standard types, or the 3 hidden and special types."
+          link="/types"
+          link_text="Go"
         />
         <CardItem
-          title="Test Pokémon"
-          msg="Message for card 3."
-          link="/pokemon/magikarp"
-          link_text="Magikarp"
+          title="Evolutions"
+          msg="Learn about the paths each Pokémon takes to evolve."
+          link="/evolutions/"
+          link_text="Go"
         />
       </div>
     </div>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -60,6 +63,31 @@ export default {
 <style scoped>
   .container {
     margin-top: 10px;
+  }
+  .bg {
+
+    padding-top: 8%;
+    padding-bottom: 8%;
+    /* The image used */
+    background-image: url('../assets/home-background.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-content: center;
+  }
+
+  .spacer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+    background-color: rgba(10, 10, 10, .5);
   }
 </style>
 
