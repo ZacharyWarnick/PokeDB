@@ -67,7 +67,7 @@ export default {
   .bg {
 
     padding-top: 8%;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
     /* The image used */
     background-image: url('../assets/home-background.jpg');
 
@@ -81,11 +81,17 @@ export default {
 
     align-content: center;
   }
+
   .spacer {
     padding-top: 5%;
     padding-bottom: 5%;
 
+
     background-color: rgba(10, 10, 10, .5);
+  }
+
+  .template {
+    background-color: aqua
   }
 </style>
 
