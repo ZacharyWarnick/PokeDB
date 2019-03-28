@@ -1,7 +1,7 @@
 name: idb
 dependencies:
   - python=3.6.7
+  - nodejs
   - pip:
       - Flask
-      - flask-bootstrap
       - gunicorn

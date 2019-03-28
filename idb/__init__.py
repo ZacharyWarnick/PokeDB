@@ -4,15 +4,18 @@ Flask basics: http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application
 """
 
 from flask import Flask, render_template
+from pathlib import Path
 
-# App initialization must happen first.
+loader_path = Path(__file__).parent / 'frontend' / 'dist'
+
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
     """Routes to the index page of the site."""
-    return render_template('index.html')
+    return render_template('gen/index.html')
 
 
 @app.route('/data')

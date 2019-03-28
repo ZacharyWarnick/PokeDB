@@ -52,6 +52,8 @@ $(IDB_LOG):
 
 .PHONY: clean
 clean:
+	rm -rf idb/templates/gen
+	rm -rf idb/static/gen
 	rm -f $(IDB_LOG)
 	find . -type f -name '*.pyc' -delete
 	find . -type d -name '__pycache__' -delete
