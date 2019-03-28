@@ -12,11 +12,13 @@
           Click below to find out imformation on the Pokeémon, types, evolution patterns, and so much more!
         </p>
 
+        <!--
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button"
             >Learn more</a
           >
         </p>
+        -->
       </div>
     </div>
     <div class="container">
