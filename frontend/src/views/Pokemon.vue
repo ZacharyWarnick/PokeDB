@@ -1,7 +1,9 @@
 <template>
   <div class="pokemon">
     <Navbar />
-
+    <GHead
+    :title=  all[$route.params.name].display_name
+    />
     <section id="about" class="container section-padding">
       <b-row>
         <b-col lg="6" md="6" sm="12" cols="12">
@@ -82,12 +84,14 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import EvolutionOverview from "@/components/EvolutionOverview.vue";
+import GHead from "@/components/GHead.vue";
 
 export default {
   name: "Pokemon",
   components: {
     Navbar,
-    EvolutionOverview
+    EvolutionOverview,
+    GHead
   },
   data() {
     var evolution_info = {

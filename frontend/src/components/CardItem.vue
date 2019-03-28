@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-4">
-    <div class="card">
+    <div class="card" onClick="color()" id="1">
       <div class="card-body">
         <h5 class="card-title">{{ title }}</h5>
         <p class="card-text">{{ msg }}</p>
@@ -22,4 +22,6 @@ export default {
     link_text: String
   }
 };
+
+
 </script>

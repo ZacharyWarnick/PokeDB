@@ -1,10 +1,9 @@
 <template>
   <div class="home">
     <Navbar />
-    <div class="spacer">
     <div class="bg">
    
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
         <h1 class="display-4">Welcome to PokéDB</h1>
         <p class="lead">
@@ -45,7 +44,6 @@
     </div>
     </div>
   </div>
-  </div>
 </template>
 
 <script>
@@ -66,15 +64,24 @@ export default {
   .container {
     margin-top: 10px;
   }
+  .jumbotron {
+    width: 50%;
+    align-content: center;
+    align-self: center;
+    margin-left: 25%;
+  }
   .bg {
 
-    padding-top: 8%;
-    padding-bottom: 8%;
+
+    padding-top: 15%;
+    padding-bottom: 35%;
     /* The image used */
     background-image: url('../assets/home-background.jpg');
 
+
     /* Full height */
-    height: 100%; 
+    height: 1600px;
+    width: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -83,13 +90,8 @@ export default {
 
     align-content: center;
   }
-
-  .spacer {
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-
-    background-color: rgba(10, 10, 10, .5);
+  .container:hover {
+    opacity: 50%;
   }
 </style>
 

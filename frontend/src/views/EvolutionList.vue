@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="evolutions">
     <Navbar />
-    <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
+    <GHead
+    title="Evolution"
+    msg="First Pokémon in evolution chain is displayed."
+    />
     <section class="section-padding">
       <b-container class="justify-content-center">
         <b-row>
@@ -35,12 +38,14 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
+import GHead from "@/components/GHead.vue";
 
 export default {
   name: "EvolutionList",
   components: {
     Navbar,
-    SpriteBasic
+    SpriteBasic,
+    GHead
   },
   data() {
     return {
@@ -72,5 +77,10 @@ export default {
 <style scoped>
 .section-padding {
   padding: 15px 0;
+}
+
+.Header {
+  background-color: aqua;
+  background-image: url("../assets/home-background.jpg");
 }
 </style>

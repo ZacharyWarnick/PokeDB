@@ -1,14 +1,10 @@
 <template>
   <div class="types">
     <Navbar />
-    <b-container class="section-padding">
-      <b-jumbotron class="text-center" header="Types">
-        <p class="lead text-muted">
-          There are 18 types across all Pokémon games.
-        </p>
-      </b-jumbotron>
-    </b-container>
-
+      <GHead
+      title="Types"
+      msg="There are 18 types across all Pokémon games."
+      />
     <section class="album">
       <div class="container">
         <div class="row">
@@ -97,12 +93,14 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
 import CardItem from "@/components/CardItem.vue";
+import GHead from "@/components/GHead.vue";
 
 export default {
   name: "Types",
   components: {
     Navbar,
-    CardItem
+    CardItem,
+    GHead
   }
 };
 </script>

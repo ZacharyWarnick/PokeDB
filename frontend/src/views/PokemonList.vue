@@ -1,9 +1,10 @@
 <template>
   <div>
     <Navbar />
-    <b-container class="section-padding">
-      <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
-    </b-container>
+    <GHead
+    title="Pokémon"
+    msg="Gotta Catch 'Em All"
+    />
     <section>
       <b-container>
         <b-row>
@@ -37,12 +38,14 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
+import GHead from "@/components/GHead.vue";
 
 export default {
   name: "PokemonList",
   components: {
     Navbar,
-    SpriteBasic
+    SpriteBasic,
+    GHead
   },
   data() {
     return {
