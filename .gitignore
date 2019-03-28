@@ -123,3 +123,4 @@ dmypy.json
 node_modules/
 idb/**/gen
 lib/
+!IDB*.log

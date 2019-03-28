@@ -40,8 +40,8 @@
             <p>{{ person.responsibilities }}</p>
           </b-col>
           <b-col lg="2" md="3" sm="4" cols="12" class="text-center my-auto">
-            <p>{{ person.commits }} of commits</p>
-            <p>{{ person.issues }} of issues</p>
+            <p>{{ person.commits }} commits</p>
+            <p>{{ person.issues }} issues</p>
             <p>{{ person.tests }} unit tests</p>
           </b-col>
         </b-row>
@@ -146,8 +146,8 @@ export default {
             "getting carried and will probably have to drop out."
           ].join(" "),
           responsibilities: "",
-          commits: 3,
-          issues: 1,
+          commits: 5,
+          issues: 3,
           tests: 0
         },
         {
@@ -158,8 +158,8 @@ export default {
             "calling to be a software engineer."
           ].join(" "),
           responsibilities: "",
-          commits: 7,
-          issues: 2,
+          commits: 19,
+          issues: 3,
           tests: 0
         },
         {
@@ -170,7 +170,7 @@ export default {
             "a living, but now he found his passion as a web developer."
           ].join(" "),
           responsibilities: "",
-          commits: 10,
+          commits: 7,
           issues: 2,
           tests: 0
         },
@@ -183,8 +183,8 @@ export default {
             "People say he's like Steve Jobs or Bill Gates, so people have also given him the nickname Bill Jobs."
           ].join(" "),
           responsibilities: "",
-          commits: 40,
-          issues: 9,
+          commits: 68,
+          issues: 5,
           tests: 0
         },
         {
@@ -195,8 +195,8 @@ export default {
             "his amazing coding skills."
           ].join(" "),
           responsibilities: "",
-          commits: 10,
-          issues: 2,
+          commits: 22,
+          issues: 1,
           tests: 0
         }
       ],

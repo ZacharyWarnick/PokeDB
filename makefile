@@ -1,5 +1,5 @@
 APP_NAME = idb
-PROJ_PHASE = 1
+PROJ_PHASE = 2
 
 IDB_LOG := IDB$(PROJ_PHASE).log
 
