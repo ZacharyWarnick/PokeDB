@@ -51,6 +51,7 @@ export default {
   props: {
     title: String,
     msg: String,
+    hue: String
   }
 };
 </script>

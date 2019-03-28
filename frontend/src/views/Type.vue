@@ -1,13 +1,10 @@
 <template>
   <div class="Type" style="padding-left">
     <Navbar />
-    <b-container>
-      <b-jumbotron
-        class="section-padding"
-        :header="capitalize($route.params.name)"
-        header-tag="h2"
+      <GHead
+      :title= [$route.params.name]
+      msg=""
       />
-    </b-container>
     <section class="section-padding">
       <b-container>
         <b-row>
@@ -84,12 +81,14 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
+import GHead from "@/components/GHead.vue";
 
 export default {
   name: "Type",
   components: {
     Navbar,
-    SpriteBasic
+    SpriteBasic,
+    GHead
   },
   methods: {
     capitalize(s) {
