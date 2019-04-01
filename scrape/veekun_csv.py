@@ -25,6 +25,7 @@ _FIELDS = {
     'items': [
         'id', 'identifier', 'category_id'
     ],
+    'location_names': ['location_id', 'local_language_id', 'name', 'subtitle'],
     'locations': ['id', 'region_id', 'identifier'],
     'move_damage_classes': ['id', 'identifier'],
     'moves': ['id', 'identifier'],
@@ -37,9 +38,16 @@ _FIELDS = {
         'relative_physical_stats', 'party_species_id', 'party_type_id',
         'trade_species_id', 'needs_overworld_rain', 'turn_upside_down'
     ],
+    'pokemon_forms': ['id', 'identifier', 'form_identifier', 'pokemon_id'],
+    'pokemon_form_names': [
+        'pokemon_form_id', 'local_language_id', 'form_name', 'pokemon_name'
+    ],
     'pokemon_habitats': ['id', 'identifier'],
     'pokemon_species_flavor_text': [
         'species_id', 'version_id', 'language_id', 'flavor_text'
+    ],
+    'pokemon_species_names': [
+        'pokemon_species_id', 'local_language_id', 'name', 'genus'
     ],
     'pokemon_species': [
         'id', 'identifier', 'generation_id', 'evolves_from_species_id',
@@ -76,16 +84,17 @@ _int = try_cast(int)
 def _bool(x): return bool(int(x))
 
 
-def new_poke():
-    return {'types': [], 'forms': []}
-
-
 def new_type_container():
-    return [0]
+    return {'type1': None, 'type2': None}
 
 
-def form_detail(form_id, modifier):
-    return {'id': form_id, 'modifier': modifier}
+def form_detail(form_id, modifier, name):
+    return {'id': form_id, 'modifier': modifier, 'name': name}
+
+
+def copy_fields(fields, src, dest):
+    for key in fields:
+        dest[key] = src[key]
 
 
 class Session(object):
@@ -99,6 +108,16 @@ class Session(object):
         self.types = {}
         self.forms = {}
         self.base_stats = {}
+        self.stages = {}
+
+        self.name_fields = ['name', 'genus']
+        self.species_fields = [
+            'identifier', 'evolution_chain', 'color', 'since_gen',
+            'evolves_from'
+        ]
+        self.type_fields = ['damage_class', 'identifier']
+        self.poke_type_fields = ['type1', 'type2']
+        self.form_fields = ['label', 'name']
 
     def csv_generator(self, fname, maps=None):
         with open(self.root / '{}.csv'.format(fname), newline='') as f:
@@ -133,27 +152,85 @@ class Session(object):
 
         return out
 
+    def read_species_text(self):
+        species_text = defaultdict(dict)
+        map_desc = {
+            'pokemon_species_id': (int,),
+            'species_id': (int,),
+            'language_id': (int,),
+            'local_language_id': (int,),
+            'version_id': (int,)
+        }
+        for row in self.csv_generator('pokemon_species_names', maps=map_desc):
+            if row['local_language_id'] == _LANG_EN:
+                current_data = species_text[row['pokemon_species_id']]
+                copy_fields(self.name_fields, src=row, dest=current_data)
+
+        map_desc['name'] = ('identifier', str)
+        for row in self.csv_generator('pokemon_species_flavor_text',
+                                      maps=map_desc):
+            if ((row['language_id'] == _LANG_EN)
+                    and (row['version_id'] >= _FLAVOR_VERSION)):
+                poke_id = row['species_id']
+                species_text[poke_id]['flavor_text'] = row['flavor_text']
+
+        return species_text
+
+    def parse_locations(self):
+        location_info = self.simple_map('locations')
+
+        loc_map = {
+            'location_id': ('id', int),
+            'local_language_id': ('lang', int)
+        }
+
+        locations = defaultdict(dict)
+        for row in self.csv_generator('location_names', maps=loc_map):
+            if row['lang'] == _LANG_EN:
+                row_id = row['id']
+                locations[row_id]['name'] = row['name']
+                locations[row_id]['subtitle'] = row['subtitle']
+                locations[row_id]['identifier'] = location_info[row_id]
+
+        self.locations = locations
+
     def parse_types(self):
         damage_classes = self.simple_map('move_damage_classes')
 
-        type_info = {}
-        type_tf = map_id(damage_classes, 'damage_class_id', 'damage_class')
+        def convert_scale(x: str):
+            return int(x) / 100
+
+        type_info = defaultdict(dict)
+        type_tf = {
+            'id': (int,),
+            **map_id(damage_classes, 'damage_class_id', 'damage_class')
+        }
         for row in self.csv_generator('types', maps=type_tf):
-            type_info[int(row['id'])] = {
-                'name': row['identifier'],
-                'damage_class': row['damage_class']
-            }
+            new_type = type_info[row['id']]
+            copy_fields(self.type_fields, src=row, dest=new_type)
 
         self.types = type_info
 
     def parse_pokemon(self):
         colors = self.simple_map('pokemon_colors')
         stat_names = self.simple_map('stats')
+        species_text = self.read_species_text()
+
+        form_tf = {
+            'pokemon_form_id': ('id', int),
+            'local_language_id': ('lang', int),
+            'form_name': ('label', str),
+            'pokemon_name': ('name', str)
+        }
+        form_details = defaultdict(dict)
+        for row in self.csv_generator('pokemon_form_names', maps=form_tf):
+            if row['lang'] == _LANG_EN and (row['label'] or row['name']):
+                new_detail = form_details[row['id']]
+                copy_fields(self.form_fields, src=row, dest=new_detail)
 
         poke_tf = {
             'id': (int,),
             'pokemon_id': (int,),
-            'identifier': ('name', str),
             'species_id': (int,),
             'generation_id': ('since_gen', int),
             'type_id': ('type', int),
@@ -162,6 +239,7 @@ class Session(object):
             'evolves_from_species_id': ('evolves_from', _int),
             'evolution_chain_id': ('evolution_chain', int),
             'is_default': (_bool,),
+            'form_identifier': ('identifier', str),
             **map_id(colors, 'color_id', 'color'),
             **map_id(stat_names, 'stat_id', 'stat')
         }
@@ -169,27 +247,37 @@ class Session(object):
         species = defaultdict(dict)
         for row in self.csv_generator('pokemon_species', maps=poke_tf):
             spec = species[row['id']]
-            spec['name'] = row['name']
-            spec['evolution_chain'] = row['evolution_chain']
-            spec['color'] = row['color']
-            spec['since_gen'] = row['since_gen']
-            spec['evolves_from'] = row['evolves_from']
+            copy_fields(self.species_fields, src=row, dest=spec)
 
         poke_types = defaultdict(new_type_container)
         for row in self.csv_generator('pokemon_types', maps=poke_tf):
             poke_info = poke_types[row['pokemon_id']]
-            slot_idx = row['slot'] - 1
-            if slot_idx > 0:
-                poke_info.append(row['type'])
-            else:
-                poke_info[slot_idx] = row['type']
+            if row['slot'] is not None:
+                key = 'type{}'.format(row['slot'])
+                poke_info[key] = row['type']
 
         stats = defaultdict(dict)
         for row in self.csv_generator('pokemon_stats', maps=poke_tf):
             stats[row['pokemon_id']][row['stat']] = row['base_stat']
 
-        pokemon = defaultdict(new_poke)
-        forms = defaultdict(list)
+        simple_pokemon = {}
+        for row in self.csv_generator('pokemon', maps=poke_tf):
+            simple_pokemon[row['id']] = row['species_id']
+
+        forms = defaultdict(dict)
+        for row in self.csv_generator('pokemon_forms', maps=poke_tf):
+            row_id = row['id']
+            spec_id = row['pokemon_id']
+            identifier = row['identifier']
+            if identifier and (row_id in form_details):
+                detail = form_details[row_id]
+                new_form = forms[row_id]
+                new_form['pokemon_name'] = detail['name']
+                new_form['form_label'] = detail['label']
+                new_form['identifier'] = identifier
+                new_form['pokemon_id'] = simple_pokemon[row['pokemon_id']]
+
+        pokemon = defaultdict(dict)
         for row in self.csv_generator('pokemon', maps=poke_tf):
             spec_id = row['species_id']
             row_id = row['id']
@@ -197,27 +285,17 @@ class Session(object):
             poke = pokemon[spec_id]
             spec = species[spec_id]
 
-            form_name = None
-            if not row['is_default']:
-                split_point = row['name'].index('-') + 1
-                form_name = row['name'][split_point:]
-
-            forms[spec_id] += [form_detail(row_id, form_name)]
-
             if row['is_default']:
-                poke['name'] = spec['name']
-                poke['color'] = spec['color']
-                poke['evolution_chain'] = spec['evolution_chain']
-                poke['since_gen'] = spec['since_gen']
-                poke['types'] = poke_types[row['id']]
-                poke['evolves_from'] = spec['evolves_from']
+                text_info = species_text[spec_id]
+                type_info = poke_types[row_id]
+                copy_fields(self.name_fields, src=text_info, dest=poke)
+                copy_fields(self.species_fields, src=spec, dest=poke)
+                copy_fields(self.poke_type_fields, src=type_info, dest=poke)
+                poke['flavor_text'] = species_text[spec_id]['flavor_text']
 
-        for key in forms.copy():
-            if len(forms[key]) < 2:
-                forms.pop(key)
-            else:
-                for form in forms[key]:
-                    pokemon[key]['forms'] += [form['id']]
+        for key in pokemon:
+            has_alt = key in forms
+            pokemon[key]['has_alt_form'] = has_alt
 
         self.pokemon = pokemon
         self.forms = forms
@@ -230,7 +308,6 @@ class Session(object):
         triggers = self.simple_map('evolution_triggers')
         items = self.simple_map('items')
         genders = self.simple_map('genders')
-        locations = self.simple_map('locations')
         moves = self.simple_map('moves')
         types = self.simple_map('types')
         pokemon = self.simple_map('pokemon_species')
@@ -244,11 +321,10 @@ class Session(object):
             'relative_physical_stats': ('relative_stats', _int),
             'needs_overworld_rain': ('needs_rain', _bool),
             'turn_upside_down': ('needs_inversion', _bool),
-
+            'location_id': ('location', _int),
             **map_id(items, 'trigger_item_id', 'trigger_item'),
             **map_id(triggers, 'evolution_trigger_id', 'trigger'),
             **map_id(genders, 'gender_id', 'gender'),
-            **map_id(locations, 'location_id', 'location'),
             **map_id(items, 'held_item_id', 'held_item'),
             **map_id(moves, 'known_move_id', 'known_move'),
             **map_id(types, 'known_move_type_id', 'known_move_type'),
@@ -270,14 +346,38 @@ class Session(object):
             for key, value in row.items():
                 if key in {'id', 'evolved_species', ''}:
                     continue
-                
+
                 if value in {None, '', False}:
                     continue
-                
+
                 stage[key] = value
-            
-            pprint(stage)
+
             chains[chain_id].append(row['id'])
+
+        self.stages = stages
+        self.evolutions = chains
+
+        for key in self.pokemon:
+            chain_id = self.pokemon[key]['evolution_chain']
+
+            if not self.evolutions.get(chain_id, None):
+                self.pokemon[key]['evolution_chain'] = None
+
+    def debug_print(self):
+        eevee_id = 133
+        eevee_chain = 67
+        eeveelution_stages = [
+            76, 77, 78, 109, 110, 238, 239, 324, 325, 361, 363, 364, 368, 369
+        ]
+        malie_city_cape_id = 798
+        battle_bond_greninja_id = 10218
+
+        pprint(self.pokemon[eevee_id])
+        pprint(self.evolutions[eevee_chain])
+        pprint([self.stages[i] for i in eeveelution_stages])
+        pprint(self.locations[malie_city_cape_id])
+        pprint(self.forms[battle_bond_greninja_id])
+        pprint(self.base_stats[eevee_id])
 
 
 if __name__ == '__main__':
@@ -288,6 +388,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     session = Session(args.dir, '')
+    session.parse_locations()
     session.parse_types()
     session.parse_pokemon()
     session.parse_evolutions()
+
+    session.debug_print()
