@@ -111,3 +111,192 @@ TYPE = {
         'pokemon': ['ekans', 'arbok']
     },
 }
+
+EVOLUTION_CHAINS = {
+    'ekans': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'arbok': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'sandshrew': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'sandslash': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'magikarp': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'gyarados': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    }
+}
+
+EVOLUTION_STEPS = {
+    'ekans': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'arbok': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'sandshrew': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'sandslash': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'magikarp': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    },
+    'gyarados': {
+        'evolves_from': '', #?
+        'trigger_item': '', #?
+        'location': '', #?
+    }
+}
+
+LOCATIONS = {
+    'ekans': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'arbok': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'sandshrew': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'sandslash': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'magikarp': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    },
+    'gyarados': {
+        'identifier': '', #?
+        'name': '', #?
+        'subtitle': '', #?
+    }
+}
+
+FORMS = {
+    'ekans': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 23,
+        'pokemon_name': 'Ekans'
+    },
+    'arbok': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 24,
+        'pokemon_name': 'Arbok'
+    },
+    'sandshrew': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 27,
+        'pokemon_name': 'Sandshrew'
+    },
+    'sandslash': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 28,
+        'pokemon_name': 'Sandslash'
+    },
+    'magikarp': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 129,
+        'pokemon_name': 'Magikarp'
+    },
+    'gyarados': {
+        'form_label': '', #?
+        'identifier': '', #?
+        'pokemon_id': 130,
+        'pokemon_name': 'Gyarados'
+    }
+}
+
+BASE_STATS = {
+    'ekans': {
+        'hp': 35,
+        'atk': 60,
+        'def': 44,
+        'sp_atk': 40,
+        'sp_def': 54,
+        'spd': 55
+    },
+    'arbok': {
+        'hp': 60,
+        'atk': 95,
+        'def': 69,
+        'sp_atk': 65,
+        'sp_def': 79,
+        'spd': 80
+    },
+    'sandshrew': {
+        'hp': 50,
+        'atk': 75,
+        'def': 85,
+        'sp_atk': 20,
+        'sp_def': 30,
+        'spd': 40
+    },
+    'sandslash': {
+        'hp': 75,
+        'atk': 100,
+        'def': 110,
+        'sp_atk': 45,
+        'sp_def': 55,
+        'spd': 65
+    },
+    'magikarp': {
+        'hp': 20,
+        'atk': 10,
+        'def': 55,
+        'sp_atk': 15,
+        'sp_def': 20,
+        'spd': 80
+    },
+    'gyarados': {
+        'hp': 95,
+        'atk': 125,
+        'def': 79,
+        'sp_atk': 60,
+        'sp_def': 100,
+        'spd': 81
+    }
+}
