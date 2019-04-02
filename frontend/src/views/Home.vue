@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-lg">
                 <p class=hero-text>PokéDB <img src="../assets/pokeball.png" style="max-width: 110px"></p>
-                <p class="subhead-text">An indexed database for Pokémon, their evolutions and types. <br/>Click below to start exploring. </p>
+                <p class="subhead-text">An indexed database for Pokémon, their evolutions, and types. <br/>Click below to start exploring. </p>
 
 
               </div>
