@@ -37,7 +37,9 @@ _FIELDS = {
         'relative_physical_stats', 'party_species_id', 'party_type_id',
         'trade_species_id', 'needs_overworld_rain', 'turn_upside_down'
     ],
-    'pokemon_forms': ['id', 'identifier', 'form_identifier', 'pokemon_id'],
+    'pokemon_forms': [
+        'id', 'identifier', 'form_identifier', 'pokemon_id', 'form_order'
+    ],
     'pokemon_form_names': [
         'pokemon_form_id', 'local_language_id', 'form_name', 'pokemon_name'
     ],
@@ -251,7 +253,8 @@ class Session(object):
             'evolves_from_species_id': ('evolves_from', _int),
             'evolution_chain_id': ('evolution_chain', int),
             'is_default': (_bool,),
-            'form_identifier': ('identifier', str),
+            'form_identifier': ('form_identifier', str),
+            'form_order': (int,),
             **map_id(colors, 'color_id', 'color'),
             **map_id(stat_names, 'stat_id', 'stat')
         }
@@ -280,16 +283,47 @@ class Session(object):
         for row in self.csv_generator('pokemon_forms', maps=poke_tf):
             row_id = row['id']
             spec_id = row['pokemon_id']
-            identifier = row['identifier']
-            if identifier and (row_id in form_details):
-                detail = form_details[row_id]
-                new_form = forms[row_id]
-                new_form['pokemon_name'] = detail['name']
-                new_form['form_label'] = detail['label']
-                new_form['identifier'] = identifier
-                new_form['pokemon_id'] = simple_pokemon[row['pokemon_id']]
+            form_identifier = row['form_identifier']
+            if form_identifier:
+                name = row['identifier']
+                type1 = None
+                poke_name = None
+                form_label = None
 
-                types = poke_types[row_id]
+                # The forms for these aren't properly supported in the CSV.
+                # The special case is being handled explicitly.
+                if name.startswith('arceus') or name.startswith('silvally'):
+                    for k, v in self.types.items():
+                        type_name = v['identifier']
+                        if type_name == row['form_identifier']:
+                            form_label = type_name.capitalize() + ' Type'
+                            parts = reversed(name.split('-'))
+                            poke_name = ' '.join(map(str.capitalize, parts))
+                            type1 = k
+                            break
+
+                    # Found an unsupported type, skip the row.
+                    if type1 is None:
+                        continue
+
+                if row_id in form_details:
+                    detail = form_details[row_id]
+                    poke_name = detail['name']
+                    form_label = detail['label']
+
+                new_form = forms[row_id]
+                new_form['identifier'] = form_identifier
+                new_form['pokemon_id'] = simple_pokemon[spec_id]
+                new_form['pokemon_variant'] = spec_id
+                new_form['pokemon_name'] = poke_name
+                new_form['form_label'] = form_label
+
+                if type1 is not None:
+                    new_form['type1'] = type1
+
+                new_form['pokemon_name'] = poke_name
+
+                types = poke_types[spec_id]
                 copy_fields(self.poke_type_fields, src=types, dest=new_form)
 
         pokemon = defaultdict(dict)
@@ -447,8 +481,9 @@ if __name__ == '__main__':
     parser.add_argument('--out', '-o', help='The output directory.')
     parser.add_argument(
         '--debug', help='Prints info for a pokemon for debugging.', type=int)
-    parser.add_argument(
-        '--pretty', help='Causes output json to be pretty-printed.', action='store_true')
+    parser.add_argument('--pretty',
+                        help='Causes output json to be pretty-printed.',
+                        action='store_true')
     args = parser.parse_args()
 
     session = Session(args.dir, args.out)
