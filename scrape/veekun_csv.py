@@ -6,6 +6,7 @@ Pokédex Repository: https://github.com/veekun/pokedex
 """
 
 import csv
+import json
 
 from collections import defaultdict
 from pathlib import Path
@@ -22,13 +23,11 @@ _FIELDS = {
     'evolution_chains': ['id', 'identifier'],
     'evolution_triggers': ['id', 'identifier'],
     'genders': ['id', 'identifier'],
-    'items': [
-        'id', 'identifier', 'category_id'
-    ],
+    'item_names': ['item_id', 'local_language_id', 'name'],
     'location_names': ['location_id', 'local_language_id', 'name', 'subtitle'],
     'locations': ['id', 'region_id', 'identifier'],
     'move_damage_classes': ['id', 'identifier'],
-    'moves': ['id', 'identifier'],
+    'move_names': ['move_id', 'local_language_id', 'name'],
     'pokemon_colors': ['id', 'identifier'],
     'pokemon_evolution': [
         'id', 'evolved_species_id', 'evolution_trigger_id', 'trigger_item_id',
@@ -74,11 +73,7 @@ def map_id(source, old_key, new_key):
     return {old_key: (new_key, accessor)}
 
 
-def try_cast(dtype):
-    return lambda x: dtype(x) if bool(x) else None
-
-
-_int = try_cast(int)
+def _int(x): return int(x) if bool(x) else None
 
 
 def _bool(x): return bool(int(x))
@@ -101,7 +96,7 @@ class Session(object):
 
     def __init__(self, csv_dir, out_dir):
         self.root = Path(csv_dir)
-        self.out = Path(out_dir)
+        self.out = Path(out_dir) if out_dir else None
 
         self.pokemon = {}
         self.evolutions = {}
@@ -148,6 +143,9 @@ class Session(object):
     def simple_map(self, name, id_key='id', name_key='identifier'):
         out = {}
         for row in self.csv_generator(name):
+            if (('local_language_id' in row)
+                    and (int(row['local_language_id']) is not _LANG_EN)):
+                continue
             out[int(row[id_key])] = row[name_key]
 
         return out
@@ -200,16 +198,30 @@ class Session(object):
         def convert_scale(x: str):
             return int(x) / 100
 
-        type_info = defaultdict(dict)
+        types = defaultdict(dict)
         type_tf = {
             'id': (int,),
             **map_id(damage_classes, 'damage_class_id', 'damage_class')
         }
         for row in self.csv_generator('types', maps=type_tf):
-            new_type = type_info[row['id']]
+            if row['id'] >= 10000:
+                continue
+
+            new_type = types[row['id']]
             copy_fields(self.type_fields, src=row, dest=new_type)
 
-        self.types = type_info
+        eff_tf = {
+            'damage_type_id': ('id', int),
+            'target_type_id': ('target', int),
+            'damage_factor': ('factor', convert_scale)
+        }
+
+        for row in self.csv_generator('type_efficacy', maps=eff_tf):
+            type_info = types[row['id']]
+            defender_key = 'vs_' + types[row['target']]['identifier']
+            type_info[defender_key] = row['factor']
+
+        self.types = types
 
     def parse_pokemon(self):
         colors = self.simple_map('pokemon_colors')
@@ -277,6 +289,9 @@ class Session(object):
                 new_form['identifier'] = identifier
                 new_form['pokemon_id'] = simple_pokemon[row['pokemon_id']]
 
+                types = poke_types[row_id]
+                copy_fields(self.poke_type_fields, src=types, dest=new_form)
+
         pokemon = defaultdict(dict)
         for row in self.csv_generator('pokemon', maps=poke_tf):
             spec_id = row['species_id']
@@ -306,11 +321,9 @@ class Session(object):
             self.parse_pokemon()
 
         triggers = self.simple_map('evolution_triggers')
-        items = self.simple_map('items')
+        items = self.simple_map('item_names', 'item_id', 'name')
         genders = self.simple_map('genders')
-        moves = self.simple_map('moves')
-        types = self.simple_map('types')
-        pokemon = self.simple_map('pokemon_species')
+        moves = self.simple_map('move_names', 'move_id', 'name')
 
         poke_tf = {
             'id': (int,),
@@ -318,22 +331,22 @@ class Session(object):
             'minimum_level': ('level', _int),
             'minimum_happiness': ('happiness', _int),
             'minimum_beauty': ('beauty', _int),
+            'minimum_affection': ('affection', _int),
             'relative_physical_stats': ('relative_stats', _int),
             'needs_overworld_rain': ('needs_rain', _bool),
             'turn_upside_down': ('needs_inversion', _bool),
             'location_id': ('location', _int),
+            'known_move_type_id': ('known_move_type', _int),
+            'party_type_id': ('party_type', _int),
+            'party_species_id': ('party_pokemon', _int),
+            'trade_species_id': ('trade_pokemon', _int),
             **map_id(items, 'trigger_item_id', 'trigger_item'),
             **map_id(triggers, 'evolution_trigger_id', 'trigger'),
             **map_id(genders, 'gender_id', 'gender'),
             **map_id(items, 'held_item_id', 'held_item'),
             **map_id(moves, 'known_move_id', 'known_move'),
-            **map_id(types, 'known_move_type_id', 'known_move_type'),
-            **map_id(types, 'party_type_id', 'party_type'),
-            **map_id(pokemon, 'party_species_id', 'party_species'),
-            **map_id(pokemon, 'trade_species_id', 'trade_species'),
         }
 
-        chains = defaultdict(list)
         stages = defaultdict(dict)
         for row in self.csv_generator('pokemon_evolution', maps=poke_tf):
             end = row['evolved_species']
@@ -343,6 +356,7 @@ class Session(object):
 
             stage = stages[row['id']]
             stage['evolves_from'] = start_id
+            stage['chain'] = chain_id
             for key, value in row.items():
                 if key in {'id', 'evolved_species', ''}:
                     continue
@@ -352,10 +366,7 @@ class Session(object):
 
                 stage[key] = value
 
-            chains[chain_id].append(row['id'])
-
-        self.stages = stages
-        self.evolutions = chains
+        self.evolutions = stages
 
         for key in self.pokemon:
             chain_id = self.pokemon[key]['evolution_chain']
@@ -363,21 +374,69 @@ class Session(object):
             if not self.evolutions.get(chain_id, None):
                 self.pokemon[key]['evolution_chain'] = None
 
-    def debug_print(self):
-        eevee_id = 133
-        eevee_chain = 67
-        eeveelution_stages = [
-            76, 77, 78, 109, 110, 238, 239, 324, 325, 361, 363, 364, 368, 369
-        ]
-        malie_city_cape_id = 798
-        battle_bond_greninja_id = 10218
+    def run(self, pretty=False):
+        self.parse_locations()
+        self.parse_types()
+        self.parse_pokemon()
+        self.parse_evolutions()
 
-        pprint(self.pokemon[eevee_id])
-        pprint(self.evolutions[eevee_chain])
-        pprint([self.stages[i] for i in eeveelution_stages])
-        pprint(self.locations[malie_city_cape_id])
-        pprint(self.forms[battle_bond_greninja_id])
-        pprint(self.base_stats[eevee_id])
+        if not self.out:
+            print('Skipping output, no path provided!')
+            return
+        elif not self.out.is_dir():
+            self.out.mkdir(parents=True)
+
+        file_names = [
+            'pokemon', 'forms',
+            'evolutions',
+            'types', 'base_stats'
+        ]
+
+        objects = [
+            self.pokemon, self.forms,
+            self.evolutions,
+            self.types, self.base_stats
+        ]
+
+        for fname, obj in zip(file_names, objects):
+            path = self.out / '{}.json'.format(fname)
+            indent = None if not pretty else 4
+            rows = []
+            for k, v in obj.items():
+                row = v.copy()
+                row['id'] = k
+                rows.append(row)
+
+            with path.open(mode='w+') as f:
+                json.dump(rows, f, indent=indent, ensure_ascii=False)
+                print('Saved:', path)
+
+    def debug_print(self, poke_id):
+        poke = self.pokemon[poke_id]
+        pre_poke = poke['evolves_from']
+        if pre_poke is not None:
+            pprint(self.pokemon[pre_poke])
+
+        pprint(poke)
+
+        evolution_chain = poke['evolution_chain']
+
+        whole_chain = []
+        for k, v in self.evolutions.items():
+            if v['chain'] == evolution_chain:
+                whole_chain.append((k, v))
+
+        pprint(sorted(whole_chain))
+
+        if pre_poke is not None:
+            pprint(self.base_stats[pre_poke])
+        pprint(self.base_stats[poke_id])
+
+        type_id = poke['type1']
+        type_id_2 = poke['type2']
+        pprint(self.types[type_id])
+        if type_id_2:
+            pprint(self.types[type_id_2])
 
 
 if __name__ == '__main__':
@@ -385,12 +444,15 @@ if __name__ == '__main__':
 
     parser = ArgumentParser('Veekun CSV Parser')
     parser.add_argument('--dir', '-d', help='The csv source directory.')
+    parser.add_argument('--out', '-o', help='The output directory.')
+    parser.add_argument(
+        '--debug', help='Prints info for a pokemon for debugging.', type=int)
+    parser.add_argument(
+        '--pretty', help='Causes output json to be pretty-printed.', action='store_true')
     args = parser.parse_args()
 
-    session = Session(args.dir, '')
-    session.parse_locations()
-    session.parse_types()
-    session.parse_pokemon()
-    session.parse_evolutions()
+    session = Session(args.dir, args.out)
+    session.run(pretty=args.pretty)
 
-    session.debug_print()
+    if args.debug is not None:
+        session.debug_print(args.debug)
