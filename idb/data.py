@@ -1,6 +1,5573 @@
-EVOLUTION_CHAINS = {}
+POKEMON_OG6 = {
+    'ekans': {
+        'id': 23,
+        'description': 'Snake that is 3 meters long and weighs around 6.9 kilograms.',
+        'category': 'Snake',
+        'type': ['poison'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png'
 
-EVOLUTION_STEPS = {}
+    },
+    'arbok': {
+        'id': 24,
+        'description': 'Cobra that is 3.5 meters long and weighs around 65 kilograms.',
+        'category': 'Cobra',
+        'type': ['poison'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png'
+    },
+    'sandshrew': {
+        'id': 27,
+        'description': 'Mouse that is 0.6 meters tall and weighs around 12 kilograms.',
+        'category': 'Mouse',
+        'type': ['ground'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png'
+    },
+    'sandslash': {
+        'id': 28,
+        'description': 'Mouse that is 1 meters tall and weighs around 29.5 kilograms.',
+        'category': 'Mouse',
+        'type': ['ground'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png'
+    },
+    'magikarp': {
+        'id': 129,
+        'description': 'Fish that is 0.9 meters long and weighs around 10.0 kilograms.',
+        'category': 'Fish',
+        'type': ['water'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png'
+    },
+    'gyarados': {
+        'id': 130,
+        'description': 'Atrocious Pokémon that is 3.5 meters long and weighs around 65 kilograms.',
+        'category': 'Atrocious Pokémon',
+        'type': ['water', 'flying'],
+        'sprite_url': 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png'
+    }
+}
+
+POKEMON = [
+    {
+        "name": "Bulbasaur",
+        "genus": "Seed Pokémon",
+        "identifier": "bulbasaur",
+        "evolution_chain": 1,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
+        "has_alt_form": False,
+        "id": 1
+    },
+    {
+        "name": "Ivysaur",
+        "genus": "Seed Pokémon",
+        "identifier": "ivysaur",
+        "evolution_chain": 1,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": 1,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "There is a bud on this Pokémon’s back. To support its weight,\nIvysaur’s legs and trunk grow thick and strong.\nIf it starts spending more time lying in the sunlight,\nit’s a sign that the bud will bloom into a large flower soon.",
+        "has_alt_form": False,
+        "id": 2
+    },
+    {
+        "name": "Venusaur",
+        "genus": "Seed Pokémon",
+        "identifier": "venusaur",
+        "evolution_chain": 1,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": 2,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "There is a large flower on Venusaur’s back. The flower is said\nto take on vivid colors if it gets plenty of nutrition and sunlight.\nThe flower’s aroma soothes the emotions of people.",
+        "has_alt_form": False,
+        "id": 3
+    },
+    {
+        "name": "Charmander",
+        "genus": "Lizard Pokémon",
+        "identifier": "charmander",
+        "evolution_chain": 2,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "The flame that burns at the tip of its tail is an indication\nof its emotions. The flame wavers when Charmander\nis enjoying itself. If the Pokémon becomes enraged,\nthe flame burns fiercely.",
+        "has_alt_form": False,
+        "id": 4
+    },
+    {
+        "name": "Charmeleon",
+        "genus": "Flame Pokémon",
+        "identifier": "charmeleon",
+        "evolution_chain": 2,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 4,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Charmeleon mercilessly destroys its foes using its sharp\nclaws. If it encounters a strong foe, it turns aggressive.\nIn this excited state, the flame at the tip of its tail flares with\na bluish white color.",
+        "has_alt_form": False,
+        "id": 5
+    },
+    {
+        "name": "Charizard",
+        "genus": "Flame Pokémon",
+        "identifier": "charizard",
+        "evolution_chain": 2,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 5,
+        "type1": 10,
+        "type2": 3,
+        "flavor_text": "Charizard flies around the sky in search of powerful opponents.\nIt breathes fire of such great heat that it melts anything.\nHowever, it never turns its fiery breath on any opponent\nweaker than itself.",
+        "has_alt_form": False,
+        "id": 6
+    },
+    {
+        "name": "Squirtle",
+        "genus": "Tiny Turtle Pokémon",
+        "identifier": "squirtle",
+        "evolution_chain": 3,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Squirtle’s shell is not merely used for protection.\nThe shell’s rounded shape and the grooves on its\nsurface help minimize resistance in water,\nenabling this Pokémon to swim at high speeds.",
+        "has_alt_form": False,
+        "id": 7
+    },
+    {
+        "name": "Wartortle",
+        "genus": "Turtle Pokémon",
+        "identifier": "wartortle",
+        "evolution_chain": 3,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 7,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Its tail is large and covered with a rich, thick fur. The tail\nbecomes increasingly deeper in color as Wartortle ages.\nThe scratches on its shell are evidence of this Pokémon’s\ntoughness as a battler.",
+        "has_alt_form": False,
+        "id": 8
+    },
+    {
+        "name": "Blastoise",
+        "genus": "Shellfish Pokémon",
+        "identifier": "blastoise",
+        "evolution_chain": 3,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 8,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Blastoise has water spouts that protrude from its shell.\nThe water spouts are very accurate.\nThey can shoot bullets of water with enough accuracy\nto strike empty cans from a distance of over 160 feet.",
+        "has_alt_form": False,
+        "id": 9
+    },
+    {
+        "name": "Caterpie",
+        "genus": "Worm Pokémon",
+        "identifier": "caterpie",
+        "evolution_chain": 4,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": None,
+        "flavor_text": "Perhaps because it would like to grow up\nquickly, it has a voracious appetite, eating\na hundred leaves a day.",
+        "has_alt_form": False,
+        "id": 10
+    },
+    {
+        "name": "Metapod",
+        "genus": "Cocoon Pokémon",
+        "identifier": "metapod",
+        "evolution_chain": 4,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": 10,
+        "type1": 7,
+        "type2": None,
+        "flavor_text": "Its shell is filled with a thick liquid. All of the\ncells throughout its body are being rebuilt in\npreparation for evolution.",
+        "has_alt_form": False,
+        "id": 11
+    },
+    {
+        "name": "Butterfree",
+        "genus": "Butterfly Pokémon",
+        "identifier": "butterfree",
+        "evolution_chain": 4,
+        "color": "white",
+        "since_gen": 1,
+        "evolves_from": 11,
+        "type1": 7,
+        "type2": 3,
+        "flavor_text": "Its wings are covered in toxic scales. If it finds\nbird Pokémon going after Caterpie, Butterfree\nsprinkles its scales on them to drive them off.",
+        "has_alt_form": False,
+        "id": 12
+    },
+    {
+        "name": "Weedle",
+        "genus": "Hairy Bug Pokémon",
+        "identifier": "weedle",
+        "evolution_chain": 5,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": 4,
+        "flavor_text": "Weedle has an extremely acute sense of smell. It is capable\nof distinguishing its favorite kinds of leaves from those it\ndislikes just by sniffing with its big red proboscis (nose).",
+        "has_alt_form": False,
+        "id": 13
+    },
+    {
+        "name": "Kakuna",
+        "genus": "Cocoon Pokémon",
+        "identifier": "kakuna",
+        "evolution_chain": 5,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 13,
+        "type1": 7,
+        "type2": 4,
+        "flavor_text": "Kakuna remains virtually immobile as it clings to a tree.\nHowever, on the inside, it is extremely busy as it prepares\nfor its coming evolution.\nThis is evident from how hot the shell becomes to the touch.",
+        "has_alt_form": False,
+        "id": 14
+    },
+    {
+        "name": "Beedrill",
+        "genus": "Poison Bee Pokémon",
+        "identifier": "beedrill",
+        "evolution_chain": 5,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 14,
+        "type1": 7,
+        "type2": 4,
+        "flavor_text": "Beedrill is extremely territorial. No one should ever approach\nits nest—this is for their own safety. If angered, they will attack\nin a furious swarm.",
+        "has_alt_form": False,
+        "id": 15
+    },
+    {
+        "name": "Pidgey",
+        "genus": "Tiny Bird Pokémon",
+        "identifier": "pidgey",
+        "evolution_chain": 6,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Pidgey has an extremely sharp sense of direction.\nIt is capable of unerringly returning home to its nest,\nhowever far it may be removed from its familiar surroundings.",
+        "has_alt_form": False,
+        "id": 16
+    },
+    {
+        "name": "Pidgeotto",
+        "genus": "Bird Pokémon",
+        "identifier": "pidgeotto",
+        "evolution_chain": 6,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 16,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Pidgeotto claims a large area as its own territory. This\nPokémon flies around, patrolling its living space. If its territory\nis violated, it shows no mercy in thoroughly punishing the foe\nwith its sharp claws.",
+        "has_alt_form": False,
+        "id": 17
+    },
+    {
+        "name": "Pidgeot",
+        "genus": "Bird Pokémon",
+        "identifier": "pidgeot",
+        "evolution_chain": 6,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 17,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "This Pokémon has a dazzling plumage of beautifully\nglossy feathers. Many Trainers are captivated by the\nstriking beauty of the feathers on its head, compelling\nthem to choose Pidgeot as their Pokémon.",
+        "has_alt_form": False,
+        "id": 18
+    },
+    {
+        "name": "Rattata",
+        "genus": "Mouse Pokémon",
+        "identifier": "rattata",
+        "evolution_chain": 7,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "Its incisors grow continuously throughout its life.\nIf its incisors get too long, this Pokémon\nbecomes unable to eat, and it starves to death.",
+        "has_alt_form": False,
+        "id": 19
+    },
+    {
+        "name": "Raticate",
+        "genus": "Mouse Pokémon",
+        "identifier": "raticate",
+        "evolution_chain": 7,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 19,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "People say that it fled from its enemies by\nusing its small webbed hind feet to swim\nfrom island to island in Alola.",
+        "has_alt_form": False,
+        "id": 20
+    },
+    {
+        "name": "Spearow",
+        "genus": "Tiny Bird Pokémon",
+        "identifier": "spearow",
+        "evolution_chain": 8,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Its reckless nature leads it to stand up to\nothers—even large Pokémon—if it has to protect\nits territory.",
+        "has_alt_form": False,
+        "id": 21
+    },
+    {
+        "name": "Fearow",
+        "genus": "Beak Pokémon",
+        "identifier": "fearow",
+        "evolution_chain": 8,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 21,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Carrying food through Fearow’s territory is\ndangerous. It will snatch the food away from\nyou in a flash!",
+        "has_alt_form": False,
+        "id": 22
+    },
+    {
+        "name": "Ekans",
+        "genus": "Snake Pokémon",
+        "identifier": "ekans",
+        "evolution_chain": 9,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "By dislocating its jaw, it can swallow prey larger\nthan itself. After a meal, it curls up and rests.",
+        "has_alt_form": False,
+        "id": 23
+    },
+    {
+        "name": "Arbok",
+        "genus": "Cobra Pokémon",
+        "identifier": "arbok",
+        "evolution_chain": 9,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 23,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "The latest research has determined that there\nare over 20 possible arrangements of the\npatterns on its stomach.",
+        "has_alt_form": False,
+        "id": 24
+    },
+    {
+        "name": "Pikachu",
+        "genus": "Mouse Pokémon",
+        "identifier": "pikachu",
+        "evolution_chain": 10,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 172,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "Its nature is to store up electricity. Forests\nwhere nests of Pikachu live are dangerous,\nsince the trees are so often struck by lightning.",
+        "has_alt_form": False,
+        "id": 25
+    },
+    {
+        "name": "Raichu",
+        "genus": "Mouse Pokémon",
+        "identifier": "raichu",
+        "evolution_chain": 10,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 25,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "As electricity builds up inside its body, it\nbecomes more aggressive. One theory is that\nthe electricity buildup is actually causing stress.",
+        "has_alt_form": False,
+        "id": 26
+    },
+    {
+        "name": "Sandshrew",
+        "genus": "Mouse Pokémon",
+        "identifier": "sandshrew",
+        "evolution_chain": 11,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "It lives in areas of limited rainfall. When danger\napproaches, it curls up into a ball to protect its\nsoft stomach.",
+        "has_alt_form": False,
+        "id": 27
+    },
+    {
+        "name": "Sandslash",
+        "genus": "Mouse Pokémon",
+        "identifier": "sandslash",
+        "evolution_chain": 11,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 27,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "Its claws and horns often break off. The broken\nclaws and horns can be used to carve plows for\ntilling farm fields.",
+        "has_alt_form": False,
+        "id": 28
+    },
+    {
+        "name": "Nidoran♀",
+        "genus": "Poison Pin Pokémon",
+        "identifier": "nidoran-f",
+        "evolution_chain": 12,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Nidoran♀ has barbs that secrete a powerful poison.\nThey are thought to have developed as protection for\nthis small-bodied Pokémon. When enraged, it releases\na horrible toxin from its horn.",
+        "has_alt_form": False,
+        "id": 29
+    },
+    {
+        "name": "Nidorina",
+        "genus": "Poison Pin Pokémon",
+        "identifier": "nidorina",
+        "evolution_chain": 12,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 29,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "When Nidorina are with their friends or family, they keep\ntheir barbs tucked away to prevent hurting each other.\nThis Pokémon appears to become nervous if separated\nfrom the others.",
+        "has_alt_form": False,
+        "id": 30
+    },
+    {
+        "name": "Nidoqueen",
+        "genus": "Drill Pokémon",
+        "identifier": "nidoqueen",
+        "evolution_chain": 12,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 30,
+        "type1": 4,
+        "type2": 5,
+        "flavor_text": "Nidoqueen’s body is encased in extremely hard scales.\nIt is adept at sending foes flying with harsh tackles. This\nPokémon is at its strongest when it is defending its young.",
+        "has_alt_form": False,
+        "id": 31
+    },
+    {
+        "name": "Nidoran♂",
+        "genus": "Poison Pin Pokémon",
+        "identifier": "nidoran-m",
+        "evolution_chain": 13,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Nidoran♂ has developed muscles for moving its ears. Thanks\nto them, the ears can be freely moved in any direction. Even\nthe slightest sound does not escape this Pokémon’s notice.",
+        "has_alt_form": False,
+        "id": 32
+    },
+    {
+        "name": "Nidorino",
+        "genus": "Poison Pin Pokémon",
+        "identifier": "nidorino",
+        "evolution_chain": 13,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 32,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Nidorino has a horn that is harder than a diamond. If it senses\na hostile presence, all the barbs on its back bristle up at once,\nand it challenges the foe with all its might.",
+        "has_alt_form": False,
+        "id": 33
+    },
+    {
+        "name": "Nidoking",
+        "genus": "Drill Pokémon",
+        "identifier": "nidoking",
+        "evolution_chain": 13,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 33,
+        "type1": 4,
+        "type2": 5,
+        "flavor_text": "Nidoking’s thick tail packs enormously destructive power.\nWith one swing, it can topple a metal transmission tower. Once\nthis Pokémon goes on a rampage, there is no stopping it.",
+        "has_alt_form": False,
+        "id": 34
+    },
+    {
+        "name": "Clefairy",
+        "genus": "Fairy Pokémon",
+        "identifier": "clefairy",
+        "evolution_chain": 14,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 173,
+        "type1": 18,
+        "type2": None,
+        "flavor_text": "They’re popular, but they’re rare. Trainers who\nshow them off recklessly may be targeted\nby thieves.",
+        "has_alt_form": False,
+        "id": 35
+    },
+    {
+        "name": "Clefable",
+        "genus": "Fairy Pokémon",
+        "identifier": "clefable",
+        "evolution_chain": 14,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 35,
+        "type1": 18,
+        "type2": None,
+        "flavor_text": "It can’t help but hear a pin drop from over half\na mile away, so it lives deep in the mountains\nwhere there aren’t many people or Pokémon.",
+        "has_alt_form": False,
+        "id": 36
+    },
+    {
+        "name": "Vulpix",
+        "genus": "Fox Pokémon",
+        "identifier": "vulpix",
+        "evolution_chain": 15,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Its beautiful tails have made it very popular.\nHowever, if it’s not brushed diligently, it will\nbe a mass of tangles before you know it.",
+        "has_alt_form": False,
+        "id": 37
+    },
+    {
+        "name": "Ninetales",
+        "genus": "Fox Pokémon",
+        "identifier": "ninetales",
+        "evolution_chain": 15,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 37,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "It is vindictive and relentless by nature.\nThose who cross it even once will be cursed for\na thousand years, along with their descendants.",
+        "has_alt_form": False,
+        "id": 38
+    },
+    {
+        "name": "Jigglypuff",
+        "genus": "Balloon Pokémon",
+        "identifier": "jigglypuff",
+        "evolution_chain": 16,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 174,
+        "type1": 1,
+        "type2": 18,
+        "flavor_text": "Recordings of Jigglypuff’s strange lullabies can\nbe purchased from department stores. These\nCDs can be found near the bedding area.",
+        "has_alt_form": False,
+        "id": 39
+    },
+    {
+        "name": "Wigglytuff",
+        "genus": "Balloon Pokémon",
+        "identifier": "wigglytuff",
+        "evolution_chain": 16,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 39,
+        "type1": 1,
+        "type2": 18,
+        "flavor_text": "Thanks to its bouncy body and fine fur,\nthis Pokémon is sought after. Holding one\nin your arms while you sleep feels great.",
+        "has_alt_form": False,
+        "id": 40
+    },
+    {
+        "name": "Zubat",
+        "genus": "Bat Pokémon",
+        "identifier": "zubat",
+        "evolution_chain": 17,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": 3,
+        "flavor_text": "It has no eyeballs, so it can’t see. It checks its\nsurroundings via the ultrasonic waves it emits\nfrom its mouth.",
+        "has_alt_form": False,
+        "id": 41
+    },
+    {
+        "name": "Golbat",
+        "genus": "Bat Pokémon",
+        "identifier": "golbat",
+        "evolution_chain": 17,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 41,
+        "type1": 4,
+        "type2": 3,
+        "flavor_text": "Every once in a while, you’ll see a Golbat that’s\nmissing some fangs. This happens when hunger\ndrives it to try biting a Steel-type Pokémon.",
+        "has_alt_form": False,
+        "id": 42
+    },
+    {
+        "name": "Oddish",
+        "genus": "Weed Pokémon",
+        "identifier": "oddish",
+        "evolution_chain": 18,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Oddish searches for fertile, nutrient-rich soil, then plants itself.\nDuring the daytime, while it is planted, this Pokémon’s feet\nare thought to change shape and become similar to the roots\nof trees.",
+        "has_alt_form": False,
+        "id": 43
+    },
+    {
+        "name": "Gloom",
+        "genus": "Weed Pokémon",
+        "identifier": "gloom",
+        "evolution_chain": 18,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 43,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "From its mouth Gloom drips honey that smells absolutely\nhorrible. Apparently, it loves the horrid stench. It sniffs the\nnoxious fumes and then drools even more of its honey.",
+        "has_alt_form": False,
+        "id": 44
+    },
+    {
+        "name": "Vileplume",
+        "genus": "Flower Pokémon",
+        "identifier": "vileplume",
+        "evolution_chain": 18,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 44,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Vileplume has the world’s largest petals. They are used to\nattract prey that are then doused with toxic spores. Once the\nprey are immobilized, this Pokémon catches and devours them.",
+        "has_alt_form": False,
+        "id": 45
+    },
+    {
+        "name": "Paras",
+        "genus": "Mushroom Pokémon",
+        "identifier": "paras",
+        "evolution_chain": 19,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": 12,
+        "flavor_text": "Whether it’s due to a lack of moisture or a lack\nof nutrients, in Alola the mushrooms on Paras\ndon’t grow up quite right.",
+        "has_alt_form": False,
+        "id": 46
+    },
+    {
+        "name": "Parasect",
+        "genus": "Mushroom Pokémon",
+        "identifier": "parasect",
+        "evolution_chain": 19,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 46,
+        "type1": 7,
+        "type2": 12,
+        "flavor_text": "The bug is mostly dead, with the mushroom on\nits back having become the main body. If the\nmushroom comes off, the bug stops moving.",
+        "has_alt_form": False,
+        "id": 47
+    },
+    {
+        "name": "Venonat",
+        "genus": "Insect Pokémon",
+        "identifier": "venonat",
+        "evolution_chain": 20,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": 4,
+        "flavor_text": "Venonat is said to have evolved with a coat of thin, stiff hair\nthat covers its entire body for protection. It possesses large\neyes that never fail to spot even minuscule prey.",
+        "has_alt_form": False,
+        "id": 48
+    },
+    {
+        "name": "Venomoth",
+        "genus": "Poison Moth Pokémon",
+        "identifier": "venomoth",
+        "evolution_chain": 20,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 48,
+        "type1": 7,
+        "type2": 4,
+        "flavor_text": "Venomoth is nocturnal—it is a Pokémon that only becomes\nactive at night. Its favorite prey are small insects that gather\naround streetlights, attracted by the light in the darkness.",
+        "has_alt_form": False,
+        "id": 49
+    },
+    {
+        "name": "Diglett",
+        "genus": "Mole Pokémon",
+        "identifier": "diglett",
+        "evolution_chain": 21,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "It travels through tunnels that it digs\nunderground. It hates sunlight, so it comes\nout only after the sun goes down.",
+        "has_alt_form": False,
+        "id": 50
+    },
+    {
+        "name": "Dugtrio",
+        "genus": "Mole Pokémon",
+        "identifier": "dugtrio",
+        "evolution_chain": 21,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 50,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "While the three of them normally get along\nsplendidly, on rare occasions a huge fight will\nbreak out over which head gets to eat first.",
+        "has_alt_form": False,
+        "id": 51
+    },
+    {
+        "name": "Meowth",
+        "genus": "Scratch Cat Pokémon",
+        "identifier": "meowth",
+        "evolution_chain": 22,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "When visiting a junkyard, you may catch sight\nof it having an intense fight with Murkrow over\nshiny objects.",
+        "has_alt_form": False,
+        "id": 52
+    },
+    {
+        "name": "Persian",
+        "genus": "Classy Cat Pokémon",
+        "identifier": "persian",
+        "evolution_chain": 22,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 52,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "Although the jewel on its forehead appears to\nbe a different color than those of Alolan\nPersian, it’s mostly made of the same material.",
+        "has_alt_form": False,
+        "id": 53
+    },
+    {
+        "name": "Psyduck",
+        "genus": "Duck Pokémon",
+        "identifier": "psyduck",
+        "evolution_chain": 23,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Using psychokinesis gives it a headache, so it\nnormally passes the time spacing out and doing\nas little as possible.",
+        "has_alt_form": False,
+        "id": 54
+    },
+    {
+        "name": "Golduck",
+        "genus": "Duck Pokémon",
+        "identifier": "golduck",
+        "evolution_chain": 23,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 54,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Even fast-swimming fish Pokémon can be\ndisabled by Golduck. It brings them to a\nstandstill and seizes them.",
+        "has_alt_form": False,
+        "id": 55
+    },
+    {
+        "name": "Mankey",
+        "genus": "Pig Monkey Pokémon",
+        "identifier": "mankey",
+        "evolution_chain": 24,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "The smallest of things could cause it to lose its\ntemper. Because it doesn’t hold in its stress,\nthis Pokémon can live a long time.",
+        "has_alt_form": False,
+        "id": 56
+    },
+    {
+        "name": "Primeape",
+        "genus": "Pig Monkey Pokémon",
+        "identifier": "primeape",
+        "evolution_chain": 24,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 56,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "It will never forgive opponents who have\nangered it. Even after it has beaten them down\nuntil they can’t move, it never ever forgives.",
+        "has_alt_form": False,
+        "id": 57
+    },
+    {
+        "name": "Growlithe",
+        "genus": "Puppy Pokémon",
+        "identifier": "growlithe",
+        "evolution_chain": 25,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "While it’s quite friendly toward humans once it’s\ngrown used to them, in the wild it must be quite\nfierce to defend its territory from Rockruff.",
+        "has_alt_form": False,
+        "id": 58
+    },
+    {
+        "name": "Arcanine",
+        "genus": "Legendary Pokémon",
+        "identifier": "arcanine",
+        "evolution_chain": 25,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 58,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Legends tell of its fighting alongside a general\nand conquering a whole country.",
+        "has_alt_form": False,
+        "id": 59
+    },
+    {
+        "name": "Poliwag",
+        "genus": "Tadpole Pokémon",
+        "identifier": "poliwag",
+        "evolution_chain": 26,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Despite the danger, it wants to come up on land.\nSo it does its best to waddle along, but when\nan enemy finds it, it rushes back to the water.",
+        "has_alt_form": False,
+        "id": 60
+    },
+    {
+        "name": "Poliwhirl",
+        "genus": "Tadpole Pokémon",
+        "identifier": "poliwhirl",
+        "evolution_chain": 26,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 60,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Although it has become capable of living on\nland, it spends its time in the water, where\nits prey, fish Pokémon, are plentiful.",
+        "has_alt_form": False,
+        "id": 61
+    },
+    {
+        "name": "Poliwrath",
+        "genus": "Tadpole Pokémon",
+        "identifier": "poliwrath",
+        "evolution_chain": 26,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 61,
+        "type1": 11,
+        "type2": 2,
+        "flavor_text": "It’s quite a gifted swimmer, even among\nWater-type Pokémon, but it normally spends its\ntime on land.",
+        "has_alt_form": False,
+        "id": 62
+    },
+    {
+        "name": "Abra",
+        "genus": "Psi Pokémon",
+        "identifier": "abra",
+        "evolution_chain": 27,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "It uses various psychic powers even while it’s\nsleeping, so you can’t tell whether or not\nit’s awake.",
+        "has_alt_form": False,
+        "id": 63
+    },
+    {
+        "name": "Kadabra",
+        "genus": "Psi Pokémon",
+        "identifier": "kadabra",
+        "evolution_chain": 27,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 63,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "It stares at a silver spoon to amplify its psychic\npowers before it lets loose. Apparently, gold\nspoons are no good.",
+        "has_alt_form": False,
+        "id": 64
+    },
+    {
+        "name": "Alakazam",
+        "genus": "Psi Pokémon",
+        "identifier": "alakazam",
+        "evolution_chain": 27,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 64,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "Alakazam uses its psychic powers to make the\nspoons it carries. Each spoon is an original that\nthere’s only one of in the whole world.",
+        "has_alt_form": False,
+        "id": 65
+    },
+    {
+        "name": "Machop",
+        "genus": "Superpower Pokémon",
+        "identifier": "machop",
+        "evolution_chain": 28,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "Once this Pokémon has gained enough\nconfidence and muscle from training with its\nfriends, it challenges Makuhita to a battle.",
+        "has_alt_form": False,
+        "id": 66
+    },
+    {
+        "name": "Machoke",
+        "genus": "Superpower Pokémon",
+        "identifier": "machoke",
+        "evolution_chain": 28,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": 66,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "When it encounters an enemy that’s truly\nmighty, this Pokémon removes the power-save\nbelt from its waist and unleashes its full power.",
+        "has_alt_form": False,
+        "id": 67
+    },
+    {
+        "name": "Machamp",
+        "genus": "Superpower Pokémon",
+        "identifier": "machamp",
+        "evolution_chain": 28,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": 67,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "It grasps its opponents with its four arms and\ntwists them up in an intricate hold. People call\nit “the Machamp special.”",
+        "has_alt_form": False,
+        "id": 68
+    },
+    {
+        "name": "Bellsprout",
+        "genus": "Flower Pokémon",
+        "identifier": "bellsprout",
+        "evolution_chain": 29,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Bellsprout’s thin and flexible body lets it bend and sway\nto avoid any attack, however strong it may be. From its mouth,\nthis Pokémon spits a corrosive fluid that melts even iron.",
+        "has_alt_form": False,
+        "id": 69
+    },
+    {
+        "name": "Weepinbell",
+        "genus": "Flycatcher Pokémon",
+        "identifier": "weepinbell",
+        "evolution_chain": 29,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": 69,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Weepinbell has a large hook on its rear end. At night, the\nPokémon hooks on to a tree branch and goes to sleep.\nIf it moves around in its sleep, it may wake up to find itself\non the ground.",
+        "has_alt_form": False,
+        "id": 70
+    },
+    {
+        "name": "Victreebel",
+        "genus": "Flycatcher Pokémon",
+        "identifier": "victreebel",
+        "evolution_chain": 29,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": 70,
+        "type1": 12,
+        "type2": 4,
+        "flavor_text": "Victreebel has a long vine that extends from its head.\nThis vine is waved and flicked about as if it were an animal\nto attract prey. When an unsuspecting prey draws near,\nthis Pokémon swallows it whole.",
+        "has_alt_form": False,
+        "id": 71
+    },
+    {
+        "name": "Tentacool",
+        "genus": "Jellyfish Pokémon",
+        "identifier": "tentacool",
+        "evolution_chain": 30,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": 4,
+        "flavor_text": "It drifts through the sea searching for prey.\nIts poisonous tentacles break off sometimes,\nbut after a while, they grow back.",
+        "has_alt_form": False,
+        "id": 72
+    },
+    {
+        "name": "Tentacruel",
+        "genus": "Jellyfish Pokémon",
+        "identifier": "tentacruel",
+        "evolution_chain": 30,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 72,
+        "type1": 11,
+        "type2": 4,
+        "flavor_text": "It fires off ultrasonic waves from its red orbs\nto weaken its prey, and then it wraps them up\nin its 80 tentacles.",
+        "has_alt_form": False,
+        "id": 73
+    },
+    {
+        "name": "Geodude",
+        "genus": "Rock Pokémon",
+        "identifier": "geodude",
+        "evolution_chain": 31,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 6,
+        "type2": 5,
+        "flavor_text": "Geodude that have lived a long life have had all\ntheir edges smoothed out until they’re totally\nround. They also have a calm, quiet disposition.",
+        "has_alt_form": False,
+        "id": 74
+    },
+    {
+        "name": "Graveler",
+        "genus": "Rock Pokémon",
+        "identifier": "graveler",
+        "evolution_chain": 31,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 74,
+        "type1": 6,
+        "type2": 5,
+        "flavor_text": "It climbs up cliffs as it heads toward the peak\nof a mountain. As soon as it reaches the summit,\nit rolls back down the way it came.",
+        "has_alt_form": False,
+        "id": 75
+    },
+    {
+        "name": "Golem",
+        "genus": "Megaton Pokémon",
+        "identifier": "golem",
+        "evolution_chain": 31,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 75,
+        "type1": 6,
+        "type2": 5,
+        "flavor_text": "When Golem grow old, they stop shedding their\nshells. Those that have lived a long, long time\nhave shells green with moss.",
+        "has_alt_form": False,
+        "id": 76
+    },
+    {
+        "name": "Ponyta",
+        "genus": "Fire Horse Pokémon",
+        "identifier": "ponyta",
+        "evolution_chain": 32,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Ponyta is very weak at birth. It can barely stand up.\nThis Pokémon becomes stronger by stumbling and\nfalling to keep up with its parent.",
+        "has_alt_form": False,
+        "id": 77
+    },
+    {
+        "name": "Rapidash",
+        "genus": "Fire Horse Pokémon",
+        "identifier": "rapidash",
+        "evolution_chain": 32,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 77,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Rapidash usually can be seen casually cantering in the fields\nand plains. However, when this Pokémon turns serious, its\nfiery manes flare and blaze as it gallops its way up to 150 mph.",
+        "has_alt_form": False,
+        "id": 78
+    },
+    {
+        "name": "Slowpoke",
+        "genus": "Dopey Pokémon",
+        "identifier": "slowpoke",
+        "evolution_chain": 33,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": 14,
+        "flavor_text": "There are some places where Slowpoke is\nworshiped because of a long-standing belief\nthat whenever Slowpoke yawns, it rains.",
+        "has_alt_form": False,
+        "id": 79
+    },
+    {
+        "name": "Slowbro",
+        "genus": "Hermit Crab Pokémon",
+        "identifier": "slowbro",
+        "evolution_chain": 33,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 79,
+        "type1": 11,
+        "type2": 14,
+        "flavor_text": "Spacing out is basically all it does. It turns back\ninto Slowpoke if its tail, along with Shellder,\nbreaks off.",
+        "has_alt_form": False,
+        "id": 80
+    },
+    {
+        "name": "Magnemite",
+        "genus": "Magnet Pokémon",
+        "identifier": "magnemite",
+        "evolution_chain": 34,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 13,
+        "type2": 9,
+        "flavor_text": "It’s frequently the cause of power outages,\nwhich is why some power plants send out\nelectrical signals that it can’t stand.",
+        "has_alt_form": False,
+        "id": 81
+    },
+    {
+        "name": "Magneton",
+        "genus": "Magnet Pokémon",
+        "identifier": "magneton",
+        "evolution_chain": 34,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": 81,
+        "type1": 13,
+        "type2": 9,
+        "flavor_text": "Delicate equipment can malfunction in areas\ninhabited by Magneton, which send out\nmysterious electrical signals.",
+        "has_alt_form": False,
+        "id": 82
+    },
+    {
+        "name": "Farfetch’d",
+        "genus": "Wild Duck Pokémon",
+        "identifier": "farfetchd",
+        "evolution_chain": 35,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some\nsort. Apparently, there are good stalks and bad stalks. This\nPokémon has been known to fight with others over stalks.",
+        "has_alt_form": False,
+        "id": 83
+    },
+    {
+        "name": "Doduo",
+        "genus": "Twin Bird Pokémon",
+        "identifier": "doduo",
+        "evolution_chain": 36,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Doduo’s two heads contain completely identical brains. A\nscientific study reported that on rare occasions, there will be\nexamples of this Pokémon possessing different sets of brains.",
+        "has_alt_form": False,
+        "id": 84
+    },
+    {
+        "name": "Dodrio",
+        "genus": "Triple Bird Pokémon",
+        "identifier": "dodrio",
+        "evolution_chain": 36,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 84,
+        "type1": 1,
+        "type2": 3,
+        "flavor_text": "Apparently, the heads aren’t the only parts of the body that\nDodrio has three of. It has three sets of hearts and lungs as\nwell, so it is capable of running long distances without rest.",
+        "has_alt_form": False,
+        "id": 85
+    },
+    {
+        "name": "Seel",
+        "genus": "Sea Lion Pokémon",
+        "identifier": "seel",
+        "evolution_chain": 37,
+        "color": "white",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "It has always been supposed that Seel live only\nin cold seas. Their having shown up in Alola is\na mystery.",
+        "has_alt_form": False,
+        "id": 86
+    },
+    {
+        "name": "Dewgong",
+        "genus": "Sea Lion Pokémon",
+        "identifier": "dewgong",
+        "evolution_chain": 37,
+        "color": "white",
+        "since_gen": 1,
+        "evolves_from": 86,
+        "type1": 11,
+        "type2": 15,
+        "flavor_text": "It swims through the ocean at a speed of eight\nknots, searching for Pokémon that will become\nits prey. It’s especially fond of Wishiwashi.",
+        "has_alt_form": False,
+        "id": 87
+    },
+    {
+        "name": "Grimer",
+        "genus": "Sludge Pokémon",
+        "identifier": "grimer",
+        "evolution_chain": 38,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "It was born from sludge on the ocean floor. In a\nsterile environment, the germs within its body\ncan’t multiply, and it dies.",
+        "has_alt_form": False,
+        "id": 88
+    },
+    {
+        "name": "Muk",
+        "genus": "Sludge Pokémon",
+        "identifier": "muk",
+        "evolution_chain": 38,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 88,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Their food sources have decreased, and their\nnumbers have declined sharply. Sludge ponds\nare being built to prevent their extinction.",
+        "has_alt_form": False,
+        "id": 89
+    },
+    {
+        "name": "Shellder",
+        "genus": "Bivalve Pokémon",
+        "identifier": "shellder",
+        "evolution_chain": 39,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "The sand that accumulates inside its shell\neventually becomes a pearl. But the pearl gets\nin the way, so it spits it out and discards it.",
+        "has_alt_form": False,
+        "id": 90
+    },
+    {
+        "name": "Cloyster",
+        "genus": "Bivalve Pokémon",
+        "identifier": "cloyster",
+        "evolution_chain": 39,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 90,
+        "type1": 11,
+        "type2": 15,
+        "flavor_text": "If areas of Cloyster’s very hard shell get\ndamaged, those areas swell, gradually growing\ninto large sharp spikes.",
+        "has_alt_form": False,
+        "id": 91
+    },
+    {
+        "name": "Gastly",
+        "genus": "Gas Pokémon",
+        "identifier": "gastly",
+        "evolution_chain": 40,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 8,
+        "type2": 4,
+        "flavor_text": "It’s said that gas emanating from a graveyard\nwas possessed by the grievances of the\ndeceased and thus became a Pokémon.",
+        "has_alt_form": False,
+        "id": 92
+    },
+    {
+        "name": "Haunter",
+        "genus": "Gas Pokémon",
+        "identifier": "haunter",
+        "evolution_chain": 40,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 92,
+        "type1": 8,
+        "type2": 4,
+        "flavor_text": "On moonless nights, Haunter searches for\nsomeone to curse, so it’s best not to go out\nwalking around.",
+        "has_alt_form": False,
+        "id": 93
+    },
+    {
+        "name": "Gengar",
+        "genus": "Shadow Pokémon",
+        "identifier": "gengar",
+        "evolution_chain": 40,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 93,
+        "type1": 8,
+        "type2": 4,
+        "flavor_text": "You can hear tales told all over the world about\nhow Gengar will pay a visit to children who\nare naughty.",
+        "has_alt_form": False,
+        "id": 94
+    },
+    {
+        "name": "Onix",
+        "genus": "Rock Snake Pokémon",
+        "identifier": "onix",
+        "evolution_chain": 41,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 6,
+        "type2": 5,
+        "flavor_text": "Onix has a magnet in its brain. It acts as a compass so that\nthis Pokémon does not lose direction while it is tunneling.\nAs it grows older, its body becomes increasingly rounder\nand smoother.",
+        "has_alt_form": False,
+        "id": 95
+    },
+    {
+        "name": "Drowzee",
+        "genus": "Hypnosis Pokémon",
+        "identifier": "drowzee",
+        "evolution_chain": 42,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "It can be spotted near recreational facilities,\nintending to eat the pleasant dreams of children\nwho enjoyed themselves there that day.",
+        "has_alt_form": False,
+        "id": 96
+    },
+    {
+        "name": "Hypno",
+        "genus": "Hypnosis Pokémon",
+        "identifier": "hypno",
+        "evolution_chain": 42,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 96,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "In Alola, Komala is Hypno’s main target. It rarely\nharms people.",
+        "has_alt_form": False,
+        "id": 97
+    },
+    {
+        "name": "Krabby",
+        "genus": "River Crab Pokémon",
+        "identifier": "krabby",
+        "evolution_chain": 43,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Krabby live on beaches, burrowed inside holes dug into\nthe sand. On sandy beaches with little in the way of food,\nthese Pokémon can be seen squabbling with each other\nover territory.",
+        "has_alt_form": False,
+        "id": 98
+    },
+    {
+        "name": "Kingler",
+        "genus": "Pincer Pokémon",
+        "identifier": "kingler",
+        "evolution_chain": 43,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 98,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Kingler has an enormous, oversized claw. It waves this huge\nclaw in the air to communicate with others. However, because\nthe claw is so heavy, the Pokémon quickly tires.",
+        "has_alt_form": False,
+        "id": 99
+    },
+    {
+        "name": "Voltorb",
+        "genus": "Ball Pokémon",
+        "identifier": "voltorb",
+        "evolution_chain": 44,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "Voltorb is extremely sensitive—it explodes at the slightest\nof shocks. It is rumored that it was first created when a\nPoké Ball was exposed to a powerful pulse of energy.",
+        "has_alt_form": False,
+        "id": 100
+    },
+    {
+        "name": "Electrode",
+        "genus": "Ball Pokémon",
+        "identifier": "electrode",
+        "evolution_chain": 44,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 100,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "One of Electrode’s characteristics is its attraction to electricity.\nIt is a problematical Pokémon that congregates mostly at\nelectrical power plants to feed on electricity that has just\nbeen generated.",
+        "has_alt_form": False,
+        "id": 101
+    },
+    {
+        "name": "Exeggcute",
+        "genus": "Egg Pokémon",
+        "identifier": "exeggcute",
+        "evolution_chain": 45,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 12,
+        "type2": 14,
+        "flavor_text": "Six of them form a single Pokémon. Should one\nof the six be lost, the next morning there will\nonce more be six.",
+        "has_alt_form": False,
+        "id": 102
+    },
+    {
+        "name": "Exeggutor",
+        "genus": "Coconut Pokémon",
+        "identifier": "exeggutor",
+        "evolution_chain": 45,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 102,
+        "type1": 12,
+        "type2": 14,
+        "flavor_text": "It engages its enemies using psychic powers.\nEach of its three heads fires off psychokinetic\nenergy, tripling its power.",
+        "has_alt_form": False,
+        "id": 103
+    },
+    {
+        "name": "Cubone",
+        "genus": "Lonely Pokémon",
+        "identifier": "cubone",
+        "evolution_chain": 46,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "At night, it weeps loudly for its dead mother,\nbut those cries only attract its natural\nenemy—Mandibuzz.",
+        "has_alt_form": False,
+        "id": 104
+    },
+    {
+        "name": "Marowak",
+        "genus": "Bone Keeper Pokémon",
+        "identifier": "marowak",
+        "evolution_chain": 46,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 104,
+        "type1": 5,
+        "type2": None,
+        "flavor_text": "It throws bones at Mandibuzz to knock it down.\nIt’s thought that Marowak is trying to avenge\nits parent.",
+        "has_alt_form": False,
+        "id": 105
+    },
+    {
+        "name": "Hitmonlee",
+        "genus": "Kicking Pokémon",
+        "identifier": "hitmonlee",
+        "evolution_chain": 47,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 236,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "Hitmonlee’s legs freely contract and stretch. Using these\nspringlike legs, it bowls over foes with devastating kicks.\nAfter battle, it rubs down its legs and loosens the muscles\nto overcome fatigue.",
+        "has_alt_form": False,
+        "id": 106
+    },
+    {
+        "name": "Hitmonchan",
+        "genus": "Punching Pokémon",
+        "identifier": "hitmonchan",
+        "evolution_chain": 47,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 236,
+        "type1": 2,
+        "type2": None,
+        "flavor_text": "Hitmonchan is said to possess the spirit of a boxer who had\nbeen working toward a world championship. This Pokémon\nhas an indomitable spirit and will never give up in the face\nof adversity.",
+        "has_alt_form": False,
+        "id": 107
+    },
+    {
+        "name": "Lickitung",
+        "genus": "Licking Pokémon",
+        "identifier": "lickitung",
+        "evolution_chain": 48,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "It checks out whatever’s around it by licking\neverything. If you don’t clean off a spot where\nit’s licked you, you’ll break out in a rash!",
+        "has_alt_form": False,
+        "id": 108
+    },
+    {
+        "name": "Koffing",
+        "genus": "Poison Gas Pokémon",
+        "identifier": "koffing",
+        "evolution_chain": 49,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Koffing embodies toxic substances. It mixes the toxins with raw\ngarbage to set off a chemical reaction that results in a terribly\npowerful poison gas. The higher the temperature, the more gas\nis concocted by this Pokémon.",
+        "has_alt_form": False,
+        "id": 109
+    },
+    {
+        "name": "Weezing",
+        "genus": "Poison Gas Pokémon",
+        "identifier": "weezing",
+        "evolution_chain": 49,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 109,
+        "type1": 4,
+        "type2": None,
+        "flavor_text": "Weezing alternately shrinks and inflates its twin bodies to mix\ntogether toxic gases inside. The more the gases are mixed,\nthe more powerful the toxins become. The Pokémon also\nbecomes more putrid.",
+        "has_alt_form": False,
+        "id": 110
+    },
+    {
+        "name": "Rhyhorn",
+        "genus": "Spikes Pokémon",
+        "identifier": "rhyhorn",
+        "evolution_chain": 50,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 5,
+        "type2": 6,
+        "flavor_text": "Rhyhorn’s brain is very small. It is so dense, while on a run\nit forgets why it started running in the first place. It apparently\nremembers sometimes if it demolishes something.",
+        "has_alt_form": False,
+        "id": 111
+    },
+    {
+        "name": "Rhydon",
+        "genus": "Drill Pokémon",
+        "identifier": "rhydon",
+        "evolution_chain": 50,
+        "color": "gray",
+        "since_gen": 1,
+        "evolves_from": 111,
+        "type1": 5,
+        "type2": 6,
+        "flavor_text": "Rhydon has a horn that serves as a drill. It is used for\ndestroying rocks and boulders. This Pokémon occasionally\nrams into streams of magma, but the armor-like hide prevents\nit from feeling the heat.",
+        "has_alt_form": False,
+        "id": 112
+    },
+    {
+        "name": "Chansey",
+        "genus": "Egg Pokémon",
+        "identifier": "chansey",
+        "evolution_chain": 51,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 440,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "It seems that other Pokémon’s efforts to take\nits delicious, nutritious egg away from it caused\nChansey to get faster at fleeing.",
+        "has_alt_form": False,
+        "id": 113
+    },
+    {
+        "name": "Tangela",
+        "genus": "Vine Pokémon",
+        "identifier": "tangela",
+        "evolution_chain": 52,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 12,
+        "type2": None,
+        "flavor_text": "Tangela’s vines snap off easily if they are grabbed. This\nhappens without pain, allowing it to make a quick getaway.\nThe lost vines are replaced by newly grown vines the very\nnext day.",
+        "has_alt_form": False,
+        "id": 114
+    },
+    {
+        "name": "Kangaskhan",
+        "genus": "Parent Pokémon",
+        "identifier": "kangaskhan",
+        "evolution_chain": 53,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "Kangaskhan protects its child by keeping it in\nits pouch. It has zero forgiveness for those\nwho harm its child and will beat them down.",
+        "has_alt_form": False,
+        "id": 115
+    },
+    {
+        "name": "Horsea",
+        "genus": "Dragon Pokémon",
+        "identifier": "horsea",
+        "evolution_chain": 54,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "If Horsea senses danger, it will reflexively spray a dense\nblack ink from its mouth and try to escape. This Pokémon\nswims by cleverly flapping the fin on its back.",
+        "has_alt_form": False,
+        "id": 116
+    },
+    {
+        "name": "Seadra",
+        "genus": "Dragon Pokémon",
+        "identifier": "seadra",
+        "evolution_chain": 54,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 116,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Seadra generates whirlpools by spinning its body.\nThe whirlpools are strong enough to swallow even\nfishing boats. This Pokémon weakens prey with\nthese currents, then swallows it whole.",
+        "has_alt_form": False,
+        "id": 117
+    },
+    {
+        "name": "Goldeen",
+        "genus": "Goldfish Pokémon",
+        "identifier": "goldeen",
+        "evolution_chain": 55,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Although known for their splendid tail fins,\nGoldeen apparently compete among themselves\nto see whose horn is thickest and sharpest.",
+        "has_alt_form": False,
+        "id": 118
+    },
+    {
+        "name": "Seaking",
+        "genus": "Goldfish Pokémon",
+        "identifier": "seaking",
+        "evolution_chain": 55,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 118,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Its horn spins like a drill to steadily hollow out\nrocks—even harder ones. The coloration of the\nmale is more vivid.",
+        "has_alt_form": False,
+        "id": 119
+    },
+    {
+        "name": "Staryu",
+        "genus": "Star Shape Pokémon",
+        "identifier": "staryu",
+        "evolution_chain": 56,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "In many places, there are folktales of stardust\nfalling into the ocean and becoming Staryu.",
+        "has_alt_form": False,
+        "id": 120
+    },
+    {
+        "name": "Starmie",
+        "genus": "Mysterious Pokémon",
+        "identifier": "starmie",
+        "evolution_chain": 56,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": 120,
+        "type1": 11,
+        "type2": 14,
+        "flavor_text": "Its sparkling core is called “the gem of the sea.”\nThis core can be made into high-priced\naccessories that are traded in secret.",
+        "has_alt_form": False,
+        "id": 121
+    },
+    {
+        "name": "Mr. Mime",
+        "genus": "Barrier Pokémon",
+        "identifier": "mr-mime",
+        "evolution_chain": 57,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": 439,
+        "type1": 14,
+        "type2": 18,
+        "flavor_text": "Its pantomime skills are wonderful. You may\nbecome enraptured while watching it, but next\nthing you know, Mr. Mime has made a real wall.",
+        "has_alt_form": False,
+        "id": 122
+    },
+    {
+        "name": "Scyther",
+        "genus": "Mantis Pokémon",
+        "identifier": "scyther",
+        "evolution_chain": 58,
+        "color": "green",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": 3,
+        "flavor_text": "Its two sharp scythes are more than just\nweapons. It uses them with dexterity to dress\nits prey before eating.",
+        "has_alt_form": False,
+        "id": 123
+    },
+    {
+        "name": "Jynx",
+        "genus": "Human Shape Pokémon",
+        "identifier": "jynx",
+        "evolution_chain": 59,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 238,
+        "type1": 15,
+        "type2": 14,
+        "flavor_text": "It sways its hips to a rhythm all its own. The\nprecise movements of Jynx living in Alola are\ntruly wonderful.",
+        "has_alt_form": False,
+        "id": 124
+    },
+    {
+        "name": "Electabuzz",
+        "genus": "Electric Pokémon",
+        "identifier": "electabuzz",
+        "evolution_chain": 60,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 239,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "Electricity permeates its body. It swings\nits arms round and round to charge up\nelectricity before unleashing a punch.",
+        "has_alt_form": False,
+        "id": 125
+    },
+    {
+        "name": "Magmar",
+        "genus": "Spitfire Pokémon",
+        "identifier": "magmar",
+        "evolution_chain": 61,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 240,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "Its entire body is burning. When it breathes,\nthe temperature rises. When it sneezes, flames\nshoot out!",
+        "has_alt_form": False,
+        "id": 126
+    },
+    {
+        "name": "Pinsir",
+        "genus": "Stag Beetle Pokémon",
+        "identifier": "pinsir",
+        "evolution_chain": 62,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 7,
+        "type2": None,
+        "flavor_text": "It gets into territorial disputes with Vikavolt.\nFor some reason, it apparently gets along well\nwith Heracross in Alola.",
+        "has_alt_form": False,
+        "id": 127
+    },
+    {
+        "name": "Tauros",
+        "genus": "Wild Bull Pokémon",
+        "identifier": "tauros",
+        "evolution_chain": 63,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "They live in groups. The one with the longest,\nthickest, and most-scarred horns is the boss\nof the herd.",
+        "has_alt_form": False,
+        "id": 128
+    },
+    {
+        "name": "Magikarp",
+        "genus": "Fish Pokémon",
+        "identifier": "magikarp",
+        "evolution_chain": 64,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "In the distant past, they were fairly strong, but\nthey have become gradually weaker over time.",
+        "has_alt_form": False,
+        "id": 129
+    },
+    {
+        "name": "Gyarados",
+        "genus": "Atrocious Pokémon",
+        "identifier": "gyarados",
+        "evolution_chain": 64,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 129,
+        "type1": 11,
+        "type2": 3,
+        "flavor_text": "It fires hyper beams in all directions, burning the\nsurrounding area to ash. There are some regions\nwhere it’s called “the deity of destruction.”",
+        "has_alt_form": False,
+        "id": 130
+    },
+    {
+        "name": "Lapras",
+        "genus": "Transport Pokémon",
+        "identifier": "lapras",
+        "evolution_chain": 65,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 11,
+        "type2": 15,
+        "flavor_text": "It likes swimming around with people on its\nback. In the Alola region, it’s an important means\nof transportation over water.",
+        "has_alt_form": False,
+        "id": 131
+    },
+    {
+        "name": "Ditto",
+        "genus": "Transform Pokémon",
+        "identifier": "ditto",
+        "evolution_chain": 66,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "While it can transform into anything, each Ditto\napparently has its own strengths and\nweaknesses when it comes to transformations.",
+        "has_alt_form": False,
+        "id": 132
+    },
+    {
+        "name": "Eevee",
+        "genus": "Evolution Pokémon",
+        "identifier": "eevee",
+        "evolution_chain": 67,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "The question of why only Eevee has such\nunstable genes has still not been solved.",
+        "has_alt_form": False,
+        "id": 133
+    },
+    {
+        "name": "Vaporeon",
+        "genus": "Bubble Jet Pokémon",
+        "identifier": "vaporeon",
+        "evolution_chain": 67,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 133,
+        "type1": 11,
+        "type2": None,
+        "flavor_text": "Clean, clear waters are its usual habitat. When\nit’s about to be attacked by an invading enemy,\nit dives into the water to hide.",
+        "has_alt_form": False,
+        "id": 134
+    },
+    {
+        "name": "Jolteon",
+        "genus": "Lightning Pokémon",
+        "identifier": "jolteon",
+        "evolution_chain": 67,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": 133,
+        "type1": 13,
+        "type2": None,
+        "flavor_text": "Its lungs contain an organ that creates\nelectricity. The crackling sound of electricity\ncan be heard when it exhales.",
+        "has_alt_form": False,
+        "id": 135
+    },
+    {
+        "name": "Flareon",
+        "genus": "Flame Pokémon",
+        "identifier": "flareon",
+        "evolution_chain": 67,
+        "color": "red",
+        "since_gen": 1,
+        "evolves_from": 133,
+        "type1": 10,
+        "type2": None,
+        "flavor_text": "If it inhales deeply, that’s a sign it’s about to\nattack. Prepare to be hit by flames of over\n3,000 degrees Fahrenheit!",
+        "has_alt_form": False,
+        "id": 136
+    },
+    {
+        "name": "Porygon",
+        "genus": "Virtual Pokémon",
+        "identifier": "porygon",
+        "evolution_chain": 68,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "This Pokémon was created using the\ncutting-edge science of 20 years ago, so\nmany parts of it have since become obsolete.",
+        "has_alt_form": False,
+        "id": 137
+    },
+    {
+        "name": "Omanyte",
+        "genus": "Spiral Pokémon",
+        "identifier": "omanyte",
+        "evolution_chain": 69,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 6,
+        "type2": 11,
+        "flavor_text": "Omanyte lived in the seas of antiquity. Its\nfossils have been found bearing bite marks from\nArcheops, so apparently Archeops preyed on it.",
+        "has_alt_form": False,
+        "id": 138
+    },
+    {
+        "name": "Omastar",
+        "genus": "Spiral Pokémon",
+        "identifier": "omastar",
+        "evolution_chain": 69,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 138,
+        "type1": 6,
+        "type2": 11,
+        "flavor_text": "Its heavy shell is thought to be the reason this\nancient Pokémon died out. It’s apparently a\ndistant ancestor of Octillery.",
+        "has_alt_form": False,
+        "id": 139
+    },
+    {
+        "name": "Kabuto",
+        "genus": "Shellfish Pokémon",
+        "identifier": "kabuto",
+        "evolution_chain": 70,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 6,
+        "type2": 11,
+        "flavor_text": "This Pokémon thrived 300 million years ago. It’s\nsaid that living specimens can still be seen\nin a certain region—a rare sight.",
+        "has_alt_form": False,
+        "id": 140
+    },
+    {
+        "name": "Kabutops",
+        "genus": "Shellfish Pokémon",
+        "identifier": "kabutops",
+        "evolution_chain": 70,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 140,
+        "type1": 6,
+        "type2": 11,
+        "flavor_text": "Its body had begun to change so it could\nfunction on land. But it didn’t adapt in time and\nwent extinct.",
+        "has_alt_form": False,
+        "id": 141
+    },
+    {
+        "name": "Aerodactyl",
+        "genus": "Fossil Pokémon",
+        "identifier": "aerodactyl",
+        "evolution_chain": 71,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 6,
+        "type2": 3,
+        "flavor_text": "Restored from DNA found in amber, this\nPokémon exhibited ferocity that was greater\nthan expected. Some casualties resulted.",
+        "has_alt_form": False,
+        "id": 142
+    },
+    {
+        "name": "Snorlax",
+        "genus": "Sleeping Pokémon",
+        "identifier": "snorlax",
+        "evolution_chain": 72,
+        "color": "black",
+        "since_gen": 1,
+        "evolves_from": 446,
+        "type1": 1,
+        "type2": None,
+        "flavor_text": "It doesn’t do anything other than eat and sleep.\nWhen prompted to make a serious effort,\nthough, it apparently displays awesome power.",
+        "has_alt_form": False,
+        "id": 143
+    },
+    {
+        "name": "Articuno",
+        "genus": "Freeze Pokémon",
+        "identifier": "articuno",
+        "evolution_chain": 73,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 15,
+        "type2": 3,
+        "flavor_text": "Articuno is a legendary bird Pokémon that can control ice.\nThe flapping of its wings chills the air. As a result, it is said\nthat when this Pokémon flies, snow will fall.",
+        "has_alt_form": False,
+        "id": 144
+    },
+    {
+        "name": "Zapdos",
+        "genus": "Electric Pokémon",
+        "identifier": "zapdos",
+        "evolution_chain": 74,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 13,
+        "type2": 3,
+        "flavor_text": "Zapdos is a legendary bird Pokémon that has the ability\nto control electricity. It usually lives in thunderclouds.\nThe Pokémon gains power if it is stricken by lightning bolts.",
+        "has_alt_form": False,
+        "id": 145
+    },
+    {
+        "name": "Moltres",
+        "genus": "Flame Pokémon",
+        "identifier": "moltres",
+        "evolution_chain": 75,
+        "color": "yellow",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 10,
+        "type2": 3,
+        "flavor_text": "Moltres is a legendary bird Pokémon that has the ability\nto control fire. If this Pokémon is injured, it is said to dip its\nbody in the molten magma of a volcano to burn and heal itself.",
+        "has_alt_form": False,
+        "id": 146
+    },
+    {
+        "name": "Dratini",
+        "genus": "Dragon Pokémon",
+        "identifier": "dratini",
+        "evolution_chain": 76,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 16,
+        "type2": None,
+        "flavor_text": "It’s still weak, so it lurks on the floor of bodies\nof water, eating whatever food sinks down and\nliving a quiet life.",
+        "has_alt_form": False,
+        "id": 147
+    },
+    {
+        "name": "Dragonair",
+        "genus": "Dragon Pokémon",
+        "identifier": "dragonair",
+        "evolution_chain": 76,
+        "color": "blue",
+        "since_gen": 1,
+        "evolves_from": 147,
+        "type1": 16,
+        "type2": None,
+        "flavor_text": "Lakes where Dragonair live are filled with\nofferings from people, because they believe this\nPokémon is able to control the weather.",
+        "has_alt_form": False,
+        "id": 148
+    },
+    {
+        "name": "Dragonite",
+        "genus": "Dragon Pokémon",
+        "identifier": "dragonite",
+        "evolution_chain": 76,
+        "color": "brown",
+        "since_gen": 1,
+        "evolves_from": 148,
+        "type1": 16,
+        "type2": 3,
+        "flavor_text": "It flies over raging seas as if they were nothing.\nObserving this, a ship’s captain dubbed this\nPokémon “the sea incarnate.”",
+        "has_alt_form": False,
+        "id": 149
+    },
+    {
+        "name": "Mewtwo",
+        "genus": "Genetic Pokémon",
+        "identifier": "mewtwo",
+        "evolution_chain": 77,
+        "color": "purple",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "Mewtwo is a Pokémon that was created by genetic\nmanipulation. However, even though the scientific power\nof humans created this Pokémon’s body, they failed to\nendow Mewtwo with a compassionate heart.",
+        "has_alt_form": False,
+        "id": 150
+    },
+    {
+        "name": "Mew",
+        "genus": "New Species Pokémon",
+        "identifier": "mew",
+        "evolution_chain": 78,
+        "color": "pink",
+        "since_gen": 1,
+        "evolves_from": None,
+        "type1": 14,
+        "type2": None,
+        "flavor_text": "Mew is said to possess the genetic composition of all\nPokémon. It is capable of making itself invisible at will,\nso it entirely avoids notice even if it approaches people.",
+        "has_alt_form": False,
+        "id": 151
+    }
+]
+
+EVOLUTION = [
+    {
+        "evolves_from": 1,
+        "chain": 1,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 1
+    },
+    {
+        "evolves_from": 2,
+        "chain": 1,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 2
+    },
+    {
+        "evolves_from": 4,
+        "chain": 2,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 3
+    },
+    {
+        "evolves_from": 5,
+        "chain": 2,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 4
+    },
+    {
+        "evolves_from": 7,
+        "chain": 3,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 5
+    },
+    {
+        "evolves_from": 8,
+        "chain": 3,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 6
+    },
+    {
+        "evolves_from": 10,
+        "chain": 4,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 7
+    },
+    {
+        "evolves_from": 11,
+        "chain": 4,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 8
+    },
+    {
+        "evolves_from": 13,
+        "chain": 5,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 9
+    },
+    {
+        "evolves_from": 14,
+        "chain": 5,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 10
+    },
+    {
+        "evolves_from": 16,
+        "chain": 6,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 11
+    },
+    {
+        "evolves_from": 17,
+        "chain": 6,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 12
+    },
+    {
+        "evolves_from": 19,
+        "chain": 7,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 13
+    },
+    {
+        "evolves_from": 21,
+        "chain": 8,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 14
+    },
+    {
+        "evolves_from": 23,
+        "chain": 9,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 15
+    },
+    {
+        "evolves_from": 172,
+        "chain": 10,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 16
+    },
+    {
+        "evolves_from": 25,
+        "chain": 10,
+        "trigger": "use-item",
+        "trigger_item": "thunder-stone",
+        "id": 17
+    },
+    {
+        "evolves_from": 27,
+        "chain": 11,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 18
+    },
+    {
+        "evolves_from": 29,
+        "chain": 12,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 19
+    },
+    {
+        "evolves_from": 30,
+        "chain": 12,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 20
+    },
+    {
+        "evolves_from": 32,
+        "chain": 13,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 21
+    },
+    {
+        "evolves_from": 33,
+        "chain": 13,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 22
+    },
+    {
+        "evolves_from": 173,
+        "chain": 14,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 23
+    },
+    {
+        "evolves_from": 35,
+        "chain": 14,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 24
+    },
+    {
+        "evolves_from": 37,
+        "chain": 15,
+        "trigger": "use-item",
+        "trigger_item": "fire-stone",
+        "id": 25
+    },
+    {
+        "evolves_from": 174,
+        "chain": 16,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 26
+    },
+    {
+        "evolves_from": 39,
+        "chain": 16,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 27
+    },
+    {
+        "evolves_from": 41,
+        "chain": 17,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 28
+    },
+    {
+        "evolves_from": 43,
+        "chain": 18,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 29
+    },
+    {
+        "evolves_from": 44,
+        "chain": 18,
+        "trigger": "use-item",
+        "trigger_item": "leaf-stone",
+        "id": 30
+    },
+    {
+        "evolves_from": 46,
+        "chain": 19,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 31
+    },
+    {
+        "evolves_from": 48,
+        "chain": 20,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 32
+    },
+    {
+        "evolves_from": 50,
+        "chain": 21,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 33
+    },
+    {
+        "evolves_from": 52,
+        "chain": 22,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 34
+    },
+    {
+        "evolves_from": 54,
+        "chain": 23,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 35
+    },
+    {
+        "evolves_from": 56,
+        "chain": 24,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 36
+    },
+    {
+        "evolves_from": 58,
+        "chain": 25,
+        "trigger": "use-item",
+        "trigger_item": "fire-stone",
+        "id": 37
+    },
+    {
+        "evolves_from": 60,
+        "chain": 26,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 38
+    },
+    {
+        "evolves_from": 61,
+        "chain": 26,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 39
+    },
+    {
+        "evolves_from": 63,
+        "chain": 27,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 40
+    },
+    {
+        "evolves_from": 64,
+        "chain": 27,
+        "trigger": "trade",
+        "id": 41
+    },
+    {
+        "evolves_from": 66,
+        "chain": 28,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 42
+    },
+    {
+        "evolves_from": 67,
+        "chain": 28,
+        "trigger": "trade",
+        "id": 43
+    },
+    {
+        "evolves_from": 69,
+        "chain": 29,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 44
+    },
+    {
+        "evolves_from": 70,
+        "chain": 29,
+        "trigger": "use-item",
+        "trigger_item": "leaf-stone",
+        "id": 45
+    },
+    {
+        "evolves_from": 72,
+        "chain": 30,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 46
+    },
+    {
+        "evolves_from": 74,
+        "chain": 31,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 47
+    },
+    {
+        "evolves_from": 75,
+        "chain": 31,
+        "trigger": "trade",
+        "id": 48
+    },
+    {
+        "evolves_from": 77,
+        "chain": 32,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 49
+    },
+    {
+        "evolves_from": 79,
+        "chain": 33,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 50
+    },
+    {
+        "evolves_from": 81,
+        "chain": 34,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 51
+    },
+    {
+        "evolves_from": 84,
+        "chain": 36,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 52
+    },
+    {
+        "evolves_from": 86,
+        "chain": 37,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 53
+    },
+    {
+        "evolves_from": 88,
+        "chain": 38,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 54
+    },
+    {
+        "evolves_from": 90,
+        "chain": 39,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 55
+    },
+    {
+        "evolves_from": 92,
+        "chain": 40,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 56
+    },
+    {
+        "evolves_from": 93,
+        "chain": 40,
+        "trigger": "trade",
+        "id": 57
+    },
+    {
+        "evolves_from": 96,
+        "chain": 42,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 58
+    },
+    {
+        "evolves_from": 98,
+        "chain": 43,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 59
+    },
+    {
+        "evolves_from": 100,
+        "chain": 44,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 60
+    },
+    {
+        "evolves_from": 102,
+        "chain": 45,
+        "trigger": "use-item",
+        "trigger_item": "leaf-stone",
+        "id": 61
+    },
+    {
+        "evolves_from": 104,
+        "chain": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 62
+    },
+    {
+        "evolves_from": 236,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": 1,
+        "id": 63
+    },
+    {
+        "evolves_from": 236,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": -1,
+        "id": 64
+    },
+    {
+        "evolves_from": 109,
+        "chain": 49,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 65
+    },
+    {
+        "evolves_from": 111,
+        "chain": 50,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 66
+    },
+    {
+        "evolves_from": 440,
+        "chain": 51,
+        "trigger": "level-up",
+        "held_item": "oval-stone",
+        "time_of_day": "day",
+        "id": 67
+    },
+    {
+        "evolves_from": 116,
+        "chain": 54,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 68
+    },
+    {
+        "evolves_from": 118,
+        "chain": 55,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 69
+    },
+    {
+        "evolves_from": 120,
+        "chain": 56,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 70
+    },
+    {
+        "evolves_from": 439,
+        "chain": 57,
+        "trigger": "level-up",
+        "known_move": "mimic",
+        "id": 71
+    },
+    {
+        "evolves_from": 238,
+        "chain": 59,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 72
+    },
+    {
+        "evolves_from": 239,
+        "chain": 60,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 73
+    },
+    {
+        "evolves_from": 240,
+        "chain": 61,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 74
+    },
+    {
+        "evolves_from": 129,
+        "chain": 64,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 75
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 76
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "thunder-stone",
+        "id": 77
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "fire-stone",
+        "id": 78
+    },
+    {
+        "evolves_from": 138,
+        "chain": 69,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 79
+    },
+    {
+        "evolves_from": 140,
+        "chain": 70,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 80
+    },
+    {
+        "evolves_from": 446,
+        "chain": 72,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 81
+    },
+    {
+        "evolves_from": 147,
+        "chain": 76,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 82
+    },
+    {
+        "evolves_from": 148,
+        "chain": 76,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 83
+    },
+    {
+        "evolves_from": 152,
+        "chain": 79,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 84
+    },
+    {
+        "evolves_from": 153,
+        "chain": 79,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 85
+    },
+    {
+        "evolves_from": 155,
+        "chain": 80,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 86
+    },
+    {
+        "evolves_from": 156,
+        "chain": 80,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 87
+    },
+    {
+        "evolves_from": 158,
+        "chain": 81,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 88
+    },
+    {
+        "evolves_from": 159,
+        "chain": 81,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 89
+    },
+    {
+        "evolves_from": 161,
+        "chain": 82,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 90
+    },
+    {
+        "evolves_from": 163,
+        "chain": 83,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 91
+    },
+    {
+        "evolves_from": 165,
+        "chain": 84,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 92
+    },
+    {
+        "evolves_from": 167,
+        "chain": 85,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 93
+    },
+    {
+        "evolves_from": 42,
+        "chain": 17,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 94
+    },
+    {
+        "evolves_from": 170,
+        "chain": 86,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 95
+    },
+    {
+        "evolves_from": 175,
+        "chain": 87,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 96
+    },
+    {
+        "evolves_from": 177,
+        "chain": 88,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 97
+    },
+    {
+        "evolves_from": 179,
+        "chain": 89,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 98
+    },
+    {
+        "evolves_from": 180,
+        "chain": 89,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 99
+    },
+    {
+        "evolves_from": 44,
+        "chain": 18,
+        "trigger": "use-item",
+        "trigger_item": "sun-stone",
+        "id": 100
+    },
+    {
+        "evolves_from": 298,
+        "chain": 90,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 101
+    },
+    {
+        "evolves_from": 183,
+        "chain": 90,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 102
+    },
+    {
+        "evolves_from": 438,
+        "chain": 91,
+        "trigger": "level-up",
+        "known_move": "mimic",
+        "id": 103
+    },
+    {
+        "evolves_from": 61,
+        "chain": 26,
+        "trigger": "trade",
+        "held_item": "kings-rock",
+        "id": 104
+    },
+    {
+        "evolves_from": 187,
+        "chain": 92,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 105
+    },
+    {
+        "evolves_from": 188,
+        "chain": 92,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 106
+    },
+    {
+        "evolves_from": 191,
+        "chain": 94,
+        "trigger": "use-item",
+        "trigger_item": "sun-stone",
+        "id": 107
+    },
+    {
+        "evolves_from": 194,
+        "chain": 96,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 108
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 109
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 110
+    },
+    {
+        "evolves_from": 79,
+        "chain": 33,
+        "trigger": "trade",
+        "held_item": "kings-rock",
+        "id": 111
+    },
+    {
+        "evolves_from": 360,
+        "chain": 100,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 112
+    },
+    {
+        "evolves_from": 204,
+        "chain": 102,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 113
+    },
+    {
+        "evolves_from": 95,
+        "chain": 41,
+        "trigger": "trade",
+        "held_item": "metal-coat",
+        "id": 114
+    },
+    {
+        "evolves_from": 209,
+        "chain": 105,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 115
+    },
+    {
+        "evolves_from": 123,
+        "chain": 58,
+        "trigger": "trade",
+        "held_item": "metal-coat",
+        "id": 116
+    },
+    {
+        "evolves_from": 216,
+        "chain": 110,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 117
+    },
+    {
+        "evolves_from": 218,
+        "chain": 111,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 118
+    },
+    {
+        "evolves_from": 220,
+        "chain": 112,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 119
+    },
+    {
+        "evolves_from": 223,
+        "chain": 114,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 120
+    },
+    {
+        "evolves_from": 458,
+        "chain": 116,
+        "trigger": "level-up",
+        "party_species": "remoraid",
+        "id": 121
+    },
+    {
+        "evolves_from": 228,
+        "chain": 118,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 122
+    },
+    {
+        "evolves_from": 117,
+        "chain": 54,
+        "trigger": "trade",
+        "held_item": "dragon-scale",
+        "id": 123
+    },
+    {
+        "evolves_from": 231,
+        "chain": 119,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 124
+    },
+    {
+        "evolves_from": 137,
+        "chain": 68,
+        "trigger": "trade",
+        "held_item": "up-grade",
+        "id": 125
+    },
+    {
+        "evolves_from": 236,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 126
+    },
+    {
+        "evolves_from": 113,
+        "chain": 51,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 127
+    },
+    {
+        "evolves_from": 246,
+        "chain": 126,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 128
+    },
+    {
+        "evolves_from": 247,
+        "chain": 126,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 129
+    },
+    {
+        "evolves_from": 252,
+        "chain": 130,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 130
+    },
+    {
+        "evolves_from": 253,
+        "chain": 130,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 131
+    },
+    {
+        "evolves_from": 255,
+        "chain": 131,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 132
+    },
+    {
+        "evolves_from": 256,
+        "chain": 131,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 133
+    },
+    {
+        "evolves_from": 258,
+        "chain": 132,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 134
+    },
+    {
+        "evolves_from": 259,
+        "chain": 132,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 135
+    },
+    {
+        "evolves_from": 261,
+        "chain": 133,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 136
+    },
+    {
+        "evolves_from": 263,
+        "chain": 134,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 137
+    },
+    {
+        "evolves_from": 265,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 138
+    },
+    {
+        "evolves_from": 266,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 139
+    },
+    {
+        "evolves_from": 265,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 140
+    },
+    {
+        "evolves_from": 268,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 141
+    },
+    {
+        "evolves_from": 270,
+        "chain": 136,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 142
+    },
+    {
+        "evolves_from": 271,
+        "chain": 136,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 143
+    },
+    {
+        "evolves_from": 273,
+        "chain": 137,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 144
+    },
+    {
+        "evolves_from": 274,
+        "chain": 137,
+        "trigger": "use-item",
+        "trigger_item": "leaf-stone",
+        "id": 145
+    },
+    {
+        "evolves_from": 276,
+        "chain": 138,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 146
+    },
+    {
+        "evolves_from": 278,
+        "chain": 139,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 147
+    },
+    {
+        "evolves_from": 280,
+        "chain": 140,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 148
+    },
+    {
+        "evolves_from": 281,
+        "chain": 140,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 149
+    },
+    {
+        "evolves_from": 283,
+        "chain": 141,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 150
+    },
+    {
+        "evolves_from": 285,
+        "chain": 142,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 151
+    },
+    {
+        "evolves_from": 287,
+        "chain": 143,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 152
+    },
+    {
+        "evolves_from": 288,
+        "chain": 143,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 153
+    },
+    {
+        "evolves_from": 290,
+        "chain": 144,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 154
+    },
+    {
+        "evolves_from": 290,
+        "chain": 144,
+        "trigger": "shed",
+        "id": 155
+    },
+    {
+        "evolves_from": 293,
+        "chain": 145,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 156
+    },
+    {
+        "evolves_from": 294,
+        "chain": 145,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 157
+    },
+    {
+        "evolves_from": 296,
+        "chain": 146,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 158
+    },
+    {
+        "evolves_from": 300,
+        "chain": 148,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 159
+    },
+    {
+        "evolves_from": 304,
+        "chain": 151,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 160
+    },
+    {
+        "evolves_from": 305,
+        "chain": 151,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 161
+    },
+    {
+        "evolves_from": 307,
+        "chain": 152,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 162
+    },
+    {
+        "evolves_from": 309,
+        "chain": 153,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 163
+    },
+    {
+        "evolves_from": 406,
+        "chain": 158,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 164
+    },
+    {
+        "evolves_from": 316,
+        "chain": 159,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 165
+    },
+    {
+        "evolves_from": 318,
+        "chain": 160,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 166
+    },
+    {
+        "evolves_from": 320,
+        "chain": 161,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 167
+    },
+    {
+        "evolves_from": 322,
+        "chain": 162,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 168
+    },
+    {
+        "evolves_from": 325,
+        "chain": 164,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 169
+    },
+    {
+        "evolves_from": 328,
+        "chain": 166,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 170
+    },
+    {
+        "evolves_from": 329,
+        "chain": 166,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 171
+    },
+    {
+        "evolves_from": 331,
+        "chain": 167,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 172
+    },
+    {
+        "evolves_from": 333,
+        "chain": 168,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 173
+    },
+    {
+        "evolves_from": 339,
+        "chain": 173,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 174
+    },
+    {
+        "evolves_from": 341,
+        "chain": 174,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 175
+    },
+    {
+        "evolves_from": 343,
+        "chain": 175,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 176
+    },
+    {
+        "evolves_from": 345,
+        "chain": 176,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 177
+    },
+    {
+        "evolves_from": 347,
+        "chain": 177,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 178
+    },
+    {
+        "evolves_from": 349,
+        "chain": 178,
+        "trigger": "level-up",
+        "beauty": 171,
+        "id": 179
+    },
+    {
+        "evolves_from": 353,
+        "chain": 181,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 180
+    },
+    {
+        "evolves_from": 355,
+        "chain": 182,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 181
+    },
+    {
+        "evolves_from": 433,
+        "chain": 184,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 182
+    },
+    {
+        "evolves_from": 361,
+        "chain": 186,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 183
+    },
+    {
+        "evolves_from": 363,
+        "chain": 187,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 184
+    },
+    {
+        "evolves_from": 364,
+        "chain": 187,
+        "trigger": "level-up",
+        "level": 44,
+        "id": 185
+    },
+    {
+        "evolves_from": 366,
+        "chain": 188,
+        "trigger": "trade",
+        "held_item": "deep-sea-tooth",
+        "id": 186
+    },
+    {
+        "evolves_from": 366,
+        "chain": 188,
+        "trigger": "trade",
+        "held_item": "deep-sea-scale",
+        "id": 187
+    },
+    {
+        "evolves_from": 371,
+        "chain": 191,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 188
+    },
+    {
+        "evolves_from": 372,
+        "chain": 191,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 189
+    },
+    {
+        "evolves_from": 374,
+        "chain": 192,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 190
+    },
+    {
+        "evolves_from": 375,
+        "chain": 192,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 191
+    },
+    {
+        "evolves_from": 387,
+        "chain": 203,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 192
+    },
+    {
+        "evolves_from": 388,
+        "chain": 203,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 193
+    },
+    {
+        "evolves_from": 390,
+        "chain": 204,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 194
+    },
+    {
+        "evolves_from": 391,
+        "chain": 204,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 195
+    },
+    {
+        "evolves_from": 393,
+        "chain": 205,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 196
+    },
+    {
+        "evolves_from": 394,
+        "chain": 205,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 197
+    },
+    {
+        "evolves_from": 396,
+        "chain": 206,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 198
+    },
+    {
+        "evolves_from": 397,
+        "chain": 206,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 199
+    },
+    {
+        "evolves_from": 399,
+        "chain": 207,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 200
+    },
+    {
+        "evolves_from": 401,
+        "chain": 208,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 201
+    },
+    {
+        "evolves_from": 403,
+        "chain": 209,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 202
+    },
+    {
+        "evolves_from": 404,
+        "chain": 209,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 203
+    },
+    {
+        "evolves_from": 315,
+        "chain": 158,
+        "trigger": "use-item",
+        "trigger_item": "shiny-stone",
+        "id": 204
+    },
+    {
+        "evolves_from": 408,
+        "chain": 211,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 205
+    },
+    {
+        "evolves_from": 410,
+        "chain": 212,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 206
+    },
+    {
+        "evolves_from": 412,
+        "chain": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "female",
+        "id": 207
+    },
+    {
+        "evolves_from": 412,
+        "chain": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "male",
+        "id": 208
+    },
+    {
+        "evolves_from": 415,
+        "chain": 214,
+        "trigger": "level-up",
+        "level": 21,
+        "gender": "female",
+        "id": 209
+    },
+    {
+        "evolves_from": 418,
+        "chain": 216,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 210
+    },
+    {
+        "evolves_from": 420,
+        "chain": 217,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 211
+    },
+    {
+        "evolves_from": 422,
+        "chain": 218,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 212
+    },
+    {
+        "evolves_from": 190,
+        "chain": 93,
+        "trigger": "level-up",
+        "known_move": "double-hit",
+        "id": 213
+    },
+    {
+        "evolves_from": 425,
+        "chain": 219,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 214
+    },
+    {
+        "evolves_from": 427,
+        "chain": 220,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 215
+    },
+    {
+        "evolves_from": 200,
+        "chain": 98,
+        "trigger": "use-item",
+        "trigger_item": "dusk-stone",
+        "id": 216
+    },
+    {
+        "evolves_from": 198,
+        "chain": 97,
+        "trigger": "use-item",
+        "trigger_item": "dusk-stone",
+        "id": 217
+    },
+    {
+        "evolves_from": 431,
+        "chain": 221,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 218
+    },
+    {
+        "evolves_from": 434,
+        "chain": 223,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 219
+    },
+    {
+        "evolves_from": 436,
+        "chain": 224,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 220
+    },
+    {
+        "evolves_from": 443,
+        "chain": 230,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 221
+    },
+    {
+        "evolves_from": 444,
+        "chain": 230,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 222
+    },
+    {
+        "evolves_from": 447,
+        "chain": 232,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 223
+    },
+    {
+        "evolves_from": 449,
+        "chain": 233,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 224
+    },
+    {
+        "evolves_from": 451,
+        "chain": 234,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 225
+    },
+    {
+        "evolves_from": 453,
+        "chain": 235,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 226
+    },
+    {
+        "evolves_from": 456,
+        "chain": 237,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 227
+    },
+    {
+        "evolves_from": 459,
+        "chain": 239,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 228
+    },
+    {
+        "evolves_from": 215,
+        "chain": 109,
+        "trigger": "level-up",
+        "held_item": "razor-claw",
+        "time_of_day": "night",
+        "id": 229
+    },
+    {
+        "evolves_from": 82,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": 10,
+        "id": 230
+    },
+    {
+        "evolves_from": 108,
+        "chain": 48,
+        "trigger": "level-up",
+        "known_move": "rollout",
+        "id": 231
+    },
+    {
+        "evolves_from": 112,
+        "chain": 50,
+        "trigger": "trade",
+        "held_item": "protector",
+        "id": 232
+    },
+    {
+        "evolves_from": 114,
+        "chain": 52,
+        "trigger": "level-up",
+        "known_move": "ancient-power",
+        "id": 233
+    },
+    {
+        "evolves_from": 125,
+        "chain": 60,
+        "trigger": "trade",
+        "held_item": "electirizer",
+        "id": 234
+    },
+    {
+        "evolves_from": 126,
+        "chain": 61,
+        "trigger": "trade",
+        "held_item": "magmarizer",
+        "id": 235
+    },
+    {
+        "evolves_from": 176,
+        "chain": 87,
+        "trigger": "use-item",
+        "trigger_item": "shiny-stone",
+        "id": 236
+    },
+    {
+        "evolves_from": 193,
+        "chain": 95,
+        "trigger": "level-up",
+        "known_move": "ancient-power",
+        "id": 237
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 8,
+        "id": 238
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 48,
+        "id": 239
+    },
+    {
+        "evolves_from": 207,
+        "chain": 104,
+        "trigger": "level-up",
+        "held_item": "razor-fang",
+        "time_of_day": "night",
+        "id": 240
+    },
+    {
+        "evolves_from": 221,
+        "chain": 112,
+        "trigger": "level-up",
+        "known_move": "ancient-power",
+        "id": 241
+    },
+    {
+        "evolves_from": 233,
+        "chain": 68,
+        "trigger": "trade",
+        "held_item": "dubious-disc",
+        "id": 242
+    },
+    {
+        "evolves_from": 281,
+        "chain": 140,
+        "trigger": "use-item",
+        "trigger_item": "dawn-stone",
+        "gender": "male",
+        "id": 243
+    },
+    {
+        "evolves_from": 299,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": 10,
+        "id": 244
+    },
+    {
+        "evolves_from": 356,
+        "chain": 182,
+        "trigger": "trade",
+        "held_item": "reaper-cloth",
+        "id": 245
+    },
+    {
+        "evolves_from": 361,
+        "chain": 186,
+        "trigger": "use-item",
+        "trigger_item": "dawn-stone",
+        "gender": "female",
+        "id": 246
+    },
+    {
+        "evolves_from": 495,
+        "chain": 256,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 247
+    },
+    {
+        "evolves_from": 496,
+        "chain": 256,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 248
+    },
+    {
+        "evolves_from": 498,
+        "chain": 257,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 249
+    },
+    {
+        "evolves_from": 499,
+        "chain": 257,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 250
+    },
+    {
+        "evolves_from": 501,
+        "chain": 258,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 251
+    },
+    {
+        "evolves_from": 502,
+        "chain": 258,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 252
+    },
+    {
+        "evolves_from": 504,
+        "chain": 259,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 253
+    },
+    {
+        "evolves_from": 506,
+        "chain": 260,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 254
+    },
+    {
+        "evolves_from": 507,
+        "chain": 260,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 255
+    },
+    {
+        "evolves_from": 509,
+        "chain": 261,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 256
+    },
+    {
+        "evolves_from": 511,
+        "chain": 262,
+        "trigger": "use-item",
+        "trigger_item": "leaf-stone",
+        "id": 257
+    },
+    {
+        "evolves_from": 513,
+        "chain": 263,
+        "trigger": "use-item",
+        "trigger_item": "fire-stone",
+        "id": 258
+    },
+    {
+        "evolves_from": 515,
+        "chain": 264,
+        "trigger": "use-item",
+        "trigger_item": "water-stone",
+        "id": 259
+    },
+    {
+        "evolves_from": 517,
+        "chain": 265,
+        "trigger": "use-item",
+        "trigger_item": "moon-stone",
+        "id": 260
+    },
+    {
+        "evolves_from": 519,
+        "chain": 266,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 261
+    },
+    {
+        "evolves_from": 520,
+        "chain": 266,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 262
+    },
+    {
+        "evolves_from": 522,
+        "chain": 267,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 263
+    },
+    {
+        "evolves_from": 524,
+        "chain": 268,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 264
+    },
+    {
+        "evolves_from": 525,
+        "chain": 268,
+        "trigger": "trade",
+        "id": 265
+    },
+    {
+        "evolves_from": 527,
+        "chain": 269,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 266
+    },
+    {
+        "evolves_from": 529,
+        "chain": 270,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 267
+    },
+    {
+        "evolves_from": 532,
+        "chain": 272,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 268
+    },
+    {
+        "evolves_from": 533,
+        "chain": 272,
+        "trigger": "trade",
+        "id": 269
+    },
+    {
+        "evolves_from": 535,
+        "chain": 273,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 270
+    },
+    {
+        "evolves_from": 536,
+        "chain": 273,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 271
+    },
+    {
+        "evolves_from": 540,
+        "chain": 276,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 272
+    },
+    {
+        "evolves_from": 541,
+        "chain": 276,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 273
+    },
+    {
+        "evolves_from": 543,
+        "chain": 277,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 274
+    },
+    {
+        "evolves_from": 544,
+        "chain": 277,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 275
+    },
+    {
+        "evolves_from": 546,
+        "chain": 278,
+        "trigger": "use-item",
+        "trigger_item": "sun-stone",
+        "id": 276
+    },
+    {
+        "evolves_from": 548,
+        "chain": 279,
+        "trigger": "use-item",
+        "trigger_item": "sun-stone",
+        "id": 277
+    },
+    {
+        "evolves_from": 551,
+        "chain": 281,
+        "trigger": "level-up",
+        "level": 29,
+        "id": 278
+    },
+    {
+        "evolves_from": 552,
+        "chain": 281,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 279
+    },
+    {
+        "evolves_from": 554,
+        "chain": 282,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 280
+    },
+    {
+        "evolves_from": 557,
+        "chain": 284,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 281
+    },
+    {
+        "evolves_from": 559,
+        "chain": 285,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 282
+    },
+    {
+        "evolves_from": 562,
+        "chain": 287,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 283
+    },
+    {
+        "evolves_from": 564,
+        "chain": 288,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 284
+    },
+    {
+        "evolves_from": 566,
+        "chain": 289,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 285
+    },
+    {
+        "evolves_from": 568,
+        "chain": 290,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 286
+    },
+    {
+        "evolves_from": 570,
+        "chain": 291,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 287
+    },
+    {
+        "evolves_from": 572,
+        "chain": 292,
+        "trigger": "use-item",
+        "trigger_item": "shiny-stone",
+        "id": 288
+    },
+    {
+        "evolves_from": 574,
+        "chain": 293,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 289
+    },
+    {
+        "evolves_from": 575,
+        "chain": 293,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 290
+    },
+    {
+        "evolves_from": 577,
+        "chain": 294,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 291
+    },
+    {
+        "evolves_from": 578,
+        "chain": 294,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 292
+    },
+    {
+        "evolves_from": 580,
+        "chain": 295,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 293
+    },
+    {
+        "evolves_from": 582,
+        "chain": 296,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 294
+    },
+    {
+        "evolves_from": 583,
+        "chain": 296,
+        "trigger": "level-up",
+        "level": 47,
+        "id": 295
+    },
+    {
+        "evolves_from": 585,
+        "chain": 297,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 296
+    },
+    {
+        "evolves_from": 588,
+        "chain": 299,
+        "trigger": "trade",
+        "trade_species": "shelmet",
+        "id": 297
+    },
+    {
+        "evolves_from": 590,
+        "chain": 300,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 298
+    },
+    {
+        "evolves_from": 592,
+        "chain": 301,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 299
+    },
+    {
+        "evolves_from": 595,
+        "chain": 303,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 300
+    },
+    {
+        "evolves_from": 597,
+        "chain": 304,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 301
+    },
+    {
+        "evolves_from": 599,
+        "chain": 305,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 302
+    },
+    {
+        "evolves_from": 600,
+        "chain": 305,
+        "trigger": "level-up",
+        "level": 49,
+        "id": 303
+    },
+    {
+        "evolves_from": 602,
+        "chain": 306,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 304
+    },
+    {
+        "evolves_from": 603,
+        "chain": 306,
+        "trigger": "use-item",
+        "trigger_item": "thunder-stone",
+        "id": 305
+    },
+    {
+        "evolves_from": 605,
+        "chain": 307,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 306
+    },
+    {
+        "evolves_from": 607,
+        "chain": 308,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 307
+    },
+    {
+        "evolves_from": 608,
+        "chain": 308,
+        "trigger": "use-item",
+        "trigger_item": "dusk-stone",
+        "id": 308
+    },
+    {
+        "evolves_from": 610,
+        "chain": 309,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 309
+    },
+    {
+        "evolves_from": 611,
+        "chain": 309,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 310
+    },
+    {
+        "evolves_from": 613,
+        "chain": 310,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 311
+    },
+    {
+        "evolves_from": 616,
+        "chain": 312,
+        "trigger": "trade",
+        "trade_species": "karrablast",
+        "id": 312
+    },
+    {
+        "evolves_from": 619,
+        "chain": 314,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 313
+    },
+    {
+        "evolves_from": 622,
+        "chain": 316,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 314
+    },
+    {
+        "evolves_from": 624,
+        "chain": 317,
+        "trigger": "level-up",
+        "level": 52,
+        "id": 315
+    },
+    {
+        "evolves_from": 627,
+        "chain": 319,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 316
+    },
+    {
+        "evolves_from": 629,
+        "chain": 320,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 317
+    },
+    {
+        "evolves_from": 633,
+        "chain": 323,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 318
+    },
+    {
+        "evolves_from": 634,
+        "chain": 323,
+        "trigger": "level-up",
+        "level": 64,
+        "id": 319
+    },
+    {
+        "evolves_from": 636,
+        "chain": 324,
+        "trigger": "level-up",
+        "level": 59,
+        "id": 320
+    },
+    {
+        "evolves_from": 349,
+        "chain": 178,
+        "trigger": "trade",
+        "held_item": "prism-scale",
+        "id": 321
+    },
+    {
+        "evolves_from": 82,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": 379,
+        "id": 322
+    },
+    {
+        "evolves_from": 299,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": 379,
+        "id": 323
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 375,
+        "id": 324
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 380,
+        "id": 325
+    },
+    {
+        "evolves_from": 682,
+        "chain": 350,
+        "trigger": "trade",
+        "held_item": "sachet",
+        "id": 327
+    },
+    {
+        "evolves_from": 661,
+        "chain": 341,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 328
+    },
+    {
+        "evolves_from": 708,
+        "chain": 364,
+        "trigger": "trade",
+        "id": 329
+    },
+    {
+        "evolves_from": 662,
+        "chain": 341,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 330
+    },
+    {
+        "evolves_from": 653,
+        "chain": 338,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 331
+    },
+    {
+        "evolves_from": 686,
+        "chain": 352,
+        "trigger": "level-up",
+        "level": 30,
+        "needs_inversion": true,
+        "id": 332
+    },
+    {
+        "evolves_from": 654,
+        "chain": 338,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 333
+    },
+    {
+        "evolves_from": 650,
+        "chain": 337,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 334
+    },
+    {
+        "evolves_from": 692,
+        "chain": 355,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 335
+    },
+    {
+        "evolves_from": 651,
+        "chain": 337,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 336
+    },
+    {
+        "evolves_from": 656,
+        "chain": 339,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 337
+    },
+    {
+        "evolves_from": 657,
+        "chain": 339,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 338
+    },
+    {
+        "evolves_from": 679,
+        "chain": 349,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 339
+    },
+    {
+        "evolves_from": 704,
+        "chain": 362,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 340
+    },
+    {
+        "evolves_from": 665,
+        "chain": 342,
+        "trigger": "level-up",
+        "level": 12,
+        "id": 341
+    },
+    {
+        "evolves_from": 664,
+        "chain": 342,
+        "trigger": "level-up",
+        "level": 9,
+        "id": 342
+    },
+    {
+        "evolves_from": 688,
+        "chain": 353,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 343
+    },
+    {
+        "evolves_from": 710,
+        "chain": 365,
+        "trigger": "trade",
+        "id": 344
+    },
+    {
+        "evolves_from": 659,
+        "chain": 340,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 345
+    },
+    {
+        "evolves_from": 669,
+        "chain": 344,
+        "trigger": "level-up",
+        "level": 19,
+        "id": 346
+    },
+    {
+        "evolves_from": 670,
+        "chain": 344,
+        "trigger": "use-item",
+        "trigger_item": "shiny-stone",
+        "id": 347
+    },
+    {
+        "evolves_from": 680,
+        "chain": 349,
+        "trigger": "use-item",
+        "trigger_item": "dusk-stone",
+        "id": 348
+    },
+    {
+        "evolves_from": 674,
+        "chain": 346,
+        "trigger": "level-up",
+        "level": 32,
+        "party_type": "dark",
+        "id": 349
+    },
+    {
+        "evolves_from": 684,
+        "chain": 351,
+        "trigger": "trade",
+        "held_item": "whipped-dream",
+        "id": 350
+    },
+    {
+        "evolves_from": 690,
+        "chain": 354,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 351
+    },
+    {
+        "evolves_from": 696,
+        "chain": 357,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "day",
+        "id": 352
+    },
+    {
+        "evolves_from": 698,
+        "chain": 358,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "night",
+        "id": 353
+    },
+    {
+        "evolves_from": 712,
+        "chain": 366,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 354
+    },
+    {
+        "evolves_from": 694,
+        "chain": 356,
+        "trigger": "use-item",
+        "trigger_item": "sun-stone",
+        "id": 355
+    },
+    {
+        "evolves_from": 667,
+        "chain": 343,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 356
+    },
+    {
+        "evolves_from": 672,
+        "chain": 345,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 357
+    },
+    {
+        "evolves_from": 705,
+        "chain": 362,
+        "trigger": "level-up",
+        "level": 50,
+        "needs_rain": true,
+        "id": 358
+    },
+    {
+        "evolves_from": 714,
+        "chain": 367,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 359
+    },
+    {
+        "evolves_from": 677,
+        "chain": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 360
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "known_move_type": "fairy",
+        "affection": 2,
+        "id": 361
+    },
+    {
+        "evolves_from": 82,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": 629,
+        "id": 362
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 650,
+        "id": 363
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": 640,
+        "id": 364
+    },
+    {
+        "evolves_from": 299,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": 629,
+        "id": 365
+    },
+    {
+        "evolves_from": 82,
+        "chain": 34,
+        "trigger": "level-up",
+        "id": 366
+    },
+    {
+        "evolves_from": 104,
+        "chain": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "time_of_day": "night",
+        "id": 367
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "id": 368
+    },
+    {
+        "evolves_from": 133,
+        "chain": 67,
+        "trigger": "level-up",
+        "id": 369
+    },
+    {
+        "evolves_from": 299,
+        "chain": 147,
+        "trigger": "level-up",
+        "id": 370
+    },
+    {
+        "evolves_from": 349,
+        "chain": 178,
+        "trigger": "level-up",
+        "beauty": 170,
+        "id": 371
+    },
+    {
+        "evolves_from": 677,
+        "chain": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "gender": "male",
+        "id": 372
+    },
+    {
+        "evolves_from": 722,
+        "chain": 374,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 373
+    },
+    {
+        "evolves_from": 723,
+        "chain": 374,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 374
+    },
+    {
+        "evolves_from": 725,
+        "chain": 375,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 375
+    },
+    {
+        "evolves_from": 726,
+        "chain": 375,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 376
+    },
+    {
+        "evolves_from": 728,
+        "chain": 376,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 377
+    },
+    {
+        "evolves_from": 729,
+        "chain": 376,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 378
+    },
+    {
+        "evolves_from": 731,
+        "chain": 377,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 379
+    },
+    {
+        "evolves_from": 732,
+        "chain": 377,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 380
+    },
+    {
+        "evolves_from": 734,
+        "chain": 378,
+        "trigger": "level-up",
+        "level": 20,
+        "time_of_day": "day",
+        "id": 381
+    },
+    {
+        "evolves_from": 736,
+        "chain": 379,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 382
+    },
+    {
+        "evolves_from": 737,
+        "chain": 379,
+        "trigger": "level-up",
+        "id": 383
+    },
+    {
+        "evolves_from": 739,
+        "chain": 380,
+        "trigger": "level-up",
+        "id": 384
+    },
+    {
+        "evolves_from": 742,
+        "chain": 382,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 385
+    },
+    {
+        "evolves_from": 744,
+        "chain": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "day",
+        "id": 386
+    },
+    {
+        "evolves_from": 744,
+        "chain": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "night",
+        "id": 387
+    },
+    {
+        "evolves_from": 747,
+        "chain": 385,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 388
+    },
+    {
+        "evolves_from": 749,
+        "chain": 386,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 389
+    },
+    {
+        "evolves_from": 751,
+        "chain": 387,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 390
+    },
+    {
+        "evolves_from": 753,
+        "chain": 388,
+        "trigger": "level-up",
+        "level": 34,
+        "time_of_day": "day",
+        "id": 391
+    },
+    {
+        "evolves_from": 755,
+        "chain": 389,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 392
+    },
+    {
+        "evolves_from": 757,
+        "chain": 390,
+        "trigger": "level-up",
+        "level": 33,
+        "gender": "female",
+        "id": 393
+    },
+    {
+        "evolves_from": 759,
+        "chain": 391,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 394
+    },
+    {
+        "evolves_from": 761,
+        "chain": 392,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 395
+    },
+    {
+        "evolves_from": 762,
+        "chain": 392,
+        "trigger": "level-up",
+        "known_move": "stomp",
+        "id": 396
+    },
+    {
+        "evolves_from": 767,
+        "chain": 396,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 397
+    },
+    {
+        "evolves_from": 769,
+        "chain": 397,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 398
+    },
+    {
+        "evolves_from": 772,
+        "chain": 399,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 399
+    },
+    {
+        "evolves_from": 782,
+        "chain": 408,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 400
+    },
+    {
+        "evolves_from": 783,
+        "chain": 408,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 401
+    },
+    {
+        "evolves_from": 789,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 402
+    },
+    {
+        "evolves_from": 790,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 403
+    },
+    {
+        "evolves_from": 790,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 404
+    },
+    {
+        "evolves_from": 803,
+        "chain": 424,
+        "trigger": "level-up",
+        "known_move": "dragon-pulse",
+        "id": 405
+    }
+]
+
+TYPE = {
+    'water': {
+        'info' : 'Water is one of the three basic elemental types along with Fire and Grass,'\
+                'which constitute the three starter Pokémon. This creates a simple triangle'\
+                'to explain the type concept easily to new players. Water is the most common'\
+                'type with over 100 Pokémon, which are based on a wide variety of fish and'\
+                'other sea-dwelling creatures.',
+        'info2' : 'Notable Trainers who specialize in Water-type Pokémon include Misty of Cerulean City,'\
+                  'Juan and Wallace of Sootopolis City, Crasher Wake of Pastoria City, Cress of Striaton City,'\
+                  'Marlon of Humilau City, Siebold of the Kalos Elite Four, and Trial Captain Lana of Konikoni City.'\
+                  'Prior to changes in Generation IV, all damaging Water-type moves were special,'\
+                  'but they may now also be physical depending on the attack.',
+        'image' : 'https://pokeweakness.com/images/1891870-131lapras.png',
+        'advantages': ['ground', 'rock', 'fire'],
+        'weaknesses': ['grass', 'electric'],
+        'pokemon': [ALL['magikarp']['id'], ALL['gyarados']['id']]
+        "damage_class" : 'special',
+        'identifier' : 'water',
+        'vs_normal' : 1.0,
+        'vs_fighting' : 1.0,
+        'vs_flying' : 1.0,
+        'vs_poison' : 1.0,
+        'vs_ground' : 2.0,
+        'vs_rock' :  2.0,
+        'vs_bug' : 1.0,
+        'vs_ghost' : 1.0,
+        'vs_steel' : 1.0,
+        'vs_fire' : 2.0,
+        'vs_water' : 0.5,
+        'vs_grass' : 0.5,
+        'vs_electric' : 1.0,
+        'vs_psychic' : 1.0,
+        'vs_ice' : 1.0,
+        'vs_dragon' : 0.5,
+        'vs_dark' : 1.0,
+        'vs_fairy' : 1.0,
+        'id' : 11
+    },
+    'flying': {
+        'info' : 'Most Flying type Pokémon are based on birds or insects, along with some mythical creatures like dragons.'\
+        'On average they are faster than any other type. Nearly every Flying type has Flying as the secondary type,'\
+        'usually with Normal.'\
+        'There is only one pure Flying Pokémon (Tornadus), and one line with Flying as a primary type (Noibat/Noivern).',
+        'info2' : 'Notable Trainers who specialize in Flying-type Pokémon are the Gym Leaders Falkner of Violet City,'\
+        'Winona of Fortree City, Skyla of Mistralton City, and Kahili of Alola Elite Four.'\
+        'Prior to changes in Generation IV, all damaging Flying-type moves were physical,'\
+        'but they may now also be special depending on the attack.',
+        'image' : 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png',
+        'advantages': ['fighting', 'bug', 'grass'],
+        'weaknesses': ['rock', 'electric', 'ice'],
+        'pokemon': [ALL['gyarados']['id']]
+        'damage_class' : 'physical',
+        'identifier' : 'flying',
+        'vs_normal' : 1.0,
+        'vs_fighting' : 2.0,
+        'vs_flying' : 1.0,
+        'vs_poison' : 1.0,
+        'vs_ground' : 1.0,
+        'vs_rock' : 0.5,
+        'vs_bug' : 2.0,
+        'vs_ghost' : 1.0,
+        'vs_steel' : 0.5,
+        'vs_fire' : 1.0,
+        'vs_water' : 1.0,
+        'vs_grass' : 2.0,
+        'vs_electric' : 0.5,
+        'vs_psychic' : 1.0,
+        'vs_ice' : 1.0,
+        'vs_dragon' : 1.0,
+        'vs_dark' : 1.0,
+        'vs_fairy' : 1.0,
+        'id' : 3
+    },
+    'ground': {
+        'info' : 'Ground is one of the strongest types offensively:'\
+        'it is super-effective against five other types (as is Fighting)'\
+        'and Earthquake is one of the strongest moves in the game with power and accuracy both 100.'\
+        'Unfortunately, many Ground type Pokémon are dual Rock types, lumbering them with 4x Grass and Water disadvantages.',
+        'info2' : 'Notable Trainers who specialize in Ground-type Pokémon are Giovanni of Viridian City,'\
+        'Bertha of the Sinnoh Elite Four, Clay of Driftveil City, and Island Kahuna Hapu of Poni Island.'\
+        'Prior to changes in Generation IV, all damaging Ground-type moves were physical,'\
+        'but they may now also be special depending on the attack.',
+        'image' : 'https://cdn.bulbagarden.net/upload/3/31/050Diglett.png',
+        'advantages': ['poison', 'rock', 'fire', 'steel', 'electric'],
+        'weaknesses': ['water', 'grass', 'ice'],
+        'pokemon': [ALL['sandslash']['id'], ALL['sandshrew']['id']]
+        'damage_class' : 'physical',
+        'identifier': 'ground',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 0.0,
+        'vs_poison': 2.0,
+        'vs_ground': 1.0,
+        'vs_rock': 2.0,
+        'vs_bug': 0.5,
+        'vs_ghost': 1.0,
+        'vs_steel': 2.0,
+        'vs_fire': 2.0,
+        'vs_water': 1.0,
+        'vs_grass': 0.5,
+        'vs_electric': 2.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 1.0,
+        'id': 5
+    },
+    'poison': {
+        'info' : 'The Poison type is regarded as one of the weakest offensively.'\
+        'Prior to Pokémon X/Y it was super-effective only against Grass'\
+        '(many of which are dual Poison so neutralizes the effect).'\
+        'It now has an extra advantage against the new Fairy type.'\
+        'In the first generation it was also super-effective against Bug but this was changed.'\
+        'It fares a little better defensively but its best advantage is through status moves like Toxic.',
+        'info2' : 'Notable Trainers who specialize in Poison-type Pokémon include Janine of Fuchsia City,'\
+        'her father Koga of the Indigo Plateau Elite Four, Roxie of Virbank City, and Team Skull Admin Plumeria.'\
+        'Some villainous teams, such as Team Rocket, also frequently use Poison-type Pokémon.'\
+        'Prior to changes in Generation IV, all damaging Poison-type moves were physical,'\
+        'but they may now also be special depending on the attack.',
+        'image' : 'http://bogleech.com/pokemon/koffing.png',
+        'advantages': ['grass', 'fairy'],
+        'weaknesses': ['ground', 'psychic'],
+        'pokemon': [ALL['ekans']['id'], ALL['arbok']['id']]
+        'damage_class': 'physical',
+        'identifier': 'poison',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 1.0,
+        'vs_poison': 0.5,
+        'vs_ground': 0.5,
+        'vs_rock': 0.5,
+        'vs_bug': 1.0,
+        'vs_ghost': 0.5,
+        'vs_steel': 0.0,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 2.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 2.0,
+        'id': 4
+    },
+    'normal' : {
+        'info' : '',
+        'info2' : '',
+        'image' : '',
+        'advantages' : '',
+        'weaknesses' : '',
+        'pokemon' : '',
+        'damage_class': 'physical',
+        'identifier': 'normal',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 1.0,
+        'vs_poison': 1.0,
+        'vs_ground': 1.0,
+        'vs_rock': 0.5,
+        'vs_bug': 1.0,
+        'vs_ghost': 0.0,
+        'vs_steel': 0.5,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 1.0,
+        'id': 1
+
+
+    },
+    'fighting': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': '',
+        'identifier': '',
+        'damage_class': 'physical',
+        'identifier': 'fighting',
+        'vs_normal': 2.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 0.5,
+        'vs_poison': 0.5,
+        'vs_ground': 1.0,
+        'vs_rock': 2.0,
+        'vs_bug': 0.5,
+        'vs_ghost': 0.0,
+        'vs_steel': 2.0,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 0.5,
+        'vs_ice': 2.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 2.0,
+        'vs_fairy': 0.5,
+        'id': 2
+    },
+    'rock': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class' : 'physical',
+        'identifier' : 'rock',
+        'vs_normal' : 1.0,
+        'vs_fighting' : 0.5,
+        'vs_flying' : 2.0,
+        'vs_poison' : 1.0,
+        'vs_ground' : 0.5,
+        'vs_rock' : 1.0,
+        'vs_bug' : 2.0,
+        'vs_ghost' : 1.0,
+        'vs_steel' : 0.5,
+        'vs_fire' : 2.0,
+        'vs_water' : 1.0,
+        'vs_grass' : 1.0,
+        'vs_electric' : 1.0,
+        'vs_psychic' : 1.0,
+        'vs_ice' : 2.0,
+        'vs_dragon' : 1.0,
+        'vs_dark' : 1.0,
+        'vs_fairy' : 1.0,
+        'id' : 6
+
+    },
+    'bug': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class' : 'physical',
+        'identifier' : 'bug',
+        'vs_normal' : 1.0,
+        'vs_fighting' : 0.5,
+        'vs_flying' : 0.5,
+        'vs_poison' : 0.5,
+        'vs_ground' : 1.0,
+        'vs_rock' : 1.0,
+        'vs_bug' : 1.0,
+        'vs_ghost' : 0.5,
+        'vs_steel' : 0.5,
+        'vs_fire' : 0.5,
+        'vs_water' : 1.0,
+        'vs_grass' : 2.0,
+        'vs_electric' : 1.0,
+        'vs_psychic' : 2.0,
+        'vs_ice' : 1.0,
+        'vs_dragon' : 1.0,
+        'vs_dark' : 2.0,
+        'vs_fairy' : 0.5,
+        'id' : 7
+    },
+    'ghost': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class' : 'physical',
+        'identifier' : 'ghost',
+        'vs_normal' : 0.0,
+        'vs_fighting' : 1.0,
+        'vs_flying' : 1.0,
+        'vs_poison' : 1.0,
+        'vs_ground' : 1.0,
+        'vs_rock' : 1.0,
+        'vs_bug' : 1.0,
+        'vs_ghost' : 2.0,
+        'vs_steel' : 1.0,
+        'vs_fire' : 1.0,
+        'vs_water' : 1.0,
+        'vs_grass' : 1.0,
+        'vs_electric' : 1.0,
+        'vs_psychic' : 2.0,
+        'vs_ice' : 1.0,
+        'vs_dragon' : 1.0,
+        'vs_dark' : 0.5,
+        'vs_fairy' : 1.0,
+        'id' : 8
+
+    },
+    'steel': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'physical',
+        'identifier': 'steel',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 1.0,
+        'vs_poison': 1.0,
+        'vs_ground': 1.0,
+        'vs_rock': 2.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 0.5,
+        'vs_fire': 0.5,
+        'vs_water': 0.5,
+        'vs_grass': 1.0,
+        'vs_electric': 0.5,
+        'vs_psychic': 1.0,
+        'vs_ice': 2.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 2.0,
+        'id': 9
+    },
+    'fire': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'fire',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 1.0,
+        'vs_poison': 1.0,
+        'vs_ground': 1.0,
+        'vs_rock': 0.5,
+        'vs_bug': 2.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 2.0,
+        'vs_fire': 0.5,
+        'vs_water': 0.5,
+        'vs_grass': 2.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 2.0,
+        'vs_dragon': 0.5,
+        'vs_dark': 1.0,
+        'vs_fairy': 1.0,
+        'id': 10
+    },
+    'grass': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class' : 'special',
+        'identifier' : 'grass',
+        'vs_normal' : 1.0,
+        'vs_fighting' : 1.0,
+        'vs_flying' : 0.5,
+        'vs_poison' : 0.5,
+        'vs_ground' : 2.0,
+        'vs_rock' : 2.0,
+        'vs_bug' : 0.5,
+        'vs_ghost' : 1.0,
+        'vs_steel' : 0.5,
+        'vs_fire' : 0.5,
+        'vs_water' : 2.0,
+        'vs_grass' : 0.5,
+        'vs_electric' : 1.0,
+        'vs_psychic' : 1.0,
+        'vs_ice' : 1.0,
+        'vs_dragon' : 0.5,
+        'vs_dark' : 1.0,
+        'vs_fairy' : 1.0,
+        'id' : 12
+    },
+    'electric': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'electric',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 2.0,
+        'vs_poison': 1.0,
+        'vs_ground': 0.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 1.0,
+        'vs_fire': 1.0,
+        'vs_water': 2.0,
+        'vs_grass': 0.5,
+        'vs_electric': 0.5,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 0.5,
+        'vs_dark': 1.0,
+        'vs_fairy': 1.0,
+        'id': 13
+    },
+    'psychic': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'psychic',
+        'vs_normal': 1.0,
+        'vs_fighting': 2.0,
+        'vs_flying': 1.0,
+        'vs_poison': 2.0,
+        'vs_ground': 1.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 0.5,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 0.5,
+        'vs_ice': 1.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 0.0,
+        'vs_fairy': 1.0,
+        'id': 14
+    },
+    'ice': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'ice',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 2.0,
+        'vs_poison': 1.0,
+        'vs_ground': 2.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 0.5,
+        'vs_fire': 0.5,
+        'vs_water': 0.5,
+        'vs_grass': 2.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 0.5,
+        'vs_dragon': 2.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 1.0,
+        'id': 15
+    },
+    'dragon': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'dragon',
+        'vs_normal': 1.0,
+        'vs_fighting': 1.0,
+        'vs_flying': 1.0,
+        'vs_poison': 1.0,
+        'vs_ground': 1.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 0.5,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 2.0,
+        'vs_dark': 1.0,
+        'vs_fairy': 0.0,
+        'id': 16
+    },
+    'dark': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': 'special',
+        'identifier': 'dark',
+        'vs_normal': 1.0,
+        'vs_fighting': 0.5,
+        'vs_flying': 1.0,
+        'vs_poison': 1.0,
+        'vs_ground': 1.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 2.0,
+        'vs_steel': 1.0,
+        'vs_fire': 1.0,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 2.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 1.0,
+        'vs_dark': 0.5,
+        'vs_fairy': 0.5,
+        'id': 17
+
+    },
+    'fairy': {
+        'info': '',
+        'info2': '',
+        'image': '',
+        'advantages': '',
+        'weaknesses': '',
+        'pokemon': '',
+        'damage_class': '',
+        'identifier': 'fairy',
+        'vs_normal': 1.0,
+        'vs_fighting': 2.0,
+        'vs_flying': 1.0,
+        'vs_poison': 0.5,
+        'vs_ground': 1.0,
+        'vs_rock': 1.0,
+        'vs_bug': 1.0,
+        'vs_ghost': 1.0,
+        'vs_steel': 0.5,
+        'vs_fire': 0.5,
+        'vs_water': 1.0,
+        'vs_grass': 1.0,
+        'vs_electric': 1.0,
+        'vs_psychic': 1.0,
+        'vs_ice': 1.0,
+        'vs_dragon': 2.0,
+        'vs_dark': 2.0,
+        'vs_fairy': 1.0,
+        'id': 18
+
+    }
+
+
+}
 
 LOCATIONS = {}
 
@@ -10894,5529 +16461,4 @@ ALL = {
         },
         'ev' : evolution_info['magikarp']
     }
-}
-
-POKEMON = [
-    {
-        "name": "Bulbasaur",
-        "genus": "Seed Pokémon",
-        "identifier": "bulbasaur",
-        "evolution_chain": 1,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
-        "has_alt_form": False,
-        "id": 1
-    },
-    {
-        "name": "Ivysaur",
-        "genus": "Seed Pokémon",
-        "identifier": "ivysaur",
-        "evolution_chain": 1,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": 1,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "There is a bud on this Pokémon’s back. To support its weight,\nIvysaur’s legs and trunk grow thick and strong.\nIf it starts spending more time lying in the sunlight,\nit’s a sign that the bud will bloom into a large flower soon.",
-        "has_alt_form": False,
-        "id": 2
-    },
-    {
-        "name": "Venusaur",
-        "genus": "Seed Pokémon",
-        "identifier": "venusaur",
-        "evolution_chain": 1,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": 2,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "There is a large flower on Venusaur’s back. The flower is said\nto take on vivid colors if it gets plenty of nutrition and sunlight.\nThe flower’s aroma soothes the emotions of people.",
-        "has_alt_form": False,
-        "id": 3
-    },
-    {
-        "name": "Charmander",
-        "genus": "Lizard Pokémon",
-        "identifier": "charmander",
-        "evolution_chain": 2,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "The flame that burns at the tip of its tail is an indication\nof its emotions. The flame wavers when Charmander\nis enjoying itself. If the Pokémon becomes enraged,\nthe flame burns fiercely.",
-        "has_alt_form": False,
-        "id": 4
-    },
-    {
-        "name": "Charmeleon",
-        "genus": "Flame Pokémon",
-        "identifier": "charmeleon",
-        "evolution_chain": 2,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 4,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Charmeleon mercilessly destroys its foes using its sharp\nclaws. If it encounters a strong foe, it turns aggressive.\nIn this excited state, the flame at the tip of its tail flares with\na bluish white color.",
-        "has_alt_form": False,
-        "id": 5
-    },
-    {
-        "name": "Charizard",
-        "genus": "Flame Pokémon",
-        "identifier": "charizard",
-        "evolution_chain": 2,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 5,
-        "type1": 10,
-        "type2": 3,
-        "flavor_text": "Charizard flies around the sky in search of powerful opponents.\nIt breathes fire of such great heat that it melts anything.\nHowever, it never turns its fiery breath on any opponent\nweaker than itself.",
-        "has_alt_form": False,
-        "id": 6
-    },
-    {
-        "name": "Squirtle",
-        "genus": "Tiny Turtle Pokémon",
-        "identifier": "squirtle",
-        "evolution_chain": 3,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Squirtle’s shell is not merely used for protection.\nThe shell’s rounded shape and the grooves on its\nsurface help minimize resistance in water,\nenabling this Pokémon to swim at high speeds.",
-        "has_alt_form": False,
-        "id": 7
-    },
-    {
-        "name": "Wartortle",
-        "genus": "Turtle Pokémon",
-        "identifier": "wartortle",
-        "evolution_chain": 3,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 7,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Its tail is large and covered with a rich, thick fur. The tail\nbecomes increasingly deeper in color as Wartortle ages.\nThe scratches on its shell are evidence of this Pokémon’s\ntoughness as a battler.",
-        "has_alt_form": False,
-        "id": 8
-    },
-    {
-        "name": "Blastoise",
-        "genus": "Shellfish Pokémon",
-        "identifier": "blastoise",
-        "evolution_chain": 3,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 8,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Blastoise has water spouts that protrude from its shell.\nThe water spouts are very accurate.\nThey can shoot bullets of water with enough accuracy\nto strike empty cans from a distance of over 160 feet.",
-        "has_alt_form": False,
-        "id": 9
-    },
-    {
-        "name": "Caterpie",
-        "genus": "Worm Pokémon",
-        "identifier": "caterpie",
-        "evolution_chain": 4,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": None,
-        "flavor_text": "Perhaps because it would like to grow up\nquickly, it has a voracious appetite, eating\na hundred leaves a day.",
-        "has_alt_form": False,
-        "id": 10
-    },
-    {
-        "name": "Metapod",
-        "genus": "Cocoon Pokémon",
-        "identifier": "metapod",
-        "evolution_chain": 4,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": 10,
-        "type1": 7,
-        "type2": None,
-        "flavor_text": "Its shell is filled with a thick liquid. All of the\ncells throughout its body are being rebuilt in\npreparation for evolution.",
-        "has_alt_form": False,
-        "id": 11
-    },
-    {
-        "name": "Butterfree",
-        "genus": "Butterfly Pokémon",
-        "identifier": "butterfree",
-        "evolution_chain": 4,
-        "color": "white",
-        "since_gen": 1,
-        "evolves_from": 11,
-        "type1": 7,
-        "type2": 3,
-        "flavor_text": "Its wings are covered in toxic scales. If it finds\nbird Pokémon going after Caterpie, Butterfree\nsprinkles its scales on them to drive them off.",
-        "has_alt_form": False,
-        "id": 12
-    },
-    {
-        "name": "Weedle",
-        "genus": "Hairy Bug Pokémon",
-        "identifier": "weedle",
-        "evolution_chain": 5,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": 4,
-        "flavor_text": "Weedle has an extremely acute sense of smell. It is capable\nof distinguishing its favorite kinds of leaves from those it\ndislikes just by sniffing with its big red proboscis (nose).",
-        "has_alt_form": False,
-        "id": 13
-    },
-    {
-        "name": "Kakuna",
-        "genus": "Cocoon Pokémon",
-        "identifier": "kakuna",
-        "evolution_chain": 5,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 13,
-        "type1": 7,
-        "type2": 4,
-        "flavor_text": "Kakuna remains virtually immobile as it clings to a tree.\nHowever, on the inside, it is extremely busy as it prepares\nfor its coming evolution.\nThis is evident from how hot the shell becomes to the touch.",
-        "has_alt_form": False,
-        "id": 14
-    },
-    {
-        "name": "Beedrill",
-        "genus": "Poison Bee Pokémon",
-        "identifier": "beedrill",
-        "evolution_chain": 5,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 14,
-        "type1": 7,
-        "type2": 4,
-        "flavor_text": "Beedrill is extremely territorial. No one should ever approach\nits nest—this is for their own safety. If angered, they will attack\nin a furious swarm.",
-        "has_alt_form": False,
-        "id": 15
-    },
-    {
-        "name": "Pidgey",
-        "genus": "Tiny Bird Pokémon",
-        "identifier": "pidgey",
-        "evolution_chain": 6,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Pidgey has an extremely sharp sense of direction.\nIt is capable of unerringly returning home to its nest,\nhowever far it may be removed from its familiar surroundings.",
-        "has_alt_form": False,
-        "id": 16
-    },
-    {
-        "name": "Pidgeotto",
-        "genus": "Bird Pokémon",
-        "identifier": "pidgeotto",
-        "evolution_chain": 6,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 16,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Pidgeotto claims a large area as its own territory. This\nPokémon flies around, patrolling its living space. If its territory\nis violated, it shows no mercy in thoroughly punishing the foe\nwith its sharp claws.",
-        "has_alt_form": False,
-        "id": 17
-    },
-    {
-        "name": "Pidgeot",
-        "genus": "Bird Pokémon",
-        "identifier": "pidgeot",
-        "evolution_chain": 6,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 17,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "This Pokémon has a dazzling plumage of beautifully\nglossy feathers. Many Trainers are captivated by the\nstriking beauty of the feathers on its head, compelling\nthem to choose Pidgeot as their Pokémon.",
-        "has_alt_form": False,
-        "id": 18
-    },
-    {
-        "name": "Rattata",
-        "genus": "Mouse Pokémon",
-        "identifier": "rattata",
-        "evolution_chain": 7,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "Its incisors grow continuously throughout its life.\nIf its incisors get too long, this Pokémon\nbecomes unable to eat, and it starves to death.",
-        "has_alt_form": False,
-        "id": 19
-    },
-    {
-        "name": "Raticate",
-        "genus": "Mouse Pokémon",
-        "identifier": "raticate",
-        "evolution_chain": 7,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 19,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "People say that it fled from its enemies by\nusing its small webbed hind feet to swim\nfrom island to island in Alola.",
-        "has_alt_form": False,
-        "id": 20
-    },
-    {
-        "name": "Spearow",
-        "genus": "Tiny Bird Pokémon",
-        "identifier": "spearow",
-        "evolution_chain": 8,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Its reckless nature leads it to stand up to\nothers—even large Pokémon—if it has to protect\nits territory.",
-        "has_alt_form": False,
-        "id": 21
-    },
-    {
-        "name": "Fearow",
-        "genus": "Beak Pokémon",
-        "identifier": "fearow",
-        "evolution_chain": 8,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 21,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Carrying food through Fearow’s territory is\ndangerous. It will snatch the food away from\nyou in a flash!",
-        "has_alt_form": False,
-        "id": 22
-    },
-    {
-        "name": "Ekans",
-        "genus": "Snake Pokémon",
-        "identifier": "ekans",
-        "evolution_chain": 9,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "By dislocating its jaw, it can swallow prey larger\nthan itself. After a meal, it curls up and rests.",
-        "has_alt_form": False,
-        "id": 23
-    },
-    {
-        "name": "Arbok",
-        "genus": "Cobra Pokémon",
-        "identifier": "arbok",
-        "evolution_chain": 9,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 23,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "The latest research has determined that there\nare over 20 possible arrangements of the\npatterns on its stomach.",
-        "has_alt_form": False,
-        "id": 24
-    },
-    {
-        "name": "Pikachu",
-        "genus": "Mouse Pokémon",
-        "identifier": "pikachu",
-        "evolution_chain": 10,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 172,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "Its nature is to store up electricity. Forests\nwhere nests of Pikachu live are dangerous,\nsince the trees are so often struck by lightning.",
-        "has_alt_form": False,
-        "id": 25
-    },
-    {
-        "name": "Raichu",
-        "genus": "Mouse Pokémon",
-        "identifier": "raichu",
-        "evolution_chain": 10,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 25,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "As electricity builds up inside its body, it\nbecomes more aggressive. One theory is that\nthe electricity buildup is actually causing stress.",
-        "has_alt_form": False,
-        "id": 26
-    },
-    {
-        "name": "Sandshrew",
-        "genus": "Mouse Pokémon",
-        "identifier": "sandshrew",
-        "evolution_chain": 11,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "It lives in areas of limited rainfall. When danger\napproaches, it curls up into a ball to protect its\nsoft stomach.",
-        "has_alt_form": False,
-        "id": 27
-    },
-    {
-        "name": "Sandslash",
-        "genus": "Mouse Pokémon",
-        "identifier": "sandslash",
-        "evolution_chain": 11,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 27,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "Its claws and horns often break off. The broken\nclaws and horns can be used to carve plows for\ntilling farm fields.",
-        "has_alt_form": False,
-        "id": 28
-    },
-    {
-        "name": "Nidoran♀",
-        "genus": "Poison Pin Pokémon",
-        "identifier": "nidoran-f",
-        "evolution_chain": 12,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Nidoran♀ has barbs that secrete a powerful poison.\nThey are thought to have developed as protection for\nthis small-bodied Pokémon. When enraged, it releases\na horrible toxin from its horn.",
-        "has_alt_form": False,
-        "id": 29
-    },
-    {
-        "name": "Nidorina",
-        "genus": "Poison Pin Pokémon",
-        "identifier": "nidorina",
-        "evolution_chain": 12,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 29,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "When Nidorina are with their friends or family, they keep\ntheir barbs tucked away to prevent hurting each other.\nThis Pokémon appears to become nervous if separated\nfrom the others.",
-        "has_alt_form": False,
-        "id": 30
-    },
-    {
-        "name": "Nidoqueen",
-        "genus": "Drill Pokémon",
-        "identifier": "nidoqueen",
-        "evolution_chain": 12,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 30,
-        "type1": 4,
-        "type2": 5,
-        "flavor_text": "Nidoqueen’s body is encased in extremely hard scales.\nIt is adept at sending foes flying with harsh tackles. This\nPokémon is at its strongest when it is defending its young.",
-        "has_alt_form": False,
-        "id": 31
-    },
-    {
-        "name": "Nidoran♂",
-        "genus": "Poison Pin Pokémon",
-        "identifier": "nidoran-m",
-        "evolution_chain": 13,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Nidoran♂ has developed muscles for moving its ears. Thanks\nto them, the ears can be freely moved in any direction. Even\nthe slightest sound does not escape this Pokémon’s notice.",
-        "has_alt_form": False,
-        "id": 32
-    },
-    {
-        "name": "Nidorino",
-        "genus": "Poison Pin Pokémon",
-        "identifier": "nidorino",
-        "evolution_chain": 13,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 32,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Nidorino has a horn that is harder than a diamond. If it senses\na hostile presence, all the barbs on its back bristle up at once,\nand it challenges the foe with all its might.",
-        "has_alt_form": False,
-        "id": 33
-    },
-    {
-        "name": "Nidoking",
-        "genus": "Drill Pokémon",
-        "identifier": "nidoking",
-        "evolution_chain": 13,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 33,
-        "type1": 4,
-        "type2": 5,
-        "flavor_text": "Nidoking’s thick tail packs enormously destructive power.\nWith one swing, it can topple a metal transmission tower. Once\nthis Pokémon goes on a rampage, there is no stopping it.",
-        "has_alt_form": False,
-        "id": 34
-    },
-    {
-        "name": "Clefairy",
-        "genus": "Fairy Pokémon",
-        "identifier": "clefairy",
-        "evolution_chain": 14,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 173,
-        "type1": 18,
-        "type2": None,
-        "flavor_text": "They’re popular, but they’re rare. Trainers who\nshow them off recklessly may be targeted\nby thieves.",
-        "has_alt_form": False,
-        "id": 35
-    },
-    {
-        "name": "Clefable",
-        "genus": "Fairy Pokémon",
-        "identifier": "clefable",
-        "evolution_chain": 14,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 35,
-        "type1": 18,
-        "type2": None,
-        "flavor_text": "It can’t help but hear a pin drop from over half\na mile away, so it lives deep in the mountains\nwhere there aren’t many people or Pokémon.",
-        "has_alt_form": False,
-        "id": 36
-    },
-    {
-        "name": "Vulpix",
-        "genus": "Fox Pokémon",
-        "identifier": "vulpix",
-        "evolution_chain": 15,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Its beautiful tails have made it very popular.\nHowever, if it’s not brushed diligently, it will\nbe a mass of tangles before you know it.",
-        "has_alt_form": False,
-        "id": 37
-    },
-    {
-        "name": "Ninetales",
-        "genus": "Fox Pokémon",
-        "identifier": "ninetales",
-        "evolution_chain": 15,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 37,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "It is vindictive and relentless by nature.\nThose who cross it even once will be cursed for\na thousand years, along with their descendants.",
-        "has_alt_form": False,
-        "id": 38
-    },
-    {
-        "name": "Jigglypuff",
-        "genus": "Balloon Pokémon",
-        "identifier": "jigglypuff",
-        "evolution_chain": 16,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 174,
-        "type1": 1,
-        "type2": 18,
-        "flavor_text": "Recordings of Jigglypuff’s strange lullabies can\nbe purchased from department stores. These\nCDs can be found near the bedding area.",
-        "has_alt_form": False,
-        "id": 39
-    },
-    {
-        "name": "Wigglytuff",
-        "genus": "Balloon Pokémon",
-        "identifier": "wigglytuff",
-        "evolution_chain": 16,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 39,
-        "type1": 1,
-        "type2": 18,
-        "flavor_text": "Thanks to its bouncy body and fine fur,\nthis Pokémon is sought after. Holding one\nin your arms while you sleep feels great.",
-        "has_alt_form": False,
-        "id": 40
-    },
-    {
-        "name": "Zubat",
-        "genus": "Bat Pokémon",
-        "identifier": "zubat",
-        "evolution_chain": 17,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": 3,
-        "flavor_text": "It has no eyeballs, so it can’t see. It checks its\nsurroundings via the ultrasonic waves it emits\nfrom its mouth.",
-        "has_alt_form": False,
-        "id": 41
-    },
-    {
-        "name": "Golbat",
-        "genus": "Bat Pokémon",
-        "identifier": "golbat",
-        "evolution_chain": 17,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 41,
-        "type1": 4,
-        "type2": 3,
-        "flavor_text": "Every once in a while, you’ll see a Golbat that’s\nmissing some fangs. This happens when hunger\ndrives it to try biting a Steel-type Pokémon.",
-        "has_alt_form": False,
-        "id": 42
-    },
-    {
-        "name": "Oddish",
-        "genus": "Weed Pokémon",
-        "identifier": "oddish",
-        "evolution_chain": 18,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Oddish searches for fertile, nutrient-rich soil, then plants itself.\nDuring the daytime, while it is planted, this Pokémon’s feet\nare thought to change shape and become similar to the roots\nof trees.",
-        "has_alt_form": False,
-        "id": 43
-    },
-    {
-        "name": "Gloom",
-        "genus": "Weed Pokémon",
-        "identifier": "gloom",
-        "evolution_chain": 18,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 43,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "From its mouth Gloom drips honey that smells absolutely\nhorrible. Apparently, it loves the horrid stench. It sniffs the\nnoxious fumes and then drools even more of its honey.",
-        "has_alt_form": False,
-        "id": 44
-    },
-    {
-        "name": "Vileplume",
-        "genus": "Flower Pokémon",
-        "identifier": "vileplume",
-        "evolution_chain": 18,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 44,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Vileplume has the world’s largest petals. They are used to\nattract prey that are then doused with toxic spores. Once the\nprey are immobilized, this Pokémon catches and devours them.",
-        "has_alt_form": False,
-        "id": 45
-    },
-    {
-        "name": "Paras",
-        "genus": "Mushroom Pokémon",
-        "identifier": "paras",
-        "evolution_chain": 19,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": 12,
-        "flavor_text": "Whether it’s due to a lack of moisture or a lack\nof nutrients, in Alola the mushrooms on Paras\ndon’t grow up quite right.",
-        "has_alt_form": False,
-        "id": 46
-    },
-    {
-        "name": "Parasect",
-        "genus": "Mushroom Pokémon",
-        "identifier": "parasect",
-        "evolution_chain": 19,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 46,
-        "type1": 7,
-        "type2": 12,
-        "flavor_text": "The bug is mostly dead, with the mushroom on\nits back having become the main body. If the\nmushroom comes off, the bug stops moving.",
-        "has_alt_form": False,
-        "id": 47
-    },
-    {
-        "name": "Venonat",
-        "genus": "Insect Pokémon",
-        "identifier": "venonat",
-        "evolution_chain": 20,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": 4,
-        "flavor_text": "Venonat is said to have evolved with a coat of thin, stiff hair\nthat covers its entire body for protection. It possesses large\neyes that never fail to spot even minuscule prey.",
-        "has_alt_form": False,
-        "id": 48
-    },
-    {
-        "name": "Venomoth",
-        "genus": "Poison Moth Pokémon",
-        "identifier": "venomoth",
-        "evolution_chain": 20,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 48,
-        "type1": 7,
-        "type2": 4,
-        "flavor_text": "Venomoth is nocturnal—it is a Pokémon that only becomes\nactive at night. Its favorite prey are small insects that gather\naround streetlights, attracted by the light in the darkness.",
-        "has_alt_form": False,
-        "id": 49
-    },
-    {
-        "name": "Diglett",
-        "genus": "Mole Pokémon",
-        "identifier": "diglett",
-        "evolution_chain": 21,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "It travels through tunnels that it digs\nunderground. It hates sunlight, so it comes\nout only after the sun goes down.",
-        "has_alt_form": False,
-        "id": 50
-    },
-    {
-        "name": "Dugtrio",
-        "genus": "Mole Pokémon",
-        "identifier": "dugtrio",
-        "evolution_chain": 21,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 50,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "While the three of them normally get along\nsplendidly, on rare occasions a huge fight will\nbreak out over which head gets to eat first.",
-        "has_alt_form": False,
-        "id": 51
-    },
-    {
-        "name": "Meowth",
-        "genus": "Scratch Cat Pokémon",
-        "identifier": "meowth",
-        "evolution_chain": 22,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "When visiting a junkyard, you may catch sight\nof it having an intense fight with Murkrow over\nshiny objects.",
-        "has_alt_form": False,
-        "id": 52
-    },
-    {
-        "name": "Persian",
-        "genus": "Classy Cat Pokémon",
-        "identifier": "persian",
-        "evolution_chain": 22,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 52,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "Although the jewel on its forehead appears to\nbe a different color than those of Alolan\nPersian, it’s mostly made of the same material.",
-        "has_alt_form": False,
-        "id": 53
-    },
-    {
-        "name": "Psyduck",
-        "genus": "Duck Pokémon",
-        "identifier": "psyduck",
-        "evolution_chain": 23,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Using psychokinesis gives it a headache, so it\nnormally passes the time spacing out and doing\nas little as possible.",
-        "has_alt_form": False,
-        "id": 54
-    },
-    {
-        "name": "Golduck",
-        "genus": "Duck Pokémon",
-        "identifier": "golduck",
-        "evolution_chain": 23,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 54,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Even fast-swimming fish Pokémon can be\ndisabled by Golduck. It brings them to a\nstandstill and seizes them.",
-        "has_alt_form": False,
-        "id": 55
-    },
-    {
-        "name": "Mankey",
-        "genus": "Pig Monkey Pokémon",
-        "identifier": "mankey",
-        "evolution_chain": 24,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "The smallest of things could cause it to lose its\ntemper. Because it doesn’t hold in its stress,\nthis Pokémon can live a long time.",
-        "has_alt_form": False,
-        "id": 56
-    },
-    {
-        "name": "Primeape",
-        "genus": "Pig Monkey Pokémon",
-        "identifier": "primeape",
-        "evolution_chain": 24,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 56,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "It will never forgive opponents who have\nangered it. Even after it has beaten them down\nuntil they can’t move, it never ever forgives.",
-        "has_alt_form": False,
-        "id": 57
-    },
-    {
-        "name": "Growlithe",
-        "genus": "Puppy Pokémon",
-        "identifier": "growlithe",
-        "evolution_chain": 25,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "While it’s quite friendly toward humans once it’s\ngrown used to them, in the wild it must be quite\nfierce to defend its territory from Rockruff.",
-        "has_alt_form": False,
-        "id": 58
-    },
-    {
-        "name": "Arcanine",
-        "genus": "Legendary Pokémon",
-        "identifier": "arcanine",
-        "evolution_chain": 25,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 58,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Legends tell of its fighting alongside a general\nand conquering a whole country.",
-        "has_alt_form": False,
-        "id": 59
-    },
-    {
-        "name": "Poliwag",
-        "genus": "Tadpole Pokémon",
-        "identifier": "poliwag",
-        "evolution_chain": 26,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Despite the danger, it wants to come up on land.\nSo it does its best to waddle along, but when\nan enemy finds it, it rushes back to the water.",
-        "has_alt_form": False,
-        "id": 60
-    },
-    {
-        "name": "Poliwhirl",
-        "genus": "Tadpole Pokémon",
-        "identifier": "poliwhirl",
-        "evolution_chain": 26,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 60,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Although it has become capable of living on\nland, it spends its time in the water, where\nits prey, fish Pokémon, are plentiful.",
-        "has_alt_form": False,
-        "id": 61
-    },
-    {
-        "name": "Poliwrath",
-        "genus": "Tadpole Pokémon",
-        "identifier": "poliwrath",
-        "evolution_chain": 26,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 61,
-        "type1": 11,
-        "type2": 2,
-        "flavor_text": "It’s quite a gifted swimmer, even among\nWater-type Pokémon, but it normally spends its\ntime on land.",
-        "has_alt_form": False,
-        "id": 62
-    },
-    {
-        "name": "Abra",
-        "genus": "Psi Pokémon",
-        "identifier": "abra",
-        "evolution_chain": 27,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "It uses various psychic powers even while it’s\nsleeping, so you can’t tell whether or not\nit’s awake.",
-        "has_alt_form": False,
-        "id": 63
-    },
-    {
-        "name": "Kadabra",
-        "genus": "Psi Pokémon",
-        "identifier": "kadabra",
-        "evolution_chain": 27,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 63,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "It stares at a silver spoon to amplify its psychic\npowers before it lets loose. Apparently, gold\nspoons are no good.",
-        "has_alt_form": False,
-        "id": 64
-    },
-    {
-        "name": "Alakazam",
-        "genus": "Psi Pokémon",
-        "identifier": "alakazam",
-        "evolution_chain": 27,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 64,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "Alakazam uses its psychic powers to make the\nspoons it carries. Each spoon is an original that\nthere’s only one of in the whole world.",
-        "has_alt_form": False,
-        "id": 65
-    },
-    {
-        "name": "Machop",
-        "genus": "Superpower Pokémon",
-        "identifier": "machop",
-        "evolution_chain": 28,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "Once this Pokémon has gained enough\nconfidence and muscle from training with its\nfriends, it challenges Makuhita to a battle.",
-        "has_alt_form": False,
-        "id": 66
-    },
-    {
-        "name": "Machoke",
-        "genus": "Superpower Pokémon",
-        "identifier": "machoke",
-        "evolution_chain": 28,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": 66,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "When it encounters an enemy that’s truly\nmighty, this Pokémon removes the power-save\nbelt from its waist and unleashes its full power.",
-        "has_alt_form": False,
-        "id": 67
-    },
-    {
-        "name": "Machamp",
-        "genus": "Superpower Pokémon",
-        "identifier": "machamp",
-        "evolution_chain": 28,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": 67,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "It grasps its opponents with its four arms and\ntwists them up in an intricate hold. People call\nit “the Machamp special.”",
-        "has_alt_form": False,
-        "id": 68
-    },
-    {
-        "name": "Bellsprout",
-        "genus": "Flower Pokémon",
-        "identifier": "bellsprout",
-        "evolution_chain": 29,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Bellsprout’s thin and flexible body lets it bend and sway\nto avoid any attack, however strong it may be. From its mouth,\nthis Pokémon spits a corrosive fluid that melts even iron.",
-        "has_alt_form": False,
-        "id": 69
-    },
-    {
-        "name": "Weepinbell",
-        "genus": "Flycatcher Pokémon",
-        "identifier": "weepinbell",
-        "evolution_chain": 29,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": 69,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Weepinbell has a large hook on its rear end. At night, the\nPokémon hooks on to a tree branch and goes to sleep.\nIf it moves around in its sleep, it may wake up to find itself\non the ground.",
-        "has_alt_form": False,
-        "id": 70
-    },
-    {
-        "name": "Victreebel",
-        "genus": "Flycatcher Pokémon",
-        "identifier": "victreebel",
-        "evolution_chain": 29,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": 70,
-        "type1": 12,
-        "type2": 4,
-        "flavor_text": "Victreebel has a long vine that extends from its head.\nThis vine is waved and flicked about as if it were an animal\nto attract prey. When an unsuspecting prey draws near,\nthis Pokémon swallows it whole.",
-        "has_alt_form": False,
-        "id": 71
-    },
-    {
-        "name": "Tentacool",
-        "genus": "Jellyfish Pokémon",
-        "identifier": "tentacool",
-        "evolution_chain": 30,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": 4,
-        "flavor_text": "It drifts through the sea searching for prey.\nIts poisonous tentacles break off sometimes,\nbut after a while, they grow back.",
-        "has_alt_form": False,
-        "id": 72
-    },
-    {
-        "name": "Tentacruel",
-        "genus": "Jellyfish Pokémon",
-        "identifier": "tentacruel",
-        "evolution_chain": 30,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 72,
-        "type1": 11,
-        "type2": 4,
-        "flavor_text": "It fires off ultrasonic waves from its red orbs\nto weaken its prey, and then it wraps them up\nin its 80 tentacles.",
-        "has_alt_form": False,
-        "id": 73
-    },
-    {
-        "name": "Geodude",
-        "genus": "Rock Pokémon",
-        "identifier": "geodude",
-        "evolution_chain": 31,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 6,
-        "type2": 5,
-        "flavor_text": "Geodude that have lived a long life have had all\ntheir edges smoothed out until they’re totally\nround. They also have a calm, quiet disposition.",
-        "has_alt_form": False,
-        "id": 74
-    },
-    {
-        "name": "Graveler",
-        "genus": "Rock Pokémon",
-        "identifier": "graveler",
-        "evolution_chain": 31,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 74,
-        "type1": 6,
-        "type2": 5,
-        "flavor_text": "It climbs up cliffs as it heads toward the peak\nof a mountain. As soon as it reaches the summit,\nit rolls back down the way it came.",
-        "has_alt_form": False,
-        "id": 75
-    },
-    {
-        "name": "Golem",
-        "genus": "Megaton Pokémon",
-        "identifier": "golem",
-        "evolution_chain": 31,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 75,
-        "type1": 6,
-        "type2": 5,
-        "flavor_text": "When Golem grow old, they stop shedding their\nshells. Those that have lived a long, long time\nhave shells green with moss.",
-        "has_alt_form": False,
-        "id": 76
-    },
-    {
-        "name": "Ponyta",
-        "genus": "Fire Horse Pokémon",
-        "identifier": "ponyta",
-        "evolution_chain": 32,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Ponyta is very weak at birth. It can barely stand up.\nThis Pokémon becomes stronger by stumbling and\nfalling to keep up with its parent.",
-        "has_alt_form": False,
-        "id": 77
-    },
-    {
-        "name": "Rapidash",
-        "genus": "Fire Horse Pokémon",
-        "identifier": "rapidash",
-        "evolution_chain": 32,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 77,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Rapidash usually can be seen casually cantering in the fields\nand plains. However, when this Pokémon turns serious, its\nfiery manes flare and blaze as it gallops its way up to 150 mph.",
-        "has_alt_form": False,
-        "id": 78
-    },
-    {
-        "name": "Slowpoke",
-        "genus": "Dopey Pokémon",
-        "identifier": "slowpoke",
-        "evolution_chain": 33,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": 14,
-        "flavor_text": "There are some places where Slowpoke is\nworshiped because of a long-standing belief\nthat whenever Slowpoke yawns, it rains.",
-        "has_alt_form": False,
-        "id": 79
-    },
-    {
-        "name": "Slowbro",
-        "genus": "Hermit Crab Pokémon",
-        "identifier": "slowbro",
-        "evolution_chain": 33,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 79,
-        "type1": 11,
-        "type2": 14,
-        "flavor_text": "Spacing out is basically all it does. It turns back\ninto Slowpoke if its tail, along with Shellder,\nbreaks off.",
-        "has_alt_form": False,
-        "id": 80
-    },
-    {
-        "name": "Magnemite",
-        "genus": "Magnet Pokémon",
-        "identifier": "magnemite",
-        "evolution_chain": 34,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 13,
-        "type2": 9,
-        "flavor_text": "It’s frequently the cause of power outages,\nwhich is why some power plants send out\nelectrical signals that it can’t stand.",
-        "has_alt_form": False,
-        "id": 81
-    },
-    {
-        "name": "Magneton",
-        "genus": "Magnet Pokémon",
-        "identifier": "magneton",
-        "evolution_chain": 34,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": 81,
-        "type1": 13,
-        "type2": 9,
-        "flavor_text": "Delicate equipment can malfunction in areas\ninhabited by Magneton, which send out\nmysterious electrical signals.",
-        "has_alt_form": False,
-        "id": 82
-    },
-    {
-        "name": "Farfetch’d",
-        "genus": "Wild Duck Pokémon",
-        "identifier": "farfetchd",
-        "evolution_chain": 35,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some\nsort. Apparently, there are good stalks and bad stalks. This\nPokémon has been known to fight with others over stalks.",
-        "has_alt_form": False,
-        "id": 83
-    },
-    {
-        "name": "Doduo",
-        "genus": "Twin Bird Pokémon",
-        "identifier": "doduo",
-        "evolution_chain": 36,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Doduo’s two heads contain completely identical brains. A\nscientific study reported that on rare occasions, there will be\nexamples of this Pokémon possessing different sets of brains.",
-        "has_alt_form": False,
-        "id": 84
-    },
-    {
-        "name": "Dodrio",
-        "genus": "Triple Bird Pokémon",
-        "identifier": "dodrio",
-        "evolution_chain": 36,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 84,
-        "type1": 1,
-        "type2": 3,
-        "flavor_text": "Apparently, the heads aren’t the only parts of the body that\nDodrio has three of. It has three sets of hearts and lungs as\nwell, so it is capable of running long distances without rest.",
-        "has_alt_form": False,
-        "id": 85
-    },
-    {
-        "name": "Seel",
-        "genus": "Sea Lion Pokémon",
-        "identifier": "seel",
-        "evolution_chain": 37,
-        "color": "white",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "It has always been supposed that Seel live only\nin cold seas. Their having shown up in Alola is\na mystery.",
-        "has_alt_form": False,
-        "id": 86
-    },
-    {
-        "name": "Dewgong",
-        "genus": "Sea Lion Pokémon",
-        "identifier": "dewgong",
-        "evolution_chain": 37,
-        "color": "white",
-        "since_gen": 1,
-        "evolves_from": 86,
-        "type1": 11,
-        "type2": 15,
-        "flavor_text": "It swims through the ocean at a speed of eight\nknots, searching for Pokémon that will become\nits prey. It’s especially fond of Wishiwashi.",
-        "has_alt_form": False,
-        "id": 87
-    },
-    {
-        "name": "Grimer",
-        "genus": "Sludge Pokémon",
-        "identifier": "grimer",
-        "evolution_chain": 38,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "It was born from sludge on the ocean floor. In a\nsterile environment, the germs within its body\ncan’t multiply, and it dies.",
-        "has_alt_form": False,
-        "id": 88
-    },
-    {
-        "name": "Muk",
-        "genus": "Sludge Pokémon",
-        "identifier": "muk",
-        "evolution_chain": 38,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 88,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Their food sources have decreased, and their\nnumbers have declined sharply. Sludge ponds\nare being built to prevent their extinction.",
-        "has_alt_form": False,
-        "id": 89
-    },
-    {
-        "name": "Shellder",
-        "genus": "Bivalve Pokémon",
-        "identifier": "shellder",
-        "evolution_chain": 39,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "The sand that accumulates inside its shell\neventually becomes a pearl. But the pearl gets\nin the way, so it spits it out and discards it.",
-        "has_alt_form": False,
-        "id": 90
-    },
-    {
-        "name": "Cloyster",
-        "genus": "Bivalve Pokémon",
-        "identifier": "cloyster",
-        "evolution_chain": 39,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 90,
-        "type1": 11,
-        "type2": 15,
-        "flavor_text": "If areas of Cloyster’s very hard shell get\ndamaged, those areas swell, gradually growing\ninto large sharp spikes.",
-        "has_alt_form": False,
-        "id": 91
-    },
-    {
-        "name": "Gastly",
-        "genus": "Gas Pokémon",
-        "identifier": "gastly",
-        "evolution_chain": 40,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 8,
-        "type2": 4,
-        "flavor_text": "It’s said that gas emanating from a graveyard\nwas possessed by the grievances of the\ndeceased and thus became a Pokémon.",
-        "has_alt_form": False,
-        "id": 92
-    },
-    {
-        "name": "Haunter",
-        "genus": "Gas Pokémon",
-        "identifier": "haunter",
-        "evolution_chain": 40,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 92,
-        "type1": 8,
-        "type2": 4,
-        "flavor_text": "On moonless nights, Haunter searches for\nsomeone to curse, so it’s best not to go out\nwalking around.",
-        "has_alt_form": False,
-        "id": 93
-    },
-    {
-        "name": "Gengar",
-        "genus": "Shadow Pokémon",
-        "identifier": "gengar",
-        "evolution_chain": 40,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 93,
-        "type1": 8,
-        "type2": 4,
-        "flavor_text": "You can hear tales told all over the world about\nhow Gengar will pay a visit to children who\nare naughty.",
-        "has_alt_form": False,
-        "id": 94
-    },
-    {
-        "name": "Onix",
-        "genus": "Rock Snake Pokémon",
-        "identifier": "onix",
-        "evolution_chain": 41,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 6,
-        "type2": 5,
-        "flavor_text": "Onix has a magnet in its brain. It acts as a compass so that\nthis Pokémon does not lose direction while it is tunneling.\nAs it grows older, its body becomes increasingly rounder\nand smoother.",
-        "has_alt_form": False,
-        "id": 95
-    },
-    {
-        "name": "Drowzee",
-        "genus": "Hypnosis Pokémon",
-        "identifier": "drowzee",
-        "evolution_chain": 42,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "It can be spotted near recreational facilities,\nintending to eat the pleasant dreams of children\nwho enjoyed themselves there that day.",
-        "has_alt_form": False,
-        "id": 96
-    },
-    {
-        "name": "Hypno",
-        "genus": "Hypnosis Pokémon",
-        "identifier": "hypno",
-        "evolution_chain": 42,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 96,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "In Alola, Komala is Hypno’s main target. It rarely\nharms people.",
-        "has_alt_form": False,
-        "id": 97
-    },
-    {
-        "name": "Krabby",
-        "genus": "River Crab Pokémon",
-        "identifier": "krabby",
-        "evolution_chain": 43,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Krabby live on beaches, burrowed inside holes dug into\nthe sand. On sandy beaches with little in the way of food,\nthese Pokémon can be seen squabbling with each other\nover territory.",
-        "has_alt_form": False,
-        "id": 98
-    },
-    {
-        "name": "Kingler",
-        "genus": "Pincer Pokémon",
-        "identifier": "kingler",
-        "evolution_chain": 43,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 98,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Kingler has an enormous, oversized claw. It waves this huge\nclaw in the air to communicate with others. However, because\nthe claw is so heavy, the Pokémon quickly tires.",
-        "has_alt_form": False,
-        "id": 99
-    },
-    {
-        "name": "Voltorb",
-        "genus": "Ball Pokémon",
-        "identifier": "voltorb",
-        "evolution_chain": 44,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "Voltorb is extremely sensitive—it explodes at the slightest\nof shocks. It is rumored that it was first created when a\nPoké Ball was exposed to a powerful pulse of energy.",
-        "has_alt_form": False,
-        "id": 100
-    },
-    {
-        "name": "Electrode",
-        "genus": "Ball Pokémon",
-        "identifier": "electrode",
-        "evolution_chain": 44,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 100,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "One of Electrode’s characteristics is its attraction to electricity.\nIt is a problematical Pokémon that congregates mostly at\nelectrical power plants to feed on electricity that has just\nbeen generated.",
-        "has_alt_form": False,
-        "id": 101
-    },
-    {
-        "name": "Exeggcute",
-        "genus": "Egg Pokémon",
-        "identifier": "exeggcute",
-        "evolution_chain": 45,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 12,
-        "type2": 14,
-        "flavor_text": "Six of them form a single Pokémon. Should one\nof the six be lost, the next morning there will\nonce more be six.",
-        "has_alt_form": False,
-        "id": 102
-    },
-    {
-        "name": "Exeggutor",
-        "genus": "Coconut Pokémon",
-        "identifier": "exeggutor",
-        "evolution_chain": 45,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 102,
-        "type1": 12,
-        "type2": 14,
-        "flavor_text": "It engages its enemies using psychic powers.\nEach of its three heads fires off psychokinetic\nenergy, tripling its power.",
-        "has_alt_form": False,
-        "id": 103
-    },
-    {
-        "name": "Cubone",
-        "genus": "Lonely Pokémon",
-        "identifier": "cubone",
-        "evolution_chain": 46,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "At night, it weeps loudly for its dead mother,\nbut those cries only attract its natural\nenemy—Mandibuzz.",
-        "has_alt_form": False,
-        "id": 104
-    },
-    {
-        "name": "Marowak",
-        "genus": "Bone Keeper Pokémon",
-        "identifier": "marowak",
-        "evolution_chain": 46,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 104,
-        "type1": 5,
-        "type2": None,
-        "flavor_text": "It throws bones at Mandibuzz to knock it down.\nIt’s thought that Marowak is trying to avenge\nits parent.",
-        "has_alt_form": False,
-        "id": 105
-    },
-    {
-        "name": "Hitmonlee",
-        "genus": "Kicking Pokémon",
-        "identifier": "hitmonlee",
-        "evolution_chain": 47,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 236,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "Hitmonlee’s legs freely contract and stretch. Using these\nspringlike legs, it bowls over foes with devastating kicks.\nAfter battle, it rubs down its legs and loosens the muscles\nto overcome fatigue.",
-        "has_alt_form": False,
-        "id": 106
-    },
-    {
-        "name": "Hitmonchan",
-        "genus": "Punching Pokémon",
-        "identifier": "hitmonchan",
-        "evolution_chain": 47,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 236,
-        "type1": 2,
-        "type2": None,
-        "flavor_text": "Hitmonchan is said to possess the spirit of a boxer who had\nbeen working toward a world championship. This Pokémon\nhas an indomitable spirit and will never give up in the face\nof adversity.",
-        "has_alt_form": False,
-        "id": 107
-    },
-    {
-        "name": "Lickitung",
-        "genus": "Licking Pokémon",
-        "identifier": "lickitung",
-        "evolution_chain": 48,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "It checks out whatever’s around it by licking\neverything. If you don’t clean off a spot where\nit’s licked you, you’ll break out in a rash!",
-        "has_alt_form": False,
-        "id": 108
-    },
-    {
-        "name": "Koffing",
-        "genus": "Poison Gas Pokémon",
-        "identifier": "koffing",
-        "evolution_chain": 49,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Koffing embodies toxic substances. It mixes the toxins with raw\ngarbage to set off a chemical reaction that results in a terribly\npowerful poison gas. The higher the temperature, the more gas\nis concocted by this Pokémon.",
-        "has_alt_form": False,
-        "id": 109
-    },
-    {
-        "name": "Weezing",
-        "genus": "Poison Gas Pokémon",
-        "identifier": "weezing",
-        "evolution_chain": 49,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 109,
-        "type1": 4,
-        "type2": None,
-        "flavor_text": "Weezing alternately shrinks and inflates its twin bodies to mix\ntogether toxic gases inside. The more the gases are mixed,\nthe more powerful the toxins become. The Pokémon also\nbecomes more putrid.",
-        "has_alt_form": False,
-        "id": 110
-    },
-    {
-        "name": "Rhyhorn",
-        "genus": "Spikes Pokémon",
-        "identifier": "rhyhorn",
-        "evolution_chain": 50,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 5,
-        "type2": 6,
-        "flavor_text": "Rhyhorn’s brain is very small. It is so dense, while on a run\nit forgets why it started running in the first place. It apparently\nremembers sometimes if it demolishes something.",
-        "has_alt_form": False,
-        "id": 111
-    },
-    {
-        "name": "Rhydon",
-        "genus": "Drill Pokémon",
-        "identifier": "rhydon",
-        "evolution_chain": 50,
-        "color": "gray",
-        "since_gen": 1,
-        "evolves_from": 111,
-        "type1": 5,
-        "type2": 6,
-        "flavor_text": "Rhydon has a horn that serves as a drill. It is used for\ndestroying rocks and boulders. This Pokémon occasionally\nrams into streams of magma, but the armor-like hide prevents\nit from feeling the heat.",
-        "has_alt_form": False,
-        "id": 112
-    },
-    {
-        "name": "Chansey",
-        "genus": "Egg Pokémon",
-        "identifier": "chansey",
-        "evolution_chain": 51,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 440,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "It seems that other Pokémon’s efforts to take\nits delicious, nutritious egg away from it caused\nChansey to get faster at fleeing.",
-        "has_alt_form": False,
-        "id": 113
-    },
-    {
-        "name": "Tangela",
-        "genus": "Vine Pokémon",
-        "identifier": "tangela",
-        "evolution_chain": 52,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 12,
-        "type2": None,
-        "flavor_text": "Tangela’s vines snap off easily if they are grabbed. This\nhappens without pain, allowing it to make a quick getaway.\nThe lost vines are replaced by newly grown vines the very\nnext day.",
-        "has_alt_form": False,
-        "id": 114
-    },
-    {
-        "name": "Kangaskhan",
-        "genus": "Parent Pokémon",
-        "identifier": "kangaskhan",
-        "evolution_chain": 53,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "Kangaskhan protects its child by keeping it in\nits pouch. It has zero forgiveness for those\nwho harm its child and will beat them down.",
-        "has_alt_form": False,
-        "id": 115
-    },
-    {
-        "name": "Horsea",
-        "genus": "Dragon Pokémon",
-        "identifier": "horsea",
-        "evolution_chain": 54,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "If Horsea senses danger, it will reflexively spray a dense\nblack ink from its mouth and try to escape. This Pokémon\nswims by cleverly flapping the fin on its back.",
-        "has_alt_form": False,
-        "id": 116
-    },
-    {
-        "name": "Seadra",
-        "genus": "Dragon Pokémon",
-        "identifier": "seadra",
-        "evolution_chain": 54,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 116,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Seadra generates whirlpools by spinning its body.\nThe whirlpools are strong enough to swallow even\nfishing boats. This Pokémon weakens prey with\nthese currents, then swallows it whole.",
-        "has_alt_form": False,
-        "id": 117
-    },
-    {
-        "name": "Goldeen",
-        "genus": "Goldfish Pokémon",
-        "identifier": "goldeen",
-        "evolution_chain": 55,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Although known for their splendid tail fins,\nGoldeen apparently compete among themselves\nto see whose horn is thickest and sharpest.",
-        "has_alt_form": False,
-        "id": 118
-    },
-    {
-        "name": "Seaking",
-        "genus": "Goldfish Pokémon",
-        "identifier": "seaking",
-        "evolution_chain": 55,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 118,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Its horn spins like a drill to steadily hollow out\nrocks—even harder ones. The coloration of the\nmale is more vivid.",
-        "has_alt_form": False,
-        "id": 119
-    },
-    {
-        "name": "Staryu",
-        "genus": "Star Shape Pokémon",
-        "identifier": "staryu",
-        "evolution_chain": 56,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "In many places, there are folktales of stardust\nfalling into the ocean and becoming Staryu.",
-        "has_alt_form": False,
-        "id": 120
-    },
-    {
-        "name": "Starmie",
-        "genus": "Mysterious Pokémon",
-        "identifier": "starmie",
-        "evolution_chain": 56,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": 120,
-        "type1": 11,
-        "type2": 14,
-        "flavor_text": "Its sparkling core is called “the gem of the sea.”\nThis core can be made into high-priced\naccessories that are traded in secret.",
-        "has_alt_form": False,
-        "id": 121
-    },
-    {
-        "name": "Mr. Mime",
-        "genus": "Barrier Pokémon",
-        "identifier": "mr-mime",
-        "evolution_chain": 57,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": 439,
-        "type1": 14,
-        "type2": 18,
-        "flavor_text": "Its pantomime skills are wonderful. You may\nbecome enraptured while watching it, but next\nthing you know, Mr. Mime has made a real wall.",
-        "has_alt_form": False,
-        "id": 122
-    },
-    {
-        "name": "Scyther",
-        "genus": "Mantis Pokémon",
-        "identifier": "scyther",
-        "evolution_chain": 58,
-        "color": "green",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": 3,
-        "flavor_text": "Its two sharp scythes are more than just\nweapons. It uses them with dexterity to dress\nits prey before eating.",
-        "has_alt_form": False,
-        "id": 123
-    },
-    {
-        "name": "Jynx",
-        "genus": "Human Shape Pokémon",
-        "identifier": "jynx",
-        "evolution_chain": 59,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 238,
-        "type1": 15,
-        "type2": 14,
-        "flavor_text": "It sways its hips to a rhythm all its own. The\nprecise movements of Jynx living in Alola are\ntruly wonderful.",
-        "has_alt_form": False,
-        "id": 124
-    },
-    {
-        "name": "Electabuzz",
-        "genus": "Electric Pokémon",
-        "identifier": "electabuzz",
-        "evolution_chain": 60,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 239,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "Electricity permeates its body. It swings\nits arms round and round to charge up\nelectricity before unleashing a punch.",
-        "has_alt_form": False,
-        "id": 125
-    },
-    {
-        "name": "Magmar",
-        "genus": "Spitfire Pokémon",
-        "identifier": "magmar",
-        "evolution_chain": 61,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 240,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "Its entire body is burning. When it breathes,\nthe temperature rises. When it sneezes, flames\nshoot out!",
-        "has_alt_form": False,
-        "id": 126
-    },
-    {
-        "name": "Pinsir",
-        "genus": "Stag Beetle Pokémon",
-        "identifier": "pinsir",
-        "evolution_chain": 62,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 7,
-        "type2": None,
-        "flavor_text": "It gets into territorial disputes with Vikavolt.\nFor some reason, it apparently gets along well\nwith Heracross in Alola.",
-        "has_alt_form": False,
-        "id": 127
-    },
-    {
-        "name": "Tauros",
-        "genus": "Wild Bull Pokémon",
-        "identifier": "tauros",
-        "evolution_chain": 63,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "They live in groups. The one with the longest,\nthickest, and most-scarred horns is the boss\nof the herd.",
-        "has_alt_form": False,
-        "id": 128
-    },
-    {
-        "name": "Magikarp",
-        "genus": "Fish Pokémon",
-        "identifier": "magikarp",
-        "evolution_chain": 64,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "In the distant past, they were fairly strong, but\nthey have become gradually weaker over time.",
-        "has_alt_form": False,
-        "id": 129
-    },
-    {
-        "name": "Gyarados",
-        "genus": "Atrocious Pokémon",
-        "identifier": "gyarados",
-        "evolution_chain": 64,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 129,
-        "type1": 11,
-        "type2": 3,
-        "flavor_text": "It fires hyper beams in all directions, burning the\nsurrounding area to ash. There are some regions\nwhere it’s called “the deity of destruction.”",
-        "has_alt_form": False,
-        "id": 130
-    },
-    {
-        "name": "Lapras",
-        "genus": "Transport Pokémon",
-        "identifier": "lapras",
-        "evolution_chain": 65,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 11,
-        "type2": 15,
-        "flavor_text": "It likes swimming around with people on its\nback. In the Alola region, it’s an important means\nof transportation over water.",
-        "has_alt_form": False,
-        "id": 131
-    },
-    {
-        "name": "Ditto",
-        "genus": "Transform Pokémon",
-        "identifier": "ditto",
-        "evolution_chain": 66,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "While it can transform into anything, each Ditto\napparently has its own strengths and\nweaknesses when it comes to transformations.",
-        "has_alt_form": False,
-        "id": 132
-    },
-    {
-        "name": "Eevee",
-        "genus": "Evolution Pokémon",
-        "identifier": "eevee",
-        "evolution_chain": 67,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "The question of why only Eevee has such\nunstable genes has still not been solved.",
-        "has_alt_form": False,
-        "id": 133
-    },
-    {
-        "name": "Vaporeon",
-        "genus": "Bubble Jet Pokémon",
-        "identifier": "vaporeon",
-        "evolution_chain": 67,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 133,
-        "type1": 11,
-        "type2": None,
-        "flavor_text": "Clean, clear waters are its usual habitat. When\nit’s about to be attacked by an invading enemy,\nit dives into the water to hide.",
-        "has_alt_form": False,
-        "id": 134
-    },
-    {
-        "name": "Jolteon",
-        "genus": "Lightning Pokémon",
-        "identifier": "jolteon",
-        "evolution_chain": 67,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": 133,
-        "type1": 13,
-        "type2": None,
-        "flavor_text": "Its lungs contain an organ that creates\nelectricity. The crackling sound of electricity\ncan be heard when it exhales.",
-        "has_alt_form": False,
-        "id": 135
-    },
-    {
-        "name": "Flareon",
-        "genus": "Flame Pokémon",
-        "identifier": "flareon",
-        "evolution_chain": 67,
-        "color": "red",
-        "since_gen": 1,
-        "evolves_from": 133,
-        "type1": 10,
-        "type2": None,
-        "flavor_text": "If it inhales deeply, that’s a sign it’s about to\nattack. Prepare to be hit by flames of over\n3,000 degrees Fahrenheit!",
-        "has_alt_form": False,
-        "id": 136
-    },
-    {
-        "name": "Porygon",
-        "genus": "Virtual Pokémon",
-        "identifier": "porygon",
-        "evolution_chain": 68,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "This Pokémon was created using the\ncutting-edge science of 20 years ago, so\nmany parts of it have since become obsolete.",
-        "has_alt_form": False,
-        "id": 137
-    },
-    {
-        "name": "Omanyte",
-        "genus": "Spiral Pokémon",
-        "identifier": "omanyte",
-        "evolution_chain": 69,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 6,
-        "type2": 11,
-        "flavor_text": "Omanyte lived in the seas of antiquity. Its\nfossils have been found bearing bite marks from\nArcheops, so apparently Archeops preyed on it.",
-        "has_alt_form": False,
-        "id": 138
-    },
-    {
-        "name": "Omastar",
-        "genus": "Spiral Pokémon",
-        "identifier": "omastar",
-        "evolution_chain": 69,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 138,
-        "type1": 6,
-        "type2": 11,
-        "flavor_text": "Its heavy shell is thought to be the reason this\nancient Pokémon died out. It’s apparently a\ndistant ancestor of Octillery.",
-        "has_alt_form": False,
-        "id": 139
-    },
-    {
-        "name": "Kabuto",
-        "genus": "Shellfish Pokémon",
-        "identifier": "kabuto",
-        "evolution_chain": 70,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 6,
-        "type2": 11,
-        "flavor_text": "This Pokémon thrived 300 million years ago. It’s\nsaid that living specimens can still be seen\nin a certain region—a rare sight.",
-        "has_alt_form": False,
-        "id": 140
-    },
-    {
-        "name": "Kabutops",
-        "genus": "Shellfish Pokémon",
-        "identifier": "kabutops",
-        "evolution_chain": 70,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 140,
-        "type1": 6,
-        "type2": 11,
-        "flavor_text": "Its body had begun to change so it could\nfunction on land. But it didn’t adapt in time and\nwent extinct.",
-        "has_alt_form": False,
-        "id": 141
-    },
-    {
-        "name": "Aerodactyl",
-        "genus": "Fossil Pokémon",
-        "identifier": "aerodactyl",
-        "evolution_chain": 71,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 6,
-        "type2": 3,
-        "flavor_text": "Restored from DNA found in amber, this\nPokémon exhibited ferocity that was greater\nthan expected. Some casualties resulted.",
-        "has_alt_form": False,
-        "id": 142
-    },
-    {
-        "name": "Snorlax",
-        "genus": "Sleeping Pokémon",
-        "identifier": "snorlax",
-        "evolution_chain": 72,
-        "color": "black",
-        "since_gen": 1,
-        "evolves_from": 446,
-        "type1": 1,
-        "type2": None,
-        "flavor_text": "It doesn’t do anything other than eat and sleep.\nWhen prompted to make a serious effort,\nthough, it apparently displays awesome power.",
-        "has_alt_form": False,
-        "id": 143
-    },
-    {
-        "name": "Articuno",
-        "genus": "Freeze Pokémon",
-        "identifier": "articuno",
-        "evolution_chain": 73,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 15,
-        "type2": 3,
-        "flavor_text": "Articuno is a legendary bird Pokémon that can control ice.\nThe flapping of its wings chills the air. As a result, it is said\nthat when this Pokémon flies, snow will fall.",
-        "has_alt_form": False,
-        "id": 144
-    },
-    {
-        "name": "Zapdos",
-        "genus": "Electric Pokémon",
-        "identifier": "zapdos",
-        "evolution_chain": 74,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 13,
-        "type2": 3,
-        "flavor_text": "Zapdos is a legendary bird Pokémon that has the ability\nto control electricity. It usually lives in thunderclouds.\nThe Pokémon gains power if it is stricken by lightning bolts.",
-        "has_alt_form": False,
-        "id": 145
-    },
-    {
-        "name": "Moltres",
-        "genus": "Flame Pokémon",
-        "identifier": "moltres",
-        "evolution_chain": 75,
-        "color": "yellow",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 10,
-        "type2": 3,
-        "flavor_text": "Moltres is a legendary bird Pokémon that has the ability\nto control fire. If this Pokémon is injured, it is said to dip its\nbody in the molten magma of a volcano to burn and heal itself.",
-        "has_alt_form": False,
-        "id": 146
-    },
-    {
-        "name": "Dratini",
-        "genus": "Dragon Pokémon",
-        "identifier": "dratini",
-        "evolution_chain": 76,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 16,
-        "type2": None,
-        "flavor_text": "It’s still weak, so it lurks on the floor of bodies\nof water, eating whatever food sinks down and\nliving a quiet life.",
-        "has_alt_form": False,
-        "id": 147
-    },
-    {
-        "name": "Dragonair",
-        "genus": "Dragon Pokémon",
-        "identifier": "dragonair",
-        "evolution_chain": 76,
-        "color": "blue",
-        "since_gen": 1,
-        "evolves_from": 147,
-        "type1": 16,
-        "type2": None,
-        "flavor_text": "Lakes where Dragonair live are filled with\nofferings from people, because they believe this\nPokémon is able to control the weather.",
-        "has_alt_form": False,
-        "id": 148
-    },
-    {
-        "name": "Dragonite",
-        "genus": "Dragon Pokémon",
-        "identifier": "dragonite",
-        "evolution_chain": 76,
-        "color": "brown",
-        "since_gen": 1,
-        "evolves_from": 148,
-        "type1": 16,
-        "type2": 3,
-        "flavor_text": "It flies over raging seas as if they were nothing.\nObserving this, a ship’s captain dubbed this\nPokémon “the sea incarnate.”",
-        "has_alt_form": False,
-        "id": 149
-    },
-    {
-        "name": "Mewtwo",
-        "genus": "Genetic Pokémon",
-        "identifier": "mewtwo",
-        "evolution_chain": 77,
-        "color": "purple",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "Mewtwo is a Pokémon that was created by genetic\nmanipulation. However, even though the scientific power\nof humans created this Pokémon’s body, they failed to\nendow Mewtwo with a compassionate heart.",
-        "has_alt_form": False,
-        "id": 150
-    },
-    {
-        "name": "Mew",
-        "genus": "New Species Pokémon",
-        "identifier": "mew",
-        "evolution_chain": 78,
-        "color": "pink",
-        "since_gen": 1,
-        "evolves_from": None,
-        "type1": 14,
-        "type2": None,
-        "flavor_text": "Mew is said to possess the genetic composition of all\nPokémon. It is capable of making itself invisible at will,\nso it entirely avoids notice even if it approaches people.",
-        "has_alt_form": False,
-        "id": 151
-    }
-]
-
-EVOLUTION = [
-    {
-        "evolves_from": 1,
-        "chain": 1,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 1
-    },
-    {
-        "evolves_from": 2,
-        "chain": 1,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 2
-    },
-    {
-        "evolves_from": 4,
-        "chain": 2,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 3
-    },
-    {
-        "evolves_from": 5,
-        "chain": 2,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 4
-    },
-    {
-        "evolves_from": 7,
-        "chain": 3,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 5
-    },
-    {
-        "evolves_from": 8,
-        "chain": 3,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 6
-    },
-    {
-        "evolves_from": 10,
-        "chain": 4,
-        "trigger": "level-up",
-        "level": 7,
-        "id": 7
-    },
-    {
-        "evolves_from": 11,
-        "chain": 4,
-        "trigger": "level-up",
-        "level": 10,
-        "id": 8
-    },
-    {
-        "evolves_from": 13,
-        "chain": 5,
-        "trigger": "level-up",
-        "level": 7,
-        "id": 9
-    },
-    {
-        "evolves_from": 14,
-        "chain": 5,
-        "trigger": "level-up",
-        "level": 10,
-        "id": 10
-    },
-    {
-        "evolves_from": 16,
-        "chain": 6,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 11
-    },
-    {
-        "evolves_from": 17,
-        "chain": 6,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 12
-    },
-    {
-        "evolves_from": 19,
-        "chain": 7,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 13
-    },
-    {
-        "evolves_from": 21,
-        "chain": 8,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 14
-    },
-    {
-        "evolves_from": 23,
-        "chain": 9,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 15
-    },
-    {
-        "evolves_from": 172,
-        "chain": 10,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 16
-    },
-    {
-        "evolves_from": 25,
-        "chain": 10,
-        "trigger": "use-item",
-        "trigger_item": "thunder-stone",
-        "id": 17
-    },
-    {
-        "evolves_from": 27,
-        "chain": 11,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 18
-    },
-    {
-        "evolves_from": 29,
-        "chain": 12,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 19
-    },
-    {
-        "evolves_from": 30,
-        "chain": 12,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 20
-    },
-    {
-        "evolves_from": 32,
-        "chain": 13,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 21
-    },
-    {
-        "evolves_from": 33,
-        "chain": 13,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 22
-    },
-    {
-        "evolves_from": 173,
-        "chain": 14,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 23
-    },
-    {
-        "evolves_from": 35,
-        "chain": 14,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 24
-    },
-    {
-        "evolves_from": 37,
-        "chain": 15,
-        "trigger": "use-item",
-        "trigger_item": "fire-stone",
-        "id": 25
-    },
-    {
-        "evolves_from": 174,
-        "chain": 16,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 26
-    },
-    {
-        "evolves_from": 39,
-        "chain": 16,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 27
-    },
-    {
-        "evolves_from": 41,
-        "chain": 17,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 28
-    },
-    {
-        "evolves_from": 43,
-        "chain": 18,
-        "trigger": "level-up",
-        "level": 21,
-        "id": 29
-    },
-    {
-        "evolves_from": 44,
-        "chain": 18,
-        "trigger": "use-item",
-        "trigger_item": "leaf-stone",
-        "id": 30
-    },
-    {
-        "evolves_from": 46,
-        "chain": 19,
-        "trigger": "level-up",
-        "level": 24,
-        "id": 31
-    },
-    {
-        "evolves_from": 48,
-        "chain": 20,
-        "trigger": "level-up",
-        "level": 31,
-        "id": 32
-    },
-    {
-        "evolves_from": 50,
-        "chain": 21,
-        "trigger": "level-up",
-        "level": 26,
-        "id": 33
-    },
-    {
-        "evolves_from": 52,
-        "chain": 22,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 34
-    },
-    {
-        "evolves_from": 54,
-        "chain": 23,
-        "trigger": "level-up",
-        "level": 33,
-        "id": 35
-    },
-    {
-        "evolves_from": 56,
-        "chain": 24,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 36
-    },
-    {
-        "evolves_from": 58,
-        "chain": 25,
-        "trigger": "use-item",
-        "trigger_item": "fire-stone",
-        "id": 37
-    },
-    {
-        "evolves_from": 60,
-        "chain": 26,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 38
-    },
-    {
-        "evolves_from": 61,
-        "chain": 26,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 39
-    },
-    {
-        "evolves_from": 63,
-        "chain": 27,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 40
-    },
-    {
-        "evolves_from": 64,
-        "chain": 27,
-        "trigger": "trade",
-        "id": 41
-    },
-    {
-        "evolves_from": 66,
-        "chain": 28,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 42
-    },
-    {
-        "evolves_from": 67,
-        "chain": 28,
-        "trigger": "trade",
-        "id": 43
-    },
-    {
-        "evolves_from": 69,
-        "chain": 29,
-        "trigger": "level-up",
-        "level": 21,
-        "id": 44
-    },
-    {
-        "evolves_from": 70,
-        "chain": 29,
-        "trigger": "use-item",
-        "trigger_item": "leaf-stone",
-        "id": 45
-    },
-    {
-        "evolves_from": 72,
-        "chain": 30,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 46
-    },
-    {
-        "evolves_from": 74,
-        "chain": 31,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 47
-    },
-    {
-        "evolves_from": 75,
-        "chain": 31,
-        "trigger": "trade",
-        "id": 48
-    },
-    {
-        "evolves_from": 77,
-        "chain": 32,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 49
-    },
-    {
-        "evolves_from": 79,
-        "chain": 33,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 50
-    },
-    {
-        "evolves_from": 81,
-        "chain": 34,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 51
-    },
-    {
-        "evolves_from": 84,
-        "chain": 36,
-        "trigger": "level-up",
-        "level": 31,
-        "id": 52
-    },
-    {
-        "evolves_from": 86,
-        "chain": 37,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 53
-    },
-    {
-        "evolves_from": 88,
-        "chain": 38,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 54
-    },
-    {
-        "evolves_from": 90,
-        "chain": 39,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 55
-    },
-    {
-        "evolves_from": 92,
-        "chain": 40,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 56
-    },
-    {
-        "evolves_from": 93,
-        "chain": 40,
-        "trigger": "trade",
-        "id": 57
-    },
-    {
-        "evolves_from": 96,
-        "chain": 42,
-        "trigger": "level-up",
-        "level": 26,
-        "id": 58
-    },
-    {
-        "evolves_from": 98,
-        "chain": 43,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 59
-    },
-    {
-        "evolves_from": 100,
-        "chain": 44,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 60
-    },
-    {
-        "evolves_from": 102,
-        "chain": 45,
-        "trigger": "use-item",
-        "trigger_item": "leaf-stone",
-        "id": 61
-    },
-    {
-        "evolves_from": 104,
-        "chain": 46,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 62
-    },
-    {
-        "evolves_from": 236,
-        "chain": 47,
-        "trigger": "level-up",
-        "level": 20,
-        "relative_stats": 1,
-        "id": 63
-    },
-    {
-        "evolves_from": 236,
-        "chain": 47,
-        "trigger": "level-up",
-        "level": 20,
-        "relative_stats": -1,
-        "id": 64
-    },
-    {
-        "evolves_from": 109,
-        "chain": 49,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 65
-    },
-    {
-        "evolves_from": 111,
-        "chain": 50,
-        "trigger": "level-up",
-        "level": 42,
-        "id": 66
-    },
-    {
-        "evolves_from": 440,
-        "chain": 51,
-        "trigger": "level-up",
-        "held_item": "oval-stone",
-        "time_of_day": "day",
-        "id": 67
-    },
-    {
-        "evolves_from": 116,
-        "chain": 54,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 68
-    },
-    {
-        "evolves_from": 118,
-        "chain": 55,
-        "trigger": "level-up",
-        "level": 33,
-        "id": 69
-    },
-    {
-        "evolves_from": 120,
-        "chain": 56,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 70
-    },
-    {
-        "evolves_from": 439,
-        "chain": 57,
-        "trigger": "level-up",
-        "known_move": "mimic",
-        "id": 71
-    },
-    {
-        "evolves_from": 238,
-        "chain": 59,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 72
-    },
-    {
-        "evolves_from": 239,
-        "chain": 60,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 73
-    },
-    {
-        "evolves_from": 240,
-        "chain": 61,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 74
-    },
-    {
-        "evolves_from": 129,
-        "chain": 64,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 75
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 76
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "use-item",
-        "trigger_item": "thunder-stone",
-        "id": 77
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "use-item",
-        "trigger_item": "fire-stone",
-        "id": 78
-    },
-    {
-        "evolves_from": 138,
-        "chain": 69,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 79
-    },
-    {
-        "evolves_from": 140,
-        "chain": 70,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 80
-    },
-    {
-        "evolves_from": 446,
-        "chain": 72,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 81
-    },
-    {
-        "evolves_from": 147,
-        "chain": 76,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 82
-    },
-    {
-        "evolves_from": 148,
-        "chain": 76,
-        "trigger": "level-up",
-        "level": 55,
-        "id": 83
-    },
-    {
-        "evolves_from": 152,
-        "chain": 79,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 84
-    },
-    {
-        "evolves_from": 153,
-        "chain": 79,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 85
-    },
-    {
-        "evolves_from": 155,
-        "chain": 80,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 86
-    },
-    {
-        "evolves_from": 156,
-        "chain": 80,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 87
-    },
-    {
-        "evolves_from": 158,
-        "chain": 81,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 88
-    },
-    {
-        "evolves_from": 159,
-        "chain": 81,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 89
-    },
-    {
-        "evolves_from": 161,
-        "chain": 82,
-        "trigger": "level-up",
-        "level": 15,
-        "id": 90
-    },
-    {
-        "evolves_from": 163,
-        "chain": 83,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 91
-    },
-    {
-        "evolves_from": 165,
-        "chain": 84,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 92
-    },
-    {
-        "evolves_from": 167,
-        "chain": 85,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 93
-    },
-    {
-        "evolves_from": 42,
-        "chain": 17,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 94
-    },
-    {
-        "evolves_from": 170,
-        "chain": 86,
-        "trigger": "level-up",
-        "level": 27,
-        "id": 95
-    },
-    {
-        "evolves_from": 175,
-        "chain": 87,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 96
-    },
-    {
-        "evolves_from": 177,
-        "chain": 88,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 97
-    },
-    {
-        "evolves_from": 179,
-        "chain": 89,
-        "trigger": "level-up",
-        "level": 15,
-        "id": 98
-    },
-    {
-        "evolves_from": 180,
-        "chain": 89,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 99
-    },
-    {
-        "evolves_from": 44,
-        "chain": 18,
-        "trigger": "use-item",
-        "trigger_item": "sun-stone",
-        "id": 100
-    },
-    {
-        "evolves_from": 298,
-        "chain": 90,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 101
-    },
-    {
-        "evolves_from": 183,
-        "chain": 90,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 102
-    },
-    {
-        "evolves_from": 438,
-        "chain": 91,
-        "trigger": "level-up",
-        "known_move": "mimic",
-        "id": 103
-    },
-    {
-        "evolves_from": 61,
-        "chain": 26,
-        "trigger": "trade",
-        "held_item": "kings-rock",
-        "id": 104
-    },
-    {
-        "evolves_from": 187,
-        "chain": 92,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 105
-    },
-    {
-        "evolves_from": 188,
-        "chain": 92,
-        "trigger": "level-up",
-        "level": 27,
-        "id": 106
-    },
-    {
-        "evolves_from": 191,
-        "chain": 94,
-        "trigger": "use-item",
-        "trigger_item": "sun-stone",
-        "id": 107
-    },
-    {
-        "evolves_from": 194,
-        "chain": 96,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 108
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "time_of_day": "day",
-        "happiness": 220,
-        "id": 109
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "time_of_day": "night",
-        "happiness": 220,
-        "id": 110
-    },
-    {
-        "evolves_from": 79,
-        "chain": 33,
-        "trigger": "trade",
-        "held_item": "kings-rock",
-        "id": 111
-    },
-    {
-        "evolves_from": 360,
-        "chain": 100,
-        "trigger": "level-up",
-        "level": 15,
-        "id": 112
-    },
-    {
-        "evolves_from": 204,
-        "chain": 102,
-        "trigger": "level-up",
-        "level": 31,
-        "id": 113
-    },
-    {
-        "evolves_from": 95,
-        "chain": 41,
-        "trigger": "trade",
-        "held_item": "metal-coat",
-        "id": 114
-    },
-    {
-        "evolves_from": 209,
-        "chain": 105,
-        "trigger": "level-up",
-        "level": 23,
-        "id": 115
-    },
-    {
-        "evolves_from": 123,
-        "chain": 58,
-        "trigger": "trade",
-        "held_item": "metal-coat",
-        "id": 116
-    },
-    {
-        "evolves_from": 216,
-        "chain": 110,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 117
-    },
-    {
-        "evolves_from": 218,
-        "chain": 111,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 118
-    },
-    {
-        "evolves_from": 220,
-        "chain": 112,
-        "trigger": "level-up",
-        "level": 33,
-        "id": 119
-    },
-    {
-        "evolves_from": 223,
-        "chain": 114,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 120
-    },
-    {
-        "evolves_from": 458,
-        "chain": 116,
-        "trigger": "level-up",
-        "party_species": "remoraid",
-        "id": 121
-    },
-    {
-        "evolves_from": 228,
-        "chain": 118,
-        "trigger": "level-up",
-        "level": 24,
-        "id": 122
-    },
-    {
-        "evolves_from": 117,
-        "chain": 54,
-        "trigger": "trade",
-        "held_item": "dragon-scale",
-        "id": 123
-    },
-    {
-        "evolves_from": 231,
-        "chain": 119,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 124
-    },
-    {
-        "evolves_from": 137,
-        "chain": 68,
-        "trigger": "trade",
-        "held_item": "up-grade",
-        "id": 125
-    },
-    {
-        "evolves_from": 236,
-        "chain": 47,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 126
-    },
-    {
-        "evolves_from": 113,
-        "chain": 51,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 127
-    },
-    {
-        "evolves_from": 246,
-        "chain": 126,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 128
-    },
-    {
-        "evolves_from": 247,
-        "chain": 126,
-        "trigger": "level-up",
-        "level": 55,
-        "id": 129
-    },
-    {
-        "evolves_from": 252,
-        "chain": 130,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 130
-    },
-    {
-        "evolves_from": 253,
-        "chain": 130,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 131
-    },
-    {
-        "evolves_from": 255,
-        "chain": 131,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 132
-    },
-    {
-        "evolves_from": 256,
-        "chain": 131,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 133
-    },
-    {
-        "evolves_from": 258,
-        "chain": 132,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 134
-    },
-    {
-        "evolves_from": 259,
-        "chain": 132,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 135
-    },
-    {
-        "evolves_from": 261,
-        "chain": 133,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 136
-    },
-    {
-        "evolves_from": 263,
-        "chain": 134,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 137
-    },
-    {
-        "evolves_from": 265,
-        "chain": 135,
-        "trigger": "level-up",
-        "level": 7,
-        "id": 138
-    },
-    {
-        "evolves_from": 266,
-        "chain": 135,
-        "trigger": "level-up",
-        "level": 10,
-        "id": 139
-    },
-    {
-        "evolves_from": 265,
-        "chain": 135,
-        "trigger": "level-up",
-        "level": 7,
-        "id": 140
-    },
-    {
-        "evolves_from": 268,
-        "chain": 135,
-        "trigger": "level-up",
-        "level": 10,
-        "id": 141
-    },
-    {
-        "evolves_from": 270,
-        "chain": 136,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 142
-    },
-    {
-        "evolves_from": 271,
-        "chain": 136,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 143
-    },
-    {
-        "evolves_from": 273,
-        "chain": 137,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 144
-    },
-    {
-        "evolves_from": 274,
-        "chain": 137,
-        "trigger": "use-item",
-        "trigger_item": "leaf-stone",
-        "id": 145
-    },
-    {
-        "evolves_from": 276,
-        "chain": 138,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 146
-    },
-    {
-        "evolves_from": 278,
-        "chain": 139,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 147
-    },
-    {
-        "evolves_from": 280,
-        "chain": 140,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 148
-    },
-    {
-        "evolves_from": 281,
-        "chain": 140,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 149
-    },
-    {
-        "evolves_from": 283,
-        "chain": 141,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 150
-    },
-    {
-        "evolves_from": 285,
-        "chain": 142,
-        "trigger": "level-up",
-        "level": 23,
-        "id": 151
-    },
-    {
-        "evolves_from": 287,
-        "chain": 143,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 152
-    },
-    {
-        "evolves_from": 288,
-        "chain": 143,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 153
-    },
-    {
-        "evolves_from": 290,
-        "chain": 144,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 154
-    },
-    {
-        "evolves_from": 290,
-        "chain": 144,
-        "trigger": "shed",
-        "id": 155
-    },
-    {
-        "evolves_from": 293,
-        "chain": 145,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 156
-    },
-    {
-        "evolves_from": 294,
-        "chain": 145,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 157
-    },
-    {
-        "evolves_from": 296,
-        "chain": 146,
-        "trigger": "level-up",
-        "level": 24,
-        "id": 158
-    },
-    {
-        "evolves_from": 300,
-        "chain": 148,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 159
-    },
-    {
-        "evolves_from": 304,
-        "chain": 151,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 160
-    },
-    {
-        "evolves_from": 305,
-        "chain": 151,
-        "trigger": "level-up",
-        "level": 42,
-        "id": 161
-    },
-    {
-        "evolves_from": 307,
-        "chain": 152,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 162
-    },
-    {
-        "evolves_from": 309,
-        "chain": 153,
-        "trigger": "level-up",
-        "level": 26,
-        "id": 163
-    },
-    {
-        "evolves_from": 406,
-        "chain": 158,
-        "trigger": "level-up",
-        "time_of_day": "day",
-        "happiness": 220,
-        "id": 164
-    },
-    {
-        "evolves_from": 316,
-        "chain": 159,
-        "trigger": "level-up",
-        "level": 26,
-        "id": 165
-    },
-    {
-        "evolves_from": 318,
-        "chain": 160,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 166
-    },
-    {
-        "evolves_from": 320,
-        "chain": 161,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 167
-    },
-    {
-        "evolves_from": 322,
-        "chain": 162,
-        "trigger": "level-up",
-        "level": 33,
-        "id": 168
-    },
-    {
-        "evolves_from": 325,
-        "chain": 164,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 169
-    },
-    {
-        "evolves_from": 328,
-        "chain": 166,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 170
-    },
-    {
-        "evolves_from": 329,
-        "chain": 166,
-        "trigger": "level-up",
-        "level": 45,
-        "id": 171
-    },
-    {
-        "evolves_from": 331,
-        "chain": 167,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 172
-    },
-    {
-        "evolves_from": 333,
-        "chain": 168,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 173
-    },
-    {
-        "evolves_from": 339,
-        "chain": 173,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 174
-    },
-    {
-        "evolves_from": 341,
-        "chain": 174,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 175
-    },
-    {
-        "evolves_from": 343,
-        "chain": 175,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 176
-    },
-    {
-        "evolves_from": 345,
-        "chain": 176,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 177
-    },
-    {
-        "evolves_from": 347,
-        "chain": 177,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 178
-    },
-    {
-        "evolves_from": 349,
-        "chain": 178,
-        "trigger": "level-up",
-        "beauty": 171,
-        "id": 179
-    },
-    {
-        "evolves_from": 353,
-        "chain": 181,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 180
-    },
-    {
-        "evolves_from": 355,
-        "chain": 182,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 181
-    },
-    {
-        "evolves_from": 433,
-        "chain": 184,
-        "trigger": "level-up",
-        "time_of_day": "night",
-        "happiness": 220,
-        "id": 182
-    },
-    {
-        "evolves_from": 361,
-        "chain": 186,
-        "trigger": "level-up",
-        "level": 42,
-        "id": 183
-    },
-    {
-        "evolves_from": 363,
-        "chain": 187,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 184
-    },
-    {
-        "evolves_from": 364,
-        "chain": 187,
-        "trigger": "level-up",
-        "level": 44,
-        "id": 185
-    },
-    {
-        "evolves_from": 366,
-        "chain": 188,
-        "trigger": "trade",
-        "held_item": "deep-sea-tooth",
-        "id": 186
-    },
-    {
-        "evolves_from": 366,
-        "chain": 188,
-        "trigger": "trade",
-        "held_item": "deep-sea-scale",
-        "id": 187
-    },
-    {
-        "evolves_from": 371,
-        "chain": 191,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 188
-    },
-    {
-        "evolves_from": 372,
-        "chain": 191,
-        "trigger": "level-up",
-        "level": 50,
-        "id": 189
-    },
-    {
-        "evolves_from": 374,
-        "chain": 192,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 190
-    },
-    {
-        "evolves_from": 375,
-        "chain": 192,
-        "trigger": "level-up",
-        "level": 45,
-        "id": 191
-    },
-    {
-        "evolves_from": 387,
-        "chain": 203,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 192
-    },
-    {
-        "evolves_from": 388,
-        "chain": 203,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 193
-    },
-    {
-        "evolves_from": 390,
-        "chain": 204,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 194
-    },
-    {
-        "evolves_from": 391,
-        "chain": 204,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 195
-    },
-    {
-        "evolves_from": 393,
-        "chain": 205,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 196
-    },
-    {
-        "evolves_from": 394,
-        "chain": 205,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 197
-    },
-    {
-        "evolves_from": 396,
-        "chain": 206,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 198
-    },
-    {
-        "evolves_from": 397,
-        "chain": 206,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 199
-    },
-    {
-        "evolves_from": 399,
-        "chain": 207,
-        "trigger": "level-up",
-        "level": 15,
-        "id": 200
-    },
-    {
-        "evolves_from": 401,
-        "chain": 208,
-        "trigger": "level-up",
-        "level": 10,
-        "id": 201
-    },
-    {
-        "evolves_from": 403,
-        "chain": 209,
-        "trigger": "level-up",
-        "level": 15,
-        "id": 202
-    },
-    {
-        "evolves_from": 404,
-        "chain": 209,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 203
-    },
-    {
-        "evolves_from": 315,
-        "chain": 158,
-        "trigger": "use-item",
-        "trigger_item": "shiny-stone",
-        "id": 204
-    },
-    {
-        "evolves_from": 408,
-        "chain": 211,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 205
-    },
-    {
-        "evolves_from": 410,
-        "chain": 212,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 206
-    },
-    {
-        "evolves_from": 412,
-        "chain": 213,
-        "trigger": "level-up",
-        "level": 20,
-        "gender": "female",
-        "id": 207
-    },
-    {
-        "evolves_from": 412,
-        "chain": 213,
-        "trigger": "level-up",
-        "level": 20,
-        "gender": "male",
-        "id": 208
-    },
-    {
-        "evolves_from": 415,
-        "chain": 214,
-        "trigger": "level-up",
-        "level": 21,
-        "gender": "female",
-        "id": 209
-    },
-    {
-        "evolves_from": 418,
-        "chain": 216,
-        "trigger": "level-up",
-        "level": 26,
-        "id": 210
-    },
-    {
-        "evolves_from": 420,
-        "chain": 217,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 211
-    },
-    {
-        "evolves_from": 422,
-        "chain": 218,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 212
-    },
-    {
-        "evolves_from": 190,
-        "chain": 93,
-        "trigger": "level-up",
-        "known_move": "double-hit",
-        "id": 213
-    },
-    {
-        "evolves_from": 425,
-        "chain": 219,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 214
-    },
-    {
-        "evolves_from": 427,
-        "chain": 220,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 215
-    },
-    {
-        "evolves_from": 200,
-        "chain": 98,
-        "trigger": "use-item",
-        "trigger_item": "dusk-stone",
-        "id": 216
-    },
-    {
-        "evolves_from": 198,
-        "chain": 97,
-        "trigger": "use-item",
-        "trigger_item": "dusk-stone",
-        "id": 217
-    },
-    {
-        "evolves_from": 431,
-        "chain": 221,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 218
-    },
-    {
-        "evolves_from": 434,
-        "chain": 223,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 219
-    },
-    {
-        "evolves_from": 436,
-        "chain": 224,
-        "trigger": "level-up",
-        "level": 33,
-        "id": 220
-    },
-    {
-        "evolves_from": 443,
-        "chain": 230,
-        "trigger": "level-up",
-        "level": 24,
-        "id": 221
-    },
-    {
-        "evolves_from": 444,
-        "chain": 230,
-        "trigger": "level-up",
-        "level": 48,
-        "id": 222
-    },
-    {
-        "evolves_from": 447,
-        "chain": 232,
-        "trigger": "level-up",
-        "time_of_day": "day",
-        "happiness": 220,
-        "id": 223
-    },
-    {
-        "evolves_from": 449,
-        "chain": 233,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 224
-    },
-    {
-        "evolves_from": 451,
-        "chain": 234,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 225
-    },
-    {
-        "evolves_from": 453,
-        "chain": 235,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 226
-    },
-    {
-        "evolves_from": 456,
-        "chain": 237,
-        "trigger": "level-up",
-        "level": 31,
-        "id": 227
-    },
-    {
-        "evolves_from": 459,
-        "chain": 239,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 228
-    },
-    {
-        "evolves_from": 215,
-        "chain": 109,
-        "trigger": "level-up",
-        "held_item": "razor-claw",
-        "time_of_day": "night",
-        "id": 229
-    },
-    {
-        "evolves_from": 82,
-        "chain": 34,
-        "trigger": "level-up",
-        "location": 10,
-        "id": 230
-    },
-    {
-        "evolves_from": 108,
-        "chain": 48,
-        "trigger": "level-up",
-        "known_move": "rollout",
-        "id": 231
-    },
-    {
-        "evolves_from": 112,
-        "chain": 50,
-        "trigger": "trade",
-        "held_item": "protector",
-        "id": 232
-    },
-    {
-        "evolves_from": 114,
-        "chain": 52,
-        "trigger": "level-up",
-        "known_move": "ancient-power",
-        "id": 233
-    },
-    {
-        "evolves_from": 125,
-        "chain": 60,
-        "trigger": "trade",
-        "held_item": "electirizer",
-        "id": 234
-    },
-    {
-        "evolves_from": 126,
-        "chain": 61,
-        "trigger": "trade",
-        "held_item": "magmarizer",
-        "id": 235
-    },
-    {
-        "evolves_from": 176,
-        "chain": 87,
-        "trigger": "use-item",
-        "trigger_item": "shiny-stone",
-        "id": 236
-    },
-    {
-        "evolves_from": 193,
-        "chain": 95,
-        "trigger": "level-up",
-        "known_move": "ancient-power",
-        "id": 237
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 8,
-        "id": 238
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 48,
-        "id": 239
-    },
-    {
-        "evolves_from": 207,
-        "chain": 104,
-        "trigger": "level-up",
-        "held_item": "razor-fang",
-        "time_of_day": "night",
-        "id": 240
-    },
-    {
-        "evolves_from": 221,
-        "chain": 112,
-        "trigger": "level-up",
-        "known_move": "ancient-power",
-        "id": 241
-    },
-    {
-        "evolves_from": 233,
-        "chain": 68,
-        "trigger": "trade",
-        "held_item": "dubious-disc",
-        "id": 242
-    },
-    {
-        "evolves_from": 281,
-        "chain": 140,
-        "trigger": "use-item",
-        "trigger_item": "dawn-stone",
-        "gender": "male",
-        "id": 243
-    },
-    {
-        "evolves_from": 299,
-        "chain": 147,
-        "trigger": "level-up",
-        "location": 10,
-        "id": 244
-    },
-    {
-        "evolves_from": 356,
-        "chain": 182,
-        "trigger": "trade",
-        "held_item": "reaper-cloth",
-        "id": 245
-    },
-    {
-        "evolves_from": 361,
-        "chain": 186,
-        "trigger": "use-item",
-        "trigger_item": "dawn-stone",
-        "gender": "female",
-        "id": 246
-    },
-    {
-        "evolves_from": 495,
-        "chain": 256,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 247
-    },
-    {
-        "evolves_from": 496,
-        "chain": 256,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 248
-    },
-    {
-        "evolves_from": 498,
-        "chain": 257,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 249
-    },
-    {
-        "evolves_from": 499,
-        "chain": 257,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 250
-    },
-    {
-        "evolves_from": 501,
-        "chain": 258,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 251
-    },
-    {
-        "evolves_from": 502,
-        "chain": 258,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 252
-    },
-    {
-        "evolves_from": 504,
-        "chain": 259,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 253
-    },
-    {
-        "evolves_from": 506,
-        "chain": 260,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 254
-    },
-    {
-        "evolves_from": 507,
-        "chain": 260,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 255
-    },
-    {
-        "evolves_from": 509,
-        "chain": 261,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 256
-    },
-    {
-        "evolves_from": 511,
-        "chain": 262,
-        "trigger": "use-item",
-        "trigger_item": "leaf-stone",
-        "id": 257
-    },
-    {
-        "evolves_from": 513,
-        "chain": 263,
-        "trigger": "use-item",
-        "trigger_item": "fire-stone",
-        "id": 258
-    },
-    {
-        "evolves_from": 515,
-        "chain": 264,
-        "trigger": "use-item",
-        "trigger_item": "water-stone",
-        "id": 259
-    },
-    {
-        "evolves_from": 517,
-        "chain": 265,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 260
-    },
-    {
-        "evolves_from": 519,
-        "chain": 266,
-        "trigger": "level-up",
-        "level": 21,
-        "id": 261
-    },
-    {
-        "evolves_from": 520,
-        "chain": 266,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 262
-    },
-    {
-        "evolves_from": 522,
-        "chain": 267,
-        "trigger": "level-up",
-        "level": 27,
-        "id": 263
-    },
-    {
-        "evolves_from": 524,
-        "chain": 268,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 264
-    },
-    {
-        "evolves_from": 525,
-        "chain": 268,
-        "trigger": "trade",
-        "id": 265
-    },
-    {
-        "evolves_from": 527,
-        "chain": 269,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 266
-    },
-    {
-        "evolves_from": 529,
-        "chain": 270,
-        "trigger": "level-up",
-        "level": 31,
-        "id": 267
-    },
-    {
-        "evolves_from": 532,
-        "chain": 272,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 268
-    },
-    {
-        "evolves_from": 533,
-        "chain": 272,
-        "trigger": "trade",
-        "id": 269
-    },
-    {
-        "evolves_from": 535,
-        "chain": 273,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 270
-    },
-    {
-        "evolves_from": 536,
-        "chain": 273,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 271
-    },
-    {
-        "evolves_from": 540,
-        "chain": 276,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 272
-    },
-    {
-        "evolves_from": 541,
-        "chain": 276,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 273
-    },
-    {
-        "evolves_from": 543,
-        "chain": 277,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 274
-    },
-    {
-        "evolves_from": 544,
-        "chain": 277,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 275
-    },
-    {
-        "evolves_from": 546,
-        "chain": 278,
-        "trigger": "use-item",
-        "trigger_item": "sun-stone",
-        "id": 276
-    },
-    {
-        "evolves_from": 548,
-        "chain": 279,
-        "trigger": "use-item",
-        "trigger_item": "sun-stone",
-        "id": 277
-    },
-    {
-        "evolves_from": 551,
-        "chain": 281,
-        "trigger": "level-up",
-        "level": 29,
-        "id": 278
-    },
-    {
-        "evolves_from": 552,
-        "chain": 281,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 279
-    },
-    {
-        "evolves_from": 554,
-        "chain": 282,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 280
-    },
-    {
-        "evolves_from": 557,
-        "chain": 284,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 281
-    },
-    {
-        "evolves_from": 559,
-        "chain": 285,
-        "trigger": "level-up",
-        "level": 39,
-        "id": 282
-    },
-    {
-        "evolves_from": 562,
-        "chain": 287,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 283
-    },
-    {
-        "evolves_from": 564,
-        "chain": 288,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 284
-    },
-    {
-        "evolves_from": 566,
-        "chain": 289,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 285
-    },
-    {
-        "evolves_from": 568,
-        "chain": 290,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 286
-    },
-    {
-        "evolves_from": 570,
-        "chain": 291,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 287
-    },
-    {
-        "evolves_from": 572,
-        "chain": 292,
-        "trigger": "use-item",
-        "trigger_item": "shiny-stone",
-        "id": 288
-    },
-    {
-        "evolves_from": 574,
-        "chain": 293,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 289
-    },
-    {
-        "evolves_from": 575,
-        "chain": 293,
-        "trigger": "level-up",
-        "level": 41,
-        "id": 290
-    },
-    {
-        "evolves_from": 577,
-        "chain": 294,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 291
-    },
-    {
-        "evolves_from": 578,
-        "chain": 294,
-        "trigger": "level-up",
-        "level": 41,
-        "id": 292
-    },
-    {
-        "evolves_from": 580,
-        "chain": 295,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 293
-    },
-    {
-        "evolves_from": 582,
-        "chain": 296,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 294
-    },
-    {
-        "evolves_from": 583,
-        "chain": 296,
-        "trigger": "level-up",
-        "level": 47,
-        "id": 295
-    },
-    {
-        "evolves_from": 585,
-        "chain": 297,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 296
-    },
-    {
-        "evolves_from": 588,
-        "chain": 299,
-        "trigger": "trade",
-        "trade_species": "shelmet",
-        "id": 297
-    },
-    {
-        "evolves_from": 590,
-        "chain": 300,
-        "trigger": "level-up",
-        "level": 39,
-        "id": 298
-    },
-    {
-        "evolves_from": 592,
-        "chain": 301,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 299
-    },
-    {
-        "evolves_from": 595,
-        "chain": 303,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 300
-    },
-    {
-        "evolves_from": 597,
-        "chain": 304,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 301
-    },
-    {
-        "evolves_from": 599,
-        "chain": 305,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 302
-    },
-    {
-        "evolves_from": 600,
-        "chain": 305,
-        "trigger": "level-up",
-        "level": 49,
-        "id": 303
-    },
-    {
-        "evolves_from": 602,
-        "chain": 306,
-        "trigger": "level-up",
-        "level": 39,
-        "id": 304
-    },
-    {
-        "evolves_from": 603,
-        "chain": 306,
-        "trigger": "use-item",
-        "trigger_item": "thunder-stone",
-        "id": 305
-    },
-    {
-        "evolves_from": 605,
-        "chain": 307,
-        "trigger": "level-up",
-        "level": 42,
-        "id": 306
-    },
-    {
-        "evolves_from": 607,
-        "chain": 308,
-        "trigger": "level-up",
-        "level": 41,
-        "id": 307
-    },
-    {
-        "evolves_from": 608,
-        "chain": 308,
-        "trigger": "use-item",
-        "trigger_item": "dusk-stone",
-        "id": 308
-    },
-    {
-        "evolves_from": 610,
-        "chain": 309,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 309
-    },
-    {
-        "evolves_from": 611,
-        "chain": 309,
-        "trigger": "level-up",
-        "level": 48,
-        "id": 310
-    },
-    {
-        "evolves_from": 613,
-        "chain": 310,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 311
-    },
-    {
-        "evolves_from": 616,
-        "chain": 312,
-        "trigger": "trade",
-        "trade_species": "karrablast",
-        "id": 312
-    },
-    {
-        "evolves_from": 619,
-        "chain": 314,
-        "trigger": "level-up",
-        "level": 50,
-        "id": 313
-    },
-    {
-        "evolves_from": 622,
-        "chain": 316,
-        "trigger": "level-up",
-        "level": 43,
-        "id": 314
-    },
-    {
-        "evolves_from": 624,
-        "chain": 317,
-        "trigger": "level-up",
-        "level": 52,
-        "id": 315
-    },
-    {
-        "evolves_from": 627,
-        "chain": 319,
-        "trigger": "level-up",
-        "level": 54,
-        "id": 316
-    },
-    {
-        "evolves_from": 629,
-        "chain": 320,
-        "trigger": "level-up",
-        "level": 54,
-        "id": 317
-    },
-    {
-        "evolves_from": 633,
-        "chain": 323,
-        "trigger": "level-up",
-        "level": 50,
-        "id": 318
-    },
-    {
-        "evolves_from": 634,
-        "chain": 323,
-        "trigger": "level-up",
-        "level": 64,
-        "id": 319
-    },
-    {
-        "evolves_from": 636,
-        "chain": 324,
-        "trigger": "level-up",
-        "level": 59,
-        "id": 320
-    },
-    {
-        "evolves_from": 349,
-        "chain": 178,
-        "trigger": "trade",
-        "held_item": "prism-scale",
-        "id": 321
-    },
-    {
-        "evolves_from": 82,
-        "chain": 34,
-        "trigger": "level-up",
-        "location": 379,
-        "id": 322
-    },
-    {
-        "evolves_from": 299,
-        "chain": 147,
-        "trigger": "level-up",
-        "location": 379,
-        "id": 323
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 375,
-        "id": 324
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 380,
-        "id": 325
-    },
-    {
-        "evolves_from": 682,
-        "chain": 350,
-        "trigger": "trade",
-        "held_item": "sachet",
-        "id": 327
-    },
-    {
-        "evolves_from": 661,
-        "chain": 341,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 328
-    },
-    {
-        "evolves_from": 708,
-        "chain": 364,
-        "trigger": "trade",
-        "id": 329
-    },
-    {
-        "evolves_from": 662,
-        "chain": 341,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 330
-    },
-    {
-        "evolves_from": 653,
-        "chain": 338,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 331
-    },
-    {
-        "evolves_from": 686,
-        "chain": 352,
-        "trigger": "level-up",
-        "level": 30,
-        "needs_inversion": true,
-        "id": 332
-    },
-    {
-        "evolves_from": 654,
-        "chain": 338,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 333
-    },
-    {
-        "evolves_from": 650,
-        "chain": 337,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 334
-    },
-    {
-        "evolves_from": 692,
-        "chain": 355,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 335
-    },
-    {
-        "evolves_from": 651,
-        "chain": 337,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 336
-    },
-    {
-        "evolves_from": 656,
-        "chain": 339,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 337
-    },
-    {
-        "evolves_from": 657,
-        "chain": 339,
-        "trigger": "level-up",
-        "level": 36,
-        "id": 338
-    },
-    {
-        "evolves_from": 679,
-        "chain": 349,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 339
-    },
-    {
-        "evolves_from": 704,
-        "chain": 362,
-        "trigger": "level-up",
-        "level": 40,
-        "id": 340
-    },
-    {
-        "evolves_from": 665,
-        "chain": 342,
-        "trigger": "level-up",
-        "level": 12,
-        "id": 341
-    },
-    {
-        "evolves_from": 664,
-        "chain": 342,
-        "trigger": "level-up",
-        "level": 9,
-        "id": 342
-    },
-    {
-        "evolves_from": 688,
-        "chain": 353,
-        "trigger": "level-up",
-        "level": 39,
-        "id": 343
-    },
-    {
-        "evolves_from": 710,
-        "chain": 365,
-        "trigger": "trade",
-        "id": 344
-    },
-    {
-        "evolves_from": 659,
-        "chain": 340,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 345
-    },
-    {
-        "evolves_from": 669,
-        "chain": 344,
-        "trigger": "level-up",
-        "level": 19,
-        "id": 346
-    },
-    {
-        "evolves_from": 670,
-        "chain": 344,
-        "trigger": "use-item",
-        "trigger_item": "shiny-stone",
-        "id": 347
-    },
-    {
-        "evolves_from": 680,
-        "chain": 349,
-        "trigger": "use-item",
-        "trigger_item": "dusk-stone",
-        "id": 348
-    },
-    {
-        "evolves_from": 674,
-        "chain": 346,
-        "trigger": "level-up",
-        "level": 32,
-        "party_type": "dark",
-        "id": 349
-    },
-    {
-        "evolves_from": 684,
-        "chain": 351,
-        "trigger": "trade",
-        "held_item": "whipped-dream",
-        "id": 350
-    },
-    {
-        "evolves_from": 690,
-        "chain": 354,
-        "trigger": "level-up",
-        "level": 48,
-        "id": 351
-    },
-    {
-        "evolves_from": 696,
-        "chain": 357,
-        "trigger": "level-up",
-        "level": 39,
-        "time_of_day": "day",
-        "id": 352
-    },
-    {
-        "evolves_from": 698,
-        "chain": 358,
-        "trigger": "level-up",
-        "level": 39,
-        "time_of_day": "night",
-        "id": 353
-    },
-    {
-        "evolves_from": 712,
-        "chain": 366,
-        "trigger": "level-up",
-        "level": 37,
-        "id": 354
-    },
-    {
-        "evolves_from": 694,
-        "chain": 356,
-        "trigger": "use-item",
-        "trigger_item": "sun-stone",
-        "id": 355
-    },
-    {
-        "evolves_from": 667,
-        "chain": 343,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 356
-    },
-    {
-        "evolves_from": 672,
-        "chain": 345,
-        "trigger": "level-up",
-        "level": 32,
-        "id": 357
-    },
-    {
-        "evolves_from": 705,
-        "chain": 362,
-        "trigger": "level-up",
-        "level": 50,
-        "needs_rain": true,
-        "id": 358
-    },
-    {
-        "evolves_from": 714,
-        "chain": 367,
-        "trigger": "level-up",
-        "level": 48,
-        "id": 359
-    },
-    {
-        "evolves_from": 677,
-        "chain": 348,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 360
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "known_move_type": "fairy",
-        "affection": 2,
-        "id": 361
-    },
-    {
-        "evolves_from": 82,
-        "chain": 34,
-        "trigger": "level-up",
-        "location": 629,
-        "id": 362
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 650,
-        "id": 363
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "location": 640,
-        "id": 364
-    },
-    {
-        "evolves_from": 299,
-        "chain": 147,
-        "trigger": "level-up",
-        "location": 629,
-        "id": 365
-    },
-    {
-        "evolves_from": 82,
-        "chain": 34,
-        "trigger": "level-up",
-        "id": 366
-    },
-    {
-        "evolves_from": 104,
-        "chain": 46,
-        "trigger": "level-up",
-        "level": 28,
-        "time_of_day": "night",
-        "id": 367
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "id": 368
-    },
-    {
-        "evolves_from": 133,
-        "chain": 67,
-        "trigger": "level-up",
-        "id": 369
-    },
-    {
-        "evolves_from": 299,
-        "chain": 147,
-        "trigger": "level-up",
-        "id": 370
-    },
-    {
-        "evolves_from": 349,
-        "chain": 178,
-        "trigger": "level-up",
-        "beauty": 170,
-        "id": 371
-    },
-    {
-        "evolves_from": 677,
-        "chain": 348,
-        "trigger": "level-up",
-        "level": 25,
-        "gender": "male",
-        "id": 372
-    },
-    {
-        "evolves_from": 722,
-        "chain": 374,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 373
-    },
-    {
-        "evolves_from": 723,
-        "chain": 374,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 374
-    },
-    {
-        "evolves_from": 725,
-        "chain": 375,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 375
-    },
-    {
-        "evolves_from": 726,
-        "chain": 375,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 376
-    },
-    {
-        "evolves_from": 728,
-        "chain": 376,
-        "trigger": "level-up",
-        "level": 17,
-        "id": 377
-    },
-    {
-        "evolves_from": 729,
-        "chain": 376,
-        "trigger": "level-up",
-        "level": 34,
-        "id": 378
-    },
-    {
-        "evolves_from": 731,
-        "chain": 377,
-        "trigger": "level-up",
-        "level": 14,
-        "id": 379
-    },
-    {
-        "evolves_from": 732,
-        "chain": 377,
-        "trigger": "level-up",
-        "level": 28,
-        "id": 380
-    },
-    {
-        "evolves_from": 734,
-        "chain": 378,
-        "trigger": "level-up",
-        "level": 20,
-        "time_of_day": "day",
-        "id": 381
-    },
-    {
-        "evolves_from": 736,
-        "chain": 379,
-        "trigger": "level-up",
-        "level": 20,
-        "id": 382
-    },
-    {
-        "evolves_from": 737,
-        "chain": 379,
-        "trigger": "level-up",
-        "id": 383
-    },
-    {
-        "evolves_from": 739,
-        "chain": 380,
-        "trigger": "level-up",
-        "id": 384
-    },
-    {
-        "evolves_from": 742,
-        "chain": 382,
-        "trigger": "level-up",
-        "level": 25,
-        "id": 385
-    },
-    {
-        "evolves_from": 744,
-        "chain": 383,
-        "trigger": "level-up",
-        "level": 25,
-        "time_of_day": "day",
-        "id": 386
-    },
-    {
-        "evolves_from": 744,
-        "chain": 383,
-        "trigger": "level-up",
-        "level": 25,
-        "time_of_day": "night",
-        "id": 387
-    },
-    {
-        "evolves_from": 747,
-        "chain": 385,
-        "trigger": "level-up",
-        "level": 38,
-        "id": 388
-    },
-    {
-        "evolves_from": 749,
-        "chain": 386,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 389
-    },
-    {
-        "evolves_from": 751,
-        "chain": 387,
-        "trigger": "level-up",
-        "level": 22,
-        "id": 390
-    },
-    {
-        "evolves_from": 753,
-        "chain": 388,
-        "trigger": "level-up",
-        "level": 34,
-        "time_of_day": "day",
-        "id": 391
-    },
-    {
-        "evolves_from": 755,
-        "chain": 389,
-        "trigger": "level-up",
-        "level": 24,
-        "id": 392
-    },
-    {
-        "evolves_from": 757,
-        "chain": 390,
-        "trigger": "level-up",
-        "level": 33,
-        "gender": "female",
-        "id": 393
-    },
-    {
-        "evolves_from": 759,
-        "chain": 391,
-        "trigger": "level-up",
-        "level": 27,
-        "id": 394
-    },
-    {
-        "evolves_from": 761,
-        "chain": 392,
-        "trigger": "level-up",
-        "level": 18,
-        "id": 395
-    },
-    {
-        "evolves_from": 762,
-        "chain": 392,
-        "trigger": "level-up",
-        "known_move": "stomp",
-        "id": 396
-    },
-    {
-        "evolves_from": 767,
-        "chain": 396,
-        "trigger": "level-up",
-        "level": 30,
-        "id": 397
-    },
-    {
-        "evolves_from": 769,
-        "chain": 397,
-        "trigger": "level-up",
-        "level": 42,
-        "id": 398
-    },
-    {
-        "evolves_from": 772,
-        "chain": 399,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 399
-    },
-    {
-        "evolves_from": 782,
-        "chain": 408,
-        "trigger": "level-up",
-        "level": 35,
-        "id": 400
-    },
-    {
-        "evolves_from": 783,
-        "chain": 408,
-        "trigger": "level-up",
-        "level": 45,
-        "id": 401
-    },
-    {
-        "evolves_from": 789,
-        "chain": 413,
-        "trigger": "level-up",
-        "level": 43,
-        "id": 402
-    },
-    {
-        "evolves_from": 790,
-        "chain": 413,
-        "trigger": "level-up",
-        "level": 53,
-        "id": 403
-    },
-    {
-        "evolves_from": 790,
-        "chain": 413,
-        "trigger": "level-up",
-        "level": 53,
-        "id": 404
-    },
-    {
-        "evolves_from": 803,
-        "chain": 424,
-        "trigger": "level-up",
-        "known_move": "dragon-pulse",
-        "id": 405
-    }
-]
-
-TYPE = {
-    'water': {
-        'info' : 'Water is one of the three basic elemental types along with Fire and Grass,'\
-                'which constitute the three starter Pokémon. This creates a simple triangle'\
-                'to explain the type concept easily to new players. Water is the most common'\
-                'type with over 100 Pokémon, which are based on a wide variety of fish and'\
-                'other sea-dwelling creatures.',
-        'info2' : 'Notable Trainers who specialize in Water-type Pokémon include Misty of Cerulean City,'\
-                  'Juan and Wallace of Sootopolis City, Crasher Wake of Pastoria City, Cress of Striaton City,'\
-                  'Marlon of Humilau City, Siebold of the Kalos Elite Four, and Trial Captain Lana of Konikoni City.'\
-                  'Prior to changes in Generation IV, all damaging Water-type moves were special,'\
-                  'but they may now also be physical depending on the attack.',
-        'image' : 'https://pokeweakness.com/images/1891870-131lapras.png',
-        'advantages': ['ground', 'rock', 'fire'],
-        'weaknesses': ['grass', 'electric'],
-        'pokemon': [ALL['magikarp']['id'], ALL['gyarados']['id']]
-        "damage_class" : 'special',
-        'identifier' : 'water',
-        'vs_normal' : 1.0,
-        'vs_fighting' : 1.0,
-        'vs_flying' : 1.0,
-        'vs_poison' : 1.0,
-        'vs_ground' : 2.0,
-        'vs_rock' :  2.0,
-        'vs_bug' : 1.0,
-        'vs_ghost' : 1.0,
-        'vs_steel' : 1.0,
-        'vs_fire' : 2.0,
-        'vs_water' : 0.5,
-        'vs_grass' : 0.5,
-        'vs_electric' : 1.0,
-        'vs_psychic' : 1.0,
-        'vs_ice' : 1.0,
-        'vs_dragon' : 0.5,
-        'vs_dark' : 1.0,
-        'vs_fairy' : 1.0,
-        'id' : 11
-    },
-    'flying': {
-        'info' : 'Most Flying type Pokémon are based on birds or insects, along with some mythical creatures like dragons.'\
-        'On average they are faster than any other type. Nearly every Flying type has Flying as the secondary type,'\
-        'usually with Normal.'\
-        'There is only one pure Flying Pokémon (Tornadus), and one line with Flying as a primary type (Noibat/Noivern).',
-        'info2' : 'Notable Trainers who specialize in Flying-type Pokémon are the Gym Leaders Falkner of Violet City,'\
-        'Winona of Fortree City, Skyla of Mistralton City, and Kahili of Alola Elite Four.'\
-        'Prior to changes in Generation IV, all damaging Flying-type moves were physical,'\
-        'but they may now also be special depending on the attack.',
-        'image' : 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png',
-        'advantages': ['fighting', 'bug', 'grass'],
-        'weaknesses': ['rock', 'electric', 'ice'],
-        'pokemon': [ALL['gyarados']['id']]
-        'damage_class' : 'physical',
-        'identifier' : 'flying',
-        'vs_normal' : 1.0,
-        'vs_fighting' : 2.0,
-        'vs_flying' : 1.0,
-        'vs_poison' : 1.0,
-        'vs_ground' : 1.0,
-        'vs_rock' : 0.5,
-        'vs_bug' : 2.0,
-        'vs_ghost' : 1.0,
-        'vs_steel' : 0.5,
-        'vs_fire' : 1.0,
-        'vs_water' : 1.0,
-        'vs_grass' : 2.0,
-        'vs_electric' : 0.5,
-        'vs_psychic' : 1.0,
-        'vs_ice' : 1.0,
-        'vs_dragon' : 1.0,
-        'vs_dark' : 1.0,
-        'vs_fairy' : 1.0,
-        'id' : 3
-    },
-    'ground': {
-        'info' : 'Ground is one of the strongest types offensively:'\
-        'it is super-effective against five other types (as is Fighting)'\
-        'and Earthquake is one of the strongest moves in the game with power and accuracy both 100.'\
-        'Unfortunately, many Ground type Pokémon are dual Rock types, lumbering them with 4x Grass and Water disadvantages.',
-        'info2' : 'Notable Trainers who specialize in Ground-type Pokémon are Giovanni of Viridian City,'\
-        'Bertha of the Sinnoh Elite Four, Clay of Driftveil City, and Island Kahuna Hapu of Poni Island.'\
-        'Prior to changes in Generation IV, all damaging Ground-type moves were physical,'\
-        'but they may now also be special depending on the attack.',
-        'image' : 'https://cdn.bulbagarden.net/upload/3/31/050Diglett.png',
-        'advantages': ['poison', 'rock', 'fire', 'steel', 'electric'],
-        'weaknesses': ['water', 'grass', 'ice'],
-        'pokemon': [ALL['sandslash']['id'], ALL['sandshrew']['id']]
-        'damage_class' : 'physical',
-        'identifier': 'ground',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 0.0,
-        'vs_poison': 2.0,
-        'vs_ground': 1.0,
-        'vs_rock': 2.0,
-        'vs_bug': 0.5,
-        'vs_ghost': 1.0,
-        'vs_steel': 2.0,
-        'vs_fire': 2.0,
-        'vs_water': 1.0,
-        'vs_grass': 0.5,
-        'vs_electric': 2.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 1.0,
-        'id': 5
-    },
-    'poison': {
-        'info' : 'The Poison type is regarded as one of the weakest offensively.'\
-        'Prior to Pokémon X/Y it was super-effective only against Grass'\
-        '(many of which are dual Poison so neutralizes the effect).'\
-        'It now has an extra advantage against the new Fairy type.'\
-        'In the first generation it was also super-effective against Bug but this was changed.'\
-        'It fares a little better defensively but its best advantage is through status moves like Toxic.',
-        'info2' : 'Notable Trainers who specialize in Poison-type Pokémon include Janine of Fuchsia City,'\
-        'her father Koga of the Indigo Plateau Elite Four, Roxie of Virbank City, and Team Skull Admin Plumeria.'\
-        'Some villainous teams, such as Team Rocket, also frequently use Poison-type Pokémon.'\
-        'Prior to changes in Generation IV, all damaging Poison-type moves were physical,'\
-        'but they may now also be special depending on the attack.',
-        'image' : 'http://bogleech.com/pokemon/koffing.png',
-        'advantages': ['grass', 'fairy'],
-        'weaknesses': ['ground', 'psychic'],
-        'pokemon': [ALL['ekans']['id'], ALL['arbok']['id']]
-        'damage_class': 'physical',
-        'identifier': 'poison',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 1.0,
-        'vs_poison': 0.5,
-        'vs_ground': 0.5,
-        'vs_rock': 0.5,
-        'vs_bug': 1.0,
-        'vs_ghost': 0.5,
-        'vs_steel': 0.0,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 2.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 2.0,
-        'id': 4
-    },
-    'normal' : {
-        'info' : '',
-        'info2' : '',
-        'image' : '',
-        'advantages' : '',
-        'weaknesses' : '',
-        'pokemon' : '',
-        'damage_class': 'physical',
-        'identifier': 'normal',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 1.0,
-        'vs_poison': 1.0,
-        'vs_ground': 1.0,
-        'vs_rock': 0.5,
-        'vs_bug': 1.0,
-        'vs_ghost': 0.0,
-        'vs_steel': 0.5,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 1.0,
-        'id': 1
-
-
-    },
-    'fighting': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': '',
-        'identifier': '',
-        'damage_class': 'physical',
-        'identifier': 'fighting',
-        'vs_normal': 2.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 0.5,
-        'vs_poison': 0.5,
-        'vs_ground': 1.0,
-        'vs_rock': 2.0,
-        'vs_bug': 0.5,
-        'vs_ghost': 0.0,
-        'vs_steel': 2.0,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 0.5,
-        'vs_ice': 2.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 2.0,
-        'vs_fairy': 0.5,
-        'id': 2
-    },
-    'rock': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class' : 'physical',
-        'identifier' : 'rock',
-        'vs_normal' : 1.0,
-        'vs_fighting' : 0.5,
-        'vs_flying' : 2.0,
-        'vs_poison' : 1.0,
-        'vs_ground' : 0.5,
-        'vs_rock' : 1.0,
-        'vs_bug' : 2.0,
-        'vs_ghost' : 1.0,
-        'vs_steel' : 0.5,
-        'vs_fire' : 2.0,
-        'vs_water' : 1.0,
-        'vs_grass' : 1.0,
-        'vs_electric' : 1.0,
-        'vs_psychic' : 1.0,
-        'vs_ice' : 2.0,
-        'vs_dragon' : 1.0,
-        'vs_dark' : 1.0,
-        'vs_fairy' : 1.0,
-        'id' : 6
-
-    },
-    'bug': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class' : 'physical',
-        'identifier' : 'bug',
-        'vs_normal' : 1.0,
-        'vs_fighting' : 0.5,
-        'vs_flying' : 0.5,
-        'vs_poison' : 0.5,
-        'vs_ground' : 1.0,
-        'vs_rock' : 1.0,
-        'vs_bug' : 1.0,
-        'vs_ghost' : 0.5,
-        'vs_steel' : 0.5,
-        'vs_fire' : 0.5,
-        'vs_water' : 1.0,
-        'vs_grass' : 2.0,
-        'vs_electric' : 1.0,
-        'vs_psychic' : 2.0,
-        'vs_ice' : 1.0,
-        'vs_dragon' : 1.0,
-        'vs_dark' : 2.0,
-        'vs_fairy' : 0.5,
-        'id' : 7
-    },
-    'ghost': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class' : 'physical',
-        'identifier' : 'ghost',
-        'vs_normal' : 0.0,
-        'vs_fighting' : 1.0,
-        'vs_flying' : 1.0,
-        'vs_poison' : 1.0,
-        'vs_ground' : 1.0,
-        'vs_rock' : 1.0,
-        'vs_bug' : 1.0,
-        'vs_ghost' : 2.0,
-        'vs_steel' : 1.0,
-        'vs_fire' : 1.0,
-        'vs_water' : 1.0,
-        'vs_grass' : 1.0,
-        'vs_electric' : 1.0,
-        'vs_psychic' : 2.0,
-        'vs_ice' : 1.0,
-        'vs_dragon' : 1.0,
-        'vs_dark' : 0.5,
-        'vs_fairy' : 1.0,
-        'id' : 8
-
-    },
-    'steel': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'physical',
-        'identifier': 'steel',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 1.0,
-        'vs_poison': 1.0,
-        'vs_ground': 1.0,
-        'vs_rock': 2.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 0.5,
-        'vs_fire': 0.5,
-        'vs_water': 0.5,
-        'vs_grass': 1.0,
-        'vs_electric': 0.5,
-        'vs_psychic': 1.0,
-        'vs_ice': 2.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 2.0,
-        'id': 9
-    },
-    'fire': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'fire',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 1.0,
-        'vs_poison': 1.0,
-        'vs_ground': 1.0,
-        'vs_rock': 0.5,
-        'vs_bug': 2.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 2.0,
-        'vs_fire': 0.5,
-        'vs_water': 0.5,
-        'vs_grass': 2.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 2.0,
-        'vs_dragon': 0.5,
-        'vs_dark': 1.0,
-        'vs_fairy': 1.0,
-        'id': 10
-    },
-    'grass': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class' : 'special',
-        'identifier' : 'grass',
-        'vs_normal' : 1.0,
-        'vs_fighting' : 1.0,
-        'vs_flying' : 0.5,
-        'vs_poison' : 0.5,
-        'vs_ground' : 2.0,
-        'vs_rock' : 2.0,
-        'vs_bug' : 0.5,
-        'vs_ghost' : 1.0,
-        'vs_steel' : 0.5,
-        'vs_fire' : 0.5,
-        'vs_water' : 2.0,
-        'vs_grass' : 0.5,
-        'vs_electric' : 1.0,
-        'vs_psychic' : 1.0,
-        'vs_ice' : 1.0,
-        'vs_dragon' : 0.5,
-        'vs_dark' : 1.0,
-        'vs_fairy' : 1.0,
-        'id' : 12
-    },
-    'electric': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'electric',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 2.0,
-        'vs_poison': 1.0,
-        'vs_ground': 0.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 1.0,
-        'vs_fire': 1.0,
-        'vs_water': 2.0,
-        'vs_grass': 0.5,
-        'vs_electric': 0.5,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 0.5,
-        'vs_dark': 1.0,
-        'vs_fairy': 1.0,
-        'id': 13
-    },
-    'psychic': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'psychic',
-        'vs_normal': 1.0,
-        'vs_fighting': 2.0,
-        'vs_flying': 1.0,
-        'vs_poison': 2.0,
-        'vs_ground': 1.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 0.5,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 0.5,
-        'vs_ice': 1.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 0.0,
-        'vs_fairy': 1.0,
-        'id': 14
-    },
-    'ice': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'ice',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 2.0,
-        'vs_poison': 1.0,
-        'vs_ground': 2.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 0.5,
-        'vs_fire': 0.5,
-        'vs_water': 0.5,
-        'vs_grass': 2.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 0.5,
-        'vs_dragon': 2.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 1.0,
-        'id': 15
-    },
-    'dragon': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'dragon',
-        'vs_normal': 1.0,
-        'vs_fighting': 1.0,
-        'vs_flying': 1.0,
-        'vs_poison': 1.0,
-        'vs_ground': 1.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 0.5,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 2.0,
-        'vs_dark': 1.0,
-        'vs_fairy': 0.0,
-        'id': 16
-    },
-    'dark': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': 'special',
-        'identifier': 'dark',
-        'vs_normal': 1.0,
-        'vs_fighting': 0.5,
-        'vs_flying': 1.0,
-        'vs_poison': 1.0,
-        'vs_ground': 1.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 2.0,
-        'vs_steel': 1.0,
-        'vs_fire': 1.0,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 2.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 1.0,
-        'vs_dark': 0.5,
-        'vs_fairy': 0.5,
-        'id': 17
-
-    },
-    'fairy': {
-        'info': '',
-        'info2': '',
-        'image': '',
-        'advantages': '',
-        'weaknesses': '',
-        'pokemon': '',
-        'damage_class': '',
-        'identifier': 'fairy',
-        'vs_normal': 1.0,
-        'vs_fighting': 2.0,
-        'vs_flying': 1.0,
-        'vs_poison': 0.5,
-        'vs_ground': 1.0,
-        'vs_rock': 1.0,
-        'vs_bug': 1.0,
-        'vs_ghost': 1.0,
-        'vs_steel': 0.5,
-        'vs_fire': 0.5,
-        'vs_water': 1.0,
-        'vs_grass': 1.0,
-        'vs_electric': 1.0,
-        'vs_psychic': 1.0,
-        'vs_ice': 1.0,
-        'vs_dragon': 2.0,
-        'vs_dark': 2.0,
-        'vs_fairy': 1.0,
-        'id': 18
-
-    }
-
-
 }
