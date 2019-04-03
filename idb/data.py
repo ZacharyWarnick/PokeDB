@@ -50,14 +50,12 @@ EVOLUTION = {
         "chain": 64,
         "trigger": "level-up",
         "level": 20,
-        "id": 75
     },
     15: {
         "evolves_from": 23,
         "chain": 9,
         "trigger": "level-up",
         "level": 22,
-        "id": 15
     },
     18: {
         "evolves_from": 27,
@@ -92,26 +90,23 @@ TYPE = {
 }
 
 FORMS = {
-    'sandshrew': {
+    10203: {
         "pokemon_name": "Alolan Sandshrew",
         "form_label": "Alola Form",
         "identifier": "alola",
         "pokemon_id": 27,
-        "id": 10203
     },
-    'sandslash': {
+    10204: {
         "pokemon_name": "Alolan Sandslash",
         "form_label": "Alola Form",
         "identifier": "alola",
         "pokemon_id": 28,
-        "id": 10204
     },
-    'gyarados': {
+    10141: {
         "pokemon_name": "Mega Gyarados",
         "form_label": "Mega Gyarados",
         "identifier": "mega",
         "pokemon_id": 130,
-        "id": 10141
     }
 }
 
