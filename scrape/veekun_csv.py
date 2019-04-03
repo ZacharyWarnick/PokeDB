@@ -61,6 +61,7 @@ _FIELDS = {
     'pokemon': [
         'id', 'identifier', 'species_id', 'order', 'is_default'
     ],
+    'region_names': ['region_id', 'local_language_id', 'name'],
     'stats': [
         'id', 'damage_class_id', 'identifier'
     ],
@@ -177,20 +178,35 @@ class Session(object):
         return species_text
 
     def parse_locations(self):
-        location_info = self.simple_map('locations')
+        region_names = self.simple_map('region_names', 'region_id', 'name')
+        loc_regions = self.simple_map('locations', 'id', 'region_id')
+        loc_regions = {k: int(v) for k, v in loc_regions.items() if v}
+
+        pprint(loc_regions)
 
         loc_map = {
             'location_id': ('id', int),
-            'local_language_id': ('lang', int)
+            'id': ('id', int),
+            'local_language_id': ('lang', int),
+            **map_id(region_names, 'region_id', 'region')
         }
 
+        sub_fmt = ' ({})'
+        reg_fmt = ', {} Region'
         locations = defaultdict(dict)
         for row in self.csv_generator('location_names', maps=loc_map):
             if row['lang'] == _LANG_EN:
+                pprint(row)
                 row_id = row['id']
-                locations[row_id]['name'] = row['name']
-                locations[row_id]['subtitle'] = row['subtitle']
-                locations[row_id]['identifier'] = location_info[row_id]
+
+                has_sub = 'subtitle' in row and row['subtitle']
+                sub = sub_fmt.format(row['subtitle']) if has_sub else ''
+                has_reg = row_id in loc_regions
+                reg_name = region_names[loc_regions[row_id]] if has_reg else ''
+                region = reg_fmt.format(reg_name) if reg_name else ''
+                loc_name = row['name'] + sub + region
+
+                locations[row_id]['name'] = loc_name
 
         self.locations = locations
 
@@ -369,11 +385,11 @@ class Session(object):
             'relative_physical_stats': ('relative_stats', _int),
             'needs_overworld_rain': ('needs_rain', _bool),
             'turn_upside_down': ('needs_inversion', _bool),
-            'location_id': ('location', _int),
             'known_move_type_id': ('known_move_type', _int),
             'party_type_id': ('party_type', _int),
             'party_species_id': ('party_pokemon', _int),
             'trade_species_id': ('trade_pokemon', _int),
+            'location_id': ('location', _int),
             **map_id(items, 'trigger_item_id', 'trigger_item'),
             **map_id(triggers, 'evolution_trigger_id', 'trigger'),
             **map_id(genders, 'gender_id', 'gender'),
@@ -396,6 +412,11 @@ class Session(object):
                     continue
 
                 if value in {None, '', False}:
+                    continue
+
+                if key == 'location':
+                    loc = self.locations[value]
+                    stage[key] = loc['name']
                     continue
 
                 stage[key] = value

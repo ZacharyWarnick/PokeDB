@@ -6,8 +6,8 @@ import requests
 from multiprocessing import Pool
 from pathlib import Path
 
-
-SPRITE_URL_FMT = "https://github.com/ymin1103/sprites/tree/sprite803-807/sprites/pokemon/{}.png"  # noqa: E501
+SPRITE_URL_FMT = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{}.png"  # noqa: E501
+BACKUP_SPRITE_URL_FMT = "https://github.com/ymin1103/sprites/tree/sprite803-807/sprites/pokemon/{}.png"  # noqa: E501
 
 
 def read_json(fpath):
@@ -15,9 +15,10 @@ def read_json(fpath):
         return json.load(f)
 
 
-def sprite_url(*args):
+def sprite_url(*args, backup=False):
     name = '-'.join(map(str, args))
-    return SPRITE_URL_FMT.format(name)
+    fmt_string = SPRITE_URL_FMT if not backup else BACKUP_SPRITE_URL_FMT
+    return fmt_string.format(name)
 
 
 def is_dead_url(url):
