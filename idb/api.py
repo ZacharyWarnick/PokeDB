@@ -1,88 +1,37 @@
-from models import db, Users, Polls, Topics, Options, UserPolls
+#from some_folder import Pokemon, Evolutions, Types, Forms, BaseStats
 from flask import Blueprint, request, jsonify, session
 
 api = Blueprint('api', 'api', url_prefix='/api')
 
+@api.route('/wherever', methods=['GET'])
 
-@api.route('/polls', methods=['GET', 'POST'])
-# retrieves/adds polls from/to the database
-def api_polls():
-    if request.method == 'POST':
-        # get the poll and save it in the database
-        poll = request.get_json()
+# Retrieves/adds polls from/to the database
+def api_pokemon():
 
-        # simple validation to check if all values are properly secret
-        for key, value in poll.items():
-            if not value:
-                return jsonify({'message': 'value for {} is empty'.format(key)})
+    pokemon = [pokemon.to_json() for pokemon in Pokemon.query.all()]
 
-        title = poll['title']
-        options_query = lambda option: Options.query.filter(Options.name.like(option))
+    return jsonify(pokemon)
 
-        options = [Polls(option=Options(name=option))
-                   if options_query(option).count() == 0
-                   else Polls(option=options_query(option).first()) for option in poll['options']
-                   ]
+def api_evolutions():
+    
+    evolutions = [evolutions.to_json() for evolutions in Evolutions.query.all()]
 
-        new_topic = Topics(title=title, options=options)
+    return jsonify(evolutions)
 
-        db.session.add(new_topic)
-        db.session.commit()
+def api_types():
+    
+    types = [types.to_json() for types in Types.query.all()]
 
-        return jsonify({'message': 'Poll was created succesfully'})
+    return jsonify(types)
 
-    else:
-        # it's a GET request, return dict representations of the API
-        polls = Topics.query.filter_by(status=1).join(Polls).order_by(Topics.id.desc()).all()
-        all_polls = {'Polls':  [poll.to_json() for poll in polls]}
+def api_forms():
+    
+    forms = [forms.to_json() for forms in Forms.query.all()]
 
-        return jsonify(all_polls)
+    return jsonify(forms)
 
+def api_base_stats():
+    
+    base_stats = [base_stats.to_json() for base_stats in BaseStats.query.all()]
 
-@api.route('/polls/options')
-def api_polls_options():
-
-    all_options = [option.to_json() for option in Options.query.all()]
-
-    return jsonify(all_options)
-
-
-@api.route('/poll/vote', methods=['PATCH'])
-def api_poll_vote():
-    poll = request.get_json()
-
-    poll_title, option = (poll['poll_title'], poll['option'])
-
-    join_tables = Polls.query.join(Topics).join(Options)
-
-    # Get topic and username from the database
-    topic = Topics.query.filter_by(title=poll_title).first()
-    user = Users.query.filter_by(username=session['user']).first()
-
-    # filter options
-    option = join_tables.filter(Topics.title.like(poll_title)).filter(Options.name.like(option)).first()
-
-    # check if the user has voted on this poll
-    poll_count = UserPolls.query.filter_by(topic_id=topic.id).filter_by(user_id=user.id).count()
-    if poll_count > 0:
-        return jsonify({'message': 'Sorry! multiple votes are not allowed'})
-
-    if option:
-        # record user and poll
-        user_poll = UserPolls(topic_id=topic.id, user_id=user.id)
-        db.session.add(user_poll)
-
-        # increment vote_count by 1 if the option was found
-        option.vote_count += 1
-        db.session.commit()
-
-        return jsonify({'message': 'Thank you for voting'})
-
-    return jsonify({'message': 'option or poll was not found please try again'})
-
-
-@api.route('/poll/<poll_name>')
-def api_poll(poll_name):
-    poll = Topics.query.filter(Topics.title.like(poll_name)).first()
-
-    return jsonify({'Polls': [poll.to_json()]}) if poll else jsonify({'message': 'poll not found'})
+    return jsonify(base_stats)
