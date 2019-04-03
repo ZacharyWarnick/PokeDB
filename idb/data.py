@@ -45,47 +45,23 @@ POKEMON = {
 }
 
 EVOLUTION = {
-    'magikarp': {
-        "evolves_from": 129,
+    129: {
         "chain": 64,
         "trigger": "level-up",
         "level": 20,
         "id": 75
     },
-    'gyarados': {
-        "evolves_from": 252,
-        "chain": 130,
-        "trigger": "level-up",
-        "level": 16,
-        "id": 130
-    },
-    'ekans': {
-        "evolves_from": 173,
-        "chain": 14,
-        "trigger": "level-up",
-        "happiness": 220,
-        "id": 23
-    },
-    'arbok': {
-        "evolves_from": 35,
-        "chain": 14,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 24
-    },
-    'sandshrew': {
-        "evolves_from": 39,
-        "chain": 16,
-        "trigger": "use-item",
-        "trigger_item": "moon-stone",
-        "id": 27
-    },
-    'sandslash': {
-        "evolves_from": 41,
-        "chain": 17,
+    23: {
+        "chain": 9,
         "trigger": "level-up",
         "level": 22,
-        "id": 28
+        "id": 15
+    },
+    27: {
+        "chain": 11,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 18
     }
 }
 
