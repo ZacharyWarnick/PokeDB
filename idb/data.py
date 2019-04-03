@@ -45,19 +45,22 @@ POKEMON = {
 }
 
 EVOLUTION = {
-    129: {
+    75: {
+        "evolves_from": 129,
         "chain": 64,
         "trigger": "level-up",
         "level": 20,
         "id": 75
     },
-    23: {
+    15: {
+        "evolves_from": 23,
         "chain": 9,
         "trigger": "level-up",
         "level": 22,
         "id": 15
     },
-    27: {
+    18: {
+        "evolves_from": 27,
         "chain": 11,
         "trigger": "level-up",
         "level": 22,
