@@ -182,8 +182,6 @@ class Session(object):
         loc_regions = self.simple_map('locations', 'id', 'region_id')
         loc_regions = {k: int(v) for k, v in loc_regions.items() if v}
 
-        pprint(loc_regions)
-
         loc_map = {
             'location_id': ('id', int),
             'id': ('id', int),
@@ -196,7 +194,6 @@ class Session(object):
         locations = defaultdict(dict)
         for row in self.csv_generator('location_names', maps=loc_map):
             if row['lang'] == _LANG_EN:
-                pprint(row)
                 row_id = row['id']
 
                 has_sub = 'subtitle' in row and row['subtitle']
@@ -360,7 +357,8 @@ class Session(object):
 
         for key in pokemon:
             has_alt = key in forms
-            pokemon[key]['has_alt_form'] = has_alt
+            poke = pokemon[key]
+            poke['has_alt_form'] = has_alt
 
         self.pokemon = pokemon
         self.forms = forms
@@ -406,6 +404,7 @@ class Session(object):
 
             stage = stages[row['id']]
             stage['evolves_from'] = start_id
+            stage['result'] = end
             stage['chain'] = chain_id
             for key, value in row.items():
                 if key in {'id', 'evolved_species', ''}:
@@ -421,13 +420,28 @@ class Session(object):
 
                 stage[key] = value
 
-        self.evolutions = stages
+        final_stages = dict()
+        for k, v in stages.items():
+            if len(v) == 4 and v['trigger'] == 'level-up':
+                pprint(v)
+                continue
+
+            final_stages[k] = v
+
+        self.evolutions = final_stages
 
         for key in self.pokemon:
             chain_id = self.pokemon[key]['evolution_chain']
 
-            if not self.evolutions.get(chain_id, None):
-                self.pokemon[key]['evolution_chain'] = None
+            chain_count = 0
+            for ev in self.evolutions.values():
+                if ev['chain'] == chain_id:
+                    chain_count += 1
+
+            poke = self.pokemon[key]
+            if chain_count < 1 and poke['evolution_chain'] is not None:
+                print(poke['name'], poke['evolution_chain'])
+                poke['evolution_chain'] = None
 
     def run(self, pretty=False):
         self.parse_locations()

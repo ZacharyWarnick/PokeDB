@@ -4,6 +4,7 @@ import json
 import requests
 
 from bs4 import BeautifulSoup
+from collections import Counter
 from functools import partial, wraps
 from multiprocessing import Pool
 from pathlib import Path
@@ -15,10 +16,12 @@ BACKUP_SPRITE_URL_FMT = 'https://github.com/ymin1103/sprites/tree/sprite803-807/
 
 IMAGE_SOURCE_FMT = 'https://archives.bulbagarden.net/wiki/File:{id:0>3}{name}.png'  # noqa: E501
 
+TYPE_PAGE_DESC_FMT = 'https://pokemondb.net/type/{}'
+TYPE_PAGE_INFO_FMT = 'https://bulbapedia.bulbagarden.net/wiki/{}_(type)'
 
 """Specific Pokémon forms that have different URL identifiers."""
 EXCEPTIONS = {
-    # Specific form
+    # Specific forms
     (421, 'sunshine'),
     (421, 'cherrim'),
     (666, 'poke-ball'),
@@ -72,8 +75,7 @@ def skip_gracefully(f):
                     print('Found a pool!')
                     a.terminate()
                     a.join()
-                    break
-            
+
             print('\n')
 
     return wrapped
@@ -375,6 +377,43 @@ def is_default_form(form):
     return form['pokemon_variant'] == form['id']
 
 
+def type_description(type_name):
+    url = TYPE_PAGE_DESC_FMT.format(type_name)
+    request = requests.get(url)
+    soup = BeautifulSoup(request.text, 'html.parser')
+
+    intro_div = soup.find('div', attrs={'class': 'panel panel-intro'})
+    return intro_div.p.getText()
+
+
+def type_info(type_name):
+    url = TYPE_PAGE_INFO_FMT.format(type_name.capitalize())
+    request = requests.get(url)
+    soup = BeautifulSoup(request.text, 'html.parser')
+
+    content_div = soup.find('div', attrs={'id': 'mw-content-text'})
+    offense_items = []
+    defense_items = []
+
+    is_offense = False
+    is_defense = False
+    for el in content_div.contents:
+        if el.name == 'h3':
+            is_offense = el.span['id'] == 'Offense'
+            is_defense = el.span['id'] == 'Defense'
+
+            if is_offense or is_defense:
+                continue
+
+        if el.name == 'p':
+            if is_offense:
+                offense_items.append(el.getText())
+            elif is_defense:
+                defense_items.append(el.getText())
+
+    return '\n'.join(offense_items), '\n'.join(defense_items)
+
+
 class Session(object):
 
     def __init__(self, src_dir, out_dir):
@@ -385,6 +424,7 @@ class Session(object):
         self.pokemon = read_json(source / 'pokemon.json')
         self.types = read_json(source / 'types.json')
         self.evolutions = read_json(source / 'evolutions.json')
+        self.base_stats = read_json(source / 'base_stats.json')
 
         self.pokemon_names = {row['id']: row['name'] for row in self.pokemon}
 
@@ -436,19 +476,127 @@ class Session(object):
         pprint(bad_images)
 
     def augment_types(self):
-        pass
+        type_count = Counter()
+        stat_totals = {i: 0 for i in range(1, 19)}
+
+        for poke in self.pokemon:
+            stats = None
+            for s in self.base_stats:
+                if s['id'] == poke['id']:
+                    stats = s
+                    break
+
+            stat_total = sum(stats.values()) - stats['id']
+
+            type1 = poke['type1']
+            type_count.update([type1])
+            stat_totals[type1] += stat_total
+            type2 = poke.get('type2', None)
+            if type2:
+                type_count.update([type2])
+                stat_totals[type2] += stat_total
+
+        for t in self.types:
+            t_id = t['id']
+            name = t['identifier']
+            count = type_count[t_id]
+            t['pokemon_count'] = count
+            t['stat_average'] = round(stat_totals[t_id] / count)
+
+            adv = 0
+            for k, v in t.items():
+                if k.startswith('vs_'):
+                    adv += v / 18
+
+            inverse_adv = 0
+            for t_sub in self.types:
+                inverse_adv += t_sub['vs_' + name] / 18
+
+            adv -= inverse_adv
+
+            t['relative_advantage'] = round(1000 * adv) / 1000
+            if name == 'fairy':
+                # This value is specified by the Veekun CSV files.
+                # That said Fairy type have the lowest physical attack.
+                # That makes it pretty reasonable to assume special class here.
+                t['damage_class'] = 'special'
+
+            description = type_description(name)
+            offense, defense = type_info(name)
+            t['desc_info'] = description
+            t['desc_atk'] = offense
+            t['desc_def'] = defense
 
     def augment_evolutions(self):
-        pass
+        for ev in self.evolutions:
+            diff = ev.get('level', 1) / 40
+            diff += ev.get('happiness', 1) / 440
+            diff += ev.get('beauty', 1) / 340
+            diff += ev.get('affection', 0) * 0.17
 
-    def run(self, pool=None, pretty=False):
+            trigger_item = ev.get('trigger_item', '')
+            if trigger_item.endswith('Stone'):
+                diff += 0.235
+            elif trigger_item:
+                diff += 0.33
+
+            trigger_item = ev.get('held_item', '')
+            if trigger_item.endswith('Stone'):
+                diff += 0.19
+            elif trigger_item:
+                diff += 0.294
+
+            if ev.get('known_move', None):
+                diff += 0.383
+
+            if ev.get('known_move_type', None):
+                diff += 0.318
+
+            if ev.get('party_type', None):
+                diff += 0.475
+
+            if ev.get('party_pokemon', None):
+                diff += 0.574
+
+            if ev.get('location', None):
+                diff += 0.25
+
+            if ev.get('relative_stats', None):
+                diff += 0.435
+
+            if ev.get('needs_rain', False):
+                diff += 0.297
+
+            if ev.get('needs_inversion', False):
+                diff += 0.141
+
+            diff += {
+                'use-item': 0.02,
+                'level-up': 0.055,
+                'trade': 0.448,
+                'shed': 0.494
+            }.get(ev['trigger'], 0)
+
+            ev['difficulty'] = round(1000 * diff) / 1000
+
+    def run(self, pool=None, skip=None, pretty=False):
+
+        def check(key):
+            return not (skip and key in skip)
 
         @skip_gracefully
         def _run(pool):
-            self.augment_forms(pool)
-            self.augment_pokemon(pool)
-            self.augment_evolutions()
-            self.augment_types()
+            if check('pokemon'):
+                self.augment_pokemon(pool)
+
+            if check('forms'):
+                self.augment_forms(pool)
+
+            if check('evolutions'):
+                self.augment_evolutions()
+
+            if check('types'):
+                self.augment_types()
 
         _run(pool)
 
@@ -456,18 +604,20 @@ class Session(object):
             if not self.out.exists():
                 self.out.mkdir(parents=True)
 
-            file_names = ['pokemon', 'forms', 'evolutions', 'types']
-            objects = [self.pokemon, self.forms, self.evolutions, self.types]
+            file_names = [
+                'pokemon', 'forms', 'evolutions', 'types', 'base_stats'
+                ]
+            objects = [
+                self.pokemon, self.forms, self.evolutions, self.types,
+                self.base_stats
+            ]
             indent = None if not pretty else 4
 
             for fname, obj in zip(file_names, objects):
+                if not check(fname):
+                    continue
+
                 path = self.out / '{}.json'.format(fname)
-
-                if path.exists():
-                    inp = input('File exists. Overwrite (N/y)?\t').lower()
-                    if not inp or inp[0] == 'n':
-                        continue
-
                 with path.open(mode='w+') as f:
                     json.dump(obj, f, indent=indent, ensure_ascii=False)
                     print('Saved:', path)
@@ -486,9 +636,12 @@ if __name__ == '__main__':
     parser.add_argument('--pretty',
                         help='Causes output json to be pretty-printed.',
                         action='store_true')
+    parser.add_argument('--skip', '-s',
+                        help='Items which don\'t need augmentation.',
+                        type=str,
+                        nargs='+')
     args = parser.parse_args()
 
     session = Session(args.dir, args.out)
-
     with Pool(32, init_worker) as pool:
-        session.run(pool, pretty=args.pretty)
+        session.run(pool, skip=args.skip, pretty=args.pretty)
