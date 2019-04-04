@@ -1,37 +1,42 @@
-#from some_folder import Pokemon, Evolutions, Types, Forms, BaseStats
 from flask import Blueprint, request, jsonify, session
+from sqlalchemy import create_engine
 
+database = create_engine('sqlite:???????????')
+app = Flask(__name__)
 api = Blueprint('api', 'api', url_prefix='/api')
 
-@api.route('/wherever', methods=['GET'])
+@api.route('/????????????', methods=['GET'])
 
-# Retrieves/adds polls from/to the database
-def api_pokemon():
+class Pokemon:
+    def get(self):
+        conn = database.connect() # connect to database
+        query = conn.execute("select * from Pokemon") # This line performs query and returns json result
+        return {'Pokemon': [i[0] for i in query.cursor.fetchall()]} # Fetches first column that is Employee ID
 
-    pokemon = [pokemon.to_json() for pokemon in Pokemon.query.all()]
+class Evolutions:
+    def get(self):
+        conn = database.connect()
+        query = conn.execute("select * from Evolutions")
+        return {'Evolutions': [i[0] for i in query.cursor.fetchall()]}
 
-    return jsonify(pokemon)
+class Types:
+    def get(self):
+        conn = database.connect()
+        query = conn.execute("select * from Types")
+        return {'Types': [i[0] for i in query.cursor.fetchall()]}
 
-def api_evolutions():
-    
-    evolutions = [evolutions.to_json() for evolutions in Evolutions.query.all()]
+class Forms:
+    def get(self):
+        conn = database.connect()
+        query = conn.execute("select * from Forms")
+        return {'Forms': [i[0] for i in query.cursor.fetchall()]}
 
-    return jsonify(evolutions)
+class BaseStats:
+    def get(self):
+        conn = database.connect()
+        query = conn.execute("select * from Base_Stats")
+        return {'Base_Stats': [i[0] for i in query.cursor.fetchall()]}
 
-def api_types():
-    
-    types = [types.to_json() for types in Types.query.all()]
 
-    return jsonify(types)
-
-def api_forms():
-    
-    forms = [forms.to_json() for forms in Forms.query.all()]
-
-    return jsonify(forms)
-
-def api_base_stats():
-    
-    base_stats = [base_stats.to_json() for base_stats in BaseStats.query.all()]
-
-    return jsonify(base_stats)
+if __name__ == '__main__':
+     app.run()
