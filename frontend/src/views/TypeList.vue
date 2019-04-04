@@ -1,5 +1,6 @@
 <template>
   <div class="types">
+    <div class="fade-container">
     <Navbar />
     <b-container class="section-padding">
       <b-jumbotron class="text-center" header="Types">
@@ -90,6 +91,7 @@
         </div>
       </div>
     </section>
+    </div>
   </div>
 </template>
 
@@ -110,5 +112,18 @@ export default {
 <style scoped>
 .section-padding {
   padding: 15px;
+}
+.fade-container {
+  padding-top: 0px;
+	animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0%{
+    opacity: 0
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 </style>

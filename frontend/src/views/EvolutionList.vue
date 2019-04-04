@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="evolution">
     <Navbar />
+    <div class="fade-container">
     <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
     <section class="section-padding">
       <b-container class="justify-content-center">
@@ -29,6 +30,7 @@
         </b-row>
       </b-container>
     </section>
+    </div>
   </div>
 </template>
 
@@ -72,5 +74,18 @@ export default {
 <style scoped>
 .section-padding {
   padding: 15px 0;
+}
+.fade-container {
+  padding-top: 0px;
+	animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0%{
+    opacity: 0
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 </style>

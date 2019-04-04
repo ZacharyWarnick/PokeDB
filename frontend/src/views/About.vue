@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <Navbar />
+    <div class="fade-container">
     <b-jumbotron header="About">
       <p class="lead text-justify">
         This website develops database (similar to IMDb) has 3 kinds of pages or
@@ -124,6 +125,7 @@
         </b-row>
       </b-container>
     </section>
+    </div>
   </div>
 </template>
 
@@ -251,6 +253,18 @@ export default {
 .tool-card {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.fade-container {
+	animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0%{
+    opacity: 0
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 </style>
 
