@@ -2,34 +2,36 @@
   <div class="evolution">
     <Navbar />
     <div class="fade-container">
-    <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
-    <section class="section-padding">
-      <b-container class="justify-content-center">
-        <b-row>
-          <b-col
-            cols="12"
-            sm="6"
-            md="4"
-            lg="3"
-            v-for="p in pokemon"
-            v-bind:key="p.id"
-          >
-            <b-card style="margin-top: 10px;">
-              <SpriteBasic
-                v-bind:name="p.display_name"
-                v-bind:id="p.id"
-                v-bind:types="p.types"
-              />
-              <router-link
-                v-bind:to="'/evolutions/' + p.name"
-                class="btn btn-outline-dark"
-                >Evolution Chain</router-link
-              >
-            </b-card>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+      <div class="container text-scroll-bg">
+      <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
+      <section class="section-padding">
+        <b-container class="justify-content-center">
+          <b-row>
+            <b-col
+              cols="12"
+              sm="6"
+              md="4"
+              lg="3"
+              v-for="p in pokemon"
+              v-bind:key="p.id"
+            >
+              <b-card style="margin-top: 10px;">
+                <SpriteBasic
+                  v-bind:name="p.display_name"
+                  v-bind:id="p.id"
+                  v-bind:types="p.types"
+                />
+                <router-link
+                  v-bind:to="'/evolutions/' + p.name"
+                  class="btn btn-outline-dark"
+                  >Evolution Chain</router-link
+                >
+              </b-card>
+            </b-col>
+          </b-row>
+        </b-container>
+      </section>
+      </div>
     </div>
   </div>
 </template>
@@ -87,5 +89,18 @@ export default {
   100% {
     opacity: 1;
   }
+}
+.text-scroll-bg {
+  background-color: rgba(250, 250, 250, 0.9);
+  width: 1920px;
+  height: 1500px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+
 }
 </style>
