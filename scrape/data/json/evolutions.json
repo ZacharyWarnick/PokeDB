@@ -1,0 +1,3603 @@
+[
+    {
+        "evolves_from": 1,
+        "result": 2,
+        "chain": 1,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 1,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 2,
+        "result": 3,
+        "chain": 1,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 2,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 4,
+        "result": 5,
+        "chain": 2,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 3,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 5,
+        "result": 6,
+        "chain": 2,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 4,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 7,
+        "result": 8,
+        "chain": 3,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 5,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 8,
+        "result": 9,
+        "chain": 3,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 6,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 10,
+        "result": 11,
+        "chain": 4,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 7,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from": 11,
+        "result": 12,
+        "chain": 4,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 8,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from": 13,
+        "result": 14,
+        "chain": 5,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 9,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from": 14,
+        "result": 15,
+        "chain": 5,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 10,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from": 16,
+        "result": 17,
+        "chain": 6,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 11,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 17,
+        "result": 18,
+        "chain": 6,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 12,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 19,
+        "result": 20,
+        "chain": 7,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 13,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 21,
+        "result": 22,
+        "chain": 8,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 14,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 23,
+        "result": 24,
+        "chain": 9,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 15,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 172,
+        "result": 25,
+        "chain": 10,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 16,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 25,
+        "result": 26,
+        "chain": 10,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 17,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 27,
+        "result": 28,
+        "chain": 11,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 18,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 29,
+        "result": 30,
+        "chain": 12,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 19,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 30,
+        "result": 31,
+        "chain": 12,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 20,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 32,
+        "result": 33,
+        "chain": 13,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 21,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 33,
+        "result": 34,
+        "chain": 13,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 22,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 173,
+        "result": 35,
+        "chain": 14,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 23,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 35,
+        "result": 36,
+        "chain": 14,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 24,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 37,
+        "result": 38,
+        "chain": 15,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 25,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 174,
+        "result": 39,
+        "chain": 16,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 26,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 39,
+        "result": 40,
+        "chain": 16,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 27,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 41,
+        "result": 42,
+        "chain": 17,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 28,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 43,
+        "result": 44,
+        "chain": 18,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 29,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from": 44,
+        "result": 45,
+        "chain": 18,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 30,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 46,
+        "result": 47,
+        "chain": 19,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 31,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from": 48,
+        "result": 49,
+        "chain": 20,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 32,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from": 50,
+        "result": 51,
+        "chain": 21,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 33,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from": 52,
+        "result": 53,
+        "chain": 22,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 34,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 54,
+        "result": 55,
+        "chain": 23,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 35,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 56,
+        "result": 57,
+        "chain": 24,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 36,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 58,
+        "result": 59,
+        "chain": 25,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 37,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 60,
+        "result": 61,
+        "chain": 26,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 38,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 61,
+        "result": 62,
+        "chain": 26,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 39,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 63,
+        "result": 64,
+        "chain": 27,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 40,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 64,
+        "result": 65,
+        "chain": 27,
+        "trigger": "trade",
+        "id": 41,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 66,
+        "result": 67,
+        "chain": 28,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 42,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 67,
+        "result": 68,
+        "chain": 28,
+        "trigger": "trade",
+        "id": 43,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 69,
+        "result": 70,
+        "chain": 29,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 44,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from": 70,
+        "result": 71,
+        "chain": 29,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 45,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 72,
+        "result": 73,
+        "chain": 30,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 46,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 74,
+        "result": 75,
+        "chain": 31,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 47,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 75,
+        "result": 76,
+        "chain": 31,
+        "trigger": "trade",
+        "id": 48,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 77,
+        "result": 78,
+        "chain": 32,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 49,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 79,
+        "result": 80,
+        "chain": 33,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 50,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 81,
+        "result": 82,
+        "chain": 34,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 51,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 84,
+        "result": 85,
+        "chain": 36,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 52,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from": 86,
+        "result": 87,
+        "chain": 37,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 53,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 88,
+        "result": 89,
+        "chain": 38,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 54,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 90,
+        "result": 91,
+        "chain": 39,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 55,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 92,
+        "result": 93,
+        "chain": 40,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 56,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 93,
+        "result": 94,
+        "chain": 40,
+        "trigger": "trade",
+        "id": 57,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 96,
+        "result": 97,
+        "chain": 42,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 58,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from": 98,
+        "result": 99,
+        "chain": 43,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 59,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 100,
+        "result": 101,
+        "chain": 44,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 60,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 102,
+        "result": 103,
+        "chain": 45,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 61,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 104,
+        "result": 105,
+        "chain": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 62,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 236,
+        "result": 106,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": 1,
+        "id": 63,
+        "difficulty": 0.995
+    },
+    {
+        "evolves_from": 236,
+        "result": 107,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": -1,
+        "id": 64,
+        "difficulty": 0.995
+    },
+    {
+        "evolves_from": 109,
+        "result": 110,
+        "chain": 49,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 65,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 111,
+        "result": 112,
+        "chain": 50,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 66,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from": 440,
+        "result": 113,
+        "chain": 51,
+        "trigger": "level-up",
+        "held_item": "Oval Stone",
+        "time_of_day": "day",
+        "id": 67,
+        "difficulty": 0.275
+    },
+    {
+        "evolves_from": 116,
+        "result": 117,
+        "chain": 54,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 68,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 118,
+        "result": 119,
+        "chain": 55,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 69,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 120,
+        "result": 121,
+        "chain": 56,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 70,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 439,
+        "result": 122,
+        "chain": 57,
+        "trigger": "level-up",
+        "known_move": "Mimic",
+        "id": 71,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 238,
+        "result": 124,
+        "chain": 59,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 72,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 239,
+        "result": 125,
+        "chain": 60,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 73,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 240,
+        "result": 126,
+        "chain": 61,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 74,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 129,
+        "result": 130,
+        "chain": 64,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 75,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 133,
+        "result": 134,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 76,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 133,
+        "result": 135,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 77,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 133,
+        "result": 136,
+        "chain": 67,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 78,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 138,
+        "result": 139,
+        "chain": 69,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 79,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 140,
+        "result": 141,
+        "chain": 70,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 80,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 446,
+        "result": 143,
+        "chain": 72,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 81,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 147,
+        "result": 148,
+        "chain": 76,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 82,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 148,
+        "result": 149,
+        "chain": 76,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 83,
+        "difficulty": 1.435
+    },
+    {
+        "evolves_from": 152,
+        "result": 153,
+        "chain": 79,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 84,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 153,
+        "result": 154,
+        "chain": 79,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 85,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 155,
+        "result": 156,
+        "chain": 80,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 86,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 156,
+        "result": 157,
+        "chain": 80,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 87,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 158,
+        "result": 159,
+        "chain": 81,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 88,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 159,
+        "result": 160,
+        "chain": 81,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 89,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 161,
+        "result": 162,
+        "chain": 82,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 90,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from": 163,
+        "result": 164,
+        "chain": 83,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 91,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 165,
+        "result": 166,
+        "chain": 84,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 92,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 167,
+        "result": 168,
+        "chain": 85,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 93,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 42,
+        "result": 169,
+        "chain": 17,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 94,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 170,
+        "result": 171,
+        "chain": 86,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 95,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from": 175,
+        "result": 176,
+        "chain": 87,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 96,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 177,
+        "result": 178,
+        "chain": 88,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 97,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 179,
+        "result": 180,
+        "chain": 89,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 98,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from": 180,
+        "result": 181,
+        "chain": 89,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 99,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 44,
+        "result": 182,
+        "chain": 18,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 100,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 298,
+        "result": 183,
+        "chain": 90,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 101,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 183,
+        "result": 184,
+        "chain": 90,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 102,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 438,
+        "result": 185,
+        "chain": 91,
+        "trigger": "level-up",
+        "known_move": "Mimic",
+        "id": 103,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 61,
+        "result": 186,
+        "chain": 26,
+        "trigger": "trade",
+        "held_item": "King’s Rock",
+        "id": 104,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 187,
+        "result": 188,
+        "chain": 92,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 105,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 188,
+        "result": 189,
+        "chain": 92,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 106,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from": 191,
+        "result": 192,
+        "chain": 94,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 107,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 194,
+        "result": 195,
+        "chain": 96,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 108,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 133,
+        "result": 196,
+        "chain": 67,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 109,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 133,
+        "result": 197,
+        "chain": 67,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 110,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 79,
+        "result": 199,
+        "chain": 33,
+        "trigger": "trade",
+        "held_item": "King’s Rock",
+        "id": 111,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 360,
+        "result": 202,
+        "chain": 100,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 112,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from": 204,
+        "result": 205,
+        "chain": 102,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 113,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from": 95,
+        "result": 208,
+        "chain": 41,
+        "trigger": "trade",
+        "held_item": "Metal Coat",
+        "id": 114,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 209,
+        "result": 210,
+        "chain": 105,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 115,
+        "difficulty": 0.635
+    },
+    {
+        "evolves_from": 123,
+        "result": 212,
+        "chain": 58,
+        "trigger": "trade",
+        "held_item": "Metal Coat",
+        "id": 116,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 216,
+        "result": 217,
+        "chain": 110,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 117,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 218,
+        "result": 219,
+        "chain": 111,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 118,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 220,
+        "result": 221,
+        "chain": 112,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 119,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 223,
+        "result": 224,
+        "chain": 114,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 120,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 458,
+        "result": 226,
+        "chain": 116,
+        "trigger": "level-up",
+        "party_pokemon": 223,
+        "id": 121,
+        "difficulty": 0.659
+    },
+    {
+        "evolves_from": 228,
+        "result": 229,
+        "chain": 118,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 122,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from": 117,
+        "result": 230,
+        "chain": 54,
+        "trigger": "trade",
+        "held_item": "Dragon Scale",
+        "id": 123,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 231,
+        "result": 232,
+        "chain": 119,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 124,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 137,
+        "result": 233,
+        "chain": 68,
+        "trigger": "trade",
+        "held_item": "Up-Grade",
+        "id": 125,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 236,
+        "result": 237,
+        "chain": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 126,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 113,
+        "result": 242,
+        "chain": 51,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 127,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 246,
+        "result": 247,
+        "chain": 126,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 128,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 247,
+        "result": 248,
+        "chain": 126,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 129,
+        "difficulty": 1.435
+    },
+    {
+        "evolves_from": 252,
+        "result": 253,
+        "chain": 130,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 130,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 253,
+        "result": 254,
+        "chain": 130,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 131,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 255,
+        "result": 256,
+        "chain": 131,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 132,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 256,
+        "result": 257,
+        "chain": 131,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 133,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 258,
+        "result": 259,
+        "chain": 132,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 134,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 259,
+        "result": 260,
+        "chain": 132,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 135,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 261,
+        "result": 262,
+        "chain": 133,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 136,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 263,
+        "result": 264,
+        "chain": 134,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 137,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 265,
+        "result": 266,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 138,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from": 266,
+        "result": 267,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 139,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from": 265,
+        "result": 268,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 140,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from": 268,
+        "result": 269,
+        "chain": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 141,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from": 270,
+        "result": 271,
+        "chain": 136,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 142,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 271,
+        "result": 272,
+        "chain": 136,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 143,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 273,
+        "result": 274,
+        "chain": 137,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 144,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 274,
+        "result": 275,
+        "chain": 137,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 145,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 276,
+        "result": 277,
+        "chain": 138,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 146,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 278,
+        "result": 279,
+        "chain": 139,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 147,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 280,
+        "result": 281,
+        "chain": 140,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 148,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 281,
+        "result": 282,
+        "chain": 140,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 149,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 283,
+        "result": 284,
+        "chain": 141,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 150,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 285,
+        "result": 286,
+        "chain": 142,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 151,
+        "difficulty": 0.635
+    },
+    {
+        "evolves_from": 287,
+        "result": 288,
+        "chain": 143,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 152,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 288,
+        "result": 289,
+        "chain": 143,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 153,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 290,
+        "result": 291,
+        "chain": 144,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 154,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 290,
+        "result": 292,
+        "chain": 144,
+        "trigger": "shed",
+        "id": 155,
+        "difficulty": 0.524
+    },
+    {
+        "evolves_from": 293,
+        "result": 294,
+        "chain": 145,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 156,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 294,
+        "result": 295,
+        "chain": 145,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 157,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 296,
+        "result": 297,
+        "chain": 146,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 158,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from": 300,
+        "result": 301,
+        "chain": 148,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 159,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 304,
+        "result": 305,
+        "chain": 151,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 160,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 305,
+        "result": 306,
+        "chain": 151,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 161,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from": 307,
+        "result": 308,
+        "chain": 152,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 162,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 309,
+        "result": 310,
+        "chain": 153,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 163,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from": 406,
+        "result": 315,
+        "chain": 158,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 164,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 316,
+        "result": 317,
+        "chain": 159,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 165,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from": 318,
+        "result": 319,
+        "chain": 160,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 166,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 320,
+        "result": 321,
+        "chain": 161,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 167,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 322,
+        "result": 323,
+        "chain": 162,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 168,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 325,
+        "result": 326,
+        "chain": 164,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 169,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 328,
+        "result": 329,
+        "chain": 166,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 170,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 329,
+        "result": 330,
+        "chain": 166,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 171,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from": 331,
+        "result": 332,
+        "chain": 167,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 172,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 333,
+        "result": 334,
+        "chain": 168,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 173,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 339,
+        "result": 340,
+        "chain": 173,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 174,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 341,
+        "result": 342,
+        "chain": 174,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 175,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 343,
+        "result": 344,
+        "chain": 175,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 176,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 345,
+        "result": 346,
+        "chain": 176,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 177,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 347,
+        "result": 348,
+        "chain": 177,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 178,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 349,
+        "result": 350,
+        "chain": 178,
+        "trigger": "level-up",
+        "beauty": 171,
+        "id": 179,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from": 353,
+        "result": 354,
+        "chain": 181,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 180,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 355,
+        "result": 356,
+        "chain": 182,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 181,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 433,
+        "result": 358,
+        "chain": 184,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 182,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 361,
+        "result": 362,
+        "chain": 186,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 183,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from": 363,
+        "result": 364,
+        "chain": 187,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 184,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 364,
+        "result": 365,
+        "chain": 187,
+        "trigger": "level-up",
+        "level": 44,
+        "id": 185,
+        "difficulty": 1.16
+    },
+    {
+        "evolves_from": 366,
+        "result": 367,
+        "chain": 188,
+        "trigger": "trade",
+        "held_item": "Deep Sea Tooth",
+        "id": 186,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 366,
+        "result": 368,
+        "chain": 188,
+        "trigger": "trade",
+        "held_item": "Deep Sea Scale",
+        "id": 187,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 371,
+        "result": 372,
+        "chain": 191,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 188,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 372,
+        "result": 373,
+        "chain": 191,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 189,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from": 374,
+        "result": 375,
+        "chain": 192,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 190,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 375,
+        "result": 376,
+        "chain": 192,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 191,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from": 387,
+        "result": 388,
+        "chain": 203,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 192,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 388,
+        "result": 389,
+        "chain": 203,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 193,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 390,
+        "result": 391,
+        "chain": 204,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 194,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 391,
+        "result": 392,
+        "chain": 204,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 195,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 393,
+        "result": 394,
+        "chain": 205,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 196,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 394,
+        "result": 395,
+        "chain": 205,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 197,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 396,
+        "result": 397,
+        "chain": 206,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 198,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 397,
+        "result": 398,
+        "chain": 206,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 199,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 399,
+        "result": 400,
+        "chain": 207,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 200,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from": 401,
+        "result": 402,
+        "chain": 208,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 201,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from": 403,
+        "result": 404,
+        "chain": 209,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 202,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from": 404,
+        "result": 405,
+        "chain": 209,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 203,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 315,
+        "result": 407,
+        "chain": 158,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 204,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 408,
+        "result": 409,
+        "chain": 211,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 205,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 410,
+        "result": 411,
+        "chain": 212,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 206,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 412,
+        "result": 413,
+        "chain": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "female",
+        "id": 207,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 412,
+        "result": 414,
+        "chain": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "male",
+        "id": 208,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 415,
+        "result": 416,
+        "chain": 214,
+        "trigger": "level-up",
+        "level": 21,
+        "gender": "female",
+        "id": 209,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from": 418,
+        "result": 419,
+        "chain": 216,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 210,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from": 420,
+        "result": 421,
+        "chain": 217,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 211,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 422,
+        "result": 423,
+        "chain": 218,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 212,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 190,
+        "result": 424,
+        "chain": 93,
+        "trigger": "level-up",
+        "known_move": "Double Hit",
+        "id": 213,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 425,
+        "result": 426,
+        "chain": 219,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 214,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 427,
+        "result": 428,
+        "chain": 220,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 215,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 200,
+        "result": 429,
+        "chain": 98,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 216,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 198,
+        "result": 430,
+        "chain": 97,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 217,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 431,
+        "result": 432,
+        "chain": 221,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 218,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 434,
+        "result": 435,
+        "chain": 223,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 219,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 436,
+        "result": 437,
+        "chain": 224,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 220,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 443,
+        "result": 444,
+        "chain": 230,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 221,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from": 444,
+        "result": 445,
+        "chain": 230,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 222,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from": 447,
+        "result": 448,
+        "chain": 232,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 223,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 449,
+        "result": 450,
+        "chain": 233,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 224,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 451,
+        "result": 452,
+        "chain": 234,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 225,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 453,
+        "result": 454,
+        "chain": 235,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 226,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 456,
+        "result": 457,
+        "chain": 237,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 227,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from": 459,
+        "result": 460,
+        "chain": 239,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 228,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 215,
+        "result": 461,
+        "chain": 109,
+        "trigger": "level-up",
+        "held_item": "Razor Claw",
+        "time_of_day": "night",
+        "id": 229,
+        "difficulty": 0.379
+    },
+    {
+        "evolves_from": 82,
+        "result": 462,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": "Mt. Coronet, Sinnoh Region",
+        "id": 230,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 108,
+        "result": 463,
+        "chain": 48,
+        "trigger": "level-up",
+        "known_move": "Rollout",
+        "id": 231,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 112,
+        "result": 464,
+        "chain": 50,
+        "trigger": "trade",
+        "held_item": "Protector",
+        "id": 232,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 114,
+        "result": 465,
+        "chain": 52,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 233,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 125,
+        "result": 466,
+        "chain": 60,
+        "trigger": "trade",
+        "held_item": "Electirizer",
+        "id": 234,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 126,
+        "result": 467,
+        "chain": 61,
+        "trigger": "trade",
+        "held_item": "Magmarizer",
+        "id": 235,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 176,
+        "result": 468,
+        "chain": 87,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 236,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 193,
+        "result": 469,
+        "chain": 95,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 237,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 133,
+        "result": 470,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Eterna Forest, Sinnoh Region",
+        "id": 238,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 133,
+        "result": 471,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Route 217, Sinnoh Region",
+        "id": 239,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 207,
+        "result": 472,
+        "chain": 104,
+        "trigger": "level-up",
+        "held_item": "Razor Fang",
+        "time_of_day": "night",
+        "id": 240,
+        "difficulty": 0.379
+    },
+    {
+        "evolves_from": 221,
+        "result": 473,
+        "chain": 112,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 241,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 233,
+        "result": 474,
+        "chain": 68,
+        "trigger": "trade",
+        "held_item": "Dubious Disc",
+        "id": 242,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 281,
+        "result": 475,
+        "chain": 140,
+        "trigger": "use-item",
+        "trigger_item": "Dawn Stone",
+        "gender": "male",
+        "id": 243,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 299,
+        "result": 476,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": "Mt. Coronet, Sinnoh Region",
+        "id": 244,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 356,
+        "result": 477,
+        "chain": 182,
+        "trigger": "trade",
+        "held_item": "Reaper Cloth",
+        "id": 245,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 361,
+        "result": 478,
+        "chain": 186,
+        "trigger": "use-item",
+        "trigger_item": "Dawn Stone",
+        "gender": "female",
+        "id": 246,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 495,
+        "result": 496,
+        "chain": 256,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 247,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 496,
+        "result": 497,
+        "chain": 256,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 248,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 498,
+        "result": 499,
+        "chain": 257,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 249,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 499,
+        "result": 500,
+        "chain": 257,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 250,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 501,
+        "result": 502,
+        "chain": 258,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 251,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 502,
+        "result": 503,
+        "chain": 258,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 252,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 504,
+        "result": 505,
+        "chain": 259,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 253,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 506,
+        "result": 507,
+        "chain": 260,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 254,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 507,
+        "result": 508,
+        "chain": 260,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 255,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 509,
+        "result": 510,
+        "chain": 261,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 256,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 511,
+        "result": 512,
+        "chain": 262,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 257,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 513,
+        "result": 514,
+        "chain": 263,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 258,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 515,
+        "result": 516,
+        "chain": 264,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 259,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 517,
+        "result": 518,
+        "chain": 265,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 260,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 519,
+        "result": 520,
+        "chain": 266,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 261,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from": 520,
+        "result": 521,
+        "chain": 266,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 262,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 522,
+        "result": 523,
+        "chain": 267,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 263,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from": 524,
+        "result": 525,
+        "chain": 268,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 264,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 525,
+        "result": 526,
+        "chain": 268,
+        "trigger": "trade",
+        "id": 265,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 527,
+        "result": 528,
+        "chain": 269,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 266,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 529,
+        "result": 530,
+        "chain": 270,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 267,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from": 532,
+        "result": 533,
+        "chain": 272,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 268,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 533,
+        "result": 534,
+        "chain": 272,
+        "trigger": "trade",
+        "id": 269,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 535,
+        "result": 536,
+        "chain": 273,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 270,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 536,
+        "result": 537,
+        "chain": 273,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 271,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 540,
+        "result": 541,
+        "chain": 276,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 272,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 541,
+        "result": 542,
+        "chain": 276,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 273,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 543,
+        "result": 544,
+        "chain": 277,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 274,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 544,
+        "result": 545,
+        "chain": 277,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 275,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 546,
+        "result": 547,
+        "chain": 278,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 276,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 548,
+        "result": 549,
+        "chain": 279,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 277,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 551,
+        "result": 552,
+        "chain": 281,
+        "trigger": "level-up",
+        "level": 29,
+        "id": 278,
+        "difficulty": 0.785
+    },
+    {
+        "evolves_from": 552,
+        "result": 553,
+        "chain": 281,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 279,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 554,
+        "result": 555,
+        "chain": 282,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 280,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 557,
+        "result": 558,
+        "chain": 284,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 281,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 559,
+        "result": 560,
+        "chain": 285,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 282,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 562,
+        "result": 563,
+        "chain": 287,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 283,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 564,
+        "result": 565,
+        "chain": 288,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 284,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 566,
+        "result": 567,
+        "chain": 289,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 285,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 568,
+        "result": 569,
+        "chain": 290,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 286,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 570,
+        "result": 571,
+        "chain": 291,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 287,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 572,
+        "result": 573,
+        "chain": 292,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 288,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 574,
+        "result": 575,
+        "chain": 293,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 289,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 575,
+        "result": 576,
+        "chain": 293,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 290,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from": 577,
+        "result": 578,
+        "chain": 294,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 291,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 578,
+        "result": 579,
+        "chain": 294,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 292,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from": 580,
+        "result": 581,
+        "chain": 295,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 293,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 582,
+        "result": 583,
+        "chain": 296,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 294,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 583,
+        "result": 584,
+        "chain": 296,
+        "trigger": "level-up",
+        "level": 47,
+        "id": 295,
+        "difficulty": 1.235
+    },
+    {
+        "evolves_from": 585,
+        "result": 586,
+        "chain": 297,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 296,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 588,
+        "result": 589,
+        "chain": 299,
+        "trigger": "trade",
+        "trade_pokemon": 616,
+        "id": 297,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 590,
+        "result": 591,
+        "chain": 300,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 298,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 592,
+        "result": 593,
+        "chain": 301,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 299,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 595,
+        "result": 596,
+        "chain": 303,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 300,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 597,
+        "result": 598,
+        "chain": 304,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 301,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 599,
+        "result": 600,
+        "chain": 305,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 302,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 600,
+        "result": 601,
+        "chain": 305,
+        "trigger": "level-up",
+        "level": 49,
+        "id": 303,
+        "difficulty": 1.285
+    },
+    {
+        "evolves_from": 602,
+        "result": 603,
+        "chain": 306,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 304,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 603,
+        "result": 604,
+        "chain": 306,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 305,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 605,
+        "result": 606,
+        "chain": 307,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 306,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from": 607,
+        "result": 608,
+        "chain": 308,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 307,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from": 608,
+        "result": 609,
+        "chain": 308,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 308,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 610,
+        "result": 611,
+        "chain": 309,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 309,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 611,
+        "result": 612,
+        "chain": 309,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 310,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from": 613,
+        "result": 614,
+        "chain": 310,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 311,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 616,
+        "result": 617,
+        "chain": 312,
+        "trigger": "trade",
+        "trade_pokemon": 588,
+        "id": 312,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 619,
+        "result": 620,
+        "chain": 314,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 313,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from": 622,
+        "result": 623,
+        "chain": 316,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 314,
+        "difficulty": 1.135
+    },
+    {
+        "evolves_from": 624,
+        "result": 625,
+        "chain": 317,
+        "trigger": "level-up",
+        "level": 52,
+        "id": 315,
+        "difficulty": 1.36
+    },
+    {
+        "evolves_from": 627,
+        "result": 628,
+        "chain": 319,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 316,
+        "difficulty": 1.41
+    },
+    {
+        "evolves_from": 629,
+        "result": 630,
+        "chain": 320,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 317,
+        "difficulty": 1.41
+    },
+    {
+        "evolves_from": 633,
+        "result": 634,
+        "chain": 323,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 318,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from": 634,
+        "result": 635,
+        "chain": 323,
+        "trigger": "level-up",
+        "level": 64,
+        "id": 319,
+        "difficulty": 1.66
+    },
+    {
+        "evolves_from": 636,
+        "result": 637,
+        "chain": 324,
+        "trigger": "level-up",
+        "level": 59,
+        "id": 320,
+        "difficulty": 1.535
+    },
+    {
+        "evolves_from": 349,
+        "result": 350,
+        "chain": 178,
+        "trigger": "trade",
+        "held_item": "Prism Scale",
+        "id": 321,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 82,
+        "result": 462,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": "Chargestone Cave, Unova Region",
+        "id": 322,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 299,
+        "result": 476,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": "Chargestone Cave, Unova Region",
+        "id": 323,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 133,
+        "result": 470,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Pinwheel Forest, Unova Region",
+        "id": 324,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 133,
+        "result": 471,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Twist Mountain, Unova Region",
+        "id": 325,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 682,
+        "result": 683,
+        "chain": 350,
+        "trigger": "trade",
+        "held_item": "Sachet",
+        "id": 327,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 661,
+        "result": 662,
+        "chain": 341,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 328,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 708,
+        "result": 709,
+        "chain": 364,
+        "trigger": "trade",
+        "id": 329,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 662,
+        "result": 663,
+        "chain": 341,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 330,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 653,
+        "result": 654,
+        "chain": 338,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 331,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 686,
+        "result": 687,
+        "chain": 352,
+        "trigger": "level-up",
+        "level": 30,
+        "needs_inversion": true,
+        "id": 332,
+        "difficulty": 0.951
+    },
+    {
+        "evolves_from": 654,
+        "result": 655,
+        "chain": 338,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 333,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 650,
+        "result": 651,
+        "chain": 337,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 334,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 692,
+        "result": 693,
+        "chain": 355,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 335,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 651,
+        "result": 652,
+        "chain": 337,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 336,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 656,
+        "result": 657,
+        "chain": 339,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 337,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from": 657,
+        "result": 658,
+        "chain": 339,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 338,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from": 679,
+        "result": 680,
+        "chain": 349,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 339,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 704,
+        "result": 705,
+        "chain": 362,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 340,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from": 665,
+        "result": 666,
+        "chain": 342,
+        "trigger": "level-up",
+        "level": 12,
+        "id": 341,
+        "difficulty": 0.36
+    },
+    {
+        "evolves_from": 664,
+        "result": 665,
+        "chain": 342,
+        "trigger": "level-up",
+        "level": 9,
+        "id": 342,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 688,
+        "result": 689,
+        "chain": 353,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 343,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 710,
+        "result": 711,
+        "chain": 365,
+        "trigger": "trade",
+        "id": 344,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from": 659,
+        "result": 660,
+        "chain": 340,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 345,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 669,
+        "result": 670,
+        "chain": 344,
+        "trigger": "level-up",
+        "level": 19,
+        "id": 346,
+        "difficulty": 0.535
+    },
+    {
+        "evolves_from": 670,
+        "result": 671,
+        "chain": 344,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 347,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 680,
+        "result": 681,
+        "chain": 349,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 348,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 674,
+        "result": 675,
+        "chain": 346,
+        "trigger": "level-up",
+        "level": 32,
+        "party_type": 17,
+        "id": 349,
+        "difficulty": 1.335
+    },
+    {
+        "evolves_from": 684,
+        "result": 685,
+        "chain": 351,
+        "trigger": "trade",
+        "held_item": "Whipped Dream",
+        "id": 350,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from": 690,
+        "result": 691,
+        "chain": 354,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 351,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from": 696,
+        "result": 697,
+        "chain": 357,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "day",
+        "id": 352,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 698,
+        "result": 699,
+        "chain": 358,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "night",
+        "id": 353,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from": 712,
+        "result": 713,
+        "chain": 366,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 354,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from": 694,
+        "result": 695,
+        "chain": 356,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 355,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from": 667,
+        "result": 668,
+        "chain": 343,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 356,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 672,
+        "result": 673,
+        "chain": 345,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 357,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from": 705,
+        "result": 706,
+        "chain": 362,
+        "trigger": "level-up",
+        "level": 50,
+        "needs_rain": true,
+        "id": 358,
+        "difficulty": 1.607
+    },
+    {
+        "evolves_from": 714,
+        "result": 715,
+        "chain": 367,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 359,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from": 677,
+        "result": 678,
+        "chain": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 360,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 133,
+        "result": 700,
+        "chain": 67,
+        "trigger": "level-up",
+        "known_move_type": 18,
+        "affection": 2,
+        "id": 361,
+        "difficulty": 0.743
+    },
+    {
+        "evolves_from": 82,
+        "result": 462,
+        "chain": 34,
+        "trigger": "level-up",
+        "location": "Route 13, Kalos Region",
+        "id": 362,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 133,
+        "result": 470,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Route 20, Kalos Region",
+        "id": 363,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 133,
+        "result": 471,
+        "chain": 67,
+        "trigger": "level-up",
+        "location": "Frost Cavern, Kalos Region",
+        "id": 364,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 299,
+        "result": 476,
+        "chain": 147,
+        "trigger": "level-up",
+        "location": "Route 13, Kalos Region",
+        "id": 365,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from": 104,
+        "result": 105,
+        "chain": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "time_of_day": "night",
+        "id": 367,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 349,
+        "result": 350,
+        "chain": 178,
+        "trigger": "level-up",
+        "beauty": 170,
+        "id": 371,
+        "difficulty": 0.582
+    },
+    {
+        "evolves_from": 677,
+        "result": 678,
+        "chain": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "gender": "male",
+        "id": 372,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 722,
+        "result": 723,
+        "chain": 374,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 373,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 723,
+        "result": 724,
+        "chain": 374,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 374,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 725,
+        "result": 726,
+        "chain": 375,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 375,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 726,
+        "result": 727,
+        "chain": 375,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 376,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 728,
+        "result": 729,
+        "chain": 376,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 377,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from": 729,
+        "result": 730,
+        "chain": 376,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 378,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 731,
+        "result": 732,
+        "chain": 377,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 379,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from": 732,
+        "result": 733,
+        "chain": 377,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 380,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from": 734,
+        "result": 735,
+        "chain": 378,
+        "trigger": "level-up",
+        "level": 20,
+        "time_of_day": "day",
+        "id": 381,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 736,
+        "result": 737,
+        "chain": 379,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 382,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from": 742,
+        "result": 743,
+        "chain": 382,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 385,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 744,
+        "result": 745,
+        "chain": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "day",
+        "id": 386,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 744,
+        "result": 745,
+        "chain": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "night",
+        "id": 387,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from": 747,
+        "result": 748,
+        "chain": 385,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 388,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from": 749,
+        "result": 750,
+        "chain": 386,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 389,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 751,
+        "result": 752,
+        "chain": 387,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 390,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from": 753,
+        "result": 754,
+        "chain": 388,
+        "trigger": "level-up",
+        "level": 34,
+        "time_of_day": "day",
+        "id": 391,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from": 755,
+        "result": 756,
+        "chain": 389,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 392,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from": 757,
+        "result": 758,
+        "chain": 390,
+        "trigger": "level-up",
+        "level": 33,
+        "gender": "female",
+        "id": 393,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from": 759,
+        "result": 760,
+        "chain": 391,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 394,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from": 761,
+        "result": 762,
+        "chain": 392,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 395,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from": 762,
+        "result": 763,
+        "chain": 392,
+        "trigger": "level-up",
+        "known_move": "Stomp",
+        "id": 396,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from": 767,
+        "result": 768,
+        "chain": 396,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 397,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from": 769,
+        "result": 770,
+        "chain": 397,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 398,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from": 772,
+        "result": 773,
+        "chain": 399,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 399,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from": 782,
+        "result": 783,
+        "chain": 408,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 400,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from": 783,
+        "result": 784,
+        "chain": 408,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 401,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from": 789,
+        "result": 790,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 402,
+        "difficulty": 1.135
+    },
+    {
+        "evolves_from": 790,
+        "result": 791,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 403,
+        "difficulty": 1.385
+    },
+    {
+        "evolves_from": 790,
+        "result": 792,
+        "chain": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 404,
+        "difficulty": 1.385
+    },
+    {
+        "evolves_from": 803,
+        "result": 804,
+        "chain": 424,
+        "trigger": "level-up",
+        "known_move": "Dragon Pulse",
+        "id": 405,
+        "difficulty": 0.468
+    }
+]

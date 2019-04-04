@@ -1,5 +1,5 @@
 APP_NAME = idb
-PROJ_PHASE = 1
+PROJ_PHASE = 2
 
 IDB_LOG := IDB$(PROJ_PHASE).log
 
@@ -44,6 +44,7 @@ deploy-local:
 	gunicorn -w 4 $(APP_NAME):app
 
 update-environment:
+	conda update -n base conda
 	conda env update -f environment.yml
 
 .PHONY: $(IDB_LOG)

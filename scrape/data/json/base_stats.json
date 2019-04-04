@@ -1,0 +1,8678 @@
+[
+    {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 1
+    },
+    {
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 60,
+        "id": 2
+    },
+    {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 80,
+        "id": 3
+    },
+    {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 4
+    },
+    {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "special-attack": 80,
+        "special-defense": 65,
+        "speed": 80,
+        "id": 5
+    },
+    {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special-attack": 109,
+        "special-defense": 85,
+        "speed": 100,
+        "id": 6
+    },
+    {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 64,
+        "speed": 43,
+        "id": 7
+    },
+    {
+        "hp": 59,
+        "attack": 63,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 80,
+        "speed": 58,
+        "id": 8
+    },
+    {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "special-attack": 85,
+        "special-defense": 105,
+        "speed": 78,
+        "id": 9
+    },
+    {
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 45,
+        "id": 10
+    },
+    {
+        "hp": 50,
+        "attack": 20,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 30,
+        "id": 11
+    },
+    {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 70,
+        "id": 12
+    },
+    {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 50,
+        "id": 13
+    },
+    {
+        "hp": 45,
+        "attack": 25,
+        "defense": 50,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 35,
+        "id": 14
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "special-attack": 45,
+        "special-defense": 80,
+        "speed": 75,
+        "id": 15
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 56,
+        "id": 16
+    },
+    {
+        "hp": 63,
+        "attack": 60,
+        "defense": 55,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 71,
+        "id": 17
+    },
+    {
+        "hp": 83,
+        "attack": 80,
+        "defense": 75,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 101,
+        "id": 18
+    },
+    {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 72,
+        "id": 19
+    },
+    {
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 97,
+        "id": 20
+    },
+    {
+        "hp": 40,
+        "attack": 60,
+        "defense": 30,
+        "special-attack": 31,
+        "special-defense": 31,
+        "speed": 70,
+        "id": 21
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 65,
+        "special-attack": 61,
+        "special-defense": 61,
+        "speed": 100,
+        "id": 22
+    },
+    {
+        "hp": 35,
+        "attack": 60,
+        "defense": 44,
+        "special-attack": 40,
+        "special-defense": 54,
+        "speed": 55,
+        "id": 23
+    },
+    {
+        "hp": 60,
+        "attack": 95,
+        "defense": 69,
+        "special-attack": 65,
+        "special-defense": 79,
+        "speed": 80,
+        "id": 24
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 25
+    },
+    {
+        "hp": 60,
+        "attack": 90,
+        "defense": 55,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 110,
+        "id": 26
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 40,
+        "id": 27
+    },
+    {
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 65,
+        "id": 28
+    },
+    {
+        "hp": 55,
+        "attack": 47,
+        "defense": 52,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 41,
+        "id": 29
+    },
+    {
+        "hp": 70,
+        "attack": 62,
+        "defense": 67,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 56,
+        "id": 30
+    },
+    {
+        "hp": 90,
+        "attack": 92,
+        "defense": 87,
+        "special-attack": 75,
+        "special-defense": 85,
+        "speed": 76,
+        "id": 31
+    },
+    {
+        "hp": 46,
+        "attack": 57,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 50,
+        "id": 32
+    },
+    {
+        "hp": 61,
+        "attack": 72,
+        "defense": 57,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 65,
+        "id": 33
+    },
+    {
+        "hp": 81,
+        "attack": 102,
+        "defense": 77,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 85,
+        "id": 34
+    },
+    {
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "special-attack": 60,
+        "special-defense": 65,
+        "speed": 35,
+        "id": 35
+    },
+    {
+        "hp": 95,
+        "attack": 70,
+        "defense": 73,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 60,
+        "id": 36
+    },
+    {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 65,
+        "speed": 65,
+        "id": 37
+    },
+    {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "special-attack": 81,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 38
+    },
+    {
+        "hp": 115,
+        "attack": 45,
+        "defense": 20,
+        "special-attack": 45,
+        "special-defense": 25,
+        "speed": 20,
+        "id": 39
+    },
+    {
+        "hp": 140,
+        "attack": 70,
+        "defense": 45,
+        "special-attack": 85,
+        "special-defense": 50,
+        "speed": 45,
+        "id": 40
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 55,
+        "id": 41
+    },
+    {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 75,
+        "speed": 90,
+        "id": 42
+    },
+    {
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "special-attack": 75,
+        "special-defense": 65,
+        "speed": 30,
+        "id": 43
+    },
+    {
+        "hp": 60,
+        "attack": 65,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 40,
+        "id": 44
+    },
+    {
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "special-attack": 110,
+        "special-defense": 90,
+        "speed": 50,
+        "id": 45
+    },
+    {
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 25,
+        "id": 46
+    },
+    {
+        "hp": 60,
+        "attack": 95,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 30,
+        "id": 47
+    },
+    {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 55,
+        "speed": 45,
+        "id": 48
+    },
+    {
+        "hp": 70,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 90,
+        "special-defense": 75,
+        "speed": 90,
+        "id": 49
+    },
+    {
+        "hp": 10,
+        "attack": 55,
+        "defense": 25,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 95,
+        "id": 50
+    },
+    {
+        "hp": 35,
+        "attack": 100,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 120,
+        "id": 51
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 90,
+        "id": 52
+    },
+    {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 115,
+        "id": 53
+    },
+    {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 55,
+        "id": 54
+    },
+    {
+        "hp": 80,
+        "attack": 82,
+        "defense": 78,
+        "special-attack": 95,
+        "special-defense": 80,
+        "speed": 85,
+        "id": 55
+    },
+    {
+        "hp": 40,
+        "attack": 80,
+        "defense": 35,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 70,
+        "id": 56
+    },
+    {
+        "hp": 65,
+        "attack": 105,
+        "defense": 60,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 95,
+        "id": 57
+    },
+    {
+        "hp": 55,
+        "attack": 70,
+        "defense": 45,
+        "special-attack": 70,
+        "special-defense": 50,
+        "speed": 60,
+        "id": 58
+    },
+    {
+        "hp": 90,
+        "attack": 110,
+        "defense": 80,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 95,
+        "id": 59
+    },
+    {
+        "hp": 40,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 90,
+        "id": 60
+    },
+    {
+        "hp": 65,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 61
+    },
+    {
+        "hp": 90,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 70,
+        "special-defense": 90,
+        "speed": 70,
+        "id": 62
+    },
+    {
+        "hp": 25,
+        "attack": 20,
+        "defense": 15,
+        "special-attack": 105,
+        "special-defense": 55,
+        "speed": 90,
+        "id": 63
+    },
+    {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 120,
+        "special-defense": 70,
+        "speed": 105,
+        "id": 64
+    },
+    {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 135,
+        "special-defense": 95,
+        "speed": 120,
+        "id": 65
+    },
+    {
+        "hp": 70,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 35,
+        "id": 66
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 50,
+        "special-defense": 60,
+        "speed": 45,
+        "id": 67
+    },
+    {
+        "hp": 90,
+        "attack": 130,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 85,
+        "speed": 55,
+        "id": 68
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 35,
+        "special-attack": 70,
+        "special-defense": 30,
+        "speed": 40,
+        "id": 69
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 50,
+        "special-attack": 85,
+        "special-defense": 45,
+        "speed": 55,
+        "id": 70
+    },
+    {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 71
+    },
+    {
+        "hp": 40,
+        "attack": 40,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 100,
+        "speed": 70,
+        "id": 72
+    },
+    {
+        "hp": 80,
+        "attack": 70,
+        "defense": 65,
+        "special-attack": 80,
+        "special-defense": 120,
+        "speed": 100,
+        "id": 73
+    },
+    {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 20,
+        "id": 74
+    },
+    {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 35,
+        "id": 75
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 76
+    },
+    {
+        "hp": 50,
+        "attack": 85,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 90,
+        "id": 77
+    },
+    {
+        "hp": 65,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 105,
+        "id": 78
+    },
+    {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 15,
+        "id": 79
+    },
+    {
+        "hp": 95,
+        "attack": 75,
+        "defense": 110,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 30,
+        "id": 80
+    },
+    {
+        "hp": 25,
+        "attack": 35,
+        "defense": 70,
+        "special-attack": 95,
+        "special-defense": 55,
+        "speed": 45,
+        "id": 81
+    },
+    {
+        "hp": 50,
+        "attack": 60,
+        "defense": 95,
+        "special-attack": 120,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 82
+    },
+    {
+        "hp": 52,
+        "attack": 90,
+        "defense": 55,
+        "special-attack": 58,
+        "special-defense": 62,
+        "speed": 60,
+        "id": 83
+    },
+    {
+        "hp": 35,
+        "attack": 85,
+        "defense": 45,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 75,
+        "id": 84
+    },
+    {
+        "hp": 60,
+        "attack": 110,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 110,
+        "id": 85
+    },
+    {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 70,
+        "speed": 45,
+        "id": 86
+    },
+    {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 95,
+        "speed": 70,
+        "id": 87
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 25,
+        "id": 88
+    },
+    {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 50,
+        "id": 89
+    },
+    {
+        "hp": 30,
+        "attack": 65,
+        "defense": 100,
+        "special-attack": 45,
+        "special-defense": 25,
+        "speed": 40,
+        "id": 90
+    },
+    {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "special-attack": 85,
+        "special-defense": 45,
+        "speed": 70,
+        "id": 91
+    },
+    {
+        "hp": 30,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 100,
+        "special-defense": 35,
+        "speed": 80,
+        "id": 92
+    },
+    {
+        "hp": 45,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 115,
+        "special-defense": 55,
+        "speed": 95,
+        "id": 93
+    },
+    {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 130,
+        "special-defense": 75,
+        "speed": 110,
+        "id": 94
+    },
+    {
+        "hp": 35,
+        "attack": 45,
+        "defense": 160,
+        "special-attack": 30,
+        "special-defense": 45,
+        "speed": 70,
+        "id": 95
+    },
+    {
+        "hp": 60,
+        "attack": 48,
+        "defense": 45,
+        "special-attack": 43,
+        "special-defense": 90,
+        "speed": 42,
+        "id": 96
+    },
+    {
+        "hp": 85,
+        "attack": 73,
+        "defense": 70,
+        "special-attack": 73,
+        "special-defense": 115,
+        "speed": 67,
+        "id": 97
+    },
+    {
+        "hp": 30,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 50,
+        "id": 98
+    },
+    {
+        "hp": 55,
+        "attack": 130,
+        "defense": 115,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 75,
+        "id": 99
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 100,
+        "id": 100
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 150,
+        "id": 101
+    },
+    {
+        "hp": 60,
+        "attack": 40,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 45,
+        "speed": 40,
+        "id": 102
+    },
+    {
+        "hp": 95,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 75,
+        "speed": 55,
+        "id": 103
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 35,
+        "id": 104
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45,
+        "id": 105
+    },
+    {
+        "hp": 50,
+        "attack": 120,
+        "defense": 53,
+        "special-attack": 35,
+        "special-defense": 110,
+        "speed": 87,
+        "id": 106
+    },
+    {
+        "hp": 50,
+        "attack": 105,
+        "defense": 79,
+        "special-attack": 35,
+        "special-defense": 110,
+        "speed": 76,
+        "id": 107
+    },
+    {
+        "hp": 90,
+        "attack": 55,
+        "defense": 75,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 30,
+        "id": 108
+    },
+    {
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "special-attack": 60,
+        "special-defense": 45,
+        "speed": 35,
+        "id": 109
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "special-attack": 85,
+        "special-defense": 70,
+        "speed": 60,
+        "id": 110
+    },
+    {
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 25,
+        "id": 111
+    },
+    {
+        "hp": 105,
+        "attack": 130,
+        "defense": 120,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 40,
+        "id": 112
+    },
+    {
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "special-attack": 35,
+        "special-defense": 105,
+        "speed": 50,
+        "id": 113
+    },
+    {
+        "hp": 65,
+        "attack": 55,
+        "defense": 115,
+        "special-attack": 100,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 114
+    },
+    {
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 90,
+        "id": 115
+    },
+    {
+        "hp": 30,
+        "attack": 40,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 25,
+        "speed": 60,
+        "id": 116
+    },
+    {
+        "hp": 55,
+        "attack": 65,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 45,
+        "speed": 85,
+        "id": 117
+    },
+    {
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "special-attack": 35,
+        "special-defense": 50,
+        "speed": 63,
+        "id": 118
+    },
+    {
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 80,
+        "speed": 68,
+        "id": 119
+    },
+    {
+        "hp": 30,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 70,
+        "special-defense": 55,
+        "speed": 85,
+        "id": 120
+    },
+    {
+        "hp": 60,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 100,
+        "special-defense": 85,
+        "speed": 115,
+        "id": 121
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 120,
+        "speed": 90,
+        "id": 122
+    },
+    {
+        "hp": 70,
+        "attack": 110,
+        "defense": 80,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 105,
+        "id": 123
+    },
+    {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "special-attack": 115,
+        "special-defense": 95,
+        "speed": 95,
+        "id": 124
+    },
+    {
+        "hp": 65,
+        "attack": 83,
+        "defense": 57,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 105,
+        "id": 125
+    },
+    {
+        "hp": 65,
+        "attack": 95,
+        "defense": 57,
+        "special-attack": 100,
+        "special-defense": 85,
+        "speed": 93,
+        "id": 126
+    },
+    {
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 55,
+        "special-defense": 70,
+        "speed": 85,
+        "id": 127
+    },
+    {
+        "hp": 75,
+        "attack": 100,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 70,
+        "speed": 110,
+        "id": 128
+    },
+    {
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "special-attack": 15,
+        "special-defense": 20,
+        "speed": 80,
+        "id": 129
+    },
+    {
+        "hp": 95,
+        "attack": 125,
+        "defense": 79,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 81,
+        "id": 130
+    },
+    {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "special-attack": 85,
+        "special-defense": 95,
+        "speed": 60,
+        "id": 131
+    },
+    {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "special-attack": 48,
+        "special-defense": 48,
+        "speed": 48,
+        "id": 132
+    },
+    {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 55,
+        "id": 133
+    },
+    {
+        "hp": 130,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 110,
+        "special-defense": 95,
+        "speed": 65,
+        "id": 134
+    },
+    {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 110,
+        "special-defense": 95,
+        "speed": 130,
+        "id": 135
+    },
+    {
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 110,
+        "speed": 65,
+        "id": 136
+    },
+    {
+        "hp": 65,
+        "attack": 60,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 40,
+        "id": 137
+    },
+    {
+        "hp": 35,
+        "attack": 40,
+        "defense": 100,
+        "special-attack": 90,
+        "special-defense": 55,
+        "speed": 35,
+        "id": 138
+    },
+    {
+        "hp": 70,
+        "attack": 60,
+        "defense": 125,
+        "special-attack": 115,
+        "special-defense": 70,
+        "speed": 55,
+        "id": 139
+    },
+    {
+        "hp": 30,
+        "attack": 80,
+        "defense": 90,
+        "special-attack": 55,
+        "special-defense": 45,
+        "speed": 55,
+        "id": 140
+    },
+    {
+        "hp": 60,
+        "attack": 115,
+        "defense": 105,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 80,
+        "id": 141
+    },
+    {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 130,
+        "id": 142
+    },
+    {
+        "hp": 160,
+        "attack": 110,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 110,
+        "speed": 30,
+        "id": 143
+    },
+    {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "special-attack": 95,
+        "special-defense": 125,
+        "speed": 85,
+        "id": 144
+    },
+    {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 90,
+        "speed": 100,
+        "id": 145
+    },
+    {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 125,
+        "special-defense": 85,
+        "speed": 90,
+        "id": 146
+    },
+    {
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 50,
+        "id": 147
+    },
+    {
+        "hp": 61,
+        "attack": 84,
+        "defense": 65,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 148
+    },
+    {
+        "hp": 91,
+        "attack": 134,
+        "defense": 95,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 80,
+        "id": 149
+    },
+    {
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 154,
+        "special-defense": 90,
+        "speed": 130,
+        "id": 150
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 151
+    },
+    {
+        "hp": 45,
+        "attack": 49,
+        "defense": 65,
+        "special-attack": 49,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 152
+    },
+    {
+        "hp": 60,
+        "attack": 62,
+        "defense": 80,
+        "special-attack": 63,
+        "special-defense": 80,
+        "speed": 60,
+        "id": 153
+    },
+    {
+        "hp": 80,
+        "attack": 82,
+        "defense": 100,
+        "special-attack": 83,
+        "special-defense": 100,
+        "speed": 80,
+        "id": 154
+    },
+    {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 155
+    },
+    {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "special-attack": 80,
+        "special-defense": 65,
+        "speed": 80,
+        "id": 156
+    },
+    {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special-attack": 109,
+        "special-defense": 85,
+        "speed": 100,
+        "id": 157
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 64,
+        "special-attack": 44,
+        "special-defense": 48,
+        "speed": 43,
+        "id": 158
+    },
+    {
+        "hp": 65,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 59,
+        "special-defense": 63,
+        "speed": 58,
+        "id": 159
+    },
+    {
+        "hp": 85,
+        "attack": 105,
+        "defense": 100,
+        "special-attack": 79,
+        "special-defense": 83,
+        "speed": 78,
+        "id": 160
+    },
+    {
+        "hp": 35,
+        "attack": 46,
+        "defense": 34,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 20,
+        "id": 161
+    },
+    {
+        "hp": 85,
+        "attack": 76,
+        "defense": 64,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 90,
+        "id": 162
+    },
+    {
+        "hp": 60,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 36,
+        "special-defense": 56,
+        "speed": 50,
+        "id": 163
+    },
+    {
+        "hp": 100,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 86,
+        "special-defense": 96,
+        "speed": 70,
+        "id": 164
+    },
+    {
+        "hp": 40,
+        "attack": 20,
+        "defense": 30,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 55,
+        "id": 165
+    },
+    {
+        "hp": 55,
+        "attack": 35,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 110,
+        "speed": 85,
+        "id": 166
+    },
+    {
+        "hp": 40,
+        "attack": 60,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 30,
+        "id": 167
+    },
+    {
+        "hp": 70,
+        "attack": 90,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 40,
+        "id": 168
+    },
+    {
+        "hp": 85,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 130,
+        "id": 169
+    },
+    {
+        "hp": 75,
+        "attack": 38,
+        "defense": 38,
+        "special-attack": 56,
+        "special-defense": 56,
+        "speed": 67,
+        "id": 170
+    },
+    {
+        "hp": 125,
+        "attack": 58,
+        "defense": 58,
+        "special-attack": 76,
+        "special-defense": 76,
+        "speed": 67,
+        "id": 171
+    },
+    {
+        "hp": 20,
+        "attack": 40,
+        "defense": 15,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 60,
+        "id": 172
+    },
+    {
+        "hp": 50,
+        "attack": 25,
+        "defense": 28,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 15,
+        "id": 173
+    },
+    {
+        "hp": 90,
+        "attack": 30,
+        "defense": 15,
+        "special-attack": 40,
+        "special-defense": 20,
+        "speed": 15,
+        "id": 174
+    },
+    {
+        "hp": 35,
+        "attack": 20,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 65,
+        "speed": 20,
+        "id": 175
+    },
+    {
+        "hp": 55,
+        "attack": 40,
+        "defense": 85,
+        "special-attack": 80,
+        "special-defense": 105,
+        "speed": 40,
+        "id": 176
+    },
+    {
+        "hp": 40,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 70,
+        "special-defense": 45,
+        "speed": 70,
+        "id": 177
+    },
+    {
+        "hp": 65,
+        "attack": 75,
+        "defense": 70,
+        "special-attack": 95,
+        "special-defense": 70,
+        "speed": 95,
+        "id": 178
+    },
+    {
+        "hp": 55,
+        "attack": 40,
+        "defense": 40,
+        "special-attack": 65,
+        "special-defense": 45,
+        "speed": 35,
+        "id": 179
+    },
+    {
+        "hp": 70,
+        "attack": 55,
+        "defense": 55,
+        "special-attack": 80,
+        "special-defense": 60,
+        "speed": 45,
+        "id": 180
+    },
+    {
+        "hp": 90,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 115,
+        "special-defense": 90,
+        "speed": 55,
+        "id": 181
+    },
+    {
+        "hp": 75,
+        "attack": 80,
+        "defense": 95,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 50,
+        "id": 182
+    },
+    {
+        "hp": 70,
+        "attack": 20,
+        "defense": 50,
+        "special-attack": 20,
+        "special-defense": 50,
+        "speed": 40,
+        "id": 183
+    },
+    {
+        "hp": 100,
+        "attack": 50,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 50,
+        "id": 184
+    },
+    {
+        "hp": 70,
+        "attack": 100,
+        "defense": 115,
+        "special-attack": 30,
+        "special-defense": 65,
+        "speed": 30,
+        "id": 185
+    },
+    {
+        "hp": 90,
+        "attack": 75,
+        "defense": 75,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 70,
+        "id": 186
+    },
+    {
+        "hp": 35,
+        "attack": 35,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 55,
+        "speed": 50,
+        "id": 187
+    },
+    {
+        "hp": 55,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 80,
+        "id": 188
+    },
+    {
+        "hp": 75,
+        "attack": 55,
+        "defense": 70,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 110,
+        "id": 189
+    },
+    {
+        "hp": 55,
+        "attack": 70,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 55,
+        "speed": 85,
+        "id": 190
+    },
+    {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 30,
+        "id": 191
+    },
+    {
+        "hp": 75,
+        "attack": 75,
+        "defense": 55,
+        "special-attack": 105,
+        "special-defense": 85,
+        "speed": 30,
+        "id": 192
+    },
+    {
+        "hp": 65,
+        "attack": 65,
+        "defense": 45,
+        "special-attack": 75,
+        "special-defense": 45,
+        "speed": 95,
+        "id": 193
+    },
+    {
+        "hp": 55,
+        "attack": 45,
+        "defense": 45,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15,
+        "id": 194
+    },
+    {
+        "hp": 95,
+        "attack": 85,
+        "defense": 85,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 35,
+        "id": 195
+    },
+    {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 130,
+        "special-defense": 95,
+        "speed": 110,
+        "id": 196
+    },
+    {
+        "hp": 95,
+        "attack": 65,
+        "defense": 110,
+        "special-attack": 60,
+        "special-defense": 130,
+        "speed": 65,
+        "id": 197
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 42,
+        "special-attack": 85,
+        "special-defense": 42,
+        "speed": 91,
+        "id": 198
+    },
+    {
+        "hp": 95,
+        "attack": 75,
+        "defense": 80,
+        "special-attack": 100,
+        "special-defense": 110,
+        "speed": 30,
+        "id": 199
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 85,
+        "special-defense": 85,
+        "speed": 85,
+        "id": 200
+    },
+    {
+        "hp": 48,
+        "attack": 72,
+        "defense": 48,
+        "special-attack": 72,
+        "special-defense": 48,
+        "speed": 48,
+        "id": 201
+    },
+    {
+        "hp": 190,
+        "attack": 33,
+        "defense": 58,
+        "special-attack": 33,
+        "special-defense": 58,
+        "speed": 33,
+        "id": 202
+    },
+    {
+        "hp": 70,
+        "attack": 80,
+        "defense": 65,
+        "special-attack": 90,
+        "special-defense": 65,
+        "speed": 85,
+        "id": 203
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 90,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 15,
+        "id": 204
+    },
+    {
+        "hp": 75,
+        "attack": 90,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 40,
+        "id": 205
+    },
+    {
+        "hp": 100,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 206
+    },
+    {
+        "hp": 65,
+        "attack": 75,
+        "defense": 105,
+        "special-attack": 35,
+        "special-defense": 65,
+        "speed": 85,
+        "id": 207
+    },
+    {
+        "hp": 75,
+        "attack": 85,
+        "defense": 200,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 30,
+        "id": 208
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 30,
+        "id": 209
+    },
+    {
+        "hp": 90,
+        "attack": 120,
+        "defense": 75,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 45,
+        "id": 210
+    },
+    {
+        "hp": 65,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 85,
+        "id": 211
+    },
+    {
+        "hp": 70,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 65,
+        "id": 212
+    },
+    {
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5,
+        "id": 213
+    },
+    {
+        "hp": 80,
+        "attack": 125,
+        "defense": 75,
+        "special-attack": 40,
+        "special-defense": 95,
+        "speed": 85,
+        "id": 214
+    },
+    {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "special-attack": 35,
+        "special-defense": 75,
+        "speed": 115,
+        "id": 215
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 40,
+        "id": 216
+    },
+    {
+        "hp": 90,
+        "attack": 130,
+        "defense": 75,
+        "special-attack": 75,
+        "special-defense": 75,
+        "speed": 55,
+        "id": 217
+    },
+    {
+        "hp": 40,
+        "attack": 40,
+        "defense": 40,
+        "special-attack": 70,
+        "special-defense": 40,
+        "speed": 20,
+        "id": 218
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 120,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 30,
+        "id": 219
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 50,
+        "id": 220
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 50,
+        "id": 221
+    },
+    {
+        "hp": 65,
+        "attack": 55,
+        "defense": 95,
+        "special-attack": 65,
+        "special-defense": 95,
+        "speed": 35,
+        "id": 222
+    },
+    {
+        "hp": 35,
+        "attack": 65,
+        "defense": 35,
+        "special-attack": 65,
+        "special-defense": 35,
+        "speed": 65,
+        "id": 223
+    },
+    {
+        "hp": 75,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 105,
+        "special-defense": 75,
+        "speed": 45,
+        "id": 224
+    },
+    {
+        "hp": 45,
+        "attack": 55,
+        "defense": 45,
+        "special-attack": 65,
+        "special-defense": 45,
+        "speed": 75,
+        "id": 225
+    },
+    {
+        "hp": 85,
+        "attack": 40,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 140,
+        "speed": 70,
+        "id": 226
+    },
+    {
+        "hp": 65,
+        "attack": 80,
+        "defense": 140,
+        "special-attack": 40,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 227
+    },
+    {
+        "hp": 45,
+        "attack": 60,
+        "defense": 30,
+        "special-attack": 80,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 228
+    },
+    {
+        "hp": 75,
+        "attack": 90,
+        "defense": 50,
+        "special-attack": 110,
+        "special-defense": 80,
+        "speed": 95,
+        "id": 229
+    },
+    {
+        "hp": 75,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 95,
+        "speed": 85,
+        "id": 230
+    },
+    {
+        "hp": 90,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 40,
+        "id": 231
+    },
+    {
+        "hp": 90,
+        "attack": 120,
+        "defense": 120,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 50,
+        "id": 232
+    },
+    {
+        "hp": 85,
+        "attack": 80,
+        "defense": 90,
+        "special-attack": 105,
+        "special-defense": 95,
+        "speed": 60,
+        "id": 233
+    },
+    {
+        "hp": 73,
+        "attack": 95,
+        "defense": 62,
+        "special-attack": 85,
+        "special-defense": 65,
+        "speed": 85,
+        "id": 234
+    },
+    {
+        "hp": 55,
+        "attack": 20,
+        "defense": 35,
+        "special-attack": 20,
+        "special-defense": 45,
+        "speed": 75,
+        "id": 235
+    },
+    {
+        "hp": 35,
+        "attack": 35,
+        "defense": 35,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 35,
+        "id": 236
+    },
+    {
+        "hp": 50,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 35,
+        "special-defense": 110,
+        "speed": 70,
+        "id": 237
+    },
+    {
+        "hp": 45,
+        "attack": 30,
+        "defense": 15,
+        "special-attack": 85,
+        "special-defense": 65,
+        "speed": 65,
+        "id": 238
+    },
+    {
+        "hp": 45,
+        "attack": 63,
+        "defense": 37,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 95,
+        "id": 239
+    },
+    {
+        "hp": 45,
+        "attack": 75,
+        "defense": 37,
+        "special-attack": 70,
+        "special-defense": 55,
+        "speed": 83,
+        "id": 240
+    },
+    {
+        "hp": 95,
+        "attack": 80,
+        "defense": 105,
+        "special-attack": 40,
+        "special-defense": 70,
+        "speed": 100,
+        "id": 241
+    },
+    {
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55,
+        "id": 242
+    },
+    {
+        "hp": 90,
+        "attack": 85,
+        "defense": 75,
+        "special-attack": 115,
+        "special-defense": 100,
+        "speed": 115,
+        "id": 243
+    },
+    {
+        "hp": 115,
+        "attack": 115,
+        "defense": 85,
+        "special-attack": 90,
+        "special-defense": 75,
+        "speed": 100,
+        "id": 244
+    },
+    {
+        "hp": 100,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 90,
+        "special-defense": 115,
+        "speed": 85,
+        "id": 245
+    },
+    {
+        "hp": 50,
+        "attack": 64,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 50,
+        "speed": 41,
+        "id": 246
+    },
+    {
+        "hp": 70,
+        "attack": 84,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 51,
+        "id": 247
+    },
+    {
+        "hp": 100,
+        "attack": 134,
+        "defense": 110,
+        "special-attack": 95,
+        "special-defense": 100,
+        "speed": 61,
+        "id": 248
+    },
+    {
+        "hp": 106,
+        "attack": 90,
+        "defense": 130,
+        "special-attack": 90,
+        "special-defense": 154,
+        "speed": 110,
+        "id": 249
+    },
+    {
+        "hp": 106,
+        "attack": 130,
+        "defense": 90,
+        "special-attack": 110,
+        "special-defense": 154,
+        "speed": 90,
+        "id": 250
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 251
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 70,
+        "id": 252
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 45,
+        "special-attack": 85,
+        "special-defense": 65,
+        "speed": 95,
+        "id": 253
+    },
+    {
+        "hp": 70,
+        "attack": 85,
+        "defense": 65,
+        "special-attack": 105,
+        "special-defense": 85,
+        "speed": 120,
+        "id": 254
+    },
+    {
+        "hp": 45,
+        "attack": 60,
+        "defense": 40,
+        "special-attack": 70,
+        "special-defense": 50,
+        "speed": 45,
+        "id": 255
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 60,
+        "special-attack": 85,
+        "special-defense": 60,
+        "speed": 55,
+        "id": 256
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 70,
+        "special-attack": 110,
+        "special-defense": 70,
+        "speed": 80,
+        "id": 257
+    },
+    {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 40,
+        "id": 258
+    },
+    {
+        "hp": 70,
+        "attack": 85,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 50,
+        "id": 259
+    },
+    {
+        "hp": 100,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 85,
+        "special-defense": 90,
+        "speed": 60,
+        "id": 260
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 35,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 35,
+        "id": 261
+    },
+    {
+        "hp": 70,
+        "attack": 90,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 70,
+        "id": 262
+    },
+    {
+        "hp": 38,
+        "attack": 30,
+        "defense": 41,
+        "special-attack": 30,
+        "special-defense": 41,
+        "speed": 60,
+        "id": 263
+    },
+    {
+        "hp": 78,
+        "attack": 70,
+        "defense": 61,
+        "special-attack": 50,
+        "special-defense": 61,
+        "speed": 100,
+        "id": 264
+    },
+    {
+        "hp": 45,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 20,
+        "id": 265
+    },
+    {
+        "hp": 50,
+        "attack": 35,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15,
+        "id": 266
+    },
+    {
+        "hp": 60,
+        "attack": 70,
+        "defense": 50,
+        "special-attack": 100,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 267
+    },
+    {
+        "hp": 50,
+        "attack": 35,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15,
+        "id": 268
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "special-attack": 50,
+        "special-defense": 90,
+        "speed": 65,
+        "id": 269
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 30,
+        "id": 270
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 50,
+        "id": 271
+    },
+    {
+        "hp": 80,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 70,
+        "id": 272
+    },
+    {
+        "hp": 40,
+        "attack": 40,
+        "defense": 50,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 30,
+        "id": 273
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 40,
+        "special-attack": 60,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 274
+    },
+    {
+        "hp": 90,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 90,
+        "special-defense": 60,
+        "speed": 80,
+        "id": 275
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 85,
+        "id": 276
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 50,
+        "speed": 125,
+        "id": 277
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 55,
+        "special-defense": 30,
+        "speed": 85,
+        "id": 278
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 100,
+        "special-attack": 95,
+        "special-defense": 70,
+        "speed": 65,
+        "id": 279
+    },
+    {
+        "hp": 28,
+        "attack": 25,
+        "defense": 25,
+        "special-attack": 45,
+        "special-defense": 35,
+        "speed": 40,
+        "id": 280
+    },
+    {
+        "hp": 38,
+        "attack": 35,
+        "defense": 35,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 50,
+        "id": 281
+    },
+    {
+        "hp": 68,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 125,
+        "special-defense": 115,
+        "speed": 80,
+        "id": 282
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 32,
+        "special-attack": 50,
+        "special-defense": 52,
+        "speed": 65,
+        "id": 283
+    },
+    {
+        "hp": 70,
+        "attack": 60,
+        "defense": 62,
+        "special-attack": 100,
+        "special-defense": 82,
+        "speed": 80,
+        "id": 284
+    },
+    {
+        "hp": 60,
+        "attack": 40,
+        "defense": 60,
+        "special-attack": 40,
+        "special-defense": 60,
+        "speed": 35,
+        "id": 285
+    },
+    {
+        "hp": 60,
+        "attack": 130,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 70,
+        "id": 286
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 30,
+        "id": 287
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 90,
+        "id": 288
+    },
+    {
+        "hp": 150,
+        "attack": 160,
+        "defense": 100,
+        "special-attack": 95,
+        "special-defense": 65,
+        "speed": 100,
+        "id": 289
+    },
+    {
+        "hp": 31,
+        "attack": 45,
+        "defense": 90,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 40,
+        "id": 290
+    },
+    {
+        "hp": 61,
+        "attack": 90,
+        "defense": 45,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 160,
+        "id": 291
+    },
+    {
+        "hp": 1,
+        "attack": 90,
+        "defense": 45,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 40,
+        "id": 292
+    },
+    {
+        "hp": 64,
+        "attack": 51,
+        "defense": 23,
+        "special-attack": 51,
+        "special-defense": 23,
+        "speed": 28,
+        "id": 293
+    },
+    {
+        "hp": 84,
+        "attack": 71,
+        "defense": 43,
+        "special-attack": 71,
+        "special-defense": 43,
+        "speed": 48,
+        "id": 294
+    },
+    {
+        "hp": 104,
+        "attack": 91,
+        "defense": 63,
+        "special-attack": 91,
+        "special-defense": 73,
+        "speed": 68,
+        "id": 295
+    },
+    {
+        "hp": 72,
+        "attack": 60,
+        "defense": 30,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 25,
+        "id": 296
+    },
+    {
+        "hp": 144,
+        "attack": 120,
+        "defense": 60,
+        "special-attack": 40,
+        "special-defense": 60,
+        "speed": 50,
+        "id": 297
+    },
+    {
+        "hp": 50,
+        "attack": 20,
+        "defense": 40,
+        "special-attack": 20,
+        "special-defense": 40,
+        "speed": 20,
+        "id": 298
+    },
+    {
+        "hp": 30,
+        "attack": 45,
+        "defense": 135,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 30,
+        "id": 299
+    },
+    {
+        "hp": 50,
+        "attack": 45,
+        "defense": 45,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 50,
+        "id": 300
+    },
+    {
+        "hp": 70,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 90,
+        "id": 301
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 50,
+        "id": 302
+    },
+    {
+        "hp": 50,
+        "attack": 85,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 50,
+        "id": 303
+    },
+    {
+        "hp": 50,
+        "attack": 70,
+        "defense": 100,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 30,
+        "id": 304
+    },
+    {
+        "hp": 60,
+        "attack": 90,
+        "defense": 140,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 40,
+        "id": 305
+    },
+    {
+        "hp": 70,
+        "attack": 110,
+        "defense": 180,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 50,
+        "id": 306
+    },
+    {
+        "hp": 30,
+        "attack": 40,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 55,
+        "speed": 60,
+        "id": 307
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 75,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 80,
+        "id": 308
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 65,
+        "special-defense": 40,
+        "speed": 65,
+        "id": 309
+    },
+    {
+        "hp": 70,
+        "attack": 75,
+        "defense": 60,
+        "special-attack": 105,
+        "special-defense": 60,
+        "speed": 105,
+        "id": 310
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 95,
+        "id": 311
+    },
+    {
+        "hp": 60,
+        "attack": 40,
+        "defense": 50,
+        "special-attack": 75,
+        "special-defense": 85,
+        "speed": 95,
+        "id": 312
+    },
+    {
+        "hp": 65,
+        "attack": 73,
+        "defense": 75,
+        "special-attack": 47,
+        "special-defense": 85,
+        "speed": 85,
+        "id": 313
+    },
+    {
+        "hp": 65,
+        "attack": 47,
+        "defense": 75,
+        "special-attack": 73,
+        "special-defense": 85,
+        "speed": 85,
+        "id": 314
+    },
+    {
+        "hp": 50,
+        "attack": 60,
+        "defense": 45,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 65,
+        "id": 315
+    },
+    {
+        "hp": 70,
+        "attack": 43,
+        "defense": 53,
+        "special-attack": 43,
+        "special-defense": 53,
+        "speed": 40,
+        "id": 316
+    },
+    {
+        "hp": 100,
+        "attack": 73,
+        "defense": 83,
+        "special-attack": 73,
+        "special-defense": 83,
+        "speed": 55,
+        "id": 317
+    },
+    {
+        "hp": 45,
+        "attack": 90,
+        "defense": 20,
+        "special-attack": 65,
+        "special-defense": 20,
+        "speed": 65,
+        "id": 318
+    },
+    {
+        "hp": 70,
+        "attack": 120,
+        "defense": 40,
+        "special-attack": 95,
+        "special-defense": 40,
+        "speed": 95,
+        "id": 319
+    },
+    {
+        "hp": 130,
+        "attack": 70,
+        "defense": 35,
+        "special-attack": 70,
+        "special-defense": 35,
+        "speed": 60,
+        "id": 320
+    },
+    {
+        "hp": 170,
+        "attack": 90,
+        "defense": 45,
+        "special-attack": 90,
+        "special-defense": 45,
+        "speed": 60,
+        "id": 321
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 40,
+        "special-attack": 65,
+        "special-defense": 45,
+        "speed": 35,
+        "id": 322
+    },
+    {
+        "hp": 70,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 105,
+        "special-defense": 75,
+        "speed": 40,
+        "id": 323
+    },
+    {
+        "hp": 70,
+        "attack": 85,
+        "defense": 140,
+        "special-attack": 85,
+        "special-defense": 70,
+        "speed": 20,
+        "id": 324
+    },
+    {
+        "hp": 60,
+        "attack": 25,
+        "defense": 35,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 60,
+        "id": 325
+    },
+    {
+        "hp": 80,
+        "attack": 45,
+        "defense": 65,
+        "special-attack": 90,
+        "special-defense": 110,
+        "speed": 80,
+        "id": 326
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 60,
+        "id": 327
+    },
+    {
+        "hp": 45,
+        "attack": 100,
+        "defense": 45,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 10,
+        "id": 328
+    },
+    {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 70,
+        "id": 329
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 80,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 100,
+        "id": 330
+    },
+    {
+        "hp": 50,
+        "attack": 85,
+        "defense": 40,
+        "special-attack": 85,
+        "special-defense": 40,
+        "speed": 35,
+        "id": 331
+    },
+    {
+        "hp": 70,
+        "attack": 115,
+        "defense": 60,
+        "special-attack": 115,
+        "special-defense": 60,
+        "speed": 55,
+        "id": 332
+    },
+    {
+        "hp": 45,
+        "attack": 40,
+        "defense": 60,
+        "special-attack": 40,
+        "special-defense": 75,
+        "speed": 50,
+        "id": 333
+    },
+    {
+        "hp": 75,
+        "attack": 70,
+        "defense": 90,
+        "special-attack": 70,
+        "special-defense": 105,
+        "speed": 80,
+        "id": 334
+    },
+    {
+        "hp": 73,
+        "attack": 115,
+        "defense": 60,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 90,
+        "id": 335
+    },
+    {
+        "hp": 73,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 65,
+        "id": 336
+    },
+    {
+        "hp": 90,
+        "attack": 55,
+        "defense": 65,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 70,
+        "id": 337
+    },
+    {
+        "hp": 90,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 70,
+        "id": 338
+    },
+    {
+        "hp": 50,
+        "attack": 48,
+        "defense": 43,
+        "special-attack": 46,
+        "special-defense": 41,
+        "speed": 60,
+        "id": 339
+    },
+    {
+        "hp": 110,
+        "attack": 78,
+        "defense": 73,
+        "special-attack": 76,
+        "special-defense": 71,
+        "speed": 60,
+        "id": 340
+    },
+    {
+        "hp": 43,
+        "attack": 80,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 35,
+        "speed": 35,
+        "id": 341
+    },
+    {
+        "hp": 63,
+        "attack": 120,
+        "defense": 85,
+        "special-attack": 90,
+        "special-defense": 55,
+        "speed": 55,
+        "id": 342
+    },
+    {
+        "hp": 40,
+        "attack": 40,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 70,
+        "speed": 55,
+        "id": 343
+    },
+    {
+        "hp": 60,
+        "attack": 70,
+        "defense": 105,
+        "special-attack": 70,
+        "special-defense": 120,
+        "speed": 75,
+        "id": 344
+    },
+    {
+        "hp": 66,
+        "attack": 41,
+        "defense": 77,
+        "special-attack": 61,
+        "special-defense": 87,
+        "speed": 23,
+        "id": 345
+    },
+    {
+        "hp": 86,
+        "attack": 81,
+        "defense": 97,
+        "special-attack": 81,
+        "special-defense": 107,
+        "speed": 43,
+        "id": 346
+    },
+    {
+        "hp": 45,
+        "attack": 95,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 75,
+        "id": 347
+    },
+    {
+        "hp": 75,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 45,
+        "id": 348
+    },
+    {
+        "hp": 20,
+        "attack": 15,
+        "defense": 20,
+        "special-attack": 10,
+        "special-defense": 55,
+        "speed": 80,
+        "id": 349
+    },
+    {
+        "hp": 95,
+        "attack": 60,
+        "defense": 79,
+        "special-attack": 100,
+        "special-defense": 125,
+        "speed": 81,
+        "id": 350
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 351
+    },
+    {
+        "hp": 60,
+        "attack": 90,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 120,
+        "speed": 40,
+        "id": 352
+    },
+    {
+        "hp": 44,
+        "attack": 75,
+        "defense": 35,
+        "special-attack": 63,
+        "special-defense": 33,
+        "speed": 45,
+        "id": 353
+    },
+    {
+        "hp": 64,
+        "attack": 115,
+        "defense": 65,
+        "special-attack": 83,
+        "special-defense": 63,
+        "speed": 65,
+        "id": 354
+    },
+    {
+        "hp": 20,
+        "attack": 40,
+        "defense": 90,
+        "special-attack": 30,
+        "special-defense": 90,
+        "speed": 25,
+        "id": 355
+    },
+    {
+        "hp": 40,
+        "attack": 70,
+        "defense": 130,
+        "special-attack": 60,
+        "special-defense": 130,
+        "speed": 25,
+        "id": 356
+    },
+    {
+        "hp": 99,
+        "attack": 68,
+        "defense": 83,
+        "special-attack": 72,
+        "special-defense": 87,
+        "speed": 51,
+        "id": 357
+    },
+    {
+        "hp": 75,
+        "attack": 50,
+        "defense": 80,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 65,
+        "id": 358
+    },
+    {
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 60,
+        "speed": 75,
+        "id": 359
+    },
+    {
+        "hp": 95,
+        "attack": 23,
+        "defense": 48,
+        "special-attack": 23,
+        "special-defense": 48,
+        "speed": 23,
+        "id": 360
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 50,
+        "id": 361
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 80,
+        "id": 362
+    },
+    {
+        "hp": 70,
+        "attack": 40,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 50,
+        "speed": 25,
+        "id": 363
+    },
+    {
+        "hp": 90,
+        "attack": 60,
+        "defense": 70,
+        "special-attack": 75,
+        "special-defense": 70,
+        "speed": 45,
+        "id": 364
+    },
+    {
+        "hp": 110,
+        "attack": 80,
+        "defense": 90,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 65,
+        "id": 365
+    },
+    {
+        "hp": 35,
+        "attack": 64,
+        "defense": 85,
+        "special-attack": 74,
+        "special-defense": 55,
+        "speed": 32,
+        "id": 366
+    },
+    {
+        "hp": 55,
+        "attack": 104,
+        "defense": 105,
+        "special-attack": 94,
+        "special-defense": 75,
+        "speed": 52,
+        "id": 367
+    },
+    {
+        "hp": 55,
+        "attack": 84,
+        "defense": 105,
+        "special-attack": 114,
+        "special-defense": 75,
+        "speed": 52,
+        "id": 368
+    },
+    {
+        "hp": 100,
+        "attack": 90,
+        "defense": 130,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 55,
+        "id": 369
+    },
+    {
+        "hp": 43,
+        "attack": 30,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 65,
+        "speed": 97,
+        "id": 370
+    },
+    {
+        "hp": 45,
+        "attack": 75,
+        "defense": 60,
+        "special-attack": 40,
+        "special-defense": 30,
+        "speed": 50,
+        "id": 371
+    },
+    {
+        "hp": 65,
+        "attack": 95,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 50,
+        "id": 372
+    },
+    {
+        "hp": 95,
+        "attack": 135,
+        "defense": 80,
+        "special-attack": 110,
+        "special-defense": 80,
+        "speed": 100,
+        "id": 373
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 80,
+        "special-attack": 35,
+        "special-defense": 60,
+        "speed": 30,
+        "id": 374
+    },
+    {
+        "hp": 60,
+        "attack": 75,
+        "defense": 100,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 50,
+        "id": 375
+    },
+    {
+        "hp": 80,
+        "attack": 135,
+        "defense": 130,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 70,
+        "id": 376
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 200,
+        "special-attack": 50,
+        "special-defense": 100,
+        "speed": 50,
+        "id": 377
+    },
+    {
+        "hp": 80,
+        "attack": 50,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 200,
+        "speed": 50,
+        "id": 378
+    },
+    {
+        "hp": 80,
+        "attack": 75,
+        "defense": 150,
+        "special-attack": 75,
+        "special-defense": 150,
+        "speed": 50,
+        "id": 379
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 90,
+        "special-attack": 110,
+        "special-defense": 130,
+        "speed": 110,
+        "id": 380
+    },
+    {
+        "hp": 80,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 130,
+        "special-defense": 110,
+        "speed": 110,
+        "id": 381
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 150,
+        "special-defense": 140,
+        "speed": 90,
+        "id": 382
+    },
+    {
+        "hp": 100,
+        "attack": 150,
+        "defense": 140,
+        "special-attack": 100,
+        "special-defense": 90,
+        "speed": 90,
+        "id": 383
+    },
+    {
+        "hp": 105,
+        "attack": 150,
+        "defense": 90,
+        "special-attack": 150,
+        "special-defense": 90,
+        "speed": 95,
+        "id": 384
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 385
+    },
+    {
+        "hp": 50,
+        "attack": 150,
+        "defense": 50,
+        "special-attack": 150,
+        "special-defense": 50,
+        "speed": 150,
+        "id": 386
+    },
+    {
+        "hp": 55,
+        "attack": 68,
+        "defense": 64,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 31,
+        "id": 387
+    },
+    {
+        "hp": 75,
+        "attack": 89,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 36,
+        "id": 388
+    },
+    {
+        "hp": 95,
+        "attack": 109,
+        "defense": 105,
+        "special-attack": 75,
+        "special-defense": 85,
+        "speed": 56,
+        "id": 389
+    },
+    {
+        "hp": 44,
+        "attack": 58,
+        "defense": 44,
+        "special-attack": 58,
+        "special-defense": 44,
+        "speed": 61,
+        "id": 390
+    },
+    {
+        "hp": 64,
+        "attack": 78,
+        "defense": 52,
+        "special-attack": 78,
+        "special-defense": 52,
+        "speed": 81,
+        "id": 391
+    },
+    {
+        "hp": 76,
+        "attack": 104,
+        "defense": 71,
+        "special-attack": 104,
+        "special-defense": 71,
+        "speed": 108,
+        "id": 392
+    },
+    {
+        "hp": 53,
+        "attack": 51,
+        "defense": 53,
+        "special-attack": 61,
+        "special-defense": 56,
+        "speed": 40,
+        "id": 393
+    },
+    {
+        "hp": 64,
+        "attack": 66,
+        "defense": 68,
+        "special-attack": 81,
+        "special-defense": 76,
+        "speed": 50,
+        "id": 394
+    },
+    {
+        "hp": 84,
+        "attack": 86,
+        "defense": 88,
+        "special-attack": 111,
+        "special-defense": 101,
+        "speed": 60,
+        "id": 395
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 60,
+        "id": 396
+    },
+    {
+        "hp": 55,
+        "attack": 75,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 80,
+        "id": 397
+    },
+    {
+        "hp": 85,
+        "attack": 120,
+        "defense": 70,
+        "special-attack": 50,
+        "special-defense": 60,
+        "speed": 100,
+        "id": 398
+    },
+    {
+        "hp": 59,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 40,
+        "speed": 31,
+        "id": 399
+    },
+    {
+        "hp": 79,
+        "attack": 85,
+        "defense": 60,
+        "special-attack": 55,
+        "special-defense": 60,
+        "speed": 71,
+        "id": 400
+    },
+    {
+        "hp": 37,
+        "attack": 25,
+        "defense": 41,
+        "special-attack": 25,
+        "special-defense": 41,
+        "speed": 25,
+        "id": 401
+    },
+    {
+        "hp": 77,
+        "attack": 85,
+        "defense": 51,
+        "special-attack": 55,
+        "special-defense": 51,
+        "speed": 65,
+        "id": 402
+    },
+    {
+        "hp": 45,
+        "attack": 65,
+        "defense": 34,
+        "special-attack": 40,
+        "special-defense": 34,
+        "speed": 45,
+        "id": 403
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 49,
+        "special-attack": 60,
+        "special-defense": 49,
+        "speed": 60,
+        "id": 404
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 79,
+        "special-attack": 95,
+        "special-defense": 79,
+        "speed": 70,
+        "id": 405
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 55,
+        "id": 406
+    },
+    {
+        "hp": 60,
+        "attack": 70,
+        "defense": 65,
+        "special-attack": 125,
+        "special-defense": 105,
+        "speed": 90,
+        "id": 407
+    },
+    {
+        "hp": 67,
+        "attack": 125,
+        "defense": 40,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 58,
+        "id": 408
+    },
+    {
+        "hp": 97,
+        "attack": 165,
+        "defense": 60,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 58,
+        "id": 409
+    },
+    {
+        "hp": 30,
+        "attack": 42,
+        "defense": 118,
+        "special-attack": 42,
+        "special-defense": 88,
+        "speed": 30,
+        "id": 410
+    },
+    {
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30,
+        "id": 411
+    },
+    {
+        "hp": 40,
+        "attack": 29,
+        "defense": 45,
+        "special-attack": 29,
+        "special-defense": 45,
+        "speed": 36,
+        "id": 412
+    },
+    {
+        "hp": 60,
+        "attack": 59,
+        "defense": 85,
+        "special-attack": 79,
+        "special-defense": 105,
+        "speed": 36,
+        "id": 413
+    },
+    {
+        "hp": 70,
+        "attack": 94,
+        "defense": 50,
+        "special-attack": 94,
+        "special-defense": 50,
+        "speed": 66,
+        "id": 414
+    },
+    {
+        "hp": 30,
+        "attack": 30,
+        "defense": 42,
+        "special-attack": 30,
+        "special-defense": 42,
+        "speed": 70,
+        "id": 415
+    },
+    {
+        "hp": 70,
+        "attack": 80,
+        "defense": 102,
+        "special-attack": 80,
+        "special-defense": 102,
+        "speed": 40,
+        "id": 416
+    },
+    {
+        "hp": 60,
+        "attack": 45,
+        "defense": 70,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 95,
+        "id": 417
+    },
+    {
+        "hp": 55,
+        "attack": 65,
+        "defense": 35,
+        "special-attack": 60,
+        "special-defense": 30,
+        "speed": 85,
+        "id": 418
+    },
+    {
+        "hp": 85,
+        "attack": 105,
+        "defense": 55,
+        "special-attack": 85,
+        "special-defense": 50,
+        "speed": 115,
+        "id": 419
+    },
+    {
+        "hp": 45,
+        "attack": 35,
+        "defense": 45,
+        "special-attack": 62,
+        "special-defense": 53,
+        "speed": 35,
+        "id": 420
+    },
+    {
+        "hp": 70,
+        "attack": 60,
+        "defense": 70,
+        "special-attack": 87,
+        "special-defense": 78,
+        "speed": 85,
+        "id": 421
+    },
+    {
+        "hp": 76,
+        "attack": 48,
+        "defense": 48,
+        "special-attack": 57,
+        "special-defense": 62,
+        "speed": 34,
+        "id": 422
+    },
+    {
+        "hp": 111,
+        "attack": 83,
+        "defense": 68,
+        "special-attack": 92,
+        "special-defense": 82,
+        "speed": 39,
+        "id": 423
+    },
+    {
+        "hp": 75,
+        "attack": 100,
+        "defense": 66,
+        "special-attack": 60,
+        "special-defense": 66,
+        "speed": 115,
+        "id": 424
+    },
+    {
+        "hp": 90,
+        "attack": 50,
+        "defense": 34,
+        "special-attack": 60,
+        "special-defense": 44,
+        "speed": 70,
+        "id": 425
+    },
+    {
+        "hp": 150,
+        "attack": 80,
+        "defense": 44,
+        "special-attack": 90,
+        "special-defense": 54,
+        "speed": 80,
+        "id": 426
+    },
+    {
+        "hp": 55,
+        "attack": 66,
+        "defense": 44,
+        "special-attack": 44,
+        "special-defense": 56,
+        "speed": 85,
+        "id": 427
+    },
+    {
+        "hp": 65,
+        "attack": 76,
+        "defense": 84,
+        "special-attack": 54,
+        "special-defense": 96,
+        "speed": 105,
+        "id": 428
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 105,
+        "special-defense": 105,
+        "speed": 105,
+        "id": 429
+    },
+    {
+        "hp": 100,
+        "attack": 125,
+        "defense": 52,
+        "special-attack": 105,
+        "special-defense": 52,
+        "speed": 71,
+        "id": 430
+    },
+    {
+        "hp": 49,
+        "attack": 55,
+        "defense": 42,
+        "special-attack": 42,
+        "special-defense": 37,
+        "speed": 85,
+        "id": 431
+    },
+    {
+        "hp": 71,
+        "attack": 82,
+        "defense": 64,
+        "special-attack": 64,
+        "special-defense": 59,
+        "speed": 112,
+        "id": 432
+    },
+    {
+        "hp": 45,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 45,
+        "id": 433
+    },
+    {
+        "hp": 63,
+        "attack": 63,
+        "defense": 47,
+        "special-attack": 41,
+        "special-defense": 41,
+        "speed": 74,
+        "id": 434
+    },
+    {
+        "hp": 103,
+        "attack": 93,
+        "defense": 67,
+        "special-attack": 71,
+        "special-defense": 61,
+        "speed": 84,
+        "id": 435
+    },
+    {
+        "hp": 57,
+        "attack": 24,
+        "defense": 86,
+        "special-attack": 24,
+        "special-defense": 86,
+        "speed": 23,
+        "id": 436
+    },
+    {
+        "hp": 67,
+        "attack": 89,
+        "defense": 116,
+        "special-attack": 79,
+        "special-defense": 116,
+        "speed": 33,
+        "id": 437
+    },
+    {
+        "hp": 50,
+        "attack": 80,
+        "defense": 95,
+        "special-attack": 10,
+        "special-defense": 45,
+        "speed": 10,
+        "id": 438
+    },
+    {
+        "hp": 20,
+        "attack": 25,
+        "defense": 45,
+        "special-attack": 70,
+        "special-defense": 90,
+        "speed": 60,
+        "id": 439
+    },
+    {
+        "hp": 100,
+        "attack": 5,
+        "defense": 5,
+        "special-attack": 15,
+        "special-defense": 65,
+        "speed": 30,
+        "id": 440
+    },
+    {
+        "hp": 76,
+        "attack": 65,
+        "defense": 45,
+        "special-attack": 92,
+        "special-defense": 42,
+        "speed": 91,
+        "id": 441
+    },
+    {
+        "hp": 50,
+        "attack": 92,
+        "defense": 108,
+        "special-attack": 92,
+        "special-defense": 108,
+        "speed": 35,
+        "id": 442
+    },
+    {
+        "hp": 58,
+        "attack": 70,
+        "defense": 45,
+        "special-attack": 40,
+        "special-defense": 45,
+        "speed": 42,
+        "id": 443
+    },
+    {
+        "hp": 68,
+        "attack": 90,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 55,
+        "speed": 82,
+        "id": 444
+    },
+    {
+        "hp": 108,
+        "attack": 130,
+        "defense": 95,
+        "special-attack": 80,
+        "special-defense": 85,
+        "speed": 102,
+        "id": 445
+    },
+    {
+        "hp": 135,
+        "attack": 85,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 85,
+        "speed": 5,
+        "id": 446
+    },
+    {
+        "hp": 40,
+        "attack": 70,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 447
+    },
+    {
+        "hp": 70,
+        "attack": 110,
+        "defense": 70,
+        "special-attack": 115,
+        "special-defense": 70,
+        "speed": 90,
+        "id": 448
+    },
+    {
+        "hp": 68,
+        "attack": 72,
+        "defense": 78,
+        "special-attack": 38,
+        "special-defense": 42,
+        "speed": 32,
+        "id": 449
+    },
+    {
+        "hp": 108,
+        "attack": 112,
+        "defense": 118,
+        "special-attack": 68,
+        "special-defense": 72,
+        "speed": 47,
+        "id": 450
+    },
+    {
+        "hp": 40,
+        "attack": 50,
+        "defense": 90,
+        "special-attack": 30,
+        "special-defense": 55,
+        "speed": 65,
+        "id": 451
+    },
+    {
+        "hp": 70,
+        "attack": 90,
+        "defense": 110,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 95,
+        "id": 452
+    },
+    {
+        "hp": 48,
+        "attack": 61,
+        "defense": 40,
+        "special-attack": 61,
+        "special-defense": 40,
+        "speed": 50,
+        "id": 453
+    },
+    {
+        "hp": 83,
+        "attack": 106,
+        "defense": 65,
+        "special-attack": 86,
+        "special-defense": 65,
+        "speed": 85,
+        "id": 454
+    },
+    {
+        "hp": 74,
+        "attack": 100,
+        "defense": 72,
+        "special-attack": 90,
+        "special-defense": 72,
+        "speed": 46,
+        "id": 455
+    },
+    {
+        "hp": 49,
+        "attack": 49,
+        "defense": 56,
+        "special-attack": 49,
+        "special-defense": 61,
+        "speed": 66,
+        "id": 456
+    },
+    {
+        "hp": 69,
+        "attack": 69,
+        "defense": 76,
+        "special-attack": 69,
+        "special-defense": 86,
+        "speed": 91,
+        "id": 457
+    },
+    {
+        "hp": 45,
+        "attack": 20,
+        "defense": 50,
+        "special-attack": 60,
+        "special-defense": 120,
+        "speed": 50,
+        "id": 458
+    },
+    {
+        "hp": 60,
+        "attack": 62,
+        "defense": 50,
+        "special-attack": 62,
+        "special-defense": 60,
+        "speed": 40,
+        "id": 459
+    },
+    {
+        "hp": 90,
+        "attack": 92,
+        "defense": 75,
+        "special-attack": 92,
+        "special-defense": 85,
+        "speed": 60,
+        "id": 460
+    },
+    {
+        "hp": 70,
+        "attack": 120,
+        "defense": 65,
+        "special-attack": 45,
+        "special-defense": 85,
+        "speed": 125,
+        "id": 461
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 115,
+        "special-attack": 130,
+        "special-defense": 90,
+        "speed": 60,
+        "id": 462
+    },
+    {
+        "hp": 110,
+        "attack": 85,
+        "defense": 95,
+        "special-attack": 80,
+        "special-defense": 95,
+        "speed": 50,
+        "id": 463
+    },
+    {
+        "hp": 115,
+        "attack": 140,
+        "defense": 130,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 40,
+        "id": 464
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 125,
+        "special-attack": 110,
+        "special-defense": 50,
+        "speed": 50,
+        "id": 465
+    },
+    {
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95,
+        "id": 466
+    },
+    {
+        "hp": 75,
+        "attack": 95,
+        "defense": 67,
+        "special-attack": 125,
+        "special-defense": 95,
+        "speed": 83,
+        "id": 467
+    },
+    {
+        "hp": 85,
+        "attack": 50,
+        "defense": 95,
+        "special-attack": 120,
+        "special-defense": 115,
+        "speed": 80,
+        "id": 468
+    },
+    {
+        "hp": 86,
+        "attack": 76,
+        "defense": 86,
+        "special-attack": 116,
+        "special-defense": 56,
+        "speed": 95,
+        "id": 469
+    },
+    {
+        "hp": 65,
+        "attack": 110,
+        "defense": 130,
+        "special-attack": 60,
+        "special-defense": 65,
+        "speed": 95,
+        "id": 470
+    },
+    {
+        "hp": 65,
+        "attack": 60,
+        "defense": 110,
+        "special-attack": 130,
+        "special-defense": 95,
+        "speed": 65,
+        "id": 471
+    },
+    {
+        "hp": 75,
+        "attack": 95,
+        "defense": 125,
+        "special-attack": 45,
+        "special-defense": 75,
+        "speed": 95,
+        "id": 472
+    },
+    {
+        "hp": 110,
+        "attack": 130,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 60,
+        "speed": 80,
+        "id": 473
+    },
+    {
+        "hp": 85,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 135,
+        "special-defense": 75,
+        "speed": 90,
+        "id": 474
+    },
+    {
+        "hp": 68,
+        "attack": 125,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 115,
+        "speed": 80,
+        "id": 475
+    },
+    {
+        "hp": 60,
+        "attack": 55,
+        "defense": 145,
+        "special-attack": 75,
+        "special-defense": 150,
+        "speed": 40,
+        "id": 476
+    },
+    {
+        "hp": 45,
+        "attack": 100,
+        "defense": 135,
+        "special-attack": 65,
+        "special-defense": 135,
+        "speed": 45,
+        "id": 477
+    },
+    {
+        "hp": 70,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 70,
+        "speed": 110,
+        "id": 478
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 77,
+        "special-attack": 95,
+        "special-defense": 77,
+        "speed": 91,
+        "id": 479
+    },
+    {
+        "hp": 75,
+        "attack": 75,
+        "defense": 130,
+        "special-attack": 75,
+        "special-defense": 130,
+        "speed": 95,
+        "id": 480
+    },
+    {
+        "hp": 80,
+        "attack": 105,
+        "defense": 105,
+        "special-attack": 105,
+        "special-defense": 105,
+        "speed": 80,
+        "id": 481
+    },
+    {
+        "hp": 75,
+        "attack": 125,
+        "defense": 70,
+        "special-attack": 125,
+        "special-defense": 70,
+        "speed": 115,
+        "id": 482
+    },
+    {
+        "hp": 100,
+        "attack": 120,
+        "defense": 120,
+        "special-attack": 150,
+        "special-defense": 100,
+        "speed": 90,
+        "id": 483
+    },
+    {
+        "hp": 90,
+        "attack": 120,
+        "defense": 100,
+        "special-attack": 150,
+        "special-defense": 120,
+        "speed": 100,
+        "id": 484
+    },
+    {
+        "hp": 91,
+        "attack": 90,
+        "defense": 106,
+        "special-attack": 130,
+        "special-defense": 106,
+        "speed": 77,
+        "id": 485
+    },
+    {
+        "hp": 110,
+        "attack": 160,
+        "defense": 110,
+        "special-attack": 80,
+        "special-defense": 110,
+        "speed": 100,
+        "id": 486
+    },
+    {
+        "hp": 150,
+        "attack": 100,
+        "defense": 120,
+        "special-attack": 100,
+        "special-defense": 120,
+        "speed": 90,
+        "id": 487
+    },
+    {
+        "hp": 120,
+        "attack": 70,
+        "defense": 120,
+        "special-attack": 75,
+        "special-defense": 130,
+        "speed": 85,
+        "id": 488
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 80,
+        "id": 489
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 490
+    },
+    {
+        "hp": 70,
+        "attack": 90,
+        "defense": 90,
+        "special-attack": 135,
+        "special-defense": 90,
+        "speed": 125,
+        "id": 491
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 492
+    },
+    {
+        "hp": 120,
+        "attack": 120,
+        "defense": 120,
+        "special-attack": 120,
+        "special-defense": 120,
+        "speed": 120,
+        "id": 493
+    },
+    {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 494
+    },
+    {
+        "hp": 45,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 63,
+        "id": 495
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 75,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 83,
+        "id": 496
+    },
+    {
+        "hp": 75,
+        "attack": 75,
+        "defense": 95,
+        "special-attack": 75,
+        "special-defense": 95,
+        "speed": 113,
+        "id": 497
+    },
+    {
+        "hp": 65,
+        "attack": 63,
+        "defense": 45,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 45,
+        "id": 498
+    },
+    {
+        "hp": 90,
+        "attack": 93,
+        "defense": 55,
+        "special-attack": 70,
+        "special-defense": 55,
+        "speed": 55,
+        "id": 499
+    },
+    {
+        "hp": 110,
+        "attack": 123,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 65,
+        "speed": 65,
+        "id": 500
+    },
+    {
+        "hp": 55,
+        "attack": 55,
+        "defense": 45,
+        "special-attack": 63,
+        "special-defense": 45,
+        "speed": 45,
+        "id": 501
+    },
+    {
+        "hp": 75,
+        "attack": 75,
+        "defense": 60,
+        "special-attack": 83,
+        "special-defense": 60,
+        "speed": 60,
+        "id": 502
+    },
+    {
+        "hp": 95,
+        "attack": 100,
+        "defense": 85,
+        "special-attack": 108,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 503
+    },
+    {
+        "hp": 45,
+        "attack": 55,
+        "defense": 39,
+        "special-attack": 35,
+        "special-defense": 39,
+        "speed": 42,
+        "id": 504
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 69,
+        "special-attack": 60,
+        "special-defense": 69,
+        "speed": 77,
+        "id": 505
+    },
+    {
+        "hp": 45,
+        "attack": 60,
+        "defense": 45,
+        "special-attack": 25,
+        "special-defense": 45,
+        "speed": 55,
+        "id": 506
+    },
+    {
+        "hp": 65,
+        "attack": 80,
+        "defense": 65,
+        "special-attack": 35,
+        "special-defense": 65,
+        "speed": 60,
+        "id": 507
+    },
+    {
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80,
+        "id": 508
+    },
+    {
+        "hp": 41,
+        "attack": 50,
+        "defense": 37,
+        "special-attack": 50,
+        "special-defense": 37,
+        "speed": 66,
+        "id": 509
+    },
+    {
+        "hp": 64,
+        "attack": 88,
+        "defense": 50,
+        "special-attack": 88,
+        "special-defense": 50,
+        "speed": 106,
+        "id": 510
+    },
+    {
+        "hp": 50,
+        "attack": 53,
+        "defense": 48,
+        "special-attack": 53,
+        "special-defense": 48,
+        "speed": 64,
+        "id": 511
+    },
+    {
+        "hp": 75,
+        "attack": 98,
+        "defense": 63,
+        "special-attack": 98,
+        "special-defense": 63,
+        "speed": 101,
+        "id": 512
+    },
+    {
+        "hp": 50,
+        "attack": 53,
+        "defense": 48,
+        "special-attack": 53,
+        "special-defense": 48,
+        "speed": 64,
+        "id": 513
+    },
+    {
+        "hp": 75,
+        "attack": 98,
+        "defense": 63,
+        "special-attack": 98,
+        "special-defense": 63,
+        "speed": 101,
+        "id": 514
+    },
+    {
+        "hp": 50,
+        "attack": 53,
+        "defense": 48,
+        "special-attack": 53,
+        "special-defense": 48,
+        "speed": 64,
+        "id": 515
+    },
+    {
+        "hp": 75,
+        "attack": 98,
+        "defense": 63,
+        "special-attack": 98,
+        "special-defense": 63,
+        "speed": 101,
+        "id": 516
+    },
+    {
+        "hp": 76,
+        "attack": 25,
+        "defense": 45,
+        "special-attack": 67,
+        "special-defense": 55,
+        "speed": 24,
+        "id": 517
+    },
+    {
+        "hp": 116,
+        "attack": 55,
+        "defense": 85,
+        "special-attack": 107,
+        "special-defense": 95,
+        "speed": 29,
+        "id": 518
+    },
+    {
+        "hp": 50,
+        "attack": 55,
+        "defense": 50,
+        "special-attack": 36,
+        "special-defense": 30,
+        "speed": 43,
+        "id": 519
+    },
+    {
+        "hp": 62,
+        "attack": 77,
+        "defense": 62,
+        "special-attack": 50,
+        "special-defense": 42,
+        "speed": 65,
+        "id": 520
+    },
+    {
+        "hp": 80,
+        "attack": 115,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 93,
+        "id": 521
+    },
+    {
+        "hp": 45,
+        "attack": 60,
+        "defense": 32,
+        "special-attack": 50,
+        "special-defense": 32,
+        "speed": 76,
+        "id": 522
+    },
+    {
+        "hp": 75,
+        "attack": 100,
+        "defense": 63,
+        "special-attack": 80,
+        "special-defense": 63,
+        "speed": 116,
+        "id": 523
+    },
+    {
+        "hp": 55,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15,
+        "id": 524
+    },
+    {
+        "hp": 70,
+        "attack": 105,
+        "defense": 105,
+        "special-attack": 50,
+        "special-defense": 40,
+        "speed": 20,
+        "id": 525
+    },
+    {
+        "hp": 85,
+        "attack": 135,
+        "defense": 130,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 25,
+        "id": 526
+    },
+    {
+        "hp": 65,
+        "attack": 45,
+        "defense": 43,
+        "special-attack": 55,
+        "special-defense": 43,
+        "speed": 72,
+        "id": 527
+    },
+    {
+        "hp": 67,
+        "attack": 57,
+        "defense": 55,
+        "special-attack": 77,
+        "special-defense": 55,
+        "speed": 114,
+        "id": 528
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 40,
+        "special-attack": 30,
+        "special-defense": 45,
+        "speed": 68,
+        "id": 529
+    },
+    {
+        "hp": 110,
+        "attack": 135,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 65,
+        "speed": 88,
+        "id": 530
+    },
+    {
+        "hp": 103,
+        "attack": 60,
+        "defense": 86,
+        "special-attack": 60,
+        "special-defense": 86,
+        "speed": 50,
+        "id": 531
+    },
+    {
+        "hp": 75,
+        "attack": 80,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 35,
+        "id": 532
+    },
+    {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 40,
+        "id": 533
+    },
+    {
+        "hp": 105,
+        "attack": 140,
+        "defense": 95,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 534
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 40,
+        "speed": 64,
+        "id": 535
+    },
+    {
+        "hp": 75,
+        "attack": 65,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 69,
+        "id": 536
+    },
+    {
+        "hp": 105,
+        "attack": 95,
+        "defense": 75,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 74,
+        "id": 537
+    },
+    {
+        "hp": 120,
+        "attack": 100,
+        "defense": 85,
+        "special-attack": 30,
+        "special-defense": 85,
+        "speed": 45,
+        "id": 538
+    },
+    {
+        "hp": 75,
+        "attack": 125,
+        "defense": 75,
+        "special-attack": 30,
+        "special-defense": 75,
+        "speed": 85,
+        "id": 539
+    },
+    {
+        "hp": 45,
+        "attack": 53,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 60,
+        "speed": 42,
+        "id": 540
+    },
+    {
+        "hp": 55,
+        "attack": 63,
+        "defense": 90,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 42,
+        "id": 541
+    },
+    {
+        "hp": 75,
+        "attack": 103,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 92,
+        "id": 542
+    },
+    {
+        "hp": 30,
+        "attack": 45,
+        "defense": 59,
+        "special-attack": 30,
+        "special-defense": 39,
+        "speed": 57,
+        "id": 543
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 99,
+        "special-attack": 40,
+        "special-defense": 79,
+        "speed": 47,
+        "id": 544
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 89,
+        "special-attack": 55,
+        "special-defense": 69,
+        "speed": 112,
+        "id": 545
+    },
+    {
+        "hp": 40,
+        "attack": 27,
+        "defense": 60,
+        "special-attack": 37,
+        "special-defense": 50,
+        "speed": 66,
+        "id": 546
+    },
+    {
+        "hp": 60,
+        "attack": 67,
+        "defense": 85,
+        "special-attack": 77,
+        "special-defense": 75,
+        "speed": 116,
+        "id": 547
+    },
+    {
+        "hp": 45,
+        "attack": 35,
+        "defense": 50,
+        "special-attack": 70,
+        "special-defense": 50,
+        "speed": 30,
+        "id": 548
+    },
+    {
+        "hp": 70,
+        "attack": 60,
+        "defense": 75,
+        "special-attack": 110,
+        "special-defense": 75,
+        "speed": 90,
+        "id": 549
+    },
+    {
+        "hp": 70,
+        "attack": 92,
+        "defense": 65,
+        "special-attack": 80,
+        "special-defense": 55,
+        "speed": 98,
+        "id": 550
+    },
+    {
+        "hp": 50,
+        "attack": 72,
+        "defense": 35,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 65,
+        "id": 551
+    },
+    {
+        "hp": 60,
+        "attack": 82,
+        "defense": 45,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 74,
+        "id": 552
+    },
+    {
+        "hp": 95,
+        "attack": 117,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 92,
+        "id": 553
+    },
+    {
+        "hp": 70,
+        "attack": 90,
+        "defense": 45,
+        "special-attack": 15,
+        "special-defense": 45,
+        "speed": 50,
+        "id": 554
+    },
+    {
+        "hp": 105,
+        "attack": 140,
+        "defense": 55,
+        "special-attack": 30,
+        "special-defense": 55,
+        "speed": 95,
+        "id": 555
+    },
+    {
+        "hp": 75,
+        "attack": 86,
+        "defense": 67,
+        "special-attack": 106,
+        "special-defense": 67,
+        "speed": 60,
+        "id": 556
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 85,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 55,
+        "id": 557
+    },
+    {
+        "hp": 70,
+        "attack": 105,
+        "defense": 125,
+        "special-attack": 65,
+        "special-defense": 75,
+        "speed": 45,
+        "id": 558
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 70,
+        "special-attack": 35,
+        "special-defense": 70,
+        "speed": 48,
+        "id": 559
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 115,
+        "speed": 58,
+        "id": 560
+    },
+    {
+        "hp": 72,
+        "attack": 58,
+        "defense": 80,
+        "special-attack": 103,
+        "special-defense": 80,
+        "speed": 97,
+        "id": 561
+    },
+    {
+        "hp": 38,
+        "attack": 30,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 30,
+        "id": 562
+    },
+    {
+        "hp": 58,
+        "attack": 50,
+        "defense": 145,
+        "special-attack": 95,
+        "special-defense": 105,
+        "speed": 30,
+        "id": 563
+    },
+    {
+        "hp": 54,
+        "attack": 78,
+        "defense": 103,
+        "special-attack": 53,
+        "special-defense": 45,
+        "speed": 22,
+        "id": 564
+    },
+    {
+        "hp": 74,
+        "attack": 108,
+        "defense": 133,
+        "special-attack": 83,
+        "special-defense": 65,
+        "speed": 32,
+        "id": 565
+    },
+    {
+        "hp": 55,
+        "attack": 112,
+        "defense": 45,
+        "special-attack": 74,
+        "special-defense": 45,
+        "speed": 70,
+        "id": 566
+    },
+    {
+        "hp": 75,
+        "attack": 140,
+        "defense": 65,
+        "special-attack": 112,
+        "special-defense": 65,
+        "speed": 110,
+        "id": 567
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 62,
+        "special-attack": 40,
+        "special-defense": 62,
+        "speed": 65,
+        "id": 568
+    },
+    {
+        "hp": 80,
+        "attack": 95,
+        "defense": 82,
+        "special-attack": 60,
+        "special-defense": 82,
+        "speed": 75,
+        "id": 569
+    },
+    {
+        "hp": 40,
+        "attack": 65,
+        "defense": 40,
+        "special-attack": 80,
+        "special-defense": 40,
+        "speed": 65,
+        "id": 570
+    },
+    {
+        "hp": 60,
+        "attack": 105,
+        "defense": 60,
+        "special-attack": 120,
+        "special-defense": 60,
+        "speed": 105,
+        "id": 571
+    },
+    {
+        "hp": 55,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 75,
+        "id": 572
+    },
+    {
+        "hp": 75,
+        "attack": 95,
+        "defense": 60,
+        "special-attack": 65,
+        "special-defense": 60,
+        "speed": 115,
+        "id": 573
+    },
+    {
+        "hp": 45,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 574
+    },
+    {
+        "hp": 60,
+        "attack": 45,
+        "defense": 70,
+        "special-attack": 75,
+        "special-defense": 85,
+        "speed": 55,
+        "id": 575
+    },
+    {
+        "hp": 70,
+        "attack": 55,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 110,
+        "speed": 65,
+        "id": 576
+    },
+    {
+        "hp": 45,
+        "attack": 30,
+        "defense": 40,
+        "special-attack": 105,
+        "special-defense": 50,
+        "speed": 20,
+        "id": 577
+    },
+    {
+        "hp": 65,
+        "attack": 40,
+        "defense": 50,
+        "special-attack": 125,
+        "special-defense": 60,
+        "speed": 30,
+        "id": 578
+    },
+    {
+        "hp": 110,
+        "attack": 65,
+        "defense": 75,
+        "special-attack": 125,
+        "special-defense": 85,
+        "speed": 30,
+        "id": 579
+    },
+    {
+        "hp": 62,
+        "attack": 44,
+        "defense": 50,
+        "special-attack": 44,
+        "special-defense": 50,
+        "speed": 55,
+        "id": 580
+    },
+    {
+        "hp": 75,
+        "attack": 87,
+        "defense": 63,
+        "special-attack": 87,
+        "special-defense": 63,
+        "speed": 98,
+        "id": 581
+    },
+    {
+        "hp": 36,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 65,
+        "special-defense": 60,
+        "speed": 44,
+        "id": 582
+    },
+    {
+        "hp": 51,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 80,
+        "special-defense": 75,
+        "speed": 59,
+        "id": 583
+    },
+    {
+        "hp": 71,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 110,
+        "special-defense": 95,
+        "speed": 79,
+        "id": 584
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 75,
+        "id": 585
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 95,
+        "id": 586
+    },
+    {
+        "hp": 55,
+        "attack": 75,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 60,
+        "speed": 103,
+        "id": 587
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 45,
+        "special-attack": 40,
+        "special-defense": 45,
+        "speed": 60,
+        "id": 588
+    },
+    {
+        "hp": 70,
+        "attack": 135,
+        "defense": 105,
+        "special-attack": 60,
+        "special-defense": 105,
+        "speed": 20,
+        "id": 589
+    },
+    {
+        "hp": 69,
+        "attack": 55,
+        "defense": 45,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 15,
+        "id": 590
+    },
+    {
+        "hp": 114,
+        "attack": 85,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 80,
+        "speed": 30,
+        "id": 591
+    },
+    {
+        "hp": 55,
+        "attack": 40,
+        "defense": 50,
+        "special-attack": 65,
+        "special-defense": 85,
+        "speed": 40,
+        "id": 592
+    },
+    {
+        "hp": 100,
+        "attack": 60,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 105,
+        "speed": 60,
+        "id": 593
+    },
+    {
+        "hp": 165,
+        "attack": 75,
+        "defense": 80,
+        "special-attack": 40,
+        "special-defense": 45,
+        "speed": 65,
+        "id": 594
+    },
+    {
+        "hp": 50,
+        "attack": 47,
+        "defense": 50,
+        "special-attack": 57,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 595
+    },
+    {
+        "hp": 70,
+        "attack": 77,
+        "defense": 60,
+        "special-attack": 97,
+        "special-defense": 60,
+        "speed": 108,
+        "id": 596
+    },
+    {
+        "hp": 44,
+        "attack": 50,
+        "defense": 91,
+        "special-attack": 24,
+        "special-defense": 86,
+        "speed": 10,
+        "id": 597
+    },
+    {
+        "hp": 74,
+        "attack": 94,
+        "defense": 131,
+        "special-attack": 54,
+        "special-defense": 116,
+        "speed": 20,
+        "id": 598
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 70,
+        "special-attack": 45,
+        "special-defense": 60,
+        "speed": 30,
+        "id": 599
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 95,
+        "special-attack": 70,
+        "special-defense": 85,
+        "speed": 50,
+        "id": 600
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 115,
+        "special-attack": 70,
+        "special-defense": 85,
+        "speed": 90,
+        "id": 601
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 45,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 602
+    },
+    {
+        "hp": 65,
+        "attack": 85,
+        "defense": 70,
+        "special-attack": 75,
+        "special-defense": 70,
+        "speed": 40,
+        "id": 603
+    },
+    {
+        "hp": 85,
+        "attack": 115,
+        "defense": 80,
+        "special-attack": 105,
+        "special-defense": 80,
+        "speed": 50,
+        "id": 604
+    },
+    {
+        "hp": 55,
+        "attack": 55,
+        "defense": 55,
+        "special-attack": 85,
+        "special-defense": 55,
+        "speed": 30,
+        "id": 605
+    },
+    {
+        "hp": 75,
+        "attack": 75,
+        "defense": 75,
+        "special-attack": 125,
+        "special-defense": 95,
+        "speed": 40,
+        "id": 606
+    },
+    {
+        "hp": 50,
+        "attack": 30,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 55,
+        "speed": 20,
+        "id": 607
+    },
+    {
+        "hp": 60,
+        "attack": 40,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 60,
+        "speed": 55,
+        "id": 608
+    },
+    {
+        "hp": 60,
+        "attack": 55,
+        "defense": 90,
+        "special-attack": 145,
+        "special-defense": 90,
+        "speed": 80,
+        "id": 609
+    },
+    {
+        "hp": 46,
+        "attack": 87,
+        "defense": 60,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 57,
+        "id": 610
+    },
+    {
+        "hp": 66,
+        "attack": 117,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 67,
+        "id": 611
+    },
+    {
+        "hp": 76,
+        "attack": 147,
+        "defense": 90,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 97,
+        "id": 612
+    },
+    {
+        "hp": 55,
+        "attack": 70,
+        "defense": 40,
+        "special-attack": 60,
+        "special-defense": 40,
+        "speed": 40,
+        "id": 613
+    },
+    {
+        "hp": 95,
+        "attack": 130,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 50,
+        "id": 614
+    },
+    {
+        "hp": 80,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 95,
+        "special-defense": 135,
+        "speed": 105,
+        "id": 615
+    },
+    {
+        "hp": 50,
+        "attack": 40,
+        "defense": 85,
+        "special-attack": 40,
+        "special-defense": 65,
+        "speed": 25,
+        "id": 616
+    },
+    {
+        "hp": 80,
+        "attack": 70,
+        "defense": 40,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 145,
+        "id": 617
+    },
+    {
+        "hp": 109,
+        "attack": 66,
+        "defense": 84,
+        "special-attack": 81,
+        "special-defense": 99,
+        "speed": 32,
+        "id": 618
+    },
+    {
+        "hp": 45,
+        "attack": 85,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 50,
+        "speed": 65,
+        "id": 619
+    },
+    {
+        "hp": 65,
+        "attack": 125,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 60,
+        "speed": 105,
+        "id": 620
+    },
+    {
+        "hp": 77,
+        "attack": 120,
+        "defense": 90,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 48,
+        "id": 621
+    },
+    {
+        "hp": 59,
+        "attack": 74,
+        "defense": 50,
+        "special-attack": 35,
+        "special-defense": 50,
+        "speed": 35,
+        "id": 622
+    },
+    {
+        "hp": 89,
+        "attack": 124,
+        "defense": 80,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 55,
+        "id": 623
+    },
+    {
+        "hp": 45,
+        "attack": 85,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 624
+    },
+    {
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 625
+    },
+    {
+        "hp": 95,
+        "attack": 110,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 95,
+        "speed": 55,
+        "id": 626
+    },
+    {
+        "hp": 70,
+        "attack": 83,
+        "defense": 50,
+        "special-attack": 37,
+        "special-defense": 50,
+        "speed": 60,
+        "id": 627
+    },
+    {
+        "hp": 100,
+        "attack": 123,
+        "defense": 75,
+        "special-attack": 57,
+        "special-defense": 75,
+        "speed": 80,
+        "id": 628
+    },
+    {
+        "hp": 70,
+        "attack": 55,
+        "defense": 75,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 60,
+        "id": 629
+    },
+    {
+        "hp": 110,
+        "attack": 65,
+        "defense": 105,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 80,
+        "id": 630
+    },
+    {
+        "hp": 85,
+        "attack": 97,
+        "defense": 66,
+        "special-attack": 105,
+        "special-defense": 66,
+        "speed": 65,
+        "id": 631
+    },
+    {
+        "hp": 58,
+        "attack": 109,
+        "defense": 112,
+        "special-attack": 48,
+        "special-defense": 48,
+        "speed": 109,
+        "id": 632
+    },
+    {
+        "hp": 52,
+        "attack": 65,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 50,
+        "speed": 38,
+        "id": 633
+    },
+    {
+        "hp": 72,
+        "attack": 85,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 58,
+        "id": 634
+    },
+    {
+        "hp": 92,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 125,
+        "special-defense": 90,
+        "speed": 98,
+        "id": 635
+    },
+    {
+        "hp": 55,
+        "attack": 85,
+        "defense": 55,
+        "special-attack": 50,
+        "special-defense": 55,
+        "speed": 60,
+        "id": 636
+    },
+    {
+        "hp": 85,
+        "attack": 60,
+        "defense": 65,
+        "special-attack": 135,
+        "special-defense": 105,
+        "speed": 100,
+        "id": 637
+    },
+    {
+        "hp": 91,
+        "attack": 90,
+        "defense": 129,
+        "special-attack": 90,
+        "special-defense": 72,
+        "speed": 108,
+        "id": 638
+    },
+    {
+        "hp": 91,
+        "attack": 129,
+        "defense": 90,
+        "special-attack": 72,
+        "special-defense": 90,
+        "speed": 108,
+        "id": 639
+    },
+    {
+        "hp": 91,
+        "attack": 90,
+        "defense": 72,
+        "special-attack": 90,
+        "special-defense": 129,
+        "speed": 108,
+        "id": 640
+    },
+    {
+        "hp": 79,
+        "attack": 115,
+        "defense": 70,
+        "special-attack": 125,
+        "special-defense": 80,
+        "speed": 111,
+        "id": 641
+    },
+    {
+        "hp": 79,
+        "attack": 115,
+        "defense": 70,
+        "special-attack": 125,
+        "special-defense": 80,
+        "speed": 111,
+        "id": 642
+    },
+    {
+        "hp": 100,
+        "attack": 120,
+        "defense": 100,
+        "special-attack": 150,
+        "special-defense": 120,
+        "speed": 90,
+        "id": 643
+    },
+    {
+        "hp": 100,
+        "attack": 150,
+        "defense": 120,
+        "special-attack": 120,
+        "special-defense": 100,
+        "speed": 90,
+        "id": 644
+    },
+    {
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101,
+        "id": 645
+    },
+    {
+        "hp": 125,
+        "attack": 130,
+        "defense": 90,
+        "special-attack": 130,
+        "special-defense": 90,
+        "speed": 95,
+        "id": 646
+    },
+    {
+        "hp": 91,
+        "attack": 72,
+        "defense": 90,
+        "special-attack": 129,
+        "special-defense": 90,
+        "speed": 108,
+        "id": 647
+    },
+    {
+        "hp": 100,
+        "attack": 77,
+        "defense": 77,
+        "special-attack": 128,
+        "special-defense": 128,
+        "speed": 90,
+        "id": 648
+    },
+    {
+        "hp": 71,
+        "attack": 120,
+        "defense": 95,
+        "special-attack": 120,
+        "special-defense": 95,
+        "speed": 99,
+        "id": 649
+    },
+    {
+        "hp": 56,
+        "attack": 61,
+        "defense": 65,
+        "special-attack": 48,
+        "special-defense": 45,
+        "speed": 38,
+        "id": 650
+    },
+    {
+        "hp": 61,
+        "attack": 78,
+        "defense": 95,
+        "special-attack": 56,
+        "special-defense": 58,
+        "speed": 57,
+        "id": 651
+    },
+    {
+        "hp": 88,
+        "attack": 107,
+        "defense": 122,
+        "special-attack": 74,
+        "special-defense": 75,
+        "speed": 64,
+        "id": 652
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 62,
+        "special-defense": 60,
+        "speed": 60,
+        "id": 653
+    },
+    {
+        "hp": 59,
+        "attack": 59,
+        "defense": 58,
+        "special-attack": 90,
+        "special-defense": 70,
+        "speed": 73,
+        "id": 654
+    },
+    {
+        "hp": 75,
+        "attack": 69,
+        "defense": 72,
+        "special-attack": 114,
+        "special-defense": 100,
+        "speed": 104,
+        "id": 655
+    },
+    {
+        "hp": 41,
+        "attack": 56,
+        "defense": 40,
+        "special-attack": 62,
+        "special-defense": 44,
+        "speed": 71,
+        "id": 656
+    },
+    {
+        "hp": 54,
+        "attack": 63,
+        "defense": 52,
+        "special-attack": 83,
+        "special-defense": 56,
+        "speed": 97,
+        "id": 657
+    },
+    {
+        "hp": 72,
+        "attack": 95,
+        "defense": 67,
+        "special-attack": 103,
+        "special-defense": 71,
+        "speed": 122,
+        "id": 658
+    },
+    {
+        "hp": 38,
+        "attack": 36,
+        "defense": 38,
+        "special-attack": 32,
+        "special-defense": 36,
+        "speed": 57,
+        "id": 659
+    },
+    {
+        "hp": 85,
+        "attack": 56,
+        "defense": 77,
+        "special-attack": 50,
+        "special-defense": 77,
+        "speed": 78,
+        "id": 660
+    },
+    {
+        "hp": 45,
+        "attack": 50,
+        "defense": 43,
+        "special-attack": 40,
+        "special-defense": 38,
+        "speed": 62,
+        "id": 661
+    },
+    {
+        "hp": 62,
+        "attack": 73,
+        "defense": 55,
+        "special-attack": 56,
+        "special-defense": 52,
+        "speed": 84,
+        "id": 662
+    },
+    {
+        "hp": 78,
+        "attack": 81,
+        "defense": 71,
+        "special-attack": 74,
+        "special-defense": 69,
+        "speed": 126,
+        "id": 663
+    },
+    {
+        "hp": 38,
+        "attack": 35,
+        "defense": 40,
+        "special-attack": 27,
+        "special-defense": 25,
+        "speed": 35,
+        "id": 664
+    },
+    {
+        "hp": 45,
+        "attack": 22,
+        "defense": 60,
+        "special-attack": 27,
+        "special-defense": 30,
+        "speed": 29,
+        "id": 665
+    },
+    {
+        "hp": 80,
+        "attack": 52,
+        "defense": 50,
+        "special-attack": 90,
+        "special-defense": 50,
+        "speed": 89,
+        "id": 666
+    },
+    {
+        "hp": 62,
+        "attack": 50,
+        "defense": 58,
+        "special-attack": 73,
+        "special-defense": 54,
+        "speed": 72,
+        "id": 667
+    },
+    {
+        "hp": 86,
+        "attack": 68,
+        "defense": 72,
+        "special-attack": 109,
+        "special-defense": 66,
+        "speed": 106,
+        "id": 668
+    },
+    {
+        "hp": 44,
+        "attack": 38,
+        "defense": 39,
+        "special-attack": 61,
+        "special-defense": 79,
+        "speed": 42,
+        "id": 669
+    },
+    {
+        "hp": 54,
+        "attack": 45,
+        "defense": 47,
+        "special-attack": 75,
+        "special-defense": 98,
+        "speed": 52,
+        "id": 670
+    },
+    {
+        "hp": 78,
+        "attack": 65,
+        "defense": 68,
+        "special-attack": 112,
+        "special-defense": 154,
+        "speed": 75,
+        "id": 671
+    },
+    {
+        "hp": 66,
+        "attack": 65,
+        "defense": 48,
+        "special-attack": 62,
+        "special-defense": 57,
+        "speed": 52,
+        "id": 672
+    },
+    {
+        "hp": 123,
+        "attack": 100,
+        "defense": 62,
+        "special-attack": 97,
+        "special-defense": 81,
+        "speed": 68,
+        "id": 673
+    },
+    {
+        "hp": 67,
+        "attack": 82,
+        "defense": 62,
+        "special-attack": 46,
+        "special-defense": 48,
+        "speed": 43,
+        "id": 674
+    },
+    {
+        "hp": 95,
+        "attack": 124,
+        "defense": 78,
+        "special-attack": 69,
+        "special-defense": 71,
+        "speed": 58,
+        "id": 675
+    },
+    {
+        "hp": 75,
+        "attack": 80,
+        "defense": 60,
+        "special-attack": 65,
+        "special-defense": 90,
+        "speed": 102,
+        "id": 676
+    },
+    {
+        "hp": 62,
+        "attack": 48,
+        "defense": 54,
+        "special-attack": 63,
+        "special-defense": 60,
+        "speed": 68,
+        "id": 677
+    },
+    {
+        "hp": 74,
+        "attack": 48,
+        "defense": 76,
+        "special-attack": 83,
+        "special-defense": 81,
+        "speed": 104,
+        "id": 678
+    },
+    {
+        "hp": 45,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 35,
+        "special-defense": 37,
+        "speed": 28,
+        "id": 679
+    },
+    {
+        "hp": 59,
+        "attack": 110,
+        "defense": 150,
+        "special-attack": 45,
+        "special-defense": 49,
+        "speed": 35,
+        "id": 680
+    },
+    {
+        "hp": 60,
+        "attack": 50,
+        "defense": 150,
+        "special-attack": 50,
+        "special-defense": 150,
+        "speed": 60,
+        "id": 681
+    },
+    {
+        "hp": 78,
+        "attack": 52,
+        "defense": 60,
+        "special-attack": 63,
+        "special-defense": 65,
+        "speed": 23,
+        "id": 682
+    },
+    {
+        "hp": 101,
+        "attack": 72,
+        "defense": 72,
+        "special-attack": 99,
+        "special-defense": 89,
+        "speed": 29,
+        "id": 683
+    },
+    {
+        "hp": 62,
+        "attack": 48,
+        "defense": 66,
+        "special-attack": 59,
+        "special-defense": 57,
+        "speed": 49,
+        "id": 684
+    },
+    {
+        "hp": 82,
+        "attack": 80,
+        "defense": 86,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 72,
+        "id": 685
+    },
+    {
+        "hp": 53,
+        "attack": 54,
+        "defense": 53,
+        "special-attack": 37,
+        "special-defense": 46,
+        "speed": 45,
+        "id": 686
+    },
+    {
+        "hp": 86,
+        "attack": 92,
+        "defense": 88,
+        "special-attack": 68,
+        "special-defense": 75,
+        "speed": 73,
+        "id": 687
+    },
+    {
+        "hp": 42,
+        "attack": 52,
+        "defense": 67,
+        "special-attack": 39,
+        "special-defense": 56,
+        "speed": 50,
+        "id": 688
+    },
+    {
+        "hp": 72,
+        "attack": 105,
+        "defense": 115,
+        "special-attack": 54,
+        "special-defense": 86,
+        "speed": 68,
+        "id": 689
+    },
+    {
+        "hp": 50,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 30,
+        "id": 690
+    },
+    {
+        "hp": 65,
+        "attack": 75,
+        "defense": 90,
+        "special-attack": 97,
+        "special-defense": 123,
+        "speed": 44,
+        "id": 691
+    },
+    {
+        "hp": 50,
+        "attack": 53,
+        "defense": 62,
+        "special-attack": 58,
+        "special-defense": 63,
+        "speed": 44,
+        "id": 692
+    },
+    {
+        "hp": 71,
+        "attack": 73,
+        "defense": 88,
+        "special-attack": 120,
+        "special-defense": 89,
+        "speed": 59,
+        "id": 693
+    },
+    {
+        "hp": 44,
+        "attack": 38,
+        "defense": 33,
+        "special-attack": 61,
+        "special-defense": 43,
+        "speed": 70,
+        "id": 694
+    },
+    {
+        "hp": 62,
+        "attack": 55,
+        "defense": 52,
+        "special-attack": 109,
+        "special-defense": 94,
+        "speed": 109,
+        "id": 695
+    },
+    {
+        "hp": 58,
+        "attack": 89,
+        "defense": 77,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 48,
+        "id": 696
+    },
+    {
+        "hp": 82,
+        "attack": 121,
+        "defense": 119,
+        "special-attack": 69,
+        "special-defense": 59,
+        "speed": 71,
+        "id": 697
+    },
+    {
+        "hp": 77,
+        "attack": 59,
+        "defense": 50,
+        "special-attack": 67,
+        "special-defense": 63,
+        "speed": 46,
+        "id": 698
+    },
+    {
+        "hp": 123,
+        "attack": 77,
+        "defense": 72,
+        "special-attack": 99,
+        "special-defense": 92,
+        "speed": 58,
+        "id": 699
+    },
+    {
+        "hp": 95,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 110,
+        "special-defense": 130,
+        "speed": 60,
+        "id": 700
+    },
+    {
+        "hp": 78,
+        "attack": 92,
+        "defense": 75,
+        "special-attack": 74,
+        "special-defense": 63,
+        "speed": 118,
+        "id": 701
+    },
+    {
+        "hp": 67,
+        "attack": 58,
+        "defense": 57,
+        "special-attack": 81,
+        "special-defense": 67,
+        "speed": 101,
+        "id": 702
+    },
+    {
+        "hp": 50,
+        "attack": 50,
+        "defense": 150,
+        "special-attack": 50,
+        "special-defense": 150,
+        "speed": 50,
+        "id": 703
+    },
+    {
+        "hp": 45,
+        "attack": 50,
+        "defense": 35,
+        "special-attack": 55,
+        "special-defense": 75,
+        "speed": 40,
+        "id": 704
+    },
+    {
+        "hp": 68,
+        "attack": 75,
+        "defense": 53,
+        "special-attack": 83,
+        "special-defense": 113,
+        "speed": 60,
+        "id": 705
+    },
+    {
+        "hp": 90,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 110,
+        "special-defense": 150,
+        "speed": 80,
+        "id": 706
+    },
+    {
+        "hp": 57,
+        "attack": 80,
+        "defense": 91,
+        "special-attack": 80,
+        "special-defense": 87,
+        "speed": 75,
+        "id": 707
+    },
+    {
+        "hp": 43,
+        "attack": 70,
+        "defense": 48,
+        "special-attack": 50,
+        "special-defense": 60,
+        "speed": 38,
+        "id": 708
+    },
+    {
+        "hp": 85,
+        "attack": 110,
+        "defense": 76,
+        "special-attack": 65,
+        "special-defense": 82,
+        "speed": 56,
+        "id": 709
+    },
+    {
+        "hp": 49,
+        "attack": 66,
+        "defense": 70,
+        "special-attack": 44,
+        "special-defense": 55,
+        "speed": 51,
+        "id": 710
+    },
+    {
+        "hp": 65,
+        "attack": 90,
+        "defense": 122,
+        "special-attack": 58,
+        "special-defense": 75,
+        "speed": 84,
+        "id": 711
+    },
+    {
+        "hp": 55,
+        "attack": 69,
+        "defense": 85,
+        "special-attack": 32,
+        "special-defense": 35,
+        "speed": 28,
+        "id": 712
+    },
+    {
+        "hp": 95,
+        "attack": 117,
+        "defense": 184,
+        "special-attack": 44,
+        "special-defense": 46,
+        "speed": 28,
+        "id": 713
+    },
+    {
+        "hp": 40,
+        "attack": 30,
+        "defense": 35,
+        "special-attack": 45,
+        "special-defense": 40,
+        "speed": 55,
+        "id": 714
+    },
+    {
+        "hp": 85,
+        "attack": 70,
+        "defense": 80,
+        "special-attack": 97,
+        "special-defense": 80,
+        "speed": 123,
+        "id": 715
+    },
+    {
+        "hp": 126,
+        "attack": 131,
+        "defense": 95,
+        "special-attack": 131,
+        "special-defense": 98,
+        "speed": 99,
+        "id": 716
+    },
+    {
+        "hp": 126,
+        "attack": 131,
+        "defense": 95,
+        "special-attack": 131,
+        "special-defense": 98,
+        "speed": 99,
+        "id": 717
+    },
+    {
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95,
+        "id": 718
+    },
+    {
+        "hp": 50,
+        "attack": 100,
+        "defense": 150,
+        "special-attack": 100,
+        "special-defense": 150,
+        "speed": 50,
+        "id": 719
+    },
+    {
+        "hp": 80,
+        "attack": 110,
+        "defense": 60,
+        "special-attack": 150,
+        "special-defense": 130,
+        "speed": 70,
+        "id": 720
+    },
+    {
+        "hp": 80,
+        "attack": 110,
+        "defense": 120,
+        "special-attack": 130,
+        "special-defense": 90,
+        "speed": 70,
+        "id": 721
+    },
+    {
+        "hp": 68,
+        "attack": 55,
+        "defense": 55,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 42,
+        "id": 722
+    },
+    {
+        "hp": 78,
+        "attack": 75,
+        "defense": 75,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 52,
+        "id": 723
+    },
+    {
+        "hp": 78,
+        "attack": 107,
+        "defense": 75,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 70,
+        "id": 724
+    },
+    {
+        "hp": 45,
+        "attack": 65,
+        "defense": 40,
+        "special-attack": 60,
+        "special-defense": 40,
+        "speed": 70,
+        "id": 725
+    },
+    {
+        "hp": 65,
+        "attack": 85,
+        "defense": 50,
+        "special-attack": 80,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 726
+    },
+    {
+        "hp": 95,
+        "attack": 115,
+        "defense": 90,
+        "special-attack": 80,
+        "special-defense": 90,
+        "speed": 60,
+        "id": 727
+    },
+    {
+        "hp": 50,
+        "attack": 54,
+        "defense": 54,
+        "special-attack": 66,
+        "special-defense": 56,
+        "speed": 40,
+        "id": 728
+    },
+    {
+        "hp": 60,
+        "attack": 69,
+        "defense": 69,
+        "special-attack": 91,
+        "special-defense": 81,
+        "speed": 50,
+        "id": 729
+    },
+    {
+        "hp": 80,
+        "attack": 74,
+        "defense": 74,
+        "special-attack": 126,
+        "special-defense": 116,
+        "speed": 60,
+        "id": 730
+    },
+    {
+        "hp": 35,
+        "attack": 75,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 65,
+        "id": 731
+    },
+    {
+        "hp": 55,
+        "attack": 85,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 75,
+        "id": 732
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 75,
+        "special-attack": 75,
+        "special-defense": 75,
+        "speed": 60,
+        "id": 733
+    },
+    {
+        "hp": 48,
+        "attack": 70,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 45,
+        "id": 734
+    },
+    {
+        "hp": 88,
+        "attack": 110,
+        "defense": 60,
+        "special-attack": 55,
+        "special-defense": 60,
+        "speed": 45,
+        "id": 735
+    },
+    {
+        "hp": 47,
+        "attack": 62,
+        "defense": 45,
+        "special-attack": 55,
+        "special-defense": 45,
+        "speed": 46,
+        "id": 736
+    },
+    {
+        "hp": 57,
+        "attack": 82,
+        "defense": 95,
+        "special-attack": 55,
+        "special-defense": 75,
+        "speed": 36,
+        "id": 737
+    },
+    {
+        "hp": 77,
+        "attack": 70,
+        "defense": 90,
+        "special-attack": 145,
+        "special-defense": 75,
+        "speed": 43,
+        "id": 738
+    },
+    {
+        "hp": 47,
+        "attack": 82,
+        "defense": 57,
+        "special-attack": 42,
+        "special-defense": 47,
+        "speed": 63,
+        "id": 739
+    },
+    {
+        "hp": 97,
+        "attack": 132,
+        "defense": 77,
+        "special-attack": 62,
+        "special-defense": 67,
+        "speed": 43,
+        "id": 740
+    },
+    {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93,
+        "id": 741
+    },
+    {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 55,
+        "special-defense": 40,
+        "speed": 84,
+        "id": 742
+    },
+    {
+        "hp": 60,
+        "attack": 55,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 70,
+        "speed": 124,
+        "id": 743
+    },
+    {
+        "hp": 45,
+        "attack": 65,
+        "defense": 40,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 744
+    },
+    {
+        "hp": 75,
+        "attack": 115,
+        "defense": 65,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 112,
+        "id": 745
+    },
+    {
+        "hp": 45,
+        "attack": 20,
+        "defense": 20,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 40,
+        "id": 746
+    },
+    {
+        "hp": 50,
+        "attack": 53,
+        "defense": 62,
+        "special-attack": 43,
+        "special-defense": 52,
+        "speed": 45,
+        "id": 747
+    },
+    {
+        "hp": 50,
+        "attack": 63,
+        "defense": 152,
+        "special-attack": 53,
+        "special-defense": 142,
+        "speed": 35,
+        "id": 748
+    },
+    {
+        "hp": 70,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 45,
+        "id": 749
+    },
+    {
+        "hp": 100,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 55,
+        "special-defense": 85,
+        "speed": 35,
+        "id": 750
+    },
+    {
+        "hp": 38,
+        "attack": 40,
+        "defense": 52,
+        "special-attack": 40,
+        "special-defense": 72,
+        "speed": 27,
+        "id": 751
+    },
+    {
+        "hp": 68,
+        "attack": 70,
+        "defense": 92,
+        "special-attack": 50,
+        "special-defense": 132,
+        "speed": 42,
+        "id": 752
+    },
+    {
+        "hp": 40,
+        "attack": 55,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 35,
+        "speed": 35,
+        "id": 753
+    },
+    {
+        "hp": 70,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 80,
+        "special-defense": 90,
+        "speed": 45,
+        "id": 754
+    },
+    {
+        "hp": 40,
+        "attack": 35,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 75,
+        "speed": 15,
+        "id": 755
+    },
+    {
+        "hp": 60,
+        "attack": 45,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 30,
+        "id": 756
+    },
+    {
+        "hp": 48,
+        "attack": 44,
+        "defense": 40,
+        "special-attack": 71,
+        "special-defense": 40,
+        "speed": 77,
+        "id": 757
+    },
+    {
+        "hp": 68,
+        "attack": 64,
+        "defense": 60,
+        "special-attack": 111,
+        "special-defense": 60,
+        "speed": 117,
+        "id": 758
+    },
+    {
+        "hp": 70,
+        "attack": 75,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 50,
+        "speed": 50,
+        "id": 759
+    },
+    {
+        "hp": 120,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 55,
+        "special-defense": 60,
+        "speed": 60,
+        "id": 760
+    },
+    {
+        "hp": 42,
+        "attack": 30,
+        "defense": 38,
+        "special-attack": 30,
+        "special-defense": 38,
+        "speed": 32,
+        "id": 761
+    },
+    {
+        "hp": 52,
+        "attack": 40,
+        "defense": 48,
+        "special-attack": 40,
+        "special-defense": 48,
+        "speed": 62,
+        "id": 762
+    },
+    {
+        "hp": 72,
+        "attack": 120,
+        "defense": 98,
+        "special-attack": 50,
+        "special-defense": 98,
+        "speed": 72,
+        "id": 763
+    },
+    {
+        "hp": 51,
+        "attack": 52,
+        "defense": 90,
+        "special-attack": 82,
+        "special-defense": 110,
+        "speed": 100,
+        "id": 764
+    },
+    {
+        "hp": 90,
+        "attack": 60,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 110,
+        "speed": 60,
+        "id": 765
+    },
+    {
+        "hp": 100,
+        "attack": 120,
+        "defense": 90,
+        "special-attack": 40,
+        "special-defense": 60,
+        "speed": 80,
+        "id": 766
+    },
+    {
+        "hp": 25,
+        "attack": 35,
+        "defense": 40,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 80,
+        "id": 767
+    },
+    {
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40,
+        "id": 768
+    },
+    {
+        "hp": 55,
+        "attack": 55,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 45,
+        "speed": 15,
+        "id": 769
+    },
+    {
+        "hp": 85,
+        "attack": 75,
+        "defense": 110,
+        "special-attack": 100,
+        "special-defense": 75,
+        "speed": 35,
+        "id": 770
+    },
+    {
+        "hp": 55,
+        "attack": 60,
+        "defense": 130,
+        "special-attack": 30,
+        "special-defense": 130,
+        "speed": 5,
+        "id": 771
+    },
+    {
+        "hp": 95,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 95,
+        "speed": 59,
+        "id": 772
+    },
+    {
+        "hp": 95,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 95,
+        "speed": 95,
+        "id": 773
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 774
+    },
+    {
+        "hp": 65,
+        "attack": 115,
+        "defense": 65,
+        "special-attack": 75,
+        "special-defense": 95,
+        "speed": 65,
+        "id": 775
+    },
+    {
+        "hp": 60,
+        "attack": 78,
+        "defense": 135,
+        "special-attack": 91,
+        "special-defense": 85,
+        "speed": 36,
+        "id": 776
+    },
+    {
+        "hp": 65,
+        "attack": 98,
+        "defense": 63,
+        "special-attack": 40,
+        "special-defense": 73,
+        "speed": 96,
+        "id": 777
+    },
+    {
+        "hp": 55,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 50,
+        "special-defense": 105,
+        "speed": 96,
+        "id": 778
+    },
+    {
+        "hp": 68,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 92,
+        "id": 779
+    },
+    {
+        "hp": 78,
+        "attack": 60,
+        "defense": 85,
+        "special-attack": 135,
+        "special-defense": 91,
+        "speed": 36,
+        "id": 780
+    },
+    {
+        "hp": 70,
+        "attack": 131,
+        "defense": 100,
+        "special-attack": 86,
+        "special-defense": 90,
+        "speed": 40,
+        "id": 781
+    },
+    {
+        "hp": 45,
+        "attack": 55,
+        "defense": 65,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 45,
+        "id": 782
+    },
+    {
+        "hp": 55,
+        "attack": 75,
+        "defense": 90,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 65,
+        "id": 783
+    },
+    {
+        "hp": 75,
+        "attack": 110,
+        "defense": 125,
+        "special-attack": 100,
+        "special-defense": 105,
+        "speed": 85,
+        "id": 784
+    },
+    {
+        "hp": 70,
+        "attack": 115,
+        "defense": 85,
+        "special-attack": 95,
+        "special-defense": 75,
+        "speed": 130,
+        "id": 785
+    },
+    {
+        "hp": 70,
+        "attack": 85,
+        "defense": 75,
+        "special-attack": 130,
+        "special-defense": 115,
+        "speed": 95,
+        "id": 786
+    },
+    {
+        "hp": 70,
+        "attack": 130,
+        "defense": 115,
+        "special-attack": 85,
+        "special-defense": 95,
+        "speed": 75,
+        "id": 787
+    },
+    {
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85,
+        "id": 788
+    },
+    {
+        "hp": 43,
+        "attack": 29,
+        "defense": 31,
+        "special-attack": 29,
+        "special-defense": 31,
+        "speed": 37,
+        "id": 789
+    },
+    {
+        "hp": 43,
+        "attack": 29,
+        "defense": 131,
+        "special-attack": 29,
+        "special-defense": 131,
+        "speed": 37,
+        "id": 790
+    },
+    {
+        "hp": 137,
+        "attack": 137,
+        "defense": 107,
+        "special-attack": 113,
+        "special-defense": 89,
+        "speed": 97,
+        "id": 791
+    },
+    {
+        "hp": 137,
+        "attack": 113,
+        "defense": 89,
+        "special-attack": 137,
+        "special-defense": 107,
+        "speed": 97,
+        "id": 792
+    },
+    {
+        "hp": 109,
+        "attack": 53,
+        "defense": 47,
+        "special-attack": 127,
+        "special-defense": 131,
+        "speed": 103,
+        "id": 793
+    },
+    {
+        "hp": 107,
+        "attack": 139,
+        "defense": 139,
+        "special-attack": 53,
+        "special-defense": 53,
+        "speed": 79,
+        "id": 794
+    },
+    {
+        "hp": 71,
+        "attack": 137,
+        "defense": 37,
+        "special-attack": 137,
+        "special-defense": 37,
+        "speed": 151,
+        "id": 795
+    },
+    {
+        "hp": 83,
+        "attack": 89,
+        "defense": 71,
+        "special-attack": 173,
+        "special-defense": 71,
+        "speed": 83,
+        "id": 796
+    },
+    {
+        "hp": 97,
+        "attack": 101,
+        "defense": 103,
+        "special-attack": 107,
+        "special-defense": 101,
+        "speed": 61,
+        "id": 797
+    },
+    {
+        "hp": 59,
+        "attack": 181,
+        "defense": 131,
+        "special-attack": 59,
+        "special-defense": 31,
+        "speed": 109,
+        "id": 798
+    },
+    {
+        "hp": 223,
+        "attack": 101,
+        "defense": 53,
+        "special-attack": 97,
+        "special-defense": 53,
+        "speed": 43,
+        "id": 799
+    },
+    {
+        "hp": 97,
+        "attack": 107,
+        "defense": 101,
+        "special-attack": 127,
+        "special-defense": 89,
+        "speed": 79,
+        "id": 800
+    },
+    {
+        "hp": 80,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 130,
+        "special-defense": 115,
+        "speed": 65,
+        "id": 801
+    },
+    {
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125,
+        "id": 802
+    },
+    {
+        "hp": 67,
+        "attack": 73,
+        "defense": 67,
+        "special-attack": 73,
+        "special-defense": 67,
+        "speed": 73,
+        "id": 803
+    },
+    {
+        "hp": 73,
+        "attack": 73,
+        "defense": 73,
+        "special-attack": 127,
+        "special-defense": 73,
+        "speed": 121,
+        "id": 804
+    },
+    {
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13,
+        "id": 805
+    },
+    {
+        "hp": 53,
+        "attack": 127,
+        "defense": 53,
+        "special-attack": 151,
+        "special-defense": 79,
+        "speed": 107,
+        "id": 806
+    },
+    {
+        "hp": 88,
+        "attack": 112,
+        "defense": 75,
+        "special-attack": 102,
+        "special-defense": 80,
+        "speed": 143,
+        "id": 807
+    },
+    {
+        "hp": 50,
+        "attack": 180,
+        "defense": 20,
+        "special-attack": 180,
+        "special-defense": 20,
+        "speed": 150,
+        "id": 10001
+    },
+    {
+        "hp": 50,
+        "attack": 70,
+        "defense": 160,
+        "special-attack": 70,
+        "special-defense": 160,
+        "speed": 90,
+        "id": 10002
+    },
+    {
+        "hp": 50,
+        "attack": 95,
+        "defense": 90,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 180,
+        "id": 10003
+    },
+    {
+        "hp": 60,
+        "attack": 79,
+        "defense": 105,
+        "special-attack": 59,
+        "special-defense": 85,
+        "speed": 36,
+        "id": 10004
+    },
+    {
+        "hp": 60,
+        "attack": 69,
+        "defense": 95,
+        "special-attack": 69,
+        "special-defense": 95,
+        "speed": 36,
+        "id": 10005
+    },
+    {
+        "hp": 100,
+        "attack": 103,
+        "defense": 75,
+        "special-attack": 120,
+        "special-defense": 75,
+        "speed": 127,
+        "id": 10006
+    },
+    {
+        "hp": 150,
+        "attack": 120,
+        "defense": 100,
+        "special-attack": 120,
+        "special-defense": 100,
+        "speed": 90,
+        "id": 10007
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86,
+        "id": 10008
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86,
+        "id": 10009
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86,
+        "id": 10010
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86,
+        "id": 10011
+    },
+    {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86,
+        "id": 10012
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 10013
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 10014
+    },
+    {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70,
+        "id": 10015
+    },
+    {
+        "hp": 70,
+        "attack": 92,
+        "defense": 65,
+        "special-attack": 80,
+        "special-defense": 55,
+        "speed": 98,
+        "id": 10016
+    },
+    {
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55,
+        "id": 10017
+    },
+    {
+        "hp": 100,
+        "attack": 128,
+        "defense": 90,
+        "special-attack": 77,
+        "special-defense": 77,
+        "speed": 128,
+        "id": 10018
+    },
+    {
+        "hp": 79,
+        "attack": 100,
+        "defense": 80,
+        "special-attack": 110,
+        "special-defense": 90,
+        "speed": 121,
+        "id": 10019
+    },
+    {
+        "hp": 79,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 145,
+        "special-defense": 80,
+        "speed": 101,
+        "id": 10020
+    },
+    {
+        "hp": 89,
+        "attack": 145,
+        "defense": 90,
+        "special-attack": 105,
+        "special-defense": 80,
+        "speed": 91,
+        "id": 10021
+    },
+    {
+        "hp": 125,
+        "attack": 170,
+        "defense": 100,
+        "special-attack": 120,
+        "special-defense": 90,
+        "speed": 95,
+        "id": 10022
+    },
+    {
+        "hp": 125,
+        "attack": 120,
+        "defense": 90,
+        "special-attack": 170,
+        "special-defense": 100,
+        "speed": 95,
+        "id": 10023
+    },
+    {
+        "hp": 91,
+        "attack": 72,
+        "defense": 90,
+        "special-attack": 129,
+        "special-defense": 90,
+        "speed": 108,
+        "id": 10024
+    },
+    {
+        "hp": 74,
+        "attack": 48,
+        "defense": 76,
+        "special-attack": 83,
+        "special-defense": 81,
+        "speed": 104,
+        "id": 10025
+    },
+    {
+        "hp": 60,
+        "attack": 150,
+        "defense": 50,
+        "special-attack": 150,
+        "special-defense": 50,
+        "speed": 60,
+        "id": 10026
+    },
+    {
+        "hp": 44,
+        "attack": 66,
+        "defense": 70,
+        "special-attack": 44,
+        "special-defense": 55,
+        "speed": 56,
+        "id": 10027
+    },
+    {
+        "hp": 54,
+        "attack": 66,
+        "defense": 70,
+        "special-attack": 44,
+        "special-defense": 55,
+        "speed": 46,
+        "id": 10028
+    },
+    {
+        "hp": 59,
+        "attack": 66,
+        "defense": 70,
+        "special-attack": 44,
+        "special-defense": 55,
+        "speed": 41,
+        "id": 10029
+    },
+    {
+        "hp": 55,
+        "attack": 85,
+        "defense": 122,
+        "special-attack": 58,
+        "special-defense": 75,
+        "speed": 99,
+        "id": 10030
+    },
+    {
+        "hp": 75,
+        "attack": 95,
+        "defense": 122,
+        "special-attack": 58,
+        "special-defense": 75,
+        "speed": 69,
+        "id": 10031
+    },
+    {
+        "hp": 85,
+        "attack": 100,
+        "defense": 122,
+        "special-attack": 58,
+        "special-defense": 75,
+        "speed": 54,
+        "id": 10032
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 123,
+        "special-attack": 122,
+        "special-defense": 120,
+        "speed": 80,
+        "id": 10033
+    },
+    {
+        "hp": 78,
+        "attack": 130,
+        "defense": 111,
+        "special-attack": 130,
+        "special-defense": 85,
+        "speed": 100,
+        "id": 10034
+    },
+    {
+        "hp": 78,
+        "attack": 104,
+        "defense": 78,
+        "special-attack": 159,
+        "special-defense": 115,
+        "speed": 100,
+        "id": 10035
+    },
+    {
+        "hp": 79,
+        "attack": 103,
+        "defense": 120,
+        "special-attack": 135,
+        "special-defense": 115,
+        "speed": 78,
+        "id": 10036
+    },
+    {
+        "hp": 55,
+        "attack": 50,
+        "defense": 65,
+        "special-attack": 175,
+        "special-defense": 105,
+        "speed": 150,
+        "id": 10037
+    },
+    {
+        "hp": 60,
+        "attack": 65,
+        "defense": 80,
+        "special-attack": 170,
+        "special-defense": 95,
+        "speed": 130,
+        "id": 10038
+    },
+    {
+        "hp": 105,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 100,
+        "id": 10039
+    },
+    {
+        "hp": 65,
+        "attack": 155,
+        "defense": 120,
+        "special-attack": 65,
+        "special-defense": 90,
+        "speed": 105,
+        "id": 10040
+    },
+    {
+        "hp": 95,
+        "attack": 155,
+        "defense": 109,
+        "special-attack": 70,
+        "special-defense": 130,
+        "speed": 81,
+        "id": 10041
+    },
+    {
+        "hp": 80,
+        "attack": 135,
+        "defense": 85,
+        "special-attack": 70,
+        "special-defense": 95,
+        "speed": 150,
+        "id": 10042
+    },
+    {
+        "hp": 106,
+        "attack": 190,
+        "defense": 100,
+        "special-attack": 154,
+        "special-defense": 100,
+        "speed": 130,
+        "id": 10043
+    },
+    {
+        "hp": 106,
+        "attack": 150,
+        "defense": 70,
+        "special-attack": 194,
+        "special-defense": 120,
+        "speed": 140,
+        "id": 10044
+    },
+    {
+        "hp": 90,
+        "attack": 95,
+        "defense": 105,
+        "special-attack": 165,
+        "special-defense": 110,
+        "speed": 45,
+        "id": 10045
+    },
+    {
+        "hp": 70,
+        "attack": 150,
+        "defense": 140,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 75,
+        "id": 10046
+    },
+    {
+        "hp": 80,
+        "attack": 185,
+        "defense": 115,
+        "special-attack": 40,
+        "special-defense": 105,
+        "speed": 75,
+        "id": 10047
+    },
+    {
+        "hp": 75,
+        "attack": 90,
+        "defense": 90,
+        "special-attack": 140,
+        "special-defense": 90,
+        "speed": 115,
+        "id": 10048
+    },
+    {
+        "hp": 100,
+        "attack": 164,
+        "defense": 150,
+        "special-attack": 95,
+        "special-defense": 120,
+        "speed": 71,
+        "id": 10049
+    },
+    {
+        "hp": 80,
+        "attack": 160,
+        "defense": 80,
+        "special-attack": 130,
+        "special-defense": 80,
+        "speed": 100,
+        "id": 10050
+    },
+    {
+        "hp": 68,
+        "attack": 85,
+        "defense": 65,
+        "special-attack": 165,
+        "special-defense": 135,
+        "speed": 100,
+        "id": 10051
+    },
+    {
+        "hp": 50,
+        "attack": 105,
+        "defense": 125,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 50,
+        "id": 10052
+    },
+    {
+        "hp": 70,
+        "attack": 140,
+        "defense": 230,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 50,
+        "id": 10053
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 85,
+        "special-attack": 80,
+        "special-defense": 85,
+        "speed": 100,
+        "id": 10054
+    },
+    {
+        "hp": 70,
+        "attack": 75,
+        "defense": 80,
+        "special-attack": 135,
+        "special-defense": 80,
+        "speed": 135,
+        "id": 10055
+    },
+    {
+        "hp": 64,
+        "attack": 165,
+        "defense": 75,
+        "special-attack": 93,
+        "special-defense": 83,
+        "speed": 75,
+        "id": 10056
+    },
+    {
+        "hp": 65,
+        "attack": 150,
+        "defense": 60,
+        "special-attack": 115,
+        "special-defense": 60,
+        "speed": 115,
+        "id": 10057
+    },
+    {
+        "hp": 108,
+        "attack": 170,
+        "defense": 115,
+        "special-attack": 120,
+        "special-defense": 95,
+        "speed": 92,
+        "id": 10058
+    },
+    {
+        "hp": 70,
+        "attack": 145,
+        "defense": 88,
+        "special-attack": 140,
+        "special-defense": 70,
+        "speed": 112,
+        "id": 10059
+    },
+    {
+        "hp": 90,
+        "attack": 132,
+        "defense": 105,
+        "special-attack": 132,
+        "special-defense": 105,
+        "speed": 30,
+        "id": 10060
+    },
+    {
+        "hp": 74,
+        "attack": 65,
+        "defense": 67,
+        "special-attack": 125,
+        "special-defense": 128,
+        "speed": 92,
+        "id": 10061
+    },
+    {
+        "hp": 80,
+        "attack": 100,
+        "defense": 120,
+        "special-attack": 140,
+        "special-defense": 150,
+        "speed": 110,
+        "id": 10062
+    },
+    {
+        "hp": 80,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 160,
+        "special-defense": 120,
+        "speed": 110,
+        "id": 10063
+    },
+    {
+        "hp": 100,
+        "attack": 150,
+        "defense": 110,
+        "special-attack": 95,
+        "special-defense": 110,
+        "speed": 70,
+        "id": 10064
+    },
+    {
+        "hp": 70,
+        "attack": 110,
+        "defense": 75,
+        "special-attack": 145,
+        "special-defense": 85,
+        "speed": 145,
+        "id": 10065
+    },
+    {
+        "hp": 50,
+        "attack": 85,
+        "defense": 125,
+        "special-attack": 85,
+        "special-defense": 115,
+        "speed": 20,
+        "id": 10066
+    },
+    {
+        "hp": 75,
+        "attack": 110,
+        "defense": 110,
+        "special-attack": 110,
+        "special-defense": 105,
+        "speed": 80,
+        "id": 10067
+    },
+    {
+        "hp": 68,
+        "attack": 165,
+        "defense": 95,
+        "special-attack": 65,
+        "special-defense": 115,
+        "speed": 110,
+        "id": 10068
+    },
+    {
+        "hp": 103,
+        "attack": 60,
+        "defense": 126,
+        "special-attack": 80,
+        "special-defense": 126,
+        "speed": 50,
+        "id": 10069
+    },
+    {
+        "hp": 70,
+        "attack": 140,
+        "defense": 70,
+        "special-attack": 110,
+        "special-defense": 65,
+        "speed": 105,
+        "id": 10070
+    },
+    {
+        "hp": 95,
+        "attack": 75,
+        "defense": 180,
+        "special-attack": 130,
+        "special-defense": 80,
+        "speed": 30,
+        "id": 10071
+    },
+    {
+        "hp": 75,
+        "attack": 125,
+        "defense": 230,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 30,
+        "id": 10072
+    },
+    {
+        "hp": 83,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 135,
+        "special-defense": 80,
+        "speed": 121,
+        "id": 10073
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 80,
+        "special-attack": 120,
+        "special-defense": 80,
+        "speed": 100,
+        "id": 10074
+    },
+    {
+        "hp": 50,
+        "attack": 160,
+        "defense": 110,
+        "special-attack": 160,
+        "special-defense": 110,
+        "speed": 110,
+        "id": 10075
+    },
+    {
+        "hp": 80,
+        "attack": 145,
+        "defense": 150,
+        "special-attack": 105,
+        "special-defense": 110,
+        "speed": 110,
+        "id": 10076
+    },
+    {
+        "hp": 100,
+        "attack": 150,
+        "defense": 90,
+        "special-attack": 180,
+        "special-defense": 160,
+        "speed": 90,
+        "id": 10077
+    },
+    {
+        "hp": 100,
+        "attack": 180,
+        "defense": 160,
+        "special-attack": 150,
+        "special-defense": 90,
+        "speed": 90,
+        "id": 10078
+    },
+    {
+        "hp": 105,
+        "attack": 180,
+        "defense": 100,
+        "special-attack": 180,
+        "special-defense": 100,
+        "speed": 115,
+        "id": 10079
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10080
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10081
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10082
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10083
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10084
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10085
+    },
+    {
+        "hp": 80,
+        "attack": 160,
+        "defense": 60,
+        "special-attack": 170,
+        "special-defense": 130,
+        "speed": 80,
+        "id": 10086
+    },
+    {
+        "hp": 70,
+        "attack": 120,
+        "defense": 100,
+        "special-attack": 145,
+        "special-defense": 105,
+        "speed": 20,
+        "id": 10087
+    },
+    {
+        "hp": 65,
+        "attack": 136,
+        "defense": 94,
+        "special-attack": 54,
+        "special-defense": 96,
+        "speed": 135,
+        "id": 10088
+    },
+    {
+        "hp": 95,
+        "attack": 145,
+        "defense": 130,
+        "special-attack": 120,
+        "special-defense": 90,
+        "speed": 120,
+        "id": 10089
+    },
+    {
+        "hp": 65,
+        "attack": 150,
+        "defense": 40,
+        "special-attack": 15,
+        "special-defense": 80,
+        "speed": 145,
+        "id": 10090
+    },
+    {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 72,
+        "id": 10091
+    },
+    {
+        "hp": 75,
+        "attack": 71,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 77,
+        "id": 10092
+    },
+    {
+        "hp": 75,
+        "attack": 71,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 77,
+        "id": 10093
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10094
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10095
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10096
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10097
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10098
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10099
+    },
+    {
+        "hp": 60,
+        "attack": 85,
+        "defense": 50,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 110,
+        "id": 10100
+    },
+    {
+        "hp": 50,
+        "attack": 75,
+        "defense": 90,
+        "special-attack": 10,
+        "special-defense": 35,
+        "speed": 40,
+        "id": 10101
+    },
+    {
+        "hp": 75,
+        "attack": 100,
+        "defense": 120,
+        "special-attack": 25,
+        "special-defense": 65,
+        "speed": 65,
+        "id": 10102
+    },
+    {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 65,
+        "speed": 65,
+        "id": 10103
+    },
+    {
+        "hp": 73,
+        "attack": 67,
+        "defense": 75,
+        "special-attack": 81,
+        "special-defense": 100,
+        "speed": 109,
+        "id": 10104
+    },
+    {
+        "hp": 10,
+        "attack": 55,
+        "defense": 30,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 90,
+        "id": 10105
+    },
+    {
+        "hp": 35,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 110,
+        "id": 10106
+    },
+    {
+        "hp": 40,
+        "attack": 35,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 40,
+        "speed": 90,
+        "id": 10107
+    },
+    {
+        "hp": 65,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 65,
+        "speed": 115,
+        "id": 10108
+    },
+    {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 20,
+        "id": 10109
+    },
+    {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 35,
+        "id": 10110
+    },
+    {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45,
+        "id": 10111
+    },
+    {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 25,
+        "id": 10112
+    },
+    {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 50,
+        "id": 10113
+    },
+    {
+        "hp": 95,
+        "attack": 105,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 75,
+        "speed": 45,
+        "id": 10114
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45,
+        "id": 10115
+    },
+    {
+        "hp": 72,
+        "attack": 95,
+        "defense": 67,
+        "special-attack": 103,
+        "special-defense": 71,
+        "speed": 122,
+        "id": 10116
+    },
+    {
+        "hp": 72,
+        "attack": 145,
+        "defense": 67,
+        "special-attack": 153,
+        "special-defense": 71,
+        "speed": 132,
+        "id": 10117
+    },
+    {
+        "hp": 54,
+        "attack": 100,
+        "defense": 71,
+        "special-attack": 61,
+        "special-defense": 85,
+        "speed": 115,
+        "id": 10118
+    },
+    {
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95,
+        "id": 10119
+    },
+    {
+        "hp": 216,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 91,
+        "special-defense": 95,
+        "speed": 85,
+        "id": 10120
+    },
+    {
+        "hp": 88,
+        "attack": 110,
+        "defense": 60,
+        "special-attack": 55,
+        "special-defense": 60,
+        "speed": 45,
+        "id": 10121
+    },
+    {
+        "hp": 77,
+        "attack": 70,
+        "defense": 90,
+        "special-attack": 145,
+        "special-defense": 75,
+        "speed": 43,
+        "id": 10122
+    },
+    {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93,
+        "id": 10123
+    },
+    {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93,
+        "id": 10124
+    },
+    {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93,
+        "id": 10125
+    },
+    {
+        "hp": 85,
+        "attack": 115,
+        "defense": 75,
+        "special-attack": 55,
+        "special-defense": 75,
+        "speed": 82,
+        "id": 10126
+    },
+    {
+        "hp": 45,
+        "attack": 140,
+        "defense": 130,
+        "special-attack": 140,
+        "special-defense": 135,
+        "speed": 30,
+        "id": 10127
+    },
+    {
+        "hp": 70,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 80,
+        "special-defense": 90,
+        "speed": 45,
+        "id": 10128
+    },
+    {
+        "hp": 68,
+        "attack": 64,
+        "defense": 60,
+        "special-attack": 111,
+        "special-defense": 60,
+        "speed": 117,
+        "id": 10129
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10130
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10131
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10132
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10133
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10134
+    },
+    {
+        "hp": 60,
+        "attack": 60,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 60,
+        "id": 10135
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10136
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10137
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10138
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10139
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10140
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10141
+    },
+    {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120,
+        "id": 10142
+    },
+    {
+        "hp": 55,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 50,
+        "special-defense": 105,
+        "speed": 96,
+        "id": 10143
+    },
+    {
+        "hp": 55,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 50,
+        "special-defense": 105,
+        "speed": 96,
+        "id": 10144
+    },
+    {
+        "hp": 55,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 50,
+        "special-defense": 105,
+        "speed": 96,
+        "id": 10145
+    },
+    {
+        "hp": 75,
+        "attack": 110,
+        "defense": 125,
+        "special-attack": 100,
+        "special-defense": 105,
+        "speed": 85,
+        "id": 10146
+    },
+    {
+        "hp": 80,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 130,
+        "special-defense": 115,
+        "speed": 65,
+        "id": 10147
+    },
+    {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90,
+        "id": 10148
+    },
+    {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45,
+        "id": 10149
+    },
+    {
+        "hp": 60,
+        "attack": 55,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 70,
+        "speed": 124,
+        "id": 10150
+    },
+    {
+        "hp": 45,
+        "attack": 65,
+        "defense": 40,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 60,
+        "id": 10151
+    },
+    {
+        "hp": 75,
+        "attack": 117,
+        "defense": 65,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 110,
+        "id": 10152
+    },
+    {
+        "hp": 68,
+        "attack": 70,
+        "defense": 92,
+        "special-attack": 50,
+        "special-defense": 132,
+        "speed": 42,
+        "id": 10153
+    },
+    {
+        "hp": 65,
+        "attack": 98,
+        "defense": 63,
+        "special-attack": 40,
+        "special-defense": 73,
+        "speed": 96,
+        "id": 10154
+    },
+    {
+        "hp": 97,
+        "attack": 157,
+        "defense": 127,
+        "special-attack": 113,
+        "special-defense": 109,
+        "speed": 77,
+        "id": 10155
+    },
+    {
+        "hp": 97,
+        "attack": 113,
+        "defense": 109,
+        "special-attack": 157,
+        "special-defense": 127,
+        "speed": 77,
+        "id": 10156
+    },
+    {
+        "hp": 97,
+        "attack": 167,
+        "defense": 97,
+        "special-attack": 167,
+        "special-defense": 97,
+        "speed": 129,
+        "id": 10157
+    }
+]
