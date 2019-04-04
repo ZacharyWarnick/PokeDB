@@ -124,3 +124,4 @@ node_modules/
 idb/**/gen
 lib/
 !IDB*.log
+scrape/csv/
