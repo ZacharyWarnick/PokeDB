@@ -5,9 +5,11 @@ channels:
 dependencies:
   - python=3.6.7
   - pip
+  - postgresql
   - nodejs
   - pip:
       - Flask
       - gunicorn
       - requests
       - beautifulsoup4
+      - coverage

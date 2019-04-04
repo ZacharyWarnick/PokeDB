@@ -240,6 +240,9 @@ def image_url(poke_id, poke_name, skip_id=False):
 
     img_src = 'https:' + img.attrs['src']
     if is_dead_url(img_src):
+        img_src = 'https:' + img.attrs['srcset'].split(' ')[0]
+
+    if is_dead_url(img_src):
         return None
 
     return img_src
@@ -291,9 +294,6 @@ def find_form_image(form, pokemon_names):
         name = name.replace('.', '')
         img = image_url(poke_id, name)
 
-    if img is None:
-        print(poke_id, poke_name, form_id, name, identifier)
-
     return (form_id, img)
 
 
@@ -301,8 +301,11 @@ def find_form_sprite(form):
     form_id = form['id']
     identifier = form['identifier']
 
-    poke_id = form['pokemon_id'] if 'pokemon_id' in form else form_id
-    variant = form['pokemon_variant'] if 'pokemon_variant' in form else form_id
+    poke_key = 'pokemon_id'
+    variant_key = 'pokemon_variant_id'
+
+    poke_id = form[poke_key] if poke_key in form else form_id
+    variant = form[variant_key] if variant_key in form else form_id
 
     test_url = None
     if poke_id == variant:
@@ -374,7 +377,7 @@ def add_sprites(targets, form_info, sprite_key, skip_default=False):
 
 
 def is_default_form(form):
-    return form['pokemon_variant'] == form['id']
+    return form['pokemon_variant_id'] == form['id']
 
 
 def type_description(type_name):
@@ -484,16 +487,16 @@ class Session(object):
         for poke in self.pokemon:
             stats = None
             for s in self.base_stats:
-                if s['id'] == poke['id']:
+                if s['pokemon_id'] == poke['id']:
                     stats = s
                     break
 
-            stat_total = sum(stats.values()) - stats['id']
+            stat_total = sum(stats.values()) - stats['pokemon_id']
 
-            type1 = poke['type1']
+            type1 = poke['first_type_id']
             type_count.update([type1])
             stat_totals[type1] += stat_total
-            type2 = poke.get('type2', None)
+            type2 = poke.get('second_type_id', None)
             if type2:
                 type_count.update([type2])
                 stat_totals[type2] += stat_total
@@ -551,13 +554,16 @@ class Session(object):
             if ev.get('known_move', None):
                 diff += 0.383
 
-            if ev.get('known_move_type', None):
+            if ev.get('trade_pokemon_id', None):
+                diff += 0.124
+
+            if ev.get('known_move_type_id', None):
                 diff += 0.318
 
-            if ev.get('party_type', None):
+            if ev.get('party_type_id', None):
                 diff += 0.475
 
-            if ev.get('party_pokemon', None):
+            if ev.get('party_pokemon_id', None):
                 diff += 0.574
 
             if ev.get('location', None):
