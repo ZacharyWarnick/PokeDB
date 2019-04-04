@@ -3,7 +3,7 @@
   <div class="home">
     <div class="fade-container">
     <Navbar/>
-    <div @click="clicked=!clicked">
+
       <div class="bg">
         <div class="container text-scroll-bg">
         <transition onload name ="PokeIn">
@@ -27,9 +27,9 @@
                     Types
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go!</a>
+                  
+                    <p class="card-text">Explore the 18 types across all the pokémon games.</p>
+                    <a href="/types" class="btn btn-primary">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -39,9 +39,9 @@
                     Pokémon
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go!</a>
+                    
+                    <p class="card-text">There are hundreds of pokémon. Which one is your favorite?</p>
+                    <a href="/pokemon/" class="btn btn-primary">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -51,9 +51,9 @@
                     Evolutions
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go!</a>
+                    
+                    <p class="card-text">Answer the question: what came first, the Togepi or the egg?</p>
+                    <a href="/evolutions" class="btn btn-primary">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -64,7 +64,6 @@
 
       </div>
       </div>
-    </div>
     </div>
   </div>
 </template>
