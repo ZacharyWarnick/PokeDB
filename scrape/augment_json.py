@@ -411,7 +411,9 @@ def type_info(type_name):
             elif is_defense:
                 defense_items.append(el.getText())
 
-    return '\n'.join(offense_items), '\n'.join(defense_items)
+    def join_format(items): return '\n'.join(items).strip()
+
+    return tuple(map(join_format, [offense_items, defense_items]))
 
 
 class Session(object):
@@ -606,7 +608,7 @@ class Session(object):
 
             file_names = [
                 'pokemon', 'forms', 'evolutions', 'types', 'base_stats'
-                ]
+            ]
             objects = [
                 self.pokemon, self.forms, self.evolutions, self.types,
                 self.base_stats
