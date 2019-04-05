@@ -67,8 +67,7 @@ def api_pokemon():
 def api_evolutions():
     evolution = request.get_json()
     evolutions = ???????????????.query.filter_by(status=1).join(Evolution).order_by(??????????.id.desc()).all()
-    all_evolutions = {'Pokemon': [evolution.to_json()
-                                  for evolution in evolutions]}
+    all_evolutions = {'Evolution': [evolution.to_json() for evolution in evolutions]}
 
     return jsonify(all_evolutions)
 
@@ -95,7 +94,7 @@ def api_forms():
 def api_base_stats():
     base_stat = request.get_json()
     base_stats = ???????????????.query.filter_by(status=1).join(BaseStats).order_by(??????????.id.desc()).all()
-    all_base_stats = {'Form': [form.to_json() for form in forms]}
+    all_base_stats = {'BaseStat': [base_stat.to_json() for base_stat in base_stats]}
 
     return jsonify(all_base_stats)
 
