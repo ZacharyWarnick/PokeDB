@@ -21,7 +21,6 @@
                   class="type-badge"
                   v-bind:src="type.badge_image"
                 />
-
               </div>
             </div>
             <p class="poke-desc">
@@ -76,8 +75,6 @@
         v-bind:second="all[$route.params.name].ev.second"
       />
     </section>
-    </div>
-    </div>
   </div>
 </template>
 
@@ -250,7 +247,6 @@ export default {
 </script>
 
 <style scoped>
-
 .section-padding {
   padding: 15px 0;
 }
@@ -282,7 +278,7 @@ export default {
 .poke-img-box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-<<<<<<< HEAD
+
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
@@ -294,32 +290,26 @@ export default {
   box-shadow: 4px 4px 4px;
 
   animation: textUP 1.5s 1 forwards;
-
 }
 .bg {
-padding-top: 0;
+  padding-top: 0;
 
-margin-bottom: 0px;
+  margin-bottom: 0px;
 
-/* The image used */
-background-image: url('../assets/home-background.jpg');
+  /* The image used */
+  background-image: url("../assets/home-background.jpg");
 
-/* Full height */
-height: 100%;
+  /* Full height */
+  height: 100%;
 
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-align-content: center;
+  align-content: center;
 
-position: sticky;
+  position: sticky;
 }
-=======
-
-
-
->>>>>>> develop
 </style>
