@@ -1,7 +1,7 @@
 
 import os
 
-_DEFAULT_DB_STRING = 'postgres://postgres:asd123@localhost:5432/pokedb'
+_DEFAULT_DB_STRING = 'postgres://postgres@localhost:5432/pokedb'
 
 
 class DefaultConfig(object):

@@ -1,9 +1,10 @@
+from sqlalchemy.ext.declarative import DeclarativeMeta
 """Creates the database from cached JSON files."""
 
 import json
 
 from collections import defaultdict
-from models import app, db
+from models import db
 from models import Pokemon, Type, BaseStats, Form, Evolution
 from pathlib import Path
 
@@ -25,14 +26,14 @@ def create_stats():
 
     for b in base_stats:
         new_stats = BaseStats(
-            form_id=b['form_id'],
+            variant_id=b['variant_id'],
             hp=b['hp'],
             attack=b['attack'],
             defense=b['defense'],
             special_attack=b['special-attack'],
             special_defense=b['special-defense'],
             speed=b['speed']
-        )
+            )
 
         db.session.add(new_stats)
         db.session.commit()
@@ -46,14 +47,14 @@ def create_form():
             id=f['id'],
             identifier=f['identifier'],
             pokemon_id=f['pokemon_id'],
-            pokemon_variant_id=f['pokemon_variant_id'],
+            variant_id=f['variant_id'],
             pokemon_name=f['pokemon_name'],
             form_label=f['form_label'],
             first_type_id=f['first_type_id'],
             second_type_id=f['second_type_id'],
             alt_sprite=f.get('alt_sprite', None),
             alt_image=f.get('alt_image', None)
-        )
+            )
 
         db.session.add(new_form)
         db.session.commit()
@@ -91,7 +92,7 @@ def create_type():
             desc_info=t['desc_info'],
             desc_atk=t['desc_atk'],
             desc_def=t['desc_def']
-        )
+            )
 
         db.session.add(new_type)
         db.session.commit()
@@ -111,11 +112,12 @@ def create_pokemon():
             since_gen=p['since_gen'],
             evolves_from_pokemon_id=p['evolves_from_pokemon_id'],
             first_type_id=p['first_type_id'],
+            second_type_id=p['second_type_id'],
             flavor_text=p['flavor_text'],
             has_alt_form=p['has_alt_form'],
             sprite=p['sprite'],
             image=p['image']
-        )
+            )
 
         db.session.add(new_pokemon)
         db.session.commit()
@@ -152,7 +154,7 @@ def create_evolution():
             needs_rain=e['needs_rain'],
             known_move_type_id=e['known_move_type_id'],
             affection=e['affection']
-        )
+            )
 
         db.session.add(new_evo)
         db.session.commit()
@@ -164,3 +166,11 @@ if __name__ == '__main__':
     create_stats()
     create_form()
     create_evolution()
+
+    from pprint import pprint
+
+    for p in Pokemon.query.filter(Pokemon.id > 790).all():
+        pprint(p.to_dict(show=Pokemon.EXTRA_FIELDS))
+        pprint(p.first_type.to_dict(show=Type.EXTRA_FIELDS))
+        print('Type:', p.first_type, '/', p.second_type)
+        print('Stats:', p.base_stats)
