@@ -6,7 +6,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 1
+        "form_id": 1
     },
     {
         "hp": 60,
@@ -15,7 +15,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 60,
-        "pokemon_id": 2
+        "form_id": 2
     },
     {
         "hp": 80,
@@ -24,7 +24,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 80,
-        "pokemon_id": 3
+        "form_id": 3
     },
     {
         "hp": 39,
@@ -33,7 +33,7 @@
         "special-attack": 60,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 4
+        "form_id": 4
     },
     {
         "hp": 58,
@@ -42,7 +42,7 @@
         "special-attack": 80,
         "special-defense": 65,
         "speed": 80,
-        "pokemon_id": 5
+        "form_id": 5
     },
     {
         "hp": 78,
@@ -51,7 +51,7 @@
         "special-attack": 109,
         "special-defense": 85,
         "speed": 100,
-        "pokemon_id": 6
+        "form_id": 6
     },
     {
         "hp": 44,
@@ -60,7 +60,7 @@
         "special-attack": 50,
         "special-defense": 64,
         "speed": 43,
-        "pokemon_id": 7
+        "form_id": 7
     },
     {
         "hp": 59,
@@ -69,7 +69,7 @@
         "special-attack": 65,
         "special-defense": 80,
         "speed": 58,
-        "pokemon_id": 8
+        "form_id": 8
     },
     {
         "hp": 79,
@@ -78,7 +78,7 @@
         "special-attack": 85,
         "special-defense": 105,
         "speed": 78,
-        "pokemon_id": 9
+        "form_id": 9
     },
     {
         "hp": 45,
@@ -87,7 +87,7 @@
         "special-attack": 20,
         "special-defense": 20,
         "speed": 45,
-        "pokemon_id": 10
+        "form_id": 10
     },
     {
         "hp": 50,
@@ -96,7 +96,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 30,
-        "pokemon_id": 11
+        "form_id": 11
     },
     {
         "hp": 60,
@@ -105,7 +105,7 @@
         "special-attack": 90,
         "special-defense": 80,
         "speed": 70,
-        "pokemon_id": 12
+        "form_id": 12
     },
     {
         "hp": 40,
@@ -114,7 +114,7 @@
         "special-attack": 20,
         "special-defense": 20,
         "speed": 50,
-        "pokemon_id": 13
+        "form_id": 13
     },
     {
         "hp": 45,
@@ -123,7 +123,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 35,
-        "pokemon_id": 14
+        "form_id": 14
     },
     {
         "hp": 65,
@@ -132,7 +132,7 @@
         "special-attack": 45,
         "special-defense": 80,
         "speed": 75,
-        "pokemon_id": 15
+        "form_id": 15
     },
     {
         "hp": 40,
@@ -141,7 +141,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 56,
-        "pokemon_id": 16
+        "form_id": 16
     },
     {
         "hp": 63,
@@ -150,7 +150,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 71,
-        "pokemon_id": 17
+        "form_id": 17
     },
     {
         "hp": 83,
@@ -159,7 +159,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 101,
-        "pokemon_id": 18
+        "form_id": 18
     },
     {
         "hp": 30,
@@ -168,7 +168,7 @@
         "special-attack": 25,
         "special-defense": 35,
         "speed": 72,
-        "pokemon_id": 19
+        "form_id": 19
     },
     {
         "hp": 55,
@@ -177,7 +177,7 @@
         "special-attack": 50,
         "special-defense": 70,
         "speed": 97,
-        "pokemon_id": 20
+        "form_id": 20
     },
     {
         "hp": 40,
@@ -186,7 +186,7 @@
         "special-attack": 31,
         "special-defense": 31,
         "speed": 70,
-        "pokemon_id": 21
+        "form_id": 21
     },
     {
         "hp": 65,
@@ -195,7 +195,7 @@
         "special-attack": 61,
         "special-defense": 61,
         "speed": 100,
-        "pokemon_id": 22
+        "form_id": 22
     },
     {
         "hp": 35,
@@ -204,7 +204,7 @@
         "special-attack": 40,
         "special-defense": 54,
         "speed": 55,
-        "pokemon_id": 23
+        "form_id": 23
     },
     {
         "hp": 60,
@@ -213,7 +213,7 @@
         "special-attack": 65,
         "special-defense": 79,
         "speed": 80,
-        "pokemon_id": 24
+        "form_id": 24
     },
     {
         "hp": 35,
@@ -222,7 +222,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 25
+        "form_id": 25
     },
     {
         "hp": 60,
@@ -231,7 +231,7 @@
         "special-attack": 90,
         "special-defense": 80,
         "speed": 110,
-        "pokemon_id": 26
+        "form_id": 26
     },
     {
         "hp": 50,
@@ -240,7 +240,7 @@
         "special-attack": 20,
         "special-defense": 30,
         "speed": 40,
-        "pokemon_id": 27
+        "form_id": 27
     },
     {
         "hp": 75,
@@ -249,7 +249,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 65,
-        "pokemon_id": 28
+        "form_id": 28
     },
     {
         "hp": 55,
@@ -258,7 +258,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 41,
-        "pokemon_id": 29
+        "form_id": 29
     },
     {
         "hp": 70,
@@ -267,7 +267,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 56,
-        "pokemon_id": 30
+        "form_id": 30
     },
     {
         "hp": 90,
@@ -276,7 +276,7 @@
         "special-attack": 75,
         "special-defense": 85,
         "speed": 76,
-        "pokemon_id": 31
+        "form_id": 31
     },
     {
         "hp": 46,
@@ -285,7 +285,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 50,
-        "pokemon_id": 32
+        "form_id": 32
     },
     {
         "hp": 61,
@@ -294,7 +294,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 65,
-        "pokemon_id": 33
+        "form_id": 33
     },
     {
         "hp": 81,
@@ -303,7 +303,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 85,
-        "pokemon_id": 34
+        "form_id": 34
     },
     {
         "hp": 70,
@@ -312,7 +312,7 @@
         "special-attack": 60,
         "special-defense": 65,
         "speed": 35,
-        "pokemon_id": 35
+        "form_id": 35
     },
     {
         "hp": 95,
@@ -321,7 +321,7 @@
         "special-attack": 95,
         "special-defense": 90,
         "speed": 60,
-        "pokemon_id": 36
+        "form_id": 36
     },
     {
         "hp": 38,
@@ -330,7 +330,7 @@
         "special-attack": 50,
         "special-defense": 65,
         "speed": 65,
-        "pokemon_id": 37
+        "form_id": 37
     },
     {
         "hp": 73,
@@ -339,7 +339,7 @@
         "special-attack": 81,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 38
+        "form_id": 38
     },
     {
         "hp": 115,
@@ -348,7 +348,7 @@
         "special-attack": 45,
         "special-defense": 25,
         "speed": 20,
-        "pokemon_id": 39
+        "form_id": 39
     },
     {
         "hp": 140,
@@ -357,7 +357,7 @@
         "special-attack": 85,
         "special-defense": 50,
         "speed": 45,
-        "pokemon_id": 40
+        "form_id": 40
     },
     {
         "hp": 40,
@@ -366,7 +366,7 @@
         "special-attack": 30,
         "special-defense": 40,
         "speed": 55,
-        "pokemon_id": 41
+        "form_id": 41
     },
     {
         "hp": 75,
@@ -375,7 +375,7 @@
         "special-attack": 65,
         "special-defense": 75,
         "speed": 90,
-        "pokemon_id": 42
+        "form_id": 42
     },
     {
         "hp": 45,
@@ -384,7 +384,7 @@
         "special-attack": 75,
         "special-defense": 65,
         "speed": 30,
-        "pokemon_id": 43
+        "form_id": 43
     },
     {
         "hp": 60,
@@ -393,7 +393,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 40,
-        "pokemon_id": 44
+        "form_id": 44
     },
     {
         "hp": 75,
@@ -402,7 +402,7 @@
         "special-attack": 110,
         "special-defense": 90,
         "speed": 50,
-        "pokemon_id": 45
+        "form_id": 45
     },
     {
         "hp": 35,
@@ -411,7 +411,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 25,
-        "pokemon_id": 46
+        "form_id": 46
     },
     {
         "hp": 60,
@@ -420,7 +420,7 @@
         "special-attack": 60,
         "special-defense": 80,
         "speed": 30,
-        "pokemon_id": 47
+        "form_id": 47
     },
     {
         "hp": 60,
@@ -429,7 +429,7 @@
         "special-attack": 40,
         "special-defense": 55,
         "speed": 45,
-        "pokemon_id": 48
+        "form_id": 48
     },
     {
         "hp": 70,
@@ -438,7 +438,7 @@
         "special-attack": 90,
         "special-defense": 75,
         "speed": 90,
-        "pokemon_id": 49
+        "form_id": 49
     },
     {
         "hp": 10,
@@ -447,7 +447,7 @@
         "special-attack": 35,
         "special-defense": 45,
         "speed": 95,
-        "pokemon_id": 50
+        "form_id": 50
     },
     {
         "hp": 35,
@@ -456,7 +456,7 @@
         "special-attack": 50,
         "special-defense": 70,
         "speed": 120,
-        "pokemon_id": 51
+        "form_id": 51
     },
     {
         "hp": 40,
@@ -465,7 +465,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 90,
-        "pokemon_id": 52
+        "form_id": 52
     },
     {
         "hp": 65,
@@ -474,7 +474,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 115,
-        "pokemon_id": 53
+        "form_id": 53
     },
     {
         "hp": 50,
@@ -483,7 +483,7 @@
         "special-attack": 65,
         "special-defense": 50,
         "speed": 55,
-        "pokemon_id": 54
+        "form_id": 54
     },
     {
         "hp": 80,
@@ -492,7 +492,7 @@
         "special-attack": 95,
         "special-defense": 80,
         "speed": 85,
-        "pokemon_id": 55
+        "form_id": 55
     },
     {
         "hp": 40,
@@ -501,7 +501,7 @@
         "special-attack": 35,
         "special-defense": 45,
         "speed": 70,
-        "pokemon_id": 56
+        "form_id": 56
     },
     {
         "hp": 65,
@@ -510,7 +510,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 95,
-        "pokemon_id": 57
+        "form_id": 57
     },
     {
         "hp": 55,
@@ -519,7 +519,7 @@
         "special-attack": 70,
         "special-defense": 50,
         "speed": 60,
-        "pokemon_id": 58
+        "form_id": 58
     },
     {
         "hp": 90,
@@ -528,7 +528,7 @@
         "special-attack": 100,
         "special-defense": 80,
         "speed": 95,
-        "pokemon_id": 59
+        "form_id": 59
     },
     {
         "hp": 40,
@@ -537,7 +537,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 90,
-        "pokemon_id": 60
+        "form_id": 60
     },
     {
         "hp": 65,
@@ -546,7 +546,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 61
+        "form_id": 61
     },
     {
         "hp": 90,
@@ -555,7 +555,7 @@
         "special-attack": 70,
         "special-defense": 90,
         "speed": 70,
-        "pokemon_id": 62
+        "form_id": 62
     },
     {
         "hp": 25,
@@ -564,7 +564,7 @@
         "special-attack": 105,
         "special-defense": 55,
         "speed": 90,
-        "pokemon_id": 63
+        "form_id": 63
     },
     {
         "hp": 40,
@@ -573,7 +573,7 @@
         "special-attack": 120,
         "special-defense": 70,
         "speed": 105,
-        "pokemon_id": 64
+        "form_id": 64
     },
     {
         "hp": 55,
@@ -582,7 +582,7 @@
         "special-attack": 135,
         "special-defense": 95,
         "speed": 120,
-        "pokemon_id": 65
+        "form_id": 65
     },
     {
         "hp": 70,
@@ -591,7 +591,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 35,
-        "pokemon_id": 66
+        "form_id": 66
     },
     {
         "hp": 80,
@@ -600,7 +600,7 @@
         "special-attack": 50,
         "special-defense": 60,
         "speed": 45,
-        "pokemon_id": 67
+        "form_id": 67
     },
     {
         "hp": 90,
@@ -609,7 +609,7 @@
         "special-attack": 65,
         "special-defense": 85,
         "speed": 55,
-        "pokemon_id": 68
+        "form_id": 68
     },
     {
         "hp": 50,
@@ -618,7 +618,7 @@
         "special-attack": 70,
         "special-defense": 30,
         "speed": 40,
-        "pokemon_id": 69
+        "form_id": 69
     },
     {
         "hp": 65,
@@ -627,7 +627,7 @@
         "special-attack": 85,
         "special-defense": 45,
         "speed": 55,
-        "pokemon_id": 70
+        "form_id": 70
     },
     {
         "hp": 80,
@@ -636,7 +636,7 @@
         "special-attack": 100,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 71
+        "form_id": 71
     },
     {
         "hp": 40,
@@ -645,7 +645,7 @@
         "special-attack": 50,
         "special-defense": 100,
         "speed": 70,
-        "pokemon_id": 72
+        "form_id": 72
     },
     {
         "hp": 80,
@@ -654,7 +654,7 @@
         "special-attack": 80,
         "special-defense": 120,
         "speed": 100,
-        "pokemon_id": 73
+        "form_id": 73
     },
     {
         "hp": 40,
@@ -663,7 +663,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 20,
-        "pokemon_id": 74
+        "form_id": 74
     },
     {
         "hp": 55,
@@ -672,7 +672,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 35,
-        "pokemon_id": 75
+        "form_id": 75
     },
     {
         "hp": 80,
@@ -681,7 +681,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 76
+        "form_id": 76
     },
     {
         "hp": 50,
@@ -690,7 +690,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 90,
-        "pokemon_id": 77
+        "form_id": 77
     },
     {
         "hp": 65,
@@ -699,7 +699,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 105,
-        "pokemon_id": 78
+        "form_id": 78
     },
     {
         "hp": 90,
@@ -708,7 +708,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 15,
-        "pokemon_id": 79
+        "form_id": 79
     },
     {
         "hp": 95,
@@ -717,7 +717,7 @@
         "special-attack": 100,
         "special-defense": 80,
         "speed": 30,
-        "pokemon_id": 80
+        "form_id": 80
     },
     {
         "hp": 25,
@@ -726,7 +726,7 @@
         "special-attack": 95,
         "special-defense": 55,
         "speed": 45,
-        "pokemon_id": 81
+        "form_id": 81
     },
     {
         "hp": 50,
@@ -735,7 +735,7 @@
         "special-attack": 120,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 82
+        "form_id": 82
     },
     {
         "hp": 52,
@@ -744,7 +744,7 @@
         "special-attack": 58,
         "special-defense": 62,
         "speed": 60,
-        "pokemon_id": 83
+        "form_id": 83
     },
     {
         "hp": 35,
@@ -753,7 +753,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 75,
-        "pokemon_id": 84
+        "form_id": 84
     },
     {
         "hp": 60,
@@ -762,7 +762,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 110,
-        "pokemon_id": 85
+        "form_id": 85
     },
     {
         "hp": 65,
@@ -771,7 +771,7 @@
         "special-attack": 45,
         "special-defense": 70,
         "speed": 45,
-        "pokemon_id": 86
+        "form_id": 86
     },
     {
         "hp": 90,
@@ -780,7 +780,7 @@
         "special-attack": 70,
         "special-defense": 95,
         "speed": 70,
-        "pokemon_id": 87
+        "form_id": 87
     },
     {
         "hp": 80,
@@ -789,7 +789,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 25,
-        "pokemon_id": 88
+        "form_id": 88
     },
     {
         "hp": 105,
@@ -798,7 +798,7 @@
         "special-attack": 65,
         "special-defense": 100,
         "speed": 50,
-        "pokemon_id": 89
+        "form_id": 89
     },
     {
         "hp": 30,
@@ -807,7 +807,7 @@
         "special-attack": 45,
         "special-defense": 25,
         "speed": 40,
-        "pokemon_id": 90
+        "form_id": 90
     },
     {
         "hp": 50,
@@ -816,7 +816,7 @@
         "special-attack": 85,
         "special-defense": 45,
         "speed": 70,
-        "pokemon_id": 91
+        "form_id": 91
     },
     {
         "hp": 30,
@@ -825,7 +825,7 @@
         "special-attack": 100,
         "special-defense": 35,
         "speed": 80,
-        "pokemon_id": 92
+        "form_id": 92
     },
     {
         "hp": 45,
@@ -834,7 +834,7 @@
         "special-attack": 115,
         "special-defense": 55,
         "speed": 95,
-        "pokemon_id": 93
+        "form_id": 93
     },
     {
         "hp": 60,
@@ -843,7 +843,7 @@
         "special-attack": 130,
         "special-defense": 75,
         "speed": 110,
-        "pokemon_id": 94
+        "form_id": 94
     },
     {
         "hp": 35,
@@ -852,7 +852,7 @@
         "special-attack": 30,
         "special-defense": 45,
         "speed": 70,
-        "pokemon_id": 95
+        "form_id": 95
     },
     {
         "hp": 60,
@@ -861,7 +861,7 @@
         "special-attack": 43,
         "special-defense": 90,
         "speed": 42,
-        "pokemon_id": 96
+        "form_id": 96
     },
     {
         "hp": 85,
@@ -870,7 +870,7 @@
         "special-attack": 73,
         "special-defense": 115,
         "speed": 67,
-        "pokemon_id": 97
+        "form_id": 97
     },
     {
         "hp": 30,
@@ -879,7 +879,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 50,
-        "pokemon_id": 98
+        "form_id": 98
     },
     {
         "hp": 55,
@@ -888,7 +888,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 75,
-        "pokemon_id": 99
+        "form_id": 99
     },
     {
         "hp": 40,
@@ -897,7 +897,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 100,
-        "pokemon_id": 100
+        "form_id": 100
     },
     {
         "hp": 60,
@@ -906,7 +906,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 150,
-        "pokemon_id": 101
+        "form_id": 101
     },
     {
         "hp": 60,
@@ -915,7 +915,7 @@
         "special-attack": 60,
         "special-defense": 45,
         "speed": 40,
-        "pokemon_id": 102
+        "form_id": 102
     },
     {
         "hp": 95,
@@ -924,7 +924,7 @@
         "special-attack": 125,
         "special-defense": 75,
         "speed": 55,
-        "pokemon_id": 103
+        "form_id": 103
     },
     {
         "hp": 50,
@@ -933,7 +933,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 35,
-        "pokemon_id": 104
+        "form_id": 104
     },
     {
         "hp": 60,
@@ -942,7 +942,7 @@
         "special-attack": 50,
         "special-defense": 80,
         "speed": 45,
-        "pokemon_id": 105
+        "form_id": 105
     },
     {
         "hp": 50,
@@ -951,7 +951,7 @@
         "special-attack": 35,
         "special-defense": 110,
         "speed": 87,
-        "pokemon_id": 106
+        "form_id": 106
     },
     {
         "hp": 50,
@@ -960,7 +960,7 @@
         "special-attack": 35,
         "special-defense": 110,
         "speed": 76,
-        "pokemon_id": 107
+        "form_id": 107
     },
     {
         "hp": 90,
@@ -969,7 +969,7 @@
         "special-attack": 60,
         "special-defense": 75,
         "speed": 30,
-        "pokemon_id": 108
+        "form_id": 108
     },
     {
         "hp": 40,
@@ -978,7 +978,7 @@
         "special-attack": 60,
         "special-defense": 45,
         "speed": 35,
-        "pokemon_id": 109
+        "form_id": 109
     },
     {
         "hp": 65,
@@ -987,7 +987,7 @@
         "special-attack": 85,
         "special-defense": 70,
         "speed": 60,
-        "pokemon_id": 110
+        "form_id": 110
     },
     {
         "hp": 80,
@@ -996,7 +996,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 25,
-        "pokemon_id": 111
+        "form_id": 111
     },
     {
         "hp": 105,
@@ -1005,7 +1005,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 40,
-        "pokemon_id": 112
+        "form_id": 112
     },
     {
         "hp": 250,
@@ -1014,7 +1014,7 @@
         "special-attack": 35,
         "special-defense": 105,
         "speed": 50,
-        "pokemon_id": 113
+        "form_id": 113
     },
     {
         "hp": 65,
@@ -1023,7 +1023,7 @@
         "special-attack": 100,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 114
+        "form_id": 114
     },
     {
         "hp": 105,
@@ -1032,7 +1032,7 @@
         "special-attack": 40,
         "special-defense": 80,
         "speed": 90,
-        "pokemon_id": 115
+        "form_id": 115
     },
     {
         "hp": 30,
@@ -1041,7 +1041,7 @@
         "special-attack": 70,
         "special-defense": 25,
         "speed": 60,
-        "pokemon_id": 116
+        "form_id": 116
     },
     {
         "hp": 55,
@@ -1050,7 +1050,7 @@
         "special-attack": 95,
         "special-defense": 45,
         "speed": 85,
-        "pokemon_id": 117
+        "form_id": 117
     },
     {
         "hp": 45,
@@ -1059,7 +1059,7 @@
         "special-attack": 35,
         "special-defense": 50,
         "speed": 63,
-        "pokemon_id": 118
+        "form_id": 118
     },
     {
         "hp": 80,
@@ -1068,7 +1068,7 @@
         "special-attack": 65,
         "special-defense": 80,
         "speed": 68,
-        "pokemon_id": 119
+        "form_id": 119
     },
     {
         "hp": 30,
@@ -1077,7 +1077,7 @@
         "special-attack": 70,
         "special-defense": 55,
         "speed": 85,
-        "pokemon_id": 120
+        "form_id": 120
     },
     {
         "hp": 60,
@@ -1086,7 +1086,7 @@
         "special-attack": 100,
         "special-defense": 85,
         "speed": 115,
-        "pokemon_id": 121
+        "form_id": 121
     },
     {
         "hp": 40,
@@ -1095,7 +1095,7 @@
         "special-attack": 100,
         "special-defense": 120,
         "speed": 90,
-        "pokemon_id": 122
+        "form_id": 122
     },
     {
         "hp": 70,
@@ -1104,7 +1104,7 @@
         "special-attack": 55,
         "special-defense": 80,
         "speed": 105,
-        "pokemon_id": 123
+        "form_id": 123
     },
     {
         "hp": 65,
@@ -1113,7 +1113,7 @@
         "special-attack": 115,
         "special-defense": 95,
         "speed": 95,
-        "pokemon_id": 124
+        "form_id": 124
     },
     {
         "hp": 65,
@@ -1122,7 +1122,7 @@
         "special-attack": 95,
         "special-defense": 85,
         "speed": 105,
-        "pokemon_id": 125
+        "form_id": 125
     },
     {
         "hp": 65,
@@ -1131,7 +1131,7 @@
         "special-attack": 100,
         "special-defense": 85,
         "speed": 93,
-        "pokemon_id": 126
+        "form_id": 126
     },
     {
         "hp": 65,
@@ -1140,7 +1140,7 @@
         "special-attack": 55,
         "special-defense": 70,
         "speed": 85,
-        "pokemon_id": 127
+        "form_id": 127
     },
     {
         "hp": 75,
@@ -1149,7 +1149,7 @@
         "special-attack": 40,
         "special-defense": 70,
         "speed": 110,
-        "pokemon_id": 128
+        "form_id": 128
     },
     {
         "hp": 20,
@@ -1158,7 +1158,7 @@
         "special-attack": 15,
         "special-defense": 20,
         "speed": 80,
-        "pokemon_id": 129
+        "form_id": 129
     },
     {
         "hp": 95,
@@ -1167,7 +1167,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 81,
-        "pokemon_id": 130
+        "form_id": 130
     },
     {
         "hp": 130,
@@ -1176,7 +1176,7 @@
         "special-attack": 85,
         "special-defense": 95,
         "speed": 60,
-        "pokemon_id": 131
+        "form_id": 131
     },
     {
         "hp": 48,
@@ -1185,7 +1185,7 @@
         "special-attack": 48,
         "special-defense": 48,
         "speed": 48,
-        "pokemon_id": 132
+        "form_id": 132
     },
     {
         "hp": 55,
@@ -1194,7 +1194,7 @@
         "special-attack": 45,
         "special-defense": 65,
         "speed": 55,
-        "pokemon_id": 133
+        "form_id": 133
     },
     {
         "hp": 130,
@@ -1203,7 +1203,7 @@
         "special-attack": 110,
         "special-defense": 95,
         "speed": 65,
-        "pokemon_id": 134
+        "form_id": 134
     },
     {
         "hp": 65,
@@ -1212,7 +1212,7 @@
         "special-attack": 110,
         "special-defense": 95,
         "speed": 130,
-        "pokemon_id": 135
+        "form_id": 135
     },
     {
         "hp": 65,
@@ -1221,7 +1221,7 @@
         "special-attack": 95,
         "special-defense": 110,
         "speed": 65,
-        "pokemon_id": 136
+        "form_id": 136
     },
     {
         "hp": 65,
@@ -1230,7 +1230,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 40,
-        "pokemon_id": 137
+        "form_id": 137
     },
     {
         "hp": 35,
@@ -1239,7 +1239,7 @@
         "special-attack": 90,
         "special-defense": 55,
         "speed": 35,
-        "pokemon_id": 138
+        "form_id": 138
     },
     {
         "hp": 70,
@@ -1248,7 +1248,7 @@
         "special-attack": 115,
         "special-defense": 70,
         "speed": 55,
-        "pokemon_id": 139
+        "form_id": 139
     },
     {
         "hp": 30,
@@ -1257,7 +1257,7 @@
         "special-attack": 55,
         "special-defense": 45,
         "speed": 55,
-        "pokemon_id": 140
+        "form_id": 140
     },
     {
         "hp": 60,
@@ -1266,7 +1266,7 @@
         "special-attack": 65,
         "special-defense": 70,
         "speed": 80,
-        "pokemon_id": 141
+        "form_id": 141
     },
     {
         "hp": 80,
@@ -1275,7 +1275,7 @@
         "special-attack": 60,
         "special-defense": 75,
         "speed": 130,
-        "pokemon_id": 142
+        "form_id": 142
     },
     {
         "hp": 160,
@@ -1284,7 +1284,7 @@
         "special-attack": 65,
         "special-defense": 110,
         "speed": 30,
-        "pokemon_id": 143
+        "form_id": 143
     },
     {
         "hp": 90,
@@ -1293,7 +1293,7 @@
         "special-attack": 95,
         "special-defense": 125,
         "speed": 85,
-        "pokemon_id": 144
+        "form_id": 144
     },
     {
         "hp": 90,
@@ -1302,7 +1302,7 @@
         "special-attack": 125,
         "special-defense": 90,
         "speed": 100,
-        "pokemon_id": 145
+        "form_id": 145
     },
     {
         "hp": 90,
@@ -1311,7 +1311,7 @@
         "special-attack": 125,
         "special-defense": 85,
         "speed": 90,
-        "pokemon_id": 146
+        "form_id": 146
     },
     {
         "hp": 41,
@@ -1320,7 +1320,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 50,
-        "pokemon_id": 147
+        "form_id": 147
     },
     {
         "hp": 61,
@@ -1329,7 +1329,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 148
+        "form_id": 148
     },
     {
         "hp": 91,
@@ -1338,7 +1338,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 80,
-        "pokemon_id": 149
+        "form_id": 149
     },
     {
         "hp": 106,
@@ -1347,7 +1347,7 @@
         "special-attack": 154,
         "special-defense": 90,
         "speed": 130,
-        "pokemon_id": 150
+        "form_id": 150
     },
     {
         "hp": 100,
@@ -1356,7 +1356,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 151
+        "form_id": 151
     },
     {
         "hp": 45,
@@ -1365,7 +1365,7 @@
         "special-attack": 49,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 152
+        "form_id": 152
     },
     {
         "hp": 60,
@@ -1374,7 +1374,7 @@
         "special-attack": 63,
         "special-defense": 80,
         "speed": 60,
-        "pokemon_id": 153
+        "form_id": 153
     },
     {
         "hp": 80,
@@ -1383,7 +1383,7 @@
         "special-attack": 83,
         "special-defense": 100,
         "speed": 80,
-        "pokemon_id": 154
+        "form_id": 154
     },
     {
         "hp": 39,
@@ -1392,7 +1392,7 @@
         "special-attack": 60,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 155
+        "form_id": 155
     },
     {
         "hp": 58,
@@ -1401,7 +1401,7 @@
         "special-attack": 80,
         "special-defense": 65,
         "speed": 80,
-        "pokemon_id": 156
+        "form_id": 156
     },
     {
         "hp": 78,
@@ -1410,7 +1410,7 @@
         "special-attack": 109,
         "special-defense": 85,
         "speed": 100,
-        "pokemon_id": 157
+        "form_id": 157
     },
     {
         "hp": 50,
@@ -1419,7 +1419,7 @@
         "special-attack": 44,
         "special-defense": 48,
         "speed": 43,
-        "pokemon_id": 158
+        "form_id": 158
     },
     {
         "hp": 65,
@@ -1428,7 +1428,7 @@
         "special-attack": 59,
         "special-defense": 63,
         "speed": 58,
-        "pokemon_id": 159
+        "form_id": 159
     },
     {
         "hp": 85,
@@ -1437,7 +1437,7 @@
         "special-attack": 79,
         "special-defense": 83,
         "speed": 78,
-        "pokemon_id": 160
+        "form_id": 160
     },
     {
         "hp": 35,
@@ -1446,7 +1446,7 @@
         "special-attack": 35,
         "special-defense": 45,
         "speed": 20,
-        "pokemon_id": 161
+        "form_id": 161
     },
     {
         "hp": 85,
@@ -1455,7 +1455,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 90,
-        "pokemon_id": 162
+        "form_id": 162
     },
     {
         "hp": 60,
@@ -1464,7 +1464,7 @@
         "special-attack": 36,
         "special-defense": 56,
         "speed": 50,
-        "pokemon_id": 163
+        "form_id": 163
     },
     {
         "hp": 100,
@@ -1473,7 +1473,7 @@
         "special-attack": 86,
         "special-defense": 96,
         "speed": 70,
-        "pokemon_id": 164
+        "form_id": 164
     },
     {
         "hp": 40,
@@ -1482,7 +1482,7 @@
         "special-attack": 40,
         "special-defense": 80,
         "speed": 55,
-        "pokemon_id": 165
+        "form_id": 165
     },
     {
         "hp": 55,
@@ -1491,7 +1491,7 @@
         "special-attack": 55,
         "special-defense": 110,
         "speed": 85,
-        "pokemon_id": 166
+        "form_id": 166
     },
     {
         "hp": 40,
@@ -1500,7 +1500,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 30,
-        "pokemon_id": 167
+        "form_id": 167
     },
     {
         "hp": 70,
@@ -1509,7 +1509,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 40,
-        "pokemon_id": 168
+        "form_id": 168
     },
     {
         "hp": 85,
@@ -1518,7 +1518,7 @@
         "special-attack": 70,
         "special-defense": 80,
         "speed": 130,
-        "pokemon_id": 169
+        "form_id": 169
     },
     {
         "hp": 75,
@@ -1527,7 +1527,7 @@
         "special-attack": 56,
         "special-defense": 56,
         "speed": 67,
-        "pokemon_id": 170
+        "form_id": 170
     },
     {
         "hp": 125,
@@ -1536,7 +1536,7 @@
         "special-attack": 76,
         "special-defense": 76,
         "speed": 67,
-        "pokemon_id": 171
+        "form_id": 171
     },
     {
         "hp": 20,
@@ -1545,7 +1545,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 60,
-        "pokemon_id": 172
+        "form_id": 172
     },
     {
         "hp": 50,
@@ -1554,7 +1554,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 15,
-        "pokemon_id": 173
+        "form_id": 173
     },
     {
         "hp": 90,
@@ -1563,7 +1563,7 @@
         "special-attack": 40,
         "special-defense": 20,
         "speed": 15,
-        "pokemon_id": 174
+        "form_id": 174
     },
     {
         "hp": 35,
@@ -1572,7 +1572,7 @@
         "special-attack": 40,
         "special-defense": 65,
         "speed": 20,
-        "pokemon_id": 175
+        "form_id": 175
     },
     {
         "hp": 55,
@@ -1581,7 +1581,7 @@
         "special-attack": 80,
         "special-defense": 105,
         "speed": 40,
-        "pokemon_id": 176
+        "form_id": 176
     },
     {
         "hp": 40,
@@ -1590,7 +1590,7 @@
         "special-attack": 70,
         "special-defense": 45,
         "speed": 70,
-        "pokemon_id": 177
+        "form_id": 177
     },
     {
         "hp": 65,
@@ -1599,7 +1599,7 @@
         "special-attack": 95,
         "special-defense": 70,
         "speed": 95,
-        "pokemon_id": 178
+        "form_id": 178
     },
     {
         "hp": 55,
@@ -1608,7 +1608,7 @@
         "special-attack": 65,
         "special-defense": 45,
         "speed": 35,
-        "pokemon_id": 179
+        "form_id": 179
     },
     {
         "hp": 70,
@@ -1617,7 +1617,7 @@
         "special-attack": 80,
         "special-defense": 60,
         "speed": 45,
-        "pokemon_id": 180
+        "form_id": 180
     },
     {
         "hp": 90,
@@ -1626,7 +1626,7 @@
         "special-attack": 115,
         "special-defense": 90,
         "speed": 55,
-        "pokemon_id": 181
+        "form_id": 181
     },
     {
         "hp": 75,
@@ -1635,7 +1635,7 @@
         "special-attack": 90,
         "special-defense": 100,
         "speed": 50,
-        "pokemon_id": 182
+        "form_id": 182
     },
     {
         "hp": 70,
@@ -1644,7 +1644,7 @@
         "special-attack": 20,
         "special-defense": 50,
         "speed": 40,
-        "pokemon_id": 183
+        "form_id": 183
     },
     {
         "hp": 100,
@@ -1653,7 +1653,7 @@
         "special-attack": 60,
         "special-defense": 80,
         "speed": 50,
-        "pokemon_id": 184
+        "form_id": 184
     },
     {
         "hp": 70,
@@ -1662,7 +1662,7 @@
         "special-attack": 30,
         "special-defense": 65,
         "speed": 30,
-        "pokemon_id": 185
+        "form_id": 185
     },
     {
         "hp": 90,
@@ -1671,7 +1671,7 @@
         "special-attack": 90,
         "special-defense": 100,
         "speed": 70,
-        "pokemon_id": 186
+        "form_id": 186
     },
     {
         "hp": 35,
@@ -1680,7 +1680,7 @@
         "special-attack": 35,
         "special-defense": 55,
         "speed": 50,
-        "pokemon_id": 187
+        "form_id": 187
     },
     {
         "hp": 55,
@@ -1689,7 +1689,7 @@
         "special-attack": 45,
         "special-defense": 65,
         "speed": 80,
-        "pokemon_id": 188
+        "form_id": 188
     },
     {
         "hp": 75,
@@ -1698,7 +1698,7 @@
         "special-attack": 55,
         "special-defense": 95,
         "speed": 110,
-        "pokemon_id": 189
+        "form_id": 189
     },
     {
         "hp": 55,
@@ -1707,7 +1707,7 @@
         "special-attack": 40,
         "special-defense": 55,
         "speed": 85,
-        "pokemon_id": 190
+        "form_id": 190
     },
     {
         "hp": 30,
@@ -1716,7 +1716,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 30,
-        "pokemon_id": 191
+        "form_id": 191
     },
     {
         "hp": 75,
@@ -1725,7 +1725,7 @@
         "special-attack": 105,
         "special-defense": 85,
         "speed": 30,
-        "pokemon_id": 192
+        "form_id": 192
     },
     {
         "hp": 65,
@@ -1734,7 +1734,7 @@
         "special-attack": 75,
         "special-defense": 45,
         "speed": 95,
-        "pokemon_id": 193
+        "form_id": 193
     },
     {
         "hp": 55,
@@ -1743,7 +1743,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 15,
-        "pokemon_id": 194
+        "form_id": 194
     },
     {
         "hp": 95,
@@ -1752,7 +1752,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 35,
-        "pokemon_id": 195
+        "form_id": 195
     },
     {
         "hp": 65,
@@ -1761,7 +1761,7 @@
         "special-attack": 130,
         "special-defense": 95,
         "speed": 110,
-        "pokemon_id": 196
+        "form_id": 196
     },
     {
         "hp": 95,
@@ -1770,7 +1770,7 @@
         "special-attack": 60,
         "special-defense": 130,
         "speed": 65,
-        "pokemon_id": 197
+        "form_id": 197
     },
     {
         "hp": 60,
@@ -1779,7 +1779,7 @@
         "special-attack": 85,
         "special-defense": 42,
         "speed": 91,
-        "pokemon_id": 198
+        "form_id": 198
     },
     {
         "hp": 95,
@@ -1788,7 +1788,7 @@
         "special-attack": 100,
         "special-defense": 110,
         "speed": 30,
-        "pokemon_id": 199
+        "form_id": 199
     },
     {
         "hp": 60,
@@ -1797,7 +1797,7 @@
         "special-attack": 85,
         "special-defense": 85,
         "speed": 85,
-        "pokemon_id": 200
+        "form_id": 200
     },
     {
         "hp": 48,
@@ -1806,7 +1806,7 @@
         "special-attack": 72,
         "special-defense": 48,
         "speed": 48,
-        "pokemon_id": 201
+        "form_id": 201
     },
     {
         "hp": 190,
@@ -1815,7 +1815,7 @@
         "special-attack": 33,
         "special-defense": 58,
         "speed": 33,
-        "pokemon_id": 202
+        "form_id": 202
     },
     {
         "hp": 70,
@@ -1824,7 +1824,7 @@
         "special-attack": 90,
         "special-defense": 65,
         "speed": 85,
-        "pokemon_id": 203
+        "form_id": 203
     },
     {
         "hp": 50,
@@ -1833,7 +1833,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 15,
-        "pokemon_id": 204
+        "form_id": 204
     },
     {
         "hp": 75,
@@ -1842,7 +1842,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 40,
-        "pokemon_id": 205
+        "form_id": 205
     },
     {
         "hp": 100,
@@ -1851,7 +1851,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 206
+        "form_id": 206
     },
     {
         "hp": 65,
@@ -1860,7 +1860,7 @@
         "special-attack": 35,
         "special-defense": 65,
         "speed": 85,
-        "pokemon_id": 207
+        "form_id": 207
     },
     {
         "hp": 75,
@@ -1869,7 +1869,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 30,
-        "pokemon_id": 208
+        "form_id": 208
     },
     {
         "hp": 60,
@@ -1878,7 +1878,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 30,
-        "pokemon_id": 209
+        "form_id": 209
     },
     {
         "hp": 90,
@@ -1887,7 +1887,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 45,
-        "pokemon_id": 210
+        "form_id": 210
     },
     {
         "hp": 65,
@@ -1896,7 +1896,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 85,
-        "pokemon_id": 211
+        "form_id": 211
     },
     {
         "hp": 70,
@@ -1905,7 +1905,7 @@
         "special-attack": 55,
         "special-defense": 80,
         "speed": 65,
-        "pokemon_id": 212
+        "form_id": 212
     },
     {
         "hp": 20,
@@ -1914,7 +1914,7 @@
         "special-attack": 10,
         "special-defense": 230,
         "speed": 5,
-        "pokemon_id": 213
+        "form_id": 213
     },
     {
         "hp": 80,
@@ -1923,7 +1923,7 @@
         "special-attack": 40,
         "special-defense": 95,
         "speed": 85,
-        "pokemon_id": 214
+        "form_id": 214
     },
     {
         "hp": 55,
@@ -1932,7 +1932,7 @@
         "special-attack": 35,
         "special-defense": 75,
         "speed": 115,
-        "pokemon_id": 215
+        "form_id": 215
     },
     {
         "hp": 60,
@@ -1941,7 +1941,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 40,
-        "pokemon_id": 216
+        "form_id": 216
     },
     {
         "hp": 90,
@@ -1950,7 +1950,7 @@
         "special-attack": 75,
         "special-defense": 75,
         "speed": 55,
-        "pokemon_id": 217
+        "form_id": 217
     },
     {
         "hp": 40,
@@ -1959,7 +1959,7 @@
         "special-attack": 70,
         "special-defense": 40,
         "speed": 20,
-        "pokemon_id": 218
+        "form_id": 218
     },
     {
         "hp": 60,
@@ -1968,7 +1968,7 @@
         "special-attack": 90,
         "special-defense": 80,
         "speed": 30,
-        "pokemon_id": 219
+        "form_id": 219
     },
     {
         "hp": 50,
@@ -1977,7 +1977,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 50,
-        "pokemon_id": 220
+        "form_id": 220
     },
     {
         "hp": 100,
@@ -1986,7 +1986,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 50,
-        "pokemon_id": 221
+        "form_id": 221
     },
     {
         "hp": 65,
@@ -1995,7 +1995,7 @@
         "special-attack": 65,
         "special-defense": 95,
         "speed": 35,
-        "pokemon_id": 222
+        "form_id": 222
     },
     {
         "hp": 35,
@@ -2004,7 +2004,7 @@
         "special-attack": 65,
         "special-defense": 35,
         "speed": 65,
-        "pokemon_id": 223
+        "form_id": 223
     },
     {
         "hp": 75,
@@ -2013,7 +2013,7 @@
         "special-attack": 105,
         "special-defense": 75,
         "speed": 45,
-        "pokemon_id": 224
+        "form_id": 224
     },
     {
         "hp": 45,
@@ -2022,7 +2022,7 @@
         "special-attack": 65,
         "special-defense": 45,
         "speed": 75,
-        "pokemon_id": 225
+        "form_id": 225
     },
     {
         "hp": 85,
@@ -2031,7 +2031,7 @@
         "special-attack": 80,
         "special-defense": 140,
         "speed": 70,
-        "pokemon_id": 226
+        "form_id": 226
     },
     {
         "hp": 65,
@@ -2040,7 +2040,7 @@
         "special-attack": 40,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 227
+        "form_id": 227
     },
     {
         "hp": 45,
@@ -2049,7 +2049,7 @@
         "special-attack": 80,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 228
+        "form_id": 228
     },
     {
         "hp": 75,
@@ -2058,7 +2058,7 @@
         "special-attack": 110,
         "special-defense": 80,
         "speed": 95,
-        "pokemon_id": 229
+        "form_id": 229
     },
     {
         "hp": 75,
@@ -2067,7 +2067,7 @@
         "special-attack": 95,
         "special-defense": 95,
         "speed": 85,
-        "pokemon_id": 230
+        "form_id": 230
     },
     {
         "hp": 90,
@@ -2076,7 +2076,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 40,
-        "pokemon_id": 231
+        "form_id": 231
     },
     {
         "hp": 90,
@@ -2085,7 +2085,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 50,
-        "pokemon_id": 232
+        "form_id": 232
     },
     {
         "hp": 85,
@@ -2094,7 +2094,7 @@
         "special-attack": 105,
         "special-defense": 95,
         "speed": 60,
-        "pokemon_id": 233
+        "form_id": 233
     },
     {
         "hp": 73,
@@ -2103,7 +2103,7 @@
         "special-attack": 85,
         "special-defense": 65,
         "speed": 85,
-        "pokemon_id": 234
+        "form_id": 234
     },
     {
         "hp": 55,
@@ -2112,7 +2112,7 @@
         "special-attack": 20,
         "special-defense": 45,
         "speed": 75,
-        "pokemon_id": 235
+        "form_id": 235
     },
     {
         "hp": 35,
@@ -2121,7 +2121,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 35,
-        "pokemon_id": 236
+        "form_id": 236
     },
     {
         "hp": 50,
@@ -2130,7 +2130,7 @@
         "special-attack": 35,
         "special-defense": 110,
         "speed": 70,
-        "pokemon_id": 237
+        "form_id": 237
     },
     {
         "hp": 45,
@@ -2139,7 +2139,7 @@
         "special-attack": 85,
         "special-defense": 65,
         "speed": 65,
-        "pokemon_id": 238
+        "form_id": 238
     },
     {
         "hp": 45,
@@ -2148,7 +2148,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 95,
-        "pokemon_id": 239
+        "form_id": 239
     },
     {
         "hp": 45,
@@ -2157,7 +2157,7 @@
         "special-attack": 70,
         "special-defense": 55,
         "speed": 83,
-        "pokemon_id": 240
+        "form_id": 240
     },
     {
         "hp": 95,
@@ -2166,7 +2166,7 @@
         "special-attack": 40,
         "special-defense": 70,
         "speed": 100,
-        "pokemon_id": 241
+        "form_id": 241
     },
     {
         "hp": 255,
@@ -2175,7 +2175,7 @@
         "special-attack": 75,
         "special-defense": 135,
         "speed": 55,
-        "pokemon_id": 242
+        "form_id": 242
     },
     {
         "hp": 90,
@@ -2184,7 +2184,7 @@
         "special-attack": 115,
         "special-defense": 100,
         "speed": 115,
-        "pokemon_id": 243
+        "form_id": 243
     },
     {
         "hp": 115,
@@ -2193,7 +2193,7 @@
         "special-attack": 90,
         "special-defense": 75,
         "speed": 100,
-        "pokemon_id": 244
+        "form_id": 244
     },
     {
         "hp": 100,
@@ -2202,7 +2202,7 @@
         "special-attack": 90,
         "special-defense": 115,
         "speed": 85,
-        "pokemon_id": 245
+        "form_id": 245
     },
     {
         "hp": 50,
@@ -2211,7 +2211,7 @@
         "special-attack": 45,
         "special-defense": 50,
         "speed": 41,
-        "pokemon_id": 246
+        "form_id": 246
     },
     {
         "hp": 70,
@@ -2220,7 +2220,7 @@
         "special-attack": 65,
         "special-defense": 70,
         "speed": 51,
-        "pokemon_id": 247
+        "form_id": 247
     },
     {
         "hp": 100,
@@ -2229,7 +2229,7 @@
         "special-attack": 95,
         "special-defense": 100,
         "speed": 61,
-        "pokemon_id": 248
+        "form_id": 248
     },
     {
         "hp": 106,
@@ -2238,7 +2238,7 @@
         "special-attack": 90,
         "special-defense": 154,
         "speed": 110,
-        "pokemon_id": 249
+        "form_id": 249
     },
     {
         "hp": 106,
@@ -2247,7 +2247,7 @@
         "special-attack": 110,
         "special-defense": 154,
         "speed": 90,
-        "pokemon_id": 250
+        "form_id": 250
     },
     {
         "hp": 100,
@@ -2256,7 +2256,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 251
+        "form_id": 251
     },
     {
         "hp": 40,
@@ -2265,7 +2265,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 70,
-        "pokemon_id": 252
+        "form_id": 252
     },
     {
         "hp": 50,
@@ -2274,7 +2274,7 @@
         "special-attack": 85,
         "special-defense": 65,
         "speed": 95,
-        "pokemon_id": 253
+        "form_id": 253
     },
     {
         "hp": 70,
@@ -2283,7 +2283,7 @@
         "special-attack": 105,
         "special-defense": 85,
         "speed": 120,
-        "pokemon_id": 254
+        "form_id": 254
     },
     {
         "hp": 45,
@@ -2292,7 +2292,7 @@
         "special-attack": 70,
         "special-defense": 50,
         "speed": 45,
-        "pokemon_id": 255
+        "form_id": 255
     },
     {
         "hp": 60,
@@ -2301,7 +2301,7 @@
         "special-attack": 85,
         "special-defense": 60,
         "speed": 55,
-        "pokemon_id": 256
+        "form_id": 256
     },
     {
         "hp": 80,
@@ -2310,7 +2310,7 @@
         "special-attack": 110,
         "special-defense": 70,
         "speed": 80,
-        "pokemon_id": 257
+        "form_id": 257
     },
     {
         "hp": 50,
@@ -2319,7 +2319,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 40,
-        "pokemon_id": 258
+        "form_id": 258
     },
     {
         "hp": 70,
@@ -2328,7 +2328,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 50,
-        "pokemon_id": 259
+        "form_id": 259
     },
     {
         "hp": 100,
@@ -2337,7 +2337,7 @@
         "special-attack": 85,
         "special-defense": 90,
         "speed": 60,
-        "pokemon_id": 260
+        "form_id": 260
     },
     {
         "hp": 35,
@@ -2346,7 +2346,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 35,
-        "pokemon_id": 261
+        "form_id": 261
     },
     {
         "hp": 70,
@@ -2355,7 +2355,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 70,
-        "pokemon_id": 262
+        "form_id": 262
     },
     {
         "hp": 38,
@@ -2364,7 +2364,7 @@
         "special-attack": 30,
         "special-defense": 41,
         "speed": 60,
-        "pokemon_id": 263
+        "form_id": 263
     },
     {
         "hp": 78,
@@ -2373,7 +2373,7 @@
         "special-attack": 50,
         "special-defense": 61,
         "speed": 100,
-        "pokemon_id": 264
+        "form_id": 264
     },
     {
         "hp": 45,
@@ -2382,7 +2382,7 @@
         "special-attack": 20,
         "special-defense": 30,
         "speed": 20,
-        "pokemon_id": 265
+        "form_id": 265
     },
     {
         "hp": 50,
@@ -2391,7 +2391,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 15,
-        "pokemon_id": 266
+        "form_id": 266
     },
     {
         "hp": 60,
@@ -2400,7 +2400,7 @@
         "special-attack": 100,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 267
+        "form_id": 267
     },
     {
         "hp": 50,
@@ -2409,7 +2409,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 15,
-        "pokemon_id": 268
+        "form_id": 268
     },
     {
         "hp": 60,
@@ -2418,7 +2418,7 @@
         "special-attack": 50,
         "special-defense": 90,
         "speed": 65,
-        "pokemon_id": 269
+        "form_id": 269
     },
     {
         "hp": 40,
@@ -2427,7 +2427,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 30,
-        "pokemon_id": 270
+        "form_id": 270
     },
     {
         "hp": 60,
@@ -2436,7 +2436,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 50,
-        "pokemon_id": 271
+        "form_id": 271
     },
     {
         "hp": 80,
@@ -2445,7 +2445,7 @@
         "special-attack": 90,
         "special-defense": 100,
         "speed": 70,
-        "pokemon_id": 272
+        "form_id": 272
     },
     {
         "hp": 40,
@@ -2454,7 +2454,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 30,
-        "pokemon_id": 273
+        "form_id": 273
     },
     {
         "hp": 70,
@@ -2463,7 +2463,7 @@
         "special-attack": 60,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 274
+        "form_id": 274
     },
     {
         "hp": 90,
@@ -2472,7 +2472,7 @@
         "special-attack": 90,
         "special-defense": 60,
         "speed": 80,
-        "pokemon_id": 275
+        "form_id": 275
     },
     {
         "hp": 40,
@@ -2481,7 +2481,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 85,
-        "pokemon_id": 276
+        "form_id": 276
     },
     {
         "hp": 60,
@@ -2490,7 +2490,7 @@
         "special-attack": 75,
         "special-defense": 50,
         "speed": 125,
-        "pokemon_id": 277
+        "form_id": 277
     },
     {
         "hp": 40,
@@ -2499,7 +2499,7 @@
         "special-attack": 55,
         "special-defense": 30,
         "speed": 85,
-        "pokemon_id": 278
+        "form_id": 278
     },
     {
         "hp": 60,
@@ -2508,7 +2508,7 @@
         "special-attack": 95,
         "special-defense": 70,
         "speed": 65,
-        "pokemon_id": 279
+        "form_id": 279
     },
     {
         "hp": 28,
@@ -2517,7 +2517,7 @@
         "special-attack": 45,
         "special-defense": 35,
         "speed": 40,
-        "pokemon_id": 280
+        "form_id": 280
     },
     {
         "hp": 38,
@@ -2526,7 +2526,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 50,
-        "pokemon_id": 281
+        "form_id": 281
     },
     {
         "hp": 68,
@@ -2535,7 +2535,7 @@
         "special-attack": 125,
         "special-defense": 115,
         "speed": 80,
-        "pokemon_id": 282
+        "form_id": 282
     },
     {
         "hp": 40,
@@ -2544,7 +2544,7 @@
         "special-attack": 50,
         "special-defense": 52,
         "speed": 65,
-        "pokemon_id": 283
+        "form_id": 283
     },
     {
         "hp": 70,
@@ -2553,7 +2553,7 @@
         "special-attack": 100,
         "special-defense": 82,
         "speed": 80,
-        "pokemon_id": 284
+        "form_id": 284
     },
     {
         "hp": 60,
@@ -2562,7 +2562,7 @@
         "special-attack": 40,
         "special-defense": 60,
         "speed": 35,
-        "pokemon_id": 285
+        "form_id": 285
     },
     {
         "hp": 60,
@@ -2571,7 +2571,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 70,
-        "pokemon_id": 286
+        "form_id": 286
     },
     {
         "hp": 60,
@@ -2580,7 +2580,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 30,
-        "pokemon_id": 287
+        "form_id": 287
     },
     {
         "hp": 80,
@@ -2589,7 +2589,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 90,
-        "pokemon_id": 288
+        "form_id": 288
     },
     {
         "hp": 150,
@@ -2598,7 +2598,7 @@
         "special-attack": 95,
         "special-defense": 65,
         "speed": 100,
-        "pokemon_id": 289
+        "form_id": 289
     },
     {
         "hp": 31,
@@ -2607,7 +2607,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 40,
-        "pokemon_id": 290
+        "form_id": 290
     },
     {
         "hp": 61,
@@ -2616,7 +2616,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 160,
-        "pokemon_id": 291
+        "form_id": 291
     },
     {
         "hp": 1,
@@ -2625,7 +2625,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 40,
-        "pokemon_id": 292
+        "form_id": 292
     },
     {
         "hp": 64,
@@ -2634,7 +2634,7 @@
         "special-attack": 51,
         "special-defense": 23,
         "speed": 28,
-        "pokemon_id": 293
+        "form_id": 293
     },
     {
         "hp": 84,
@@ -2643,7 +2643,7 @@
         "special-attack": 71,
         "special-defense": 43,
         "speed": 48,
-        "pokemon_id": 294
+        "form_id": 294
     },
     {
         "hp": 104,
@@ -2652,7 +2652,7 @@
         "special-attack": 91,
         "special-defense": 73,
         "speed": 68,
-        "pokemon_id": 295
+        "form_id": 295
     },
     {
         "hp": 72,
@@ -2661,7 +2661,7 @@
         "special-attack": 20,
         "special-defense": 30,
         "speed": 25,
-        "pokemon_id": 296
+        "form_id": 296
     },
     {
         "hp": 144,
@@ -2670,7 +2670,7 @@
         "special-attack": 40,
         "special-defense": 60,
         "speed": 50,
-        "pokemon_id": 297
+        "form_id": 297
     },
     {
         "hp": 50,
@@ -2679,7 +2679,7 @@
         "special-attack": 20,
         "special-defense": 40,
         "speed": 20,
-        "pokemon_id": 298
+        "form_id": 298
     },
     {
         "hp": 30,
@@ -2688,7 +2688,7 @@
         "special-attack": 45,
         "special-defense": 90,
         "speed": 30,
-        "pokemon_id": 299
+        "form_id": 299
     },
     {
         "hp": 50,
@@ -2697,7 +2697,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 50,
-        "pokemon_id": 300
+        "form_id": 300
     },
     {
         "hp": 70,
@@ -2706,7 +2706,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 90,
-        "pokemon_id": 301
+        "form_id": 301
     },
     {
         "hp": 50,
@@ -2715,7 +2715,7 @@
         "special-attack": 65,
         "special-defense": 65,
         "speed": 50,
-        "pokemon_id": 302
+        "form_id": 302
     },
     {
         "hp": 50,
@@ -2724,7 +2724,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 50,
-        "pokemon_id": 303
+        "form_id": 303
     },
     {
         "hp": 50,
@@ -2733,7 +2733,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 30,
-        "pokemon_id": 304
+        "form_id": 304
     },
     {
         "hp": 60,
@@ -2742,7 +2742,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 40,
-        "pokemon_id": 305
+        "form_id": 305
     },
     {
         "hp": 70,
@@ -2751,7 +2751,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 50,
-        "pokemon_id": 306
+        "form_id": 306
     },
     {
         "hp": 30,
@@ -2760,7 +2760,7 @@
         "special-attack": 40,
         "special-defense": 55,
         "speed": 60,
-        "pokemon_id": 307
+        "form_id": 307
     },
     {
         "hp": 60,
@@ -2769,7 +2769,7 @@
         "special-attack": 60,
         "special-defense": 75,
         "speed": 80,
-        "pokemon_id": 308
+        "form_id": 308
     },
     {
         "hp": 40,
@@ -2778,7 +2778,7 @@
         "special-attack": 65,
         "special-defense": 40,
         "speed": 65,
-        "pokemon_id": 309
+        "form_id": 309
     },
     {
         "hp": 70,
@@ -2787,7 +2787,7 @@
         "special-attack": 105,
         "special-defense": 60,
         "speed": 105,
-        "pokemon_id": 310
+        "form_id": 310
     },
     {
         "hp": 60,
@@ -2796,7 +2796,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 95,
-        "pokemon_id": 311
+        "form_id": 311
     },
     {
         "hp": 60,
@@ -2805,7 +2805,7 @@
         "special-attack": 75,
         "special-defense": 85,
         "speed": 95,
-        "pokemon_id": 312
+        "form_id": 312
     },
     {
         "hp": 65,
@@ -2814,7 +2814,7 @@
         "special-attack": 47,
         "special-defense": 85,
         "speed": 85,
-        "pokemon_id": 313
+        "form_id": 313
     },
     {
         "hp": 65,
@@ -2823,7 +2823,7 @@
         "special-attack": 73,
         "special-defense": 85,
         "speed": 85,
-        "pokemon_id": 314
+        "form_id": 314
     },
     {
         "hp": 50,
@@ -2832,7 +2832,7 @@
         "special-attack": 100,
         "special-defense": 80,
         "speed": 65,
-        "pokemon_id": 315
+        "form_id": 315
     },
     {
         "hp": 70,
@@ -2841,7 +2841,7 @@
         "special-attack": 43,
         "special-defense": 53,
         "speed": 40,
-        "pokemon_id": 316
+        "form_id": 316
     },
     {
         "hp": 100,
@@ -2850,7 +2850,7 @@
         "special-attack": 73,
         "special-defense": 83,
         "speed": 55,
-        "pokemon_id": 317
+        "form_id": 317
     },
     {
         "hp": 45,
@@ -2859,7 +2859,7 @@
         "special-attack": 65,
         "special-defense": 20,
         "speed": 65,
-        "pokemon_id": 318
+        "form_id": 318
     },
     {
         "hp": 70,
@@ -2868,7 +2868,7 @@
         "special-attack": 95,
         "special-defense": 40,
         "speed": 95,
-        "pokemon_id": 319
+        "form_id": 319
     },
     {
         "hp": 130,
@@ -2877,7 +2877,7 @@
         "special-attack": 70,
         "special-defense": 35,
         "speed": 60,
-        "pokemon_id": 320
+        "form_id": 320
     },
     {
         "hp": 170,
@@ -2886,7 +2886,7 @@
         "special-attack": 90,
         "special-defense": 45,
         "speed": 60,
-        "pokemon_id": 321
+        "form_id": 321
     },
     {
         "hp": 60,
@@ -2895,7 +2895,7 @@
         "special-attack": 65,
         "special-defense": 45,
         "speed": 35,
-        "pokemon_id": 322
+        "form_id": 322
     },
     {
         "hp": 70,
@@ -2904,7 +2904,7 @@
         "special-attack": 105,
         "special-defense": 75,
         "speed": 40,
-        "pokemon_id": 323
+        "form_id": 323
     },
     {
         "hp": 70,
@@ -2913,7 +2913,7 @@
         "special-attack": 85,
         "special-defense": 70,
         "speed": 20,
-        "pokemon_id": 324
+        "form_id": 324
     },
     {
         "hp": 60,
@@ -2922,7 +2922,7 @@
         "special-attack": 70,
         "special-defense": 80,
         "speed": 60,
-        "pokemon_id": 325
+        "form_id": 325
     },
     {
         "hp": 80,
@@ -2931,7 +2931,7 @@
         "special-attack": 90,
         "special-defense": 110,
         "speed": 80,
-        "pokemon_id": 326
+        "form_id": 326
     },
     {
         "hp": 60,
@@ -2940,7 +2940,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 60,
-        "pokemon_id": 327
+        "form_id": 327
     },
     {
         "hp": 45,
@@ -2949,7 +2949,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 10,
-        "pokemon_id": 328
+        "form_id": 328
     },
     {
         "hp": 50,
@@ -2958,7 +2958,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 70,
-        "pokemon_id": 329
+        "form_id": 329
     },
     {
         "hp": 80,
@@ -2967,7 +2967,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 100,
-        "pokemon_id": 330
+        "form_id": 330
     },
     {
         "hp": 50,
@@ -2976,7 +2976,7 @@
         "special-attack": 85,
         "special-defense": 40,
         "speed": 35,
-        "pokemon_id": 331
+        "form_id": 331
     },
     {
         "hp": 70,
@@ -2985,7 +2985,7 @@
         "special-attack": 115,
         "special-defense": 60,
         "speed": 55,
-        "pokemon_id": 332
+        "form_id": 332
     },
     {
         "hp": 45,
@@ -2994,7 +2994,7 @@
         "special-attack": 40,
         "special-defense": 75,
         "speed": 50,
-        "pokemon_id": 333
+        "form_id": 333
     },
     {
         "hp": 75,
@@ -3003,7 +3003,7 @@
         "special-attack": 70,
         "special-defense": 105,
         "speed": 80,
-        "pokemon_id": 334
+        "form_id": 334
     },
     {
         "hp": 73,
@@ -3012,7 +3012,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 90,
-        "pokemon_id": 335
+        "form_id": 335
     },
     {
         "hp": 73,
@@ -3021,7 +3021,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 65,
-        "pokemon_id": 336
+        "form_id": 336
     },
     {
         "hp": 90,
@@ -3030,7 +3030,7 @@
         "special-attack": 95,
         "special-defense": 85,
         "speed": 70,
-        "pokemon_id": 337
+        "form_id": 337
     },
     {
         "hp": 90,
@@ -3039,7 +3039,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 70,
-        "pokemon_id": 338
+        "form_id": 338
     },
     {
         "hp": 50,
@@ -3048,7 +3048,7 @@
         "special-attack": 46,
         "special-defense": 41,
         "speed": 60,
-        "pokemon_id": 339
+        "form_id": 339
     },
     {
         "hp": 110,
@@ -3057,7 +3057,7 @@
         "special-attack": 76,
         "special-defense": 71,
         "speed": 60,
-        "pokemon_id": 340
+        "form_id": 340
     },
     {
         "hp": 43,
@@ -3066,7 +3066,7 @@
         "special-attack": 50,
         "special-defense": 35,
         "speed": 35,
-        "pokemon_id": 341
+        "form_id": 341
     },
     {
         "hp": 63,
@@ -3075,7 +3075,7 @@
         "special-attack": 90,
         "special-defense": 55,
         "speed": 55,
-        "pokemon_id": 342
+        "form_id": 342
     },
     {
         "hp": 40,
@@ -3084,7 +3084,7 @@
         "special-attack": 40,
         "special-defense": 70,
         "speed": 55,
-        "pokemon_id": 343
+        "form_id": 343
     },
     {
         "hp": 60,
@@ -3093,7 +3093,7 @@
         "special-attack": 70,
         "special-defense": 120,
         "speed": 75,
-        "pokemon_id": 344
+        "form_id": 344
     },
     {
         "hp": 66,
@@ -3102,7 +3102,7 @@
         "special-attack": 61,
         "special-defense": 87,
         "speed": 23,
-        "pokemon_id": 345
+        "form_id": 345
     },
     {
         "hp": 86,
@@ -3111,7 +3111,7 @@
         "special-attack": 81,
         "special-defense": 107,
         "speed": 43,
-        "pokemon_id": 346
+        "form_id": 346
     },
     {
         "hp": 45,
@@ -3120,7 +3120,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 75,
-        "pokemon_id": 347
+        "form_id": 347
     },
     {
         "hp": 75,
@@ -3129,7 +3129,7 @@
         "special-attack": 70,
         "special-defense": 80,
         "speed": 45,
-        "pokemon_id": 348
+        "form_id": 348
     },
     {
         "hp": 20,
@@ -3138,7 +3138,7 @@
         "special-attack": 10,
         "special-defense": 55,
         "speed": 80,
-        "pokemon_id": 349
+        "form_id": 349
     },
     {
         "hp": 95,
@@ -3147,7 +3147,7 @@
         "special-attack": 100,
         "special-defense": 125,
         "speed": 81,
-        "pokemon_id": 350
+        "form_id": 350
     },
     {
         "hp": 70,
@@ -3156,7 +3156,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 351
+        "form_id": 351
     },
     {
         "hp": 60,
@@ -3165,7 +3165,7 @@
         "special-attack": 60,
         "special-defense": 120,
         "speed": 40,
-        "pokemon_id": 352
+        "form_id": 352
     },
     {
         "hp": 44,
@@ -3174,7 +3174,7 @@
         "special-attack": 63,
         "special-defense": 33,
         "speed": 45,
-        "pokemon_id": 353
+        "form_id": 353
     },
     {
         "hp": 64,
@@ -3183,7 +3183,7 @@
         "special-attack": 83,
         "special-defense": 63,
         "speed": 65,
-        "pokemon_id": 354
+        "form_id": 354
     },
     {
         "hp": 20,
@@ -3192,7 +3192,7 @@
         "special-attack": 30,
         "special-defense": 90,
         "speed": 25,
-        "pokemon_id": 355
+        "form_id": 355
     },
     {
         "hp": 40,
@@ -3201,7 +3201,7 @@
         "special-attack": 60,
         "special-defense": 130,
         "speed": 25,
-        "pokemon_id": 356
+        "form_id": 356
     },
     {
         "hp": 99,
@@ -3210,7 +3210,7 @@
         "special-attack": 72,
         "special-defense": 87,
         "speed": 51,
-        "pokemon_id": 357
+        "form_id": 357
     },
     {
         "hp": 75,
@@ -3219,7 +3219,7 @@
         "special-attack": 95,
         "special-defense": 90,
         "speed": 65,
-        "pokemon_id": 358
+        "form_id": 358
     },
     {
         "hp": 65,
@@ -3228,7 +3228,7 @@
         "special-attack": 75,
         "special-defense": 60,
         "speed": 75,
-        "pokemon_id": 359
+        "form_id": 359
     },
     {
         "hp": 95,
@@ -3237,7 +3237,7 @@
         "special-attack": 23,
         "special-defense": 48,
         "speed": 23,
-        "pokemon_id": 360
+        "form_id": 360
     },
     {
         "hp": 50,
@@ -3246,7 +3246,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 50,
-        "pokemon_id": 361
+        "form_id": 361
     },
     {
         "hp": 80,
@@ -3255,7 +3255,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 80,
-        "pokemon_id": 362
+        "form_id": 362
     },
     {
         "hp": 70,
@@ -3264,7 +3264,7 @@
         "special-attack": 55,
         "special-defense": 50,
         "speed": 25,
-        "pokemon_id": 363
+        "form_id": 363
     },
     {
         "hp": 90,
@@ -3273,7 +3273,7 @@
         "special-attack": 75,
         "special-defense": 70,
         "speed": 45,
-        "pokemon_id": 364
+        "form_id": 364
     },
     {
         "hp": 110,
@@ -3282,7 +3282,7 @@
         "special-attack": 95,
         "special-defense": 90,
         "speed": 65,
-        "pokemon_id": 365
+        "form_id": 365
     },
     {
         "hp": 35,
@@ -3291,7 +3291,7 @@
         "special-attack": 74,
         "special-defense": 55,
         "speed": 32,
-        "pokemon_id": 366
+        "form_id": 366
     },
     {
         "hp": 55,
@@ -3300,7 +3300,7 @@
         "special-attack": 94,
         "special-defense": 75,
         "speed": 52,
-        "pokemon_id": 367
+        "form_id": 367
     },
     {
         "hp": 55,
@@ -3309,7 +3309,7 @@
         "special-attack": 114,
         "special-defense": 75,
         "speed": 52,
-        "pokemon_id": 368
+        "form_id": 368
     },
     {
         "hp": 100,
@@ -3318,7 +3318,7 @@
         "special-attack": 45,
         "special-defense": 65,
         "speed": 55,
-        "pokemon_id": 369
+        "form_id": 369
     },
     {
         "hp": 43,
@@ -3327,7 +3327,7 @@
         "special-attack": 40,
         "special-defense": 65,
         "speed": 97,
-        "pokemon_id": 370
+        "form_id": 370
     },
     {
         "hp": 45,
@@ -3336,7 +3336,7 @@
         "special-attack": 40,
         "special-defense": 30,
         "speed": 50,
-        "pokemon_id": 371
+        "form_id": 371
     },
     {
         "hp": 65,
@@ -3345,7 +3345,7 @@
         "special-attack": 60,
         "special-defense": 50,
         "speed": 50,
-        "pokemon_id": 372
+        "form_id": 372
     },
     {
         "hp": 95,
@@ -3354,7 +3354,7 @@
         "special-attack": 110,
         "special-defense": 80,
         "speed": 100,
-        "pokemon_id": 373
+        "form_id": 373
     },
     {
         "hp": 40,
@@ -3363,7 +3363,7 @@
         "special-attack": 35,
         "special-defense": 60,
         "speed": 30,
-        "pokemon_id": 374
+        "form_id": 374
     },
     {
         "hp": 60,
@@ -3372,7 +3372,7 @@
         "special-attack": 55,
         "special-defense": 80,
         "speed": 50,
-        "pokemon_id": 375
+        "form_id": 375
     },
     {
         "hp": 80,
@@ -3381,7 +3381,7 @@
         "special-attack": 95,
         "special-defense": 90,
         "speed": 70,
-        "pokemon_id": 376
+        "form_id": 376
     },
     {
         "hp": 80,
@@ -3390,7 +3390,7 @@
         "special-attack": 50,
         "special-defense": 100,
         "speed": 50,
-        "pokemon_id": 377
+        "form_id": 377
     },
     {
         "hp": 80,
@@ -3399,7 +3399,7 @@
         "special-attack": 100,
         "special-defense": 200,
         "speed": 50,
-        "pokemon_id": 378
+        "form_id": 378
     },
     {
         "hp": 80,
@@ -3408,7 +3408,7 @@
         "special-attack": 75,
         "special-defense": 150,
         "speed": 50,
-        "pokemon_id": 379
+        "form_id": 379
     },
     {
         "hp": 80,
@@ -3417,7 +3417,7 @@
         "special-attack": 110,
         "special-defense": 130,
         "speed": 110,
-        "pokemon_id": 380
+        "form_id": 380
     },
     {
         "hp": 80,
@@ -3426,7 +3426,7 @@
         "special-attack": 130,
         "special-defense": 110,
         "speed": 110,
-        "pokemon_id": 381
+        "form_id": 381
     },
     {
         "hp": 100,
@@ -3435,7 +3435,7 @@
         "special-attack": 150,
         "special-defense": 140,
         "speed": 90,
-        "pokemon_id": 382
+        "form_id": 382
     },
     {
         "hp": 100,
@@ -3444,7 +3444,7 @@
         "special-attack": 100,
         "special-defense": 90,
         "speed": 90,
-        "pokemon_id": 383
+        "form_id": 383
     },
     {
         "hp": 105,
@@ -3453,7 +3453,7 @@
         "special-attack": 150,
         "special-defense": 90,
         "speed": 95,
-        "pokemon_id": 384
+        "form_id": 384
     },
     {
         "hp": 100,
@@ -3462,7 +3462,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 385
+        "form_id": 385
     },
     {
         "hp": 50,
@@ -3471,7 +3471,7 @@
         "special-attack": 150,
         "special-defense": 50,
         "speed": 150,
-        "pokemon_id": 386
+        "form_id": 386
     },
     {
         "hp": 55,
@@ -3480,7 +3480,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 31,
-        "pokemon_id": 387
+        "form_id": 387
     },
     {
         "hp": 75,
@@ -3489,7 +3489,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 36,
-        "pokemon_id": 388
+        "form_id": 388
     },
     {
         "hp": 95,
@@ -3498,7 +3498,7 @@
         "special-attack": 75,
         "special-defense": 85,
         "speed": 56,
-        "pokemon_id": 389
+        "form_id": 389
     },
     {
         "hp": 44,
@@ -3507,7 +3507,7 @@
         "special-attack": 58,
         "special-defense": 44,
         "speed": 61,
-        "pokemon_id": 390
+        "form_id": 390
     },
     {
         "hp": 64,
@@ -3516,7 +3516,7 @@
         "special-attack": 78,
         "special-defense": 52,
         "speed": 81,
-        "pokemon_id": 391
+        "form_id": 391
     },
     {
         "hp": 76,
@@ -3525,7 +3525,7 @@
         "special-attack": 104,
         "special-defense": 71,
         "speed": 108,
-        "pokemon_id": 392
+        "form_id": 392
     },
     {
         "hp": 53,
@@ -3534,7 +3534,7 @@
         "special-attack": 61,
         "special-defense": 56,
         "speed": 40,
-        "pokemon_id": 393
+        "form_id": 393
     },
     {
         "hp": 64,
@@ -3543,7 +3543,7 @@
         "special-attack": 81,
         "special-defense": 76,
         "speed": 50,
-        "pokemon_id": 394
+        "form_id": 394
     },
     {
         "hp": 84,
@@ -3552,7 +3552,7 @@
         "special-attack": 111,
         "special-defense": 101,
         "speed": 60,
-        "pokemon_id": 395
+        "form_id": 395
     },
     {
         "hp": 40,
@@ -3561,7 +3561,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 60,
-        "pokemon_id": 396
+        "form_id": 396
     },
     {
         "hp": 55,
@@ -3570,7 +3570,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 80,
-        "pokemon_id": 397
+        "form_id": 397
     },
     {
         "hp": 85,
@@ -3579,7 +3579,7 @@
         "special-attack": 50,
         "special-defense": 60,
         "speed": 100,
-        "pokemon_id": 398
+        "form_id": 398
     },
     {
         "hp": 59,
@@ -3588,7 +3588,7 @@
         "special-attack": 35,
         "special-defense": 40,
         "speed": 31,
-        "pokemon_id": 399
+        "form_id": 399
     },
     {
         "hp": 79,
@@ -3597,7 +3597,7 @@
         "special-attack": 55,
         "special-defense": 60,
         "speed": 71,
-        "pokemon_id": 400
+        "form_id": 400
     },
     {
         "hp": 37,
@@ -3606,7 +3606,7 @@
         "special-attack": 25,
         "special-defense": 41,
         "speed": 25,
-        "pokemon_id": 401
+        "form_id": 401
     },
     {
         "hp": 77,
@@ -3615,7 +3615,7 @@
         "special-attack": 55,
         "special-defense": 51,
         "speed": 65,
-        "pokemon_id": 402
+        "form_id": 402
     },
     {
         "hp": 45,
@@ -3624,7 +3624,7 @@
         "special-attack": 40,
         "special-defense": 34,
         "speed": 45,
-        "pokemon_id": 403
+        "form_id": 403
     },
     {
         "hp": 60,
@@ -3633,7 +3633,7 @@
         "special-attack": 60,
         "special-defense": 49,
         "speed": 60,
-        "pokemon_id": 404
+        "form_id": 404
     },
     {
         "hp": 80,
@@ -3642,7 +3642,7 @@
         "special-attack": 95,
         "special-defense": 79,
         "speed": 70,
-        "pokemon_id": 405
+        "form_id": 405
     },
     {
         "hp": 40,
@@ -3651,7 +3651,7 @@
         "special-attack": 50,
         "special-defense": 70,
         "speed": 55,
-        "pokemon_id": 406
+        "form_id": 406
     },
     {
         "hp": 60,
@@ -3660,7 +3660,7 @@
         "special-attack": 125,
         "special-defense": 105,
         "speed": 90,
-        "pokemon_id": 407
+        "form_id": 407
     },
     {
         "hp": 67,
@@ -3669,7 +3669,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 58,
-        "pokemon_id": 408
+        "form_id": 408
     },
     {
         "hp": 97,
@@ -3678,7 +3678,7 @@
         "special-attack": 65,
         "special-defense": 50,
         "speed": 58,
-        "pokemon_id": 409
+        "form_id": 409
     },
     {
         "hp": 30,
@@ -3687,7 +3687,7 @@
         "special-attack": 42,
         "special-defense": 88,
         "speed": 30,
-        "pokemon_id": 410
+        "form_id": 410
     },
     {
         "hp": 60,
@@ -3696,7 +3696,7 @@
         "special-attack": 47,
         "special-defense": 138,
         "speed": 30,
-        "pokemon_id": 411
+        "form_id": 411
     },
     {
         "hp": 40,
@@ -3705,7 +3705,7 @@
         "special-attack": 29,
         "special-defense": 45,
         "speed": 36,
-        "pokemon_id": 412
+        "form_id": 412
     },
     {
         "hp": 60,
@@ -3714,7 +3714,7 @@
         "special-attack": 79,
         "special-defense": 105,
         "speed": 36,
-        "pokemon_id": 413
+        "form_id": 413
     },
     {
         "hp": 70,
@@ -3723,7 +3723,7 @@
         "special-attack": 94,
         "special-defense": 50,
         "speed": 66,
-        "pokemon_id": 414
+        "form_id": 414
     },
     {
         "hp": 30,
@@ -3732,7 +3732,7 @@
         "special-attack": 30,
         "special-defense": 42,
         "speed": 70,
-        "pokemon_id": 415
+        "form_id": 415
     },
     {
         "hp": 70,
@@ -3741,7 +3741,7 @@
         "special-attack": 80,
         "special-defense": 102,
         "speed": 40,
-        "pokemon_id": 416
+        "form_id": 416
     },
     {
         "hp": 60,
@@ -3750,7 +3750,7 @@
         "special-attack": 45,
         "special-defense": 90,
         "speed": 95,
-        "pokemon_id": 417
+        "form_id": 417
     },
     {
         "hp": 55,
@@ -3759,7 +3759,7 @@
         "special-attack": 60,
         "special-defense": 30,
         "speed": 85,
-        "pokemon_id": 418
+        "form_id": 418
     },
     {
         "hp": 85,
@@ -3768,7 +3768,7 @@
         "special-attack": 85,
         "special-defense": 50,
         "speed": 115,
-        "pokemon_id": 419
+        "form_id": 419
     },
     {
         "hp": 45,
@@ -3777,7 +3777,7 @@
         "special-attack": 62,
         "special-defense": 53,
         "speed": 35,
-        "pokemon_id": 420
+        "form_id": 420
     },
     {
         "hp": 70,
@@ -3786,7 +3786,7 @@
         "special-attack": 87,
         "special-defense": 78,
         "speed": 85,
-        "pokemon_id": 421
+        "form_id": 421
     },
     {
         "hp": 76,
@@ -3795,7 +3795,7 @@
         "special-attack": 57,
         "special-defense": 62,
         "speed": 34,
-        "pokemon_id": 422
+        "form_id": 422
     },
     {
         "hp": 111,
@@ -3804,7 +3804,7 @@
         "special-attack": 92,
         "special-defense": 82,
         "speed": 39,
-        "pokemon_id": 423
+        "form_id": 423
     },
     {
         "hp": 75,
@@ -3813,7 +3813,7 @@
         "special-attack": 60,
         "special-defense": 66,
         "speed": 115,
-        "pokemon_id": 424
+        "form_id": 424
     },
     {
         "hp": 90,
@@ -3822,7 +3822,7 @@
         "special-attack": 60,
         "special-defense": 44,
         "speed": 70,
-        "pokemon_id": 425
+        "form_id": 425
     },
     {
         "hp": 150,
@@ -3831,7 +3831,7 @@
         "special-attack": 90,
         "special-defense": 54,
         "speed": 80,
-        "pokemon_id": 426
+        "form_id": 426
     },
     {
         "hp": 55,
@@ -3840,7 +3840,7 @@
         "special-attack": 44,
         "special-defense": 56,
         "speed": 85,
-        "pokemon_id": 427
+        "form_id": 427
     },
     {
         "hp": 65,
@@ -3849,7 +3849,7 @@
         "special-attack": 54,
         "special-defense": 96,
         "speed": 105,
-        "pokemon_id": 428
+        "form_id": 428
     },
     {
         "hp": 60,
@@ -3858,7 +3858,7 @@
         "special-attack": 105,
         "special-defense": 105,
         "speed": 105,
-        "pokemon_id": 429
+        "form_id": 429
     },
     {
         "hp": 100,
@@ -3867,7 +3867,7 @@
         "special-attack": 105,
         "special-defense": 52,
         "speed": 71,
-        "pokemon_id": 430
+        "form_id": 430
     },
     {
         "hp": 49,
@@ -3876,7 +3876,7 @@
         "special-attack": 42,
         "special-defense": 37,
         "speed": 85,
-        "pokemon_id": 431
+        "form_id": 431
     },
     {
         "hp": 71,
@@ -3885,7 +3885,7 @@
         "special-attack": 64,
         "special-defense": 59,
         "speed": 112,
-        "pokemon_id": 432
+        "form_id": 432
     },
     {
         "hp": 45,
@@ -3894,7 +3894,7 @@
         "special-attack": 65,
         "special-defense": 50,
         "speed": 45,
-        "pokemon_id": 433
+        "form_id": 433
     },
     {
         "hp": 63,
@@ -3903,7 +3903,7 @@
         "special-attack": 41,
         "special-defense": 41,
         "speed": 74,
-        "pokemon_id": 434
+        "form_id": 434
     },
     {
         "hp": 103,
@@ -3912,7 +3912,7 @@
         "special-attack": 71,
         "special-defense": 61,
         "speed": 84,
-        "pokemon_id": 435
+        "form_id": 435
     },
     {
         "hp": 57,
@@ -3921,7 +3921,7 @@
         "special-attack": 24,
         "special-defense": 86,
         "speed": 23,
-        "pokemon_id": 436
+        "form_id": 436
     },
     {
         "hp": 67,
@@ -3930,7 +3930,7 @@
         "special-attack": 79,
         "special-defense": 116,
         "speed": 33,
-        "pokemon_id": 437
+        "form_id": 437
     },
     {
         "hp": 50,
@@ -3939,7 +3939,7 @@
         "special-attack": 10,
         "special-defense": 45,
         "speed": 10,
-        "pokemon_id": 438
+        "form_id": 438
     },
     {
         "hp": 20,
@@ -3948,7 +3948,7 @@
         "special-attack": 70,
         "special-defense": 90,
         "speed": 60,
-        "pokemon_id": 439
+        "form_id": 439
     },
     {
         "hp": 100,
@@ -3957,7 +3957,7 @@
         "special-attack": 15,
         "special-defense": 65,
         "speed": 30,
-        "pokemon_id": 440
+        "form_id": 440
     },
     {
         "hp": 76,
@@ -3966,7 +3966,7 @@
         "special-attack": 92,
         "special-defense": 42,
         "speed": 91,
-        "pokemon_id": 441
+        "form_id": 441
     },
     {
         "hp": 50,
@@ -3975,7 +3975,7 @@
         "special-attack": 92,
         "special-defense": 108,
         "speed": 35,
-        "pokemon_id": 442
+        "form_id": 442
     },
     {
         "hp": 58,
@@ -3984,7 +3984,7 @@
         "special-attack": 40,
         "special-defense": 45,
         "speed": 42,
-        "pokemon_id": 443
+        "form_id": 443
     },
     {
         "hp": 68,
@@ -3993,7 +3993,7 @@
         "special-attack": 50,
         "special-defense": 55,
         "speed": 82,
-        "pokemon_id": 444
+        "form_id": 444
     },
     {
         "hp": 108,
@@ -4002,7 +4002,7 @@
         "special-attack": 80,
         "special-defense": 85,
         "speed": 102,
-        "pokemon_id": 445
+        "form_id": 445
     },
     {
         "hp": 135,
@@ -4011,7 +4011,7 @@
         "special-attack": 40,
         "special-defense": 85,
         "speed": 5,
-        "pokemon_id": 446
+        "form_id": 446
     },
     {
         "hp": 40,
@@ -4020,7 +4020,7 @@
         "special-attack": 35,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 447
+        "form_id": 447
     },
     {
         "hp": 70,
@@ -4029,7 +4029,7 @@
         "special-attack": 115,
         "special-defense": 70,
         "speed": 90,
-        "pokemon_id": 448
+        "form_id": 448
     },
     {
         "hp": 68,
@@ -4038,7 +4038,7 @@
         "special-attack": 38,
         "special-defense": 42,
         "speed": 32,
-        "pokemon_id": 449
+        "form_id": 449
     },
     {
         "hp": 108,
@@ -4047,7 +4047,7 @@
         "special-attack": 68,
         "special-defense": 72,
         "speed": 47,
-        "pokemon_id": 450
+        "form_id": 450
     },
     {
         "hp": 40,
@@ -4056,7 +4056,7 @@
         "special-attack": 30,
         "special-defense": 55,
         "speed": 65,
-        "pokemon_id": 451
+        "form_id": 451
     },
     {
         "hp": 70,
@@ -4065,7 +4065,7 @@
         "special-attack": 60,
         "special-defense": 75,
         "speed": 95,
-        "pokemon_id": 452
+        "form_id": 452
     },
     {
         "hp": 48,
@@ -4074,7 +4074,7 @@
         "special-attack": 61,
         "special-defense": 40,
         "speed": 50,
-        "pokemon_id": 453
+        "form_id": 453
     },
     {
         "hp": 83,
@@ -4083,7 +4083,7 @@
         "special-attack": 86,
         "special-defense": 65,
         "speed": 85,
-        "pokemon_id": 454
+        "form_id": 454
     },
     {
         "hp": 74,
@@ -4092,7 +4092,7 @@
         "special-attack": 90,
         "special-defense": 72,
         "speed": 46,
-        "pokemon_id": 455
+        "form_id": 455
     },
     {
         "hp": 49,
@@ -4101,7 +4101,7 @@
         "special-attack": 49,
         "special-defense": 61,
         "speed": 66,
-        "pokemon_id": 456
+        "form_id": 456
     },
     {
         "hp": 69,
@@ -4110,7 +4110,7 @@
         "special-attack": 69,
         "special-defense": 86,
         "speed": 91,
-        "pokemon_id": 457
+        "form_id": 457
     },
     {
         "hp": 45,
@@ -4119,7 +4119,7 @@
         "special-attack": 60,
         "special-defense": 120,
         "speed": 50,
-        "pokemon_id": 458
+        "form_id": 458
     },
     {
         "hp": 60,
@@ -4128,7 +4128,7 @@
         "special-attack": 62,
         "special-defense": 60,
         "speed": 40,
-        "pokemon_id": 459
+        "form_id": 459
     },
     {
         "hp": 90,
@@ -4137,7 +4137,7 @@
         "special-attack": 92,
         "special-defense": 85,
         "speed": 60,
-        "pokemon_id": 460
+        "form_id": 460
     },
     {
         "hp": 70,
@@ -4146,7 +4146,7 @@
         "special-attack": 45,
         "special-defense": 85,
         "speed": 125,
-        "pokemon_id": 461
+        "form_id": 461
     },
     {
         "hp": 70,
@@ -4155,7 +4155,7 @@
         "special-attack": 130,
         "special-defense": 90,
         "speed": 60,
-        "pokemon_id": 462
+        "form_id": 462
     },
     {
         "hp": 110,
@@ -4164,7 +4164,7 @@
         "special-attack": 80,
         "special-defense": 95,
         "speed": 50,
-        "pokemon_id": 463
+        "form_id": 463
     },
     {
         "hp": 115,
@@ -4173,7 +4173,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 40,
-        "pokemon_id": 464
+        "form_id": 464
     },
     {
         "hp": 100,
@@ -4182,7 +4182,7 @@
         "special-attack": 110,
         "special-defense": 50,
         "speed": 50,
-        "pokemon_id": 465
+        "form_id": 465
     },
     {
         "hp": 75,
@@ -4191,7 +4191,7 @@
         "special-attack": 95,
         "special-defense": 85,
         "speed": 95,
-        "pokemon_id": 466
+        "form_id": 466
     },
     {
         "hp": 75,
@@ -4200,7 +4200,7 @@
         "special-attack": 125,
         "special-defense": 95,
         "speed": 83,
-        "pokemon_id": 467
+        "form_id": 467
     },
     {
         "hp": 85,
@@ -4209,7 +4209,7 @@
         "special-attack": 120,
         "special-defense": 115,
         "speed": 80,
-        "pokemon_id": 468
+        "form_id": 468
     },
     {
         "hp": 86,
@@ -4218,7 +4218,7 @@
         "special-attack": 116,
         "special-defense": 56,
         "speed": 95,
-        "pokemon_id": 469
+        "form_id": 469
     },
     {
         "hp": 65,
@@ -4227,7 +4227,7 @@
         "special-attack": 60,
         "special-defense": 65,
         "speed": 95,
-        "pokemon_id": 470
+        "form_id": 470
     },
     {
         "hp": 65,
@@ -4236,7 +4236,7 @@
         "special-attack": 130,
         "special-defense": 95,
         "speed": 65,
-        "pokemon_id": 471
+        "form_id": 471
     },
     {
         "hp": 75,
@@ -4245,7 +4245,7 @@
         "special-attack": 45,
         "special-defense": 75,
         "speed": 95,
-        "pokemon_id": 472
+        "form_id": 472
     },
     {
         "hp": 110,
@@ -4254,7 +4254,7 @@
         "special-attack": 70,
         "special-defense": 60,
         "speed": 80,
-        "pokemon_id": 473
+        "form_id": 473
     },
     {
         "hp": 85,
@@ -4263,7 +4263,7 @@
         "special-attack": 135,
         "special-defense": 75,
         "speed": 90,
-        "pokemon_id": 474
+        "form_id": 474
     },
     {
         "hp": 68,
@@ -4272,7 +4272,7 @@
         "special-attack": 65,
         "special-defense": 115,
         "speed": 80,
-        "pokemon_id": 475
+        "form_id": 475
     },
     {
         "hp": 60,
@@ -4281,7 +4281,7 @@
         "special-attack": 75,
         "special-defense": 150,
         "speed": 40,
-        "pokemon_id": 476
+        "form_id": 476
     },
     {
         "hp": 45,
@@ -4290,7 +4290,7 @@
         "special-attack": 65,
         "special-defense": 135,
         "speed": 45,
-        "pokemon_id": 477
+        "form_id": 477
     },
     {
         "hp": 70,
@@ -4299,7 +4299,7 @@
         "special-attack": 80,
         "special-defense": 70,
         "speed": 110,
-        "pokemon_id": 478
+        "form_id": 478
     },
     {
         "hp": 50,
@@ -4308,7 +4308,7 @@
         "special-attack": 95,
         "special-defense": 77,
         "speed": 91,
-        "pokemon_id": 479
+        "form_id": 479
     },
     {
         "hp": 75,
@@ -4317,7 +4317,7 @@
         "special-attack": 75,
         "special-defense": 130,
         "speed": 95,
-        "pokemon_id": 480
+        "form_id": 480
     },
     {
         "hp": 80,
@@ -4326,7 +4326,7 @@
         "special-attack": 105,
         "special-defense": 105,
         "speed": 80,
-        "pokemon_id": 481
+        "form_id": 481
     },
     {
         "hp": 75,
@@ -4335,7 +4335,7 @@
         "special-attack": 125,
         "special-defense": 70,
         "speed": 115,
-        "pokemon_id": 482
+        "form_id": 482
     },
     {
         "hp": 100,
@@ -4344,7 +4344,7 @@
         "special-attack": 150,
         "special-defense": 100,
         "speed": 90,
-        "pokemon_id": 483
+        "form_id": 483
     },
     {
         "hp": 90,
@@ -4353,7 +4353,7 @@
         "special-attack": 150,
         "special-defense": 120,
         "speed": 100,
-        "pokemon_id": 484
+        "form_id": 484
     },
     {
         "hp": 91,
@@ -4362,7 +4362,7 @@
         "special-attack": 130,
         "special-defense": 106,
         "speed": 77,
-        "pokemon_id": 485
+        "form_id": 485
     },
     {
         "hp": 110,
@@ -4371,7 +4371,7 @@
         "special-attack": 80,
         "special-defense": 110,
         "speed": 100,
-        "pokemon_id": 486
+        "form_id": 486
     },
     {
         "hp": 150,
@@ -4380,7 +4380,7 @@
         "special-attack": 100,
         "special-defense": 120,
         "speed": 90,
-        "pokemon_id": 487
+        "form_id": 487
     },
     {
         "hp": 120,
@@ -4389,7 +4389,7 @@
         "special-attack": 75,
         "special-defense": 130,
         "speed": 85,
-        "pokemon_id": 488
+        "form_id": 488
     },
     {
         "hp": 80,
@@ -4398,7 +4398,7 @@
         "special-attack": 80,
         "special-defense": 80,
         "speed": 80,
-        "pokemon_id": 489
+        "form_id": 489
     },
     {
         "hp": 100,
@@ -4407,7 +4407,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 490
+        "form_id": 490
     },
     {
         "hp": 70,
@@ -4416,7 +4416,7 @@
         "special-attack": 135,
         "special-defense": 90,
         "speed": 125,
-        "pokemon_id": 491
+        "form_id": 491
     },
     {
         "hp": 100,
@@ -4425,7 +4425,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 492
+        "form_id": 492
     },
     {
         "hp": 120,
@@ -4434,7 +4434,7 @@
         "special-attack": 120,
         "special-defense": 120,
         "speed": 120,
-        "pokemon_id": 493
+        "form_id": 493
     },
     {
         "hp": 100,
@@ -4443,7 +4443,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 494
+        "form_id": 494
     },
     {
         "hp": 45,
@@ -4452,7 +4452,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 63,
-        "pokemon_id": 495
+        "form_id": 495
     },
     {
         "hp": 60,
@@ -4461,7 +4461,7 @@
         "special-attack": 60,
         "special-defense": 75,
         "speed": 83,
-        "pokemon_id": 496
+        "form_id": 496
     },
     {
         "hp": 75,
@@ -4470,7 +4470,7 @@
         "special-attack": 75,
         "special-defense": 95,
         "speed": 113,
-        "pokemon_id": 497
+        "form_id": 497
     },
     {
         "hp": 65,
@@ -4479,7 +4479,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 45,
-        "pokemon_id": 498
+        "form_id": 498
     },
     {
         "hp": 90,
@@ -4488,7 +4488,7 @@
         "special-attack": 70,
         "special-defense": 55,
         "speed": 55,
-        "pokemon_id": 499
+        "form_id": 499
     },
     {
         "hp": 110,
@@ -4497,7 +4497,7 @@
         "special-attack": 100,
         "special-defense": 65,
         "speed": 65,
-        "pokemon_id": 500
+        "form_id": 500
     },
     {
         "hp": 55,
@@ -4506,7 +4506,7 @@
         "special-attack": 63,
         "special-defense": 45,
         "speed": 45,
-        "pokemon_id": 501
+        "form_id": 501
     },
     {
         "hp": 75,
@@ -4515,7 +4515,7 @@
         "special-attack": 83,
         "special-defense": 60,
         "speed": 60,
-        "pokemon_id": 502
+        "form_id": 502
     },
     {
         "hp": 95,
@@ -4524,7 +4524,7 @@
         "special-attack": 108,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 503
+        "form_id": 503
     },
     {
         "hp": 45,
@@ -4533,7 +4533,7 @@
         "special-attack": 35,
         "special-defense": 39,
         "speed": 42,
-        "pokemon_id": 504
+        "form_id": 504
     },
     {
         "hp": 60,
@@ -4542,7 +4542,7 @@
         "special-attack": 60,
         "special-defense": 69,
         "speed": 77,
-        "pokemon_id": 505
+        "form_id": 505
     },
     {
         "hp": 45,
@@ -4551,7 +4551,7 @@
         "special-attack": 25,
         "special-defense": 45,
         "speed": 55,
-        "pokemon_id": 506
+        "form_id": 506
     },
     {
         "hp": 65,
@@ -4560,7 +4560,7 @@
         "special-attack": 35,
         "special-defense": 65,
         "speed": 60,
-        "pokemon_id": 507
+        "form_id": 507
     },
     {
         "hp": 85,
@@ -4569,7 +4569,7 @@
         "special-attack": 45,
         "special-defense": 90,
         "speed": 80,
-        "pokemon_id": 508
+        "form_id": 508
     },
     {
         "hp": 41,
@@ -4578,7 +4578,7 @@
         "special-attack": 50,
         "special-defense": 37,
         "speed": 66,
-        "pokemon_id": 509
+        "form_id": 509
     },
     {
         "hp": 64,
@@ -4587,7 +4587,7 @@
         "special-attack": 88,
         "special-defense": 50,
         "speed": 106,
-        "pokemon_id": 510
+        "form_id": 510
     },
     {
         "hp": 50,
@@ -4596,7 +4596,7 @@
         "special-attack": 53,
         "special-defense": 48,
         "speed": 64,
-        "pokemon_id": 511
+        "form_id": 511
     },
     {
         "hp": 75,
@@ -4605,7 +4605,7 @@
         "special-attack": 98,
         "special-defense": 63,
         "speed": 101,
-        "pokemon_id": 512
+        "form_id": 512
     },
     {
         "hp": 50,
@@ -4614,7 +4614,7 @@
         "special-attack": 53,
         "special-defense": 48,
         "speed": 64,
-        "pokemon_id": 513
+        "form_id": 513
     },
     {
         "hp": 75,
@@ -4623,7 +4623,7 @@
         "special-attack": 98,
         "special-defense": 63,
         "speed": 101,
-        "pokemon_id": 514
+        "form_id": 514
     },
     {
         "hp": 50,
@@ -4632,7 +4632,7 @@
         "special-attack": 53,
         "special-defense": 48,
         "speed": 64,
-        "pokemon_id": 515
+        "form_id": 515
     },
     {
         "hp": 75,
@@ -4641,7 +4641,7 @@
         "special-attack": 98,
         "special-defense": 63,
         "speed": 101,
-        "pokemon_id": 516
+        "form_id": 516
     },
     {
         "hp": 76,
@@ -4650,7 +4650,7 @@
         "special-attack": 67,
         "special-defense": 55,
         "speed": 24,
-        "pokemon_id": 517
+        "form_id": 517
     },
     {
         "hp": 116,
@@ -4659,7 +4659,7 @@
         "special-attack": 107,
         "special-defense": 95,
         "speed": 29,
-        "pokemon_id": 518
+        "form_id": 518
     },
     {
         "hp": 50,
@@ -4668,7 +4668,7 @@
         "special-attack": 36,
         "special-defense": 30,
         "speed": 43,
-        "pokemon_id": 519
+        "form_id": 519
     },
     {
         "hp": 62,
@@ -4677,7 +4677,7 @@
         "special-attack": 50,
         "special-defense": 42,
         "speed": 65,
-        "pokemon_id": 520
+        "form_id": 520
     },
     {
         "hp": 80,
@@ -4686,7 +4686,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 93,
-        "pokemon_id": 521
+        "form_id": 521
     },
     {
         "hp": 45,
@@ -4695,7 +4695,7 @@
         "special-attack": 50,
         "special-defense": 32,
         "speed": 76,
-        "pokemon_id": 522
+        "form_id": 522
     },
     {
         "hp": 75,
@@ -4704,7 +4704,7 @@
         "special-attack": 80,
         "special-defense": 63,
         "speed": 116,
-        "pokemon_id": 523
+        "form_id": 523
     },
     {
         "hp": 55,
@@ -4713,7 +4713,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 15,
-        "pokemon_id": 524
+        "form_id": 524
     },
     {
         "hp": 70,
@@ -4722,7 +4722,7 @@
         "special-attack": 50,
         "special-defense": 40,
         "speed": 20,
-        "pokemon_id": 525
+        "form_id": 525
     },
     {
         "hp": 85,
@@ -4731,7 +4731,7 @@
         "special-attack": 60,
         "special-defense": 80,
         "speed": 25,
-        "pokemon_id": 526
+        "form_id": 526
     },
     {
         "hp": 65,
@@ -4740,7 +4740,7 @@
         "special-attack": 55,
         "special-defense": 43,
         "speed": 72,
-        "pokemon_id": 527
+        "form_id": 527
     },
     {
         "hp": 67,
@@ -4749,7 +4749,7 @@
         "special-attack": 77,
         "special-defense": 55,
         "speed": 114,
-        "pokemon_id": 528
+        "form_id": 528
     },
     {
         "hp": 60,
@@ -4758,7 +4758,7 @@
         "special-attack": 30,
         "special-defense": 45,
         "speed": 68,
-        "pokemon_id": 529
+        "form_id": 529
     },
     {
         "hp": 110,
@@ -4767,7 +4767,7 @@
         "special-attack": 50,
         "special-defense": 65,
         "speed": 88,
-        "pokemon_id": 530
+        "form_id": 530
     },
     {
         "hp": 103,
@@ -4776,7 +4776,7 @@
         "special-attack": 60,
         "special-defense": 86,
         "speed": 50,
-        "pokemon_id": 531
+        "form_id": 531
     },
     {
         "hp": 75,
@@ -4785,7 +4785,7 @@
         "special-attack": 25,
         "special-defense": 35,
         "speed": 35,
-        "pokemon_id": 532
+        "form_id": 532
     },
     {
         "hp": 85,
@@ -4794,7 +4794,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 40,
-        "pokemon_id": 533
+        "form_id": 533
     },
     {
         "hp": 105,
@@ -4803,7 +4803,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 534
+        "form_id": 534
     },
     {
         "hp": 50,
@@ -4812,7 +4812,7 @@
         "special-attack": 50,
         "special-defense": 40,
         "speed": 64,
-        "pokemon_id": 535
+        "form_id": 535
     },
     {
         "hp": 75,
@@ -4821,7 +4821,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 69,
-        "pokemon_id": 536
+        "form_id": 536
     },
     {
         "hp": 105,
@@ -4830,7 +4830,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 74,
-        "pokemon_id": 537
+        "form_id": 537
     },
     {
         "hp": 120,
@@ -4839,7 +4839,7 @@
         "special-attack": 30,
         "special-defense": 85,
         "speed": 45,
-        "pokemon_id": 538
+        "form_id": 538
     },
     {
         "hp": 75,
@@ -4848,7 +4848,7 @@
         "special-attack": 30,
         "special-defense": 75,
         "speed": 85,
-        "pokemon_id": 539
+        "form_id": 539
     },
     {
         "hp": 45,
@@ -4857,7 +4857,7 @@
         "special-attack": 40,
         "special-defense": 60,
         "speed": 42,
-        "pokemon_id": 540
+        "form_id": 540
     },
     {
         "hp": 55,
@@ -4866,7 +4866,7 @@
         "special-attack": 50,
         "special-defense": 80,
         "speed": 42,
-        "pokemon_id": 541
+        "form_id": 541
     },
     {
         "hp": 75,
@@ -4875,7 +4875,7 @@
         "special-attack": 70,
         "special-defense": 80,
         "speed": 92,
-        "pokemon_id": 542
+        "form_id": 542
     },
     {
         "hp": 30,
@@ -4884,7 +4884,7 @@
         "special-attack": 30,
         "special-defense": 39,
         "speed": 57,
-        "pokemon_id": 543
+        "form_id": 543
     },
     {
         "hp": 40,
@@ -4893,7 +4893,7 @@
         "special-attack": 40,
         "special-defense": 79,
         "speed": 47,
-        "pokemon_id": 544
+        "form_id": 544
     },
     {
         "hp": 60,
@@ -4902,7 +4902,7 @@
         "special-attack": 55,
         "special-defense": 69,
         "speed": 112,
-        "pokemon_id": 545
+        "form_id": 545
     },
     {
         "hp": 40,
@@ -4911,7 +4911,7 @@
         "special-attack": 37,
         "special-defense": 50,
         "speed": 66,
-        "pokemon_id": 546
+        "form_id": 546
     },
     {
         "hp": 60,
@@ -4920,7 +4920,7 @@
         "special-attack": 77,
         "special-defense": 75,
         "speed": 116,
-        "pokemon_id": 547
+        "form_id": 547
     },
     {
         "hp": 45,
@@ -4929,7 +4929,7 @@
         "special-attack": 70,
         "special-defense": 50,
         "speed": 30,
-        "pokemon_id": 548
+        "form_id": 548
     },
     {
         "hp": 70,
@@ -4938,7 +4938,7 @@
         "special-attack": 110,
         "special-defense": 75,
         "speed": 90,
-        "pokemon_id": 549
+        "form_id": 549
     },
     {
         "hp": 70,
@@ -4947,7 +4947,7 @@
         "special-attack": 80,
         "special-defense": 55,
         "speed": 98,
-        "pokemon_id": 550
+        "form_id": 550
     },
     {
         "hp": 50,
@@ -4956,7 +4956,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 65,
-        "pokemon_id": 551
+        "form_id": 551
     },
     {
         "hp": 60,
@@ -4965,7 +4965,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 74,
-        "pokemon_id": 552
+        "form_id": 552
     },
     {
         "hp": 95,
@@ -4974,7 +4974,7 @@
         "special-attack": 65,
         "special-defense": 70,
         "speed": 92,
-        "pokemon_id": 553
+        "form_id": 553
     },
     {
         "hp": 70,
@@ -4983,7 +4983,7 @@
         "special-attack": 15,
         "special-defense": 45,
         "speed": 50,
-        "pokemon_id": 554
+        "form_id": 554
     },
     {
         "hp": 105,
@@ -4992,7 +4992,7 @@
         "special-attack": 30,
         "special-defense": 55,
         "speed": 95,
-        "pokemon_id": 555
+        "form_id": 555
     },
     {
         "hp": 75,
@@ -5001,7 +5001,7 @@
         "special-attack": 106,
         "special-defense": 67,
         "speed": 60,
-        "pokemon_id": 556
+        "form_id": 556
     },
     {
         "hp": 50,
@@ -5010,7 +5010,7 @@
         "special-attack": 35,
         "special-defense": 35,
         "speed": 55,
-        "pokemon_id": 557
+        "form_id": 557
     },
     {
         "hp": 70,
@@ -5019,7 +5019,7 @@
         "special-attack": 65,
         "special-defense": 75,
         "speed": 45,
-        "pokemon_id": 558
+        "form_id": 558
     },
     {
         "hp": 50,
@@ -5028,7 +5028,7 @@
         "special-attack": 35,
         "special-defense": 70,
         "speed": 48,
-        "pokemon_id": 559
+        "form_id": 559
     },
     {
         "hp": 65,
@@ -5037,7 +5037,7 @@
         "special-attack": 45,
         "special-defense": 115,
         "speed": 58,
-        "pokemon_id": 560
+        "form_id": 560
     },
     {
         "hp": 72,
@@ -5046,7 +5046,7 @@
         "special-attack": 103,
         "special-defense": 80,
         "speed": 97,
-        "pokemon_id": 561
+        "form_id": 561
     },
     {
         "hp": 38,
@@ -5055,7 +5055,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 30,
-        "pokemon_id": 562
+        "form_id": 562
     },
     {
         "hp": 58,
@@ -5064,7 +5064,7 @@
         "special-attack": 95,
         "special-defense": 105,
         "speed": 30,
-        "pokemon_id": 563
+        "form_id": 563
     },
     {
         "hp": 54,
@@ -5073,7 +5073,7 @@
         "special-attack": 53,
         "special-defense": 45,
         "speed": 22,
-        "pokemon_id": 564
+        "form_id": 564
     },
     {
         "hp": 74,
@@ -5082,7 +5082,7 @@
         "special-attack": 83,
         "special-defense": 65,
         "speed": 32,
-        "pokemon_id": 565
+        "form_id": 565
     },
     {
         "hp": 55,
@@ -5091,7 +5091,7 @@
         "special-attack": 74,
         "special-defense": 45,
         "speed": 70,
-        "pokemon_id": 566
+        "form_id": 566
     },
     {
         "hp": 75,
@@ -5100,7 +5100,7 @@
         "special-attack": 112,
         "special-defense": 65,
         "speed": 110,
-        "pokemon_id": 567
+        "form_id": 567
     },
     {
         "hp": 50,
@@ -5109,7 +5109,7 @@
         "special-attack": 40,
         "special-defense": 62,
         "speed": 65,
-        "pokemon_id": 568
+        "form_id": 568
     },
     {
         "hp": 80,
@@ -5118,7 +5118,7 @@
         "special-attack": 60,
         "special-defense": 82,
         "speed": 75,
-        "pokemon_id": 569
+        "form_id": 569
     },
     {
         "hp": 40,
@@ -5127,7 +5127,7 @@
         "special-attack": 80,
         "special-defense": 40,
         "speed": 65,
-        "pokemon_id": 570
+        "form_id": 570
     },
     {
         "hp": 60,
@@ -5136,7 +5136,7 @@
         "special-attack": 120,
         "special-defense": 60,
         "speed": 105,
-        "pokemon_id": 571
+        "form_id": 571
     },
     {
         "hp": 55,
@@ -5145,7 +5145,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 75,
-        "pokemon_id": 572
+        "form_id": 572
     },
     {
         "hp": 75,
@@ -5154,7 +5154,7 @@
         "special-attack": 65,
         "special-defense": 60,
         "speed": 115,
-        "pokemon_id": 573
+        "form_id": 573
     },
     {
         "hp": 45,
@@ -5163,7 +5163,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 574
+        "form_id": 574
     },
     {
         "hp": 60,
@@ -5172,7 +5172,7 @@
         "special-attack": 75,
         "special-defense": 85,
         "speed": 55,
-        "pokemon_id": 575
+        "form_id": 575
     },
     {
         "hp": 70,
@@ -5181,7 +5181,7 @@
         "special-attack": 95,
         "special-defense": 110,
         "speed": 65,
-        "pokemon_id": 576
+        "form_id": 576
     },
     {
         "hp": 45,
@@ -5190,7 +5190,7 @@
         "special-attack": 105,
         "special-defense": 50,
         "speed": 20,
-        "pokemon_id": 577
+        "form_id": 577
     },
     {
         "hp": 65,
@@ -5199,7 +5199,7 @@
         "special-attack": 125,
         "special-defense": 60,
         "speed": 30,
-        "pokemon_id": 578
+        "form_id": 578
     },
     {
         "hp": 110,
@@ -5208,7 +5208,7 @@
         "special-attack": 125,
         "special-defense": 85,
         "speed": 30,
-        "pokemon_id": 579
+        "form_id": 579
     },
     {
         "hp": 62,
@@ -5217,7 +5217,7 @@
         "special-attack": 44,
         "special-defense": 50,
         "speed": 55,
-        "pokemon_id": 580
+        "form_id": 580
     },
     {
         "hp": 75,
@@ -5226,7 +5226,7 @@
         "special-attack": 87,
         "special-defense": 63,
         "speed": 98,
-        "pokemon_id": 581
+        "form_id": 581
     },
     {
         "hp": 36,
@@ -5235,7 +5235,7 @@
         "special-attack": 65,
         "special-defense": 60,
         "speed": 44,
-        "pokemon_id": 582
+        "form_id": 582
     },
     {
         "hp": 51,
@@ -5244,7 +5244,7 @@
         "special-attack": 80,
         "special-defense": 75,
         "speed": 59,
-        "pokemon_id": 583
+        "form_id": 583
     },
     {
         "hp": 71,
@@ -5253,7 +5253,7 @@
         "special-attack": 110,
         "special-defense": 95,
         "speed": 79,
-        "pokemon_id": 584
+        "form_id": 584
     },
     {
         "hp": 60,
@@ -5262,7 +5262,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 75,
-        "pokemon_id": 585
+        "form_id": 585
     },
     {
         "hp": 80,
@@ -5271,7 +5271,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 95,
-        "pokemon_id": 586
+        "form_id": 586
     },
     {
         "hp": 55,
@@ -5280,7 +5280,7 @@
         "special-attack": 75,
         "special-defense": 60,
         "speed": 103,
-        "pokemon_id": 587
+        "form_id": 587
     },
     {
         "hp": 50,
@@ -5289,7 +5289,7 @@
         "special-attack": 40,
         "special-defense": 45,
         "speed": 60,
-        "pokemon_id": 588
+        "form_id": 588
     },
     {
         "hp": 70,
@@ -5298,7 +5298,7 @@
         "special-attack": 60,
         "special-defense": 105,
         "speed": 20,
-        "pokemon_id": 589
+        "form_id": 589
     },
     {
         "hp": 69,
@@ -5307,7 +5307,7 @@
         "special-attack": 55,
         "special-defense": 55,
         "speed": 15,
-        "pokemon_id": 590
+        "form_id": 590
     },
     {
         "hp": 114,
@@ -5316,7 +5316,7 @@
         "special-attack": 85,
         "special-defense": 80,
         "speed": 30,
-        "pokemon_id": 591
+        "form_id": 591
     },
     {
         "hp": 55,
@@ -5325,7 +5325,7 @@
         "special-attack": 65,
         "special-defense": 85,
         "speed": 40,
-        "pokemon_id": 592
+        "form_id": 592
     },
     {
         "hp": 100,
@@ -5334,7 +5334,7 @@
         "special-attack": 85,
         "special-defense": 105,
         "speed": 60,
-        "pokemon_id": 593
+        "form_id": 593
     },
     {
         "hp": 165,
@@ -5343,7 +5343,7 @@
         "special-attack": 40,
         "special-defense": 45,
         "speed": 65,
-        "pokemon_id": 594
+        "form_id": 594
     },
     {
         "hp": 50,
@@ -5352,7 +5352,7 @@
         "special-attack": 57,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 595
+        "form_id": 595
     },
     {
         "hp": 70,
@@ -5361,7 +5361,7 @@
         "special-attack": 97,
         "special-defense": 60,
         "speed": 108,
-        "pokemon_id": 596
+        "form_id": 596
     },
     {
         "hp": 44,
@@ -5370,7 +5370,7 @@
         "special-attack": 24,
         "special-defense": 86,
         "speed": 10,
-        "pokemon_id": 597
+        "form_id": 597
     },
     {
         "hp": 74,
@@ -5379,7 +5379,7 @@
         "special-attack": 54,
         "special-defense": 116,
         "speed": 20,
-        "pokemon_id": 598
+        "form_id": 598
     },
     {
         "hp": 40,
@@ -5388,7 +5388,7 @@
         "special-attack": 45,
         "special-defense": 60,
         "speed": 30,
-        "pokemon_id": 599
+        "form_id": 599
     },
     {
         "hp": 60,
@@ -5397,7 +5397,7 @@
         "special-attack": 70,
         "special-defense": 85,
         "speed": 50,
-        "pokemon_id": 600
+        "form_id": 600
     },
     {
         "hp": 60,
@@ -5406,7 +5406,7 @@
         "special-attack": 70,
         "special-defense": 85,
         "speed": 90,
-        "pokemon_id": 601
+        "form_id": 601
     },
     {
         "hp": 35,
@@ -5415,7 +5415,7 @@
         "special-attack": 45,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 602
+        "form_id": 602
     },
     {
         "hp": 65,
@@ -5424,7 +5424,7 @@
         "special-attack": 75,
         "special-defense": 70,
         "speed": 40,
-        "pokemon_id": 603
+        "form_id": 603
     },
     {
         "hp": 85,
@@ -5433,7 +5433,7 @@
         "special-attack": 105,
         "special-defense": 80,
         "speed": 50,
-        "pokemon_id": 604
+        "form_id": 604
     },
     {
         "hp": 55,
@@ -5442,7 +5442,7 @@
         "special-attack": 85,
         "special-defense": 55,
         "speed": 30,
-        "pokemon_id": 605
+        "form_id": 605
     },
     {
         "hp": 75,
@@ -5451,7 +5451,7 @@
         "special-attack": 125,
         "special-defense": 95,
         "speed": 40,
-        "pokemon_id": 606
+        "form_id": 606
     },
     {
         "hp": 50,
@@ -5460,7 +5460,7 @@
         "special-attack": 65,
         "special-defense": 55,
         "speed": 20,
-        "pokemon_id": 607
+        "form_id": 607
     },
     {
         "hp": 60,
@@ -5469,7 +5469,7 @@
         "special-attack": 95,
         "special-defense": 60,
         "speed": 55,
-        "pokemon_id": 608
+        "form_id": 608
     },
     {
         "hp": 60,
@@ -5478,7 +5478,7 @@
         "special-attack": 145,
         "special-defense": 90,
         "speed": 80,
-        "pokemon_id": 609
+        "form_id": 609
     },
     {
         "hp": 46,
@@ -5487,7 +5487,7 @@
         "special-attack": 30,
         "special-defense": 40,
         "speed": 57,
-        "pokemon_id": 610
+        "form_id": 610
     },
     {
         "hp": 66,
@@ -5496,7 +5496,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 67,
-        "pokemon_id": 611
+        "form_id": 611
     },
     {
         "hp": 76,
@@ -5505,7 +5505,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 97,
-        "pokemon_id": 612
+        "form_id": 612
     },
     {
         "hp": 55,
@@ -5514,7 +5514,7 @@
         "special-attack": 60,
         "special-defense": 40,
         "speed": 40,
-        "pokemon_id": 613
+        "form_id": 613
     },
     {
         "hp": 95,
@@ -5523,7 +5523,7 @@
         "special-attack": 70,
         "special-defense": 80,
         "speed": 50,
-        "pokemon_id": 614
+        "form_id": 614
     },
     {
         "hp": 80,
@@ -5532,7 +5532,7 @@
         "special-attack": 95,
         "special-defense": 135,
         "speed": 105,
-        "pokemon_id": 615
+        "form_id": 615
     },
     {
         "hp": 50,
@@ -5541,7 +5541,7 @@
         "special-attack": 40,
         "special-defense": 65,
         "speed": 25,
-        "pokemon_id": 616
+        "form_id": 616
     },
     {
         "hp": 80,
@@ -5550,7 +5550,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 145,
-        "pokemon_id": 617
+        "form_id": 617
     },
     {
         "hp": 109,
@@ -5559,7 +5559,7 @@
         "special-attack": 81,
         "special-defense": 99,
         "speed": 32,
-        "pokemon_id": 618
+        "form_id": 618
     },
     {
         "hp": 45,
@@ -5568,7 +5568,7 @@
         "special-attack": 55,
         "special-defense": 50,
         "speed": 65,
-        "pokemon_id": 619
+        "form_id": 619
     },
     {
         "hp": 65,
@@ -5577,7 +5577,7 @@
         "special-attack": 95,
         "special-defense": 60,
         "speed": 105,
-        "pokemon_id": 620
+        "form_id": 620
     },
     {
         "hp": 77,
@@ -5586,7 +5586,7 @@
         "special-attack": 60,
         "special-defense": 90,
         "speed": 48,
-        "pokemon_id": 621
+        "form_id": 621
     },
     {
         "hp": 59,
@@ -5595,7 +5595,7 @@
         "special-attack": 35,
         "special-defense": 50,
         "speed": 35,
-        "pokemon_id": 622
+        "form_id": 622
     },
     {
         "hp": 89,
@@ -5604,7 +5604,7 @@
         "special-attack": 55,
         "special-defense": 80,
         "speed": 55,
-        "pokemon_id": 623
+        "form_id": 623
     },
     {
         "hp": 45,
@@ -5613,7 +5613,7 @@
         "special-attack": 40,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 624
+        "form_id": 624
     },
     {
         "hp": 65,
@@ -5622,7 +5622,7 @@
         "special-attack": 60,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 625
+        "form_id": 625
     },
     {
         "hp": 95,
@@ -5631,7 +5631,7 @@
         "special-attack": 40,
         "special-defense": 95,
         "speed": 55,
-        "pokemon_id": 626
+        "form_id": 626
     },
     {
         "hp": 70,
@@ -5640,7 +5640,7 @@
         "special-attack": 37,
         "special-defense": 50,
         "speed": 60,
-        "pokemon_id": 627
+        "form_id": 627
     },
     {
         "hp": 100,
@@ -5649,7 +5649,7 @@
         "special-attack": 57,
         "special-defense": 75,
         "speed": 80,
-        "pokemon_id": 628
+        "form_id": 628
     },
     {
         "hp": 70,
@@ -5658,7 +5658,7 @@
         "special-attack": 45,
         "special-defense": 65,
         "speed": 60,
-        "pokemon_id": 629
+        "form_id": 629
     },
     {
         "hp": 110,
@@ -5667,7 +5667,7 @@
         "special-attack": 55,
         "special-defense": 95,
         "speed": 80,
-        "pokemon_id": 630
+        "form_id": 630
     },
     {
         "hp": 85,
@@ -5676,7 +5676,7 @@
         "special-attack": 105,
         "special-defense": 66,
         "speed": 65,
-        "pokemon_id": 631
+        "form_id": 631
     },
     {
         "hp": 58,
@@ -5685,7 +5685,7 @@
         "special-attack": 48,
         "special-defense": 48,
         "speed": 109,
-        "pokemon_id": 632
+        "form_id": 632
     },
     {
         "hp": 52,
@@ -5694,7 +5694,7 @@
         "special-attack": 45,
         "special-defense": 50,
         "speed": 38,
-        "pokemon_id": 633
+        "form_id": 633
     },
     {
         "hp": 72,
@@ -5703,7 +5703,7 @@
         "special-attack": 65,
         "special-defense": 70,
         "speed": 58,
-        "pokemon_id": 634
+        "form_id": 634
     },
     {
         "hp": 92,
@@ -5712,7 +5712,7 @@
         "special-attack": 125,
         "special-defense": 90,
         "speed": 98,
-        "pokemon_id": 635
+        "form_id": 635
     },
     {
         "hp": 55,
@@ -5721,7 +5721,7 @@
         "special-attack": 50,
         "special-defense": 55,
         "speed": 60,
-        "pokemon_id": 636
+        "form_id": 636
     },
     {
         "hp": 85,
@@ -5730,7 +5730,7 @@
         "special-attack": 135,
         "special-defense": 105,
         "speed": 100,
-        "pokemon_id": 637
+        "form_id": 637
     },
     {
         "hp": 91,
@@ -5739,7 +5739,7 @@
         "special-attack": 90,
         "special-defense": 72,
         "speed": 108,
-        "pokemon_id": 638
+        "form_id": 638
     },
     {
         "hp": 91,
@@ -5748,7 +5748,7 @@
         "special-attack": 72,
         "special-defense": 90,
         "speed": 108,
-        "pokemon_id": 639
+        "form_id": 639
     },
     {
         "hp": 91,
@@ -5757,7 +5757,7 @@
         "special-attack": 90,
         "special-defense": 129,
         "speed": 108,
-        "pokemon_id": 640
+        "form_id": 640
     },
     {
         "hp": 79,
@@ -5766,7 +5766,7 @@
         "special-attack": 125,
         "special-defense": 80,
         "speed": 111,
-        "pokemon_id": 641
+        "form_id": 641
     },
     {
         "hp": 79,
@@ -5775,7 +5775,7 @@
         "special-attack": 125,
         "special-defense": 80,
         "speed": 111,
-        "pokemon_id": 642
+        "form_id": 642
     },
     {
         "hp": 100,
@@ -5784,7 +5784,7 @@
         "special-attack": 150,
         "special-defense": 120,
         "speed": 90,
-        "pokemon_id": 643
+        "form_id": 643
     },
     {
         "hp": 100,
@@ -5793,7 +5793,7 @@
         "special-attack": 120,
         "special-defense": 100,
         "speed": 90,
-        "pokemon_id": 644
+        "form_id": 644
     },
     {
         "hp": 89,
@@ -5802,7 +5802,7 @@
         "special-attack": 115,
         "special-defense": 80,
         "speed": 101,
-        "pokemon_id": 645
+        "form_id": 645
     },
     {
         "hp": 125,
@@ -5811,7 +5811,7 @@
         "special-attack": 130,
         "special-defense": 90,
         "speed": 95,
-        "pokemon_id": 646
+        "form_id": 646
     },
     {
         "hp": 91,
@@ -5820,7 +5820,7 @@
         "special-attack": 129,
         "special-defense": 90,
         "speed": 108,
-        "pokemon_id": 647
+        "form_id": 647
     },
     {
         "hp": 100,
@@ -5829,7 +5829,7 @@
         "special-attack": 128,
         "special-defense": 128,
         "speed": 90,
-        "pokemon_id": 648
+        "form_id": 648
     },
     {
         "hp": 71,
@@ -5838,7 +5838,7 @@
         "special-attack": 120,
         "special-defense": 95,
         "speed": 99,
-        "pokemon_id": 649
+        "form_id": 649
     },
     {
         "hp": 56,
@@ -5847,7 +5847,7 @@
         "special-attack": 48,
         "special-defense": 45,
         "speed": 38,
-        "pokemon_id": 650
+        "form_id": 650
     },
     {
         "hp": 61,
@@ -5856,7 +5856,7 @@
         "special-attack": 56,
         "special-defense": 58,
         "speed": 57,
-        "pokemon_id": 651
+        "form_id": 651
     },
     {
         "hp": 88,
@@ -5865,7 +5865,7 @@
         "special-attack": 74,
         "special-defense": 75,
         "speed": 64,
-        "pokemon_id": 652
+        "form_id": 652
     },
     {
         "hp": 40,
@@ -5874,7 +5874,7 @@
         "special-attack": 62,
         "special-defense": 60,
         "speed": 60,
-        "pokemon_id": 653
+        "form_id": 653
     },
     {
         "hp": 59,
@@ -5883,7 +5883,7 @@
         "special-attack": 90,
         "special-defense": 70,
         "speed": 73,
-        "pokemon_id": 654
+        "form_id": 654
     },
     {
         "hp": 75,
@@ -5892,7 +5892,7 @@
         "special-attack": 114,
         "special-defense": 100,
         "speed": 104,
-        "pokemon_id": 655
+        "form_id": 655
     },
     {
         "hp": 41,
@@ -5901,7 +5901,7 @@
         "special-attack": 62,
         "special-defense": 44,
         "speed": 71,
-        "pokemon_id": 656
+        "form_id": 656
     },
     {
         "hp": 54,
@@ -5910,7 +5910,7 @@
         "special-attack": 83,
         "special-defense": 56,
         "speed": 97,
-        "pokemon_id": 657
+        "form_id": 657
     },
     {
         "hp": 72,
@@ -5919,7 +5919,7 @@
         "special-attack": 103,
         "special-defense": 71,
         "speed": 122,
-        "pokemon_id": 658
+        "form_id": 658
     },
     {
         "hp": 38,
@@ -5928,7 +5928,7 @@
         "special-attack": 32,
         "special-defense": 36,
         "speed": 57,
-        "pokemon_id": 659
+        "form_id": 659
     },
     {
         "hp": 85,
@@ -5937,7 +5937,7 @@
         "special-attack": 50,
         "special-defense": 77,
         "speed": 78,
-        "pokemon_id": 660
+        "form_id": 660
     },
     {
         "hp": 45,
@@ -5946,7 +5946,7 @@
         "special-attack": 40,
         "special-defense": 38,
         "speed": 62,
-        "pokemon_id": 661
+        "form_id": 661
     },
     {
         "hp": 62,
@@ -5955,7 +5955,7 @@
         "special-attack": 56,
         "special-defense": 52,
         "speed": 84,
-        "pokemon_id": 662
+        "form_id": 662
     },
     {
         "hp": 78,
@@ -5964,7 +5964,7 @@
         "special-attack": 74,
         "special-defense": 69,
         "speed": 126,
-        "pokemon_id": 663
+        "form_id": 663
     },
     {
         "hp": 38,
@@ -5973,7 +5973,7 @@
         "special-attack": 27,
         "special-defense": 25,
         "speed": 35,
-        "pokemon_id": 664
+        "form_id": 664
     },
     {
         "hp": 45,
@@ -5982,7 +5982,7 @@
         "special-attack": 27,
         "special-defense": 30,
         "speed": 29,
-        "pokemon_id": 665
+        "form_id": 665
     },
     {
         "hp": 80,
@@ -5991,7 +5991,7 @@
         "special-attack": 90,
         "special-defense": 50,
         "speed": 89,
-        "pokemon_id": 666
+        "form_id": 666
     },
     {
         "hp": 62,
@@ -6000,7 +6000,7 @@
         "special-attack": 73,
         "special-defense": 54,
         "speed": 72,
-        "pokemon_id": 667
+        "form_id": 667
     },
     {
         "hp": 86,
@@ -6009,7 +6009,7 @@
         "special-attack": 109,
         "special-defense": 66,
         "speed": 106,
-        "pokemon_id": 668
+        "form_id": 668
     },
     {
         "hp": 44,
@@ -6018,7 +6018,7 @@
         "special-attack": 61,
         "special-defense": 79,
         "speed": 42,
-        "pokemon_id": 669
+        "form_id": 669
     },
     {
         "hp": 54,
@@ -6027,7 +6027,7 @@
         "special-attack": 75,
         "special-defense": 98,
         "speed": 52,
-        "pokemon_id": 670
+        "form_id": 670
     },
     {
         "hp": 78,
@@ -6036,7 +6036,7 @@
         "special-attack": 112,
         "special-defense": 154,
         "speed": 75,
-        "pokemon_id": 671
+        "form_id": 671
     },
     {
         "hp": 66,
@@ -6045,7 +6045,7 @@
         "special-attack": 62,
         "special-defense": 57,
         "speed": 52,
-        "pokemon_id": 672
+        "form_id": 672
     },
     {
         "hp": 123,
@@ -6054,7 +6054,7 @@
         "special-attack": 97,
         "special-defense": 81,
         "speed": 68,
-        "pokemon_id": 673
+        "form_id": 673
     },
     {
         "hp": 67,
@@ -6063,7 +6063,7 @@
         "special-attack": 46,
         "special-defense": 48,
         "speed": 43,
-        "pokemon_id": 674
+        "form_id": 674
     },
     {
         "hp": 95,
@@ -6072,7 +6072,7 @@
         "special-attack": 69,
         "special-defense": 71,
         "speed": 58,
-        "pokemon_id": 675
+        "form_id": 675
     },
     {
         "hp": 75,
@@ -6081,7 +6081,7 @@
         "special-attack": 65,
         "special-defense": 90,
         "speed": 102,
-        "pokemon_id": 676
+        "form_id": 676
     },
     {
         "hp": 62,
@@ -6090,7 +6090,7 @@
         "special-attack": 63,
         "special-defense": 60,
         "speed": 68,
-        "pokemon_id": 677
+        "form_id": 677
     },
     {
         "hp": 74,
@@ -6099,7 +6099,7 @@
         "special-attack": 83,
         "special-defense": 81,
         "speed": 104,
-        "pokemon_id": 678
+        "form_id": 678
     },
     {
         "hp": 45,
@@ -6108,7 +6108,7 @@
         "special-attack": 35,
         "special-defense": 37,
         "speed": 28,
-        "pokemon_id": 679
+        "form_id": 679
     },
     {
         "hp": 59,
@@ -6117,7 +6117,7 @@
         "special-attack": 45,
         "special-defense": 49,
         "speed": 35,
-        "pokemon_id": 680
+        "form_id": 680
     },
     {
         "hp": 60,
@@ -6126,7 +6126,7 @@
         "special-attack": 50,
         "special-defense": 150,
         "speed": 60,
-        "pokemon_id": 681
+        "form_id": 681
     },
     {
         "hp": 78,
@@ -6135,7 +6135,7 @@
         "special-attack": 63,
         "special-defense": 65,
         "speed": 23,
-        "pokemon_id": 682
+        "form_id": 682
     },
     {
         "hp": 101,
@@ -6144,7 +6144,7 @@
         "special-attack": 99,
         "special-defense": 89,
         "speed": 29,
-        "pokemon_id": 683
+        "form_id": 683
     },
     {
         "hp": 62,
@@ -6153,7 +6153,7 @@
         "special-attack": 59,
         "special-defense": 57,
         "speed": 49,
-        "pokemon_id": 684
+        "form_id": 684
     },
     {
         "hp": 82,
@@ -6162,7 +6162,7 @@
         "special-attack": 85,
         "special-defense": 75,
         "speed": 72,
-        "pokemon_id": 685
+        "form_id": 685
     },
     {
         "hp": 53,
@@ -6171,7 +6171,7 @@
         "special-attack": 37,
         "special-defense": 46,
         "speed": 45,
-        "pokemon_id": 686
+        "form_id": 686
     },
     {
         "hp": 86,
@@ -6180,7 +6180,7 @@
         "special-attack": 68,
         "special-defense": 75,
         "speed": 73,
-        "pokemon_id": 687
+        "form_id": 687
     },
     {
         "hp": 42,
@@ -6189,7 +6189,7 @@
         "special-attack": 39,
         "special-defense": 56,
         "speed": 50,
-        "pokemon_id": 688
+        "form_id": 688
     },
     {
         "hp": 72,
@@ -6198,7 +6198,7 @@
         "special-attack": 54,
         "special-defense": 86,
         "speed": 68,
-        "pokemon_id": 689
+        "form_id": 689
     },
     {
         "hp": 50,
@@ -6207,7 +6207,7 @@
         "special-attack": 60,
         "special-defense": 60,
         "speed": 30,
-        "pokemon_id": 690
+        "form_id": 690
     },
     {
         "hp": 65,
@@ -6216,7 +6216,7 @@
         "special-attack": 97,
         "special-defense": 123,
         "speed": 44,
-        "pokemon_id": 691
+        "form_id": 691
     },
     {
         "hp": 50,
@@ -6225,7 +6225,7 @@
         "special-attack": 58,
         "special-defense": 63,
         "speed": 44,
-        "pokemon_id": 692
+        "form_id": 692
     },
     {
         "hp": 71,
@@ -6234,7 +6234,7 @@
         "special-attack": 120,
         "special-defense": 89,
         "speed": 59,
-        "pokemon_id": 693
+        "form_id": 693
     },
     {
         "hp": 44,
@@ -6243,7 +6243,7 @@
         "special-attack": 61,
         "special-defense": 43,
         "speed": 70,
-        "pokemon_id": 694
+        "form_id": 694
     },
     {
         "hp": 62,
@@ -6252,7 +6252,7 @@
         "special-attack": 109,
         "special-defense": 94,
         "speed": 109,
-        "pokemon_id": 695
+        "form_id": 695
     },
     {
         "hp": 58,
@@ -6261,7 +6261,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 48,
-        "pokemon_id": 696
+        "form_id": 696
     },
     {
         "hp": 82,
@@ -6270,7 +6270,7 @@
         "special-attack": 69,
         "special-defense": 59,
         "speed": 71,
-        "pokemon_id": 697
+        "form_id": 697
     },
     {
         "hp": 77,
@@ -6279,7 +6279,7 @@
         "special-attack": 67,
         "special-defense": 63,
         "speed": 46,
-        "pokemon_id": 698
+        "form_id": 698
     },
     {
         "hp": 123,
@@ -6288,7 +6288,7 @@
         "special-attack": 99,
         "special-defense": 92,
         "speed": 58,
-        "pokemon_id": 699
+        "form_id": 699
     },
     {
         "hp": 95,
@@ -6297,7 +6297,7 @@
         "special-attack": 110,
         "special-defense": 130,
         "speed": 60,
-        "pokemon_id": 700
+        "form_id": 700
     },
     {
         "hp": 78,
@@ -6306,7 +6306,7 @@
         "special-attack": 74,
         "special-defense": 63,
         "speed": 118,
-        "pokemon_id": 701
+        "form_id": 701
     },
     {
         "hp": 67,
@@ -6315,7 +6315,7 @@
         "special-attack": 81,
         "special-defense": 67,
         "speed": 101,
-        "pokemon_id": 702
+        "form_id": 702
     },
     {
         "hp": 50,
@@ -6324,7 +6324,7 @@
         "special-attack": 50,
         "special-defense": 150,
         "speed": 50,
-        "pokemon_id": 703
+        "form_id": 703
     },
     {
         "hp": 45,
@@ -6333,7 +6333,7 @@
         "special-attack": 55,
         "special-defense": 75,
         "speed": 40,
-        "pokemon_id": 704
+        "form_id": 704
     },
     {
         "hp": 68,
@@ -6342,7 +6342,7 @@
         "special-attack": 83,
         "special-defense": 113,
         "speed": 60,
-        "pokemon_id": 705
+        "form_id": 705
     },
     {
         "hp": 90,
@@ -6351,7 +6351,7 @@
         "special-attack": 110,
         "special-defense": 150,
         "speed": 80,
-        "pokemon_id": 706
+        "form_id": 706
     },
     {
         "hp": 57,
@@ -6360,7 +6360,7 @@
         "special-attack": 80,
         "special-defense": 87,
         "speed": 75,
-        "pokemon_id": 707
+        "form_id": 707
     },
     {
         "hp": 43,
@@ -6369,7 +6369,7 @@
         "special-attack": 50,
         "special-defense": 60,
         "speed": 38,
-        "pokemon_id": 708
+        "form_id": 708
     },
     {
         "hp": 85,
@@ -6378,7 +6378,7 @@
         "special-attack": 65,
         "special-defense": 82,
         "speed": 56,
-        "pokemon_id": 709
+        "form_id": 709
     },
     {
         "hp": 49,
@@ -6387,7 +6387,7 @@
         "special-attack": 44,
         "special-defense": 55,
         "speed": 51,
-        "pokemon_id": 710
+        "form_id": 710
     },
     {
         "hp": 65,
@@ -6396,7 +6396,7 @@
         "special-attack": 58,
         "special-defense": 75,
         "speed": 84,
-        "pokemon_id": 711
+        "form_id": 711
     },
     {
         "hp": 55,
@@ -6405,7 +6405,7 @@
         "special-attack": 32,
         "special-defense": 35,
         "speed": 28,
-        "pokemon_id": 712
+        "form_id": 712
     },
     {
         "hp": 95,
@@ -6414,7 +6414,7 @@
         "special-attack": 44,
         "special-defense": 46,
         "speed": 28,
-        "pokemon_id": 713
+        "form_id": 713
     },
     {
         "hp": 40,
@@ -6423,7 +6423,7 @@
         "special-attack": 45,
         "special-defense": 40,
         "speed": 55,
-        "pokemon_id": 714
+        "form_id": 714
     },
     {
         "hp": 85,
@@ -6432,7 +6432,7 @@
         "special-attack": 97,
         "special-defense": 80,
         "speed": 123,
-        "pokemon_id": 715
+        "form_id": 715
     },
     {
         "hp": 126,
@@ -6441,7 +6441,7 @@
         "special-attack": 131,
         "special-defense": 98,
         "speed": 99,
-        "pokemon_id": 716
+        "form_id": 716
     },
     {
         "hp": 126,
@@ -6450,7 +6450,7 @@
         "special-attack": 131,
         "special-defense": 98,
         "speed": 99,
-        "pokemon_id": 717
+        "form_id": 717
     },
     {
         "hp": 108,
@@ -6459,7 +6459,7 @@
         "special-attack": 81,
         "special-defense": 95,
         "speed": 95,
-        "pokemon_id": 718
+        "form_id": 718
     },
     {
         "hp": 50,
@@ -6468,7 +6468,7 @@
         "special-attack": 100,
         "special-defense": 150,
         "speed": 50,
-        "pokemon_id": 719
+        "form_id": 719
     },
     {
         "hp": 80,
@@ -6477,7 +6477,7 @@
         "special-attack": 150,
         "special-defense": 130,
         "speed": 70,
-        "pokemon_id": 720
+        "form_id": 720
     },
     {
         "hp": 80,
@@ -6486,7 +6486,7 @@
         "special-attack": 130,
         "special-defense": 90,
         "speed": 70,
-        "pokemon_id": 721
+        "form_id": 721
     },
     {
         "hp": 68,
@@ -6495,7 +6495,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 42,
-        "pokemon_id": 722
+        "form_id": 722
     },
     {
         "hp": 78,
@@ -6504,7 +6504,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 52,
-        "pokemon_id": 723
+        "form_id": 723
     },
     {
         "hp": 78,
@@ -6513,7 +6513,7 @@
         "special-attack": 100,
         "special-defense": 100,
         "speed": 70,
-        "pokemon_id": 724
+        "form_id": 724
     },
     {
         "hp": 45,
@@ -6522,7 +6522,7 @@
         "special-attack": 60,
         "special-defense": 40,
         "speed": 70,
-        "pokemon_id": 725
+        "form_id": 725
     },
     {
         "hp": 65,
@@ -6531,7 +6531,7 @@
         "special-attack": 80,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 726
+        "form_id": 726
     },
     {
         "hp": 95,
@@ -6540,7 +6540,7 @@
         "special-attack": 80,
         "special-defense": 90,
         "speed": 60,
-        "pokemon_id": 727
+        "form_id": 727
     },
     {
         "hp": 50,
@@ -6549,7 +6549,7 @@
         "special-attack": 66,
         "special-defense": 56,
         "speed": 40,
-        "pokemon_id": 728
+        "form_id": 728
     },
     {
         "hp": 60,
@@ -6558,7 +6558,7 @@
         "special-attack": 91,
         "special-defense": 81,
         "speed": 50,
-        "pokemon_id": 729
+        "form_id": 729
     },
     {
         "hp": 80,
@@ -6567,7 +6567,7 @@
         "special-attack": 126,
         "special-defense": 116,
         "speed": 60,
-        "pokemon_id": 730
+        "form_id": 730
     },
     {
         "hp": 35,
@@ -6576,7 +6576,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 65,
-        "pokemon_id": 731
+        "form_id": 731
     },
     {
         "hp": 55,
@@ -6585,7 +6585,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 75,
-        "pokemon_id": 732
+        "form_id": 732
     },
     {
         "hp": 80,
@@ -6594,7 +6594,7 @@
         "special-attack": 75,
         "special-defense": 75,
         "speed": 60,
-        "pokemon_id": 733
+        "form_id": 733
     },
     {
         "hp": 48,
@@ -6603,7 +6603,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 45,
-        "pokemon_id": 734
+        "form_id": 734
     },
     {
         "hp": 88,
@@ -6612,7 +6612,7 @@
         "special-attack": 55,
         "special-defense": 60,
         "speed": 45,
-        "pokemon_id": 735
+        "form_id": 735
     },
     {
         "hp": 47,
@@ -6621,7 +6621,7 @@
         "special-attack": 55,
         "special-defense": 45,
         "speed": 46,
-        "pokemon_id": 736
+        "form_id": 736
     },
     {
         "hp": 57,
@@ -6630,7 +6630,7 @@
         "special-attack": 55,
         "special-defense": 75,
         "speed": 36,
-        "pokemon_id": 737
+        "form_id": 737
     },
     {
         "hp": 77,
@@ -6639,7 +6639,7 @@
         "special-attack": 145,
         "special-defense": 75,
         "speed": 43,
-        "pokemon_id": 738
+        "form_id": 738
     },
     {
         "hp": 47,
@@ -6648,7 +6648,7 @@
         "special-attack": 42,
         "special-defense": 47,
         "speed": 63,
-        "pokemon_id": 739
+        "form_id": 739
     },
     {
         "hp": 97,
@@ -6657,7 +6657,7 @@
         "special-attack": 62,
         "special-defense": 67,
         "speed": 43,
-        "pokemon_id": 740
+        "form_id": 740
     },
     {
         "hp": 75,
@@ -6666,7 +6666,7 @@
         "special-attack": 98,
         "special-defense": 70,
         "speed": 93,
-        "pokemon_id": 741
+        "form_id": 741
     },
     {
         "hp": 40,
@@ -6675,7 +6675,7 @@
         "special-attack": 55,
         "special-defense": 40,
         "speed": 84,
-        "pokemon_id": 742
+        "form_id": 742
     },
     {
         "hp": 60,
@@ -6684,7 +6684,7 @@
         "special-attack": 95,
         "special-defense": 70,
         "speed": 124,
-        "pokemon_id": 743
+        "form_id": 743
     },
     {
         "hp": 45,
@@ -6693,7 +6693,7 @@
         "special-attack": 30,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 744
+        "form_id": 744
     },
     {
         "hp": 75,
@@ -6702,7 +6702,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 112,
-        "pokemon_id": 745
+        "form_id": 745
     },
     {
         "hp": 45,
@@ -6711,7 +6711,7 @@
         "special-attack": 25,
         "special-defense": 25,
         "speed": 40,
-        "pokemon_id": 746
+        "form_id": 746
     },
     {
         "hp": 50,
@@ -6720,7 +6720,7 @@
         "special-attack": 43,
         "special-defense": 52,
         "speed": 45,
-        "pokemon_id": 747
+        "form_id": 747
     },
     {
         "hp": 50,
@@ -6729,7 +6729,7 @@
         "special-attack": 53,
         "special-defense": 142,
         "speed": 35,
-        "pokemon_id": 748
+        "form_id": 748
     },
     {
         "hp": 70,
@@ -6738,7 +6738,7 @@
         "special-attack": 45,
         "special-defense": 55,
         "speed": 45,
-        "pokemon_id": 749
+        "form_id": 749
     },
     {
         "hp": 100,
@@ -6747,7 +6747,7 @@
         "special-attack": 55,
         "special-defense": 85,
         "speed": 35,
-        "pokemon_id": 750
+        "form_id": 750
     },
     {
         "hp": 38,
@@ -6756,7 +6756,7 @@
         "special-attack": 40,
         "special-defense": 72,
         "speed": 27,
-        "pokemon_id": 751
+        "form_id": 751
     },
     {
         "hp": 68,
@@ -6765,7 +6765,7 @@
         "special-attack": 50,
         "special-defense": 132,
         "speed": 42,
-        "pokemon_id": 752
+        "form_id": 752
     },
     {
         "hp": 40,
@@ -6774,7 +6774,7 @@
         "special-attack": 50,
         "special-defense": 35,
         "speed": 35,
-        "pokemon_id": 753
+        "form_id": 753
     },
     {
         "hp": 70,
@@ -6783,7 +6783,7 @@
         "special-attack": 80,
         "special-defense": 90,
         "speed": 45,
-        "pokemon_id": 754
+        "form_id": 754
     },
     {
         "hp": 40,
@@ -6792,7 +6792,7 @@
         "special-attack": 65,
         "special-defense": 75,
         "speed": 15,
-        "pokemon_id": 755
+        "form_id": 755
     },
     {
         "hp": 60,
@@ -6801,7 +6801,7 @@
         "special-attack": 90,
         "special-defense": 100,
         "speed": 30,
-        "pokemon_id": 756
+        "form_id": 756
     },
     {
         "hp": 48,
@@ -6810,7 +6810,7 @@
         "special-attack": 71,
         "special-defense": 40,
         "speed": 77,
-        "pokemon_id": 757
+        "form_id": 757
     },
     {
         "hp": 68,
@@ -6819,7 +6819,7 @@
         "special-attack": 111,
         "special-defense": 60,
         "speed": 117,
-        "pokemon_id": 758
+        "form_id": 758
     },
     {
         "hp": 70,
@@ -6828,7 +6828,7 @@
         "special-attack": 45,
         "special-defense": 50,
         "speed": 50,
-        "pokemon_id": 759
+        "form_id": 759
     },
     {
         "hp": 120,
@@ -6837,7 +6837,7 @@
         "special-attack": 55,
         "special-defense": 60,
         "speed": 60,
-        "pokemon_id": 760
+        "form_id": 760
     },
     {
         "hp": 42,
@@ -6846,7 +6846,7 @@
         "special-attack": 30,
         "special-defense": 38,
         "speed": 32,
-        "pokemon_id": 761
+        "form_id": 761
     },
     {
         "hp": 52,
@@ -6855,7 +6855,7 @@
         "special-attack": 40,
         "special-defense": 48,
         "speed": 62,
-        "pokemon_id": 762
+        "form_id": 762
     },
     {
         "hp": 72,
@@ -6864,7 +6864,7 @@
         "special-attack": 50,
         "special-defense": 98,
         "speed": 72,
-        "pokemon_id": 763
+        "form_id": 763
     },
     {
         "hp": 51,
@@ -6873,7 +6873,7 @@
         "special-attack": 82,
         "special-defense": 110,
         "speed": 100,
-        "pokemon_id": 764
+        "form_id": 764
     },
     {
         "hp": 90,
@@ -6882,7 +6882,7 @@
         "special-attack": 90,
         "special-defense": 110,
         "speed": 60,
-        "pokemon_id": 765
+        "form_id": 765
     },
     {
         "hp": 100,
@@ -6891,7 +6891,7 @@
         "special-attack": 40,
         "special-defense": 60,
         "speed": 80,
-        "pokemon_id": 766
+        "form_id": 766
     },
     {
         "hp": 25,
@@ -6900,7 +6900,7 @@
         "special-attack": 20,
         "special-defense": 30,
         "speed": 80,
-        "pokemon_id": 767
+        "form_id": 767
     },
     {
         "hp": 75,
@@ -6909,7 +6909,7 @@
         "special-attack": 60,
         "special-defense": 90,
         "speed": 40,
-        "pokemon_id": 768
+        "form_id": 768
     },
     {
         "hp": 55,
@@ -6918,7 +6918,7 @@
         "special-attack": 70,
         "special-defense": 45,
         "speed": 15,
-        "pokemon_id": 769
+        "form_id": 769
     },
     {
         "hp": 85,
@@ -6927,7 +6927,7 @@
         "special-attack": 100,
         "special-defense": 75,
         "speed": 35,
-        "pokemon_id": 770
+        "form_id": 770
     },
     {
         "hp": 55,
@@ -6936,7 +6936,7 @@
         "special-attack": 30,
         "special-defense": 130,
         "speed": 5,
-        "pokemon_id": 771
+        "form_id": 771
     },
     {
         "hp": 95,
@@ -6945,7 +6945,7 @@
         "special-attack": 95,
         "special-defense": 95,
         "speed": 59,
-        "pokemon_id": 772
+        "form_id": 772
     },
     {
         "hp": 95,
@@ -6954,7 +6954,7 @@
         "special-attack": 95,
         "special-defense": 95,
         "speed": 95,
-        "pokemon_id": 773
+        "form_id": 773
     },
     {
         "hp": 60,
@@ -6963,7 +6963,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 774
+        "form_id": 774
     },
     {
         "hp": 65,
@@ -6972,7 +6972,7 @@
         "special-attack": 75,
         "special-defense": 95,
         "speed": 65,
-        "pokemon_id": 775
+        "form_id": 775
     },
     {
         "hp": 60,
@@ -6981,7 +6981,7 @@
         "special-attack": 91,
         "special-defense": 85,
         "speed": 36,
-        "pokemon_id": 776
+        "form_id": 776
     },
     {
         "hp": 65,
@@ -6990,7 +6990,7 @@
         "special-attack": 40,
         "special-defense": 73,
         "speed": 96,
-        "pokemon_id": 777
+        "form_id": 777
     },
     {
         "hp": 55,
@@ -6999,7 +6999,7 @@
         "special-attack": 50,
         "special-defense": 105,
         "speed": 96,
-        "pokemon_id": 778
+        "form_id": 778
     },
     {
         "hp": 68,
@@ -7008,7 +7008,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 92,
-        "pokemon_id": 779
+        "form_id": 779
     },
     {
         "hp": 78,
@@ -7017,7 +7017,7 @@
         "special-attack": 135,
         "special-defense": 91,
         "speed": 36,
-        "pokemon_id": 780
+        "form_id": 780
     },
     {
         "hp": 70,
@@ -7026,7 +7026,7 @@
         "special-attack": 86,
         "special-defense": 90,
         "speed": 40,
-        "pokemon_id": 781
+        "form_id": 781
     },
     {
         "hp": 45,
@@ -7035,7 +7035,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 45,
-        "pokemon_id": 782
+        "form_id": 782
     },
     {
         "hp": 55,
@@ -7044,7 +7044,7 @@
         "special-attack": 65,
         "special-defense": 70,
         "speed": 65,
-        "pokemon_id": 783
+        "form_id": 783
     },
     {
         "hp": 75,
@@ -7053,7 +7053,7 @@
         "special-attack": 100,
         "special-defense": 105,
         "speed": 85,
-        "pokemon_id": 784
+        "form_id": 784
     },
     {
         "hp": 70,
@@ -7062,7 +7062,7 @@
         "special-attack": 95,
         "special-defense": 75,
         "speed": 130,
-        "pokemon_id": 785
+        "form_id": 785
     },
     {
         "hp": 70,
@@ -7071,7 +7071,7 @@
         "special-attack": 130,
         "special-defense": 115,
         "speed": 95,
-        "pokemon_id": 786
+        "form_id": 786
     },
     {
         "hp": 70,
@@ -7080,7 +7080,7 @@
         "special-attack": 85,
         "special-defense": 95,
         "speed": 75,
-        "pokemon_id": 787
+        "form_id": 787
     },
     {
         "hp": 70,
@@ -7089,7 +7089,7 @@
         "special-attack": 95,
         "special-defense": 130,
         "speed": 85,
-        "pokemon_id": 788
+        "form_id": 788
     },
     {
         "hp": 43,
@@ -7098,7 +7098,7 @@
         "special-attack": 29,
         "special-defense": 31,
         "speed": 37,
-        "pokemon_id": 789
+        "form_id": 789
     },
     {
         "hp": 43,
@@ -7107,7 +7107,7 @@
         "special-attack": 29,
         "special-defense": 131,
         "speed": 37,
-        "pokemon_id": 790
+        "form_id": 790
     },
     {
         "hp": 137,
@@ -7116,7 +7116,7 @@
         "special-attack": 113,
         "special-defense": 89,
         "speed": 97,
-        "pokemon_id": 791
+        "form_id": 791
     },
     {
         "hp": 137,
@@ -7125,7 +7125,7 @@
         "special-attack": 137,
         "special-defense": 107,
         "speed": 97,
-        "pokemon_id": 792
+        "form_id": 792
     },
     {
         "hp": 109,
@@ -7134,7 +7134,7 @@
         "special-attack": 127,
         "special-defense": 131,
         "speed": 103,
-        "pokemon_id": 793
+        "form_id": 793
     },
     {
         "hp": 107,
@@ -7143,7 +7143,7 @@
         "special-attack": 53,
         "special-defense": 53,
         "speed": 79,
-        "pokemon_id": 794
+        "form_id": 794
     },
     {
         "hp": 71,
@@ -7152,7 +7152,7 @@
         "special-attack": 137,
         "special-defense": 37,
         "speed": 151,
-        "pokemon_id": 795
+        "form_id": 795
     },
     {
         "hp": 83,
@@ -7161,7 +7161,7 @@
         "special-attack": 173,
         "special-defense": 71,
         "speed": 83,
-        "pokemon_id": 796
+        "form_id": 796
     },
     {
         "hp": 97,
@@ -7170,7 +7170,7 @@
         "special-attack": 107,
         "special-defense": 101,
         "speed": 61,
-        "pokemon_id": 797
+        "form_id": 797
     },
     {
         "hp": 59,
@@ -7179,7 +7179,7 @@
         "special-attack": 59,
         "special-defense": 31,
         "speed": 109,
-        "pokemon_id": 798
+        "form_id": 798
     },
     {
         "hp": 223,
@@ -7188,7 +7188,7 @@
         "special-attack": 97,
         "special-defense": 53,
         "speed": 43,
-        "pokemon_id": 799
+        "form_id": 799
     },
     {
         "hp": 97,
@@ -7197,7 +7197,7 @@
         "special-attack": 127,
         "special-defense": 89,
         "speed": 79,
-        "pokemon_id": 800
+        "form_id": 800
     },
     {
         "hp": 80,
@@ -7206,7 +7206,7 @@
         "special-attack": 130,
         "special-defense": 115,
         "speed": 65,
-        "pokemon_id": 801
+        "form_id": 801
     },
     {
         "hp": 90,
@@ -7215,7 +7215,7 @@
         "special-attack": 90,
         "special-defense": 90,
         "speed": 125,
-        "pokemon_id": 802
+        "form_id": 802
     },
     {
         "hp": 67,
@@ -7224,7 +7224,7 @@
         "special-attack": 73,
         "special-defense": 67,
         "speed": 73,
-        "pokemon_id": 803
+        "form_id": 803
     },
     {
         "hp": 73,
@@ -7233,7 +7233,7 @@
         "special-attack": 127,
         "special-defense": 73,
         "speed": 121,
-        "pokemon_id": 804
+        "form_id": 804
     },
     {
         "hp": 61,
@@ -7242,7 +7242,7 @@
         "special-attack": 53,
         "special-defense": 101,
         "speed": 13,
-        "pokemon_id": 805
+        "form_id": 805
     },
     {
         "hp": 53,
@@ -7251,7 +7251,7 @@
         "special-attack": 151,
         "special-defense": 79,
         "speed": 107,
-        "pokemon_id": 806
+        "form_id": 806
     },
     {
         "hp": 88,
@@ -7260,7 +7260,7 @@
         "special-attack": 102,
         "special-defense": 80,
         "speed": 143,
-        "pokemon_id": 807
+        "form_id": 807
     },
     {
         "hp": 50,
@@ -7269,7 +7269,7 @@
         "special-attack": 180,
         "special-defense": 20,
         "speed": 150,
-        "pokemon_id": 10001
+        "form_id": 10001
     },
     {
         "hp": 50,
@@ -7278,7 +7278,7 @@
         "special-attack": 70,
         "special-defense": 160,
         "speed": 90,
-        "pokemon_id": 10002
+        "form_id": 10002
     },
     {
         "hp": 50,
@@ -7287,7 +7287,7 @@
         "special-attack": 95,
         "special-defense": 90,
         "speed": 180,
-        "pokemon_id": 10003
+        "form_id": 10003
     },
     {
         "hp": 60,
@@ -7296,7 +7296,7 @@
         "special-attack": 59,
         "special-defense": 85,
         "speed": 36,
-        "pokemon_id": 10004
+        "form_id": 10004
     },
     {
         "hp": 60,
@@ -7305,7 +7305,7 @@
         "special-attack": 69,
         "special-defense": 95,
         "speed": 36,
-        "pokemon_id": 10005
+        "form_id": 10005
     },
     {
         "hp": 100,
@@ -7314,7 +7314,7 @@
         "special-attack": 120,
         "special-defense": 75,
         "speed": 127,
-        "pokemon_id": 10006
+        "form_id": 10006
     },
     {
         "hp": 150,
@@ -7323,7 +7323,7 @@
         "special-attack": 120,
         "special-defense": 100,
         "speed": 90,
-        "pokemon_id": 10007
+        "form_id": 10007
     },
     {
         "hp": 50,
@@ -7332,7 +7332,7 @@
         "special-attack": 105,
         "special-defense": 107,
         "speed": 86,
-        "pokemon_id": 10008
+        "form_id": 10008
     },
     {
         "hp": 50,
@@ -7341,7 +7341,7 @@
         "special-attack": 105,
         "special-defense": 107,
         "speed": 86,
-        "pokemon_id": 10009
+        "form_id": 10009
     },
     {
         "hp": 50,
@@ -7350,7 +7350,7 @@
         "special-attack": 105,
         "special-defense": 107,
         "speed": 86,
-        "pokemon_id": 10010
+        "form_id": 10010
     },
     {
         "hp": 50,
@@ -7359,7 +7359,7 @@
         "special-attack": 105,
         "special-defense": 107,
         "speed": 86,
-        "pokemon_id": 10011
+        "form_id": 10011
     },
     {
         "hp": 50,
@@ -7368,7 +7368,7 @@
         "special-attack": 105,
         "special-defense": 107,
         "speed": 86,
-        "pokemon_id": 10012
+        "form_id": 10012
     },
     {
         "hp": 70,
@@ -7377,7 +7377,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 10013
+        "form_id": 10013
     },
     {
         "hp": 70,
@@ -7386,7 +7386,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 10014
+        "form_id": 10014
     },
     {
         "hp": 70,
@@ -7395,7 +7395,7 @@
         "special-attack": 70,
         "special-defense": 70,
         "speed": 70,
-        "pokemon_id": 10015
+        "form_id": 10015
     },
     {
         "hp": 70,
@@ -7404,7 +7404,7 @@
         "special-attack": 80,
         "special-defense": 55,
         "speed": 98,
-        "pokemon_id": 10016
+        "form_id": 10016
     },
     {
         "hp": 105,
@@ -7413,7 +7413,7 @@
         "special-attack": 140,
         "special-defense": 105,
         "speed": 55,
-        "pokemon_id": 10017
+        "form_id": 10017
     },
     {
         "hp": 100,
@@ -7422,7 +7422,7 @@
         "special-attack": 77,
         "special-defense": 77,
         "speed": 128,
-        "pokemon_id": 10018
+        "form_id": 10018
     },
     {
         "hp": 79,
@@ -7431,7 +7431,7 @@
         "special-attack": 110,
         "special-defense": 90,
         "speed": 121,
-        "pokemon_id": 10019
+        "form_id": 10019
     },
     {
         "hp": 79,
@@ -7440,7 +7440,7 @@
         "special-attack": 145,
         "special-defense": 80,
         "speed": 101,
-        "pokemon_id": 10020
+        "form_id": 10020
     },
     {
         "hp": 89,
@@ -7449,7 +7449,7 @@
         "special-attack": 105,
         "special-defense": 80,
         "speed": 91,
-        "pokemon_id": 10021
+        "form_id": 10021
     },
     {
         "hp": 125,
@@ -7458,7 +7458,7 @@
         "special-attack": 120,
         "special-defense": 90,
         "speed": 95,
-        "pokemon_id": 10022
+        "form_id": 10022
     },
     {
         "hp": 125,
@@ -7467,7 +7467,7 @@
         "special-attack": 170,
         "special-defense": 100,
         "speed": 95,
-        "pokemon_id": 10023
+        "form_id": 10023
     },
     {
         "hp": 91,
@@ -7476,7 +7476,7 @@
         "special-attack": 129,
         "special-defense": 90,
         "speed": 108,
-        "pokemon_id": 10024
+        "form_id": 10024
     },
     {
         "hp": 74,
@@ -7485,7 +7485,7 @@
         "special-attack": 83,
         "special-defense": 81,
         "speed": 104,
-        "pokemon_id": 10025
+        "form_id": 10025
     },
     {
         "hp": 60,
@@ -7494,7 +7494,7 @@
         "special-attack": 150,
         "special-defense": 50,
         "speed": 60,
-        "pokemon_id": 10026
+        "form_id": 10026
     },
     {
         "hp": 44,
@@ -7503,7 +7503,7 @@
         "special-attack": 44,
         "special-defense": 55,
         "speed": 56,
-        "pokemon_id": 10027
+        "form_id": 10027
     },
     {
         "hp": 54,
@@ -7512,7 +7512,7 @@
         "special-attack": 44,
         "special-defense": 55,
         "speed": 46,
-        "pokemon_id": 10028
+        "form_id": 10028
     },
     {
         "hp": 59,
@@ -7521,7 +7521,7 @@
         "special-attack": 44,
         "special-defense": 55,
         "speed": 41,
-        "pokemon_id": 10029
+        "form_id": 10029
     },
     {
         "hp": 55,
@@ -7530,7 +7530,7 @@
         "special-attack": 58,
         "special-defense": 75,
         "speed": 99,
-        "pokemon_id": 10030
+        "form_id": 10030
     },
     {
         "hp": 75,
@@ -7539,7 +7539,7 @@
         "special-attack": 58,
         "special-defense": 75,
         "speed": 69,
-        "pokemon_id": 10031
+        "form_id": 10031
     },
     {
         "hp": 85,
@@ -7548,7 +7548,7 @@
         "special-attack": 58,
         "special-defense": 75,
         "speed": 54,
-        "pokemon_id": 10032
+        "form_id": 10032
     },
     {
         "hp": 80,
@@ -7557,7 +7557,7 @@
         "special-attack": 122,
         "special-defense": 120,
         "speed": 80,
-        "pokemon_id": 10033
+        "form_id": 10033
     },
     {
         "hp": 78,
@@ -7566,7 +7566,7 @@
         "special-attack": 130,
         "special-defense": 85,
         "speed": 100,
-        "pokemon_id": 10034
+        "form_id": 10034
     },
     {
         "hp": 78,
@@ -7575,7 +7575,7 @@
         "special-attack": 159,
         "special-defense": 115,
         "speed": 100,
-        "pokemon_id": 10035
+        "form_id": 10035
     },
     {
         "hp": 79,
@@ -7584,7 +7584,7 @@
         "special-attack": 135,
         "special-defense": 115,
         "speed": 78,
-        "pokemon_id": 10036
+        "form_id": 10036
     },
     {
         "hp": 55,
@@ -7593,7 +7593,7 @@
         "special-attack": 175,
         "special-defense": 105,
         "speed": 150,
-        "pokemon_id": 10037
+        "form_id": 10037
     },
     {
         "hp": 60,
@@ -7602,7 +7602,7 @@
         "special-attack": 170,
         "special-defense": 95,
         "speed": 130,
-        "pokemon_id": 10038
+        "form_id": 10038
     },
     {
         "hp": 105,
@@ -7611,7 +7611,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 100,
-        "pokemon_id": 10039
+        "form_id": 10039
     },
     {
         "hp": 65,
@@ -7620,7 +7620,7 @@
         "special-attack": 65,
         "special-defense": 90,
         "speed": 105,
-        "pokemon_id": 10040
+        "form_id": 10040
     },
     {
         "hp": 95,
@@ -7629,7 +7629,7 @@
         "special-attack": 70,
         "special-defense": 130,
         "speed": 81,
-        "pokemon_id": 10041
+        "form_id": 10041
     },
     {
         "hp": 80,
@@ -7638,7 +7638,7 @@
         "special-attack": 70,
         "special-defense": 95,
         "speed": 150,
-        "pokemon_id": 10042
+        "form_id": 10042
     },
     {
         "hp": 106,
@@ -7647,7 +7647,7 @@
         "special-attack": 154,
         "special-defense": 100,
         "speed": 130,
-        "pokemon_id": 10043
+        "form_id": 10043
     },
     {
         "hp": 106,
@@ -7656,7 +7656,7 @@
         "special-attack": 194,
         "special-defense": 120,
         "speed": 140,
-        "pokemon_id": 10044
+        "form_id": 10044
     },
     {
         "hp": 90,
@@ -7665,7 +7665,7 @@
         "special-attack": 165,
         "special-defense": 110,
         "speed": 45,
-        "pokemon_id": 10045
+        "form_id": 10045
     },
     {
         "hp": 70,
@@ -7674,7 +7674,7 @@
         "special-attack": 65,
         "special-defense": 100,
         "speed": 75,
-        "pokemon_id": 10046
+        "form_id": 10046
     },
     {
         "hp": 80,
@@ -7683,7 +7683,7 @@
         "special-attack": 40,
         "special-defense": 105,
         "speed": 75,
-        "pokemon_id": 10047
+        "form_id": 10047
     },
     {
         "hp": 75,
@@ -7692,7 +7692,7 @@
         "special-attack": 140,
         "special-defense": 90,
         "speed": 115,
-        "pokemon_id": 10048
+        "form_id": 10048
     },
     {
         "hp": 100,
@@ -7701,7 +7701,7 @@
         "special-attack": 95,
         "special-defense": 120,
         "speed": 71,
-        "pokemon_id": 10049
+        "form_id": 10049
     },
     {
         "hp": 80,
@@ -7710,7 +7710,7 @@
         "special-attack": 130,
         "special-defense": 80,
         "speed": 100,
-        "pokemon_id": 10050
+        "form_id": 10050
     },
     {
         "hp": 68,
@@ -7719,7 +7719,7 @@
         "special-attack": 165,
         "special-defense": 135,
         "speed": 100,
-        "pokemon_id": 10051
+        "form_id": 10051
     },
     {
         "hp": 50,
@@ -7728,7 +7728,7 @@
         "special-attack": 55,
         "special-defense": 95,
         "speed": 50,
-        "pokemon_id": 10052
+        "form_id": 10052
     },
     {
         "hp": 70,
@@ -7737,7 +7737,7 @@
         "special-attack": 60,
         "special-defense": 80,
         "speed": 50,
-        "pokemon_id": 10053
+        "form_id": 10053
     },
     {
         "hp": 60,
@@ -7746,7 +7746,7 @@
         "special-attack": 80,
         "special-defense": 85,
         "speed": 100,
-        "pokemon_id": 10054
+        "form_id": 10054
     },
     {
         "hp": 70,
@@ -7755,7 +7755,7 @@
         "special-attack": 135,
         "special-defense": 80,
         "speed": 135,
-        "pokemon_id": 10055
+        "form_id": 10055
     },
     {
         "hp": 64,
@@ -7764,7 +7764,7 @@
         "special-attack": 93,
         "special-defense": 83,
         "speed": 75,
-        "pokemon_id": 10056
+        "form_id": 10056
     },
     {
         "hp": 65,
@@ -7773,7 +7773,7 @@
         "special-attack": 115,
         "special-defense": 60,
         "speed": 115,
-        "pokemon_id": 10057
+        "form_id": 10057
     },
     {
         "hp": 108,
@@ -7782,7 +7782,7 @@
         "special-attack": 120,
         "special-defense": 95,
         "speed": 92,
-        "pokemon_id": 10058
+        "form_id": 10058
     },
     {
         "hp": 70,
@@ -7791,7 +7791,7 @@
         "special-attack": 140,
         "special-defense": 70,
         "speed": 112,
-        "pokemon_id": 10059
+        "form_id": 10059
     },
     {
         "hp": 90,
@@ -7800,7 +7800,7 @@
         "special-attack": 132,
         "special-defense": 105,
         "speed": 30,
-        "pokemon_id": 10060
+        "form_id": 10060
     },
     {
         "hp": 74,
@@ -7809,7 +7809,7 @@
         "special-attack": 125,
         "special-defense": 128,
         "speed": 92,
-        "pokemon_id": 10061
+        "form_id": 10061
     },
     {
         "hp": 80,
@@ -7818,7 +7818,7 @@
         "special-attack": 140,
         "special-defense": 150,
         "speed": 110,
-        "pokemon_id": 10062
+        "form_id": 10062
     },
     {
         "hp": 80,
@@ -7827,7 +7827,7 @@
         "special-attack": 160,
         "special-defense": 120,
         "speed": 110,
-        "pokemon_id": 10063
+        "form_id": 10063
     },
     {
         "hp": 100,
@@ -7836,7 +7836,7 @@
         "special-attack": 95,
         "special-defense": 110,
         "speed": 70,
-        "pokemon_id": 10064
+        "form_id": 10064
     },
     {
         "hp": 70,
@@ -7845,7 +7845,7 @@
         "special-attack": 145,
         "special-defense": 85,
         "speed": 145,
-        "pokemon_id": 10065
+        "form_id": 10065
     },
     {
         "hp": 50,
@@ -7854,7 +7854,7 @@
         "special-attack": 85,
         "special-defense": 115,
         "speed": 20,
-        "pokemon_id": 10066
+        "form_id": 10066
     },
     {
         "hp": 75,
@@ -7863,7 +7863,7 @@
         "special-attack": 110,
         "special-defense": 105,
         "speed": 80,
-        "pokemon_id": 10067
+        "form_id": 10067
     },
     {
         "hp": 68,
@@ -7872,7 +7872,7 @@
         "special-attack": 65,
         "special-defense": 115,
         "speed": 110,
-        "pokemon_id": 10068
+        "form_id": 10068
     },
     {
         "hp": 103,
@@ -7881,7 +7881,7 @@
         "special-attack": 80,
         "special-defense": 126,
         "speed": 50,
-        "pokemon_id": 10069
+        "form_id": 10069
     },
     {
         "hp": 70,
@@ -7890,7 +7890,7 @@
         "special-attack": 110,
         "special-defense": 65,
         "speed": 105,
-        "pokemon_id": 10070
+        "form_id": 10070
     },
     {
         "hp": 95,
@@ -7899,7 +7899,7 @@
         "special-attack": 130,
         "special-defense": 80,
         "speed": 30,
-        "pokemon_id": 10071
+        "form_id": 10071
     },
     {
         "hp": 75,
@@ -7908,7 +7908,7 @@
         "special-attack": 55,
         "special-defense": 95,
         "speed": 30,
-        "pokemon_id": 10072
+        "form_id": 10072
     },
     {
         "hp": 83,
@@ -7917,7 +7917,7 @@
         "special-attack": 135,
         "special-defense": 80,
         "speed": 121,
-        "pokemon_id": 10073
+        "form_id": 10073
     },
     {
         "hp": 80,
@@ -7926,7 +7926,7 @@
         "special-attack": 120,
         "special-defense": 80,
         "speed": 100,
-        "pokemon_id": 10074
+        "form_id": 10074
     },
     {
         "hp": 50,
@@ -7935,7 +7935,7 @@
         "special-attack": 160,
         "special-defense": 110,
         "speed": 110,
-        "pokemon_id": 10075
+        "form_id": 10075
     },
     {
         "hp": 80,
@@ -7944,7 +7944,7 @@
         "special-attack": 105,
         "special-defense": 110,
         "speed": 110,
-        "pokemon_id": 10076
+        "form_id": 10076
     },
     {
         "hp": 100,
@@ -7953,7 +7953,7 @@
         "special-attack": 180,
         "special-defense": 160,
         "speed": 90,
-        "pokemon_id": 10077
+        "form_id": 10077
     },
     {
         "hp": 100,
@@ -7962,7 +7962,7 @@
         "special-attack": 150,
         "special-defense": 90,
         "speed": 90,
-        "pokemon_id": 10078
+        "form_id": 10078
     },
     {
         "hp": 105,
@@ -7971,7 +7971,7 @@
         "special-attack": 180,
         "special-defense": 100,
         "speed": 115,
-        "pokemon_id": 10079
+        "form_id": 10079
     },
     {
         "hp": 35,
@@ -7980,7 +7980,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10080
+        "form_id": 10080
     },
     {
         "hp": 35,
@@ -7989,7 +7989,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10081
+        "form_id": 10081
     },
     {
         "hp": 35,
@@ -7998,7 +7998,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10082
+        "form_id": 10082
     },
     {
         "hp": 35,
@@ -8007,7 +8007,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10083
+        "form_id": 10083
     },
     {
         "hp": 35,
@@ -8016,7 +8016,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10084
+        "form_id": 10084
     },
     {
         "hp": 35,
@@ -8025,7 +8025,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10085
+        "form_id": 10085
     },
     {
         "hp": 80,
@@ -8034,7 +8034,7 @@
         "special-attack": 170,
         "special-defense": 130,
         "speed": 80,
-        "pokemon_id": 10086
+        "form_id": 10086
     },
     {
         "hp": 70,
@@ -8043,7 +8043,7 @@
         "special-attack": 145,
         "special-defense": 105,
         "speed": 20,
-        "pokemon_id": 10087
+        "form_id": 10087
     },
     {
         "hp": 65,
@@ -8052,7 +8052,7 @@
         "special-attack": 54,
         "special-defense": 96,
         "speed": 135,
-        "pokemon_id": 10088
+        "form_id": 10088
     },
     {
         "hp": 95,
@@ -8061,7 +8061,7 @@
         "special-attack": 120,
         "special-defense": 90,
         "speed": 120,
-        "pokemon_id": 10089
+        "form_id": 10089
     },
     {
         "hp": 65,
@@ -8070,7 +8070,7 @@
         "special-attack": 15,
         "special-defense": 80,
         "speed": 145,
-        "pokemon_id": 10090
+        "form_id": 10090
     },
     {
         "hp": 30,
@@ -8079,7 +8079,7 @@
         "special-attack": 25,
         "special-defense": 35,
         "speed": 72,
-        "pokemon_id": 10091
+        "form_id": 10091
     },
     {
         "hp": 75,
@@ -8088,7 +8088,7 @@
         "special-attack": 40,
         "special-defense": 80,
         "speed": 77,
-        "pokemon_id": 10092
+        "form_id": 10092
     },
     {
         "hp": 75,
@@ -8097,7 +8097,7 @@
         "special-attack": 40,
         "special-defense": 80,
         "speed": 77,
-        "pokemon_id": 10093
+        "form_id": 10093
     },
     {
         "hp": 35,
@@ -8106,7 +8106,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10094
+        "form_id": 10094
     },
     {
         "hp": 35,
@@ -8115,7 +8115,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10095
+        "form_id": 10095
     },
     {
         "hp": 35,
@@ -8124,7 +8124,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10096
+        "form_id": 10096
     },
     {
         "hp": 35,
@@ -8133,7 +8133,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10097
+        "form_id": 10097
     },
     {
         "hp": 35,
@@ -8142,7 +8142,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10098
+        "form_id": 10098
     },
     {
         "hp": 35,
@@ -8151,7 +8151,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10099
+        "form_id": 10099
     },
     {
         "hp": 60,
@@ -8160,7 +8160,7 @@
         "special-attack": 95,
         "special-defense": 85,
         "speed": 110,
-        "pokemon_id": 10100
+        "form_id": 10100
     },
     {
         "hp": 50,
@@ -8169,7 +8169,7 @@
         "special-attack": 10,
         "special-defense": 35,
         "speed": 40,
-        "pokemon_id": 10101
+        "form_id": 10101
     },
     {
         "hp": 75,
@@ -8178,7 +8178,7 @@
         "special-attack": 25,
         "special-defense": 65,
         "speed": 65,
-        "pokemon_id": 10102
+        "form_id": 10102
     },
     {
         "hp": 38,
@@ -8187,7 +8187,7 @@
         "special-attack": 50,
         "special-defense": 65,
         "speed": 65,
-        "pokemon_id": 10103
+        "form_id": 10103
     },
     {
         "hp": 73,
@@ -8196,7 +8196,7 @@
         "special-attack": 81,
         "special-defense": 100,
         "speed": 109,
-        "pokemon_id": 10104
+        "form_id": 10104
     },
     {
         "hp": 10,
@@ -8205,7 +8205,7 @@
         "special-attack": 35,
         "special-defense": 45,
         "speed": 90,
-        "pokemon_id": 10105
+        "form_id": 10105
     },
     {
         "hp": 35,
@@ -8214,7 +8214,7 @@
         "special-attack": 50,
         "special-defense": 70,
         "speed": 110,
-        "pokemon_id": 10106
+        "form_id": 10106
     },
     {
         "hp": 40,
@@ -8223,7 +8223,7 @@
         "special-attack": 50,
         "special-defense": 40,
         "speed": 90,
-        "pokemon_id": 10107
+        "form_id": 10107
     },
     {
         "hp": 65,
@@ -8232,7 +8232,7 @@
         "special-attack": 75,
         "special-defense": 65,
         "speed": 115,
-        "pokemon_id": 10108
+        "form_id": 10108
     },
     {
         "hp": 40,
@@ -8241,7 +8241,7 @@
         "special-attack": 30,
         "special-defense": 30,
         "speed": 20,
-        "pokemon_id": 10109
+        "form_id": 10109
     },
     {
         "hp": 55,
@@ -8250,7 +8250,7 @@
         "special-attack": 45,
         "special-defense": 45,
         "speed": 35,
-        "pokemon_id": 10110
+        "form_id": 10110
     },
     {
         "hp": 80,
@@ -8259,7 +8259,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 45,
-        "pokemon_id": 10111
+        "form_id": 10111
     },
     {
         "hp": 80,
@@ -8268,7 +8268,7 @@
         "special-attack": 40,
         "special-defense": 50,
         "speed": 25,
-        "pokemon_id": 10112
+        "form_id": 10112
     },
     {
         "hp": 105,
@@ -8277,7 +8277,7 @@
         "special-attack": 65,
         "special-defense": 100,
         "speed": 50,
-        "pokemon_id": 10113
+        "form_id": 10113
     },
     {
         "hp": 95,
@@ -8286,7 +8286,7 @@
         "special-attack": 125,
         "special-defense": 75,
         "speed": 45,
-        "pokemon_id": 10114
+        "form_id": 10114
     },
     {
         "hp": 60,
@@ -8295,7 +8295,7 @@
         "special-attack": 50,
         "special-defense": 80,
         "speed": 45,
-        "pokemon_id": 10115
+        "form_id": 10115
     },
     {
         "hp": 72,
@@ -8304,7 +8304,7 @@
         "special-attack": 103,
         "special-defense": 71,
         "speed": 122,
-        "pokemon_id": 10116
+        "form_id": 10116
     },
     {
         "hp": 72,
@@ -8313,7 +8313,7 @@
         "special-attack": 153,
         "special-defense": 71,
         "speed": 132,
-        "pokemon_id": 10117
+        "form_id": 10117
     },
     {
         "hp": 54,
@@ -8322,7 +8322,7 @@
         "special-attack": 61,
         "special-defense": 85,
         "speed": 115,
-        "pokemon_id": 10118
+        "form_id": 10118
     },
     {
         "hp": 108,
@@ -8331,7 +8331,7 @@
         "special-attack": 81,
         "special-defense": 95,
         "speed": 95,
-        "pokemon_id": 10119
+        "form_id": 10119
     },
     {
         "hp": 216,
@@ -8340,7 +8340,7 @@
         "special-attack": 91,
         "special-defense": 95,
         "speed": 85,
-        "pokemon_id": 10120
+        "form_id": 10120
     },
     {
         "hp": 88,
@@ -8349,7 +8349,7 @@
         "special-attack": 55,
         "special-defense": 60,
         "speed": 45,
-        "pokemon_id": 10121
+        "form_id": 10121
     },
     {
         "hp": 77,
@@ -8358,7 +8358,7 @@
         "special-attack": 145,
         "special-defense": 75,
         "speed": 43,
-        "pokemon_id": 10122
+        "form_id": 10122
     },
     {
         "hp": 75,
@@ -8367,7 +8367,7 @@
         "special-attack": 98,
         "special-defense": 70,
         "speed": 93,
-        "pokemon_id": 10123
+        "form_id": 10123
     },
     {
         "hp": 75,
@@ -8376,7 +8376,7 @@
         "special-attack": 98,
         "special-defense": 70,
         "speed": 93,
-        "pokemon_id": 10124
+        "form_id": 10124
     },
     {
         "hp": 75,
@@ -8385,7 +8385,7 @@
         "special-attack": 98,
         "special-defense": 70,
         "speed": 93,
-        "pokemon_id": 10125
+        "form_id": 10125
     },
     {
         "hp": 85,
@@ -8394,7 +8394,7 @@
         "special-attack": 55,
         "special-defense": 75,
         "speed": 82,
-        "pokemon_id": 10126
+        "form_id": 10126
     },
     {
         "hp": 45,
@@ -8403,7 +8403,7 @@
         "special-attack": 140,
         "special-defense": 135,
         "speed": 30,
-        "pokemon_id": 10127
+        "form_id": 10127
     },
     {
         "hp": 70,
@@ -8412,7 +8412,7 @@
         "special-attack": 80,
         "special-defense": 90,
         "speed": 45,
-        "pokemon_id": 10128
+        "form_id": 10128
     },
     {
         "hp": 68,
@@ -8421,7 +8421,7 @@
         "special-attack": 111,
         "special-defense": 60,
         "speed": 117,
-        "pokemon_id": 10129
+        "form_id": 10129
     },
     {
         "hp": 60,
@@ -8430,7 +8430,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10130
+        "form_id": 10130
     },
     {
         "hp": 60,
@@ -8439,7 +8439,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10131
+        "form_id": 10131
     },
     {
         "hp": 60,
@@ -8448,7 +8448,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10132
+        "form_id": 10132
     },
     {
         "hp": 60,
@@ -8457,7 +8457,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10133
+        "form_id": 10133
     },
     {
         "hp": 60,
@@ -8466,7 +8466,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10134
+        "form_id": 10134
     },
     {
         "hp": 60,
@@ -8475,7 +8475,7 @@
         "special-attack": 60,
         "special-defense": 100,
         "speed": 60,
-        "pokemon_id": 10135
+        "form_id": 10135
     },
     {
         "hp": 60,
@@ -8484,7 +8484,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10136
+        "form_id": 10136
     },
     {
         "hp": 60,
@@ -8493,7 +8493,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10137
+        "form_id": 10137
     },
     {
         "hp": 60,
@@ -8502,7 +8502,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10138
+        "form_id": 10138
     },
     {
         "hp": 60,
@@ -8511,7 +8511,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10139
+        "form_id": 10139
     },
     {
         "hp": 60,
@@ -8520,7 +8520,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10140
+        "form_id": 10140
     },
     {
         "hp": 60,
@@ -8529,7 +8529,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10141
+        "form_id": 10141
     },
     {
         "hp": 60,
@@ -8538,7 +8538,7 @@
         "special-attack": 100,
         "special-defense": 60,
         "speed": 120,
-        "pokemon_id": 10142
+        "form_id": 10142
     },
     {
         "hp": 55,
@@ -8547,7 +8547,7 @@
         "special-attack": 50,
         "special-defense": 105,
         "speed": 96,
-        "pokemon_id": 10143
+        "form_id": 10143
     },
     {
         "hp": 55,
@@ -8556,7 +8556,7 @@
         "special-attack": 50,
         "special-defense": 105,
         "speed": 96,
-        "pokemon_id": 10144
+        "form_id": 10144
     },
     {
         "hp": 55,
@@ -8565,7 +8565,7 @@
         "special-attack": 50,
         "special-defense": 105,
         "speed": 96,
-        "pokemon_id": 10145
+        "form_id": 10145
     },
     {
         "hp": 75,
@@ -8574,7 +8574,7 @@
         "special-attack": 100,
         "special-defense": 105,
         "speed": 85,
-        "pokemon_id": 10146
+        "form_id": 10146
     },
     {
         "hp": 80,
@@ -8583,7 +8583,7 @@
         "special-attack": 130,
         "special-defense": 115,
         "speed": 65,
-        "pokemon_id": 10147
+        "form_id": 10147
     },
     {
         "hp": 35,
@@ -8592,7 +8592,7 @@
         "special-attack": 50,
         "special-defense": 50,
         "speed": 90,
-        "pokemon_id": 10148
+        "form_id": 10148
     },
     {
         "hp": 60,
@@ -8601,7 +8601,7 @@
         "special-attack": 50,
         "special-defense": 80,
         "speed": 45,
-        "pokemon_id": 10149
+        "form_id": 10149
     },
     {
         "hp": 60,
@@ -8610,7 +8610,7 @@
         "special-attack": 95,
         "special-defense": 70,
         "speed": 124,
-        "pokemon_id": 10150
+        "form_id": 10150
     },
     {
         "hp": 45,
@@ -8619,7 +8619,7 @@
         "special-attack": 30,
         "special-defense": 40,
         "speed": 60,
-        "pokemon_id": 10151
+        "form_id": 10151
     },
     {
         "hp": 75,
@@ -8628,7 +8628,7 @@
         "special-attack": 55,
         "special-defense": 65,
         "speed": 110,
-        "pokemon_id": 10152
+        "form_id": 10152
     },
     {
         "hp": 68,
@@ -8637,7 +8637,7 @@
         "special-attack": 50,
         "special-defense": 132,
         "speed": 42,
-        "pokemon_id": 10153
+        "form_id": 10153
     },
     {
         "hp": 65,
@@ -8646,7 +8646,7 @@
         "special-attack": 40,
         "special-defense": 73,
         "speed": 96,
-        "pokemon_id": 10154
+        "form_id": 10154
     },
     {
         "hp": 97,
@@ -8655,7 +8655,7 @@
         "special-attack": 113,
         "special-defense": 109,
         "speed": 77,
-        "pokemon_id": 10155
+        "form_id": 10155
     },
     {
         "hp": 97,
@@ -8664,7 +8664,7 @@
         "special-attack": 157,
         "special-defense": 127,
         "speed": 77,
-        "pokemon_id": 10156
+        "form_id": 10156
     },
     {
         "hp": 97,
@@ -8673,6 +8673,6 @@
         "special-attack": 167,
         "special-defense": 97,
         "speed": 129,
-        "pokemon_id": 10157
+        "form_id": 10157
     }
 ]

@@ -125,3 +125,4 @@ idb/**/gen
 lib/
 !IDB*.log
 scrape/csv/
+ignore-*.*

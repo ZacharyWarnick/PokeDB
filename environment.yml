@@ -9,6 +9,8 @@ dependencies:
   - nodejs
   - pip:
       - Flask
+      - Flask_SQLAlchemy
+      - psycopg2
       - gunicorn
       - requests
       - beautifulsoup4
