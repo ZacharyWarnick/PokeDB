@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" class="navbar-expand-lg navbar-light bg-light">
+  <b-navbar toggleable="lg" class="navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" id="navbar">
     <router-link to="/" class="navbar-brand">PokéDB</router-link>
     <b-navbar-toggle target="nav_collapse" />
 
