@@ -20,7 +20,10 @@ __pycache__/
 .gitlab/
 .vscode/
 frontend/
+scrape/
 CONTRIBUTING.md
 environment.yml
 makefile
 README.md
+ignore-*
+IDB*.log

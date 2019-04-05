@@ -25,8 +25,7 @@ def create_base_model(db):
                 return getattr(self, f) if hasattr(self, f) else []
 
             hidden = try_field('__hiddenfields__')
-            default = try_field('__defaultfields__')
-            default.extend(['id', 'modified_at', 'created_at'])
+            default = try_field('__defaultfields__') + ['id']
 
             if not _path:
                 _path = self.__tablename__.lower()
