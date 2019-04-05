@@ -112,7 +112,7 @@ export default {
   }
 }
 .text-scroll-bg {
-  background-color: rgba(139, 139, 139, 0.9);
+  background-color: white;
   width: 1920px;
   height: 1500px;
 

@@ -132,7 +132,7 @@ export default {
   }
 }
 .text-scroll-bg {
-  background-color: rgba(139, 139, 139, 0.9);
+  background-color: white;
   width: 1920px;
   height: 1500px;
 
@@ -144,7 +144,7 @@ export default {
   animation: textUP 1.5s 1 forwards;
 
 }
-  .bg {
+.bg {
   padding-top: 0;
 
   margin-bottom: 0px;
