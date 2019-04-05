@@ -106,9 +106,9 @@ class Form(db.Model):
     __tablename__ = 'form'
 
     id = db.Column(db.Integer, primary_key=True)
-    identifier = db.Column(db.String(20), unique=True)
+    identifier = db.Column(db.String(20))
     pokemon_id = db.Column(db.Integer, fkey('pokemon.id'))
-    pokemon_variant_id = db.Column(db.Integer, unique=True)
+    pokemon_variant_id = db.Column(db.Integer, fkey('base_stats.form_id'))
     pokemon_name = db.Column(db.String(25))
     form_label = db.Column(db.String(25))
     first_type_id = db.Column(db.Integer, fkey('type.id'))
@@ -120,7 +120,7 @@ class Form(db.Model):
 class BaseStats(db.Model):
     __tablename__ = 'base_stats'
 
-    form_id = db.Column(db.Integer, fkey('form.id'), primary_key=True)
+    form_id = db.Column(db.Integer, primary_key=True)
     hp = db.Column(db.Integer)
     attack = db.Column(db.Integer)
     defense = db.Column(db.Integer)

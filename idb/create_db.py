@@ -1,9 +1,10 @@
-import json
-
 """Creates the database from cached JSON files."""
 
+import json
+
+from collections import defaultdict
 from models import app, db
-from models import Pokemon, Type, BaseStats
+from models import Pokemon, Type, BaseStats, Form, Evolution
 from pathlib import Path
 
 _THIS_DIR = Path(__file__).parent
@@ -24,7 +25,7 @@ def create_stats():
 
     for b in base_stats:
         new_stats = BaseStats(
-            pokemon_id=b['pokemon_id'],
+            form_id=b['form_id'],
             hp=b['hp'],
             attack=b['attack'],
             defense=b['defense'],
@@ -34,6 +35,27 @@ def create_stats():
         )
 
         db.session.add(new_stats)
+        db.session.commit()
+
+
+def create_form():
+    forms = load_json('forms')
+
+    for f in forms:
+        new_form = Form(
+            id=f['id'],
+            identifier=f['identifier'],
+            pokemon_id=f['pokemon_id'],
+            pokemon_variant_id=f['pokemon_variant_id'],
+            pokemon_name=f['pokemon_name'],
+            form_label=f['form_label'],
+            first_type_id=f['first_type_id'],
+            second_type_id=f['second_type_id'],
+            alt_sprite=f.get('alt_sprite', None),
+            alt_image=f.get('alt_image', None)
+        )
+
+        db.session.add(new_form)
         db.session.commit()
 
 
@@ -99,7 +121,46 @@ def create_pokemon():
         db.session.commit()
 
 
+def create_evolution():
+    evolution = load_json('evolutions')
+
+    for evo in evolution:
+        e = defaultdict(lambda: None)
+        e.update(evo)
+
+        new_evo = Evolution(
+            id=e['id'],
+            evolves_from_pokemon_id=e['evolves_from_pokemon_id'],
+            pokemon_id=e['pokemon_id'],
+            evolution_chain_id=e['evolution_chain_id'],
+            trigger=e['trigger'],
+            level=e['level'],
+            difficulty=e['difficulty'],
+            happiness=e['happiness'],
+            trigger_item=e['trigger_item'],
+            relative_stats=e['relative_stats'],
+            held_item=e['held_item'],
+            time_of_day=e['time_of_day'],
+            known_move=e['known_move'],
+            party_pokemon_id=e['party_pokemon_id'],
+            beauty=e['beauty'],
+            gender=e['gender'],
+            location=e['location'],
+            trade_pokemon_id=e['trade_pokemon_id'],
+            needs_inversion=e['needs_inversion'],
+            party_type_id=e['party_type_id'],
+            needs_rain=e['needs_rain'],
+            known_move_type_id=e['known_move_type_id'],
+            affection=e['affection']
+        )
+
+        db.session.add(new_evo)
+        db.session.commit()
+
+
 if __name__ == '__main__':
     create_type()
     create_pokemon()
     create_stats()
+    create_form()
+    create_evolution()

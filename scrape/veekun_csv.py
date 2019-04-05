@@ -297,6 +297,8 @@ class Session(object):
             row_id = row['id']
             spec_id = row['pokemon_id']
             form_identifier = row['form_identifier']
+            if not form_identifier:
+                form_identifier = row['identifier']
             if form_identifier:
                 name = row['identifier']
                 type1 = None
@@ -327,7 +329,7 @@ class Session(object):
                 new_form = forms[row_id]
                 new_form['identifier'] = form_identifier
                 new_form['pokemon_id'] = simple_pokemon[spec_id]
-                new_form['pokemon_variant_id'] = spec_id
+                new_form['variant_id'] = spec_id
                 new_form['pokemon_name'] = poke_name
                 new_form['form_label'] = form_label
 
@@ -468,7 +470,7 @@ class Session(object):
         ]
 
         id_keys = {
-            'base_stats': 'pokemon_id'
+            'base_stats': 'variant_id'
         }
 
         for fname, obj in zip(file_names, objects):

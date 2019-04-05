@@ -302,7 +302,7 @@ def find_form_sprite(form):
     identifier = form['identifier']
 
     poke_key = 'pokemon_id'
-    variant_key = 'pokemon_variant_id'
+    variant_key = 'variant_id'
 
     poke_id = form[poke_key] if poke_key in form else form_id
     variant = form[variant_key] if variant_key in form else form_id
@@ -377,7 +377,7 @@ def add_sprites(targets, form_info, sprite_key, skip_default=False):
 
 
 def is_default_form(form):
-    return form['pokemon_variant_id'] == form['id']
+    return form['variant_id'] == form['id']
 
 
 def type_description(type_name):
