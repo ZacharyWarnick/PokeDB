@@ -9,12 +9,26 @@ app.config.from_object(DatabaseConfig)
 
 db = SQLAlchemy(app)
 
-
+# Alias these for convenience.
 fkey = db.ForeignKey
 rel = db.relationship
 
+# Used to link a Pokémon's default form. Always yields a unique pair.
 JOIN_POKE_FORM = 'and_(Pokemon.id==Form.id, Pokemon.id==Form.pokemon_id)'
 
+"""Automatically generates to_dict methods for each model.
+
+Fields in __defaultfields__ are included.
+Fields in __hiddenfields__ will be ignored.
+
+Note:
+    EXTRA_FIELDS is defined for convenience in most cases. It can be passed to
+    the to_dict method to produce a more verbose dictionary.
+    >>> bulbasaur.to_dict(show=Pokemon.EXTRA_FIELDS)
+
+    Alternatively, fields can be manually specified as a list.
+    >>> bulbasaur.to_dict(show=['image', 'base_stats'])
+"""
 BaseModel = create_base_model(db)
 
 
@@ -28,15 +42,13 @@ class Pokemon(BaseModel):
 
     EXTRA_FIELDS = ['image', 'flavor_text', 'forms', 'base_stats']
 
-    # Integers
+    # Columns
     id = db.Column(db.Integer, primary_key=True)
     evolution_chain_id = db.Column(db.Integer)
     evolves_from_pokemon_id = db.Column(db.Integer)
     since_gen = db.Column(db.Integer, nullable=False)
     first_type_id = db.Column(db.Integer, fkey('type.id'), nullable=False)
     second_type_id = db.Column(db.Integer, fkey('type.id'))
-
-    # Strings
     name = db.Column(db.String(15), unique=True, nullable=False)
     genus = db.Column(db.String(25), nullable=False)
     identifier = db.Column(db.String(12), unique=True, nullable=False)
@@ -44,8 +56,6 @@ class Pokemon(BaseModel):
     image = db.Column(db.String(125), nullable=False)
     sprite = db.Column(db.String(85), nullable=False)
     flavor_text = db.Column(db.String(250))
-
-    # Boolean
     has_alt_form = db.Column(db.Boolean, nullable=False)
 
     # Computed
@@ -97,6 +107,7 @@ class Type(BaseModel):
         'vs_dark', 'vs_fairy', 'pokemon_count', 'stat_average',
         'relative_advantage', 'desc_info', 'desc_atk', 'desc_def']
 
+    # Columns
     id = db.Column(db.Integer, primary_key=True)
     damage_class = db.Column(db.String(10), nullable=False)
     identifier = db.Column(db.String(10), unique=True, nullable=False)
@@ -141,16 +152,18 @@ class Evolution(BaseModel):
     __tablename__ = 'evolution'
 
     __defaultfields__ = [
-        'evolves_from_pokemon_id', 'pokemon_id', 'evolution_chain_id'
+        'evolves_from', 'pokemon', 'evolution_chain_id'
         ]
+
     EXTRA_FIELDS = [
         'difficulty', 'trigger', 'level', 'happiness', 'trigger_item',
         'relative_stats', 'held_item', 'time_of_day', 'known_move',
         'party_pokemon', 'beauty', 'gender', 'location', 'trade_pokemon',
         'needs_inversion', 'party_type', 'needs_rain', 'known_move_type',
         'affection'
-    ]
+        ]
 
+    # Columns
     id = db.Column(db.Integer, primary_key=True)
     evolves_from_pokemon_id = db.Column(
         db.Integer, fkey('pokemon.id'), nullable=False)
@@ -208,12 +221,13 @@ class Form(BaseModel):
     __defaultfields__ = [
         'pokemon_id', 'variant_id', 'identifier', 'first_type', 'second_type',
         'alt_sprite'
-    ]
+        ]
 
     EXTRA_FIELDS = [
         'pokemon_name', 'form_label', 'alt_image', 'base_stats'
-    ]
+        ]
 
+    # Columns
     id = db.Column(db.Integer, primary_key=True)
     pokemon_id = db.Column(db.Integer, fkey('pokemon.id'), nullable=False)
     variant_id = db.Column(
@@ -248,8 +262,9 @@ class BaseStats(BaseModel):
 
     __defaultfields__ = [
         'hp', 'attack', 'defense', 'special_attack', 'special_defense', 'speed'
-    ]
+        ]
 
+    # Columns
     variant_id = db.Column(db.Integer, primary_key=True)
     hp = db.Column(db.Integer)
     attack = db.Column(db.Integer)

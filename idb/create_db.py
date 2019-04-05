@@ -1,4 +1,3 @@
-from sqlalchemy.ext.declarative import DeclarativeMeta
 """Creates the database from cached JSON files."""
 
 import json
@@ -168,9 +167,15 @@ if __name__ == '__main__':
     create_evolution()
 
     from pprint import pprint
+    from flask import jsonify, Flask
 
-    for p in Pokemon.query.filter(Pokemon.id > 790).all():
-        pprint(p.to_dict(show=Pokemon.EXTRA_FIELDS))
-        pprint(p.first_type.to_dict(show=Type.EXTRA_FIELDS))
-        print('Type:', p.first_type, '/', p.second_type)
-        print('Stats:', p.base_stats)
+    app = Flask(__name__)
+
+    with app.app_context():
+        bulbasaur = Pokemon.query.filter_by(id=1).first()
+        print(jsonify(bulbasaur.to_dict()).json)
+        pprint(bulbasaur.to_dict(show=Pokemon.EXTRA_FIELDS))
+
+        evolutions = Evolution.query.filter_by(
+            id=bulbasaur.evolution_chain_id).all()
+        pprint(evolutions[0].to_dict())
