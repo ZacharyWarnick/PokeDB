@@ -76,6 +76,8 @@
         v-bind:second="all[$route.params.name].ev.second"
       />
     </section>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -280,7 +282,44 @@ export default {
 .poke-img-box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< HEAD
+.text-scroll-bg {
+  background-color: white;
+  width: 1920px;
+  height: 1500px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+
+}
+.bg {
+padding-top: 0;
+
+margin-bottom: 0px;
+
+/* The image used */
+background-image: url('../assets/home-background.jpg');
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+align-content: center;
+
+position: sticky;
+}
+=======
 
 
 
+>>>>>>> develop
 </style>
