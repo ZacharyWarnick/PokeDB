@@ -1,7 +1,6 @@
 <template>
   <div class="pokemon">
     <Navbar />
-
     <section id="about" class="container section-padding">
       <b-row>
         <b-col lg="6" md="6" sm="12" cols="12">
@@ -22,6 +21,7 @@
                   class="type-badge"
                   v-bind:src="type.badge_image"
                 />
+
               </div>
             </div>
             <p class="poke-desc">
@@ -248,6 +248,7 @@ export default {
 </script>
 
 <style scoped>
+
 .section-padding {
   padding: 15px 0;
 }
@@ -279,4 +280,7 @@ export default {
 .poke-img-box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+
+
 </style>
