@@ -1,6 +1,7 @@
 <template>
   <div class="evolution">
     <Navbar />
+    <div class="bg">
     <div class="fade-container">
       <div class="container text-scroll-bg">
       <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
@@ -32,6 +33,7 @@
         </b-container>
       </section>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -91,7 +93,7 @@ export default {
   }
 }
 .text-scroll-bg {
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: rgba(139, 139, 139, 0.9);
   width: 1920px;
   height: 1500px;
 
@@ -101,6 +103,26 @@ export default {
   box-shadow: 4px 4px 4px;
 
   animation: textUP 1.5s 1 forwards;
+}
+.bg {
+  padding-top: 0;
 
+  margin-bottom: 0px;
+
+  /* The image used */
+  background-image: url('../assets/home-background.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  align-content: center;
+
+  position: sticky;
 }
 </style>
