@@ -12,10 +12,11 @@
           <div class="container container-text">
 
             <div class="row">
-              <div class="col-lg">
-                <p class=hero-text>PokéDB <img src="../assets/pokeball.png" style="max-width: 110px"></p>
-                <p class="subhead-text">An indexed database for Pokémon, their evolutions, and types. <br/>Click below to start exploring. </p>
-
+              <div class="col-lg-12">
+                <div class="jumbotron">
+                  <p class=hero-text>PokéDB <img src="../assets/pokeball.png" style="max-width: 110px"></p>
+                  <p class="subhead-text">An indexed database for Pokémon, their evolutions, and types. <br/>Click below to start exploring. </p>
+                </div>
               </div>
             </div>
 
@@ -29,7 +30,7 @@
                   <div class="card-body">
                   
                     <p class="card-text">Explore the 18 types across all the pokémon games.</p>
-                    <a href="/types" class="btn btn-primary">Go!</a>
+                    <a href="/types" class="btn btn-primary btn-dark">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -41,7 +42,7 @@
                   <div class="card-body">
                     
                     <p class="card-text">There are hundreds of pokémon. Which one is your favorite?</p>
-                    <a href="/pokemon/" class="btn btn-primary">Go!</a>
+                    <a href="/pokemon/" class="btn btn-primary btn-dark">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -53,7 +54,7 @@
                   <div class="card-body">
                     
                     <p class="card-text">Answer the question: what came first, the Togepi or the egg?</p>
-                    <a href="/evolutions" class="btn btn-primary">Go!</a>
+                    <a href="/evolutions" class="btn btn-primary btn-dark">Go!</a>
                   </div>
                 </div>                
               </div>
@@ -71,6 +72,11 @@
 
 <style scoped>
 
+  .jumbrotron {
+    align-content: center;
+    align-self: center;
+    box-shadow: 2px 2px 2px;
+  }
   .hero-text {
     -webkit-text-fill-color: black;
     font-size: 72pt;
@@ -82,7 +88,7 @@
     font-size: 24pt;
     align-content: center;
     margin-bottom: 25px;
-    -webkit-text-fill-color: rgb(88, 88, 88);
+    -webkit-text-fill-color: rgb(51, 51, 51);
 
   }
   .row {
@@ -108,7 +114,7 @@
     align-content: center;
 
     position: sticky;
-      }
+  }
   
   .container-text {
     opacity: 0;
@@ -125,7 +131,7 @@
     background-color: darkgray;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1.5px;
   }
   @keyframes fadeInAfterPoke {
     0% {
@@ -139,7 +145,7 @@
   }
 
   .text-scroll-bg {
-    background-color: rgba(250, 250, 250, 0.9);
+    background-color: white;
     width: 1920px;
     height: 1500px;
 

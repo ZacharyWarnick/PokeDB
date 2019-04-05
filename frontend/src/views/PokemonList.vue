@@ -1,5 +1,5 @@
 <template>
-  <div class="fade-container">
+  <div>
     <Navbar />
     <b-container class="section-padding">
       <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
@@ -90,17 +90,5 @@ export default {
 
 .row-card {
   margin-bottom: 15px;
-}
-.fade-container {
-    animation: FadeIn 1.5s 1 forwards;
-}
-@keyframes FadeIn {
-  0%{
-    opacity: 0
-  }
-  
-  100% {
-    opacity: 1;
-  }
 }
 </style>
