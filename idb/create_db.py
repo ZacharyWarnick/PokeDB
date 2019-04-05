@@ -6,15 +6,13 @@ from collections import defaultdict
 from models import db
 from models import Pokemon, Type, BaseStats, Form, Evolution
 from pathlib import Path
-
-_THIS_DIR = Path(__file__).parent
-TARGET_DIR = _THIS_DIR.parent / 'scrape' / 'out'
+from config import DefaultConfig
 
 
 def load_json(fname):
-    fpath = TARGET_DIR / '{}.json'.format(fname)
+    fpath = Path(DefaultConfig.TABLE_DATA_DIR) / '{}.json'.format(fname)
     if not fpath.exists():
-        print(fpath)
+        raise FileNotFoundError('File doesn\'t exist:', fpath)
 
     with fpath.open() as f:
         return json.load(f)
@@ -159,13 +157,14 @@ def create_evolution():
         db.session.commit()
 
 
-if __name__ == '__main__':
-    create_type()
-    create_pokemon()
-    create_stats()
-    create_form()
-    create_evolution()
+create_type()
+create_pokemon()
+create_stats()
+create_form()
+create_evolution()
 
+
+if __name__ == '__main__':
     from pprint import pprint
     from flask import jsonify, Flask
 

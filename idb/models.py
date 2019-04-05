@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-from config import DatabaseConfig
+from config import Production
 from model_base import create_base_model
 
 app = Flask(__name__)
-app.config.from_object(DatabaseConfig)
+app.config.from_object(Production)
 
 db = SQLAlchemy(app)
 
