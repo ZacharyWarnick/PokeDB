@@ -126,7 +126,7 @@
   @media (max-width: 991px){
     .container-text {
     opacity: 0;
-    margin-top: 35%;
+    margin-top: 55%;
     transform: translateY(-100%);
     padding: 25px;
     animation: fadeInAfterPoke 1s 1 forwards;
