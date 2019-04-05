@@ -1,2 +1,2 @@
 # Data scraping specific .gitignore
-out/
+data/
