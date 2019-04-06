@@ -157,24 +157,9 @@ def create_evolution():
         db.session.commit()
 
 
-create_type()
-create_pokemon()
-create_stats()
-create_form()
-create_evolution()
-
-
-if __name__ == '__main__':
-    from pprint import pprint
-    from flask import jsonify, Flask
-
-    app = Flask(__name__)
-
-    with app.app_context():
-        bulbasaur = Pokemon.query.filter_by(id=1).first()
-        print(jsonify(bulbasaur.to_dict()).json)
-        pprint(bulbasaur.to_dict(show=Pokemon.EXTRA_FIELDS))
-
-        evolutions = Evolution.query.filter_by(
-            id=bulbasaur.evolution_chain_id).all()
-        pprint(evolutions[0].to_dict())
+def initialize():
+    create_type()
+    create_pokemon()
+    create_stats()
+    create_form()
+    create_evolution()

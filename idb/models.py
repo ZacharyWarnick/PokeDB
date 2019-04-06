@@ -192,6 +192,10 @@ class Evolution(_BaseModel):
     party_type = rel('Type', foreign_keys=party_type_id, lazy=True)
     known_move_type = rel('Type', foreign_keys=known_move_type_id, lazy=True)
 
+    def __repr__(self):
+        return '{} -> {} ({})'.format(
+            self.evolves_from_pokemon_id, self.pokemon_id, self.trigger)
+
 
 class Form(_BaseModel):
     """Describes a specific form of a Pokémon.

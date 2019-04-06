@@ -30,11 +30,17 @@ def index(path):
     return render_template('gen/index.html')
 
 
-@app.cli.command('resetdb')
+@app.cli.command('reset_db')
 def reset_db():
     for table in ['pokemon', 'type', 'evolution', 'form', 'base_stats']:
         db.engine.execute('DROP TABLE if exists {} cascade;'.format(table))
     db.create_all()
+
+
+@app.cli.command('create_db')
+def create_db():
+    from create_db import initialize
+    initialize()
 
 
 if __name__ == "__main__":
