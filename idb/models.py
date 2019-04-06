@@ -1,13 +1,8 @@
-from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-from config import Production
 from model_base import create_base_model
 
-app = Flask(__name__)
-app.config.from_object(Production)
-
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 # Alias these for convenience.
 fkey = db.ForeignKey
@@ -29,10 +24,10 @@ Note:
     Alternatively, fields can be manually specified as a list.
     >>> bulbasaur.to_dict(show=['image', 'base_stats'])
 """
-BaseModel = create_base_model(db)
+_BaseModel = create_base_model(db)
 
 
-class Pokemon(BaseModel):
+class Pokemon(_BaseModel):
     __tablename__ = 'pokemon'
 
     __defaultfields__ = [
@@ -79,7 +74,7 @@ class Pokemon(BaseModel):
             id=self.id)
 
 
-class Type(BaseModel):
+class Type(_BaseModel):
     """Describes a type and how it interacts with other types.
 
     Note:
@@ -140,7 +135,7 @@ class Type(BaseModel):
         return self.identifier.capitalize()
 
 
-class Evolution(BaseModel):
+class Evolution(_BaseModel):
     """Describes how one pokemon evolves to another.
 
     Note:
@@ -198,7 +193,7 @@ class Evolution(BaseModel):
     known_move_type = rel('Type', foreign_keys=known_move_type_id, lazy=True)
 
 
-class Form(BaseModel):
+class Form(_BaseModel):
     """Describes a specific form of a Pokémon.
 
     Note:
@@ -251,7 +246,7 @@ class Form(BaseModel):
             self.id, self.pokemon_id, self.variant_id, name, self.form_label)
 
 
-class BaseStats(BaseModel):
+class BaseStats(_BaseModel):
     """Provides baseline values for Pokémon stats.
 
     These values directly relate to a specific form's stat characteristics as
@@ -279,8 +274,3 @@ class BaseStats(BaseModel):
             self.special_attack, self.special_defense, self.speed]
 
         return '\'{}\''.format('/'.join(map(str, vals)))
-
-
-for table in ['pokemon', 'type', 'evolution', 'form', 'base_stats']:
-    db.engine.execute('DROP TABLE if exists {} cascade;'.format(table))
-db.create_all()

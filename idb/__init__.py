@@ -3,12 +3,24 @@
 Flask basics: http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application
 """
 
-from flask import Flask, render_template
-from pathlib import Path
+import sys
 
-loader_path = Path(__file__).parent / 'frontend' / 'dist'
+from pathlib import Path
+from flask import Flask, render_template
+
+# Need to place local files in module search path.
+sys.path.append(str(Path(__file__).parent.absolute()))
+
+# Local Imports
+from api import api  # noqa: E402
+from config import DefaultConfig  # noqa: E402
+from models import db  # noqa: E402
 
 app = Flask(__name__)
+app.config.from_object(DefaultConfig)
+
+db.init_app(app)
+app.register_blueprint(api)
 
 
 @app.route('/', defaults={'path': ''})
@@ -18,22 +30,11 @@ def index(path):
     return render_template('gen/index.html')
 
 
-@app.route('/data')
-def example():
-    """Routes to a sample data page."""
-    return render_template('datapage.html')
-
-
-@app.route('/entity')
-def entity():
-    """Routes to a specific entity. This will be an API_get"""
-    return render_template('entity.html')
-
-
-@app.route('/indv')
-def indv():
-    """Individual view will return a page that gets its name from the API"""
-    return render_template('individual_view.html')
+@app.cli.command('resetdb')
+def reset_db():
+    for table in ['pokemon', 'type', 'evolution', 'form', 'base_stats']:
+        db.engine.execute('DROP TABLE if exists {} cascade;'.format(table))
+    db.create_all()
 
 
 if __name__ == "__main__":

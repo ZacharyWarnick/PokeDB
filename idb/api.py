@@ -1,102 +1,110 @@
-# from ??????????? import Pokemon, Evolutions, Types, Forms, BaseStats
-from flask import Blueprint, request, jsonify, session
-from sqlalchemy import create_engine
 
-# So I pretty much made two options because I wasn't sure
-# The first one starts here and there will be a comment break
-# for the next option
+import ast
 
-database = create_engine('sqlite:???????????')
-app = Flask(__name__)
-
-
-class Pokemon:
-    def get(self):
-        conn = database.connect()  # Connect to database
-        # Performs query and returns json result
-        query = conn.execute("select * from Pokemon")
-        # Fetches first column that is Employee ID
-        return {'Pokemon': [i[0] for i in query.cursor.fetchall()]}
-
-
-class Evolutions:
-    def get(self):
-        conn = database.connect()
-        query = conn.execute("select * from Evolutions")
-        return {'Evolutions': [i[0] for i in query.cursor.fetchall()]}
-
-
-class Types:
-    def get(self):
-        conn = database.connect()
-        query = conn.execute("select * from Types")
-        return {'Types': [i[0] for i in query.cursor.fetchall()]}
-
-
-class Forms:
-    def get(self):
-        conn = database.connect()
-        query = conn.execute("select * from Forms")
-        return {'Forms': [i[0] for i in query.cursor.fetchall()]}
-
-
-class BaseStats:
-    def get(self):
-        conn = database.connect()
-        query = conn.execute("select * from Base_Stats")
-        return {'Base_Stats': [i[0] for i in query.cursor.fetchall()]}
-
-
-# Everything before this was something I found online and wasn't sure
-# Everything after is another option that follows the original link
-# Jake sent in back-end. It has areas that need to be filled in with ???
+from flask import Blueprint, request, jsonify
+from models import Pokemon, Evolution, Type
 
 api = Blueprint('api', 'api', url_prefix='/api')
 
-
-@api.route('/????????????', methods=['GET'])
-def api_pokemon():
-    pokemon = request.get_json()
-    pokemons = ???????????????.query.filter_by(status=1).join(Pokemon).order_by(??????????.id.desc()).all()
-    all_pokemons = {'Pokemon': [pokemon.to_json() for pokemon in pokemons]}
-
-    return jsonify(all_pokemon)
+ITEMS_PER_PAGE = 16
+ASCENDING = 'ASC'
+DESCENDING = 'DESC'
 
 
-@api.route('/????????????', methods=['GET'])
-def api_evolutions():
-    evolution = request.get_json()
-    evolutions = ???????????????.query.filter_by(status=1).join(Evolution).order_by(??????????.id.desc()).all()
-    all_evolutions = {'Evolution': [evolution.to_json() for evolution in evolutions]}
-
-    return jsonify(all_evolutions)
+def parse_sort_args(req):
+    sort_key = req.args.get('sort', None)
+    sort_order = req.args.get('order', ASCENDING)
+    page_number = req.args.get('page', 1)
+    return sort_key, sort_order, page_number
 
 
-@api.route('/????????????', methods=['GET'])
-def api_types():
-    type = request.get_json()
-    types = ???????????????.query.filter_by(status=1).join(Types).order_by(??????????.id.desc()).all()
-    all_types = {'Type': [type.to_json() for type in types]}
+@api.route('/pokemon', methods=['GET'])
+def get_pokemon_listing():
+    sort_key, sort_order, page_number = parse_sort_args(request)
 
-    return jsonify(all_types)
+    sort_params = (sort_key, sort_order)
+    default_sort = Pokemon.id.asc()
+    sort = {
+        ('id', DESCENDING): Pokemon.id.desc(),
+        ('name', ASCENDING): Pokemon.name.asc(),
+        ('name', DESCENDING): Pokemon.name.desc()
+        }.get(sort_params, default_sort)
+
+    query = Pokemon.query.order_by(sort)
+    items = query.paginate(page_number, ITEMS_PER_PAGE).items
+
+    return jsonify([it.to_dict() for it in items])
 
 
-@api.route('/????????????', methods=['GET'])
-def api_forms():
-    form = request.get_json()
-    forms = ???????????????.query.filter_by(status=1).join(Forms).order_by(??????????.id.desc()).all()
-    all_forms = {'Form': [form.to_json() for form in forms]}
+@api.route('/pokemon/<int:pokemon>', methods=['GET'])
+@api.route('/pokemon/<string:pokemon>', methods=['GET'])
+def get_pokemon(pokemon):
+    filter_key = 'identifier' if isinstance(pokemon, str) else 'id'
+    filter_args = {filter_key: pokemon}
 
-    return jsonify(all_forms)
+    query = Pokemon.query.filter_by(**filter_args)
+    item = query.first_or_404()
+
+    return jsonify(item.to_dict(show=Pokemon.EXTRA_FIELDS))
 
 
-@api.route('/????????????', methods=['GET'])
-def api_base_stats():
-    base_stat = request.get_json()
-    base_stats = ???????????????.query.filter_by(status=1).join(BaseStats).order_by(??????????.id.desc()).all()
-    all_base_stats = {'BaseStat': [base_stat.to_json() for base_stat in base_stats]}
+@api.route('/evolutions', methods=['GET'])
+def get_evolutions():
+    sort_key, sort_order, page_number = parse_sort_args(request)
 
-    return jsonify(all_base_stats)
+    sort_params = (sort_key, sort_order)
+    default_sort = Evolution.id.asc()
+    sort = {
+        ('id', DESCENDING): Evolution.id.desc(),
+        ('name', ASCENDING): Evolution.name.asc(),
+        ('name', DESCENDING): Evolution.name.desc()
+        }.get(sort_params, default_sort)
 
-# if __name__ == '__main__':
-#      app.run()
+    query = Evolution.query.order_by(sort)
+    items = query.paginate(page_number, ITEMS_PER_PAGE).items
+
+    return jsonify(items)
+
+
+@api.route('/evolutions/<int:chain>', methods=['GET'])
+def get_evolution(chain):
+    query = Evolution.query.filter_by(evolution_chain_id=chain)
+    items = query.all()
+
+    return jsonify([it.to_dict() for it in items])
+
+
+@api.route('/types', methods=['GET'])
+def get_types():
+    sort_key, sort_order, page_number = parse_sort_args(request)
+
+    sort_params = (sort_key, sort_order)
+    default_sort = Type.id.asc()
+    sort = {
+        ('id', DESCENDING): Type.id.desc(),
+        ('name', ASCENDING): Type.name.asc(),
+        ('name', DESCENDING): Type.name.desc(),
+        ('pokemon_count', ASCENDING): Type.pokemon_count.asc(),
+        ('pokemon_count', DESCENDING): Type.pokemon_count.desc(),
+        ('stat_average', ASCENDING): Type.stat_average.asc(),
+        ('stat_average', DESCENDING): Type.stat_average.desc(),
+        ('relative_advantage', ASCENDING): Type.relative_advantage.asc(),
+        ('relative_advantage', DESCENDING): Type.relative_advantage.desc()
+        }.get(sort_params, default_sort)
+
+    query = Type.query.order_by(sort)
+    items = query.paginate(page_number, ITEMS_PER_PAGE).items
+
+    return jsonify(items)
+
+
+@api.route('/types/<int:a_type>', methods=['GET'])
+@api.route('/types/<string:a_type>', methods=['GET'])
+def get_type(a_type):
+    filter_key = 'identifier' if isinstance(a_type, str) else 'id'
+    filter_args = {filter_key: a_type}
+
+    query = Type.query.filter_by(**filter_args)
+    item = query.first_or_404()
+
+    return jsonify(item.to_dict(show=Type.EXTRA_FIELDS))
