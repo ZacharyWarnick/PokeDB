@@ -1,7 +1,17 @@
 name: idb
+channels:
+  - conda-forge
+  - defaults
 dependencies:
   - python=3.6.7
+  - pip
+  - postgresql
   - nodejs
   - pip:
       - Flask
+      - Flask_SQLAlchemy
+      - psycopg2
       - gunicorn
+      - requests
+      - beautifulsoup4
+      - coverage

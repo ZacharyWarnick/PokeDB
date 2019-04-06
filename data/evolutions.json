@@ -1,0 +1,3603 @@
+[
+    {
+        "evolves_from_pokemon_id": 1,
+        "pokemon_id": 2,
+        "evolution_chain_id": 1,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 1,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 2,
+        "pokemon_id": 3,
+        "evolution_chain_id": 1,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 2,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 4,
+        "pokemon_id": 5,
+        "evolution_chain_id": 2,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 3,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 5,
+        "pokemon_id": 6,
+        "evolution_chain_id": 2,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 4,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 7,
+        "pokemon_id": 8,
+        "evolution_chain_id": 3,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 5,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 8,
+        "pokemon_id": 9,
+        "evolution_chain_id": 3,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 6,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 10,
+        "pokemon_id": 11,
+        "evolution_chain_id": 4,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 7,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from_pokemon_id": 11,
+        "pokemon_id": 12,
+        "evolution_chain_id": 4,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 8,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from_pokemon_id": 13,
+        "pokemon_id": 14,
+        "evolution_chain_id": 5,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 9,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from_pokemon_id": 14,
+        "pokemon_id": 15,
+        "evolution_chain_id": 5,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 10,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from_pokemon_id": 16,
+        "pokemon_id": 17,
+        "evolution_chain_id": 6,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 11,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 17,
+        "pokemon_id": 18,
+        "evolution_chain_id": 6,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 12,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 19,
+        "pokemon_id": 20,
+        "evolution_chain_id": 7,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 13,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 21,
+        "pokemon_id": 22,
+        "evolution_chain_id": 8,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 14,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 23,
+        "pokemon_id": 24,
+        "evolution_chain_id": 9,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 15,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 172,
+        "pokemon_id": 25,
+        "evolution_chain_id": 10,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 16,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 25,
+        "pokemon_id": 26,
+        "evolution_chain_id": 10,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 17,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 27,
+        "pokemon_id": 28,
+        "evolution_chain_id": 11,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 18,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 29,
+        "pokemon_id": 30,
+        "evolution_chain_id": 12,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 19,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 30,
+        "pokemon_id": 31,
+        "evolution_chain_id": 12,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 20,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 32,
+        "pokemon_id": 33,
+        "evolution_chain_id": 13,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 21,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 33,
+        "pokemon_id": 34,
+        "evolution_chain_id": 13,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 22,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 173,
+        "pokemon_id": 35,
+        "evolution_chain_id": 14,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 23,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 35,
+        "pokemon_id": 36,
+        "evolution_chain_id": 14,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 24,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 37,
+        "pokemon_id": 38,
+        "evolution_chain_id": 15,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 25,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 174,
+        "pokemon_id": 39,
+        "evolution_chain_id": 16,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 26,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 39,
+        "pokemon_id": 40,
+        "evolution_chain_id": 16,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 27,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 41,
+        "pokemon_id": 42,
+        "evolution_chain_id": 17,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 28,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 43,
+        "pokemon_id": 44,
+        "evolution_chain_id": 18,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 29,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from_pokemon_id": 44,
+        "pokemon_id": 45,
+        "evolution_chain_id": 18,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 30,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 46,
+        "pokemon_id": 47,
+        "evolution_chain_id": 19,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 31,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from_pokemon_id": 48,
+        "pokemon_id": 49,
+        "evolution_chain_id": 20,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 32,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from_pokemon_id": 50,
+        "pokemon_id": 51,
+        "evolution_chain_id": 21,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 33,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from_pokemon_id": 52,
+        "pokemon_id": 53,
+        "evolution_chain_id": 22,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 34,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 54,
+        "pokemon_id": 55,
+        "evolution_chain_id": 23,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 35,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 56,
+        "pokemon_id": 57,
+        "evolution_chain_id": 24,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 36,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 58,
+        "pokemon_id": 59,
+        "evolution_chain_id": 25,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 37,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 60,
+        "pokemon_id": 61,
+        "evolution_chain_id": 26,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 38,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 61,
+        "pokemon_id": 62,
+        "evolution_chain_id": 26,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 39,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 63,
+        "pokemon_id": 64,
+        "evolution_chain_id": 27,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 40,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 64,
+        "pokemon_id": 65,
+        "evolution_chain_id": 27,
+        "trigger": "trade",
+        "id": 41,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 66,
+        "pokemon_id": 67,
+        "evolution_chain_id": 28,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 42,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 67,
+        "pokemon_id": 68,
+        "evolution_chain_id": 28,
+        "trigger": "trade",
+        "id": 43,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 69,
+        "pokemon_id": 70,
+        "evolution_chain_id": 29,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 44,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from_pokemon_id": 70,
+        "pokemon_id": 71,
+        "evolution_chain_id": 29,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 45,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 72,
+        "pokemon_id": 73,
+        "evolution_chain_id": 30,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 46,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 74,
+        "pokemon_id": 75,
+        "evolution_chain_id": 31,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 47,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 75,
+        "pokemon_id": 76,
+        "evolution_chain_id": 31,
+        "trigger": "trade",
+        "id": 48,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 77,
+        "pokemon_id": 78,
+        "evolution_chain_id": 32,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 49,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 79,
+        "pokemon_id": 80,
+        "evolution_chain_id": 33,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 50,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 81,
+        "pokemon_id": 82,
+        "evolution_chain_id": 34,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 51,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 84,
+        "pokemon_id": 85,
+        "evolution_chain_id": 36,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 52,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from_pokemon_id": 86,
+        "pokemon_id": 87,
+        "evolution_chain_id": 37,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 53,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 88,
+        "pokemon_id": 89,
+        "evolution_chain_id": 38,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 54,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 90,
+        "pokemon_id": 91,
+        "evolution_chain_id": 39,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 55,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 92,
+        "pokemon_id": 93,
+        "evolution_chain_id": 40,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 56,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 93,
+        "pokemon_id": 94,
+        "evolution_chain_id": 40,
+        "trigger": "trade",
+        "id": 57,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 96,
+        "pokemon_id": 97,
+        "evolution_chain_id": 42,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 58,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from_pokemon_id": 98,
+        "pokemon_id": 99,
+        "evolution_chain_id": 43,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 59,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 100,
+        "pokemon_id": 101,
+        "evolution_chain_id": 44,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 60,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 102,
+        "pokemon_id": 103,
+        "evolution_chain_id": 45,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 61,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 104,
+        "pokemon_id": 105,
+        "evolution_chain_id": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 62,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 236,
+        "pokemon_id": 106,
+        "evolution_chain_id": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": 1,
+        "id": 63,
+        "difficulty": 0.995
+    },
+    {
+        "evolves_from_pokemon_id": 236,
+        "pokemon_id": 107,
+        "evolution_chain_id": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "relative_stats": -1,
+        "id": 64,
+        "difficulty": 0.995
+    },
+    {
+        "evolves_from_pokemon_id": 109,
+        "pokemon_id": 110,
+        "evolution_chain_id": 49,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 65,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 111,
+        "pokemon_id": 112,
+        "evolution_chain_id": 50,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 66,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from_pokemon_id": 440,
+        "pokemon_id": 113,
+        "evolution_chain_id": 51,
+        "trigger": "level-up",
+        "held_item": "Oval Stone",
+        "time_of_day": "day",
+        "id": 67,
+        "difficulty": 0.275
+    },
+    {
+        "evolves_from_pokemon_id": 116,
+        "pokemon_id": 117,
+        "evolution_chain_id": 54,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 68,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 118,
+        "pokemon_id": 119,
+        "evolution_chain_id": 55,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 69,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 120,
+        "pokemon_id": 121,
+        "evolution_chain_id": 56,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 70,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 439,
+        "pokemon_id": 122,
+        "evolution_chain_id": 57,
+        "trigger": "level-up",
+        "known_move": "Mimic",
+        "id": 71,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 238,
+        "pokemon_id": 124,
+        "evolution_chain_id": 59,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 72,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 239,
+        "pokemon_id": 125,
+        "evolution_chain_id": 60,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 73,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 240,
+        "pokemon_id": 126,
+        "evolution_chain_id": 61,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 74,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 129,
+        "pokemon_id": 130,
+        "evolution_chain_id": 64,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 75,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 134,
+        "evolution_chain_id": 67,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 76,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 135,
+        "evolution_chain_id": 67,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 77,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 136,
+        "evolution_chain_id": 67,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 78,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 138,
+        "pokemon_id": 139,
+        "evolution_chain_id": 69,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 79,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 140,
+        "pokemon_id": 141,
+        "evolution_chain_id": 70,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 80,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 446,
+        "pokemon_id": 143,
+        "evolution_chain_id": 72,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 81,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 147,
+        "pokemon_id": 148,
+        "evolution_chain_id": 76,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 82,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 148,
+        "pokemon_id": 149,
+        "evolution_chain_id": 76,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 83,
+        "difficulty": 1.435
+    },
+    {
+        "evolves_from_pokemon_id": 152,
+        "pokemon_id": 153,
+        "evolution_chain_id": 79,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 84,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 153,
+        "pokemon_id": 154,
+        "evolution_chain_id": 79,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 85,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 155,
+        "pokemon_id": 156,
+        "evolution_chain_id": 80,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 86,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 156,
+        "pokemon_id": 157,
+        "evolution_chain_id": 80,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 87,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 158,
+        "pokemon_id": 159,
+        "evolution_chain_id": 81,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 88,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 159,
+        "pokemon_id": 160,
+        "evolution_chain_id": 81,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 89,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 161,
+        "pokemon_id": 162,
+        "evolution_chain_id": 82,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 90,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from_pokemon_id": 163,
+        "pokemon_id": 164,
+        "evolution_chain_id": 83,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 91,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 165,
+        "pokemon_id": 166,
+        "evolution_chain_id": 84,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 92,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 167,
+        "pokemon_id": 168,
+        "evolution_chain_id": 85,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 93,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 42,
+        "pokemon_id": 169,
+        "evolution_chain_id": 17,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 94,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 170,
+        "pokemon_id": 171,
+        "evolution_chain_id": 86,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 95,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from_pokemon_id": 175,
+        "pokemon_id": 176,
+        "evolution_chain_id": 87,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 96,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 177,
+        "pokemon_id": 178,
+        "evolution_chain_id": 88,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 97,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 179,
+        "pokemon_id": 180,
+        "evolution_chain_id": 89,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 98,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from_pokemon_id": 180,
+        "pokemon_id": 181,
+        "evolution_chain_id": 89,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 99,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 44,
+        "pokemon_id": 182,
+        "evolution_chain_id": 18,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 100,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 298,
+        "pokemon_id": 183,
+        "evolution_chain_id": 90,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 101,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 183,
+        "pokemon_id": 184,
+        "evolution_chain_id": 90,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 102,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 438,
+        "pokemon_id": 185,
+        "evolution_chain_id": 91,
+        "trigger": "level-up",
+        "known_move": "Mimic",
+        "id": 103,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 61,
+        "pokemon_id": 186,
+        "evolution_chain_id": 26,
+        "trigger": "trade",
+        "held_item": "King’s Rock",
+        "id": 104,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 187,
+        "pokemon_id": 188,
+        "evolution_chain_id": 92,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 105,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 188,
+        "pokemon_id": 189,
+        "evolution_chain_id": 92,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 106,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from_pokemon_id": 191,
+        "pokemon_id": 192,
+        "evolution_chain_id": 94,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 107,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 194,
+        "pokemon_id": 195,
+        "evolution_chain_id": 96,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 108,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 196,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 109,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 197,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 110,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 79,
+        "pokemon_id": 199,
+        "evolution_chain_id": 33,
+        "trigger": "trade",
+        "held_item": "King’s Rock",
+        "id": 111,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 360,
+        "pokemon_id": 202,
+        "evolution_chain_id": 100,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 112,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from_pokemon_id": 204,
+        "pokemon_id": 205,
+        "evolution_chain_id": 102,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 113,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from_pokemon_id": 95,
+        "pokemon_id": 208,
+        "evolution_chain_id": 41,
+        "trigger": "trade",
+        "held_item": "Metal Coat",
+        "id": 114,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 209,
+        "pokemon_id": 210,
+        "evolution_chain_id": 105,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 115,
+        "difficulty": 0.635
+    },
+    {
+        "evolves_from_pokemon_id": 123,
+        "pokemon_id": 212,
+        "evolution_chain_id": 58,
+        "trigger": "trade",
+        "held_item": "Metal Coat",
+        "id": 116,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 216,
+        "pokemon_id": 217,
+        "evolution_chain_id": 110,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 117,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 218,
+        "pokemon_id": 219,
+        "evolution_chain_id": 111,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 118,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 220,
+        "pokemon_id": 221,
+        "evolution_chain_id": 112,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 119,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 223,
+        "pokemon_id": 224,
+        "evolution_chain_id": 114,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 120,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 458,
+        "pokemon_id": 226,
+        "evolution_chain_id": 116,
+        "trigger": "level-up",
+        "party_pokemon_id": 223,
+        "id": 121,
+        "difficulty": 0.659
+    },
+    {
+        "evolves_from_pokemon_id": 228,
+        "pokemon_id": 229,
+        "evolution_chain_id": 118,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 122,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from_pokemon_id": 117,
+        "pokemon_id": 230,
+        "evolution_chain_id": 54,
+        "trigger": "trade",
+        "held_item": "Dragon Scale",
+        "id": 123,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 231,
+        "pokemon_id": 232,
+        "evolution_chain_id": 119,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 124,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 137,
+        "pokemon_id": 233,
+        "evolution_chain_id": 68,
+        "trigger": "trade",
+        "held_item": "Up-Grade",
+        "id": 125,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 236,
+        "pokemon_id": 237,
+        "evolution_chain_id": 47,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 126,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 113,
+        "pokemon_id": 242,
+        "evolution_chain_id": 51,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 127,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 246,
+        "pokemon_id": 247,
+        "evolution_chain_id": 126,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 128,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 247,
+        "pokemon_id": 248,
+        "evolution_chain_id": 126,
+        "trigger": "level-up",
+        "level": 55,
+        "id": 129,
+        "difficulty": 1.435
+    },
+    {
+        "evolves_from_pokemon_id": 252,
+        "pokemon_id": 253,
+        "evolution_chain_id": 130,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 130,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 253,
+        "pokemon_id": 254,
+        "evolution_chain_id": 130,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 131,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 255,
+        "pokemon_id": 256,
+        "evolution_chain_id": 131,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 132,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 256,
+        "pokemon_id": 257,
+        "evolution_chain_id": 131,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 133,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 258,
+        "pokemon_id": 259,
+        "evolution_chain_id": 132,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 134,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 259,
+        "pokemon_id": 260,
+        "evolution_chain_id": 132,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 135,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 261,
+        "pokemon_id": 262,
+        "evolution_chain_id": 133,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 136,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 263,
+        "pokemon_id": 264,
+        "evolution_chain_id": 134,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 137,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 265,
+        "pokemon_id": 266,
+        "evolution_chain_id": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 138,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from_pokemon_id": 266,
+        "pokemon_id": 267,
+        "evolution_chain_id": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 139,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from_pokemon_id": 265,
+        "pokemon_id": 268,
+        "evolution_chain_id": 135,
+        "trigger": "level-up",
+        "level": 7,
+        "id": 140,
+        "difficulty": 0.235
+    },
+    {
+        "evolves_from_pokemon_id": 268,
+        "pokemon_id": 269,
+        "evolution_chain_id": 135,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 141,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from_pokemon_id": 270,
+        "pokemon_id": 271,
+        "evolution_chain_id": 136,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 142,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 271,
+        "pokemon_id": 272,
+        "evolution_chain_id": 136,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 143,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 273,
+        "pokemon_id": 274,
+        "evolution_chain_id": 137,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 144,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 274,
+        "pokemon_id": 275,
+        "evolution_chain_id": 137,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 145,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 276,
+        "pokemon_id": 277,
+        "evolution_chain_id": 138,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 146,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 278,
+        "pokemon_id": 279,
+        "evolution_chain_id": 139,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 147,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 280,
+        "pokemon_id": 281,
+        "evolution_chain_id": 140,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 148,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 281,
+        "pokemon_id": 282,
+        "evolution_chain_id": 140,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 149,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 283,
+        "pokemon_id": 284,
+        "evolution_chain_id": 141,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 150,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 285,
+        "pokemon_id": 286,
+        "evolution_chain_id": 142,
+        "trigger": "level-up",
+        "level": 23,
+        "id": 151,
+        "difficulty": 0.635
+    },
+    {
+        "evolves_from_pokemon_id": 287,
+        "pokemon_id": 288,
+        "evolution_chain_id": 143,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 152,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 288,
+        "pokemon_id": 289,
+        "evolution_chain_id": 143,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 153,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 290,
+        "pokemon_id": 291,
+        "evolution_chain_id": 144,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 154,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 290,
+        "pokemon_id": 292,
+        "evolution_chain_id": 144,
+        "trigger": "shed",
+        "id": 155,
+        "difficulty": 0.524
+    },
+    {
+        "evolves_from_pokemon_id": 293,
+        "pokemon_id": 294,
+        "evolution_chain_id": 145,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 156,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 294,
+        "pokemon_id": 295,
+        "evolution_chain_id": 145,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 157,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 296,
+        "pokemon_id": 297,
+        "evolution_chain_id": 146,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 158,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from_pokemon_id": 300,
+        "pokemon_id": 301,
+        "evolution_chain_id": 148,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 159,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 304,
+        "pokemon_id": 305,
+        "evolution_chain_id": 151,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 160,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 305,
+        "pokemon_id": 306,
+        "evolution_chain_id": 151,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 161,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from_pokemon_id": 307,
+        "pokemon_id": 308,
+        "evolution_chain_id": 152,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 162,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 309,
+        "pokemon_id": 310,
+        "evolution_chain_id": 153,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 163,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from_pokemon_id": 406,
+        "pokemon_id": 315,
+        "evolution_chain_id": 158,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 164,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 316,
+        "pokemon_id": 317,
+        "evolution_chain_id": 159,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 165,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from_pokemon_id": 318,
+        "pokemon_id": 319,
+        "evolution_chain_id": 160,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 166,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 320,
+        "pokemon_id": 321,
+        "evolution_chain_id": 161,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 167,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 322,
+        "pokemon_id": 323,
+        "evolution_chain_id": 162,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 168,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 325,
+        "pokemon_id": 326,
+        "evolution_chain_id": 164,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 169,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 328,
+        "pokemon_id": 329,
+        "evolution_chain_id": 166,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 170,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 329,
+        "pokemon_id": 330,
+        "evolution_chain_id": 166,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 171,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from_pokemon_id": 331,
+        "pokemon_id": 332,
+        "evolution_chain_id": 167,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 172,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 333,
+        "pokemon_id": 334,
+        "evolution_chain_id": 168,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 173,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 339,
+        "pokemon_id": 340,
+        "evolution_chain_id": 173,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 174,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 341,
+        "pokemon_id": 342,
+        "evolution_chain_id": 174,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 175,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 343,
+        "pokemon_id": 344,
+        "evolution_chain_id": 175,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 176,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 345,
+        "pokemon_id": 346,
+        "evolution_chain_id": 176,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 177,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 347,
+        "pokemon_id": 348,
+        "evolution_chain_id": 177,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 178,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 349,
+        "pokemon_id": 350,
+        "evolution_chain_id": 178,
+        "trigger": "level-up",
+        "beauty": 171,
+        "id": 179,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from_pokemon_id": 353,
+        "pokemon_id": 354,
+        "evolution_chain_id": 181,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 180,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 355,
+        "pokemon_id": 356,
+        "evolution_chain_id": 182,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 181,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 433,
+        "pokemon_id": 358,
+        "evolution_chain_id": 184,
+        "trigger": "level-up",
+        "time_of_day": "night",
+        "happiness": 220,
+        "id": 182,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 361,
+        "pokemon_id": 362,
+        "evolution_chain_id": 186,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 183,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from_pokemon_id": 363,
+        "pokemon_id": 364,
+        "evolution_chain_id": 187,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 184,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 364,
+        "pokemon_id": 365,
+        "evolution_chain_id": 187,
+        "trigger": "level-up",
+        "level": 44,
+        "id": 185,
+        "difficulty": 1.16
+    },
+    {
+        "evolves_from_pokemon_id": 366,
+        "pokemon_id": 367,
+        "evolution_chain_id": 188,
+        "trigger": "trade",
+        "held_item": "Deep Sea Tooth",
+        "id": 186,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 366,
+        "pokemon_id": 368,
+        "evolution_chain_id": 188,
+        "trigger": "trade",
+        "held_item": "Deep Sea Scale",
+        "id": 187,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 371,
+        "pokemon_id": 372,
+        "evolution_chain_id": 191,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 188,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 372,
+        "pokemon_id": 373,
+        "evolution_chain_id": 191,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 189,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from_pokemon_id": 374,
+        "pokemon_id": 375,
+        "evolution_chain_id": 192,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 190,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 375,
+        "pokemon_id": 376,
+        "evolution_chain_id": 192,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 191,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from_pokemon_id": 387,
+        "pokemon_id": 388,
+        "evolution_chain_id": 203,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 192,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 388,
+        "pokemon_id": 389,
+        "evolution_chain_id": 203,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 193,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 390,
+        "pokemon_id": 391,
+        "evolution_chain_id": 204,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 194,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 391,
+        "pokemon_id": 392,
+        "evolution_chain_id": 204,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 195,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 393,
+        "pokemon_id": 394,
+        "evolution_chain_id": 205,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 196,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 394,
+        "pokemon_id": 395,
+        "evolution_chain_id": 205,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 197,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 396,
+        "pokemon_id": 397,
+        "evolution_chain_id": 206,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 198,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 397,
+        "pokemon_id": 398,
+        "evolution_chain_id": 206,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 199,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 399,
+        "pokemon_id": 400,
+        "evolution_chain_id": 207,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 200,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from_pokemon_id": 401,
+        "pokemon_id": 402,
+        "evolution_chain_id": 208,
+        "trigger": "level-up",
+        "level": 10,
+        "id": 201,
+        "difficulty": 0.31
+    },
+    {
+        "evolves_from_pokemon_id": 403,
+        "pokemon_id": 404,
+        "evolution_chain_id": 209,
+        "trigger": "level-up",
+        "level": 15,
+        "id": 202,
+        "difficulty": 0.435
+    },
+    {
+        "evolves_from_pokemon_id": 404,
+        "pokemon_id": 405,
+        "evolution_chain_id": 209,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 203,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 315,
+        "pokemon_id": 407,
+        "evolution_chain_id": 158,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 204,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 408,
+        "pokemon_id": 409,
+        "evolution_chain_id": 211,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 205,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 410,
+        "pokemon_id": 411,
+        "evolution_chain_id": 212,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 206,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 412,
+        "pokemon_id": 413,
+        "evolution_chain_id": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "female",
+        "id": 207,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 412,
+        "pokemon_id": 414,
+        "evolution_chain_id": 213,
+        "trigger": "level-up",
+        "level": 20,
+        "gender": "male",
+        "id": 208,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 415,
+        "pokemon_id": 416,
+        "evolution_chain_id": 214,
+        "trigger": "level-up",
+        "level": 21,
+        "gender": "female",
+        "id": 209,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from_pokemon_id": 418,
+        "pokemon_id": 419,
+        "evolution_chain_id": 216,
+        "trigger": "level-up",
+        "level": 26,
+        "id": 210,
+        "difficulty": 0.71
+    },
+    {
+        "evolves_from_pokemon_id": 420,
+        "pokemon_id": 421,
+        "evolution_chain_id": 217,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 211,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 422,
+        "pokemon_id": 423,
+        "evolution_chain_id": 218,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 212,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 190,
+        "pokemon_id": 424,
+        "evolution_chain_id": 93,
+        "trigger": "level-up",
+        "known_move": "Double Hit",
+        "id": 213,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 425,
+        "pokemon_id": 426,
+        "evolution_chain_id": 219,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 214,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 427,
+        "pokemon_id": 428,
+        "evolution_chain_id": 220,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 215,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 200,
+        "pokemon_id": 429,
+        "evolution_chain_id": 98,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 216,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 198,
+        "pokemon_id": 430,
+        "evolution_chain_id": 97,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 217,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 431,
+        "pokemon_id": 432,
+        "evolution_chain_id": 221,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 218,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 434,
+        "pokemon_id": 435,
+        "evolution_chain_id": 223,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 219,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 436,
+        "pokemon_id": 437,
+        "evolution_chain_id": 224,
+        "trigger": "level-up",
+        "level": 33,
+        "id": 220,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 443,
+        "pokemon_id": 444,
+        "evolution_chain_id": 230,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 221,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from_pokemon_id": 444,
+        "pokemon_id": 445,
+        "evolution_chain_id": 230,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 222,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from_pokemon_id": 447,
+        "pokemon_id": 448,
+        "evolution_chain_id": 232,
+        "trigger": "level-up",
+        "time_of_day": "day",
+        "happiness": 220,
+        "id": 223,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 449,
+        "pokemon_id": 450,
+        "evolution_chain_id": 233,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 224,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 451,
+        "pokemon_id": 452,
+        "evolution_chain_id": 234,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 225,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 453,
+        "pokemon_id": 454,
+        "evolution_chain_id": 235,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 226,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 456,
+        "pokemon_id": 457,
+        "evolution_chain_id": 237,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 227,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from_pokemon_id": 459,
+        "pokemon_id": 460,
+        "evolution_chain_id": 239,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 228,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 215,
+        "pokemon_id": 461,
+        "evolution_chain_id": 109,
+        "trigger": "level-up",
+        "held_item": "Razor Claw",
+        "time_of_day": "night",
+        "id": 229,
+        "difficulty": 0.379
+    },
+    {
+        "evolves_from_pokemon_id": 82,
+        "pokemon_id": 462,
+        "evolution_chain_id": 34,
+        "trigger": "level-up",
+        "location": "Mt. Coronet, Sinnoh Region",
+        "id": 230,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 108,
+        "pokemon_id": 463,
+        "evolution_chain_id": 48,
+        "trigger": "level-up",
+        "known_move": "Rollout",
+        "id": 231,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 112,
+        "pokemon_id": 464,
+        "evolution_chain_id": 50,
+        "trigger": "trade",
+        "held_item": "Protector",
+        "id": 232,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 114,
+        "pokemon_id": 465,
+        "evolution_chain_id": 52,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 233,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 125,
+        "pokemon_id": 466,
+        "evolution_chain_id": 60,
+        "trigger": "trade",
+        "held_item": "Electirizer",
+        "id": 234,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 126,
+        "pokemon_id": 467,
+        "evolution_chain_id": 61,
+        "trigger": "trade",
+        "held_item": "Magmarizer",
+        "id": 235,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 176,
+        "pokemon_id": 468,
+        "evolution_chain_id": 87,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 236,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 193,
+        "pokemon_id": 469,
+        "evolution_chain_id": 95,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 237,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 470,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Eterna Forest, Sinnoh Region",
+        "id": 238,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 471,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Route 217, Sinnoh Region",
+        "id": 239,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 207,
+        "pokemon_id": 472,
+        "evolution_chain_id": 104,
+        "trigger": "level-up",
+        "held_item": "Razor Fang",
+        "time_of_day": "night",
+        "id": 240,
+        "difficulty": 0.379
+    },
+    {
+        "evolves_from_pokemon_id": 221,
+        "pokemon_id": 473,
+        "evolution_chain_id": 112,
+        "trigger": "level-up",
+        "known_move": "Ancient Power",
+        "id": 241,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 233,
+        "pokemon_id": 474,
+        "evolution_chain_id": 68,
+        "trigger": "trade",
+        "held_item": "Dubious Disc",
+        "id": 242,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 281,
+        "pokemon_id": 475,
+        "evolution_chain_id": 140,
+        "trigger": "use-item",
+        "trigger_item": "Dawn Stone",
+        "gender": "male",
+        "id": 243,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 299,
+        "pokemon_id": 476,
+        "evolution_chain_id": 147,
+        "trigger": "level-up",
+        "location": "Mt. Coronet, Sinnoh Region",
+        "id": 244,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 356,
+        "pokemon_id": 477,
+        "evolution_chain_id": 182,
+        "trigger": "trade",
+        "held_item": "Reaper Cloth",
+        "id": 245,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 361,
+        "pokemon_id": 478,
+        "evolution_chain_id": 186,
+        "trigger": "use-item",
+        "trigger_item": "Dawn Stone",
+        "gender": "female",
+        "id": 246,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 495,
+        "pokemon_id": 496,
+        "evolution_chain_id": 256,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 247,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 496,
+        "pokemon_id": 497,
+        "evolution_chain_id": 256,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 248,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 498,
+        "pokemon_id": 499,
+        "evolution_chain_id": 257,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 249,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 499,
+        "pokemon_id": 500,
+        "evolution_chain_id": 257,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 250,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 501,
+        "pokemon_id": 502,
+        "evolution_chain_id": 258,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 251,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 502,
+        "pokemon_id": 503,
+        "evolution_chain_id": 258,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 252,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 504,
+        "pokemon_id": 505,
+        "evolution_chain_id": 259,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 253,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 506,
+        "pokemon_id": 507,
+        "evolution_chain_id": 260,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 254,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 507,
+        "pokemon_id": 508,
+        "evolution_chain_id": 260,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 255,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 509,
+        "pokemon_id": 510,
+        "evolution_chain_id": 261,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 256,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 511,
+        "pokemon_id": 512,
+        "evolution_chain_id": 262,
+        "trigger": "use-item",
+        "trigger_item": "Leaf Stone",
+        "id": 257,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 513,
+        "pokemon_id": 514,
+        "evolution_chain_id": 263,
+        "trigger": "use-item",
+        "trigger_item": "Fire Stone",
+        "id": 258,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 515,
+        "pokemon_id": 516,
+        "evolution_chain_id": 264,
+        "trigger": "use-item",
+        "trigger_item": "Water Stone",
+        "id": 259,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 517,
+        "pokemon_id": 518,
+        "evolution_chain_id": 265,
+        "trigger": "use-item",
+        "trigger_item": "Moon Stone",
+        "id": 260,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 519,
+        "pokemon_id": 520,
+        "evolution_chain_id": 266,
+        "trigger": "level-up",
+        "level": 21,
+        "id": 261,
+        "difficulty": 0.585
+    },
+    {
+        "evolves_from_pokemon_id": 520,
+        "pokemon_id": 521,
+        "evolution_chain_id": 266,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 262,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 522,
+        "pokemon_id": 523,
+        "evolution_chain_id": 267,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 263,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from_pokemon_id": 524,
+        "pokemon_id": 525,
+        "evolution_chain_id": 268,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 264,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 525,
+        "pokemon_id": 526,
+        "evolution_chain_id": 268,
+        "trigger": "trade",
+        "id": 265,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 527,
+        "pokemon_id": 528,
+        "evolution_chain_id": 269,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 266,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 529,
+        "pokemon_id": 530,
+        "evolution_chain_id": 270,
+        "trigger": "level-up",
+        "level": 31,
+        "id": 267,
+        "difficulty": 0.835
+    },
+    {
+        "evolves_from_pokemon_id": 532,
+        "pokemon_id": 533,
+        "evolution_chain_id": 272,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 268,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 533,
+        "pokemon_id": 534,
+        "evolution_chain_id": 272,
+        "trigger": "trade",
+        "id": 269,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 535,
+        "pokemon_id": 536,
+        "evolution_chain_id": 273,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 270,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 536,
+        "pokemon_id": 537,
+        "evolution_chain_id": 273,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 271,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 540,
+        "pokemon_id": 541,
+        "evolution_chain_id": 276,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 272,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 541,
+        "pokemon_id": 542,
+        "evolution_chain_id": 276,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 273,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 543,
+        "pokemon_id": 544,
+        "evolution_chain_id": 277,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 274,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 544,
+        "pokemon_id": 545,
+        "evolution_chain_id": 277,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 275,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 546,
+        "pokemon_id": 547,
+        "evolution_chain_id": 278,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 276,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 548,
+        "pokemon_id": 549,
+        "evolution_chain_id": 279,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 277,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 551,
+        "pokemon_id": 552,
+        "evolution_chain_id": 281,
+        "trigger": "level-up",
+        "level": 29,
+        "id": 278,
+        "difficulty": 0.785
+    },
+    {
+        "evolves_from_pokemon_id": 552,
+        "pokemon_id": 553,
+        "evolution_chain_id": 281,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 279,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 554,
+        "pokemon_id": 555,
+        "evolution_chain_id": 282,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 280,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 557,
+        "pokemon_id": 558,
+        "evolution_chain_id": 284,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 281,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 559,
+        "pokemon_id": 560,
+        "evolution_chain_id": 285,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 282,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 562,
+        "pokemon_id": 563,
+        "evolution_chain_id": 287,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 283,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 564,
+        "pokemon_id": 565,
+        "evolution_chain_id": 288,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 284,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 566,
+        "pokemon_id": 567,
+        "evolution_chain_id": 289,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 285,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 568,
+        "pokemon_id": 569,
+        "evolution_chain_id": 290,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 286,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 570,
+        "pokemon_id": 571,
+        "evolution_chain_id": 291,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 287,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 572,
+        "pokemon_id": 573,
+        "evolution_chain_id": 292,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 288,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 574,
+        "pokemon_id": 575,
+        "evolution_chain_id": 293,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 289,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 575,
+        "pokemon_id": 576,
+        "evolution_chain_id": 293,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 290,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from_pokemon_id": 577,
+        "pokemon_id": 578,
+        "evolution_chain_id": 294,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 291,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 578,
+        "pokemon_id": 579,
+        "evolution_chain_id": 294,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 292,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from_pokemon_id": 580,
+        "pokemon_id": 581,
+        "evolution_chain_id": 295,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 293,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 582,
+        "pokemon_id": 583,
+        "evolution_chain_id": 296,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 294,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 583,
+        "pokemon_id": 584,
+        "evolution_chain_id": 296,
+        "trigger": "level-up",
+        "level": 47,
+        "id": 295,
+        "difficulty": 1.235
+    },
+    {
+        "evolves_from_pokemon_id": 585,
+        "pokemon_id": 586,
+        "evolution_chain_id": 297,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 296,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 588,
+        "pokemon_id": 589,
+        "evolution_chain_id": 299,
+        "trigger": "trade",
+        "trade_pokemon_id": 616,
+        "id": 297,
+        "difficulty": 0.602
+    },
+    {
+        "evolves_from_pokemon_id": 590,
+        "pokemon_id": 591,
+        "evolution_chain_id": 300,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 298,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 592,
+        "pokemon_id": 593,
+        "evolution_chain_id": 301,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 299,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 595,
+        "pokemon_id": 596,
+        "evolution_chain_id": 303,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 300,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 597,
+        "pokemon_id": 598,
+        "evolution_chain_id": 304,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 301,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 599,
+        "pokemon_id": 600,
+        "evolution_chain_id": 305,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 302,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 600,
+        "pokemon_id": 601,
+        "evolution_chain_id": 305,
+        "trigger": "level-up",
+        "level": 49,
+        "id": 303,
+        "difficulty": 1.285
+    },
+    {
+        "evolves_from_pokemon_id": 602,
+        "pokemon_id": 603,
+        "evolution_chain_id": 306,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 304,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 603,
+        "pokemon_id": 604,
+        "evolution_chain_id": 306,
+        "trigger": "use-item",
+        "trigger_item": "Thunder Stone",
+        "id": 305,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 605,
+        "pokemon_id": 606,
+        "evolution_chain_id": 307,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 306,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from_pokemon_id": 607,
+        "pokemon_id": 608,
+        "evolution_chain_id": 308,
+        "trigger": "level-up",
+        "level": 41,
+        "id": 307,
+        "difficulty": 1.085
+    },
+    {
+        "evolves_from_pokemon_id": 608,
+        "pokemon_id": 609,
+        "evolution_chain_id": 308,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 308,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 610,
+        "pokemon_id": 611,
+        "evolution_chain_id": 309,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 309,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 611,
+        "pokemon_id": 612,
+        "evolution_chain_id": 309,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 310,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from_pokemon_id": 613,
+        "pokemon_id": 614,
+        "evolution_chain_id": 310,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 311,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 616,
+        "pokemon_id": 617,
+        "evolution_chain_id": 312,
+        "trigger": "trade",
+        "trade_pokemon_id": 588,
+        "id": 312,
+        "difficulty": 0.602
+    },
+    {
+        "evolves_from_pokemon_id": 619,
+        "pokemon_id": 620,
+        "evolution_chain_id": 314,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 313,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from_pokemon_id": 622,
+        "pokemon_id": 623,
+        "evolution_chain_id": 316,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 314,
+        "difficulty": 1.135
+    },
+    {
+        "evolves_from_pokemon_id": 624,
+        "pokemon_id": 625,
+        "evolution_chain_id": 317,
+        "trigger": "level-up",
+        "level": 52,
+        "id": 315,
+        "difficulty": 1.36
+    },
+    {
+        "evolves_from_pokemon_id": 627,
+        "pokemon_id": 628,
+        "evolution_chain_id": 319,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 316,
+        "difficulty": 1.41
+    },
+    {
+        "evolves_from_pokemon_id": 629,
+        "pokemon_id": 630,
+        "evolution_chain_id": 320,
+        "trigger": "level-up",
+        "level": 54,
+        "id": 317,
+        "difficulty": 1.41
+    },
+    {
+        "evolves_from_pokemon_id": 633,
+        "pokemon_id": 634,
+        "evolution_chain_id": 323,
+        "trigger": "level-up",
+        "level": 50,
+        "id": 318,
+        "difficulty": 1.31
+    },
+    {
+        "evolves_from_pokemon_id": 634,
+        "pokemon_id": 635,
+        "evolution_chain_id": 323,
+        "trigger": "level-up",
+        "level": 64,
+        "id": 319,
+        "difficulty": 1.66
+    },
+    {
+        "evolves_from_pokemon_id": 636,
+        "pokemon_id": 637,
+        "evolution_chain_id": 324,
+        "trigger": "level-up",
+        "level": 59,
+        "id": 320,
+        "difficulty": 1.535
+    },
+    {
+        "evolves_from_pokemon_id": 349,
+        "pokemon_id": 350,
+        "evolution_chain_id": 178,
+        "trigger": "trade",
+        "held_item": "Prism Scale",
+        "id": 321,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 82,
+        "pokemon_id": 462,
+        "evolution_chain_id": 34,
+        "trigger": "level-up",
+        "location": "Chargestone Cave, Unova Region",
+        "id": 322,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 299,
+        "pokemon_id": 476,
+        "evolution_chain_id": 147,
+        "trigger": "level-up",
+        "location": "Chargestone Cave, Unova Region",
+        "id": 323,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 470,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Pinwheel Forest, Unova Region",
+        "id": 324,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 471,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Twist Mountain, Unova Region",
+        "id": 325,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 682,
+        "pokemon_id": 683,
+        "evolution_chain_id": 350,
+        "trigger": "trade",
+        "held_item": "Sachet",
+        "id": 327,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 661,
+        "pokemon_id": 662,
+        "evolution_chain_id": 341,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 328,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 708,
+        "pokemon_id": 709,
+        "evolution_chain_id": 364,
+        "trigger": "trade",
+        "id": 329,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 662,
+        "pokemon_id": 663,
+        "evolution_chain_id": 341,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 330,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 653,
+        "pokemon_id": 654,
+        "evolution_chain_id": 338,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 331,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 686,
+        "pokemon_id": 687,
+        "evolution_chain_id": 352,
+        "trigger": "level-up",
+        "level": 30,
+        "needs_inversion": true,
+        "id": 332,
+        "difficulty": 0.951
+    },
+    {
+        "evolves_from_pokemon_id": 654,
+        "pokemon_id": 655,
+        "evolution_chain_id": 338,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 333,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 650,
+        "pokemon_id": 651,
+        "evolution_chain_id": 337,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 334,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 692,
+        "pokemon_id": 693,
+        "evolution_chain_id": 355,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 335,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 651,
+        "pokemon_id": 652,
+        "evolution_chain_id": 337,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 336,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 656,
+        "pokemon_id": 657,
+        "evolution_chain_id": 339,
+        "trigger": "level-up",
+        "level": 16,
+        "id": 337,
+        "difficulty": 0.46
+    },
+    {
+        "evolves_from_pokemon_id": 657,
+        "pokemon_id": 658,
+        "evolution_chain_id": 339,
+        "trigger": "level-up",
+        "level": 36,
+        "id": 338,
+        "difficulty": 0.96
+    },
+    {
+        "evolves_from_pokemon_id": 679,
+        "pokemon_id": 680,
+        "evolution_chain_id": 349,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 339,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 704,
+        "pokemon_id": 705,
+        "evolution_chain_id": 362,
+        "trigger": "level-up",
+        "level": 40,
+        "id": 340,
+        "difficulty": 1.06
+    },
+    {
+        "evolves_from_pokemon_id": 665,
+        "pokemon_id": 666,
+        "evolution_chain_id": 342,
+        "trigger": "level-up",
+        "level": 12,
+        "id": 341,
+        "difficulty": 0.36
+    },
+    {
+        "evolves_from_pokemon_id": 664,
+        "pokemon_id": 665,
+        "evolution_chain_id": 342,
+        "trigger": "level-up",
+        "level": 9,
+        "id": 342,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 688,
+        "pokemon_id": 689,
+        "evolution_chain_id": 353,
+        "trigger": "level-up",
+        "level": 39,
+        "id": 343,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 710,
+        "pokemon_id": 711,
+        "evolution_chain_id": 365,
+        "trigger": "trade",
+        "id": 344,
+        "difficulty": 0.478
+    },
+    {
+        "evolves_from_pokemon_id": 659,
+        "pokemon_id": 660,
+        "evolution_chain_id": 340,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 345,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 669,
+        "pokemon_id": 670,
+        "evolution_chain_id": 344,
+        "trigger": "level-up",
+        "level": 19,
+        "id": 346,
+        "difficulty": 0.535
+    },
+    {
+        "evolves_from_pokemon_id": 670,
+        "pokemon_id": 671,
+        "evolution_chain_id": 344,
+        "trigger": "use-item",
+        "trigger_item": "Shiny Stone",
+        "id": 347,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 680,
+        "pokemon_id": 681,
+        "evolution_chain_id": 349,
+        "trigger": "use-item",
+        "trigger_item": "Dusk Stone",
+        "id": 348,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 674,
+        "pokemon_id": 675,
+        "evolution_chain_id": 346,
+        "trigger": "level-up",
+        "level": 32,
+        "party_type_id": 17,
+        "id": 349,
+        "difficulty": 1.335
+    },
+    {
+        "evolves_from_pokemon_id": 684,
+        "pokemon_id": 685,
+        "evolution_chain_id": 351,
+        "trigger": "trade",
+        "held_item": "Whipped Dream",
+        "id": 350,
+        "difficulty": 0.772
+    },
+    {
+        "evolves_from_pokemon_id": 690,
+        "pokemon_id": 691,
+        "evolution_chain_id": 354,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 351,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from_pokemon_id": 696,
+        "pokemon_id": 697,
+        "evolution_chain_id": 357,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "day",
+        "id": 352,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 698,
+        "pokemon_id": 699,
+        "evolution_chain_id": 358,
+        "trigger": "level-up",
+        "level": 39,
+        "time_of_day": "night",
+        "id": 353,
+        "difficulty": 1.035
+    },
+    {
+        "evolves_from_pokemon_id": 712,
+        "pokemon_id": 713,
+        "evolution_chain_id": 366,
+        "trigger": "level-up",
+        "level": 37,
+        "id": 354,
+        "difficulty": 0.985
+    },
+    {
+        "evolves_from_pokemon_id": 694,
+        "pokemon_id": 695,
+        "evolution_chain_id": 356,
+        "trigger": "use-item",
+        "trigger_item": "Sun Stone",
+        "id": 355,
+        "difficulty": 0.285
+    },
+    {
+        "evolves_from_pokemon_id": 667,
+        "pokemon_id": 668,
+        "evolution_chain_id": 343,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 356,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 672,
+        "pokemon_id": 673,
+        "evolution_chain_id": 345,
+        "trigger": "level-up",
+        "level": 32,
+        "id": 357,
+        "difficulty": 0.86
+    },
+    {
+        "evolves_from_pokemon_id": 705,
+        "pokemon_id": 706,
+        "evolution_chain_id": 362,
+        "trigger": "level-up",
+        "level": 50,
+        "needs_rain": true,
+        "id": 358,
+        "difficulty": 1.607
+    },
+    {
+        "evolves_from_pokemon_id": 714,
+        "pokemon_id": 715,
+        "evolution_chain_id": 367,
+        "trigger": "level-up",
+        "level": 48,
+        "id": 359,
+        "difficulty": 1.26
+    },
+    {
+        "evolves_from_pokemon_id": 677,
+        "pokemon_id": 678,
+        "evolution_chain_id": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 360,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 700,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "known_move_type_id": 18,
+        "affection": 2,
+        "id": 361,
+        "difficulty": 0.743
+    },
+    {
+        "evolves_from_pokemon_id": 82,
+        "pokemon_id": 462,
+        "evolution_chain_id": 34,
+        "trigger": "level-up",
+        "location": "Route 13, Kalos Region",
+        "id": 362,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 470,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Route 20, Kalos Region",
+        "id": 363,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 133,
+        "pokemon_id": 471,
+        "evolution_chain_id": 67,
+        "trigger": "level-up",
+        "location": "Frost Cavern, Kalos Region",
+        "id": 364,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 299,
+        "pokemon_id": 476,
+        "evolution_chain_id": 147,
+        "trigger": "level-up",
+        "location": "Route 13, Kalos Region",
+        "id": 365,
+        "difficulty": 0.335
+    },
+    {
+        "evolves_from_pokemon_id": 104,
+        "pokemon_id": 105,
+        "evolution_chain_id": 46,
+        "trigger": "level-up",
+        "level": 28,
+        "time_of_day": "night",
+        "id": 367,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 349,
+        "pokemon_id": 350,
+        "evolution_chain_id": 178,
+        "trigger": "level-up",
+        "beauty": 170,
+        "id": 371,
+        "difficulty": 0.582
+    },
+    {
+        "evolves_from_pokemon_id": 677,
+        "pokemon_id": 678,
+        "evolution_chain_id": 348,
+        "trigger": "level-up",
+        "level": 25,
+        "gender": "male",
+        "id": 372,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 722,
+        "pokemon_id": 723,
+        "evolution_chain_id": 374,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 373,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 723,
+        "pokemon_id": 724,
+        "evolution_chain_id": 374,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 374,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 725,
+        "pokemon_id": 726,
+        "evolution_chain_id": 375,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 375,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 726,
+        "pokemon_id": 727,
+        "evolution_chain_id": 375,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 376,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 728,
+        "pokemon_id": 729,
+        "evolution_chain_id": 376,
+        "trigger": "level-up",
+        "level": 17,
+        "id": 377,
+        "difficulty": 0.485
+    },
+    {
+        "evolves_from_pokemon_id": 729,
+        "pokemon_id": 730,
+        "evolution_chain_id": 376,
+        "trigger": "level-up",
+        "level": 34,
+        "id": 378,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 731,
+        "pokemon_id": 732,
+        "evolution_chain_id": 377,
+        "trigger": "level-up",
+        "level": 14,
+        "id": 379,
+        "difficulty": 0.41
+    },
+    {
+        "evolves_from_pokemon_id": 732,
+        "pokemon_id": 733,
+        "evolution_chain_id": 377,
+        "trigger": "level-up",
+        "level": 28,
+        "id": 380,
+        "difficulty": 0.76
+    },
+    {
+        "evolves_from_pokemon_id": 734,
+        "pokemon_id": 735,
+        "evolution_chain_id": 378,
+        "trigger": "level-up",
+        "level": 20,
+        "time_of_day": "day",
+        "id": 381,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 736,
+        "pokemon_id": 737,
+        "evolution_chain_id": 379,
+        "trigger": "level-up",
+        "level": 20,
+        "id": 382,
+        "difficulty": 0.56
+    },
+    {
+        "evolves_from_pokemon_id": 742,
+        "pokemon_id": 743,
+        "evolution_chain_id": 382,
+        "trigger": "level-up",
+        "level": 25,
+        "id": 385,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 744,
+        "pokemon_id": 745,
+        "evolution_chain_id": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "day",
+        "id": 386,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 744,
+        "pokemon_id": 745,
+        "evolution_chain_id": 383,
+        "trigger": "level-up",
+        "level": 25,
+        "time_of_day": "night",
+        "id": 387,
+        "difficulty": 0.685
+    },
+    {
+        "evolves_from_pokemon_id": 747,
+        "pokemon_id": 748,
+        "evolution_chain_id": 385,
+        "trigger": "level-up",
+        "level": 38,
+        "id": 388,
+        "difficulty": 1.01
+    },
+    {
+        "evolves_from_pokemon_id": 749,
+        "pokemon_id": 750,
+        "evolution_chain_id": 386,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 389,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 751,
+        "pokemon_id": 752,
+        "evolution_chain_id": 387,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 390,
+        "difficulty": 0.61
+    },
+    {
+        "evolves_from_pokemon_id": 753,
+        "pokemon_id": 754,
+        "evolution_chain_id": 388,
+        "trigger": "level-up",
+        "level": 34,
+        "time_of_day": "day",
+        "id": 391,
+        "difficulty": 0.91
+    },
+    {
+        "evolves_from_pokemon_id": 755,
+        "pokemon_id": 756,
+        "evolution_chain_id": 389,
+        "trigger": "level-up",
+        "level": 24,
+        "id": 392,
+        "difficulty": 0.66
+    },
+    {
+        "evolves_from_pokemon_id": 757,
+        "pokemon_id": 758,
+        "evolution_chain_id": 390,
+        "trigger": "level-up",
+        "level": 33,
+        "gender": "female",
+        "id": 393,
+        "difficulty": 0.885
+    },
+    {
+        "evolves_from_pokemon_id": 759,
+        "pokemon_id": 760,
+        "evolution_chain_id": 391,
+        "trigger": "level-up",
+        "level": 27,
+        "id": 394,
+        "difficulty": 0.735
+    },
+    {
+        "evolves_from_pokemon_id": 761,
+        "pokemon_id": 762,
+        "evolution_chain_id": 392,
+        "trigger": "level-up",
+        "level": 18,
+        "id": 395,
+        "difficulty": 0.51
+    },
+    {
+        "evolves_from_pokemon_id": 762,
+        "pokemon_id": 763,
+        "evolution_chain_id": 392,
+        "trigger": "level-up",
+        "known_move": "Stomp",
+        "id": 396,
+        "difficulty": 0.468
+    },
+    {
+        "evolves_from_pokemon_id": 767,
+        "pokemon_id": 768,
+        "evolution_chain_id": 396,
+        "trigger": "level-up",
+        "level": 30,
+        "id": 397,
+        "difficulty": 0.81
+    },
+    {
+        "evolves_from_pokemon_id": 769,
+        "pokemon_id": 770,
+        "evolution_chain_id": 397,
+        "trigger": "level-up",
+        "level": 42,
+        "id": 398,
+        "difficulty": 1.11
+    },
+    {
+        "evolves_from_pokemon_id": 772,
+        "pokemon_id": 773,
+        "evolution_chain_id": 399,
+        "trigger": "level-up",
+        "happiness": 220,
+        "id": 399,
+        "difficulty": 0.583
+    },
+    {
+        "evolves_from_pokemon_id": 782,
+        "pokemon_id": 783,
+        "evolution_chain_id": 408,
+        "trigger": "level-up",
+        "level": 35,
+        "id": 400,
+        "difficulty": 0.935
+    },
+    {
+        "evolves_from_pokemon_id": 783,
+        "pokemon_id": 784,
+        "evolution_chain_id": 408,
+        "trigger": "level-up",
+        "level": 45,
+        "id": 401,
+        "difficulty": 1.185
+    },
+    {
+        "evolves_from_pokemon_id": 789,
+        "pokemon_id": 790,
+        "evolution_chain_id": 413,
+        "trigger": "level-up",
+        "level": 43,
+        "id": 402,
+        "difficulty": 1.135
+    },
+    {
+        "evolves_from_pokemon_id": 790,
+        "pokemon_id": 791,
+        "evolution_chain_id": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 403,
+        "difficulty": 1.385
+    },
+    {
+        "evolves_from_pokemon_id": 790,
+        "pokemon_id": 792,
+        "evolution_chain_id": 413,
+        "trigger": "level-up",
+        "level": 53,
+        "id": 404,
+        "difficulty": 1.385
+    },
+    {
+        "evolves_from_pokemon_id": 803,
+        "pokemon_id": 804,
+        "evolution_chain_id": 424,
+        "trigger": "level-up",
+        "known_move": "Dragon Pulse",
+        "id": 405,
+        "difficulty": 0.468
+    }
+]
