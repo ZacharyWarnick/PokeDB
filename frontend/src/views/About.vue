@@ -1,6 +1,9 @@
 <template>
   <div class="about">
     <Navbar />
+    <div class="bg">
+    <div class="fade-container">
+      <div class="container text-scroll-bg">
     <b-jumbotron header="About">
       <p class="lead text-justify">
         This website develops database (similar to IMDb) has 3 kinds of pages or
@@ -124,6 +127,9 @@
         </b-row>
       </b-container>
     </section>
+      </div>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -133,7 +139,7 @@ import Navbar from "@/components/Navbar.vue";
 export default {
   name: "About",
   components: {
-    Navbar
+    Navbar,
   },
   data() {
     return {
@@ -251,6 +257,51 @@ export default {
 .tool-card {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.fade-container {
+	animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0%{
+    opacity: 0
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+.text-scroll-bg {
+  background-color:white;
+  width: 1920px;
+  height: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+}
+.bg {
+  padding-top: 0;
+
+  margin-bottom: 0px;
+
+  /* The image used */
+  background-image: url('../assets/home-background.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  align-content: center;
+
+  position: sticky;
 }
 </style>
 

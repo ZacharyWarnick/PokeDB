@@ -45,47 +45,24 @@ POKEMON = {
 }
 
 EVOLUTION = {
-    'magikarp': {
-        'from': None,
-        'to': ['gyarados'],
-        'min_level': 20,
-        'gender': None,
-        'hold_item': None,
+    75: {
+        "evolves_from": 129,
+        "chain": 64,
+        "trigger": "level-up",
+        "level": 20,
     },
-    'gyarados': {
-        'from': ['magikarp'],
-        'to': None,
-        'min_level': None,
-        'gender': None,
-        'hold_item': None,
+    15: {
+        "evolves_from": 23,
+        "chain": 9,
+        "trigger": "level-up",
+        "level": 22,
     },
-    'ekans': {
-        'from': None,
-        'to': ['arbok'],
-        'min_level': 22,
-        'gender': None,
-        'hold_item': None,
-    },
-    'arbok': {
-        'from': ['ekans'],
-        'to': None,
-        'min_level': None,
-        'gender': None,
-        'hold_item': None,
-    },
-    'sandshrew': {
-        'from': None,
-        'to': ['sandslash'],
-        'min_level': 22,
-        'gender': None,
-        'hold_item': None,
-    },
-    'sandslash': {
-        'from': ['sandshrew'],
-        'to': None,
-        'min_level': None,
-        'gender': None,
-        'hold_item': None,
+    18: {
+        "evolves_from": 27,
+        "chain": 11,
+        "trigger": "level-up",
+        "level": 22,
+        "id": 18
     }
 }
 
@@ -110,4 +87,76 @@ TYPE = {
         'weaknesses': ['ground', 'psychic'],
         'pokemon': ['ekans', 'arbok']
     },
+}
+
+FORMS = {
+    10203: {
+        "pokemon_name": "Alolan Sandshrew",
+        "form_label": "Alola Form",
+        "identifier": "alola",
+        "pokemon_id": 27,
+    },
+    10204: {
+        "pokemon_name": "Alolan Sandslash",
+        "form_label": "Alola Form",
+        "identifier": "alola",
+        "pokemon_id": 28,
+    },
+    10141: {
+        "pokemon_name": "Mega Gyarados",
+        "form_label": "Mega Gyarados",
+        "identifier": "mega",
+        "pokemon_id": 130,
+    }
+}
+
+BASE_STATS = {
+    'ekans': {
+        'hp': 35,
+        'atk': 60,
+        'def': 44,
+        'sp_atk': 40,
+        'sp_def': 54,
+        'spd': 55
+    },
+    'arbok': {
+        'hp': 60,
+        'atk': 95,
+        'def': 69,
+        'sp_atk': 65,
+        'sp_def': 79,
+        'spd': 80
+    },
+    'sandshrew': {
+        'hp': 50,
+        'atk': 75,
+        'def': 85,
+        'sp_atk': 20,
+        'sp_def': 30,
+        'spd': 40
+    },
+    'sandslash': {
+        'hp': 75,
+        'atk': 100,
+        'def': 110,
+        'sp_atk': 45,
+        'sp_def': 55,
+        'spd': 65
+    },
+    'magikarp': {
+        'hp': 20,
+        'atk': 10,
+        'def': 55,
+        'sp_atk': 15,
+        'sp_def': 20,
+        'spd': 80
+    },
+    'gyarados': {
+        'hp': 95,
+        'atk': 125,
+        'def': 79,
+        'sp_atk': 60,
+        'sp_def': 100,
+        'spd': 81
+    }
 }
