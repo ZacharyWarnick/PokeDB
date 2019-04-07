@@ -140,8 +140,7 @@
       >
     </section>
     <section class="section-padding">
-      <b-form-textarea
-        class="text-padding"      
+      <b-form-textarea     
         placeholder="Press button to run tests"
         rows="3"
         max-rows="20"
