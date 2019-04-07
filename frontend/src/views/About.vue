@@ -127,6 +127,27 @@
         </b-row>
       </b-container>
     </section>
+    <section class="text-left section-padding">
+      <b-container>
+        <h3>Tests:</h3>
+      </b-container>
+    </section>
+    <section class="section-padding">
+      <b-button
+        class="mt-auto"
+        variant="outline-secondary"
+        >Run Tests</b-button
+      >
+    </section>
+    <section class="section-padding">
+      <b-form-textarea
+        class="text-padding"      
+        placeholder="Press button to run tests"
+        rows="3"
+        max-rows="20"
+        no-auto-shrink>     
+      </b-form-textarea>
+    </section>
       </div>
     </div>
     </div>
@@ -143,6 +164,7 @@ export default {
   },
   data() {
     return {
+      test: "",
       people: [
         {
           full_name: "Ian Chang",
@@ -243,6 +265,10 @@ export default {
 <style scoped>
 .section-padding {
   padding: 30px 0;
+}
+
+.text-padding {
+  padding-top: 30px;
 }
 
 .card-padding {
