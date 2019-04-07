@@ -8,6 +8,9 @@ import json
 from sqlalchemy.orm.attributes import QueryableAttribute
 
 
+def dot_add(p, k): return '{}.{}'.format(p, k)
+
+
 def create_base_model(db):
     """Creates a BaseModel class for a given database."""
 
@@ -34,7 +37,8 @@ def create_base_model(db):
                     item = item.lower()
                     if item.split('.', 1)[0] == _path or not item:
                         return item
-                    return '{}.{}'.format(_path, item.lstrip('.'))
+                    item = item if item[0] == '.' else '.' + item
+                    return _path + item
 
                 _hide[:] = [prepend_path(x) for x in _hide]
                 show[:] = [prepend_path(x) for x in show]
@@ -43,11 +47,11 @@ def create_base_model(db):
             relationships = self.__mapper__.relationships.keys()
             properties = dir(self)
 
-            def dot_add(p, k): return '{}.{}'.format(p, k)
-
             def handle_nested(key, item):
                 return None if item is None else item.to_dict(
-                    show=show, _hide=_hide, _path=dot_add(_path, key.lower()))
+                    show=show,
+                    _hide=_hide,
+                    _path=dot_add(_path, key.lower()))
 
             def should_keep(key):
                 check = dot_add(_path, key)

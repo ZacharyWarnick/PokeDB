@@ -32,7 +32,7 @@ class Pokemon(_BaseModel):
 
     __defaultfields__ = [
         'evolution_chain_id', 'since_gen', 'first_type', 'second_type', 'name',
-        'identifier', 'color', 'sprite', 'default_form', 'has_alt_form'
+        'identifier', 'color', 'sprite', 'has_alt_form'
         ]
 
     EXTRA_FIELDS = ['image', 'flavor_text', 'forms', 'base_stats']
