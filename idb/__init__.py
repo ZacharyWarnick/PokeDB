@@ -34,14 +34,10 @@ def create_app(config_name=None):
         The flask application instance.
     """
     import os
-    import config as cfg
+    import config
 
     config_name = config_name or os.environ.get('FLASK_ENV', 'development')
-    configuration = {
-        'development': cfg.Development,
-        'testing': cfg.Testing,
-        'production': cfg.DefaultConfig
-        }.get(config_name, cfg.Development)
+    configuration = config.load(config_name)
 
     app = Flask(__name__)
     app.config.from_object(configuration)

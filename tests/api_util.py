@@ -9,6 +9,41 @@ from unittest import TextTestRunner, TestLoader
 _TEST_DIR = Path(__file__).parent
 _IDB_DIR = _TEST_DIR.parent / 'idb'
 _OUTPUT_DIR = _TEST_DIR / 'cover'
+_OUT_PREFIX = 'cover_'
+_OUT_SUFFIX = '.log'
+
+
+def _log_file(unique_name: str):
+    """Creates a correctly patterned log file name.
+
+    Args:
+        unique_name: The identifier that is formatted into the general pattern.
+
+    Returns:
+        A string value for the file name, including the extension.
+    """
+    return '{pre}{name}{suf}'.format(
+        pre=_OUT_PREFIX,
+        name=unique_name,
+        suf=_OUT_SUFFIX)
+
+
+def _is_log(fpath: Path):
+    """Determines if a file path is a testing result log file.
+
+    Note:
+        This specifically checks for a pattern match in accordance with the
+        format prescribed by `_log_file(unique_name)`.
+
+    Args:
+        fpath: The path object to a file that needs to be checked.
+
+    Returns:
+        True if the path points to a log file, otherwise False.
+    """
+    return (fpath.is_file()
+            and fpath.stem.startswith(_OUT_PREFIX)
+            and (fpath.suffix == _OUT_SUFFIX))
 
 
 def _get_target_files():
@@ -57,7 +92,7 @@ def _get_output_file(default='default'):
         A path object for the location where results should be saved.
     """
     version = os.environ.get('GAE_VERSION', default)
-    return _OUTPUT_DIR / '{}.out'.format(version)
+    return _OUTPUT_DIR / _log_file(version)
 
 
 def _run_coverage():
@@ -83,10 +118,28 @@ def _run_coverage():
     return '{}\n{}'.format(test_out.getvalue(), cov_out.getvalue())
 
 
+def _prepare_dir(out_file: Path):
+    """Creates the output directory and deletes old logs (if needed)."""
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+
+    for f in out_file.parent.iterdir():
+        # Delete old log files to save space.
+        if (f.name != out_file.name) and _is_log(f):
+            f.unlink()
+
+
 def get_coverage_result(label=None):
+    """Obtains the results of running coverage for all unit tests.
+
+    Args:
+        label: A string or integer which uniquely identifies a test result.
+
+    Returns:
+        A string containing testing results and a code coverage report.
+    """
     out_file = _get_output_file(label)
     if not out_file.exists():
-        out_file.parent.mkdir(parents=True, exist_ok=True)
+        _prepare_dir(out_file)
         output = _run_coverage()
 
         with out_file.open(mode='w+') as f:

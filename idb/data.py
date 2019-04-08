@@ -15,8 +15,31 @@ ORDER_ASCENDING = 'ASC'
 ORDER_DESCENDING = 'DESC'
 
 
+def _read_pager_items(pager):
+    if pager.items and not hasattr(pager.items[0], 'to_dict'):
+        raise AttributeError('Pager items must have a `to_dict` method.')
+
+    return [it.to_dict() for it in pager.items]
+
+
 def _pager(pager, data=None):
-    data = data or [it.to_dict() for it in pager.items]
+    """Constructs a pager dictionary which wraps paged results.
+
+    Note:
+        The data object must have a false-y value or be a list of dictionaries.
+        If the data object is false-y, then the items from the pager must have
+        a function named `to_dict` which will be used to convert the pager
+        items into a list of dictionaries.
+
+    Args:
+        pager: A SQLAlchemy pager object.
+        data (optional): A list of items to return as the paged data.
+
+    Returns:
+        A dictionary containing several fields that detail the page state along
+        with a data field which points to the page items.
+    """
+    data = data or _read_pager_items(pager)
     return {
         'current_page': pager.page,
         'page_count': pager.pages,

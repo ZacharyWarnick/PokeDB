@@ -2,10 +2,10 @@ import json
 import unittest
 
 from unittest import TestCase
-from idb import create_app
+from idb import create_app, db
 
 
-class ExampleTest(TestCase):
+class QueryTest(TestCase):
 
     def setUp(self):
         self.app = create_app('testing')
