@@ -123,6 +123,7 @@ node_modules/
 idb/**/gen
 lib/
 scrape/csv/
+tests/cover/
 .DS_Store
 ignore-*.*
 app.yaml

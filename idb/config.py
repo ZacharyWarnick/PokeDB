@@ -21,5 +21,9 @@ class DefaultConfig(object):
     TABLE_DATA_DIR = _get_data_dir()
 
 
-class Production(DefaultConfig):
-    pass
+class Development(DefaultConfig):
+    DEBUG = True
+
+
+class Testing(DefaultConfig):
+    TESTING = True

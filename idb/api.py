@@ -92,3 +92,11 @@ def get_types():
 @api.route('/types/<string:a_type>', methods=['GET'])
 def get_type(a_type):
     return jsonify(data.query_type(a_type))
+
+
+@api.route('/tests', methods=['GET'])
+def get_test_results():  # pragma: no cover
+    import time
+    from tests.api_util import get_coverage_result
+    stamp = int(time.time() // 60)
+    return jsonify({'output': get_coverage_result(stamp)})
