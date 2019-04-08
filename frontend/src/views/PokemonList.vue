@@ -7,6 +7,11 @@
           <b-container class="section-padding">
             <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
           </b-container>
+          <Pagination 
+            vbind:currentPage="p.current_page"
+            v-bind:rows="p.page_count
+            v-bind:perPage="p.per_page"
+          />
           <section>
             <b-container>
               <b-row>
@@ -43,6 +48,7 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
+import Pagination from "@/components/Pagination.vue";
 
 import { getPokemonListing } from "@/api";
 
@@ -50,7 +56,8 @@ export default {
   name: "PokemonList",
   components: {
     Navbar,
-    SpriteBasic
+    SpriteBasic,
+    Pagination
   },
   data() {
     return {
@@ -61,7 +68,7 @@ export default {
     getPokemonListing({ sort: "id", order: "ASC", page: 1 }).then(
       response => (this.pokemon = response.data)
     );
-  }
+  };
 };
 </script>
 
