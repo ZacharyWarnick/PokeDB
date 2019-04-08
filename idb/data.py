@@ -15,6 +15,41 @@ ORDER_ASCENDING = 'ASC'
 ORDER_DESCENDING = 'DESC'
 
 
+def _pager(pager, data=None):
+    data = data or [it.to_dict() for it in pager.items]
+    return {
+        'current_page': pager.page,
+        'page_count': pager.pages,
+        'has_prev': pager.has_prev,
+        'has_next': pager.has_next,
+        'per_page': pager.per_page,
+        'data': data
+        }
+
+
+def _sort_evolution_stages(stages):
+    sort_order = {}
+    for stage in stages:
+        item = stage[0] if isinstance(stage, list) else stage
+        poke_id = item['pokemon']['id']
+
+        pre_evolution = item['evolves_from']
+        for i in range(5):
+            # No Pokémon in the database should loop more than 2 times.
+            # This guarantees that erroneous data won't cause an infinite loop.
+            if pre_evolution is None:
+                sort_order[poke_id] = i
+                break
+
+            pre_evolution = pre_evolution.get('evolves_from', None)
+
+    def key(stage):
+        item = stage[0] if isinstance(stage, list) else stage
+        return sort_order[item['pokemon']['id']]
+
+    return sorted(stages, key=key)
+
+
 def query_pokemon_list(sort_key, sort_order, page_number,
                        item_count=ITEMS_PER_PAGE):
     """Queries for a list of Pokémon.
@@ -36,7 +71,7 @@ def query_pokemon_list(sort_key, sort_order, page_number,
         A list of dictionaries describing each Pokémon.
     """
     sort_params = (sort_key, sort_order)
-    default_sort = Pokemon.id.asc()
+    default_sort = (Pokemon.id.asc(),)
     sort = {
         ('id', ORDER_DESCENDING): (Pokemon.id.desc(),),
         ('name', ORDER_ASCENDING): (Pokemon.name.asc(),),
@@ -54,8 +89,8 @@ def query_pokemon_list(sort_key, sort_order, page_number,
         }.get(sort_params, default_sort)
 
     query = Pokemon.query.order_by(*sort)
-    items = query.paginate(page_number, item_count).items
-    return [it.to_dict() for it in items]
+    pager = query.paginate(page_number, item_count)
+    return _pager(pager)
 
 
 def query_pokemon(pokemon):
@@ -80,7 +115,9 @@ def _query_sorted_evolutions(sort_key, sort_order, page_number, item_count):
     This query serves only to determine which items should be selected.
 
     Returns:
-        A dictionary mapping chain IDs to fields used in the sorting process.
+        A 2-tuple containing the source pager object and a dictionary
+        containing dictionaries for each evolution chain which store the
+        sortable attributes for each entry.
     """
     sort_params = (sort_key, sort_order)
     default_sort = Evolution.evolution_chain_id.asc()
@@ -119,9 +156,9 @@ def _query_sorted_evolutions(sort_key, sort_order, page_number, item_count):
     query = query.group_by(Evolution.evolution_chain_id)
     query = query.order_by(sort)
 
-    result = query.paginate(page_number, item_count).items
+    pager = query.paginate(page_number, item_count)
     chain_details = {}
-    for row in result:
+    for row in pager.items:
         chain_details[row.evolution_chain_id] = {
             'difficulty': row.difficulty,
             'chain_count': row.chain_count,
@@ -129,7 +166,7 @@ def _query_sorted_evolutions(sort_key, sort_order, page_number, item_count):
             'max_level': row.max_level
             }
 
-    return chain_details
+    return pager, chain_details
 
 
 def query_evolution_list(sort_key, sort_order, page_number,
@@ -160,29 +197,26 @@ def query_evolution_list(sort_key, sort_order, page_number,
         attributes of a chain, as well as one stage for each evolution from one
         Pokémon to another. No details for the method of evolution are present.
     """
-    chain_details = _query_sorted_evolutions(
+    pager, chain_details = _query_sorted_evolutions(
         sort_key, sort_order, page_number, item_count)
     valid_chains = list(chain_details.keys())
     selection_filter = Evolution.evolution_chain_id.in_(valid_chains)
     rows = db.session.query(Evolution).filter(selection_filter).all()
 
-    data = {}
+    data = defaultdict(dict)
+    stages = defaultdict(list)
     for row in rows:
         r_id = row.evolution_chain_id
-        stage_key = row.pokemon.identifier  # Must be str for JSON conversion.
-        chain_info = {
-            'id': r_id,
-            stage_key: row.to_dict()}
+        stages[r_id].append(row.to_dict())
 
         if r_id not in data:
             # Copy over the chain details, once per chain.
+            data[r_id]['id'] = r_id
             for k, v in chain_details[r_id].items():
-                chain_info[k] = v
+                data[r_id][k] = v
 
-            # Create the entry for the chain in the data dict.
-            data[r_id] = chain_info
-        else:
-            data[r_id].update(chain_info)
+    for key, value in stages.items():
+        data[key]['stages'] = _sort_evolution_stages(value)
 
     s_key = {
         'chain': 'evolution_chain_id',
@@ -195,7 +229,8 @@ def query_evolution_list(sort_key, sort_order, page_number,
     def key(it): return it[s_key] if s_key in it else it['id']
 
     is_reverse = (sort_order == ORDER_DESCENDING)
-    return sorted(data.values(), key=key, reverse=is_reverse)
+    data = sorted(data.values(), key=key, reverse=is_reverse)
+    return _pager(pager, data)
 
 
 def query_evolution(chain_id):
@@ -215,29 +250,21 @@ def query_evolution(chain_id):
     # Every stage must be queried and then used to build the overall chain.
     rows = db.session.query(Evolution).filter(selection_filter).all()
 
-    stages = defaultdict(list)
-    for row in rows:
-        dict_entry = row.to_dict(show=Evolution.EXTRA_FIELDS)
-        stages[row.pokemon_id].append(dict_entry)
+    result = [row.to_dict(show=Evolution.EXTRA_FIELDS) for row in rows]
+    sorted_result = _sort_evolution_stages(result)
 
-    sort_order = {}
-    for stage in stages.values():
-        print(stage[0])
-        poke_id = stage[0]['pokemon']['id']
+    levels = [it['level'] for it in sorted_result if it['level'] is not None]
+    base_id = sorted_result[0]['evolves_from']['id'] if sorted_result else None
+    data = {
+        'id': chain_id,
+        'difficulty': sum([it['difficulty'] for it in sorted_result]),
+        'base_pokemon': base_id,
+        'chain_count': len(sorted_result),
+        'max_level': None if not levels else max(levels),
+        'stages': sorted_result
+    }
 
-        pre_evolution = stage[0]['evolves_from']
-        for i in range(5):
-            # No Pokémon in the database should loop more than 2 times.
-            # This guarantees that erroneous data won't cause an infinite loop.
-            if pre_evolution is None:
-                sort_order[poke_id] = i
-                break
-
-            pre_evolution = pre_evolution.get('evolves_from', None)
-
-    def key(stage): return sort_order[stage[0]['pokemon']['id']]
-
-    return sorted(stages.values(), key=key)
+    return data
 
 
 def query_type_list(sort_key, sort_order, page_number,
@@ -264,8 +291,8 @@ def query_type_list(sort_key, sort_order, page_number,
     default_sort = Type.id.asc()
     sort = {
         ('id', ORDER_DESCENDING): Type.id.desc(),
-        ('name', ORDER_ASCENDING): Type.name.asc(),
-        ('name', ORDER_DESCENDING): Type.name.desc(),
+        ('name', ORDER_ASCENDING): Type.identifier.asc(),
+        ('name', ORDER_DESCENDING): Type.identifier.desc(),
         ('count', ORDER_ASCENDING): Type.pokemon_count.asc(),
         ('count', ORDER_DESCENDING): Type.pokemon_count.desc(),
         ('stats', ORDER_ASCENDING): Type.stat_average.asc(),
@@ -275,8 +302,8 @@ def query_type_list(sort_key, sort_order, page_number,
         }.get(sort_params, default_sort)
 
     query = Type.query.order_by(sort)
-    items = query.paginate(page_number, item_count).items
-    return [it.to_dict() for it in items]
+    pager = query.paginate(page_number, item_count)
+    return _pager(pager)
 
 
 def query_type(a_type):

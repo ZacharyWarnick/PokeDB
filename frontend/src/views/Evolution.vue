@@ -1,7 +1,7 @@
 <template>
   <div class="evolution">
     <Navbar />
-      <div class="bg">
+    <div class="bg">
       <div class="container text-scroll-bg">
         <b-jumbotron
           header="Evolution Chain"
@@ -35,7 +35,7 @@
           </b-container>
         </section>
       </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -120,28 +120,26 @@ export default {
   padding-bottom: 30px;
   align-content: center;
   box-shadow: 4px 4px 4px;
-
-
 }
 .bg {
-padding-top: 0;
+  padding-top: 0;
 
-margin-bottom: 0px;
+  margin-bottom: 0px;
 
-/* The image used */
-background-image: url('../assets/home-background.jpg');
+  /* The image used */
+  background-image: url("../assets/home-background.jpg");
 
-/* Full height */
-height: 100%;
+  /* Full height */
+  height: 100%;
 
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-align-content: center;
+  align-content: center;
 
-position: sticky;
+  position: sticky;
 }
 </style>

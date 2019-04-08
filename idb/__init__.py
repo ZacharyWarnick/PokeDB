@@ -7,6 +7,7 @@ import sys
 
 from pathlib import Path
 from flask import Flask, render_template
+from flask_cors import CORS
 
 # Need to place local files in module search path.
 sys.path.append(str(Path(__file__).parent.absolute()))
@@ -16,11 +17,14 @@ from api import api  # noqa: E402
 from config import DefaultConfig  # noqa: E402
 from models import db  # noqa: E402
 
+
 app = Flask(__name__)
 app.config.from_object(DefaultConfig)
 
 db.init_app(app)
 app.register_blueprint(api)
+
+cors = CORS(app, resources={r'/api/*': {"origins": "*"}})
 
 
 @app.route('/', defaults={'path': ''})

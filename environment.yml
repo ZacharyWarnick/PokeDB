@@ -9,7 +9,8 @@ dependencies:
   - nodejs
   - pip:
       - Flask
-      - Flask_SQLAlchemy
+      - Flask-SQLAlchemy
+      - flask-cors
       - psycopg2
       - gunicorn
       - requests
