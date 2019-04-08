@@ -83,8 +83,7 @@ def _bool(x): return bool(int(x))
 
 
 def new_type_container():
-    return {'type1': None, 'type2': None}
-
+    return {'first_type_id': None, 'second_type_id': None}
 
 def form_detail(form_id, modifier, name):
     return {'id': form_id, 'modifier': modifier, 'name': name}
@@ -110,11 +109,11 @@ class Session(object):
 
         self.name_fields = ['name', 'genus']
         self.species_fields = [
-            'identifier', 'evolution_chain', 'color', 'since_gen',
-            'evolves_from'
+            'identifier', 'evolution_chain_id', 'color', 'since_gen',
+            'evolves_from_pokemon_id'
         ]
         self.type_fields = ['damage_class', 'identifier']
-        self.poke_type_fields = ['type1', 'type2']
+        self.poke_type_fields = ['first_type_id', 'second_type_id']
         self.form_fields = ['label', 'name']
 
     def csv_generator(self, fname, maps=None):
@@ -263,8 +262,8 @@ class Session(object):
             'type_id': ('type', int),
             'base_stat': (int,),
             'slot': (_int,),
-            'evolves_from_species_id': ('evolves_from', _int),
-            'evolution_chain_id': ('evolution_chain', int),
+            'evolves_from_species_id': ('evolves_from_pokemon_id', _int),
+            'evolution_chain_id': (int,),
             'is_default': (_bool,),
             'form_identifier': ('form_identifier', str),
             'form_order': (int,),
@@ -281,7 +280,8 @@ class Session(object):
         for row in self.csv_generator('pokemon_types', maps=poke_tf):
             poke_info = poke_types[row['pokemon_id']]
             if row['slot'] is not None:
-                key = 'type{}'.format(row['slot'])
+                ordinal = 'first' if row['slot'] == 1 else 'second'
+                key = '{}_type_id'.format(ordinal)
                 poke_info[key] = row['type']
 
         stats = defaultdict(dict)
@@ -297,6 +297,8 @@ class Session(object):
             row_id = row['id']
             spec_id = row['pokemon_id']
             form_identifier = row['form_identifier']
+            if not form_identifier:
+                form_identifier = row['identifier']
             if form_identifier:
                 name = row['identifier']
                 type1 = None
@@ -327,12 +329,12 @@ class Session(object):
                 new_form = forms[row_id]
                 new_form['identifier'] = form_identifier
                 new_form['pokemon_id'] = simple_pokemon[spec_id]
-                new_form['pokemon_variant'] = spec_id
+                new_form['variant_id'] = spec_id
                 new_form['pokemon_name'] = poke_name
                 new_form['form_label'] = form_label
 
                 if type1 is not None:
-                    new_form['type1'] = type1
+                    new_form['first_type_id'] = type1
 
                 new_form['pokemon_name'] = poke_name
 
@@ -383,10 +385,10 @@ class Session(object):
             'relative_physical_stats': ('relative_stats', _int),
             'needs_overworld_rain': ('needs_rain', _bool),
             'turn_upside_down': ('needs_inversion', _bool),
-            'known_move_type_id': ('known_move_type', _int),
-            'party_type_id': ('party_type', _int),
-            'party_species_id': ('party_pokemon', _int),
-            'trade_species_id': ('trade_pokemon', _int),
+            'known_move_type_id': (_int,),
+            'party_type_id': (_int,),
+            'party_species_id': ('party_pokemon_id', _int),
+            'trade_species_id': ('trade_pokemon_id', _int),
             'location_id': ('location', _int),
             **map_id(items, 'trigger_item_id', 'trigger_item'),
             **map_id(triggers, 'evolution_trigger_id', 'trigger'),
@@ -399,13 +401,13 @@ class Session(object):
         for row in self.csv_generator('pokemon_evolution', maps=poke_tf):
             end = row['evolved_species']
             start = self.pokemon[end]
-            start_id = start['evolves_from']
-            chain_id = start['evolution_chain']
+            start_id = start['evolves_from_pokemon_id']
+            chain_id = start['evolution_chain_id']
 
             stage = stages[row['id']]
-            stage['evolves_from'] = start_id
-            stage['result'] = end
-            stage['chain'] = chain_id
+            stage['evolves_from_pokemon_id'] = start_id
+            stage['pokemon_id'] = end
+            stage['evolution_chain_id'] = chain_id
             for key, value in row.items():
                 if key in {'id', 'evolved_species', ''}:
                     continue
@@ -431,17 +433,17 @@ class Session(object):
         self.evolutions = final_stages
 
         for key in self.pokemon:
-            chain_id = self.pokemon[key]['evolution_chain']
+            chain_id = self.pokemon[key]['evolution_chain_id']
 
             chain_count = 0
             for ev in self.evolutions.values():
-                if ev['chain'] == chain_id:
+                if ev['evolution_chain_id'] == chain_id:
                     chain_count += 1
 
             poke = self.pokemon[key]
-            if chain_count < 1 and poke['evolution_chain'] is not None:
-                print(poke['name'], poke['evolution_chain'])
-                poke['evolution_chain'] = None
+            if chain_count < 1 and poke['evolution_chain_id'] is not None:
+                print(poke['name'], poke['evolution_chain_id'])
+                poke['evolution_chain_id'] = None
 
     def run(self, pretty=False):
         self.parse_locations()
@@ -467,13 +469,18 @@ class Session(object):
             self.types, self.base_stats
         ]
 
+        id_keys = {
+            'base_stats': 'variant_id'
+        }
+
         for fname, obj in zip(file_names, objects):
             path = self.out / '{}.json'.format(fname)
             indent = None if not pretty else 4
             rows = []
             for k, v in obj.items():
                 row = v.copy()
-                row['id'] = k
+                id_key = id_keys.get(fname, 'id')
+                row[id_key] = k
                 rows.append(row)
 
             with path.open(mode='w+') as f:
@@ -482,13 +489,13 @@ class Session(object):
 
     def debug_print(self, poke_id):
         poke = self.pokemon[poke_id]
-        pre_poke = poke['evolves_from']
+        pre_poke = poke['evolves_from_pokemon_id']
         if pre_poke is not None:
             pprint(self.pokemon[pre_poke])
 
         pprint(poke)
 
-        evolution_chain = poke['evolution_chain']
+        evolution_chain = poke['evolution_chain_id']
 
         whole_chain = []
         for k, v in self.evolutions.items():
@@ -501,8 +508,8 @@ class Session(object):
             pprint(self.base_stats[pre_poke])
         pprint(self.base_stats[poke_id])
 
-        type_id = poke['type1']
-        type_id_2 = poke['type2']
+        type_id = poke['first_type_id']
+        type_id_2 = poke['second_type_id']
         pprint(self.types[type_id])
         if type_id_2:
             pprint(self.types[type_id_2])

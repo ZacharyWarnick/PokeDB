@@ -1,129 +1,149 @@
 <template>
   <div class="about">
     <Navbar />
-    <b-jumbotron header="About">
-      <p class="lead text-justify">
-        This website develops database (similar to IMDb) has 3 kinds of pages or
-        subjects that form the database.
-        All 3 pages or subjects are connected and each item in the database
-        belongs to 1 type of page or subject and has links to items in the other
-        2 subjects.
-        The database for this group will be a Pokémon database. The 3 kinds of
-        pages or subjects will be Pokémon, Pokémon Type, and Evolution Chain.
-      </p>
-    </b-jumbotron>
+    <div class="bg">
+      <div class="fade-container">
+        <div class="container text-scroll-bg">
+          <b-jumbotron header="About">
+            <p class="lead text-justify">
+              This website develops database (similar to IMDb) has 3 kinds of
+              pages or subjects that form the database. All 3 pages or subjects
+              are connected and each item in the database belongs to 1 type of
+              page or subject and has links to items in the other 2 subjects.
+              The database for this group will be a Pokémon database. The 3
+              kinds of pages or subjects will be Pokémon, Pokémon Type, and
+              Evolution Chain.
+            </p>
+          </b-jumbotron>
 
-    <section class="text-left section-padding">
-      <b-container>
-        <h1>Gold Team</h1>
-        <br />
-        <h3>Members:</h3>
-      </b-container>
-    </section>
+          <section class="text-left section-padding">
+            <b-container>
+              <h1>Gold Team</h1>
+              <br />
+              <h3>Members:</h3>
+            </b-container>
+          </section>
 
-    <section
-      v-for="person in people"
-      :key="person.full_name"
-      class="section-padding"
-    >
-      <b-container>
-        <b-row>
-          <b-col lg="4" md="4" sm="6" cols="12">
-            <img class="img-fluid" :src="person.picture" />
-          </b-col>
-          <b-col class="text-left">
-            <h4>{{ person.full_name }}</h4>
-            <h5>Bio</h5>
-            <p>{{ person.bio }}</p>
-            <br />
-            <h5>Responsibilites</h5>
-            <p>{{ person.responsibilities }}</p>
-          </b-col>
-          <b-col lg="2" md="3" sm="4" cols="12" class="text-center my-auto">
-            <p>{{ person.commits }} commits</p>
-            <p>{{ person.issues }} issues</p>
-            <p>{{ person.tests }} unit tests</p>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
-
-    <section class="text-left section-padding">
-      <b-container>
-        <h3>Repo Information:</h3>
-      </b-container>
-    </section>
-
-    <section class="section-padding">
-      <b-container>
-        <b-row>
-          <b-col>
-            <b-button
-              href="https://gitlab.com/jacoblubecki/cs329e-idb/issues"
-              variant="outline-secondary"
-            >
-              Gitlab Issue Tracker</b-button
-            >
-          </b-col>
-          <b-col>
-            <b-button
-              href="https://gitlab.com/jacoblubecki/cs329e-idb"
-              variant="outline-secondary"
-            >
-              Gitlab Repo</b-button
-            >
-          </b-col>
-          <b-col>
-            <b-button
-              href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home"
-              variant="outline-secondary"
-            >
-              Gitlab Technical Report (Wiki)</b-button
-            >
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
-
-    <section class="text-left section-padding">
-      <b-container>
-        <h3>Tools:</h3>
-      </b-container>
-    </section>
-
-    <section class="section-padding">
-      <b-container>
-        <b-row class="align-items-stretch">
-          <b-col
-            class="tool-card"
-            cols="12"
-            sm="6"
-            md="6"
-            lg="3"
-            v-for="tool in tools"
-            :key="tool.name"
+          <section
+            v-for="person in people"
+            :key="person.full_name"
+            class="section-padding"
           >
-            <b-card class="h-100">
-              <b-card-body class="h-100 d-flex flex-column">
-                <div class="justify-content-center" :style="tool.img_bg_style">
-                  <img class="tool-image img-fluid" :src="tool.image_url" />
-                </div>
-                <b-card-title class="card-padding">{{
-                  tool.name
-                }}</b-card-title>
-                <b-card-text class="card-padding my-auto">{{ tool.tagline }}</b-card-text>
-                <b-button
-                  :href="tool.website"
-                  class="mt-auto"
-                  variant="outline-secondary"
-                  >Website</b-button
+            <b-container>
+              <b-row>
+                <b-col lg="4" md="4" sm="6" cols="12">
+                  <img class="img-fluid" :src="person.picture" />
+                </b-col>
+                <b-col class="text-left">
+                  <h4>{{ person.full_name }}</h4>
+                  <h5>Bio</h5>
+                  <p>{{ person.bio }}</p>
+                  <br />
+                  <h5>Responsibilites</h5>
+                  <p>{{ person.responsibilities }}</p>
+                </b-col>
+                <b-col
+                  lg="2"
+                  md="3"
+                  sm="4"
+                  cols="12"
+                  class="text-center my-auto"
                 >
-              </b-card-body>
-            </b-card>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+                  <p>{{ person.commits }} commits</p>
+                  <p>{{ person.issues }} issues</p>
+                  <p>{{ person.tests }} unit tests</p>
+                </b-col>
+              </b-row>
+            </b-container>
+          </section>
+
+          <section class="text-left section-padding">
+            <b-container>
+              <h3>Repo Information:</h3>
+            </b-container>
+          </section>
+
+          <section class="section-padding">
+            <b-container>
+              <b-row>
+                <b-col>
+                  <b-button
+                    href="https://gitlab.com/jacoblubecki/cs329e-idb/issues"
+                    variant="outline-secondary"
+                  >
+                    Gitlab Issue Tracker</b-button
+                  >
+                </b-col>
+                <b-col>
+                  <b-button
+                    href="https://gitlab.com/jacoblubecki/cs329e-idb"
+                    variant="outline-secondary"
+                  >
+                    Gitlab Repo</b-button
+                  >
+                </b-col>
+                <b-col>
+                  <b-button
+                    href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home"
+                    variant="outline-secondary"
+                  >
+                    Gitlab Technical Report (Wiki)</b-button
+                  >
+                </b-col>
+              </b-row>
+            </b-container>
+          </section>
+
+          <section class="text-left section-padding">
+            <b-container>
+              <h3>Tools:</h3>
+            </b-container>
+          </section>
+
+          <section class="section-padding">
+            <b-container>
+              <b-row class="align-items-stretch">
+                <b-col
+                  class="tool-card"
+                  cols="12"
+                  sm="6"
+                  md="6"
+                  lg="3"
+                  v-for="tool in tools"
+                  :key="tool.name"
+                >
+                  <b-card class="h-100">
+                    <b-card-body class="h-100 d-flex flex-column">
+                      <div
+                        class="justify-content-center"
+                        :style="tool.img_bg_style"
+                      >
+                        <img
+                          class="tool-image img-fluid"
+                          :src="tool.image_url"
+                        />
+                      </div>
+                      <b-card-title class="card-padding">{{
+                        tool.name
+                      }}</b-card-title>
+                      <b-card-text class="card-padding my-auto">{{
+                        tool.tagline
+                      }}</b-card-text>
+                      <b-button
+                        :href="tool.website"
+                        class="mt-auto"
+                        variant="outline-secondary"
+                        >Website</b-button
+                      >
+                    </b-card-body>
+                  </b-card>
+                </b-col>
+              </b-row>
+            </b-container>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -252,5 +272,49 @@ export default {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-</style>
+.fade-container {
+  animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
+.text-scroll-bg {
+  background-color: white;
+  width: 1920px;
+  height: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+}
+.bg {
+  padding-top: 0;
+
+  margin-bottom: 0px;
+
+  /* The image used */
+  background-image: url("../assets/home-background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  align-content: center;
+
+  position: sticky;
+}
+</style>

@@ -1,34 +1,43 @@
 <template>
-  <div>
+  <div class="evolution">
     <Navbar />
-    <b-jumbotron header="Evolutions" lead="First Pokémon in evolution chain is displayed." />
-    <section class="section-padding">
-      <b-container class="justify-content-center">
-        <b-row>
-          <b-col
-            cols="12"
-            sm="6"
-            md="4"
-            lg="3"
-            v-for="p in pokemon"
-            v-bind:key="p.id"
-          >
-            <b-card style="margin-top: 10px;">
-              <SpriteBasic
-                v-bind:name="p.display_name"
-                v-bind:id="p.id"
-                v-bind:types="p.types"
-              />
-              <router-link
-                v-bind:to="'/evolutions/' + p.name"
-                class="btn btn-outline-dark"
-                >Evolution Chain</router-link
-              >
-            </b-card>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <div class="bg">
+      <div class="fade-container">
+        <div class="container text-scroll-bg">
+          <b-jumbotron
+            header="Evolutions"
+            lead="First Pokémon in evolution chain is displayed."
+          />
+          <section class="section-padding">
+            <b-container class="justify-content-center">
+              <b-row>
+                <b-col
+                  cols="12"
+                  sm="6"
+                  md="4"
+                  lg="3"
+                  v-for="p in pokemon"
+                  v-bind:key="p.id"
+                >
+                  <b-card style="margin-top: 10px;">
+                    <SpriteBasic
+                      v-bind:name="p.display_name"
+                      v-bind:id="p.id"
+                      v-bind:types="p.types"
+                    />
+                    <router-link
+                      v-bind:to="'/evolutions/' + p.name"
+                      class="btn btn-outline-dark"
+                      >Evolution Chain</router-link
+                    >
+                  </b-card>
+                </b-col>
+              </b-row>
+            </b-container>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -47,7 +56,7 @@ export default {
       pokemon: [
         {
           name: "ekans",
-          display_name:"Ekans",
+          display_name: "Ekans",
           id: 23,
           types: [this.$types["poison"]]
         },
@@ -62,7 +71,7 @@ export default {
           display_name: "Magikarp",
           id: 129,
           types: [this.$types["water"]]
-        },
+        }
       ]
     };
   }
@@ -72,5 +81,51 @@ export default {
 <style scoped>
 .section-padding {
   padding: 15px 0;
+}
+.fade-container {
+  padding-top: 0px;
+  animation: FadeIn 1.5s 1 forwards;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.text-scroll-bg {
+  background-color: white;
+  width: 1920px;
+  height: 1500px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+}
+.bg {
+  padding-top: 0;
+
+  margin-bottom: 0px;
+
+  /* The image used */
+  background-image: url("../assets/home-background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  align-content: center;
+
+  position: sticky;
 }
 </style>

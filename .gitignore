@@ -118,10 +118,15 @@ dmypy.json
 
 # == Custom Entries ==
 
-.DS_Store
 .vscode/
 node_modules/
 idb/**/gen
 lib/
-!IDB*.log
 scrape/csv/
+.DS_Store
+ignore-*.*
+app.yaml
+
+# == Explicitly Keep ==
+
+!IDB*.log
