@@ -1,25 +1,34 @@
 #import os
 import unittest
 from unittest import main, TestCase
+import requests
 
+from pathlib import Path
 import sys
-sys.path.append("../idb/")
+
+_IDB_DIR = Path(__file__).parent.parent.absolute()
+print(_IDB_DIR)
+sys.path.append(str(_IDB_DIR))
+
+from idb import api, app, db, data
 
 from flask import request, json, jsonify, session, Blueprint
-from idb import api,app, data, db
 
-app = Flask(__name__)
-app.register_blueprint(api)
+#
+#app = Flask(__name__)
+#app.register_blueprint(api)
     # “””Test case for the client methods.”””
 
-        
+URL = 'http://127.0.0.1:8000/pokemon/ekans'
 
-
-class ApiTests(unittest.TestCase):
+print("Not running test")
+class TestApi(unittest.TestCase):
     
-    def setUp(self):
-        app.app.config["TESTING"] = True
-        self.app = app.app.test_client()
+    
+    def testsetUp(self):
+        
+        app.config['TESTING'] = True
+        self.app = app.test_client()
         
     
     
@@ -27,38 +36,41 @@ class ApiTests(unittest.TestCase):
     
         # Test of pokemon get function function
         
-        def test_get_pokemon1(self):
-            with app.test_request_context():
-                # mock object
-                
-                target = "bulbasaur"
-                out = self.app.get('api/pokemon/bulbasaur')
-                first_poke = json.loads(out.data['identifier'](as_text=True))
+    def test_get_pokemon1(self):
+        print("running Test")
+        with app.test_request_context():
+        
+            # mock object
+        
+            target = "bulbasaur"
+#            out = api.get('api/pokemon/bulbasaur')
+            out = requests.get(api('/pokemon/bulbasaur'))
+            first_poke = json.loads(out.data['identifier'](as_text=True))
+        
+        
+        
+        # Passing the mock object
+        response = [
+                    {
+                    "name": "Bulbasaur",
+                    "genus": "Seed Pokémon",
+                    "identifier": "bulbasaur",
+                    "evolution_chain": 1,
+                    "color": "green",
+                    "since_gen": 1,
+                    "evolves_from": null,
+                    "type1": 12,
+                    "type2": 4,
+                    "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
+                    "has_alt_form": false,
+                    "id": 1,
+                    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+                    "image": "https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/600px-001Bulbasaur.png"
+                    
+                    }
+                    ]
             
-            
-            
-            # Passing the mock object
-            response = [
-                        {
-                        "name": "Bulbasaur",
-                        "genus": "Seed Pokémon",
-                        "identifier": "bulbasaur",
-                        "evolution_chain": 1,
-                        "color": "green",
-                        "since_gen": 1,
-                        "evolves_from": null,
-                        "type1": 12,
-                        "type2": 4,
-                        "flavor_text": "Bulbasaur can be seen napping in bright sunlight.\nThere is a seed on its back. By soaking up the sun’s rays,\nthe seed grows progressively larger.",
-                        "has_alt_form": false,
-                        "id": 1,
-                        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-                        "image": "https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/600px-001Bulbasaur.png"
-                        
-                        }
-                        ]
-                
-            self.assertEqual(out, response)
+        self.assertEqual(out, response)
                 
         def test_get_pokemon2(self):
             with app.test_request_context():
