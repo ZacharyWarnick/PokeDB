@@ -1,82 +1,92 @@
 <template>
   <div class="Type" style="padding-left">
     <Navbar />
-    <b-container>
-      <b-jumbotron
-        class="section-padding"
-        :header="capitalize($route.params.name)"
-        header-tag="h2"
-      />
-    </b-container>
-    <section class="section-padding">
-      <b-container>
-        <b-row>
-          <b-col md="6" class="my-auto">
-            <p class="lead text-justify">{{ all[$route.params.name].info }}</p>
-          </b-col>
-          <b-col md="6">
-            <img :src="all[$route.params.name].image" width="320px" />
-          </b-col>
-        </b-row>
-        <hr />
-        <b-row>
-          <b-col md="6" class="my-auto">
-            <p class="text-justify">
-              {{ all[$route.params.name].info2 }}
-            </p>
-          </b-col>
+    <div class="bg">
+      <div class="container text-scroll-bg">
+        <b-container>
+          <b-jumbotron
+            class="section-padding"
+            :header="capitalize($route.params.name)"
+            header-tag="h2"
+          />
+        </b-container>
+        <section class="section-padding">
+          <b-container>
+            <b-row>
+              <b-col md="6" class="my-auto">
+                <p class="lead text-justify">
+                  {{ all[$route.params.name].info }}
+                </p>
+              </b-col>
+              <b-col md="6">
+                <img :src="all[$route.params.name].image" width="320px" />
+              </b-col>
+            </b-row>
+            <hr />
+            <b-row>
+              <b-col md="6" class="my-auto">
+                <p class="text-justify">
+                  {{ all[$route.params.name].info2 }}
+                </p>
+              </b-col>
 
-          <b-col md="6">
-            <b-container>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="table-strong" scope="col">Strong Against</th>
-                    <th class="table-weak" scope="col">Weak Against</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr
-                    v-for="i in Math.max(
-                      all[$route.params.name].advantages.length,
-                      all[$route.params.name].weaknesses.length
-                    )"
-                    :key="i"
-                  >
-                    <td class="table-strong">
-                      {{
-                        capitalize(all[$route.params.name].advantages[i - 1])
-                      }}
-                    </td>
-                    <td class="table-weak">
-                      {{
-                        capitalize(all[$route.params.name].weaknesses[i - 1])
-                      }}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </b-container>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
-    <section class="section-padding">
-      <h2>Pokemon of this type:</h2>
-      <b-container class="d-flex justify-content-center">
-        <b-row class="align-items-center">
-          <b-col v-for="p in all[$route.params.name].related" :key="p.id">
-            <b-card>
-              <SpriteBasic
-                v-bind:name="p.name"
-                v-bind:id="p.id"
-                v-bind:types="p.types"
-              />
-            </b-card>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+              <b-col md="6">
+                <b-container>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="table-strong" scope="col">Strong Against</th>
+                        <th class="table-weak" scope="col">Weak Against</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr
+                        v-for="i in Math.max(
+                          all[$route.params.name].advantages.length,
+                          all[$route.params.name].weaknesses.length
+                        )"
+                        :key="i"
+                      >
+                        <td class="table-strong">
+                          {{
+                            capitalize(
+                              all[$route.params.name].advantages[i - 1]
+                            )
+                          }}
+                        </td>
+                        <td class="table-weak">
+                          {{
+                            capitalize(
+                              all[$route.params.name].weaknesses[i - 1]
+                            )
+                          }}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </b-container>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+        <section class="section-padding">
+          <h2>Pokemon of this type:</h2>
+          <b-container class="d-flex justify-content-center">
+            <b-row class="align-items-center">
+              <b-col v-for="p in all[$route.params.name].related" :key="p.id">
+                <b-card>
+                  <SpriteBasic
+                    v-bind:name="p.name"
+                    v-bind:id="p.id"
+                    v-bind:types="p.types"
+                  />
+                </b-card>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -285,5 +295,39 @@ Color of tables or fromatting subject to change
 
 .table-weak {
   background-color: rgba(255, 0, 0, 0.7);
+}
+
+.text-scroll-bg {
+  background-color: white;
+  width: 1920px;
+  height: 1500px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+  box-shadow: 4px 4px 4px;
+
+  animation: textUP 1.5s 1 forwards;
+}
+.bg {
+  padding-top: 0;
+
+  margin-bottom: 0px;
+
+  /* The image used */
+  background-image: url("../assets/home-background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  align-content: center;
+
+  position: sticky;
 }
 </style>
