@@ -1,16 +1,17 @@
 #import os
-import unittest import main, TestCase
+import unittest
+from unittest import main, TestCase
 
 import sys
-sys.path.append("../")
+sys.path.append("../idb/")
 
 from flask import request, json, jsonify, session, Blueprint
-from idb import api, app, db, data
+from idb import api,app, data, db
 
 app = Flask(__name__)
 app.register_blueprint(api)
     # “””Test case for the client methods.”””
-    def setup(self):
+
         
 
 
@@ -19,7 +20,7 @@ class ApiTests(unittest.TestCase):
     def setUp(self):
         app.app.config["TESTING"] = True
         self.app = app.app.test_client()
-    
+        
     
     
     
@@ -57,17 +58,17 @@ class ApiTests(unittest.TestCase):
                         }
                         ]
                 
-                    self.assertEqual(out, response)
+            self.assertEqual(out, response)
                 
-            def test_get_pokemon2(self):
-                with app.test_request_context():
-            # mock object
+        def test_get_pokemon2(self):
+            with app.test_request_context():
+        # mock object
             
             
             
-            target = "Krookodile"
-            out = self.app.get('api/pokemon/krookodile')
-            first_poke = json.loads(out.data['identifier'](as_text=True))
+                target = "Krookodile"
+                out = self.app.get('api/pokemon/krookodile')
+                first_poke = json.loads(out.data['identifier'](as_text=True))
                         # Passing the mock object
             response = [
                         {
@@ -91,35 +92,35 @@ class ApiTests(unittest.TestCase):
                 
             self.assertEqual(out, response)
             
-            def test_get_pokemon3(self):
-                with app.test_request_context():
-                    target = "Bruxish"
-                        # mock object
+        def test_get_pokemon3(self):
+            with app.test_request_context():
+                target = "Bruxish"
+                    # mock object
                 out = self.app.get('api/pokemon/bruxish')
                 first_poke = json.loads(out.data['identifier'](as_text=True))
-                            # Passing the mock object
-                response = [
-                            {
-                            "name": "Bruxish",
-                            "genus": "Gnash Teeth Pokémon",
-                            "identifier": "bruxish",
-                            "evolution_chain": null,
-                            "color": "pink",
-                            "since_gen": 7,
-                            "evolves_from": null,
-                            "type1": 11,
-                            "type2": 14,
-                            "flavor_text": "It burrows beneath the sand, radiating\npsychic power from the protuberance on its\nhead. It waits for prey as it surveys the area.",
-                            "has_alt_form": false,
-                            "id": 779,
-                            "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
-                            "image": "https://archives.bulbagarden.net/media/upload/thumb/9/92/779Bruxish.png/600px-779Bruxish.png"
-                            
-                            }
-                            ]
-                # data = json.loads(out.get_data(as_text=True))
-                # Assert response
-                self.assertEqual(out, response)
+                        # Passing the mock object
+            response = [
+                        {
+                        "name": "Bruxish",
+                        "genus": "Gnash Teeth Pokémon",
+                        "identifier": "bruxish",
+                        "evolution_chain": null,
+                        "color": "pink",
+                        "since_gen": 7,
+                        "evolves_from": null,
+                        "type1": 11,
+                        "type2": 14,
+                        "flavor_text": "It burrows beneath the sand, radiating\npsychic power from the protuberance on its\nhead. It waits for prey as it surveys the area.",
+                        "has_alt_form": false,
+                        "id": 779,
+                        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
+                        "image": "https://archives.bulbagarden.net/media/upload/thumb/9/92/779Bruxish.png/600px-779Bruxish.png"
+                        
+                        }
+                        ]
+            # data = json.loads(out.get_data(as_text=True))
+            # Assert response
+            self.assertEqual(out, response)
 
                         
                         
@@ -324,7 +325,7 @@ class ApiTests(unittest.TestCase):
         def test_api_Types_1(self):
             with app.test_request_context():
                 # mock object
-            out = self.app.get('types/normal')
+                out = self.app.get('types/normal')
             # Passing the mock object
             response = [
                         {
@@ -358,9 +359,9 @@ class ApiTests(unittest.TestCase):
                         
                         }
                         ]
-                data = json.loads(out.data(as_text=True))
+            data = json.loads(out.data(as_text=True))
                         # Assert response
-                self.assertEqual(data, response)
+            self.assertEqual(data, response)
 
         def test_api_Types_2(self):
             with app.test_request_context():
@@ -399,9 +400,9 @@ class ApiTests(unittest.TestCase):
                         
                         }
                         ]
-                data = json.loads(out.data(as_text=True))
+            data = json.loads(out.data(as_text=True))
                             # Assert response
-                self.assertEqual(data, response)
+            self.assertEqual(data, response)
         
         def test_api_Types_3(self):
             with app.test_request_context():
@@ -440,9 +441,9 @@ class ApiTests(unittest.TestCase):
                         
                         }
                         ]
-                data = json.loads(out.data(as_text=True))
-                        # Assert response
-                self.assertEqual(data, response)
+            data = json.loads(out.data(as_text=True))
+                    # Assert response
+            self.assertEqual(data, response)
 
 
 #class TestFunctions(TestCase):
