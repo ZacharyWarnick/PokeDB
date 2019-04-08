@@ -17,8 +17,9 @@ class DefaultConfig(object):
     DEBUG = False
     TESTING = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DB_STRING', _DEFAULT_DB_STRING)
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     TABLE_DATA_DIR = _get_data_dir()
 
 
 class Production(DefaultConfig):
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    pass
