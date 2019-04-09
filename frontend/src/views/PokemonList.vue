@@ -4,41 +4,46 @@
     <div class="bg">
       <div class="fade-container">
         <div class="container text-scroll-bg">
+
           <b-container class="section-padding">
             <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
           </b-container>
-          <Pagination 
-            vbind:currentPage="p.current_page"
-            v-bind:rows="p.page_count
-            v-bind:perPage="p.per_page"
-          />
-          <section>
-            <b-container>
-              <b-row>
-                <b-col
-                  cols="12"
-                  sm="6"
-                  md="4"
-                  lg="3"
-                  v-for="p in pokemon.data"
-                  v-bind:key="p.id"
-                >
-                  <b-card class="row-card shadow-sm">
-                    <SpriteBasic
-                      v-bind:name="p.name"
-                      v-bind:id="p.id"
-                      v-bind:types="p.types"
-                    />
-                    <router-link
-                      v-bind:to="'/pokemon/' + p.identifier"
-                      class="btn btn-outline-dark"
-                      >Info</router-link
-                    >
-                  </b-card>
-                </b-col>
-              </b-row>
-            </b-container>
-          </section>
+          <div class="overflow-auto">
+            <Pagination 
+              v-bind:currentPage="pokemon.current_page"
+              v-bind:rows="pokemon.data.length"
+              v-bind:perPage="pokemon.per_page"
+            />
+            <section>
+              <b-container>
+                <b-row>
+                  <b-col
+                    cols="12"
+                    sm="6"
+                    md="4"
+                    lg="3"
+                    v-for="p in pokemon.data"
+                    v-bind:key="p.id"
+                    :per-page="pokemon.per_page"
+                    :current-page="pokemon.current_page"
+                  >
+                    <b-card class="row-card shadow-sm">
+                      <SpriteBasic
+                        v-bind:name="p.name"
+                        v-bind:id="p.id"
+                        v-bind:types="p.types"
+                      />
+                      <router-link
+                        v-bind:to="'/pokemon/' + p.identifier"
+                        class="btn btn-outline-dark"
+                        >Info</router-link
+                      >
+                    </b-card>
+                  </b-col>
+                </b-row>
+              </b-container>
+            </section>
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +73,7 @@ export default {
     getPokemonListing({ sort: "id", order: "ASC", page: 1 }).then(
       response => (this.pokemon = response.data)
     );
-  };
+  }
 };
 </script>
 
