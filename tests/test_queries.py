@@ -131,12 +131,22 @@ class QueryTest(TestCase):
 
     def test_evolution(self):
         bases = ['bulbasaur', 'charmander', 'squirtle']
-        for i in range(0, 3):
+        for i in range(1, 4):
             chain = data.query_evolution(i)
             base = chain['stages'][0]['evolves_from']
-            self.assertEqual(base['identifier'], bases[i])
+            self.assertEqual(base['identifier'], bases[i - 1])
 
-    def test_type_id_sort(self):
+        eevee_chain_id = 67
+        eevee_chain = data.query_evolution(eevee_chain_id)
+        self.assertEqual(len(eevee_chain['stages']), 12)
+
+        eeveelutions = set()
+        for s in eevee_chain['stages']:
+            eeveelutions.add(s['pokemon']['identifier'])
+
+        self.assertEqual(len(eeveelutions), 8)
+
+    def test_type_sorts(self):
         keys = ['id', 'name', 'count', 'stats', 'adv']
         first = ['normal', 'bug', 'ice', 'bug', 'grass']
         last = ['fairy', 'water', 'water', 'dragon', 'steel']
@@ -144,6 +154,13 @@ class QueryTest(TestCase):
         for (k, f, l) in zip(keys, first, last):
             with self.subTest(k):
                 self._test_type_sort(k, f, l)
+
+    def test_type(self):
+        normal = data.query_type('normal')
+        normal_by_id = data.query_type(1)
+
+        self.assertEqual(normal['identifier'], 'normal')
+        self.assertEqual(normal, normal_by_id)
 
 
 if __name__ == '__main__':

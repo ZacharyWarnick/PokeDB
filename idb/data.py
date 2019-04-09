@@ -58,7 +58,7 @@ def _sort_evolution_stages(stages):
         poke_id = item['pokemon']['id']
 
         pre_evolution = item['evolves_from']
-        for i in range(5):
+        for i in range(5):  # pragma: no branch
             # No Pokémon in the database should loop more than 2 times.
             # This guarantees that erroneous data won't cause an infinite loop.
             if pre_evolution is None:
