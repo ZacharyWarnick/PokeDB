@@ -1,17 +1,15 @@
-#!/usr/bin/env python3
-#“””Tests for Basic Functions”””
-import sys
-import json
+import unittest
 from unittest import main, TestCase
-sys.path.append("../")
-from idb import api
-from idb import app
+import sys
+sys.path.insert(0, '/Users/ian/gitlab/cs329e-idb/idb')
+import api, app, db, data
+from flask import request, json, jsonify, session, Blueprint
 
 class TestFunctions(TestCase):
 #“””Test case for the client methods.”””
     def setup(self):
-        app.app.config["TESTING"] = True
-        self.app = app.app.test_client()
+        app.config["TESTING"] = True
+        self.app = app.test_client()
         # Test of Output function
         
         def test_api_pokemon_1(self):
