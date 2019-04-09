@@ -8,31 +8,16 @@
             header="Evolutions"
             lead="First Pokémon in evolution chain is displayed."
           />
-          <div class="overflow-auto">
-          <b-pagination
-            v-model="currentPage"
-            :total-rows="rows"
-            :per-page="perPage"
-            first-text="First"
-            prev-text="Prev"
-            next-text="Next"
-            last-text="Last"
-            align="center"
-            aria-controls="mycard"
-          ></b-pagination>
           <section class="section-padding">
             <b-container class="justify-content-center">
               <b-row>
                 <b-col
-                  id="mycard"
                   cols="12"
                   sm="6"
                   md="4"
                   lg="3"
                   v-for="p in pokemon"
                   v-bind:key="p.id"
-                  :per-page="1"
-                  :current-page="currentPage"
                 >
                   <b-card style="margin-top: 10px;">
                     <SpriteBasic
@@ -51,7 +36,6 @@
             </b-container>
           </section>
         </div>
-        </div>
       </div>
     </div>
   </div>
@@ -69,9 +53,6 @@ export default {
   },
   data() {
     return {
-      rows: 3,
-      perPage: 1,
-      currentPage: 1,
       pokemon: [
         {
           name: "ekans",
