@@ -1,24 +1,32 @@
+from flask import request, json, jsonify, session, Blueprint
+import sys
 import unittest
 from unittest import main, TestCase
-import sys
-sys.path.insert(0, '/Users/ian/gitlab/cs329e-idb/idb')
-import api, app, db, data
-from flask import request, json, jsonify, session, Blueprint
+from pathlib import Path
+
+_IDB_DIR = Path(__file__).parent.parent.absolute()
+
+sys.path.insert(0, str(_IDB_DIR))
+
+from idb import app  # noqa: E402
+from models import db  # noqa: E402
+import api  # noqa: E402
+
 
 class TestFunctions(TestCase):
-#“””Test case for the client methods.”””
+    # “””Test case for the client methods.”””
     def setup(self):
         app.config["TESTING"] = True
         self.app = app.test_client()
         # Test of Output function
-        
+
         def test_api_pokemon_1(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Pokemon.get()
             # Passing the mock object
             response = [
-              {
+                {
                     "name": "Bulbasaur",
                     "genus": "Seed Pokémon",
                     "identifier": "bulbasaur",
@@ -34,7 +42,7 @@ class TestFunctions(TestCase):
                     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
                     "image": "https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/600px-001Bulbasaur.png"
 
-               }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -42,11 +50,11 @@ class TestFunctions(TestCase):
 
         def test_api_pokemon_2(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Pokemon.get()
             # Passing the mock object
             response = [
-              {
+                {
                     "name": "Krookodile",
                     "genus": "Intimidation Pokémon",
                     "identifier": "krookodile",
@@ -62,7 +70,7 @@ class TestFunctions(TestCase):
                     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
                     "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e5/553Krookodile.png/600px-553Krookodile.png"
 
-               }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -70,11 +78,11 @@ class TestFunctions(TestCase):
 
         def test_api_pokemon_3(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Pokemon.get()
             # Passing the mock object
             response = [
-              {
+                {
                     "name": "Bruxish",
                     "genus": "Gnash Teeth Pokémon",
                     "identifier": "bruxish",
@@ -90,7 +98,7 @@ class TestFunctions(TestCase):
                     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
                     "image": "https://archives.bulbagarden.net/media/upload/thumb/9/92/779Bruxish.png/600px-779Bruxish.png"
 
-               }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -99,7 +107,7 @@ class TestFunctions(TestCase):
         # Tests cases if Pokemon doesn't exist
         def test_api_pokemon_none(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Pokemon.get()
             # Passing the mock object
             response = None
@@ -109,11 +117,11 @@ class TestFunctions(TestCase):
 
         def test_api_evolutions_1(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Evolutions.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "evolves_from": 1,
                     "result": 2,
                     "chain": 1,
@@ -123,7 +131,7 @@ class TestFunctions(TestCase):
                     "difficulty": 0.46
 
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -131,11 +139,11 @@ class TestFunctions(TestCase):
 
         def test_api_evolutions_2(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Evolutions.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "evolves_from": 444,
                     "result": 445,
                     "chain": 230,
@@ -144,19 +152,19 @@ class TestFunctions(TestCase):
                     "id": 222,
                     "difficulty": 1.26
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
-            self.assertEqual(data['221'], response) 
+            self.assertEqual(data['221'], response)
 
         def test_api_evolutions_3(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Evolutions.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "evolves_from": 729,
                     "result": 730,
                     "chain": 376,
@@ -166,7 +174,7 @@ class TestFunctions(TestCase):
                     "difficulty": 0.91
 
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -175,7 +183,7 @@ class TestFunctions(TestCase):
         # Tests cases if Evolutions doesn't exist
         def test_api_evolutions_none(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Evolutions.get()
             # Passing the mock object
             response = None
@@ -185,11 +193,11 @@ class TestFunctions(TestCase):
 
         def test_api_forms_1(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Forms.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "identifier": "normal",
                     "pokemon_id": 386,
                     "pokemon_variant": 386,
@@ -199,7 +207,7 @@ class TestFunctions(TestCase):
                     "type2": None,
                     "id": 386
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -207,11 +215,11 @@ class TestFunctions(TestCase):
 
         def test_api_forms_2(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Forms.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "identifier": "incarnate",
                     "pokemon_id": 642,
                     "pokemon_variant": 642,
@@ -221,7 +229,7 @@ class TestFunctions(TestCase):
                     "type2": 3,
                     "id": 642
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -229,11 +237,11 @@ class TestFunctions(TestCase):
 
         def test_api_forms_3(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Forms.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "identifier": "aria",
                     "pokemon_id": 648,
                     "pokemon_variant": 648,
@@ -244,7 +252,7 @@ class TestFunctions(TestCase):
                     "id": 648
 
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -253,7 +261,7 @@ class TestFunctions(TestCase):
         # Tests cases if Forms doesn't exist
         def test_api_forms_none(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Forms.get()
             # Passing the mock object
             response = None
@@ -263,11 +271,11 @@ class TestFunctions(TestCase):
 
         def test_api_base_stats_1(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Base_Stats.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "hp": 45,
                     "attack": 49,
                     "defense": 49,
@@ -276,7 +284,7 @@ class TestFunctions(TestCase):
                     "speed": 45,
                     "id": 1
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -284,11 +292,11 @@ class TestFunctions(TestCase):
 
         def test_api_base_stats_2(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Base_Stats.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "hp": 50,
                     "attack": 50,
                     "defense": 40,
@@ -298,7 +306,7 @@ class TestFunctions(TestCase):
                     "id": 535
 
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -306,11 +314,11 @@ class TestFunctions(TestCase):
 
         def test_api_base_stats_3(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Base_Stats.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "hp": 79,
                     "attack": 103,
                     "defense": 120,
@@ -320,7 +328,7 @@ class TestFunctions(TestCase):
                     "id": 10036
 
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -329,7 +337,7 @@ class TestFunctions(TestCase):
         # Tests cases if BaseStats doesn't exist
         def test_api_base_stats_none(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Base_Stats.get()
             # Passing the mock object
             response = None
@@ -339,11 +347,11 @@ class TestFunctions(TestCase):
 
         def test_api_Types_1(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Types.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "damage_class": "physical",
                     "identifier": "normal",
                     "vs_normal": 1.0,
@@ -372,7 +380,7 @@ class TestFunctions(TestCase):
                     "desc_atk": "The Normal type is the only type that is not super effective against any other type. \n\nThe combination of Normal and Ground-type moves provides good neutral coverage, with only five type combinations resisting both, because Ground covers both of the types that resist Normal. Their inability to hit Ghost-type Pokémon can be Noneified by using Foresight, Odor Sleuth, or by Pokémon with the Ability Scrappy. In these cases, it will provide unresisted coverage when paired with Fighting-type moves (excluding Pokémon with Wonder Guard). \n\nOn average, fully evolved Pokémon with the Normal type have the lowest base Special Attack of all types. \n",
                     "desc_def": "The Normal type is tied with the Electric type for the fewest defensive weaknesses, but with no resistances and one immunity, it is also tied with Ice as the least resistant type. Many Normal-type Pokémon with a secondary type mitigate their weakness with the secondary type (as with Flying, the type most commonly paired with Normal), leaving them with only the weaknesses of their secondary type. \n\nNormal-type Pokémon, on average, have the lowest Defense and Special Defense of all Pokémon and of fully evolved Pokémon.\n"
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -380,11 +388,11 @@ class TestFunctions(TestCase):
 
         def test_api_Types_2(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Types.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "damage_class": "special",
                     "identifier": "fire",
                     "vs_normal": 1.0,
@@ -413,7 +421,7 @@ class TestFunctions(TestCase):
                     "desc_atk": "During harsh sunlight or extremely harsh sunlight, the power of Fire-type attacks is increased by 50%. The power of Fire-type attacks is decreased by 50% during rain, while all Fire-type moves will fail during heavy rain. When Water Sport is in the effect, the power of Fire-type moves are decreased by 50%. When used under the effect of Powder, Fire attacks will damage the user by 1/4 of its max HP instead of executing normally.\n\nBecause Fire is super effective against Grass and Bug, it combines well with Ground-type attacks. \n",
                     "desc_def": "Very few Fire-type Pokémon have a secondary type that negates their weakness to Water-type attacks. On the other hand, most Fire types can learn Solar Beam to counter all three of the type's weaknesses. \n\nThe Fire type grants immunity to burns and the sea of fire caused by Grass Pledge and Fire Pledge. It enables the use of Burn Up, though Burn Up removes the user's Fire type.\n"
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -421,11 +429,11 @@ class TestFunctions(TestCase):
 
         def test_api_Types_3(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Types.get()
             # Passing the mock object
             response = [
-            {
+                {
                     "damage_class": "special",
                     "identifier": "fairy",
                     "vs_normal": 1.0,
@@ -454,7 +462,7 @@ class TestFunctions(TestCase):
                     "desc_atk": "Fairy attacks are resisted by Poison, but Poison is weak to Psychic-type moves, which Fairy Pokémon are frequently able to learn. Additionally, all three of the types that resist Fairy are weak to Ground, making Fairy and Ground a strong attacking combination. \n\nFairy-type Pokémon, on average, have the lowest physical Attack of all Pokémon. \n",
                     "desc_def": "The Pokémon of this type have the highest average Special Defense of all types. \n"
 
-            }
+                }
             ]
             data = json.loads(out.get_data(as_text=True))
             # Assert response
@@ -463,7 +471,7 @@ class TestFunctions(TestCase):
         # Tests cases if Type doesn't exist
         def test_api_Types_none(self):
             with app.test_request_context():
-            # mock object
+                # mock object
                 out = api.Types.get()
             # Passing the mock object
             response = None
@@ -473,4 +481,4 @@ class TestFunctions(TestCase):
 
 
 if __name__ == "__main__":
-      main()
+    main()
