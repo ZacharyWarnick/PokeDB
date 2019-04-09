@@ -9,6 +9,8 @@ from unittest import TextTestRunner, TestLoader
 _TEST_DIR = Path(__file__).parent
 _IDB_DIR = _TEST_DIR.parent / 'idb'
 _OUTPUT_DIR = _TEST_DIR / 'cover'
+_RC_FILE = _TEST_DIR.parent / '.coveragerc'
+
 _OUT_PREFIX = 'cover_'
 _OUT_SUFFIX = '.log'
 
@@ -100,15 +102,14 @@ def _run_coverage():
     test_out = StringIO()
     loader = TestLoader()
     runner = TextTestRunner(test_out)
-    test_suite = loader.discover(_TEST_DIR)
 
     # Run coverage on test suites.
     cov = Coverage(
         branch=True,
         include=targets,
-        omit=[],
-        config_file=False)
+        config_file=_RC_FILE)
     cov.start()
+    test_suite = loader.discover(_TEST_DIR)
     runner.run(test_suite)
     cov.stop()
 

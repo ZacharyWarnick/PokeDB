@@ -38,6 +38,8 @@ def parse_sort_args(req):
 
     Query Parameters:
         sort: The sort key to use.
+        order: Either 'ASC' or 'DESC', see data.ASCENDING and data.DESCENDING.
+        page: The page index for pagination (>= 1).
 
     Arguments:
         req: The active `flask.request` object.
@@ -46,7 +48,7 @@ def parse_sort_args(req):
         A 3-tuple containing (sort_key, sort_order, page_index).
     """
     sort_key = req.args.get('sort', '').lower()
-    sort_order = req.args.get('order', data.ORDER_ASCENDING).upper()
+    sort_order = req.args.get('order', data.ASCENDING).upper()
     try:
         page_number = int(req.args.get('page', 1))
     except ValueError:
