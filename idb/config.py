@@ -7,7 +7,7 @@ import os
 
 from pathlib import Path
 
-_DEFAULT_DB_STRING = 'postgres://postgres@localhost:5432/pokedb'
+_DEFAULT_DB_STRING = 'postgresql://postgres@localhost:5432/pokedb'
 
 
 def load(name):
