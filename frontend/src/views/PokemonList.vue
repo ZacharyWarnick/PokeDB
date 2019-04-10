@@ -9,10 +9,11 @@
             <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
           </b-container>
           <div class="overflow-auto">
-            <Pagination 
+            <b-pagination
               v-bind:currentPage="pokemon.current_page"
-              v-bind:rows="pokemon.data.length"
+              v-bind:rows="pokemon.total_items"
               v-bind:perPage="pokemon.per_page"
+              v-bind:toPage="updateListing"
             />
             <section>
               <b-container>
@@ -24,8 +25,6 @@
                     lg="3"
                     v-for="p in pokemon.data"
                     v-bind:key="p.id"
-                    :per-page="pokemon.per_page"
-                    :current-page="pokemon.current_page"
                   >
                     <b-card class="row-card shadow-sm">
                       <SpriteBasic
@@ -64,15 +63,20 @@ export default {
     SpriteBasic,
     Pagination
   },
+  methods: {
+    updateListing(current) {
+      getPokemonListing({ sort: "id", order: "ASC", page: current }).then(
+        response => (this.pokemon = response.data)
+      );
+    }
+  },
   data() {
     return {
       pokemon: null
     };
   },
   mounted() {
-    getPokemonListing({ sort: "id", order: "ASC", page: 1 }).then(
-      response => (this.pokemon = response.data)
-    );
+    this.updateListing(1)
   }
 };
 </script>

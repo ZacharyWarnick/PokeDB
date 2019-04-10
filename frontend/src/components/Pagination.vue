@@ -3,8 +3,9 @@
     <!-- Use text in props -->
     <b-pagination
       v-model="currentPage"
-      :total-rows="rows"
-      :per-page="perPage"
+      v-bind:total-rows="rows"
+      v-bind:per-page="perPage"
+      @input="toPage(currentPage)"
       first-text="First"
       prev-text="Prev"
       next-text="Next"
@@ -21,7 +22,8 @@
         name:"Pagination",
         rows: Number,
         perPage: Number,
-        currentPage: Number
+        currentPage: Number,
+        toPage: Function
       }
     }
   }

@@ -47,6 +47,7 @@ def _pager(pager, data=None):
         'has_prev': pager.has_prev,
         'has_next': pager.has_next,
         'per_page': pager.per_page,
+        'total_items': pager.total,
         'data': data
         }
 
