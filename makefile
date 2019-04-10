@@ -1,5 +1,5 @@
 APP_NAME = idb
-PROJ_PHASE = 2
+PROJ_PHASE = 3
 
 IDB_LOG := IDB$(PROJ_PHASE).log
 
@@ -10,9 +10,11 @@ FILES := \
 # Set Windows/Unix specific commands.
 ifeq ($(shell uname -p), unknown)
 	# Windows
+	LAUNCH := FLASK_APP=$(APP_NAME); flask run --port 8000
 	WHICH := where
 else
 	# Linux/macOS
+	LAUNCH := gunicorn -w 4 $(APP_NAME):app
 	WHICH := which
 endif
 
@@ -41,7 +43,7 @@ config:
 	git config -l
 
 deploy-local:
-	gunicorn -w 4 $(APP_NAME):app
+	$LAUNCH
 
 update-environment:
 	conda update -n base conda

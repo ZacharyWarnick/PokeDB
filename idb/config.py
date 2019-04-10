@@ -1,10 +1,27 @@
-"""Module for describing different execution environment configurations."""
+"""Module for describing different execution environment configurations.
+
+pragma: no cover
+"""
 
 import os
 
 from pathlib import Path
 
 _DEFAULT_DB_STRING = 'postgres://postgres@localhost:5432/pokedb'
+
+
+def load(name):
+    options = {
+        'development': Development,
+        'testing': Testing,
+        'production': DefaultConfig
+        }
+
+    if name not in options:
+        print('Invalid app configuration was specified:', name)
+        print('Using development environment by default.')
+
+    return options.get(name, Development)
 
 
 def _get_data_dir():
@@ -21,5 +38,9 @@ class DefaultConfig(object):
     TABLE_DATA_DIR = _get_data_dir()
 
 
-class Production(DefaultConfig):
-    pass
+class Development(DefaultConfig):
+    DEBUG = True
+
+
+class Testing(DefaultConfig):
+    TESTING = True
