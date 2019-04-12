@@ -43,7 +43,7 @@ config:
 	git config -l
 
 deploy-local:
-	$LAUNCH
+	$(LAUNCH)
 
 update-environment:
 	conda update -n base conda
