@@ -20,7 +20,7 @@ endif
 
 # Stop if conda isn't installed.
 ifeq (,$(shell $(WHICH) conda))
-	$(error "Please make sure conda is installed.")
+        $(error "Please make sure conda is installed.")
 endif
 
 check:
@@ -42,8 +42,12 @@ check:
 config:
 	git config -l
 
+run-flask:
+	$(LAUNCH)
+
 deploy-local:
-	$LAUNCH
+	cd frontend; npm run build;
+	$(LAUNCH)
 
 update-environment:
 	conda update -n base conda

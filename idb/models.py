@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import Index
 
 from model_base import create_base_model
 
@@ -10,6 +11,10 @@ rel = db.relationship
 
 # Used to link a Pokémon's default form. Always yields a unique pair.
 JOIN_POKE_FORM = 'and_(Pokemon.id==Form.id, Pokemon.id==Form.pokemon_id)'
+JOIN_POKE_EVOS = '''
+    or_(Pokemon.id==Evolution.pokemon_id,
+        Pokemon.evolution_chain_id==Evolution.evolution_chain_id)
+'''.strip()
 
 """Automatically generates to_dict methods for each model.
 
@@ -27,6 +32,22 @@ Note:
 _BaseModel = create_base_model(db)
 
 
+_poke_index_ops = {
+    'identifier': 'gin_trgm_ops',
+    'name': 'gin_trgm_ops',
+    'genus': 'gin_trgm_ops',
+    'color': 'gin_trgm_ops',
+    }
+
+
+_type_index_ops = {
+    'identifier': 'gin_trgm_ops',
+    'desc_info': 'gin_trgm_ops',
+    'desc_atk': 'gin_trgm_ops',
+    'desc_def': 'gin_trgm_ops',
+    }
+
+
 class Pokemon(_BaseModel):
     __tablename__ = 'pokemon'
 
@@ -34,6 +55,12 @@ class Pokemon(_BaseModel):
         'evolution_chain_id', 'since_gen', 'first_type', 'second_type', 'name',
         'identifier', 'color', 'sprite', 'has_alt_form'
         ]
+
+    __table_args__ = (
+        Index('poke_query_ix', *_poke_index_ops.keys(),
+              postgresql_ops=_poke_index_ops,
+              postgresql_using='gin'),
+        )
 
     EXTRA_FIELDS = ['image', 'flavor_text', 'forms', 'base_stats']
 
@@ -92,6 +119,12 @@ class Type(_BaseModel):
     """
 
     __tablename__ = 'type'
+
+    __table_args__ = (
+        Index('type_query_ix', *_type_index_ops.keys(),
+              postgresql_ops=_type_index_ops,
+              postgresql_using='gin'),
+        )
 
     __defaultfields__ = ['damage_class', 'identifier']
 
@@ -185,12 +218,20 @@ class Evolution(_BaseModel):
     affection = db.Column(db.Integer)
 
     # Computed
-    evolves_from = rel('Pokemon', foreign_keys=evolves_from_pokemon_id)
-    pokemon = rel('Pokemon', foreign_keys=pokemon_id)
+    evolves_from = rel(
+        'Pokemon', foreign_keys=evolves_from_pokemon_id, lazy=True)
+    pokemon = rel('Pokemon', foreign_keys=pokemon_id, lazy=True)
     party_pokemon = rel('Pokemon', foreign_keys=party_pokemon_id, lazy=True)
     trade_pokemon = rel('Pokemon', foreign_keys=trade_pokemon_id, lazy=True)
     party_type = rel('Type', foreign_keys=party_type_id, lazy=True)
     known_move_type = rel('Type', foreign_keys=known_move_type_id, lazy=True)
+
+    related_pokemon = rel(
+        'Pokemon',
+        backref='pokemon',
+        uselist=True,
+        primaryjoin=JOIN_POKE_EVOS,
+        lazy=True)
 
     def __repr__(self):
         return '{} -> {} ({})'.format(
