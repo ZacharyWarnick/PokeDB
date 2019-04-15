@@ -46,10 +46,7 @@ run-flask:
 	$(LAUNCH)
 
 deploy-local:
-<<<<<<< HEAD
-=======
 	cd frontend; npm run build;
->>>>>>> origin/develop
 	$(LAUNCH)
 
 update-environment:
