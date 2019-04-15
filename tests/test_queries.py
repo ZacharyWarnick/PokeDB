@@ -1,11 +1,16 @@
 import unittest
 
 from unittest import TestCase
-from idb import data
+from idb import data, create_app
 from data import ASCENDING, DESCENDING
 
 
 class QueryTest(TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        app = create_app('testing')
+        app.app_context().push()
 
     def _test_pokemon_sort(self, sort_key, first, last):
         """Tests if a sorted, paged query of Pokémon orders results correctly.
@@ -161,6 +166,9 @@ class QueryTest(TestCase):
 
         self.assertEqual(normal['identifier'], 'normal')
         self.assertEqual(normal, normal_by_id)
+
+    def test_search_eevee(self):
+        data.search('eevee')
 
 
 if __name__ == '__main__':
