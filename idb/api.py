@@ -102,3 +102,11 @@ def get_test_results():  # pragma: no cover
     result = util.get_coverage_result()
     del util
     return jsonify({'output': result})
+
+
+@api.route('/search', methods=['GET'])
+def search():
+    q = request.args.get('q', '')
+    limit = request.args.get('limit')
+    models = request.args.get('models')
+    return jsonify(data.search(q, limit, models))

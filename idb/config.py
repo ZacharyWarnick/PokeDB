@@ -1,13 +1,10 @@
-"""Module for describing different execution environment configurations.
-
-pragma: no cover
-"""
+"""Module for describing different execution environment configurations."""
 
 import os
 
 from pathlib import Path
 
-_DEFAULT_DB_STRING = 'postgres://postgres@localhost:5432/pokedb'
+_DEFAULT_DB_STRING = 'postgresql://postgres@localhost:5432/pokedb'
 
 
 def load(name):
