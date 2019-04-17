@@ -139,6 +139,10 @@ Color of tables or fromatting subject to change
 
 }
 
+.jumbotron {
+  padding: 30px 0px;
+}
+
 .table-strong {
   background-color: rgba(0, 128, 0, 0.7);
 }
