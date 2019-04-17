@@ -57,16 +57,12 @@
         <b-row>
           <b-col md="6">
             <h2>Info</h2>
-            <dl class="dl-horizontal">
-                <dt>Damgage Class:</dt>
-                <dd>{{capitalize(type.damage_class)}}</dd>
-                <dt>Number of Pokémon with this type:</dt>
-                <dd>{{type.pokemon_count}}</dd>
-                <dt>Stat Average:</dt>
-                <dd>{{type.stat_average}}</dd>
-                <dt>Relative Advantage:</dt>
-                <dd>{{type.relative_advantage}}</dd>
-            </dl>            
+            <ul class="list-unstyled info">
+                <li><b>Damgage Class:</b>        {{capitalize(type.damage_class)}}</li>
+                <li><b>Number of Pokémon:</b>    {{type.pokemon_count}}</li>
+                <li><b>Stat Average:</b>         {{type.stat_average}}</li>
+                <li><b>Relative Advantage:</b>   {{type.relative_advantage}}</li>
+            </ul>            
           </b-col>
           <b-col md="6">            
             <h2>Defense</h2>
@@ -182,5 +178,10 @@ Color of tables or fromatting subject to change
   align-content: center;
 
   position: sticky;
+}
+.info {
+  text-align: left;
+  align-content: center;
+  padding-left: 120px;
 }
 </style>
