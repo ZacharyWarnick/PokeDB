@@ -54,10 +54,31 @@
             </p>
           </b-col>
         </b-row>
+        <b-row>
+          <b-col md="6">
+            <h2>Info</h2>
+            <dl class="dl-horizontal">
+                <dt>Damgage Class:</dt>
+                <dd>{{capitalize(type.damage_class)}}</dd>
+                <dt>Number of Pokémon with this type:</dt>
+                <dd>{{type.pokemon_count}}</dd>
+                <dt>Stat Average:</dt>
+                <dd>{{type.stat_average}}</dd>
+                <dt>Relative Advantage:</dt>
+                <dd>{{type.relative_advantage}}</dd>
+            </dl>            
+          </b-col>
+          <b-col md="6">            
+            <h2>Defense</h2>
+            <p>{{type.desc_def}}</p>
+          </b-col>
+        </b-row>
       </b-container>
+    <hr /> 
     </section>
     <section class="section-padding">
-      <h2>Pokemon of this type</h2>
+      <h2>Pokémon of This Type</h2>
+      <h3>There are {{type.pokemon_count}} {{type.identifier}} pokémon </h3>
     </section>
   </div>
   </div>
@@ -111,6 +132,13 @@ Color of tables or fromatting subject to change
 -->
 <style scoped>
 
+#navbar {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+
+}
+
 .table-strong {
   background-color: rgba(0, 128, 0, 0.7);
 }
@@ -124,12 +152,11 @@ Color of tables or fromatting subject to change
   width: 1920px;
   height: 1500px;
 
-  padding-top: 30px;
+  padding-top: 70px;
   padding-bottom: 30px;
   align-content: center;
   box-shadow: 4px 4px 4px;
 
-  animation: textUP 1.5s 1 forwards;
 }
 .bg {
   padding-top: 0;
