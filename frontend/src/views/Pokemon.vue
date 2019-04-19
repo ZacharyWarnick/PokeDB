@@ -13,6 +13,13 @@
                   <strong>{{ pokemon.name }}</strong>
                   {{pokemon.id}}
                 </h2>
+                <h2 v-if="pokemon.second_type != null">
+                  {{capitalize(pokemon.first_type.identifier)}}
+                  {{capitalize(pokemon.second_type.identifier)}}
+                </h2>
+                <h2 v-else>
+                  {{capitalize(pokemon.first_type.identifier)}}
+                </h2>
               </div>
             </div>
             <p class="poke-desc">
@@ -86,6 +93,9 @@ function getID() {
   var lastLocation = pathArray.slice(-1).pop()
 
   return String(lastLocation);
+}
+function getBadges(pokemon) {
+  
 }
 
 //DBpath gives the url from the api
