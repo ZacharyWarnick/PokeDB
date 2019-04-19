@@ -8,13 +8,17 @@
           <b-container class="section-padding">
             <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
           </b-container>
-          <div class="overflow-auto">
             <b-pagination
-              v-bind:currentPage="pokemon.current_page"
-              v-bind:rows="pokemon.total_items"
-              v-bind:perPage="pokemon.per_page"
-              v-bind:toPage="updateListing"
-            />
+              v-model="pokemon.current_page"
+              v-bind:total-rows="pokemon.total_items"
+              v-bind:per-page="pokemon.per_page"
+              @input="updateListing(pokemon.current_page)"
+              first-text="First"
+              prev-text="Prev"
+              next-text="Next"
+              last-text="Last"
+              align="center"
+            ></b-pagination>
             <section>
               <b-container>
                 <b-row>
@@ -42,7 +46,6 @@
                 </b-row>
               </b-container>
             </section>
-          </div>
         </div>
       </div>
     </div>
