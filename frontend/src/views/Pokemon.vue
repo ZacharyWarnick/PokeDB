@@ -61,12 +61,17 @@
               <li>
                 Color: {{capitalize(pokemon.color)}}
               </li>
-              <li>
+              <li class="genus">
                 Genus: {{pokemon.genus}}
               </li>
-              <li>
-                Alternate Form: {{pokemon.has_alt_form}}
+
+              <li v-if="pokemon.has_alt_form == String(true)">
+                Alternate Form: Yes
               </li>
+              <li v-else>
+                Alternate Form: None
+              </li>
+
               <li>
                 Generation: {{pokemon.since_gen}}
               </li>
@@ -93,15 +98,6 @@ function getID() {
   var lastLocation = pathArray.slice(-1).pop()
 
   return String(lastLocation);
-}
-function getBadges(pokemon) {
-  
-}
-
-//DBpath gives the url from the api
-function makeImage(DBpath) {
-  var str = String(pokemon.image);
-  document.getElementById("poke-image").src  = str
 }
 
 export default {
@@ -144,6 +140,9 @@ export default {
   text-align: left;
 }
 
+.genus {
+  text-decoration: line-through;
+}
 .type-badge {
   max-height: 32px;
   height: 100%;
