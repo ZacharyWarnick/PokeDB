@@ -7,13 +7,19 @@ Note:
 """
 
 from collections import defaultdict
-from sqlalchemy import func, or_
+from sqlalchemy import func, or_, not_
 from models import db, Pokemon, Evolution, Type
 
 ITEMS_PER_PAGE = 16
+SEARCH_LIMIT = 5
+ALL_MODELS = 'pokemon,type'
 
 ASCENDING = 'ASC'
 DESCENDING = 'DESC'
+
+
+def to_dict(items, extra_cols):
+    return [it.to_dict(show=extra_cols) for it in items]
 
 
 def _read_pager_items(pager):  # pragma: no cover
@@ -288,7 +294,7 @@ def query_evolution(chain_id):
     data = {
         'id': chain_id,
         'difficulty': sum([it['difficulty'] for it in sorted_result]),
-        'base_pokemon': base_id,
+        'base_pokemon': query_pokemon(base_id),
         'chain_count': len(sorted_result),
         'max_level': None if not levels else max(levels),
         'stages': sorted_result
@@ -352,3 +358,138 @@ def query_type(a_type):
     item = query.first_or_404()
     result = item.to_dict(show=Type.EXTRA_FIELDS)
     return result
+
+
+def _query_related_pokemon(pokemon):
+    """Searchs for the related evolutions of a list of Pokémon.
+
+    Args:
+        pokemon: A list of dictionary representations of models from the
+            Pokémon database.
+
+    Returns:
+        A list of same-structured dicts containing the non-intersection Pokémon
+        from the evolution chains specified by the input.
+    """
+
+    def get_evo(it): return it.evolution_chain_id
+    evolution_chain_ids = list(filter(None, map(get_evo, pokemon)))
+    poke_ids = set(map(lambda it: it.id, pokemon))
+    evo_filter = Pokemon.evolution_chain_id.in_(evolution_chain_ids)
+    id_filter = not_(Pokemon.id.in_(poke_ids))
+    related_pokemon = Pokemon.query.filter(evo_filter, id_filter).all()
+    return related_pokemon
+
+
+def _search_pokemon(query, limit):
+    """Searching for Pokémon based on an input query.
+
+    Args:
+        query: The text which should be searched for in the database.
+        limit: The maximum number of results to receive from the search.
+
+    Returns:
+        A 3-tuple of (relevance, results, related_results). The relavance
+        describes how relevant Pokémon are to the query in general. The related
+        results include Pokémon which share evolution chains with of Pokémon in
+        the primary search results.
+    """
+    similarities = [
+        0.9 * func.similarity(Pokemon.identifier, query),
+        1.1 * func.similarity(Pokemon.genus, query),
+        0.1 * func.similarity(Pokemon.color, query)]
+
+    similarity = sum(similarities)
+    sorts = similarity.desc(), Pokemon.id.asc()
+
+    check_identifier = similarity >= 0.2
+    sql_query = Pokemon.query.add_columns(similarity).filter(check_identifier)
+    result = sql_query.order_by(*sorts).limit(limit)
+    if result.count() > 0:
+        items, scores = zip(*result)
+    else:
+        items, scores = [], []
+
+    related = _query_related_pokemon(items)
+    relevance = max(scores, default=0)
+    extra_cols = ['flavor_text', 'genus']
+    return relevance, to_dict(items, extra_cols), to_dict(related, extra_cols)
+
+
+def _search_types(query, limit):
+    """Searches for types based on an input query.
+
+    Args:
+        query: The text which should be searched for in the database.
+        limit: The maximum number of results to receive from the search.
+
+    Returns:
+        A 2-tuple of (relevance, results). The relavance describes how relevant
+        types are to the query in general.
+    """
+    similarities = [
+        func.similarity(Type.identifier, query),
+        0.6 * func.similarity(Type.desc_info, query),
+        0.2 * func.similarity(Type.desc_atk, query),
+        0.2 * func.similarity(Type.desc_def, query),
+        ]
+    similarity = sum(similarities)
+
+    check_identifier = similarity >= 0.3
+    sql_query = Type.query.add_columns(similarity).filter(check_identifier)
+    result = sql_query.order_by(similarity.desc()).limit(limit)
+    if result.count() > 0:
+        items, scores = zip(*result)
+    else:
+        items, scores = [], []
+
+    relevance = max(scores, default=0)
+    return relevance, to_dict(items, ['desc_info'])
+
+
+def _search_result(score, data, related=None):
+    """Standardizes the format of search result sections.
+
+    Args:
+        score: The relavance score for the entire section.
+        data: The list of results returned by the search.
+        related (optional): A list of results that are related to the results
+            in data, but that would not be picked up by the query.
+
+    Returns:
+        A dict with 'relevance', 'data', and 'related' keys which map to the
+        values given by the input arguments.
+    """
+    return {'relevance': score, 'data': data, 'related': related}
+
+
+def search(query, limit=None, models=None):
+    """Searches the database for Pokémon and type information.
+
+    Args:
+        query: The text used to search the database.
+        limit: The maximum number of results for Pokémon and/or types.
+        models: A string containing 'pokemon' and/or 'type', joined by a comma.
+
+    Returns:
+        The search results as a dict, with 'pokemon' and 'types' as keys. Each
+        key maps to a dict created by the `search_result` function.
+    """
+    limit = limit or SEARCH_LIMIT
+    models = models or ALL_MODELS
+
+    out_types = set(map(str.strip, models.lower().split(',')))
+    out = {}
+    if 'pokemon' in out_types:
+        pokemon_result = _search_pokemon(query, limit)
+        out.update(pokemon=_search_result(*pokemon_result))
+    else:
+        out.update(pokemon=_search_result(0, []))
+
+    if 'type' in out_types:
+        type_result = _search_types(query, limit)
+        out.update(types=_search_result(*type_result))
+    else:
+        out.update(types=_search_result(0, []))
+
+    return out

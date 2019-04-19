@@ -11,8 +11,7 @@ from flask_cors import CORS
 # Need to place local files in module search path.
 sys.path.append(str(Path(__file__).parent.absolute()))
 
-# Local Imports
-from api import api  # noqa: E402
+# Local import
 from models import db  # noqa: E402
 
 
@@ -35,6 +34,7 @@ def create_app(config_name=None):
     """
     import os
     import config
+    from api import api
 
     config_name = config_name or os.environ.get('FLASK_ENV', 'development')
     configuration = config.load(config_name)
@@ -60,15 +60,14 @@ def index(path):
 
 @app.cli.command('reset_db')
 def reset_db():
-    for table in ['pokemon', 'type', 'evolution', 'form', 'base_stats']:
-        db.engine.execute('DROP TABLE if exists {} cascade;'.format(table))
-    db.create_all()
+    from db_util import reset
+    reset()
 
 
 @app.cli.command('create_db')
 def create_db():
-    from create_db import initialize
-    reset_db()
+    from db_util import initialize, reset
+    reset()
     initialize()
 
 
