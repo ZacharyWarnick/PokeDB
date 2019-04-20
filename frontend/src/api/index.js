@@ -27,5 +27,5 @@ export function getTypeListing(sort = "id", order = "ASC", page = 1) {
 }
 
 export function getType(id) {
-  return axios.get(`${API_URL}/types/${id}`);
+  return axios.get(`${API_URL}/types/${id}`)
 }
