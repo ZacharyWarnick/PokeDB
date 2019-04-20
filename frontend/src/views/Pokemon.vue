@@ -19,6 +19,7 @@
                 </h2>
                 <h2 v-else>
                   {{capitalize(pokemon.first_type.identifier)}}
+                  {{chainID.base_pokemon}}
                 </h2>
               </div>
             </div>
@@ -65,7 +66,7 @@
                 Genus: {{pokemon.genus}}
               </li>
 
-              <li v-if="pokemon.has_alt_form == String(true)">
+              <li v-if="pokemon.has_alt_form == true">
                 Alternate Form: Yes
               </li>
               <li v-else>
@@ -79,9 +80,14 @@
           </b-col>
         </b-row>
         <hr>
+        <h2>{{pokemon.name}} is part of this chain</h2>
+        <EvolutionOverview
+          :id="chainID"
+        />
       </section>
       </div>
     </div>
+  </div>
     
 </template>
 
@@ -89,6 +95,7 @@
 import Navbar from "@/components/Navbar.vue";
 import EvolutionOverview from "@/components/EvolutionOverview.vue";
 import { getPokemon }from "@/api";
+import { getEvolution } from "@/api";
 
 //Take last element of the url path and request it from the api
 function getID() {
@@ -108,7 +115,8 @@ export default {
   },
     data () {
     return {
-      pokemon: null
+      pokemon: null,
+      chainID: null
     }
   },
 
@@ -116,16 +124,13 @@ export default {
     capitalize(s) {
       if (typeof s !== "string") return "";
       return s.charAt(0).toUpperCase() + s.slice(1);
-    },
-    image() {
-      return makeImage(pokemon.image)
     }
   },
-
   mounted() {
     getPokemon(getID()).then(
-      response => (this.pokemon = response.data)
-    )    
+      response => (this.pokemon = response.data) && 
+      (this.chainID = response.data.evolution_chain_id)
+    )
   }
 };
 </script>
