@@ -11,26 +11,27 @@
         <b-row class="align-items-center">
 
           <b-col >
-            <SpriteBasic class="base"
+            <a :href="'/pokemon/' + chain.base_pokemon.id" style="text-decoration:none"> <SpriteBasic class="base"
+              v-bind:class="{'current':(chain.base_pokemon.name === page_name)}"
               v-bind:name="chain.base_pokemon.name"
               v-bind:id="chain.base_pokemon.id"
               v-bind:types="chain.base_pokemon.first_type.identifier"
-            />            
+            /> </a>           
           </b-col>
 
           <b-col v-for="stage in chain.stages" v-bind:key="stage">       
-            <SpriteBasic
+            <a :href="'/pokemon/' + stage.pokemon.id" style="text-decoration:none"><SpriteBasic
+              v-bind:class="{'current':(stage.pokemon.name === page_name)}"
               v-bind:name="stage.pokemon.name"
               v-bind:id="stage.pokemon.id"
               v-bind:types="stage.pokemon.first_type.identifier"
-            /> 
+            /> </a>
           </b-col>
            
 
         </b-row>
       </b-card-body>
     </b-card>
-
   </div>
 </template>
 
@@ -54,14 +55,14 @@ export default {
     capitalize(s) {
       if (typeof s !== "string") return "";
       return s.charAt(0).toUpperCase() + s.slice(1);
-    }
+    },
   },
   props: {
-    id: String
+    id: String,
+    page_name: String,
   },
 
   mounted() {
-    console.log(this.id);
     getEvolution(this.id).then(
       response => (this.chain = response.data)
     )
@@ -78,10 +79,20 @@ export default {
   width: 165px;
 }
 
+.a {
+  text-decoration: none;
+}
+.a:hover {
+  cursor: pointer;
+}
 .icon-arrow {
   display: block;
   font: normal 2.5rem/1 "Arial Unicode MS", "Trebuchet MS", "Arial", "Helvetica",
     sans-serif;
+}
+
+.current {
+  border: 2px solid green;
 }
 
 </style>
