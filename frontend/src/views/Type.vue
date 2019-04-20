@@ -26,7 +26,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bug">
+                  <tr class="bug" :class="{'weak': type.vs_bug < 1, 'strong':type.vs_bug > 1}">
                     <td>
                       Bug
                     </td>
@@ -34,35 +34,35 @@
                      {{type.vs_bug}}
                     </td>
                   </tr>
-                  <tr class="dark">
+                  <tr class="dark" :class="{'weak': type.vs_dark < 1, 'strong':type.vs_dark > 1}">
                     <td>
                       Dark
                     </td>
                     <td>
                      {{type.vs_dark}}
                     </td>
-                  <tr class="dragon">
+                  <tr class="dragon" :class="{'weak': type.vs_dragon < 1, 'strong':type.vs_dragon > 1}">
                     <td>
                       Dragon
                     </td>
                     <td>
                      {{type.vs_dragon}}
                     </td>
-                  <tr class="electric">
+                  <tr class="electric" :class="{'weak': type.vs_electric < 1, 'strong':type.vs_electric > 1}">
                     <td>
                       Electric
                     </td>
                     <td>
                      {{type.vs_electric}}
                     </td>
-                  <tr class="fairy">
+                  <tr class="fairy" :class="{'weak': type.vs_fairy < 1, 'strong':type.vs_fairy > 1}">
                     <td>
                       Fairy
                     </td>
                     <td>
                      {{type.vs_fairy}}
                     </td>
-                  <tr class="fighting">
+                  <tr class="fighting" :class="{'weak': type.vs_fighting < 1, 'strong':type.vs_fighting > 1}">
                     <td>
                       Fighting
                     </td>
@@ -70,7 +70,7 @@
                      {{type.vs_fighting}}
                     </td>
                   </tr>
-                  <tr class="fire">
+                  <tr class="fire" :class="{'weak': type.vs_fire < 1, 'strong':type.vs_fire > 1}">
                     <td>
                       Fire
                     </td>
@@ -78,14 +78,14 @@
                      {{type.vs_fire}}
                     </td>
                   </tr>
-                  <tr class="flying">
+                  <tr class="flying" :class="{'weak': type.vs_flying < 1, 'strong':type.vs_flying > 1}">
                     <td>
                       Flying
                     </td>
                     <td>
                      {{type.vs_flying}}
                     </td>
-                  <tr class="ghost">
+                  <tr class="ghost" :class="{'weak': type.vs_ghost < 1, 'strong':type.vs_ghost > 1}">
                     <td>
                       Ghost
                     </td>
@@ -93,7 +93,7 @@
                      {{type.vs_ghost}}
                     </td>
                   </tr>
-                  <tr class="grass">
+                  <tr class="grass" :class="{'weak': type.vs_grass < 1, 'strong':type.vs_grass > 1}">
                     <td>
                       Grass
                     </td>
@@ -101,7 +101,7 @@
                      {{type.vs_grass}}
                     </td>
                   </tr>
-                  <tr class="ground">
+                  <tr class="ground" :class="{'weak': type.vs_ground < 1, 'strong':type.vs_ground > 1}">
                     <td>
                       Ground
                     </td>
@@ -109,7 +109,7 @@
                      {{type.vs_ground}}
                     </td>
                   </tr>
-                  <tr class="ice">
+                  <tr class="ice" :class="{'weak': type.vs_ice < 1, 'strong':type.vs_ice > 1}">
                     <td>
                       Ice
                     </td>
@@ -117,7 +117,7 @@
                      {{type.vs_ice}}
                     </td>
                   </tr>
-                  <tr class="normal">
+                  <tr class="normal" :class="{'weak': type.vs_normal < 1, 'strong':type.vs_normal > 1}">
                     <td>
                       Normal
                     </td>
@@ -125,14 +125,14 @@
                      {{type.vs_normal}}
                     </td>
                   </tr>
-                  <tr class="poison">
+                  <tr class="poison" :class="{'weak': type.vs_poison < 1, 'strong':type.vs_poison > 1}">
                     <td>
                       Poison
                     </td>
                     <td>
                      {{type.vs_poison}}
                     </td>
-                  <tr class="psychic">
+                  <tr class="psychic" :class="{'weak': type.vs_psychic < 1, 'strong':type.vs_psychic > 1}">
                     <td>
                       Psychic
                     </td>
@@ -140,7 +140,7 @@
                      {{type.vs_psychic}}
                     </td>
                   </tr>
-                  <tr class="rock">
+                  <tr class="rock" :class="{'weak': type.vs_rock < 1, 'strong':type.vs_rock > 1}">
                     <td>
                       Rock
                     </td>
@@ -148,7 +148,7 @@
                      {{type.vs_rock}}
                     </td>
                   </tr>
-                  <tr class="steel">
+                  <tr class="steel" :class="{'weak': type.vs_steel < 1, 'strong':type.vs_steel > 1}">
                     <td>
                       Steel
                     </td>
@@ -156,7 +156,7 @@
                      {{type.vs_steel}}
                     </td>
                   </tr>
-                  <tr class="water">
+                  <tr class="water" :class="{'weak': type.vs_water < 1, 'strong':type.vs_water > 1}">
                     <td>
                       Water
                     </td>
@@ -303,5 +303,12 @@ Color of tables or fromatting subject to change
 
 .attack {
   padding-bottom: 50px;
+}
+
+.strong {
+  background-color: rgb(15, 177, 0)
+}
+.weak {
+  background-color: rgb(173, 12, 0)
 }
 </style>
