@@ -80,7 +80,7 @@
           </b-col>
         </b-row>
         <hr>
-        <h2 class="evo-header">{{pokemon.name}} is part of this chain:</h2>
+        <h2 class="evo-header">{{pokemon.name}} is a part of this chain:</h2>
         <EvolutionOverview v-if="pokemon.evolution_chain_id != null"
           :id="chainID"
           :page_name="pokemon.name"
