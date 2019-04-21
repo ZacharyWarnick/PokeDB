@@ -11,12 +11,36 @@ from sqlalchemy import func, or_
 from models import db, Pokemon, Evolution, Type
 
 ITEMS_PER_PAGE = 16
-ORDER_ASCENDING = 'ASC'
-ORDER_DESCENDING = 'DESC'
+
+ASCENDING = 'ASC'
+DESCENDING = 'DESC'
+
+
+def _read_pager_items(pager):  # pragma: no cover
+    if (pager.items and not hasattr(pager.items[0], 'to_dict')):
+        raise AttributeError('Pager items must have a `to_dict` method.')
+
+    return [it.to_dict() for it in pager.items]
 
 
 def _pager(pager, data=None):
-    data = data or [it.to_dict() for it in pager.items]
+    """Constructs a pager dictionary which wraps paged results.
+
+    Note:
+        The data object must have a false-y value or be a list of dictionaries.
+        If the data object is false-y, then the items from the pager must have
+        a function named `to_dict` which will be used to convert the pager
+        items into a list of dictionaries.
+
+    Args:
+        pager: A SQLAlchemy pager object.
+        data (optional): A list of items to return as the paged data.
+
+    Returns:
+        A dictionary containing several fields that detail the page state along
+        with a data field which points to the page items.
+    """
+    data = data or _read_pager_items(pager)
     return {
         'current_page': pager.page,
         'page_count': pager.pages,
@@ -34,7 +58,7 @@ def _sort_evolution_stages(stages):
         poke_id = item['pokemon']['id']
 
         pre_evolution = item['evolves_from']
-        for i in range(5):
+        for i in range(5):  # pragma: no branch
             # No Pokémon in the database should loop more than 2 times.
             # This guarantees that erroneous data won't cause an infinite loop.
             if pre_evolution is None:
@@ -71,21 +95,21 @@ def query_pokemon_list(sort_key, sort_order, page_number,
         A list of dictionaries describing each Pokémon.
     """
     sort_params = (sort_key, sort_order)
-    default_sort = (Pokemon.id.asc(),)
+    is_descending = (sort_order == DESCENDING)
+    default_sort = (Pokemon.id.desc() if is_descending else Pokemon.id.asc(),)
+
     sort = {
-        ('id', ORDER_DESCENDING): (Pokemon.id.desc(),),
-        ('name', ORDER_ASCENDING): (Pokemon.name.asc(),),
-        ('name', ORDER_DESCENDING): (Pokemon.name.desc(),),
-        ('gen', ORDER_ASCENDING): (
-            Pokemon.since_gen.asc(), Pokemon.name.asc()),
-        ('gen', ORDER_DESCENDING): (
-            Pokemon.since_gen.desc(), Pokemon.name.asc()),
-        ('color', ORDER_ASCENDING): (Pokemon.color.asc(), Pokemon.id.asc()),
-        ('color', ORDER_DESCENDING): (Pokemon.color.desc(), Pokemon.id.asc()),
-        ('type', ORDER_ASCENDING): (
-            Pokemon.first_type_id.asc(), Pokemon.id.asc()),
-        ('type', ORDER_DESCENDING): (
-            Pokemon.first_type_id.desc(), Pokemon.id.asc()),
+        ('id', DESCENDING): (Pokemon.id.desc(),),
+        ('name', ASCENDING): (Pokemon.name.asc(),),
+        ('name', DESCENDING): (Pokemon.name.desc(),),
+        ('gen', ASCENDING): (
+            Pokemon.since_gen.asc(), Pokemon.identifier.asc()),
+        ('gen', DESCENDING): (
+            Pokemon.since_gen.desc(), Pokemon.identifier.desc()),
+        ('color', ASCENDING): (Pokemon.color.asc(), Pokemon.id.asc()),
+        ('color', DESCENDING): (Pokemon.color.desc(), Pokemon.id.desc()),
+        ('type', ASCENDING): (Pokemon.first_type_id.asc(), Pokemon.id.asc()),
+        ('type', DESCENDING): (Pokemon.first_type_id.desc(), Pokemon.id.desc())
         }.get(sort_params, default_sort)
 
     query = Pokemon.query.order_by(*sort)
@@ -120,7 +144,9 @@ def _query_sorted_evolutions(sort_key, sort_order, page_number, item_count):
         sortable attributes for each entry.
     """
     sort_params = (sort_key, sort_order)
-    default_sort = Evolution.evolution_chain_id.asc()
+    is_descending = (sort_order == DESCENDING)
+    default_sort = (Evolution.evolution_chain_id.desc()
+                    if is_descending else Evolution.evolution_chain_id.asc())
 
     chain_count = func.count(
         func.distinct(Evolution.pokemon_id)
@@ -131,15 +157,15 @@ def _query_sorted_evolutions(sort_key, sort_order, page_number, item_count):
         Evolution.evolves_from_pokemon_id).label('base_pokemon')
 
     sort = {
-        ('chain', ORDER_DESCENDING): Evolution.evolution_chain_id.desc(),
-        ('diff', ORDER_ASCENDING): diff_sum.asc(),
-        ('diff', ORDER_DESCENDING): diff_sum.desc(),
-        ('count', ORDER_ASCENDING): chain_count.asc(),
-        ('count', ORDER_DESCENDING): chain_count.desc(),
-        ('level', ORDER_ASCENDING): chain_count.asc(),
-        ('level', ORDER_DESCENDING): chain_count.desc(),
-        ('base', ORDER_ASCENDING): base_pokemon.asc(),
-        ('base', ORDER_DESCENDING): base_pokemon.desc()
+        ('chain', DESCENDING): Evolution.evolution_chain_id.desc(),
+        ('diff', ASCENDING): diff_sum.asc(),
+        ('diff', DESCENDING): diff_sum.desc(),
+        ('count', ASCENDING): chain_count.asc(),
+        ('count', DESCENDING): chain_count.desc(),
+        ('level', ASCENDING): max_level.asc().nullsfirst(),
+        ('level', DESCENDING): max_level.desc().nullslast(),
+        ('base', ASCENDING): base_pokemon.asc(),
+        ('base', DESCENDING): base_pokemon.desc()
         }.get(sort_params, default_sort)
 
     # Get ordered chains of evolutions.
@@ -226,9 +252,12 @@ def query_evolution_list(sort_key, sort_order, page_number,
         'level': 'max_level'
         }.get(sort_key, 'evolution_chain_id')
 
-    def key(it): return it[s_key] if s_key in it else it['id']
+    def key(it):
+        val = it[s_key] if s_key in it else it['id']
+        default = 10000 if sort_key == DESCENDING else 0
+        return default if val is None else val
 
-    is_reverse = (sort_order == ORDER_DESCENDING)
+    is_reverse = (sort_order == DESCENDING)
     data = sorted(data.values(), key=key, reverse=is_reverse)
     return _pager(pager, data)
 
@@ -262,7 +291,7 @@ def query_evolution(chain_id):
         'chain_count': len(sorted_result),
         'max_level': None if not levels else max(levels),
         'stages': sorted_result
-    }
+        }
 
     return data
 
@@ -288,17 +317,18 @@ def query_type_list(sort_key, sort_order, page_number,
         A list of dictionaries describing each type.
     """
     sort_params = (sort_key, sort_order)
-    default_sort = Type.id.asc()
+    is_descending = (sort_order == DESCENDING)
+    default_sort = Type.id.desc() if is_descending else Type.id.asc()
     sort = {
-        ('id', ORDER_DESCENDING): Type.id.desc(),
-        ('name', ORDER_ASCENDING): Type.identifier.asc(),
-        ('name', ORDER_DESCENDING): Type.identifier.desc(),
-        ('count', ORDER_ASCENDING): Type.pokemon_count.asc(),
-        ('count', ORDER_DESCENDING): Type.pokemon_count.desc(),
-        ('stats', ORDER_ASCENDING): Type.stat_average.asc(),
-        ('stats', ORDER_DESCENDING): Type.stat_average.desc(),
-        ('adv', ORDER_ASCENDING): Type.relative_advantage.asc(),
-        ('adv', ORDER_DESCENDING): Type.relative_advantage.desc()
+        ('id', DESCENDING): Type.id.desc(),
+        ('name', ASCENDING): Type.identifier.asc(),
+        ('name', DESCENDING): Type.identifier.desc(),
+        ('count', ASCENDING): Type.pokemon_count.asc(),
+        ('count', DESCENDING): Type.pokemon_count.desc(),
+        ('stats', ASCENDING): Type.stat_average.asc(),
+        ('stats', DESCENDING): Type.stat_average.desc(),
+        ('adv', ASCENDING): Type.relative_advantage.asc(),
+        ('adv', DESCENDING): Type.relative_advantage.desc()
         }.get(sort_params, default_sort)
 
     query = Type.query.order_by(sort)
