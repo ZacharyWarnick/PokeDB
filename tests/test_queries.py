@@ -96,14 +96,35 @@ class QueryTest(TestCase):
             with self.subTest(k):
                 self._test_pokemon_sort(k, f, l)
 
-    def test_pokemon(self):
+    def test_pokemon_1(self):
         bulbasaur_by_id = data.query_pokemon(1)
         bulbasaur_by_name = data.query_pokemon('bulbasaur')
-
+        
         self.assertEqual(bulbasaur_by_id['identifier'], 'bulbasaur')
         self.assertEqual(bulbasaur_by_id, bulbasaur_by_name)
 
-        for i in range(2, 805, _LOOP_POKE_STRIDE):
+    def test_pokemon_2(self):
+        ivysaur_by_id = data.query_pokemon(2)
+        ivysaur_by_name = data.query_pokemon('ivysaur')
+        
+        self.assertEqual(ivysaur_by_id['identifier'], 'ivysaur')
+        self.assertEqual(ivysaur_by_id, ivysaur_by_name)
+
+    def test_pokemon_3(self):
+        venusaur_by_id = data.query_pokemon(3)
+        venusaur_by_name = data.query_pokemon('venusaur')
+        
+        self.assertEqual(venusaur_by_id['identifier'], 'venusaur')
+        self.assertEqual(venusaur_by_id, venusaur_by_name)
+
+    def test_pokemon_4(self):
+        charmander_by_id = data.query_pokemon(4)
+        charmander_by_name = data.query_pokemon('charmander')
+        
+        self.assertEqual(charmanderr_by_id['identifier'], 'charmander')
+        self.assertEqual(charmander_by_id, charmander_by_name)
+
+        for i in range(5, 805, _LOOP_POKE_STRIDE):
             with self.subTest(i):
                 poke_by_id = data.query_pokemon(i)
                 poke_by_name = data.query_pokemon(poke_by_id['identifier'])
