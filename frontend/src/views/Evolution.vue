@@ -121,6 +121,7 @@ export default {
   align-content: center;
   box-shadow: 4px 4px 4px;
 }
+
 .bg {
   padding-top: 0;
 

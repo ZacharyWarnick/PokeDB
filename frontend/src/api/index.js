@@ -29,3 +29,7 @@ export function getTypeListing(sort = "id", order = "ASC", page = 1) {
 export function getType(id) {
   return axios.get(`${API_URL}/types/${id}`);
 }
+
+export function getTestResults() {
+  return axios.get(`${API_URL}/tests`);
+}

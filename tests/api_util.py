@@ -129,7 +129,7 @@ def _prepare_dir(out_file: Path):
             f.unlink()
 
 
-def get_coverage_result(label=None):
+def get_coverage_result(label='default'):
     """Obtains the results of running coverage for all unit tests.
 
     Args:

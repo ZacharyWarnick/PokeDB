@@ -1,8 +1,11 @@
 import unittest
 
+from flask import current_app
 from unittest import TestCase
 from idb import data, create_app
 from data import ASCENDING, DESCENDING
+
+_LOOP_POKE_STRIDE = 5
 
 
 class QueryTest(TestCase):
@@ -10,7 +13,8 @@ class QueryTest(TestCase):
     @classmethod
     def setUpClass(cls):
         app = create_app('testing')
-        app.app_context().push()
+        if app is not current_app:
+            app.app_context().push()
 
     def _test_pokemon_sort(self, sort_key, first, last):
         """Tests if a sorted, paged query of Pokémon orders results correctly.
@@ -99,7 +103,7 @@ class QueryTest(TestCase):
         self.assertEqual(bulbasaur_by_id['identifier'], 'bulbasaur')
         self.assertEqual(bulbasaur_by_id, bulbasaur_by_name)
 
-        for i in range(2, 805):
+        for i in range(2, 805, _LOOP_POKE_STRIDE):
             with self.subTest(i):
                 poke_by_id = data.query_pokemon(i)
                 poke_by_name = data.query_pokemon(poke_by_id['identifier'])

@@ -82,10 +82,12 @@ export default {
 .section-padding {
   padding: 15px 0;
 }
+
 .fade-container {
   padding-top: 0px;
   animation: FadeIn 1.5s 1 forwards;
 }
+
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -95,6 +97,7 @@ export default {
     opacity: 1;
   }
 }
+
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
@@ -107,6 +110,7 @@ export default {
 
   animation: textUP 1.5s 1 forwards;
 }
+
 .bg {
   padding-top: 0;
 
