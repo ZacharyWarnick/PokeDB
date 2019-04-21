@@ -167,6 +167,9 @@ class QueryTest(TestCase):
         self.assertEqual(normal['identifier'], 'normal')
         self.assertEqual(normal, normal_by_id)
 
+    def test_search_eevee(self):
+        data.search('eevee')
+
 
 if __name__ == '__main__':
     unittest.main()

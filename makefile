@@ -42,8 +42,12 @@ check:
 config:
 	git config -l
 
+run-flask:
+	$(LAUNCH)
+
 deploy-local:
-	$LAUNCH
+	cd frontend; npm run build;
+	$(LAUNCH)
 
 update-environment:
 	conda update -n base conda

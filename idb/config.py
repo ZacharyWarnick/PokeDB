@@ -1,7 +1,4 @@
-"""Module for describing different execution environment configurations.
-
-pragma: no cover
-"""
+"""Module for describing different execution environment configurations."""
 
 import os
 

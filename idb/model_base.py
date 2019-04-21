@@ -6,9 +6,15 @@ https://wakatime.com/blog/32-flask-part-1-sqlalchemy-models-to-json
 
 import json
 from sqlalchemy.orm.attributes import QueryableAttribute
+from sqlalchemy import func, text
 
 
-def dot_add(p, k): return '{}.{}'.format(p, k)
+def _dot_add(p, k): return '{}.{}'.format(p, k)
+
+
+def vector_index(*columns):
+    s = " || ' ' || ".join(columns)
+    return func.to_tsvector('english', text(s))
 
 
 def create_base_model(db):
@@ -51,10 +57,10 @@ def create_base_model(db):
                 return None if item is None else item.to_dict(
                     show=show,
                     _hide=_hide,
-                    _path=dot_add(_path, key.lower()))
+                    _path=_dot_add(_path, key.lower()))
 
             def should_keep(key):
-                check = dot_add(_path, key)
+                check = _dot_add(_path, key)
                 should_skip = (key.startswith('_')
                                or check in _hide or key in hidden)
 
@@ -66,7 +72,7 @@ def create_base_model(db):
 
             for key in list(filter(should_keep, relationships)):
                 rel = self.__mapper__.relationships[key]
-                _hide.append(dot_add(_path, key))
+                _hide.append(_dot_add(_path, key))
                 if rel.uselist:
                     items = getattr(self, key)
                     if rel.query_class is not None and hasattr(items, 'all'):

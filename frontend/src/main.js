@@ -26,7 +26,7 @@ Vue.prototype.$types = {
     name: "flying",
     badge_image: require("./assets/badge-flying.png")
   }
-}
+};
 
 new Vue({
   el: "#app",

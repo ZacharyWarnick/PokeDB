@@ -160,6 +160,14 @@ def create_evolution():
 def initialize():
     create_type()
     create_pokemon()
+    create_evolution()
     create_stats()
     create_form()
-    create_evolution()
+
+
+def reset():
+    for table in ['pokemon', 'type', 'evolution', 'form', 'base_stats']:
+        db.engine.execute('DROP TABLE if exists {} cascade;'.format(table))
+
+    db.engine.execute('CREATE EXTENSION IF NOT EXISTS pg_trgm;')
+    db.create_all()
