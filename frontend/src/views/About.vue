@@ -113,11 +113,16 @@
           <section class="text-left section-padding">
             <b-container>
               <h3>Tests:</h3>
+              <p class="lead text-center">
+                (click the terminal, type anything)
+              </p>
             </b-container>
-          </section>
-
-          <section class="section-padding">
             <TestResults />
+            <b-container>
+              <p class="hint-text">
+                <strong>Note:</strong> It may take a few seconds.
+              </p>
+            </b-container>
           </section>
         </div>
       </div>
@@ -301,6 +306,10 @@ export default {
 <style scoped>
 .section-padding {
   padding: 30px 0;
+}
+
+.hint-text {
+  font-size: 0.85em;
 }
 
 .fade-container {
