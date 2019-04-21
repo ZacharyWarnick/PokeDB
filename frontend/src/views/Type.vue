@@ -193,7 +193,6 @@
     </section>
   </div>
   </div>
-  </div>
 </template>
 
 <script>
@@ -265,7 +264,7 @@ Color of tables or fromatting subject to change
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
-  height: 1500px;
+  height: 100%;
 
   padding-top: 70px;
   padding-bottom: 30px;

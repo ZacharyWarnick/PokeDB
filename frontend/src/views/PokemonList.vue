@@ -90,7 +90,7 @@ export default {
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
-  height: 1500px;
+  height: 100%;
 
   padding-top: 30px;
   padding-bottom: 30px;

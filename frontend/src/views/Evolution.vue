@@ -2,7 +2,7 @@
   <div class="evolution">
     <Navbar />
     <div class="bg">
-      <div class="container text-scroll-bg">
+      <div class="text-scroll-bg">
         <b-jumbotron
             :header="'Chain: ' + chain.base_pokemon.name"
             lead="The first Pokémon in an evolution chain defines the species."
@@ -126,14 +126,14 @@ export default {
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
-  height: 1500px;
+  height: 100%;
 
   padding-top: 30px;
   padding-bottom: 30px;
   align-content: center;
   box-shadow: 4px 4px 4px;
 }
-.bg {
+.bg{
   padding-top: 0;
 
   margin-bottom: 0px;
