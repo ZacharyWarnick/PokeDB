@@ -36,8 +36,8 @@ export default {
   name: "SpriteBasic",
   props: {
     name: String,
-    id: Number,
-    types: Array
+    id: String,
+    type: String
   }
 };
 </script>

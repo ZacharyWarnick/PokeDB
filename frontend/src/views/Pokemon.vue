@@ -1,86 +1,112 @@
 <template>
   <div class="pokemon">
-    <Navbar />
-    <section id="about" class="container section-padding">
+     <Navbar />
+    <div class="bg">
+      <div class="container text-scroll-bg">
+      <section id="about" class="container section-padding">
       <b-row>
-        <b-col lg="6" md="6" sm="12" cols="12">
+        <b-col  md="6">
           <div class="profile-wrapper wow">
             <div class="d-flex justify-content-between align-items-center">
               <div>
                 <h2>
-                  <strong>{{ all[$route.params.name].id }}</strong>
-                  {{ all[$route.params.name].display_name }}
+                  <strong>{{ pokemon.name }}</strong>
+                  {{pokemon.id}}
                 </h2>
-              </div>
-              <div>
-                <router-link
-                  tag="img"
-                  v-for="type in all[$route.params.name].types"
-                  v-bind:to="'/types/' + type.name"
-                  v-bind:key="type.id"
-                  class="type-badge"
-                  v-bind:src="type.badge_image"
-                />
+                <h2 v-if="pokemon.second_type != null">
+                  {{capitalize(pokemon.first_type.identifier)}}
+                  {{capitalize(pokemon.second_type.identifier)}}
+                </h2>
+                <h2 v-else>
+                  {{capitalize(pokemon.first_type.identifier)}}
+                  {{chainID.base_pokemon}}
+                </h2>
               </div>
             </div>
             <p class="poke-desc">
-              {{ all[$route.params.name].flavor_text }}
+              {{ pokemon.flavor_text }}
             </p>
-            <hr />
-            <div class="poke-info">
-              <ul>
-                <li>
-                  <strong>Health</strong> {{ all[$route.params.name].stats.hp }}
-                </li>
-                <li>
-                  <strong>Attack</strong>
-                  {{ all[$route.params.name].stats.atk }}
-                </li>
-                <li>
-                  <strong>Defense</strong>
-                  {{ all[$route.params.name].stats.def }}
-                </li>
-                <li>
-                  <strong>Sp. Atk</strong>
-                  {{ all[$route.params.name].stats.sp_atk }}
-                </li>
-                <li>
-                  <strong>Sp. Def</strong>
-                  {{ all[$route.params.name].stats.sp_def }}
-                </li>
-                <li>
-                  <strong>Speed</strong>
-                  {{ all[$route.params.name].stats.spd }}
-                </li>
-              </ul>
-            </div>
-          </div>
         </b-col>
-
-        <b-col lg="6" md="6" sm="12" cols="12" class="my-auto">
-          <div class="img-thumb wow">
-            <img
-              v-bind:src="all[$route.params.name].sprite"
-              class="img-fluid poke-img"
-            />
-          </div>
+        <b-col md="6" >
+          <img v-bind:src="pokemon.image" /> 
         </b-col>
-      </b-row>
-    </section>
+        </b-row>
+        <hr />
+        <b-row>
+          <b-col md="6">
+            <h2>Base Stats</h2>
+            <ul class="stats-list">
+              <li>
+                Attack: {{pokemon.base_stats.attack}}
+              </li>
+              <li>
+                Defense: {{pokemon.base_stats.defense}}
+              </li>
+              <li>
+                HP: {{pokemon.base_stats.hp}}
+              </li>
+              <li>
+                Special Attack: {{pokemon.base_stats.special_attack}}
+              </li>
+              <li>
+                Special Defense: {{pokemon.base_stats.special_defense}}
+              </li>
+              <li>
+                Speed: {{pokemon.base_stats.speed}}
+              </li>
+            </ul>
+          </b-col>
+          <b-col md="6">
+            <h2>Identifying Features</h2>
+            <ul class="stats-list">
+              <li>
+                Color: {{capitalize(pokemon.color)}}
+              </li>
+              <li class="genus">
+                Genus: {{pokemon.genus}}
+              </li>
 
-    <section id="evolution" class="container section-padding">
-      <EvolutionOverview
-        v-bind:name="all[$route.params.name].ev.name"
-        v-bind:first="all[$route.params.name].ev.first"
-        v-bind:second="all[$route.params.name].ev.second"
-      />
-    </section>
+              <li v-if="pokemon.has_alt_form == true">
+                Alternate Form: Yes
+              </li>
+              <li v-else>
+                Alternate Form: None
+              </li>
+
+              <li>
+                Generation: {{pokemon.since_gen}}
+              </li>
+            </ul>
+          </b-col>
+        </b-row>
+        <hr>
+        <h2 class="evo-header">{{pokemon.name}} is a part of this chain:</h2>
+        <EvolutionOverview v-if="pokemon.evolution_chain_id != null"
+          :id="chainID"
+          :page_name="pokemon.name"
+        />
+      </section>
+      </div>
+    </div>
   </div>
+    
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import EvolutionOverview from "@/components/EvolutionOverview.vue";
+import { getPokemon }from "@/api";
+import { getEvolution } from "@/api";
+
+//Take last element of the url path and request it from the api
+function getID() {
+
+  var pathArray = window.location.pathname.split('/');
+
+  var lastLocation = pathArray.slice(-1).pop()
+
+  return String(lastLocation);
+}
 
 export default {
   name: "Pokemon",
@@ -88,160 +114,24 @@ export default {
     Navbar,
     EvolutionOverview
   },
-  data() {
-    var evolution_info = {
-      ekans: {
-        species: "ekans",
-        first: {
-          name: "Ekans",
-          id: 23,
-          types: [this.$types["poison"]]
-        },
-        second: {
-          name: "Arbok",
-          id: 24,
-          types: [this.$types["poison"]]
-        }
-      },
-      sandshrew: {
-        species: "sandshrew",
-        first: {
-          name: "Sandshrew",
-          id: 27,
-          types: [this.$types["ground"]]
-        },
-        second: {
-          name: "Sandslash",
-          id: 28,
-          types: [this.$types["ground"]]
-        }
-      },
-      magikarp: {
-        species: "magikarp",
-        first: {
-          name: "Magikarp",
-          id: 129,
-          types: [this.$types["water"]]
-        },
-        second: {
-          name: "Gyarados",
-          id: 130,
-          types: [this.$types["water"], this.$types["flying"]]
-        }
-      }
-    };
-
+    data () {
     return {
-      all: {
-        ekans: {
-          display_name: "Ekans",
-          id: 23,
-          sprite:
-            "https://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png",
-          types: [this.$types["poison"]],
-          flavor_text:
-            "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
-          stats: {
-            hp: 35,
-            atk: 60,
-            def: 44,
-            sp_atk: 40,
-            sp_def: 54,
-            spd: 55
-          },
-          ev: evolution_info["ekans"]
-        },
-        arbok: {
-          display_name: "Arbok",
-          id: 24,
-          sprite:
-            "https://cdn.bulbagarden.net/upload/thumb/c/cd/024Arbok.png/250px-024Arbok.png",
-          types: [this.$types["poison"]],
-          flavor_text:
-            "The latest research has determined that there are over 20 possible arrangements of the patterns on its stomach.",
-          stats: {
-            hp: 60,
-            atk: 95,
-            def: 69,
-            sp_atk: 65,
-            sp_def: 79,
-            spd: 80
-          },
-          ev: evolution_info["ekans"]
-        },
-        sandshrew: {
-          display_name: "Sandshrew",
-          id: 27,
-          sprite: "https://cdn.bulbagarden.net/upload/9/9e/027Sandshrew.png",
-          types: [this.$types["ground"]],
-          flavor_text:
-            "Sandshrew has a very dry hide that is extremely tough. The Pokémon can roll into a ball that repels any attack. At night, it burrows into the desert sand to sleep.",
-          stats: {
-            hp: 50,
-            atk: 75,
-            def: 85,
-            sp_atk: 20,
-            sp_def: 30,
-            spd: 40
-          },
-          ev: evolution_info["sandshrew"]
-        },
-        sandslash: {
-          display_name: "Sandslash",
-          id: 28,
-          sprite:
-            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png",
-          types: [this.$types["ground"]],
-          flavor_text:
-            "Sandslash can roll up its body as if it were a ball covered with large spikes. In battle, this Pokémon will try to make the foe flinch by jabbing it with its spines. It then leaps at the stunned foe to tear wildly with its sharp claws.",
-          stats: {
-            hp: 75,
-            atk: 100,
-            def: 110,
-            sp_atk: 45,
-            sp_def: 55,
-            spd: 65
-          },
-          ev: evolution_info["sandshrew"]
-        },
-        magikarp: {
-          display_name: "Magikarp",
-          id: 129,
-          sprite:
-            "https://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png",
-          types: [this.$types["water"]],
-          flavor_text:
-            "Magikarp is virtually useless in battle as it can only splash around. As a result, it is considered to be weak. However, it is actually a very hardy Pokémon that can survive in any body of water no matter how polluted it is.",
-          stats: {
-            hp: 20,
-            atk: 10,
-            def: 55,
-            sp_atk: 15,
-            sp_def: 20,
-            spd: 80
-          },
-          ev: evolution_info["magikarp"]
-        },
-        gyarados: {
-          display_name: "Gyarados",
-          id: 130,
-          sprite:
-            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
-          types: [this.$types["water"], this.$types["flying"]],
-          flavor_text:
-            "Once Gyarados goes on a rampage, its ferociously violent blood doesn’t calm until it has burned everything down. There are records of this Pokémon’s rampages lasting a whole month.",
-          stats: {
-            hp: 95,
-            atk: 125,
-            def: 79,
-            sp_atk: 60,
-            sp_def: 100,
-            spd: 81
-          },
-          ev: evolution_info["magikarp"]
-        }
-      }
-    };
+      pokemon: null,
+      chainID: null
+    }
+  },
+
+  methods: {
+    capitalize(s) {
+      if (typeof s !== "string") return "";
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+  },
+  mounted() {
+    getPokemon(getID()).then(
+      response => (this.pokemon = response.data) && 
+      (this.chainID = response.data.evolution_chain_id)
+    )
   }
 };
 </script>
@@ -256,6 +146,9 @@ export default {
   text-align: left;
 }
 
+.genus {
+  text-decoration: line-through;
+}
 .type-badge {
   max-height: 32px;
   height: 100%;
@@ -263,6 +156,16 @@ export default {
   padding: 0 4px;
 }
 
+.stats-list {
+  list-style-type: disc;
+  float:left;
+  margin-left: 2px;
+  padding-left: 50px;
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: justify;
+  word-wrap:break-word;
+}
 .poke-desc {
   padding: 20px 0;
 }
@@ -279,6 +182,9 @@ export default {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.evo-header {
+  padding: 20px 0px;
+}
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
