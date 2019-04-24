@@ -236,9 +236,9 @@ class QueryTest(TestCase):
    
     def test_search_eevee_chain(self):
         results = data.search('eevee evolution chain')
-        
+
         self.assertTrue(results['pokemon']['data'][0]['evolution_chain_id'],67)
-    
+ 
     def test_search_mothim_chain(self):
         results = data.search('mothim evolution')
         
@@ -249,8 +249,6 @@ class QueryTest(TestCase):
         
         self.assertTrue(results['pokemon']['data'][0]['evolution_chain_id'],114)
     
-
-
 
 if __name__ == '__main__':
     unittest.main()
