@@ -233,7 +233,7 @@
 
 #navbar {
   z-index: 1;
-  width: 20%;
+  width: 100%;
   position: fixed;
   animation: navFill 1.5s 1 forwards;
 }
