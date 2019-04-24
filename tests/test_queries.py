@@ -5,7 +5,7 @@ from unittest import TestCase
 from idb import data, create_app
 from data import ASCENDING, DESCENDING
 
-_LOOP_POKE_STRIDE = 5
+_LOOP_POKE_STRIDE = 2
 
 
 class QueryTest(TestCase):
@@ -15,6 +15,21 @@ class QueryTest(TestCase):
         app = create_app('testing')
         if app is not current_app:
             app.app_context().push()
+
+    def _test_poke_fields(self, poke):
+        self.assertIn('color', poke)
+        self.assertIsNotNone(poke.get('color'))
+        self.assertIn('first_type', poke)
+
+        type1 = poke.get('first_type')
+        self.assertIsNotNone(type1)
+
+        if type1:
+            self.assertIn('damage_class', type1)
+            self.assertIn(type1['damage_class'], {'physical', 'special'})
+
+        self.assertIn('since_gen', poke)
+        self.assertIn(poke.get('since_gen'), set(range(1, 8)))
 
     def _test_pokemon_sort(self, sort_key, first, last):
         """Tests if a sorted, paged query of Pokémon orders results correctly.
@@ -96,39 +111,49 @@ class QueryTest(TestCase):
             with self.subTest(k):
                 self._test_pokemon_sort(k, f, l)
 
-    def test_pokemon_1(self):
+    def test_bulbasaur(self):
+        # The first Pokémon (edge case).
         bulbasaur_by_id = data.query_pokemon(1)
         bulbasaur_by_name = data.query_pokemon('bulbasaur')
-        
+
         self.assertEqual(bulbasaur_by_id['identifier'], 'bulbasaur')
         self.assertEqual(bulbasaur_by_id, bulbasaur_by_name)
+        self._test_poke_fields(bulbasaur_by_id)
+        self.assertEqual(bulbasaur_by_id.get('evolution_chain_id'), 1)
 
-    def test_pokemon_2(self):
+    def test_ivysaur(self):
         ivysaur_by_id = data.query_pokemon(2)
         ivysaur_by_name = data.query_pokemon('ivysaur')
-        
+
         self.assertEqual(ivysaur_by_id['identifier'], 'ivysaur')
         self.assertEqual(ivysaur_by_id, ivysaur_by_name)
+        self._test_poke_fields(ivysaur_by_id)
+        self.assertEqual(ivysaur_by_id.get('evolution_chain_id'), 1)
 
-    def test_pokemon_3(self):
+    def test_venusaur(self):
         venusaur_by_id = data.query_pokemon(3)
         venusaur_by_name = data.query_pokemon('venusaur')
-        
+
         self.assertEqual(venusaur_by_id['identifier'], 'venusaur')
         self.assertEqual(venusaur_by_id, venusaur_by_name)
+        self._test_poke_fields(venusaur_by_id)
+        self.assertEqual(venusaur_by_id.get('evolution_chain_id'), 1)
 
-    def test_pokemon_4(self):
-        charmander_by_id = data.query_pokemon(4)
-        charmander_by_name = data.query_pokemon('charmander')
-        
-        self.assertEqual(charmanderr_by_id['identifier'], 'charmander')
-        self.assertEqual(charmander_by_id, charmander_by_name)
+    def test_zeraora(self):
+        # The last Pokémon (edge case).
+        zeraora_by_id = data.query_pokemon(807)
+        zeraora_by_name = data.query_pokemon('zeraora')
 
-        for i in range(5, 805, _LOOP_POKE_STRIDE):
+        self.assertEqual(zeraora_by_id['identifier'], 'zeraora')
+        self.assertEqual(zeraora_by_id, zeraora_by_name)
+        self._test_poke_fields(zeraora_by_id)
+
+    def test_most_pokemon(self):
+        # Check many Pokémon to make sure fields are correct.
+        for i in range(4, 807, _LOOP_POKE_STRIDE):
             with self.subTest(i):
-                poke_by_id = data.query_pokemon(i)
-                poke_by_name = data.query_pokemon(poke_by_id['identifier'])
-                self.assertEqual(poke_by_id, poke_by_name)
+                poke = data.query_pokemon(i)
+                self._test_poke_fields(poke)
 
     def test_evolution_sorts(self):
         keys = ['chain', 'diff', 'count', 'level', 'base']

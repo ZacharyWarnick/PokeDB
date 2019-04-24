@@ -112,10 +112,20 @@
 
           <section class="text-left section-padding">
             <b-container>
-              <h3>Tests:</h3>
-              <p class="lead text-center">
-                (click the terminal, type anything)
-              </p>
+              <b-row>
+                <b-col>
+                  <h3>Tests:</h3>
+                </b-col>
+                <b-col class="ml-auto">
+                  <img
+                    id="help-icon"
+                    align="right"
+                    src="@/assets/ic-help.svg"
+                    class="svg"
+                    v-b-tooltip.hover.topleft="term_tooltip"
+                  />
+                </b-col>
+              </b-row>
             </b-container>
             <TestResults />
             <b-container>
@@ -297,7 +307,9 @@ export default {
           image_url:
             "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png"
         }
-      ]
+      ],
+      term_tooltip:
+        "Click the terminal, type until it stops adding characters, then press enter."
     };
   }
 };
@@ -310,6 +322,19 @@ export default {
 
 .hint-text {
   font-size: 0.85em;
+}
+
+#help-icon {
+  position: relative;
+  bottom: -40px;
+  height: 24px;
+  margin: 4px;
+  width: auto;
+  opacity: 0.25;
+}
+
+#help-icon:hover {
+  opacity: 0.5;
 }
 
 .fade-container {
