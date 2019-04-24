@@ -169,6 +169,87 @@ class QueryTest(TestCase):
 
     def test_search_eevee(self):
         data.search('eevee')
+   
+    def test_search_name(self):
+        results = data.search('bulbasaur')
+        
+        self.assertEqual(results['pokemon']['data'][0]['identifier'],'bulbasaur')
+
+    def test_search_desc_1(self):
+        results = data.search('turtle water shell')
+        top_five = []
+
+        for i in range(0,5):
+            try:
+                top_five.append(results['pokemon']['data'][i]['identifier'])
+            except IndexError:
+                pass
+
+        self.assertTrue('squirtle' in top_five)
+    def test_search_desc_2(self):
+        results = data.search('electric ball')
+        top_five = []
+
+        for i in range(0,5):
+            try:
+                top_five.append(results['pokemon']['data'][i]['identifier'])
+            except IndexError:
+                pass
+
+        self.assertTrue('electrode' in top_five)
+
+    def test_search_desc_3(self):
+        results = data.search('pink jiggly')
+        top_five = []
+
+        for i in range(0,5):
+            try:
+                top_five.append(results['pokemon']['data'][i]['identifier'])
+            except IndexError:
+                pass
+
+        self.assertTrue('jigglypuff' in top_five)
+
+    def test_search_desc_4(self):
+        results = data.search('rock snake')
+        top_five = []
+
+        for i in range(0,5):
+            try:
+                top_five.append(results['pokemon']['data'][i]['identifier'])
+            except IndexError:
+                pass
+
+        self.assertTrue('onix' in top_five)
+
+    def test_search_desc_5(self):
+        results = data.search('sleepy fat hungry')
+        top_five = []
+
+        for i in range(0,5):
+            try:
+                top_five.append(results['pokemon']['data'][i]['identifier'])
+            except IndexError:
+                pass
+
+        self.assertTrue('snorlax' in top_five)
+   
+    def test_search_eevee_chain(self):
+        results = data.search('eevee evolution chain')
+        
+        self.assertTrue(results['pokemon']['data'][0]['evolution_chain_id'],67)
+    
+    def test_search_mothim_chain(self):
+        results = data.search('mothim evolution')
+        
+        self.assertTrue(results['pokemon']['data'][0]['evolution_chain_id'],213)
+    
+    def test_search_desc_chain(self):
+        results = data.search('gray water remora evolution')
+        
+        self.assertTrue(results['pokemon']['data'][0]['evolution_chain_id'],114)
+    
+
 
 
 if __name__ == '__main__':
