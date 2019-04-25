@@ -151,7 +151,6 @@ export default {
     transform: translateX(-1%) rotate(-2deg);
     opacity: 1;
   }
-<<<<<<< HEAD
 }
 
 .upright {
@@ -191,8 +190,6 @@ export default {
   0% {
     width: 25%;
   }
-=======
->>>>>>> develop
 
   100% {
     transform: translateX(0%) rotate(0deg);
