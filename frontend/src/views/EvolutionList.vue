@@ -1,8 +1,9 @@
 <template>
   <div class="evolution">
     <Navbar />
-    <div class="bg">
-      <div class="fade-container">
+    <b-container id="main-content">
+      <img class="bg" src="../assets/home-background.jpg" />
+      <div class="container fade-container">
         <div class="container text-scroll-bg">
           <b-jumbotron
             header="Evolutions"
@@ -37,7 +38,7 @@
           </section>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
@@ -96,40 +97,5 @@ export default {
   100% {
     opacity: 1;
   }
-}
-
-.text-scroll-bg {
-  background-color: white;
-  width: 1920px;
-  height: 1500px;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-content: center;
-  box-shadow: 4px 4px 4px;
-
-  animation: textUP 1.5s 1 forwards;
-}
-
-.bg {
-  padding-top: 0;
-
-  margin-bottom: 0px;
-
-  /* The image used */
-  background-image: url("../assets/home-background.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  align-content: center;
-
-  position: sticky;
 }
 </style>

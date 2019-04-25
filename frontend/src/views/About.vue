@@ -1,142 +1,135 @@
 <template>
   <div class="about">
     <Navbar />
-    <div class="bg">
-      <div class="fade-container">
-        <div class="container text-scroll-bg">
-          <b-jumbotron header="About">
-            <p class="lead text-justify">
-              This website develops database (similar to IMDb) has 3 kinds of
-              pages or subjects that form the database. All 3 pages or subjects
-              are connected and each item in the database belongs to 1 type of
-              page or subject and has links to items in the other 2 subjects.
-              The database for this group will be a Pokémon database. The 3
-              kinds of pages or subjects will be Pokémon, Pokémon Type, and
-              Evolution Chain.
-            </p>
-          </b-jumbotron>
+    <img class="bg" src="../assets/home-background.jpg" />
+    <b-container id="main-content">
+      <div class="text-scroll-bg fade-container">
+        <b-jumbotron header="About">
+          <p class="lead text-justify">
+            This website develops database (similar to IMDb) has 3 kinds of
+            pages or subjects that form the database. All 3 pages or subjects
+            are connected and each item in the database belongs to 1 type of
+            page or subject and has links to items in the other 2 subjects. The
+            database for this group will be a Pokémon database. The 3 kinds of
+            pages or subjects will be Pokémon, Pokémon Type, and Evolution
+            Chain.
+          </p>
+        </b-jumbotron>
 
-          <section class="text-left section-padding">
-            <b-container>
-              <h1>Gold Team</h1>
-              <br />
-              <h3>Members:</h3>
-            </b-container>
-          </section>
+        <section class="text-left section-padding">
+          <b-container>
+            <h1>Gold Team</h1>
+            <br />
+            <h3>Members:</h3>
+          </b-container>
+        </section>
 
-          <section
-            v-for="person in people"
-            :key="person.full_name"
-            class="section-padding"
-          >
-            <b-container>
-              <b-row>
-                <b-col lg="4" md="4" sm="6" cols="12">
-                  <img class="img-fluid" :src="person.picture" />
-                </b-col>
-                <b-col class="text-left">
-                  <h4>{{ person.full_name }}</h4>
-                  <h5>Bio</h5>
-                  <p>{{ person.bio }}</p>
-                  <br />
-                  <h5>Responsibilites</h5>
-                  <p>{{ person.responsibilities }}</p>
-                </b-col>
-                <b-col
-                  lg="2"
-                  md="3"
-                  sm="4"
-                  cols="12"
-                  class="text-center my-auto"
+        <section
+          v-for="person in people"
+          :key="person.full_name"
+          class="section-padding"
+        >
+          <b-container>
+            <b-row>
+              <b-col lg="4" md="4" sm="6" cols="12">
+                <img class="img-fluid" :src="person.picture" />
+              </b-col>
+              <b-col class="text-left">
+                <h4>{{ person.full_name }}</h4>
+                <h5>Bio</h5>
+                <p>{{ person.bio }}</p>
+                <br />
+                <h5>Responsibilites</h5>
+                <p>{{ person.responsibilities }}</p>
+              </b-col>
+              <b-col lg="2" md="3" sm="4" cols="12" class="text-center my-auto">
+                <p>{{ person.commits }} commits</p>
+                <p>{{ person.issues }} issues</p>
+                <p>{{ person.tests }} unit tests</p>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+
+        <section class="text-left section-padding">
+          <b-container>
+            <h3>Repo Information:</h3>
+          </b-container>
+        </section>
+
+        <section class="section-padding">
+          <b-container>
+            <b-row>
+              <b-col>
+                <b-button
+                  href="https://gitlab.com/jacoblubecki/cs329e-idb/issues"
+                  variant="outline-secondary"
                 >
-                  <p>{{ person.commits }} commits</p>
-                  <p>{{ person.issues }} issues</p>
-                  <p>{{ person.tests }} unit tests</p>
-                </b-col>
-              </b-row>
-            </b-container>
-          </section>
+                  Gitlab Issue Tracker</b-button
+                >
+              </b-col>
+              <b-col>
+                <b-button
+                  href="https://gitlab.com/jacoblubecki/cs329e-idb"
+                  variant="outline-secondary"
+                >
+                  Gitlab Repo</b-button
+                >
+              </b-col>
+              <b-col>
+                <b-button
+                  href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home"
+                  variant="outline-secondary"
+                >
+                  Gitlab Technical Report (Wiki)</b-button
+                >
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
 
-          <section class="text-left section-padding">
-            <b-container>
-              <h3>Repo Information:</h3>
-            </b-container>
-          </section>
+        <section class="text-left section-padding">
+          <b-container>
+            <h3>Data:</h3>
+          </b-container>
+        </section>
 
-          <section class="section-padding">
-            <b-container>
-              <b-row>
-                <b-col>
-                  <b-button
-                    href="https://gitlab.com/jacoblubecki/cs329e-idb/issues"
-                    variant="outline-secondary"
-                  >
-                    Gitlab Issue Tracker</b-button
-                  >
-                </b-col>
-                <b-col>
-                  <b-button
-                    href="https://gitlab.com/jacoblubecki/cs329e-idb"
-                    variant="outline-secondary"
-                  >
-                    Gitlab Repo</b-button
-                  >
-                </b-col>
-                <b-col>
-                  <b-button
-                    href="https://gitlab.com/jacoblubecki/cs329e-idb/wikis/home"
-                    variant="outline-secondary"
-                  >
-                    Gitlab Technical Report (Wiki)</b-button
-                  >
-                </b-col>
-              </b-row>
-            </b-container>
-          </section>
+        <InfoCards :items="info_sources" />
 
-          <section class="text-left section-padding">
-            <b-container>
-              <h3>Data:</h3>
-            </b-container>
-          </section>
+        <section class="text-left section-padding">
+          <b-container>
+            <h3>Tools:</h3>
+          </b-container>
+        </section>
 
-          <InfoCards :items="info_sources" />
+        <InfoCards :items="tools" />
 
-          <section class="text-left section-padding">
-            <b-container>
-              <h3>Tools:</h3>
-            </b-container>
-          </section>
-
-          <InfoCards :items="tools" />
-
-          <section class="text-left section-padding">
-            <b-container>
-              <b-row>
-                <b-col>
-                  <h3>Tests:</h3>
-                </b-col>
-                <b-col class="ml-auto">
-                  <img
-                    id="help-icon"
-                    align="right"
-                    src="@/assets/ic-help.svg"
-                    class="svg"
-                    v-b-tooltip.hover.topleft="term_tooltip"
-                  />
-                </b-col>
-              </b-row>
-            </b-container>
-            <TestResults />
-            <b-container>
-              <p class="hint-text">
-                <strong>Note:</strong> It may take a few seconds.
-              </p>
-            </b-container>
-          </section>
-        </div>
+        <section class="text-left section-padding">
+          <b-container>
+            <b-row>
+              <b-col>
+                <h3>Tests:</h3>
+              </b-col>
+              <b-col class="ml-auto">
+                <img
+                  id="help-icon"
+                  align="right"
+                  src="@/assets/ic-help.svg"
+                  class="svg"
+                  v-b-tooltip.hover.topleft="term_tooltip"
+                />
+              </b-col>
+            </b-row>
+          </b-container>
+          <TestResults />
+          <b-container>
+            <p class="hint-text">
+              <strong>Note:</strong> It may take a few seconds.
+            </p>
+          </b-container>
+        </section>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
@@ -316,6 +309,11 @@ export default {
 </script>
 
 <style scoped>
+#main-content {
+  height: 100%;
+  padding-top: 56px;
+}
+
 .section-padding {
   padding: 30px 0;
 }
@@ -352,36 +350,22 @@ export default {
 
 .text-scroll-bg {
   background-color: white;
-  width: 1920px;
-  height: 100%;
+  width: auto;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  align-items: center;
   box-shadow: 4px 4px 4px;
-
-  animation: textUP 1.5s 1 forwards;
 }
 
 .bg {
-  padding-top: 0;
-
-  margin-bottom: 0px;
-
-  /* The image used */
-  background-image: url("../assets/home-background.jpg");
-
-  /* Full height */
+  min-width: 100%;
   height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  align-content: center;
-
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 </style>

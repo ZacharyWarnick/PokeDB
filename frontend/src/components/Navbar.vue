@@ -1,7 +1,9 @@
 <template>
   <b-navbar
     toggleable="lg"
-    class="navbar-expand-lg navbar-dark bg-dark navbar-fixed-top"
+    class="navbar-expand-lg navbar-dark navbar-default"
+    variant="dark"
+    fixed="top"
     id="navbar"
   >
     <router-link to="/" class="navbar-brand">PokéDB</router-link>
