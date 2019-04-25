@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div class="Type">
   <Navbar />
     <div class="bg">
@@ -193,6 +194,93 @@
     </section>
   </div>
   </div>
+=======
+  <div id="type">
+    <Navbar />
+    <b-container id="main-content">
+      <img class="bg" src="../assets/home-background.jpg" />
+      <div class="container text-scroll-bg fade-container">
+        <b-container class="section-padding">
+          <b-jumbotron :header="capitalize($route.params.name)" />
+        </b-container>
+        <section class="section-padding">
+          <b-container>
+            <b-row>
+              <b-col md="6" class="my-auto">
+                <p class="lead text-justify">
+                  {{ all[$route.params.name].info }}
+                </p>
+              </b-col>
+              <b-col md="6">
+                <img :src="all[$route.params.name].image" width="320px" />
+              </b-col>
+            </b-row>
+            <hr />
+            <b-row>
+              <b-col md="6" class="my-auto">
+                <p class="text-justify">
+                  {{ all[$route.params.name].info2 }}
+                </p>
+              </b-col>
+
+              <b-col md="6">
+                <b-container>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="table-strong" scope="col">Strong Against</th>
+                        <th class="table-weak" scope="col">Weak Against</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr
+                        v-for="i in Math.max(
+                          all[$route.params.name].advantages.length,
+                          all[$route.params.name].weaknesses.length
+                        )"
+                        :key="i"
+                      >
+                        <td class="table-strong">
+                          {{
+                            capitalize(
+                              all[$route.params.name].advantages[i - 1]
+                            )
+                          }}
+                        </td>
+                        <td class="table-weak">
+                          {{
+                            capitalize(
+                              all[$route.params.name].weaknesses[i - 1]
+                            )
+                          }}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </b-container>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+        <section class="section-padding">
+          <h2>Pokemon of this type:</h2>
+          <b-container class="d-flex justify-content-center">
+            <b-row class="align-items-center">
+              <b-col v-for="p in all[$route.params.name].related" :key="p.id">
+                <b-card>
+                  <SpriteBasic
+                    v-bind:name="p.name"
+                    v-bind:id="p.id"
+                    v-bind:types="p.types"
+                  />
+                </b-card>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+      </div>
+    </b-container>
+>>>>>>> develop
   </div>
 </template>
 
@@ -238,10 +326,8 @@ export default {
 }  
 </script>
 
-<!--
-Color of tables or fromatting subject to change
--->
 <style scoped>
+<<<<<<< HEAD
 
 #navbar {
   z-index: 1;
@@ -254,6 +340,8 @@ Color of tables or fromatting subject to change
   padding: 30px 0px;
 }
 
+=======
+>>>>>>> develop
 .table-strong {
   background-color: rgba(0, 128, 0, 0.7);
 }
@@ -261,6 +349,7 @@ Color of tables or fromatting subject to change
 .table-weak {
   background-color: rgba(255, 0, 0, 0.7);
 }
+<<<<<<< HEAD
 
 .text-scroll-bg {
   background-color: white;
@@ -311,4 +400,6 @@ Color of tables or fromatting subject to change
 .weak {
   background-color: rgb(173, 12, 0)
 }
+=======
+>>>>>>> develop
 </style>
