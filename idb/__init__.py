@@ -3,6 +3,7 @@
 Flask basics: http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application
 """
 import sys
+import flask
 
 from pathlib import Path
 from flask import Flask, render_template
@@ -32,11 +33,14 @@ def create_app(config_name=None):
     Returns:
         The flask application instance.
     """
+    if flask.has_app_context():
+        return flask.current_app
+
     import os
     import config
     from api import api
 
-    config_name = config_name or os.environ.get('FLASK_ENV', 'development')
+    config_name = config_name or os.environ.get('FLASK_ENV')
     configuration = config.load(config_name)
 
     app = Flask(__name__)

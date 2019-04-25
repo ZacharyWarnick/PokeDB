@@ -1,14 +1,11 @@
 <template>
-  <div class="Type" style="padding-left">
+  <div id="type">
     <Navbar />
-    <div class="bg">
-      <div class="container text-scroll-bg">
-        <b-container>
-          <b-jumbotron
-            class="section-padding"
-            :header="capitalize($route.params.name)"
-            header-tag="h2"
-          />
+    <b-container id="main-content">
+      <img class="bg" src="../assets/home-background.jpg" />
+      <div class="container text-scroll-bg fade-container">
+        <b-container class="section-padding">
+          <b-jumbotron :header="capitalize($route.params.name)" />
         </b-container>
         <section class="section-padding">
           <b-container>
@@ -86,7 +83,7 @@
           </b-container>
         </section>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
@@ -276,58 +273,12 @@ export default {
 };
 </script>
 
-<!--
-Color of tables or fromatting subject to change
--->
 <style scoped>
-.section-padding {
-  padding: 15px 0;
-}
-.container {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
 .table-strong {
   background-color: rgba(0, 128, 0, 0.7);
 }
 
 .table-weak {
   background-color: rgba(255, 0, 0, 0.7);
-}
-
-.text-scroll-bg {
-  background-color: white;
-  width: 1920px;
-  height: 1500px;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-content: center;
-  box-shadow: 4px 4px 4px;
-
-  animation: textUP 1.5s 1 forwards;
-}
-.bg {
-  padding-top: 0;
-
-  margin-bottom: 0px;
-
-  /* The image used */
-  background-image: url("../assets/home-background.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  align-content: center;
-
-  position: sticky;
 }
 </style>
