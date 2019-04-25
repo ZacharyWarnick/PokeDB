@@ -77,6 +77,22 @@
   </div>
 </template>
 
+<script>
+import Navbar from "@/components/Navbar.vue";
+
+export default {
+  name: "Home",
+  components: {
+    Navbar
+  },
+  el: "#home",
+  data() {
+    return {
+      clicked: true
+    };
+  }
+};
+</script>
 
 <style scoped>
 .jumbrotron {
@@ -248,21 +264,3 @@
   }
 }
 </style>
-
-<script>
-// @ is an alias to /src
-import Navbar from "@/components/Navbar.vue";
-
-export default {
-  name: "Home",
-  components: {
-    Navbar
-  },
-  el: "#home",
-  data() {
-    return {
-      clicked: true
-    };
-  }
-};
-</script>

@@ -96,49 +96,42 @@
 
           <section class="text-left section-padding">
             <b-container>
+              <h3>Data:</h3>
+            </b-container>
+          </section>
+
+          <InfoCards :items="info_sources" />
+
+          <section class="text-left section-padding">
+            <b-container>
               <h3>Tools:</h3>
             </b-container>
           </section>
 
-          <section class="section-padding">
+          <InfoCards :items="tools" />
+
+          <section class="text-left section-padding">
             <b-container>
-              <b-row class="align-items-stretch">
-                <b-col
-                  class="tool-card"
-                  cols="12"
-                  sm="6"
-                  md="6"
-                  lg="3"
-                  v-for="tool in tools"
-                  :key="tool.name"
-                >
-                  <b-card class="h-100">
-                    <b-card-body class="h-100 d-flex flex-column">
-                      <div
-                        class="justify-content-center"
-                        :style="tool.img_bg_style"
-                      >
-                        <img
-                          class="tool-image img-fluid"
-                          :src="tool.image_url"
-                        />
-                      </div>
-                      <b-card-title class="card-padding">{{
-                        tool.name
-                      }}</b-card-title>
-                      <b-card-text class="card-padding my-auto">{{
-                        tool.tagline
-                      }}</b-card-text>
-                      <b-button
-                        :href="tool.website"
-                        class="mt-auto"
-                        variant="outline-secondary"
-                        >Website</b-button
-                      >
-                    </b-card-body>
-                  </b-card>
+              <b-row>
+                <b-col>
+                  <h3>Tests:</h3>
+                </b-col>
+                <b-col class="ml-auto">
+                  <img
+                    id="help-icon"
+                    align="right"
+                    src="@/assets/ic-help.svg"
+                    class="svg"
+                    v-b-tooltip.hover.topleft="term_tooltip"
+                  />
                 </b-col>
               </b-row>
+            </b-container>
+            <TestResults />
+            <b-container>
+              <p class="hint-text">
+                <strong>Note:</strong> It may take a few seconds.
+              </p>
             </b-container>
           </section>
         </div>
@@ -149,11 +142,15 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import InfoCards from "@/components/InfoCards.vue";
+import TestResults from "@/components/TestResults.vue";
 
 export default {
   name: "About",
   components: {
-    Navbar
+    Navbar,
+    InfoCards,
+    TestResults
   },
   data() {
     return {
@@ -162,23 +159,30 @@ export default {
           full_name: "Ian Chang",
           picture: require("../assets/team/ian.jpg"),
           bio: [
-            "Ian Chang is pretty dumb. I don't know how he made it this far. He's",
-            "getting carried and will probably have to drop out."
+            "Ian Chang was born and raised in Dallas, Texas. He had graduated high",
+            "school within the top 5% of his class and was automatically accepted to",
+            "the University of Texas at Austin. He is pursuing a major in",
+            "Communication Studies, a certificate in Computer Science, and a minor",
+            "in Korean Language. His dream is to become a Full-Stack Developer."
           ].join(" "),
-          responsibilities: "",
-          commits: 5,
-          issues: 3,
+          responsibilities: "Back-end and Front-end Development",
+          commits: 21,
+          issues: 6,
           tests: 0
         },
         {
           full_name: "Tyler Chinn",
           picture: require("../assets/team/tyler.jpg"),
           bio: [
-            "Tyler Chinn born and raised in the Sahara Desert. There he found his",
-            "calling to be a software engineer."
+            "I'm a junior biomedical engineering major from Seattle Washington.",
+            "I've lived my whole life in Washington before coming to Texas and",
+            "Austin for college. I want to go into the software field, hopefully",
+            "applying to a healthcare or medical application that will help people",
+            "and make a positive impact on their lives.  My two passions are in",
+            "software and medicine so I ideally want to combine the two in my work."
           ].join(" "),
-          responsibilities: "",
-          commits: 19,
+          responsibilities: "Back-end and Front-end Development",
+          commits: 22,
           issues: 3,
           tests: 0
         },
@@ -186,12 +190,15 @@ export default {
           full_name: "Guillermo Gallegos",
           picture: require("../assets/team/guillermo.jpg"),
           bio: [
-            "Guillermo Gallegos grew up in Antartica. He fought polar bears for",
-            "a living, but now he found his passion as a web developer."
+            "Guillermo Gallegos grew up in El Paso, TX. He transferred from the",
+            "University of North Texas to get his bachelor degree in Chemistry",
+            "and a certificate in Computer Science. He plans to teach after he",
+            "graduates while continuing to acquire experience in computer science",
+            "with the hope of eventually working in a cybersecurity related job."
           ].join(" "),
-          responsibilities: "",
-          commits: 7,
-          issues: 2,
+          responsibilities: "Back-end Development",
+          commits: 20,
+          issues: 3,
           tests: 0
         },
         {
@@ -202,9 +209,10 @@ export default {
             "At the age of 3 years old he was developing software for Google and Microsoft.",
             "People say he's like Steve Jobs or Bill Gates, so people have also given him the nickname Bill Jobs."
           ].join(" "),
-          responsibilities: "",
-          commits: 68,
-          issues: 5,
+          responsibilities:
+            "Team Leader, Back-end, Front-end, and Database Development",
+          commits: 114,
+          issues: 14,
           tests: 0
         },
         {
@@ -214,41 +222,94 @@ export default {
             "Zack Warnick. The man from the moon. People say he's an alien because of",
             "his amazing coding skills."
           ].join(" "),
-          responsibilities: "",
-          commits: 22,
-          issues: 1,
+          responsibilities: "Back-end, Front-end, and Database Development",
+          commits: 42,
+          issues: 5,
           tests: 0
+        }
+      ],
+      info_sources: [
+        {
+          name: "Veekun Pokédex",
+          tagline: "More than you ever wanted to know about Pokémon",
+          website: "https://github.com/veekun/pokedex",
+          image_url:
+            "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        },
+        {
+          name: "Bulbapedia",
+          tagline: "The community-driven Pokémon encyclopedia",
+          website: "https://bulbapedia.bulbagarden.net/wiki/Main_Page",
+          image_url:
+            "https://cdn.bulbagarden.net/upload/thumb/d/d4/Bulbapedia_bulb.png/120px-Bulbapedia_bulb.png"
+        },
+        {
+          name: "Pokémon Database",
+          tagline: "The fastest way to get your Pokémon information",
+          website: "https://pokemondb.net/",
+          image_url:
+            "https://archives.bulbagarden.net/media/upload/4/40/493Arceus_Normal_Dream.png"
         }
       ],
       tools: [
         {
+          name: "Flask",
+          tagline: "Web development, one drop at a time",
+          website: "http://flask.pocoo.org/",
+          image_url: "http://flask.pocoo.org/docs/0.12/_static/flask.png"
+        },
+        {
+          name: "Flask SQLAlchemy",
+          tagline: "Extending Flask with the database toolkit for Python",
+          website: "https://flask-sqlalchemy.palletsprojects.com/en/2.x/",
+          image_url:
+            "https://flask-sqlalchemy.palletsprojects.com/en/2.x/_static/flask-sqlalchemy-logo.png"
+        },
+        {
+          name: "PostgreSQL",
+          tagline: "The world's most advanced open source relational database",
+          website: "https://www.postgresql.org/",
+          image_url:
+            "https://www.postgresql.org/media/img/about/press/elephant.png"
+        },
+        {
+          name: "Namecheap",
+          tagline: "Every website starts with a great domain name",
+          website: "https://www.namecheap.com/",
+          image_url:
+            "https://cdn.shopify.com/s/files/1/0286/7496/t/4/assets/logo.png"
+        },
+        {
           name: "Vue.js",
-          tagline: "The Progressive JavaScript Framework",
+          tagline: "The progressive JavaScript framework",
           website: "https://vuejs.org",
           image_url: "https://vuejs.org/images/logo.png"
         },
         {
+          name: "BootstrapVue",
+          tagline:
+            "The most comprehensive implementation of Bootstrap for Vue.js",
+          website: "https://bootstrap-vue.js.org/",
+          image_url: "https://bootstrap-vue.js.org/_nuxt/img/f0a8c9e.png"
+        },
+        {
           name: "Bootstrap",
-          tagline: "The most popular HTML, CSS, and JS library in the world.",
+          tagline: "The most popular HTML, CSS, and JS library in the world",
           website: "https://getbootstrap.com",
           image_url:
             "https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-outline.svg",
           img_bg_style: "background-color: #563d7c"
         },
         {
-          name: "Flask",
-          tagline: "Web development, one drop at a time.",
-          website: "http://flask.pocoo.org/",
-          image_url: "http://flask.pocoo.org/docs/0.12/_static/flask.png"
-        },
-        {
           name: "Google Cloud Platform",
-          tagline: "See what's possible with Google Cloud.",
+          tagline: "See what's possible with Google Cloud",
           website: "https://cloud.google.com/",
           image_url:
             "https://cloud.google.com/_static/images/cloud/icons/favicons/onecloud/apple-icon.png"
         }
-      ]
+      ],
+      term_tooltip:
+        "Click the terminal, type until it stops adding characters, then press enter."
     };
   }
 };
@@ -259,19 +320,23 @@ export default {
   padding: 30px 0;
 }
 
-.card-padding {
-  padding: 10px 0;
+.hint-text {
+  font-size: 0.85em;
 }
 
-.tool-image {
-  padding: 25px;
-  max-height: 144px;
+#help-icon {
+  position: relative;
+  bottom: -40px;
+  height: 24px;
+  margin: 4px;
+  width: auto;
+  opacity: 0.25;
 }
 
-.tool-card {
-  margin-top: 15px;
-  margin-bottom: 15px;
+#help-icon:hover {
+  opacity: 0.5;
 }
+
 .fade-container {
   animation: FadeIn 1.5s 1 forwards;
 }
@@ -284,6 +349,7 @@ export default {
     opacity: 1;
   }
 }
+
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
@@ -296,6 +362,7 @@ export default {
 
   animation: textUP 1.5s 1 forwards;
 }
+
 .bg {
   padding-top: 0;
 
