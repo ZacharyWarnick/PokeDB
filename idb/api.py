@@ -101,7 +101,7 @@ def get_test_results():  # pragma: no cover
     from tests import api_util as util
     result = util.get_coverage_result()
     del util
-    return jsonify({'output': result})
+    return result
 
 
 @api.route('/search', methods=['GET'])

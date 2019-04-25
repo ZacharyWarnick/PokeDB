@@ -80,7 +80,7 @@
           </b-col>
         </b-row>
         <hr>
-        <h2 class="evo-header">{{pokemon.name}} is a part of this chain:</h2>
+        <h2  v-if="pokemon.evolution_chain_id != null" class="evo-header">{{pokemon.name}} is a part of this chain:</h2>
         <EvolutionOverview v-if="pokemon.evolution_chain_id != null"
           :id="chainID"
           :page_name="pokemon.name"
@@ -188,10 +188,11 @@ export default {
 .text-scroll-bg {
   background-color: white;
   width: 1920px;
-  height: 1500px;
+  height: 100%;
 
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 0px;
   align-content: center;
   box-shadow: 4px 4px 4px;
 
