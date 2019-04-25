@@ -1,9 +1,8 @@
 <template>
   <div class="pokemon">
-     <Navbar />
+    <Navbar />
     <div class="bg">
       <div class="container text-scroll-bg">
-      <section id="about" class="container section-padding">
       <b-row>
         <b-col  md="6">
           <div class="profile-wrapper wow">
@@ -85,7 +84,7 @@
           :id="chainID"
           :page_name="pokemon.name"
         />
-      </section>
+        <h2 v-else>This pokémon is not part of an evolution chain.</h2>
       </div>
     </div>
   </div>
@@ -137,13 +136,9 @@ export default {
 </script>
 
 <style scoped>
+
 .section-padding {
   padding: 15px 0;
-}
-
-.profile-wrapper {
-  padding: 45px 0;
-  text-align: left;
 }
 
 .genus {
@@ -190,13 +185,13 @@ export default {
   width: 1920px;
   height: 100%;
 
-  padding-top: 30px;
+  padding-top: 8vh;
   padding-bottom: 30px;
   margin-bottom: 0px;
+  
   align-content: center;
   box-shadow: 4px 4px 4px;
 
-  animation: textUP 1.5s 1 forwards;
 }
 .bg {
   padding-top: 0;
@@ -207,7 +202,7 @@ export default {
   background-image: url("../assets/home-background.jpg");
 
   /* Full height */
-  height: 100%;
+  height: 100vh !important;
 
   /* Center and scale the image nicely */
   background-position: center;

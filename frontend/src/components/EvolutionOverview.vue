@@ -11,16 +11,19 @@
         <b-row class="align-items-center">
 
           <b-col >
-            <a :href="'/pokemon/' + chain.base_pokemon.id" style="text-decoration:none"> <SpriteBasic class="base"
+            <a :href="'/pokemon/' + chain.base_pokemon.id">
+             <SpriteBasic class="base"
               v-bind:class="{'current':(chain.base_pokemon.name === page_name)}"
               v-bind:name="chain.base_pokemon.name"
               v-bind:id="chain.base_pokemon.id"
               v-bind:types="chain.base_pokemon.first_type.identifier"
-            /> </a>           
+            /> </a>
           </b-col>
 
-          <b-col v-for="stage in chain.stages" v-bind:key="stage">       
-            <a :href="'/pokemon/' + stage.pokemon.id" style="text-decoration:none"><SpriteBasic
+          <b-col v-for="stage in chain.stages" v-bind:key="stage"> 
+                  
+            <a :href="'/pokemon/' + stage.pokemon.id">
+            <SpriteBasic
               v-bind:class="{'current':(stage.pokemon.name === page_name)}"
               v-bind:name="stage.pokemon.name"
               v-bind:id="stage.pokemon.id"
