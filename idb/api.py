@@ -96,6 +96,11 @@ def get_type(a_type):
     return jsonify(data.query_type(a_type))
 
 
+@api.route('/types/<int:a_type>/related', methods=['GET'])
+def get_related_pokemon(a_type):
+    return jsonify(data.query_pokemon_for_type(a_type))
+
+
 @api.route('/tests', methods=['GET'])
 def get_test_results():  # pragma: no cover
     from tests import api_util as util

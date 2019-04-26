@@ -359,6 +359,13 @@ def query_type(a_type):
     return result
 
 
+def query_pokemon_for_type(type_id):
+    cond = or_(Pokemon.first_type_id == type_id,
+               Pokemon.second_type_id == type_id)
+    query = Pokemon.query.filter(cond).order_by(func.random()).limit(5)
+    return [it.to_dict() for it in query.all()]
+
+
 def _query_related_pokemon(pokemon):
     """Searchs for the related evolutions of a list of Pokémon.
 
