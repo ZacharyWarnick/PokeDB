@@ -102,7 +102,7 @@ function getID() {
 
   var pathArray = window.location.pathname.split('/');
 
-  var lastLocation = pathArray.slice(-1).pop()
+  var lastLocation = pathArray.slice(-1).pop();
 
   return String(lastLocation);
 }
@@ -130,7 +130,7 @@ export default {
     getPokemon(getID()).then(
       response => (this.pokemon = response.data) && 
       (this.chainID = response.data.evolution_chain_id)
-    )
+    );
   }
 };
 </script>
