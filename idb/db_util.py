@@ -14,7 +14,7 @@ def load_json(fname):
     if not fpath.exists():
         raise FileNotFoundError('File doesn\'t exist:', fpath)
 
-    with fpath.open(errors="ignore") as f:
+    with fpath.open() as f:
         return json.load(f)
 
 
