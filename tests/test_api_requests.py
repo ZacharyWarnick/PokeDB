@@ -28,6 +28,43 @@ class TestApiRequests(TestCase):
             with self.subTest('{}.{}'.format(pokemon, key)):
                 self.assertEqual(value, resp)
 
+    def _test_get_evolution(self, evo, expectations):
+        out = self.client.get('/api/evolutions/{}'.format(evo))
+        poke = json.loads(out.data)
+
+        for key, value in expectations.items():
+            if '.' in key:
+                resp = poke
+                for nkey in key.split('.'):
+                    # Obtain the nested element.
+                    resp = resp[nkey]
+            else:
+                resp = poke[key]
+
+            for i in range(len(resp)):
+                for innerkey, innervalue in value[i].items():
+                    idnum = resp[i][innerkey]
+
+
+                with self.subTest('{}.{}'.format(evo, key)):
+                    self.assertEqual(innervalue, idnum)
+
+    def _test_get_type(self, types, expectations):
+        out = self.client.get('/api/types/{}'.format(types))
+        poke = json.loads(out.data)
+
+        for key, value in expectations.items():
+            if '.' in key:
+                resp = poke
+                for nkey in key.split('.'):
+                    # Obtain the nested element.
+                    resp = resp[nkey]
+            else:
+                resp = poke[key]
+
+            with self.subTest('{}.{}'.format(types, key)):
+                self.assertEqual(value, resp)
+
     def test_get_pokemon_identifier(self):
         expectations = {
             'bulbasaur': {
@@ -58,27 +95,44 @@ class TestApiRequests(TestCase):
 
         Both possible evolutions then evolve independently.
         """
-        out = self.client.get('/api/evolutions/1')
-        evo = json.loads(out.data)
-        pprint(evo)
+        expectations = {
+            '135': {
+                'stages': [{'id': 138},{'id': 139},{'id': 140},{'id': 141}]
+                }
+            }
+        for k, v in expectations.items():
+            self._test_get_evolution(k, v)
+       
 
     def test_get_evo_eevee(self):
         """Eevee has 8 evolutions. Two can evolve in 3 different ways."""
-        out = self.client.get('/api/evolutions/1')
-        evo = json.loads(out.data)
-        pprint(evo)
+        expectations = {
+            '67': {
+                'stages': [{'id': 76},{'id': 77},{'id': 78},{'id': 109},{'id': 110},{'id': 238},{'id': 239},{'id': 324},{'id': 325},{'id': 361},{'id': 363},{'id': 364}]
+                }
+            }
+        for k, v in expectations.items():
+            self._test_get_evolution(k, v)
+        
+
+
 
     def test_get_evo_magikarp(self):
         """Has a simple, level-based evolution. This is the average case."""
-        out = self.client.get('/api/evolutions/1')
-        evo = json.loads(out.data)
-        pprint(evo)
+        expectations = {
+            '64': {
+                'stages': [{'id': 75}]
+                }
+            }
+        for k, v in expectations.items():
+            self._test_get_evolution(k, v)
+        
+
+    
 
     def test_get_type_normal(self):
-        out = self.client.get('/api/types/normal')
-        the_type = json.loads(out.data)
-        response = [
-            {
+        expectations = {
+            'normal': {
                 'damage_class': 'physical',
                 'identifier': 'normal',
                 'vs_normal': 1.0,
@@ -102,15 +156,16 @@ class TestApiRequests(TestCase):
                 'id': 1,
                 'pokemon_count': 109,
                 'stat_average': 398,
-                'relative_advantage': -0.111,
+                'relative_advantage': -0.111
                 }
-            ]
+            }
+        for k, v in expectations.items():
+            self._test_get_type(k, v)
+        
 
     def test_get_type_fire(self):
-        out = self.client.get('/api/types/fire')
-
-        response = [
-            {
+        expectations = {
+            'fire': {
                 'damage_class': 'special',
                 'identifier': 'fire',
                 'vs_normal': 1.0,
@@ -134,17 +189,16 @@ class TestApiRequests(TestCase):
                 'id': 10,
                 'pokemon_count': 64,
                 'stat_average': 447,
-                'relative_advantage': 0.111,
+                'relative_advantage': 0.111
                 }
-            ]
-        the_type = json.loads(out.data)
+            }
+        for k, v in expectations.items():
+            self._test_get_type(k, v)
+        
 
     def test_api_type_fairy(self):
-        out = self.client.get('/api/types/fairy')
-        the_type = json.loads(out.data)
-        # Passing the mock object
-        response = [
-            {
+        expectations = {
+            'fairy': {
                 'damage_class': 'special',
                 'identifier': 'fairy',
                 'vs_normal': 1.0,
@@ -168,9 +222,12 @@ class TestApiRequests(TestCase):
                 'id': 18,
                 'pokemon_count': 47,
                 'stat_average': 416,
-                'relative_advantage': 0.111,
+                'relative_advantage': 0.111
                 }
-            ]
+            }
+        for k, v in expectations.items():
+            self._test_get_type(k, v)
+        
 
 
 if __name__ == '__main__':
