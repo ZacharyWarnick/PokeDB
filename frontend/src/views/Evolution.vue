@@ -51,7 +51,7 @@
               <img src="@/assets/arrow-png-icon-1.jpg" width="75px" class="arrow">
             </b-col>
             <b-col md="4">
-              <a :href="'/pokemon/' + stage.pokemon.name" style="text-decoration:none"> 
+              <a :href="'/pokemon/' + stage.pokemon.identifier" style="text-decoration:none"> 
               <SpriteBasic class="looped"
                 v-bind:name="stage.pokemon.name"
                 v-bind:id="stage.pokemon.id"
