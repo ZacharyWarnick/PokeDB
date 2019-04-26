@@ -151,45 +151,6 @@ export default {
     transform: translateX(-1%) rotate(-2deg);
     opacity: 1;
   }
-}
-
-.upright {
-  width: 85%;
-  max-width: 1100px;
-  animation: PokeIn 2s 1 forwards;
-  position: relative;
-  z-index: 0;
-}
-
-@keyframes PokeIn {
-  0% {
-    transform: translateY(100%);
-  }
-
-  33% {
-    transform: translateY(-20%);
-    transform: rotate(-180deg);
-  }
-
-  66% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-120%);
-  }
-}
-
-#navbar {
-  z-index: 1;
-  width: 100%;
-  position: fixed;
-  animation: navFill 1.5s 1 forwards;
-}
-
-@keyframes navFill {
-  0% {
-    width: 25%;
-  }
 
   100% {
     transform: translateX(0%) rotate(0deg);
