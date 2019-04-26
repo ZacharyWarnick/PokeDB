@@ -11,7 +11,8 @@ def load(name):
     options = {
         'development': Development,
         'testing': Testing,
-        'production': DefaultConfig
+        'production': DefaultConfig,
+        None: Development
         }
 
     if name not in options:
