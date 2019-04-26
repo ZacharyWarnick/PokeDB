@@ -1,5 +1,6 @@
 <template>
   <div class="pokemon">
+<<<<<<< HEAD
      <Navbar />
     <div class="bg">
       <div class="container text-scroll-bg">
@@ -88,6 +89,89 @@
       </section>
       </div>
     </div>
+=======
+    <Navbar />
+    <b-container id="main-content">
+      <img class="bg" src="../assets/home-background.jpg" />
+      <div class="container text-scroll-bg fade-container">
+        <section id="about" class="container section-padding">
+          <b-row>
+            <b-col lg="6" md="6" sm="12" cols="12">
+              <div class="profile-wrapper wow">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h2>
+                      <strong>{{ all[$route.params.name].id }}</strong>
+                      {{ all[$route.params.name].display_name }}
+                    </h2>
+                  </div>
+                  <div>
+                    <router-link
+                      tag="img"
+                      v-for="the_type in all[$route.params.name].types"
+                      v-bind:to="'/types/' + the_type.name"
+                      v-bind:key="the_type.id"
+                      class="type-badge"
+                      v-bind:src="the_type.badge_image"
+                    />
+                  </div>
+                </div>
+                <p class="poke-desc">
+                  {{ all[$route.params.name].flavor_text }}
+                </p>
+                <hr />
+                <div class="poke-info">
+                  <ul>
+                    <li>
+                      <strong>Health</strong>
+                      {{ all[$route.params.name].stats.hp }}
+                    </li>
+                    <li>
+                      <strong>Attack</strong>
+                      {{ all[$route.params.name].stats.atk }}
+                    </li>
+                    <li>
+                      <strong>Defense</strong>
+                      {{ all[$route.params.name].stats.def }}
+                    </li>
+                    <li>
+                      <strong>Sp. Atk</strong>
+                      {{ all[$route.params.name].stats.sp_atk }}
+                    </li>
+                    <li>
+                      <strong>Sp. Def</strong>
+                      {{ all[$route.params.name].stats.sp_def }}
+                    </li>
+                    <li>
+                      <strong>Speed</strong>
+                      {{ all[$route.params.name].stats.spd }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </b-col>
+
+            <b-col lg="6" md="6" sm="12" cols="12" class="my-auto">
+              <div class="img-thumb wow">
+                <img
+                  v-bind:src="all[$route.params.name].sprite"
+                  class="img-fluid poke-img"
+                />
+              </div>
+            </b-col>
+          </b-row>
+        </section>
+
+        <section id="evolution" class="container section-padding">
+          <EvolutionOverview
+            v-bind:name="all[$route.params.name].ev.name"
+            v-bind:first="all[$route.params.name].ev.first"
+            v-bind:second="all[$route.params.name].ev.second"
+          />
+        </section>
+      </div>
+    </b-container>
+>>>>>>> develop
   </div>
     
 </template>
@@ -181,6 +265,7 @@ export default {
 .poke-img-box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+<<<<<<< HEAD
 
 .evo-header {
   padding: 20px 0px;
@@ -218,4 +303,6 @@ export default {
 
   position: sticky;
 }
+=======
+>>>>>>> develop
 </style>

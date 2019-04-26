@@ -1,5 +1,5 @@
 <template>
-  <div class="evolution">
+  <div id="evolution">
     <Navbar />
     <div class="bg">
       <div class="container text-scroll-bg">
