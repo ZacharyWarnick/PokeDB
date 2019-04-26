@@ -53,7 +53,7 @@ class Pokemon(_BaseModel):
 
     __defaultfields__ = [
         'evolution_chain_id', 'since_gen', 'first_type', 'second_type', 'name',
-        'identifier', 'color', 'sprite', 'has_alt_form'
+        'identifier', 'color', 'sprite', 'has_alt_form', 'genus'
         ]
 
     __table_args__ = (

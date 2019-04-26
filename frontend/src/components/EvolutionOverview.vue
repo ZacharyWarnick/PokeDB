@@ -9,26 +9,30 @@
       >
       <b-card-body>
         <b-row class="align-items-center">
-
-          <b-col >
-            <a :href="'/pokemon/' + chain.base_pokemon.id" style="text-decoration:none"> <SpriteBasic class="base"
-              v-bind:class="{'current':(chain.base_pokemon.name === page_name)}"
-              v-bind:name="chain.base_pokemon.name"
-              v-bind:id="chain.base_pokemon.id"
-              v-bind:types="chain.base_pokemon.first_type.identifier"
-            /> </a>           
+          <b-col>
+            <router-link :to="'/pokemon/' + chain.base_pokemon.identifier">
+              <SpriteBasic
+                class="base"
+                v-bind:class="{
+                  current: chain.base_pokemon.identifier === page_name
+                }"
+                v-bind:name="chain.base_pokemon.name"
+                v-bind:id="chain.base_pokemon.id"
+                v-bind:types="chain.base_pokemon.first_type.identifier"
+              />
+            </router-link>
           </b-col>
 
-          <b-col v-for="stage in chain.stages" v-bind:key="stage">       
-            <a :href="'/pokemon/' + stage.pokemon.id" style="text-decoration:none"><SpriteBasic
-              v-bind:class="{'current':(stage.pokemon.name === page_name)}"
-              v-bind:name="stage.pokemon.name"
-              v-bind:id="stage.pokemon.id"
-              v-bind:types="stage.pokemon.first_type.identifier"
-            /> </a>
+          <b-col v-for="stage in chain.stages" v-bind:key="stage">
+            <a :href="'/pokemon/' + stage.pokemon.identifier">
+              <SpriteBasic
+                v-bind:class="{ current: stage.pokemon.identifier === page_name }"
+                v-bind:name="stage.pokemon.name"
+                v-bind:id="stage.pokemon.id"
+                v-bind:types="stage.pokemon.first_type.identifier"
+              />
+            </a>
           </b-col>
-           
-
         </b-row>
       </b-card-body>
     </b-card>
@@ -47,27 +51,25 @@ export default {
   },
   data() {
     return {
-    chain: null
-    }
+      chain: null
+    };
   },
 
   methods: {
     capitalize(s) {
       if (typeof s !== "string") return "";
       return s.charAt(0).toUpperCase() + s.slice(1);
-    },
+    }
   },
   props: {
     id: String,
-    page_name: String,
+    page_name: String
   },
 
   mounted() {
-    getEvolution(this.id).then(
-      response => (this.chain = response.data)
-    )
+    getEvolution(this.id).then(response => (this.chain = response.data));
   }
-}
+};
 </script>
 
 <style scoped>
@@ -94,5 +96,4 @@ export default {
 .current {
   border: 2px solid green;
 }
-
 </style>
