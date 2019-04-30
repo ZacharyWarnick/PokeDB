@@ -2,23 +2,32 @@
   <div class="search-results">
     <Navbar />
     <img class="bg" src="../assets/home-background.jpg" />
+
     <b-container id="main-content">
-      <div v-if="poke_first" class="text-scroll-bg fade-container">
-        <SearchResultPokemon
-          :v-show="pokemon.length > 0"
-          :pokemon="pokemon"
-          :related="related_pokemon"
-        />
-        <SearchResultTypes :types="types" />
-      </div>
-      <div v-else class="text-scroll-bg fade-container">
-        <SearchResultTypes :types="types" />
-        <SearchResultPokemon
-          :v-show="pokemon.length > 0"
-          :pokemon="pokemon"
-          :related="related_pokemon"
-        />
-      </div>
+      <div class="text-scroll-bg fade-container">
+        <b-jumbotron class="search-header">
+        <strong><h2> Showing Results for:<br/>
+           "{{this.$route.query.q}}"</h2></strong>   
+        
+        </b-jumbotron>
+        <div v-if="poke_first" class="pokemon-results">
+          <SearchResultPokemon
+            :v-show="pokemon.length > 0"
+            :pokemon="pokemon"
+            :related="related_pokemon"
+          />
+          
+          <SearchResultTypes :types="types" />
+        <hr>
+        </div>
+        <div v-else class="type-results">
+          <strong><SearchResultTypes :types="types" /></strong>
+          <SearchResultPokemon
+            :v-show="pokemon.length > 0"
+            :pokemon="pokemon"
+            :related="related_pokemon"
+          />
+        </div>
     </b-container>
   </div>
 </template>
@@ -65,3 +74,14 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+
+.search-header {
+  padding: 25px;
+}
+.fade-container {
+  margin: 2vh;
+  padding-top: 2vh;
+}
+</style>
