@@ -7,8 +7,8 @@
       <div >
         <div v-if="this.pokemon.length > 0 || this.types.length > 0" class="text-scroll-bg fade-container">
           <b-jumbotron class="search-header">
-          <strong><h2> Showing Results For:<br/>
-            "{{this.$route.query.q}}"</h2></strong>   
+          <strong><h1> Showing Results For:<br/>
+            "{{this.$route.query.q}}"</h1></strong>
           
           </b-jumbotron>
           <div v-if="poke_first" class="pokemon-results">
@@ -30,12 +30,12 @@
             />
           </div>
         </div>
-
-      <div v-else:>
+      </div>
+      <div v-show="this.pokemon.length == 0 && this.types.length == 0">
         <div class="text-scroll-bg fade-container">
           <b-jumbotron class="search-header">
-          <strong> <h3>We're sorry,<br> there are no results for
-            "{{this.$route.query.q}}"</h3></strong>             
+          <strong> <h1>We're sorry</h1><br> 
+          <h2>We couldn't find anything matching that query</h2></strong>             
           </b-jumbotron>
         </div>
       </div>
@@ -97,10 +97,10 @@ export default {
 }
 
 .pokemon-results {
-  padding-top: 2vh;
+  padding: 2vh;
 }
 
 .type-results {
-  padding-top: 2vh;
+  padding: 2vh;
 }
 </style>

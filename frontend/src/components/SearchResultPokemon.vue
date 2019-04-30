@@ -1,7 +1,7 @@
 <template>
   <div id="poke-search">
     <section class="section-padding" v-show="showPokemon">
-      <h1>Pokémon</h1>
+      <h1 class="header">Pokémon</h1>
       <pre class="json" v-for="(poke, idx) in pokemon" :key="idx"></pre>
         <b-container>
             <b-row>
@@ -30,7 +30,7 @@
           </b-container>
     </section>
     <section v-show="showRelated">
-      <h2>Related</h2>
+      <h2 class="header">Related</h2>
       <pre class="json" v-for="(poke, idx) in related" :key="idx"></pre>
          <b-container>
             <b-row>
@@ -98,5 +98,9 @@ export default {
 }
 .row-card {
   margin: 15px 10px;
+}
+.header {
+  margin: 1vh;
+  padding: 1vh;
 }
 </style>
