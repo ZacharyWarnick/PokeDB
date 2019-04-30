@@ -109,7 +109,7 @@ def get_test_results():  # pragma: no cover
     return result
 
 
-@api.route('/search', methods=['GET'])
+@api.route('/search', methods=['POST'])
 def search():
     q = request.args.get('q', '')
     limit = request.args.get('limit')
