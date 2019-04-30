@@ -1,7 +1,7 @@
 <template>
   <div id="poke-search">
     <section class="section-padding" v-show="showPokemon">
-      <h2>Pokémon</h2>
+      <h1>Pokémon</h1>
       <pre class="json" v-for="(poke, idx) in pokemon" :key="idx"></pre>
         <b-container>
             <b-row>

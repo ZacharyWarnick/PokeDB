@@ -1,29 +1,28 @@
 <template>
   <div id="type-search">
     <section class="section-padding" v-show="showTypes">
-      <h2>Types</h2>
-      <pre class="json" v-for="(t, idx) in types" :key="idx">
-      <b-container>
-        <div>
-          <b-card
-            :title="capitalize(t.identifier)"
-            :img-src="'@/assets/badge-' + t.identifier + '.png'"
-            img-alt="Image"
-            img-top
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2"
-          >
-            <b-card-text>
-              {{t.desc_info}}
-            </b-card-text>
+      <h1>Types</h1>
+      <b-container class="content font-correct">
+          <b-row >
+            <b-col class="lg-6" v-for="(t, idx) in types" :key="idx">
+              <div class="type-desc">
+                <b-card :title="capitalize(t.identifier)">
+                  <b-card-text>
+                    {{t.desc_info}}
+                  </b-card-text>
 
-            <b-button :href="'/types' + t.identifier" variant="primary">More Info</b-button>
-          </b-card>
-        </div>
+                  <router-link
+                    v-bind:to="'/types/' + t.identifier"
+                    class="btn btn-outline-dark"
+                    >Info</router-link
+                  >
+                </b-card>
+              <div>
+            </b-col>
+          </b-row>
       </b-container>
-      </pre>
     </section>
+    <hr/>
   </div>
 </template>
 
@@ -47,15 +46,24 @@ export default {
 </script>
 
 <style scoped>
-.json {
-  text-align: left;
-  word-wrap: normal;
-  max-width: 100%;
-  max-lines: 2;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
+
+.content {
+  padding: 1vh;
+  margin: 1vh;
+}
+
+.font-correct {
+  font-family: "Montserrat", sans-serif;
+}
+
+.type-desc title {
+  padding: 1vh;
+  justify-content: center
+}
+
+.description {
+  justify-content: center;
+  margin: 1vh;
+  padding: 1vh; 
 }
 </style>

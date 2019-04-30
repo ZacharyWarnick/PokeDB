@@ -4,30 +4,41 @@
     <img class="bg" src="../assets/home-background.jpg" />
 
     <b-container id="main-content">
-      <div class="text-scroll-bg fade-container">
-        <b-jumbotron class="search-header">
-        <strong><h2> Showing Results for:<br/>
-           "{{this.$route.query.q}}"</h2></strong>   
-        
-        </b-jumbotron>
-        <div v-if="poke_first" class="pokemon-results">
-          <SearchResultPokemon
-            :v-show="pokemon.length > 0"
-            :pokemon="pokemon"
-            :related="related_pokemon"
-          />
+      <div >
+        <div v-if="this.pokemon.length > 0 || this.types.length > 0" class="text-scroll-bg fade-container">
+          <b-jumbotron class="search-header">
+          <strong><h2> Showing Results For:<br/>
+            "{{this.$route.query.q}}"</h2></strong>   
           
-          <SearchResultTypes :types="types" />
-        <hr>
+          </b-jumbotron>
+          <div v-if="poke_first" class="pokemon-results">
+            <SearchResultPokemon
+              :v-show="pokemon.length > 0"
+              :pokemon="pokemon"
+              :related="related_pokemon"
+            />
+            
+            <SearchResultTypes :types="types" />
+          <hr>
+          </div>
+          <div v-else class="type-results">
+            <strong><SearchResultTypes :types="types" /></strong>
+            <SearchResultPokemon
+              :v-show="pokemon.length > 0"
+              :pokemon="pokemon"
+              :related="related_pokemon"
+            />
+          </div>
         </div>
-        <div v-else class="type-results">
-          <strong><SearchResultTypes :types="types" /></strong>
-          <SearchResultPokemon
-            :v-show="pokemon.length > 0"
-            :pokemon="pokemon"
-            :related="related_pokemon"
-          />
+
+      <div v-else:>
+        <div class="text-scroll-bg fade-container">
+          <b-jumbotron class="search-header">
+          <strong> <h3>We're sorry,<br> there are no results for
+            "{{this.$route.query.q}}"</h3></strong>             
+          </b-jumbotron>
         </div>
+      </div>
     </b-container>
   </div>
 </template>
@@ -82,6 +93,14 @@ export default {
 }
 .fade-container {
   margin: 2vh;
+  padding-top: 2vh;
+}
+
+.pokemon-results {
+  padding-top: 2vh;
+}
+
+.type-results {
   padding-top: 2vh;
 }
 </style>
