@@ -13,8 +13,8 @@
                 </h2>
                 <p class="lead text-justify">{{ type.desc_info }}</p>
               </b-col>
-              <b-col md="6">
-                <img src="../assets/team/ian.jpg" width="320px" />
+              <b-col md="6" class="type-img-col">
+                <img  :src="require('../assets/types/' + (type.identifier + '.png'))" class="type-img"/>
               </b-col>
             </b-row>
             <hr />
@@ -346,12 +346,18 @@ export default {
     capitalize(s) {
       if (typeof s !== "string") return "";
       return s.charAt(0).toUpperCase() + s.slice(1);
-    }
+    },
   },
   mounted() {
     getType(this.$route.params.name).then(
       response => (this.type = response.data)
     );
+  },
+
+  computed: {
+    image() {
+      return require('../assets/types/' + this.type.identifier + '.png')
+    } 
   }
 };
 </script>
@@ -377,5 +383,13 @@ export default {
 }
 .weak {
   background-color: rgb(173, 12, 0);
+}
+.type-img-col{
+  vertical-align: middle;
+}
+.type-img {
+  align-self: center;
+  margin: 1vh;
+  padding-top: 2vh;
 }
 </style>
