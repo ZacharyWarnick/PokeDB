@@ -10,6 +10,17 @@
             lead="First Pokémon in evolution chain is displayed."
           />
           <section class="section-padding">
+            <b-pagination
+              v-model="evolutions.current_page"
+              v-bind:total-rows="evolutions.total_items"
+              v-bind:per-page="evolutions.per_page"
+              @input="updateListing(evolutions.current_page)"
+              first-text="First"
+              prev-text="Prev"
+              next-text="Next"
+              last-text="Last"
+              align="center"
+            />
             <b-container class="justify-content-center">
               <b-row>
                 <b-col
@@ -17,17 +28,18 @@
                   sm="6"
                   md="4"
                   lg="3"
-                  v-for="p in pokemon"
-                  v-bind:key="p.id"
+                  v-for="chain in evolutions.data"
+                  v-bind:key="chain.id"
                 >
                   <b-card style="margin-top: 10px;">
                     <SpriteBasic
-                      v-bind:name="p.display_name"
-                      v-bind:id="p.id"
-                      v-bind:types="p.types"
+                      v-for:key="poke in chain.stages"
+                      v-bind:name="poke.pokemon.name"
+                      v-bind:id="poke.id"
+                      v-bind:types="poke.pokemon.first_type"
                     />
                     <router-link
-                      v-bind:to="'/evolutions/' + p.name"
+                      v-bind:to="'/evolutions/' + chain.base_pokemon.identifier"
                       class="btn btn-outline-dark"
                       >Evolution Chain</router-link
                     >
@@ -52,29 +64,20 @@ export default {
     Navbar,
     SpriteBasic
   },
+  methods: {
+  updateListing(current) {
+    getEvolutionListing({ sort: "id", order: "ASC", page: current }).then(
+      response => (this.evolutions = response.data)
+    );
+  }
+  },
   data() {
     return {
-      pokemon: [
-        {
-          name: "ekans",
-          display_name: "Ekans",
-          id: 23,
-          types: [this.$types["poison"]]
-        },
-        {
-          name: "sandshrew",
-          display_name: "Sandshrew",
-          id: 27,
-          types: [this.$types["ground"]]
-        },
-        {
-          name: "magikarp",
-          display_name: "Magikarp",
-          id: 129,
-          types: [this.$types["water"]]
-        }
-      ]
+      evolutions: null
     };
+  },
+  mounted() {
+    this.updateListing(1)
   }
 };
 </script>
