@@ -390,6 +390,6 @@ export default {
 .type-img {
   align-self: center;
   margin: 1vh;
-  padding-top: 2vh;
+  padding-top: 3vh;
 }
 </style>
