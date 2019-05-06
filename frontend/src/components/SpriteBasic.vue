@@ -16,11 +16,11 @@
       <b-container class="my-auto">
         <span>{{ name }}</span>
         <b-row class="justify-content-center align-items-center">
-          <div v-for="item in types" :key="item.badge_image">
+          <div v-for="(item, idx) in getTypes()" :key="idx">
             <router-link
               tag="img"
               v-bind:to="'/types/' + item.name"
-              v-bind:src="item.badge_image"
+              v-bind:src="item.image"
               alt="Type Badge"
               class="img-fluid badge-image"
             />
@@ -36,8 +36,28 @@ export default {
   name: "SpriteBasic",
   props: {
     name: String,
-    id: String,
-    type: String
+    id: Number,
+    types: Array
+  },
+  methods: {
+    getTypes: function() {
+      var out = [];
+
+      for (let t of this.types) {
+        console.log(t);
+        if (t != null) {
+          const newItem = {
+            name: t.identifier,
+            image: require(`../assets/types/${t.identifier}.png`)
+          };
+          out.push(newItem);
+        }
+      }
+
+      console.log(this.types);
+
+      return out;
+    }
   }
 };
 </script>
@@ -57,7 +77,7 @@ export default {
 }
 
 .badge-image {
-  max-width: 44px;
+  max-width: 22px;
   margin: 0 2px;
 }
 </style>

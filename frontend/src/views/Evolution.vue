@@ -20,7 +20,10 @@
                   class="base"
                   v-bind:name="chain.base_pokemon.name"
                   v-bind:id="chain.base_pokemon.id"
-                  v-bind:types="chain.base_pokemon.first_type.identifier"
+                  v-bind:types="[
+                    chain.base_pokemon.first_type,
+                    chain.base_pokemon.second_type
+                  ]"
                 />
               </router-link>
             </b-col>
@@ -33,7 +36,10 @@
                   class="looped"
                   v-bind:name="stage.pokemon.name"
                   v-bind:id="stage.pokemon.id"
-                  v-bind:types="stage.pokemon.first_type.identifier"
+                  v-bind:types="[
+                    stage.pokemon.first_type,
+                    stage.pokemon.second_type
+                  ]"
                 />
               </router-link>
             </b-col>
@@ -54,7 +60,10 @@
                     class="looped"
                     v-bind:name="stage.evolves_from.name"
                     v-bind:id="stage.evolves_from.id"
-                    v-bind:types="stage.evolves_from.first_type.identifier"
+                    v-bind:types="[
+                      stage.evolves_from.first_type,
+                      stage.evolves_from.second_type
+                    ]"
                   />
                 </router-link>
               </b-col>
@@ -74,7 +83,10 @@
                     class="looped"
                     v-bind:name="stage.pokemon.name"
                     v-bind:id="stage.pokemon.id"
-                    v-bind:types="stage.pokemon.first_type.identifier"
+                    v-bind:types="[
+                      stage.pokemon.first_type,
+                      stage.pokemon.second_type
+                    ]"
                   />
                 </router-link>
               </b-col>
@@ -132,12 +144,6 @@ export default {
   components: {
     Navbar,
     SpriteBasic
-  },
-  methods: {
-    capitalize(s) {
-      if (typeof s !== "string") return "";
-      return s.charAt(0).toUpperCase() + s.slice(1);
-    }
   },
   data() {
     return {

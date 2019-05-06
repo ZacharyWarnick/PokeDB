@@ -18,22 +18,28 @@
                 }"
                 v-bind:name="chain.base_pokemon.name"
                 v-bind:id="chain.base_pokemon.id"
-                v-bind:types="chain.base_pokemon.first_type.identifier"
+                v-bind:types="[
+                  chain.base_pokemon.first_type,
+                  chain.base_pokemon.second_type
+                ]"
               />
             </router-link>
           </b-col>
 
-          <b-col v-for="stage in chain.stages" v-bind:key="stage">
-            <a :href="'/pokemon/' + stage.pokemon.identifier">
+          <b-col v-for="(stage, idx) in chain.stages" v-bind:key="idx">
+            <router-link :to="'/pokemon/' + stage.pokemon.identifier">
               <SpriteBasic
                 v-bind:class="{
                   current: stage.pokemon.identifier === page_name
                 }"
                 v-bind:name="stage.pokemon.name"
                 v-bind:id="stage.pokemon.id"
-                v-bind:types="stage.pokemon.first_type.identifier"
+                v-bind:types="[
+                  stage.pokemon.first_type,
+                  stage.pokemon.second_type
+                ]"
               />
-            </a>
+            </router-link>
           </b-col>
         </b-row>
       </b-card-body>
@@ -63,10 +69,9 @@ export default {
     }
   },
   props: {
-    id: String,
+    id: Number,
     page_name: String
   },
-
   mounted() {
     getEvolution(this.id).then(response => (this.chain = response.data));
   }

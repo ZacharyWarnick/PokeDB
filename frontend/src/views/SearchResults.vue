@@ -4,12 +4,18 @@
     <img class="bg" src="../assets/home-background.jpg" />
 
     <b-container id="main-content">
-      <div >
-        <div v-if="this.pokemon.length > 0 || this.types.length > 0" class="text-scroll-bg fade-container">
+      <div>
+        <div
+          v-if="this.pokemon.length > 0 || this.types.length > 0"
+          class="text-scroll-bg fade-container"
+        >
           <b-jumbotron class="search-header">
-          <strong><h1> Showing Results For:<br/>
-            "{{this.$route.query.q}}"</h1></strong>
-          
+            <strong
+              ><h1>
+                Showing Results For:<br />
+                "{{ this.$route.query.q }}"
+              </h1></strong
+            >
           </b-jumbotron>
           <div v-if="poke_first" class="pokemon-results">
             <SearchResultPokemon
@@ -17,12 +23,12 @@
               :pokemon="pokemon"
               :related="related_pokemon"
             />
-            
+
             <SearchResultTypes :types="types" />
-          <hr>
+            <hr />
           </div>
           <div v-else class="type-results">
-            <strong><SearchResultTypes :types="types" /></strong>
+            <strong><SearchResultTypes :types="types"/></strong>
             <SearchResultPokemon
               :v-show="pokemon.length > 0"
               :pokemon="pokemon"
@@ -34,8 +40,11 @@
       <div v-show="this.pokemon.length == 0 && this.types.length == 0">
         <div class="text-scroll-bg fade-container">
           <b-jumbotron class="search-header">
-          <strong> <h1>We're sorry</h1><br> 
-          <h2>We couldn't find anything matching that query</h2></strong>             
+            <strong>
+              <h1>We're sorry</h1>
+              <br />
+              <h2>We couldn't find anything matching that query</h2></strong
+            >
           </b-jumbotron>
         </div>
       </div>
@@ -87,7 +96,6 @@ export default {
 </script>
 
 <style scoped>
-
 .search-header {
   padding: 25px;
 }

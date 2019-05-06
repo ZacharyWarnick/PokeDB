@@ -2,61 +2,59 @@
   <div id="poke-search">
     <section class="section-padding" v-show="showPokemon">
       <h1 class="header">Pokémon</h1>
-      <pre class="json" v-for="(poke, idx) in pokemon" :key="idx"></pre>
-        <b-container>
-            <b-row>
-              <b-col
-                cols="12"
-                sm="6"
-                md="4"
-                lg="3"
-                v-for="p in pokemon"
-                v-bind:key="p"
+      <b-container>
+        <b-row>
+          <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+            v-for="p in pokemon"
+            v-bind:key="p"
+          >
+            <b-card class="row-card shadow-sm">
+              <SpriteBasic
+                v-bind:name="p.name"
+                v-bind:id="p.id"
+                v-bind:types="[p.first_type, p.second_type]"
+              />
+              <router-link
+                v-bind:to="'/pokemon/' + p.identifier"
+                class="btn btn-outline-dark"
+                >Info</router-link
               >
-                <b-card class="row-card shadow-sm">
-                  <SpriteBasic
-                    v-bind:name="p.name"
-                    v-bind:id="p.id"
-                    v-bind:types="p.types"
-                  />
-                  <router-link
-                    v-bind:to="'/pokemon/' + p.identifier"
-                    class="btn btn-outline-dark"
-                    >Info</router-link
-                  >
-                </b-card>
-              </b-col>
-            </b-row>
-          </b-container>
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
     <section v-show="showRelated">
       <h2 class="header">Related</h2>
-      <pre class="json" v-for="(poke, idx) in related" :key="idx"></pre>
-         <b-container>
-            <b-row>
-              <b-col
-                cols="12"
-                sm="6"
-                md="4"
-                lg="3"
-                v-for="p in pokemon"
-                v-bind:key="p"
+      <b-container>
+        <b-row>
+          <b-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+            v-for="p in pokemon"
+            v-bind:key="p.id"
+          >
+            <b-card class="row-card shadow-sm">
+              <SpriteBasic
+                v-bind:name="p.name"
+                v-bind:id="p.id"
+                v-bind:types="[p.first_type, p.second_type]"
+              />
+              <router-link
+                v-bind:to="'/pokemon/' + p.identifier"
+                class="btn btn-outline-dark"
+                >Info</router-link
               >
-                <b-card class="row-card shadow-sm">
-                  <SpriteBasic
-                    v-bind:name="p.name"
-                    v-bind:id="p.id"
-                    v-bind:types="p.types"
-                  />
-                  <router-link
-                    v-bind:to="'/pokemon/' + p.identifier"
-                    class="btn btn-outline-dark"
-                    >Info</router-link
-                  >
-                </b-card>
-              </b-col>
-            </b-row>
-          </b-container>
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
   </div>
 </template>

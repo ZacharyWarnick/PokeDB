@@ -3,26 +3,26 @@
     <section class="section-padding" v-show="showTypes">
       <h1>Types</h1>
       <b-container class="content font-correct">
-          <b-row >
-            <b-col class="lg-6" v-for="(t, idx) in types" :key="idx">
-              <div class="type-desc">
-                <b-card :title="capitalize(t.identifier)">
-                  <b-card-text>
-                    {{t.desc_info}}
-                  </b-card-text>
+        <b-row>
+          <b-col class="lg-6" v-for="(t, idx) in types" :key="idx">
+            <div class="type-desc">
+              <b-card :title="capitalize(t.identifier)">
+                <b-card-text>
+                  {{ t.desc_info }}
+                </b-card-text>
 
-                  <router-link
-                    v-bind:to="'/types/' + t.identifier"
-                    class="btn btn-outline-dark"
-                    >Info</router-link
-                  >
-                </b-card>
-              <div>
-            </b-col>
-          </b-row>
+                <router-link
+                  v-bind:to="'/types/' + t.identifier"
+                  class="btn btn-outline-dark"
+                  >Info</router-link
+                >
+              </b-card>
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
-    <hr/>
+    <hr />
   </div>
 </template>
 
@@ -46,7 +46,6 @@ export default {
 </script>
 
 <style scoped>
-
 .content {
   padding: 1vh;
   margin: 1vh;
@@ -58,12 +57,12 @@ export default {
 
 .type-desc title {
   padding: 1vh;
-  justify-content: center
+  justify-content: center;
 }
 
 .description {
   justify-content: center;
   margin: 1vh;
-  padding: 1vh; 
+  padding: 1vh;
 }
 </style>
