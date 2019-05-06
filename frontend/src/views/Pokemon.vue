@@ -99,13 +99,6 @@ export default {
       chainID: null
     };
   },
-
-  methods: {
-    capitalize(s) {
-      if (typeof s !== "string") return "";
-      return s.charAt(0).toUpperCase() + s.slice(1);
-    }
-  },
   mounted() {
     getPokemon(this.$route.params.name).then(
       response =>
