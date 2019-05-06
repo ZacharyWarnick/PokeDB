@@ -1,7 +1,7 @@
 <template>
   <b-row>
-    <b-col cols="2">
-      <b-dropdown ref="dropdown" :text="sorts[active_sort]">
+    <b-col cols="3">
+      <b-dropdown class="mx-auto" ref="dropdown" :text="sorts[active_sort]">
         <b-dropdown-item
           v-for="(sort, key) in sorts"
           :key="key"
@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       current_page: 1,
-      active_sort: this.sorts[0],
+      active_sort: "id",
       order: "ASC"
     };
   },
@@ -56,7 +56,6 @@ export default {
     handleClick(key) {
       this.active_sort = key;
       this.toPage(this.current_page, this.active_sort, this.order);
-      console.log(this.active_sort);
     },
     reorder(idx) {
       const orders = ["ASC", "DESC"];

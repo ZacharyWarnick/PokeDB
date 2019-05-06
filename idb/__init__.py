@@ -75,6 +75,9 @@ def create_db():
     initialize()
 
 
+create_db()
+
+
 if __name__ == '__main__':
     # Debug provides live updates without restarting;
     # this is a development only argument.

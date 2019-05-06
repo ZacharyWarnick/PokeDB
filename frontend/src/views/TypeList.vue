@@ -13,6 +13,13 @@
         </b-container>
 
         <section class="album">
+          <Pagination
+            :current_page="current_page"
+            :total_items="total_items"
+            :per_page="per_page"
+            :toPage="fetchData"
+            :sorts="sorts"
+          />
           <div class="container">
             <div class="row">
               <div class="col-md-4" v-for="(t, idx) in types" :key="idx">
@@ -47,7 +54,6 @@
 <script>
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
-import SpriteBasic from "@/components/SpriteBasic.vue";
 import Pagination from "@/components/Pagination.vue";
 import { getTypeListing } from "@/api";
 
@@ -63,7 +69,6 @@ export default {
       this.total_items = response.total_items;
       this.per_page = response.per_page;
       this.types = response.data;
-      console.log(this.evolutions);
     },
     fetchData(current, sort, order) {
       console.log(sort);
@@ -81,7 +86,7 @@ export default {
       sorts: {
         id: "Type ID",
         name: "Name",
-        count: "Pokemon of Type",
+        count: "Pokemon having Type",
         stats: "Average Stats",
         adv: "Relative Advantage"
       }
