@@ -22,7 +22,7 @@
                   <SpriteBasic
                     v-bind:name="p.name"
                     v-bind:id="p.id"
-                    v-bind:types="p.types"
+                    v-bind:types="[p.first_type, p.second_Type]"
                   />
                   <router-link
                     v-bind:to="'/pokemon/' + p.identifier"
