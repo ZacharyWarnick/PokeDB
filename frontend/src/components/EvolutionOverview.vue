@@ -26,7 +26,9 @@
           <b-col v-for="stage in chain.stages" v-bind:key="stage">
             <a :href="'/pokemon/' + stage.pokemon.identifier">
               <SpriteBasic
-                v-bind:class="{ current: stage.pokemon.identifier === page_name }"
+                v-bind:class="{
+                  current: stage.pokemon.identifier === page_name
+                }"
                 v-bind:name="stage.pokemon.name"
                 v-bind:id="stage.pokemon.id"
                 v-bind:types="stage.pokemon.first_type.identifier"
@@ -38,7 +40,6 @@
     </b-card>
   </div>
 </template>
-
 
 <script>
 import SpriteBasic from "@/components/SpriteBasic.vue";

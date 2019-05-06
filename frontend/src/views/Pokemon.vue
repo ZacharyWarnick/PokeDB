@@ -86,7 +86,6 @@
 import Navbar from "@/components/Navbar.vue";
 import EvolutionOverview from "@/components/EvolutionOverview.vue";
 import { getPokemon } from "@/api";
-import { getEvolution } from "@/api";
 
 export default {
   name: "Pokemon",

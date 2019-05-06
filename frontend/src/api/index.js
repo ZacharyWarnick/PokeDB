@@ -33,3 +33,7 @@ export function getType(id) {
 export function getTestResults() {
   return axios.get(`${API_URL}/tests`);
 }
+
+export function getSearchResults(term) {
+  return axios.post(`${API_URL}/search`, null, { params: { q: term } });
+}
