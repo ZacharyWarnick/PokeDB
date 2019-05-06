@@ -47,6 +47,7 @@ def _pager(pager, data=None):
         with a data field which points to the page items.
     """
     data = data or _read_pager_items(pager)
+    print(pager.total)
     return {
         'current_page': pager.page,
         'page_count': pager.pages,

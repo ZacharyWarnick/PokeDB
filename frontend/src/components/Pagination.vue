@@ -1,30 +1,68 @@
 <template>
-  <div class="overflow-auto">
-    <!-- Use text in props -->
-    <b-pagination
-      v-model="currentPage"
-      v-bind:total-rows="rows"
-      v-bind:per-page="perPage"
-      @input="toPage(currentPage)"
-      first-text="First"
-      prev-text="Prev"
-      next-text="Next"
-      last-text="Last"
-      align="center"
-    ></b-pagination>
-  </div>
+  <b-row>
+    <b-col cols="2">
+      <b-dropdown ref="dropdown" :text="sorts[active_sort]">
+        <b-dropdown-item
+          v-for="(sort, key) in sorts"
+          :key="key"
+          @click="handleClick(key)"
+          >{{ sorts[key] }}</b-dropdown-item
+        >
+      </b-dropdown>
+    </b-col>
+    <b-col cols="1">
+      <b-dropdown :text="order">
+        <b-dropdown-item
+          v-for="(o, idx) in ['Ascending', 'Descending']"
+          :key="idx"
+          @click="reorder(idx)"
+          >{{ o }}</b-dropdown-item
+        >
+      </b-dropdown>
+    </b-col>
+    <b-col>
+      <b-pagination
+        v-model="current_page"
+        v-bind:total-rows="total_items"
+        v-bind:per-page="per_page"
+        @input="toPage(current_page, active_sort, order)"
+        first-text="First"
+        prev-text="Prev"
+        next-text="Next"
+        last-text="Last"
+        align="center"
+      />
+    </b-col>
+  </b-row>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        name:"Pagination",
-        rows: Number,
-        perPage: Number,
-        currentPage: Number,
-        toPage: Function
-      }
+export default {
+  name: "Pagination",
+  props: {
+    total_items: Number,
+    per_page: Number,
+    toPage: Function,
+    sorts: Object
+  },
+  data() {
+    return {
+      current_page: 1,
+      active_sort: this.sorts[0],
+      order: "ASC"
+    };
+  },
+  methods: {
+    handleClick(key) {
+      this.active_sort = key;
+      this.toPage(this.current_page, this.active_sort, this.order);
+      console.log(this.active_sort);
+    },
+    reorder(idx) {
+      const orders = ["ASC", "DESC"];
+      this.order = orders[idx];
+      this.toPage(this.current_page, this.active_sort, this.order);
     }
   }
+};
 </script>

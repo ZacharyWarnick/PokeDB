@@ -12,7 +12,7 @@ export function getPokemon(poke) {
   return axios.get(`${API_URL}/pokemon/${poke}`);
 }
 
-export function getEvolutionListing(sort = "id", order = "ASC", page = 1) {
+export function getEvolutionListing({ sort = "id", order = "ASC", page = 1 }) {
   return axios.get(
     `${API_URL}/evolutions?sort=${sort}&order=${order}&page=${page}`
   );
@@ -22,7 +22,7 @@ export function getEvolution(id) {
   return axios.get(`${API_URL}/evolutions/${id}`);
 }
 
-export function getTypeListing(sort = "id", order = "ASC", page = 1) {
+export function getTypeListing({ sort = "id", order = "ASC", page = 1 }) {
   return axios.get(`${API_URL}/types?sort=${sort}&order=${order}&page=${page}`);
 }
 

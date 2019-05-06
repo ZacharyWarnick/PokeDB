@@ -9,18 +9,14 @@
             header="Evolutions"
             lead="First Pokémon in evolution chain is displayed."
           />
+          <Pagination
+            :current_page="current_page"
+            :total_items="total_items"
+            :per_page="per_page"
+            :toPage="fetchData"
+            :sorts="sorts"
+          />
           <section class="section-padding">
-            <b-pagination
-              v-model="evolutions.current_page"
-              v-bind:total-rows="evolutions.total_items"
-              v-bind:per-page="evolutions.per_page"
-              @input="updateListing(evolutions.current_page)"
-              first-text="First"
-              prev-text="Prev"
-              next-text="Next"
-              last-text="Last"
-              align="center"
-            />
             <b-container class="justify-content-center">
               <b-row>
                 <b-col
@@ -28,15 +24,27 @@
                   sm="6"
                   md="4"
                   lg="3"
-                  v-for="chain in evolutions.data"
-                  v-bind:key="chain.id"
+                  v-for="(chain, idx) in evolutions"
+                  v-bind:key="idx"
                 >
                   <b-card style="margin-top: 10px;">
                     <SpriteBasic
-                      v-for:key="poke in chain.stages"
-                      v-bind:name="poke.pokemon.name"
-                      v-bind:id="poke.id"
-                      v-bind:types="poke.pokemon.first_type"
+                      v-bind:name="chain.stages[0].evolves_from.name"
+                      v-bind:id="chain.stages[0].evolves_from.id"
+                      v-bind:types="[
+                        chain.stages[0].evolves_from.first_type,
+                        chain.stages[0].evolves_from.second_type
+                      ]"
+                    />
+                    <SpriteBasic
+                      v-for="stage in chain.stages"
+                      :key="stage.pokemon.id"
+                      v-bind:name="stage.pokemon.name"
+                      v-bind:id="stage.pokemon.id"
+                      v-bind:types="[
+                        stage.pokemon.first_type,
+                        stage.pokemon.second_type
+                      ]"
                     />
                     <router-link
                       v-bind:to="'/evolutions/' + chain.base_pokemon.identifier"
@@ -57,27 +65,48 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
+import Pagination from "@/components/Pagination.vue";
+import { getEvolutionListing } from "@/api";
 
 export default {
   name: "EvolutionList",
   components: {
     Navbar,
-    SpriteBasic
+    SpriteBasic,
+    Pagination
   },
   methods: {
-  updateListing(current) {
-    getEvolutionListing({ sort: "id", order: "ASC", page: current }).then(
-      response => (this.evolutions = response.data)
-    );
-  }
+    updateListing(response) {
+      this.current_page = response.current_page;
+      this.total_items = response.total_items;
+      this.per_page = response.per_page;
+      this.evolutions = response.data;
+      console.log(this.evolutions);
+    },
+    fetchData(current, sort, order) {
+      console.log(sort);
+      getEvolutionListing({ sort: sort, order: order, page: current }).then(
+        response => this.updateListing(response.data)
+      );
+    }
   },
   data() {
     return {
-      evolutions: null
+      evolutions: null,
+      current_page: 1,
+      total_items: 1,
+      per_page: 16,
+      sorts: {
+        chain: "Chain ID",
+        diff: "Complexity",
+        base: "Base Pokemon ID",
+        count: "Evolution Count",
+        level: "Max Level"
+      }
     };
   },
   mounted() {
-    this.updateListing(1)
+    this.fetchData(this.current_page, "chain", "asc");
   }
 };
 </script>

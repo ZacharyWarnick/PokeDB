@@ -9,17 +9,13 @@
           <b-jumbotron header="Pokémon" lead="Gotta Catch 'Em All" />
         </b-container>
         <section>
-        	 <b-pagination
-              v-model="pokemon.current_page"
-              v-bind:total-rows="pokemon.total_items"
-              v-bind:per-page="pokemon.per_page"
-              @input="updateListing(pokemon.current_page)"
-              first-text="First"
-              prev-text="Prev"
-              next-text="Next"
-              last-text="Last"
-              align="center"
-            />
+          <Pagination
+            :current_page="current_page"
+            :total_items="total_items"
+            :per_page="per_page"
+            :toPage="fetchData"
+            :sorts="sorts"
+          />
           <b-container>
             <b-row>
               <b-col
@@ -27,14 +23,14 @@
                 sm="6"
                 md="4"
                 lg="3"
-                v-for="p in pokemon.data"
+                v-for="p in pokemon"
                 v-bind:key="p.id"
               >
                 <b-card class="row-card shadow-sm">
                   <SpriteBasic
                     v-bind:name="p.name"
                     v-bind:id="p.id"
-                    v-bind:types="[p.first_type, p.second_Type]"
+                    v-bind:types="[p.first_type, p.second_type]"
                   />
                   <router-link
                     v-bind:to="'/pokemon/' + p.identifier"
@@ -55,7 +51,6 @@
 import Navbar from "@/components/Navbar.vue";
 import SpriteBasic from "@/components/SpriteBasic.vue";
 import Pagination from "@/components/Pagination.vue";
-
 import { getPokemonListing } from "@/api";
 
 export default {
@@ -66,19 +61,35 @@ export default {
     Pagination
   },
   methods: {
-    updateListing(current) {
-      getPokemonListing({ sort: "id", order: "ASC", page: current }).then(
-        response => (this.pokemon = response.data)
+    updateListing(response) {
+      this.current_page = response.data.current_page;
+      this.total_items = response.data.total_items;
+      this.per_page = response.data.per_page;
+      this.pokemon = response.data.data;
+    },
+    fetchData(current, sort, order) {
+      getPokemonListing({ sort: sort, order: order, page: current }).then(
+        response => this.updateListing(response)
       );
     }
   },
   data() {
     return {
-      pokemon: null
+      current_page: 1,
+      total_items: 1,
+      per_page: 16,
+      pokemon: null,
+      sorts: {
+        id: "ID",
+        name: "Name",
+        gen: "Generation",
+        color: "Color",
+        type: "Primary Type"
+      }
     };
   },
   mounted() {
-    this.updateListing(1)
+    this.fetchData(this.current_page, "id", "asc");
   }
 };
 </script>

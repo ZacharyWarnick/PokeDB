@@ -20,7 +20,6 @@
                     </h2>
                     <h2 v-else>
                       {{ capitalize(pokemon.first_type.identifier) }}
-                      {{ chainID.base_pokemon }}
                     </h2>
                   </div>
                 </div>

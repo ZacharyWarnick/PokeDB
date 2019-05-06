@@ -44,7 +44,6 @@ export default {
       var out = [];
 
       for (let t of this.types) {
-        console.log(t);
         if (t != null) {
           const newItem = {
             name: t.identifier,
@@ -53,8 +52,6 @@ export default {
           out.push(newItem);
         }
       }
-
-      console.log(this.types);
 
       return out;
     }
